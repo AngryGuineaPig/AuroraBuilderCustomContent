@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="Races.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races.index" />
 		</update>
 	</info>
@@ -9,7 +9,7 @@
 		<file name="Animated-Armour.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Animated-Armour.xml" />
 		<file name="Argile.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Argile.xml" />
 		<file name="Asurian.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Asurian.xml" />
-		<file name="Caparak.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Caparak.xml" />
+		<file name="Caprak.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Caprak.xml" />
 		<file name="Faceless.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Faceless.xml" />
 		<file name="Formidei.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Formidei.xml" />
 		<file name="Frogfolk.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Frogfolk.xml" />
