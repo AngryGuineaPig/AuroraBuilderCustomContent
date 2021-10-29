@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+		<update version="0.0.1">
+			<file name="Jotunnkyn.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Jotunnkyn.xml" />
+		</update>
+	</info>
+	<element name="Jötunnkyn" type="Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACE_JOTUNNKYN">
+		<description>
+      <p>Jötnar (plural of Jötunn) are creatures that share a bloodline to the primordial being Ymir, having been born from his sweat. Jötnar predate all of the Aesir (Norse gods) and some, like Odin, are descendants of Jötnar.</p>
+			<p class="indent">Their descendant, also called Jötunnkyn live in the northernmost edges of the world a place regarded to be dark, foreboding, where winter never ceases.</p>
+			<p class="indent">They live a life of tough survival and endurance in the unforgiving lands that host them, they’ve grown accustomed to this harsh lifestyle. Their lives are spent in veneration of their Forefather, blood sacrifices of fallen beast they've hunted are common practice in their culture.</p>
+			<p class="indent"><b>Appearance:</b> They look humanoid, although they are much taller and larger than the average human. Their skin has a blue tint to it, reflecting their ancestral blood. Many bear horns, goat-like in appearance, protruding from the side of their skull. Their eyes are pupil-less and unicolor.</p>
+			<h4>Jötunnkyn Traits</h4>
+			<p>Your Jötunnkyn character has the following traits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Jötunnkyn reach adulthood at age 14 and live up to 160 years. But many die younger due to the harsh environment.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong>  Jötunnkyn live on the fringes of society, where they value self-sufficiency and hunting. They are generally neutral, organizing in tribes under charismatic and powerful leaders.</p>
+			<p class="indent"><strong><em>Size.</em></strong>  Your size is Medium. You are about 7 feet plus and 300 plus pounds.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 35 feet.</p>
+			<p class="indent"><strong><em>Hunter at Heart.</em></strong> You gain proficiency in the survival skill.</p>
+			<p class="indent"><strong><em>Thick Skin.</em></strong> You gain resistance to cold damage and ignore penalties imposed by cold climate.</p>
+      		<p class="indent"><strong><em>Subrace.</em></strong> The blood within shapes each Jötunnkyn physically and mentally. The four major subraces include: þurs, Val-dýr, Ginnungagap and Gráðr blood. Choose a subrace for your Jötunnkyn.</p>
+      		<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write in common and Primordial.</p>
+		</description>
+		<setters>
+			<set name="names" type="male"></set>
+			<set name="names" type="female"></set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d6">7'1"</set>
+			<set name="weight" modifier="1d6">300 lbs.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Jötunnkyn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="35" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_HUNTER_AT_HEART" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_THICK_SKIN" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_JOTUNNKYN_SUBRACE" />
+    </rules>
+	</element>
+  <element name="Hunter at Heart" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_HUNTER_AT_HEART">
+		<description>
+			<p>You gain proficiency in the survival skill.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in the survival skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+		</rules>
+	</element>
+  <element name="Thick Skin" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_THICK_SKIN">
+		<description>
+			<p>You gain resistance to cold damage and ignore penalties imposed by cold climate.</p>
+		</description>
+		<sheet>
+			<description>You gain resistance to cold damage and ignore penalties imposed by cold climate.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Jötunnkyn Subrace" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_JOTUNNKYN_SUBRACE">
+    <description>
+      <p>The blood within shapes each Jötunnkyn physically and mentally. The four major subraces include: þurs, Val-dýr, Ginnungagap and Gráðr blood. Choose a subrace for your Jötunnkyn.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Sub Race" name="Jötunnkyn Subrace" supports="Jotunnkyn" />
+    </rules>
+  </element>
+  <element name="Þurs, Blood of Giants" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_THURS">
+    <supports>Jotunnkyn</supports>
+    <description>
+      <p>þurs are massive and powerful. Known to accomplish impressive feats of strength, they are usually frontliners in their army. Others might prefer a more peaceful life.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Strength score increases by 2.<br />
+        <span class="feature">Imposing Build.</span> You count as one size larger when determining your carrying capacity, for the creatures you can grapple and the weight you can push, drag, or lift.<br />
+		<span class="feature">Giant's Might.</span> Awakening your blood, you can cast the Enlarge/Reduce spell on yourself once per long rest, using only the spell's enlarge option.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+    	<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+		<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Jötunnkyn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+     	<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_JOTUNNKYN_THURS_IMPOSING_BUILD" />
+     	<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_JOTUNNKYN_THURS_GIANTS_MIGHT" />
+    </rules>
+  </element>
+  <element name="Imposing Build" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_JOTUNNKYN_THURS_IMPOSING_BUILD">
+    <description>
+      <p>You count as one size larger when determining your carrying capacity, for the creatures you can grapple and the weight you can push, drag, or lift.</p>
+    </description>
+    <sheet>
+      <description>You count as one size larger when determining your carrying capacity, for the creatures you can grapple and the weight you can push, drag, or lift.</description>
+    </sheet>
+	<rules>
+		<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+	</rules>
+  </element>
+  <element name="Giant's Might" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_JOTUNNKYN_THURS_GIANTS_MIGHT">
+    <description>
+      <p>Awakening your blood, you can cast the Enlarge/Reduce spell on yourself once per long rest, using only the spell's enlarge option.</p>
+	  <div class="reference">
+		  <div element="ID_PHB_SPELL_ENLARGE_REDUCE" />
+	  </div>
+    </description>
+    <sheet>
+      <description>Awakening your blood, you can cast the Enlarge/Reduce spell on yourself once per long rest, using only the spell's enlarge option.</description>
+    </sheet>
+  </element>
+  <element name="Val-dýr, Blood of Beasts" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_VALDYR">
+    <supports>Jotunnkyn</supports>
+    <description>
+      <p>Val-dýr have inherited from their ancestors their keen and beastly senses. Fantastic hunters, they are hard to pin down. They are most fierce when night falls and their prey sleeps.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Dexterity score increases by 1.<br />
+        <span class="feature">Natural armor.</span> Your skin is closer to a hide. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. A shield's benefits apply as normal while you use your natural armor.<br />
+		<span class="feature">Darkvision.</span> You have darkvision to a range of 60ft.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+    	<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+		<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Jötunnkyn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+     	<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_JOTUNNKYN_VALDYR_NATURAL_ARMOUR" />
+     	<grant type="Vision" id="ID_VISION_DARKVISION" />
+    </rules>
+  </element>
+  <element name="Natural Armour" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_JOTUNNKYN_VALDYR_NATURAL_ARMOUR">
+    <description>
+      <p>Your skin is closer to a hide. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. A shield's benefits apply as normal while you use your natural armor.</p>
+    </description>
+    <sheet>
+      <description>Your skin is closer to a hide. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. A shield's benefits apply as normal while you use your natural armor.</description>
+    </sheet>
+	<rules>
+		<stat name="ac:unarmored" value="3" />
+	</rules>
+  </element>
+  <element name="Ginnungagap, Blood of the Primeval" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_GINNUNGAGAP">
+    <supports>Jotunnkyn</supports>
+    <description>
+      <p>Ginnungagap have inherited ancestral magic. In tune with the elements they are often druids who scour the land in search of remedies, or in search of wisdom to counsel chieftains.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Wisdom score increases by 1.<br />
+        <span class="feature">Innate Magic.</span> You know the control water cantrip. Once you reach 3rd level, you can cast the spell Faerie fire once. Once you reach 5th level, you can also cast the Maximilian Earthen grasp spell once. You must finish a long rest to cast these spells again with this trait. Wisdom is your spellcasting ability for these spells.<br /> In addition if you possess the spellcasting or pact magic class feature, those spells are added to the spell list of your spellcasting class.
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+    	<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+		<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Jötunnkyn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+     	<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_JOTUNNKYN_GINNUNGAGAP_INNATE_MAGIC" />
+    </rules>
+  </element>
+  <element name="Innate Magic" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_JOTUNNKYN_GINNUNGAGAP_INNATE_MAGIC">
+    <description>
+      <p>You know the control water cantrip. Once you reach 3rd level, you can cast the spell Faerie fire once. Once you reach 5th level, you can also cast the Maximilian Earthen grasp spell once. You must finish a long rest to cast these spells again with this trait. Wisdom is your spellcasting ability for these spells.</p>
+	  <p class="indent">In addition if you possess the spellcasting or pact magic class feature, those spells are added to the spell list of your spellcasting class.</p>
+    </description>
+    <sheet>
+      <description>You know the control water cantrip. Once you reach 3rd level, you can cast the spell Faerie fire once. Once you reach 5th level, you can also cast the Maximilian Earthen grasp spell once. You must finish a long rest to cast these spells again with this trait. Wisdom is your spellcasting ability for these spells.&#13;
+	    In addition if you possess the spellcasting or pact magic class feature, those spells are added to the spell list of your spellcasting class.</description>
+    </sheet>
+	<rules>
+		<grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER"/>
+	</rules>
+  </element>
+  <element name="Gráðr, Blood of the Devourer" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_GRATHR">
+    <supports>Jotunnkyn</supports>
+    <description>
+      <p>Gráðr are said to be in a constant state of hunger. Although this is but a myth, the way they battle reflects this. They use their jaws and fangs to feed off their prey and regain power.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Charisma score increases by 1.<br />
+        <span class="feature">Bite.</span> Your maw is full of fangs that can be used as a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength or Dexterity modifier, instead of the bludgeoning damage normal for an unarmed strike.<br />
+		    <span class="feature">Feeding Frenzy.</span> In battle, you can throw yourself into a vicious hunger. As a bonus action, you can make a special attack with your bite. If the attack hits, it deals its normal damage, and you gain temporary hit points (minimum of 1) equal to your Constitution modifier + your level and you can't use this trait again until you finish a short or long rest.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+    	<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+		<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Jötunnkyn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+     	<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_JOTUNNKYN_GRATHR_BITE" />
+     	<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_JOTUNNKYN_GRATHR_FEEDING_FRENZY" />
+    </rules>
+  </element>
+  <element name="Bite" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_JOTUNNKYN_GRATHR_BITE">
+    <description>
+      <p>Your maw is full of fangs that can be used as a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength or Dexterity modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+    </description>
+    <sheet>
+      <description>Your maw is full of fangs that can be used as a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength or Dexterity modifier, instead of the bludgeoning damage normal for an unarmed strike.</description>
+    </sheet>
+  </element>
+  <element name="Feeding Frenzy" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_JOTUNNKYN_GRATHR_FEEDING_FRENZY">
+    <description>
+      <p>In battle, you can throw yourself into a vicious hunger. As a bonus action, you can make a special attack with your bite. If the attack hits, it deals its normal damage, and you gain temporary hit points (minimum of 1) equal to your Constitution modifier + your level and you can't use this trait again until you finish a short or long rest.</p>
+    </description>
+    <sheet action="Bonus Action" usage="1/Short Rest">
+      <description>In battle, you can throw yourself into a vicious hunger. As a bonus action, you can make a special attack with your bite. If the attack hits, it deals its normal damage, and you gain temporary hit points (minimum of 1) equal to {{feeding:frenzy}} and you can't use this trait again until you finish a short or long rest.</description>
+    </sheet>
+	<rules>
+		<stat name="feeding:frenzy" value="constitution:modifier" />
+		<stat name="feeding:frenzy" value="level" />
+	</rules>
+  </element>
+</elements>

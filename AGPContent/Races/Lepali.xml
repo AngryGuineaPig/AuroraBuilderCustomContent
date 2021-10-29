@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+		<update version="0.0.1">
+			<file name="Lepali.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Lepali.xml" />
+		</update>
+	</info>
+	<element name="Lepalï" type="Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACE_LEPALI">
+		<description>
+      		<p>Lepalï, a race of moth humanoids that hail from Feywild ancestry, they are free spirited and will embark on a grand adventure often for very little a reason.</p>
+			<h4>Moth Kind</h4>
+			<p>Lepalï are a fey-touched race of humanoids with different unique aspects resembling humanoid and human-like features, with a true and apparent component of moth characteristics</p>
+      		<p>Moth features can often vary but they will always have wings, varying in size but often larger than their armspan. The wings can vary in colour and pattern from vibrant saturated colours to matte greyscale. They will sometimes have soft patches of fur on their head, arms and wings. They often have antennae that protrude of their foreheads, ranging from small scruffs of flesh to full bulbous insectoid antennae. Additionally they have an additional set of very weaker arms that look like normal arms but are far less capable.</p>
+      		<h4>Free-Mind</h4>
+      		<p>These creatures have little know to the origin. Some believe they used to be simple moths that got trapped in the fey-wild. Lepalï are free-minded. Ambitions and convictions are not something they idealize as much as the do empathy and an open mind or heart and a willingness to take on the new. A long term goal for them is rare, most of the time they take to adventuring on a whim. A simple distraction could lead to a Lepalï swearing an oath to an old god to gather an ancient artefact.</p>
+      		<h4>Lepalï Names</h4>
+      		<p>Lepalï are named originally with a single musical syllable that is subtle different from any other Lepalï. However, other races often find it easier to call them by nicknames stemming from a characteristic they have. Lepalï have no gender, and pay no attention to it in other races.</p>
+			<p><strong>Male Lepalï Names:</strong> Jorn, Lars, Detlev, Stefan, Adolar, Meik</p>
+      		<p><strong>Female Lepalï Names:</strong> Andrea, Ella, Alli, Agnes, Sara, Alicia</p>
+			<h4>Lepalï Traits</h4>
+			<p>As a Lepalï you gain the following traits:</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom and Dexterity scores increase by 1</p>
+			<p class="indent"><strong><em>Age.</em></strong> Lepalï reach maturity around 15 years of age and live to about 50 with the eldest pushing 75.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Lepalï will often tend between neutral and chaotic good, sometimes evil if twisted by actions of others, and almost never lawful.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Lepalï vary quite a bit in size but the average is between 5'6" and 6'6", your size is medium</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet. You have a base flying speed of 15ft. You can fly for a maximum of one hour once per short rest.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have 60ft of Darkvision.</p>
+			<p class="indent"><strong><em>Moth Magic.</em></strong> Your fey ancestry gives you inherent magic that plays to your moth nature. You learn the Dancing Lights cantrip.</p>
+      		<p class="indent"><strong><em>Lepalï Antennae.</em></strong> You have proficiency in the perception skill.</p>
+      		<p class="indent"><strong><em>Distracted Eyes.</em></strong> You have advantage on perception checks to notice any form of light that stands out in darkness.</p>
+      		<p class="indent"><strong><em>Extra Arms.</em></strong> You have a second set of weaker arms. These arms can carry weapons as long as they are not heavy, they have disadvantage on all attack rolls, can't support a shield or hold any heavy objects. Additionally these extra arms can't be used to utilize the versatile feature of a weapon or two handed weapons.</p>
+      		<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write in common and Sylvan</p>
+		</description>
+		<setters>
+			<set name="names" type="male">Jorn, Lars, Detlev, Stefan, Adolar, Meik</set>
+      		<set name="names" type="female">Andrea, Ella, Alli, Agnes, Sara, Alicia</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d6">6'0"</set>
+			<set name="weight" modifier="1d6">160 lbs.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Lepalï)" number="2" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_MOTH_MAGIC" />
+      		<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_DISTRACTED_EYES" />
+      		<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_EXTRA_ARMS" />
+     	 	<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_WINGS" />
+    </rules>
+	</element>
+  <element name="Moth Magic" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_MOTH_MAGIC">
+		<description>
+			<p>Your fey ancestry gives you inherent magic that plays to your moth nature. You learn the Dancing Lights cantrip and can use your antennae as spellcasting focuses for it.</p>
+		</description>
+		<sheet>
+			<description>Your fey ancestry gives you inherent magic that plays to your moth nature. You learn the Dancing Lights cantrip and can use your antennae as spellcasting focuses for it.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS" />
+		</rules>
+	</element>
+  <element name="Distracted Eyes" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_DISTRACTED_EYES">
+		<description>
+			<p>You have advantage on perception checks to notice any form of light that stands out in darkness.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on perception checks to notice any form of light that stands out in darkness.</description>
+		</sheet>
+	</element>
+  <element name="Extra Arms" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_EXTRA_ARMS">
+		<description>
+			<p>YYou have a second set of weaker arms. These arms can carry weapons as long as they are not heavy, they have disadvantage on all attack rolls, can't support a shield or hold any heavy objects. Additionally these extra arms can't be used to utilize the versatile feature of a weapon or two handed weapons.</p>
+		</description>
+		<sheet>
+			<description>You have a second set of weaker arms. These arms can carry weapons as long as they are not heavy, they have disadvantage on all attack rolls, can't support a shield or hold any heavy objects. Additionally these extra arms can't be used to utilize the versatile feature of a weapon or two handed weapons.</description>
+		</sheet>
+	</element>
+  <element name="Wings" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_WINGS">
+		<description>
+			<p>You have a base flying speed of 15ft. You can fly for a maximum of one hour once per short rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You have a base flying speed of 15ft. You can fly for a maximum of one hour once per short rest.</description>
+		</sheet>
+		<rules>
+            <stat name="speed:fly" value="15" bonus="base" />
+        </rules>
+	</element>
+</elements>

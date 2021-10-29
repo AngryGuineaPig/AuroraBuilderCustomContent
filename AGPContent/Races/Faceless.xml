@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+<info>
+		<update version="0.0.1">
+			<file name="Faceless.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Faceless.xml" />
+		</update>
+	</info>
+	<element name="Faceless" type="Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACE_FACELESS">
+		<description>
+      		<p>Rarely seen and often the subject of rumors and tales, the Faceless are masked people that travel the path of the Journey through the world in search of enlightenment. Filled with an eerie stoicism, having a tendency to be silent, and incapable of downing a mug of ale, it is unusual to see them among adventurers. However, those who befriend them appreciate their curious and determined nature, as well as their deadly skill with even the simplest of weapons.</p>
+			<h4>Masks and Robes</h4>
+			<p>The masks of the faceless are said to have been made by the Mask Maker, a reclusive deity of many faces and many limbs that endlessly labours over the task. Their masks, each one unique, is what defines the Faceless. Masks can have various designs, most are plain white with minimal designs, but some have been seen with vivid colours, intricate designs or protruding elements. The mask acts as their face, mouth moving with emotion and to talk, however, they never blink. When a Faceless dies their mask crumbles to dust.</p>
+      		<p>Faceless have humanoid bodies which they prefer to keep covered. Their skin varies in shade, matching their masks. Their skin is unnaturally smooth. The construction of a Faceless means they do not have to eat or drink or sleep, nor can they bleed. The mouths on their masks allow them to talk and breathe as well as eat and drink though unless for a reason they often wont. Healing spells, rest and Medicine function on Faceless as it would any other creature which is perhaps one of their most surprising features.</p>
+      		<h4>The Journey</h4>
+      		<p>All Faceless embark upon the Journey, whatever form that may take. This spiritual calling is engrained in all members of this race and they believe it is the path to true enlightenment advising others follow. For some Faceless, the Journey might lead through acquiring arcane knowledge, ensuring the prosperity of a grove or ending the life of a powerful being. Whatever the case, Faceless devote themselves to it entirely and will rarely deter from their path. Different callings mean that members of this race are rarely around each other for long. No Faceless has been known to have completed the Journey, merely ended that chapter. This leads most to believe that it is a task that cannot be completed.</p>
+     		<h4>Wonder and Indifference</h4>
+      		<p>When they are created, Faceless are just blank slates, neutral and stoic, they do not concern themselves with the many troubles of everyday folk. The Journey, with its many small wonders, is the path through they come to experience elation. However, through many years of exposure to happenings and individuals they tend to drift towards certain ideals, though never quite leaving behind their indifferent nature.</p>
+      		<p class="indent">Creatures of not many words, Faceless express their thoughts plainly and simply, or not at all if they deem it unnecessary.</p>
+      		<h4>Quirks</h4>
+      		<p>Their separation from this world means that Faceless often exhibit behaviors unusual to others. A Faceless player can choose to roll or select a quirk from the Faceless Quirks table</p>
+      		<h5>Faceless Quirks</h5>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Quirks</td></tr>
+				</thead>
+				<tr><td>1</td><td>You convey emotion through a physical signal, such as finger movements or the colour of your arcane focus.</td></tr>
+				<tr><td>2</td><td>You could spend hours watching a benign occurrence, such as a liquid fizzing.</td></tr>
+				<tr><td>3</td><td>Your voice is <b>Always</b> monotone.</td></tr>
+				<tr><td>4</td><td>You sometimes strike up conversations with inanimate objects.</td></tr>
+				<tr><td>5</td><td>You barely feel pain.</td></tr>
+				<tr><td>6</td><td>Inequality is incomprehensible to you, you treat a king the same as you treat a servant, as well or poorly as that is.</td></tr>
+        		<tr><td>7</td><td>Some mundane happenings or objects are inexplicably hilarious to you.</td></tr>
+        		<tr><td>8</td><td>You are unresponsive to things others would find disgusting.</td></tr>
+        		<tr><td>9</td><td>You read or observe from an unusual angle, claiming that it offers you valuable insight.</td></tr>
+        		<tr><td>0</td><td>You often wear masks on top of your mask, no one is quite sure if they have ever seen your real mask.</td></tr>
+			</table>
+      		<h4>Faceless Names</h4>
+      		<p>Faceless are named originally with a single musical syllable that is subtle different from any other Faceless. However, other races often find it easier to call them by nicknames stemming from a characteristic they have. Faceless have no gender, and pay no attention to it in other races.</p>
+			<p><strong>Faceless Names:</strong> Ao, Bo, Ej, Fa, Hu, Ia, Il, Ja, Li, Mu, Na, Se, Uo, Ua, Yi</p>
+      		<p><strong>Nicknames:</strong> Angel, Cloak, Dusk, Ghost, Hollow, Linger, Moth, Night, Shade, Silent, Singer, Watcher</p>
+			<h4>Faceless Traits</h4>
+			<p>As a Faceless you gain the following traits:</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom increases by 2 and one other score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Faceless do not age and a created fully matured.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> All Faceless are created true neutral, but life experiences or strong bonds can tip it away from this.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Faceless often resemble thin humans, however their height ranges from 5 feet tall to 8 feet, your size is medium</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 35 feet.</p>
+			<p class="indent"><strong><em>Ancient Form.</em></strong> You do not need to eat, drink or sleep and are immune to disease.</p>
+			<p class="indent"><strong><em>Inner Tranquility.</em></strong> You are resistant to psychic damage.</p>
+      		<p class="indent"><strong><em>Cry of Peace.</em></strong> As an action, you can utter a single piercing not, all creatures within 30ft must use their reaction to gaze at you in awe. You can do this once per short rest.</p>
+      		<p class="indent"><strong><em>Inscrutable.</em></strong> You have proficiency in the Deception skill.</p>
+      		<p class="indent"><strong><em>Wanderer.</em></strong> You have advantage on constitution saving throws to resist exhaustion. Additionally you can use the <i>Step</i> ability. A number of times per short rest equivalent to your constitution modifier you can spend a bonus action to teleport up to 30ft in any direction. You do not have to see where you are teleporting but if you teleport into a physical object you take 6d6 crushing damage.</p>
+      		<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write in common and Ji. Ji is the language of the Faceless comprising many syllables very subtly different from one another, so close that most races can't tell them apart.</p>
+		</description>
+		<setters>
+			<set name="names" type="male">Ao, Bo, Ej, Fa, Hu, Ia, Il, Ja, Li, Mu, Na, Se, Uo, Ua, Yi</set>
+			<set name="names" type="female">Ao, Bo, Ej, Fa, Hu, Ia, Il, Ja, Li, Mu, Na, Se, Uo, Ua, Yi</set>
+      		<set name="names" type="nickname">Angel, Clock, Dusk, Ghost, Hollow, Linger, Moth, Night, Shade, Silent, Singer, Watcher</set>
+			<set name="names-format">{{name}} ({{nickname}})</set>
+			<set name="height" modifier="2d6">6'1"</set>
+			<set name="weight" modifier="1d6">160 lbs.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+      		<select type="Ability Score Improvement" name="Ability Score Increase (Faceless)" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_DEXTERITY|ID_INTERNAL_ASI_INTELLIGENCE|ID_INTERNAL_ASI_CONSTITUTION|ID_INTERNAL_ASI_CHARISMA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Faceless)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Faceless)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="35" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_ANCIENT_FORM" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_INNER_TRANQUILITY" />
+      		<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_CRY_OF_PEACE" />
+      		<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_INSCRUTABLE" />
+     	 	<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_WANDERER" />
+      <select type="List" name="Quirk" number="1">
+			<item id="1">You convey emotion through a physical signal, such as finger movements or the colour of your arcane focus.</item>
+			<item id="2">You could spend hours watching a benign occurrence, such as a liquid fizzing</item>
+			<item id="3">Your voice is <b>Always</b> monotone.</item>
+			<item id="4">You sometimes strike up conversations with inanimate objects.</item>
+			<item id="5">You barely feel pain.</item>
+			<item id="6">Inequality is incomprehensible to you, you treat a king the same as you treat a servant, as well or poorly as that is.</item>
+			<item id="7">Some mundane happenings or objects are inexplicably hilarious to you.</item>
+			<item id="8">You are unresponsive to things others would find disgusting.</item>
+    		<item id="9">You read or observe from an unusual angle, claiming that it offers you valuable insight.</item>
+       		<item id="0">You often wear masks on top of your mask, no one is quite sure if they have ever seen your real mask.</item>
+		</select>
+    </rules>
+	</element>
+  <element name="Ancient Form" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_ANCIENT_FORM">
+		<description>
+			<p>You don't need to eat, drink or sleep. You also have immunity to disease.</p>
+		</description>
+		<sheet>
+			<description>You don't need to eat, drink or sleep. You also have immunity to disease.</description>
+		</sheet>
+	</element>
+  <element name="Inner Tranquility" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_INNER_TRANQUILITY">
+		<description>
+			<p>You have resistance to psychic damage.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to psychic damage.</description>
+		</sheet>
+   		<rules>
+      		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+    	</rules>
+	</element>
+  <element name="Cry of Peace" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_CRY_OF_PEACE">
+		<description>
+			<p>As an action, you can utter a single piercing not, all creatures within 30ft must use their reaction to gaze at you in awe. You can do this once per short rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>As an action, you can utter a single piercing not, all creatures within 30ft must use their reaction to gaze at you in awe. You can do this once per short rest.</description>
+		</sheet>
+	</element>
+  <element name="Inscrutable" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_INSCRUTABLE">
+		<description>
+			<p>You have proficiency in the Deception skill.</p>
+		</description>
+		<sheet>
+			<description>You have proficiency in the Deception skill.</description>
+		</sheet>
+    	<rules>
+      		<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION"/>
+    	</rules>
+	</element>
+  <element name="Wanderer" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_WANDERER">
+		<description>
+			<p>You have advantage on constitution saving throws to resist exhaustion. Additionally you can use the <i>Step</i> ability. A number of times per short rest equivalent to your constitution modifier you can spend a bonus action to teleport up to 30ft in any direction. You do not have to see where you are teleporting but if you teleport into a physical object you take 6d6 crushing damage.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{constitution:modifier}}/Short Rest">
+			<description>You have advantage on constitution saving throws to resist exhaustion. Additionally you can use the <i>Step</i> ability. {{constitution:modifier}} times per short rest you can spend a bonus action to teleport up to 30ft in any direction. You do not have to see where you are teleporting but if you teleport into a physical object you take 6d6 crushing damage.</description>
+		</sheet>
+	</element>
+</elements>

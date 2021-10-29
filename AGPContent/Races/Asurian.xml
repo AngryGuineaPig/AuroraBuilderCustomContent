@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+		<update version="0.0.1">
+			<file name="Asurian.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Asurian.xml" />
+		</update>
+	</info>
+	<element name="Asurian" type="Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACE_ASURIAN">
+		<description>
+			<h4>DIVINE DESCENDANTS</h4>
+			<p>Originating from the gods long ago when they walked the material plane alongside their mortal creations and the Asurians have the closest relation to the gods. Beings of emotion and wonder the Asurian are the wandering combatants in the world, always seeking, always walking forward and always on the journey of self improvement.</p>
+			<h4>ASURIAN TRAITS</h4>
+			<p>Your Asurian character has the following racial traits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Asurians mature at a similar rate to humans reaching maturity at about 20 however they are considered young until they are 50 and can live up to 400.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Asurians are emotional creatures and often align very extreme good or evil.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Asurians range between 6 and 7 feet. Your size is Medium</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Omnidexterous.</em></strong> You have a pair of secondary arms. These arms cannot hold shields, if they are used for two handed or versatile features then all attack made are at disadvantage, if they hold a weapon on their own then their strength is 10 and you are not proficient with them.</p>
+      <p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write common and celestial</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> You can choose from one of three Asurian subraces.</p>
+		</description>
+		<setters>
+			<set name="names" type="male"></set>
+      <set name="names" type="female"></set>
+			<set name="names-format"></set>
+			<set name="height" modifier="2d6">6'1"</set>
+			<set name="weight" modifier="1d6">160 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Asurian)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_OMNIDEXTEROUS" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_ASURIAN_SUBRACE" />
+		</rules>
+	</element>
+<element name="Omnidexterous" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_OMNIDEXTEROUS">
+		<description>
+			<p>You have a pair of secondary arms. These arms cannot hold shields, if they are used for two handed or versatile features then all attack made are at disadvantage, if they hold a weapon on their own then their strength/dexterity is 10 or your strength/dexterity, whatever is lower, and you are not proficient with them as they are slightly weaker and unwieldy.</p>
+		</description>
+		<sheet>
+			<description>You have a pair of secondary arms. These arms cannot hold shields, if they are used for two handed or versatile features then all attack made are at disadvantage, if they hold a weapon on their own then their strength/dexterity is 10 or your strength/dexterity, whatever is lower, and you are not proficient with them as they are slightly weaker and unwieldy.</description>
+		</sheet>
+	</element>
+ <element name="Asurian Subrace" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_ASURIAN_SUBRACE">
+    <description>
+      <p>There are three types of Asurian; Asura, Bohdi and Kali</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Sub Race" name="Asurian Subrace" supports="Asurian" />
+    </rules>
+  </element>
+  <element name="Asura" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_ASURA">
+    <supports>Asurian</supports>
+    <description>
+      <p>Asura are proud and volatile. They have human skin tones with the addition of red but tend to have red or orange hair and eyes.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Strength increases by 2.<br />
+        <span class="feature">Unrelenting</span> When you are reduced to 0 hit points you can choose to be reduced to 1 instead once per long rest.<br />
+		    <span class="feature">Powerful Build</span> You count as large for the purpose of lifting and carrying things.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Asurian)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_ASURA_UNRELENTING" />
+      <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+    </rules>
+  </element>
+  <element name="Unrelenting" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_ASURA_UNRELENTING">
+    <description>
+      <p> When you are reduced to 0 hit points you can choose to be reduced to 1 instead once per long rest.</p>
+    </description>
+    <sheet usage="1/Long Rest">
+      <description> When you are reduced to 0 hit points you can choose to be reduced to 1 instead.</description>
+    </sheet>
+  </element>
+  <element name="Bohdi" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_BOHDI">
+    <supports>Asurian</supports>
+    <description>
+      <p>Bohdi are patient and wise. They also have human skin tones with the addition of green but have green hair and eye colours</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Wisdom score increases by 2.<br />
+        <span class="feature">Bohdi Magic</span> You learn the guidance cantrip and once per long rest you can cast the guiding bolt spell.<br />
+		    <span class="feature">Bohdi Meditation</span> Long rests are 4 hours of meditation rather than 8 hours of sleep and you are fully conscious in this state.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Asurian)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_BOHDI_MEDITATION" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_BOHDI_MAGIC" />
+    </rules>
+  </element>
+  <element name="Bohdi Meditation" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_BOHDI_MEDITATION">
+    <description>
+      <p>Long rests are 4 hours of meditation rather than 8 hours of sleep and you are fully conscious in this state.</p>
+    </description>
+    <sheet>
+      <description>Long rests are 4 hours of meditation rather than 8 hours of sleep and you are fully conscious in this state.</description>
+    </sheet>
+  </element>
+  <element name="Bohdi Magic" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_BOHDI_MAGIC">
+    <description>
+      <p>You learn the guidance cantrip and once per long rest you can cast the guiding bolt spell.</p>
+    </description>
+    <sheet usage="1/Long Rest">
+      <description>You learn the guidance cantrip and once per long rest you can cast the guiding bolt spell.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" />
+      <grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT"/>
+    </rules>
+  </element>
+  <element name="Kali" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_KALI">
+    <supports>Asurian</supports>
+    <description>
+      <p>Bohdi are Warlike and violent. They have blueish skin, hair and eyes.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Charisma score increases by 2.<br />
+        <span class="feature">War Dancing</span> You gain proficiency in the intimidation skill.<br />
+		    <span class="feature">Divine authority</span> You can cast command at 1st level once per long rest, at 5th level this increases to 2nd level, at 10th level this increases to 3rd level, at 15th level it becomes 4th level.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Asurian)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_KALI_DIVINE_AUTHORITY" />
+    </rules>
+  </element>
+  <element name="Divine Authority" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_KALI_DIVINE_AUTHORITY">
+    <description>
+      <p>You can cast command at 1st level once per long rest, at 5th level this increases to 2nd level, at 10th level this increases to 3rd level, at 15th level it becomes 4th level.</p>
+    </description>
+    <sheet usage="1/Long Rest">
+      <description>You can cast command at 1st level once per long rest, at 5th level this increases to 2nd level, at 10th level this increases to 3rd level, at 15th level it becomes 4th level.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
+    </rules>
+  </element>
+</elements>

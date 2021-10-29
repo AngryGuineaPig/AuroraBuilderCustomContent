@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+		<update version="0.0.1">
+			<file name="Frogfolk.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Frogfolk.xml" />
+		</update>
+	</info>
+	<element name="Frogfolk" type="Race" source="D&amp;D Wiki" id="ID_WIKI_RACE_FROGFOLK">
+		<description>
+      <p>Living in the darkest of night, foggiest of lands and swamps and forests unpopulated by human-kind, the frogfolk dwell and live peacefully. They are usually kind, but being forced to live in one place forever, they usually don't know much. Frogfolk have lived for hundreds of years, but have never been spoken of in any written text. They are sometimes even called myths and if seen by someone, they are either granted good luck, or are are never seen again. Many have set out to find the frogfolk myth, but have failed. And those who have seen them are usually driven mad thinking they will get good luck.</p>
+			<h4>Physical Description</h4>
+			<p>Frogfolk are amphibious creatures with red, yellow or white eyes and thin pupils. Their skin is typically green, though poisonous ones have brighter colors. They are slimy and slippery creatures and are prone to hopping fast and jumping high. The description given by people who have seen frogfolk have called them slim, long, green amphibians walking on two legs. Some call them angels, and some call them devils. Those people had never seen fiends or celestials before.</p>
+      <h4>History</h4>
+      <p>Frogfolk have been around since the coming of the elves and fey. But at that time, they were just regular frogs. As the elves began to advance, the frogfolk came to the elves for help to make them more humanoid. And so, the elven wizards and sorcerers gave the frogfolk the ability to walk, talk, and fight. As dwarves, humans, and half-orcs came into existence, the frogfolk were always welcomed by all races. However, some people disliked the frogfolk, and started a revolution against them. The revolution was successful and the frogfolk were exiled to swamps, forests and foggy, dark lakes. Since then, frogfolk have either stayed in their locations, or have found a way to actually get into villages and live there with people who still believe they're normal and accept them.</p>
+      <h4>Society</h4>
+      <p>For the frogfolk who stay in their respected location, they usually stay in groups or "herds". They will usually stay together in their group and fight together if needed to fight off predators such as aarakocras, dragonborn and half-orcs. This communal life is not for all and many do stray out to find their own fortunes in the lands their ancestors used to traverse. It is a different world, where frogfolk often are scrutinized by those in positions of power. Elves remain their staunchest ally race.</p>
+			<p><strong>Frogfolk Names:</strong>Slipfoot, Tongueshot, Spearwrangler, Tonguewarp, Gripper, Broadback</p>
+			<h4>FROGFOLK TRAITS</h4>
+			<p>Frogfolk are normal frogs enchanted by elven magic</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity and Charisma scores each increase by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Frogfolk are hatched from eggs and mature by age 8. They usually live up to 70 years at most.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Frogfolk usually go towards the lawful side of the alignment chart since they're kind-hearted and willing to help. However, a chaotic frogfolk is not unheard of.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Frogfolk go from 4 feet to well over 5 feet tall, and weigh up to 90 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Swimmer</em></strong> Frogs are more aquatically attuned than toads. You have a swimming speed of 30 feet.</p>
+      <p class="indent"><strong><em>Amphibious</em></strong> You can breathe in both air and water.</p>
+      <p class="indent"><strong><em>Powerful Legs</em></strong> Frogs have great legs for jumping. Your jump height has an additional 10 feet.</p>
+      <p class="indent"><strong><em>Languages</em></strong> You can read, write and speak Common and one other language of your choice.</p>
+		</description>
+		<setters>
+			<set name="names" type="male">Slipfoot, Tongueshot, Spearwrangler, Tonguewarp, Gripper, Broadback</set>
+			<set name="names" type="female">Slipfoot, Tongueshot, Spearwrangler, Tonguewarp, Gripper, Broadback</set>
+      <set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d4">4'1"</set>
+			<set name="weight" modifier="2d4">90 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Frogfolk)" number="2" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Vision" id="ID_VISION_DARKVISION"/>
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Language (FrogFolk)" supports="Standard||Exotic"/>
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_SWIMMER" />
+      <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_AMPHIBIOUS" />
+      <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_POWERFUL_LEGS" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_FROGFOLK_SUBRACE" />
+		</rules>
+	</element>
+<element name="Swimmer" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_SWIMMER">
+		<description>
+			<p>Frogs are more aquatically attuned than toads. You have a swimming speed of 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Frogs are more aquatically attuned than toads. You have a swimming speed of 30 feet.</description>
+		</sheet>
+    <rules>
+      <stat name="speed:swim" value="speed" bonus="30" /> 
+    </rules>
+	</element>
+<element name="Amphibious" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_AMPHIBIOUS">
+		<description>
+			<p>You can breathe in both air and water.</p>
+		</description>
+		<sheet>
+			<description>You can breathe in both air and water.</description>
+		</sheet>
+	</element>
+<element name="Powerful Legs" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_POWERFUL_LEGS">
+		<description>
+			<p>Frogs have great legs for jumping. Your jump height has an additional 10 feet.</p>
+		</description>
+		<sheet>
+			<description>Frogs have great legs for jumping. Your jump height has an additional 10 feet.</description>
+		</sheet>
+	</element>
+ <element name="Frogfolk Subrace" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FROGFOLK_SUBRACE">
+    <description>
+      <p>There are two types of Frogfolk, Great frogfolk and poison dart frogfolk.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Sub Race" name="Frogfolk Subrace" supports="Frogfolk" />
+    </rules>
+  </element>
+  <element name="Great Frogfolk" type="Sub Race" source="D&amp;D Wiki" id="ID_WIKI_SUBRACE_GREAT_FROGFOLK">
+    <supports>Frogfolk</supports>
+    <description>
+      <p>These frogfolk are the usual colors. They are also usually larger.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span>Your Strength score increases by 1.<br />
+        <span class="feature">Tongue Slap</span>Your tongue is a powerful natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal bludgeoning damage equal to 1d6 + your Strength modifier.<br />
+		<span class="feature">Camouflage</span>Your skin is often colored according to your surroundings. You are proficient in the Stealth skill.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="strength" value="1" />
+      <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_FROGFOLK_GREAT_TONGUE_SLAP" />
+      <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_FROGFOLK_GREAT_CAMOUFLAGE" />
+    </rules>
+  </element>
+  <element name="Tongue Slap" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FROGFOLK_GREAT_TONGUE_SLAP">
+    <description>
+      <p>Your tongue is a powerful natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal bludgeoning damage equal to 1d6 + your Strength modifier.</p>
+    </description>
+    <sheet>
+      <description>Your tongue is a powerful natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal bludgeoning damage equal to 1d6 + {{strength:modifier}}.</description>
+    </sheet>
+  </element>
+  <element name="Camouflage" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FROGFOLK_GREAT_CAMOUFLAGE">
+    <description>
+      <p>Your skin is often colored according to your surroundings. You are proficient in the Stealth skill.</p>
+    </description>
+    <sheet>
+      <description>Your skin is often colored according to your surroundings. You are proficient in the Stealth skill.</description>
+    </sheet>
+	<rules>
+	 <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />	
+	</rules>
+  </element>
+  <element name="Poison Dart Frogfolk" type="Sub Race" source="D&amp;D Wiki" id="ID_WIKI_SUBRACE_POISON_DART_FROGFOLK">
+    <supports>Frogfolk</supports>
+    <description>
+      <p>These smaller frogfolk have venom oozing within their skin and are more brightly colored as a warning.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span>Your Constitution score increases by 1.<br />
+        <span class="feature">Poison Touch</span>Your skin harbors deadly venom. When you hit a creature with your unarmed strike, the target must make a Constitution saving throw. The DC is 8 + your Constitution modifier. On a failed save, the target is poisoned for 1 minute or until they make a successful save against your poison. The creature can repeat its saving throw at the end of each of its turns. You must finish a long rest before you can use this trait again.<br />
+		    <span class="feature">Poisonous Appearance</span>Your skin serves as a deadly warning to others. You are proficient in the Intimidation skill.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="constitution" value="1" />
+      <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_FROGFOLK_POISON_DART_POISON_TOUCH" />
+      <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_FROGFOLK_POISON_DART_POISONOUS_APPEARANCE" />
+    </rules>
+  </element>
+  <element name="Poison Touch" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FROGFOLK_POISON_DART_POISON_TOUCH">
+    <description>
+      <p>Your skin harbors deadly venom. When you hit a creature with your unarmed strike, the target must make a Constitution saving throw. The DC is 8 + your Constitution modifier. On a failed save, the target is poisoned for 1 minute or until they make a successful save against your poison. The creature can repeat its saving throw at the end of each of its turns. You must finish a long rest before you can use this trait again.</p>
+    </description>
+    <sheet>
+      <description>Your skin harbors deadly venom. When you hit a creature with your unarmed strike, the target must make a Constitution saving throw. The DC is 8 + {{constitution:modifier}}. On a failed save, the target is poisoned for 1 minute or until they make a successful save against your poison. The creature can repeat its saving throw at the end of each of its turns. You must finish a long rest before you can use this trait again.</description>
+    </sheet>
+  </element>
+  <element name="Poisonous Appearance" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FROGFOLK_POISON_DART_POISONOUS_APPEARANCE">
+    <description>
+      <p>Your skin serves as a deadly warning to others. You are proficient in the Intimidation skill.</p>
+    </description>
+    <sheet>
+      <description>Your skin serves as a deadly warning to others. You are proficient in the Intimidation skill.</description>
+    </sheet>
+    <rules>
+      <grant type="proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+    </rules>
+  </element>
+</elements>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+		<update version="0.0.1">
+			<file name="Optikos.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Optikos.xml" />
+		</update>
+	</info>
+	<element name="Optikos" type="Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACE_OPTIKOS">
+		<description>
+      		<p>A rare species of beholder-kin, Optikos, are often respected among most other races. First created from dreams of beholders, Optikos are now usually created from a dreaming Optikos or through physical birth. Optikos often find themselves in respected positions that help feed their want for more knowledge such as town heros or mages. Some Optikos might strive to uncover new or forgotten knowledge, while others might try to become as powerful as their ancestors.</p>
+      		<h4>Optikos Names</h4>
+      		<p>An Optikos, rather than multiple names, has one combined name. This combined name takes sounds and syllables from their guild's name, and a parent or caretaker's name. The Optikos' name will then change as they get older, adopting more sounds from the names of people or things that bear importance to them, such as a good friend or important ruin they explored.</p>
+			<p class="indent">An Optikos will also usually have a section of their name that they can shorten their name to, this is because an elder Optikos, or an Optikos who has done a lot with their life can end up with a long complex name which is difficult of those of other races to pronounce. Usually these shortenings are one or two of their syllables however some are as many as four or five.</p>
+			<p><strong>Optikos Names:</strong> Afosmodit, Ateqonom, Bitsulec, Creokulwen, Duomfrosmul, Deushisman, Eefprocets, Flosminertos, Fopoilrog, Graekitsrem, Hroipketen, Iwiyolsk, Jeskipshris, Kazolkontin, Lodizflo, Miqfweol, Mirekshrip, Noaspitino, Oapistoken, Poriktenqetn, Qenseppimonso, Roilsnfolmen, Stopektiyen, Tulburecmol, Uopninqueb, Viskelnitmey, Wibskotalpin, Xrenbiwijen, Ybricpitur, Zepeltingur</p>
+			<h4>Optikos Traits</h4>
+			<p>As an Optikos you gain the following traits:</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence increases by 2 and your Constitution increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Optikos reach maturity at 20 years, and live up to and beyond 600 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Optikos often tend towards neutral and lawful alignments</p>
+			<p class="indent"><strong><em>Size.</em></strong> Optikos are about 5-7 feet tall and weigh around 125-280lbs, your size is medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have darkvision up to 60 feet.</p>
+			<p class="indent"><strong><em>Many Eyes.</em></strong> You gain advantage on perception checks that rely on sight.</p>
+      		<p class="indent"><strong><em>Beholder Inheritance.</em></strong> You learn the eldritch blast cantrip. Additionally a number of times equal to half your proficiency modifier per long rest you may cast magic missile at 1st level. Intelligence is your spellcasting ability for these spells, additionally you cannot cast these spells whilst blinded and must be able to perceive the target.</p>
+      		<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write in common and one extra language of your choice.</p>
+		</description>
+		<setters>
+			<set name="names" type="male">Afosmodit, Ateqonom, Bitsulec, Creokulwen, Duomfrosmul, Deushisman, Eefprocets, Flosminertos, Fopoilrog, Graekitsrem, Hroipketen, Iwiyolsk, Jeskipshris, Kazolkontin, Lodizflo, Miqfweol, Mirekshrip, Noaspitino, Oapistoken, Poriktenqetn, Qenseppimonso, Roilsnfolmen, Stopektiyen, Tulburecmol, Uopninqueb, Viskelnitmey, Wibskotalpin, Xrenbiwijen, Ybricpitur, Zepeltingur</set>
+			<set name="names" type="female">Afosmodit, Ateqonom, Bitsulec, Creokulwen, Duomfrosmul, Deushisman, Eefprocets, Flosminertos, Fopoilrog, Graekitsrem, Hroipketen, Iwiyolsk, Jeskipshris, Kazolkontin, Lodizflo, Miqfweol, Mirekshrip, Noaspitino, Oapistoken, Poriktenqetn, Qenseppimonso, Roilsnfolmen, Stopektiyen, Tulburecmol, Uopninqueb, Viskelnitmey, Wibskotalpin, Xrenbiwijen, Ybricpitur, Zepeltingur</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d6">6'0"</set>
+			<set name="weight" modifier="1d6">160 lbs.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+      		<stat name="intelligence" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Optikos)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Optikos)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Language (Optikos)" supports="Standard||Exotic"/>
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_MANY_EYES" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_BEHOLDER_INHERITANCE" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+    </rules>
+	</element>
+  <element name="Many Eyes" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_MANY_EYES">
+		<description>
+			<p>You gain advantage on perception checks that rely on sight.</p>
+		</description>
+		<sheet>
+			<description>You gain advantage on perception checks that rely on sight.</description>
+		</sheet>
+	</element>
+  <element name="Beholder Inheritance" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_BEHOLDER_INHERITANCE">
+		<description>
+			<p>You learn the eldritch blast cantrip. Additionally a number of times equal to half your proficiency modifier per long rest you may cast magic missile at 1st level. Intelligence is your spellcasting ability for these spells, additionally you cannot cast these spells whilst blinded and must be able to perceive the target.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_MAGIC_MISSILE" />
+			</div>
+		</description>
+		<sheet>
+			<description>You learn the eldritch blast cantrip. Additionally {{proficiency:half}} times per long rest you may cast magic missile at 1st level. Intelligence is your spellcasting ability for these spells, additionally you cannot cast these spells whilst blinded and must be able to perceive the target.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ELDRITCH_BLAST" />
+		</rules>
+	</element>
+</elements>

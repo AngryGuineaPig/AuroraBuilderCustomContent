@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	  <info>
+		<update version="0.0.1">
+			<file name="Rabbitfolk.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Rabbitfolk.xml" />
+		</update>
+	</info>
+	<element name="Rabbitfolk" type="Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACE_RABBITFOLK">
+		<description>
+      		<p>Highly evolved from their ancestors, Rabbitfolk are a rare people, choosing to live together in small groups.</p>
+			<h4>Going Underground</h4>
+			<p>Rabbitfolk are very social creatures that live in colonies. Although comfortable with being out above ground, they typically choose to live in warrens - a series of tunnels and rooms that they dig underground.</p>
+      		<h4>Born Prey</h4>
+      		<p>With their ancestors being hunted and common prey for larger creatures, Rabbitfolk have developed a heightened awareness of their surroundings, and are slow to trust new people, usually needing an act of kindness or generosity to win them over.</p>
+      		<h4>Rabbitfolk Names</h4>
+      		<p>Rabbitfolk names are typically one work, and usually gender-neutral.</p>
+			<p><strong>Rabbitfolk Names:</strong> Ash, Brable, Briar, Clover, Elm, Heath, Laurel, Linden, Moss, Rue, Thorn</p>
+			<h4>Rabbitfolk Traits</h4>
+			<p>As a Rabbitfolk you gain the following traits:</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity increases by 2 and one other score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Rabbitfolk mature much faster than humans, reaching adulthood at 5 years of age and usually living no longer than 30 years, with an average life of 20 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Rabbitfolk tend towards good and chaotic.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Rabbitfolk stand at 3ft tall 35lbs, your size is small</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 35 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You gain 60ft of Darkvision</p>
+			<p class="indent"><strong><em>Acute Awareness.</em></strong> You gain proficiency in perception due to your eyes and ears.</p>
+      		<p class="indent"><strong><em>Scramble.</em></strong> You can move through the space of a creature that is a size larger than yours.</p>
+      		<p class="indent"><strong><em>Lucky Foot.</em></strong> When you roll a 1 on the d20 for an attack roll, saving throw or ability check you can reroll the dice but must take the new roll.</p>
+      		<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write in common and can communicate through squeaks and chirps to other Rabbitfolk.</p>
+		</description>
+		<setters>
+			<set name="names" type="male">Ash, Brable, Briar, Clover, Elm, Heath, Laurel, Linden, Moss, Rue, Thorn</set>
+			<set name="names" type="female">Ash, Brable, Briar, Clover, Elm, Heath, Laurel, Linden, Moss, Rue, Thorn</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d6">3'0"</set>
+			<set name="weight" modifier="1d6">35 lbs.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+      		<select type="Ability Score Improvement" name="Ability Score Increase (Rabbitfolk)" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_WISDOM|ID_INTERNAL_ASI_INTELLIGENCE|ID_INTERNAL_ASI_CONSTITUTION|ID_INTERNAL_ASI_CHARISMA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Rabbitfolk)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Rabbitfolk)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="35" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_SCRAMBLE" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_LUCKY_FOOT" />
+    </rules>
+	</element>
+  <element name="Scramble" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_SCRAMBLE">
+		<description>
+			<p>You can move through the space of a creature that is a size larger than yours.</p>
+		</description>
+		<sheet>
+			<description>You can move through the space of a creature that is a size larger than yours.</description>
+		</sheet>
+	</element>
+  <element name="Lucky Foot" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_LUCKY_FOOT">
+		<description>
+			<p>When you roll a 1 on the d20 for an attack roll, saving throw or ability check you can reroll the dice but must take the new roll.</p>
+		</description>
+		<sheet>
+			<description>When you roll a 1 on the d20 for an attack roll, saving throw or ability check you can reroll the dice but must take the new roll.</description>
+		</sheet>
+	</element>
+</elements>
