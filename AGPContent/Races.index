@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="Races.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races.index" />
 		</update>
 	</info>
@@ -15,7 +15,7 @@
 		<file name="Frogfolk.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Frogfolk.xml" />
 		<file name="genasi-additional-subraces.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/genasi-additional-subraces.xml" />
 		<file name="Ikwiikwii.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Ikwiikwii.xml" />
-		<file name="Jotunnkyn.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Jotunkynn.xml" />
+		<file name="Jotunnkyn.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Jotunnkyn.xml" />
 		<file name="Lepali.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Lepali.xml" />
 		<file name="Living-Dolls.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Living-Dolls.xml" />
 		<file name="Nezumi.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Nezumi.xml" />
