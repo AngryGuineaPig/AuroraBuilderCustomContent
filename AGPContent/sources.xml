@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1">
+			<file name="sources.xml" url="placeholder" />
+		</update>
+	</info>
+	<element name="Reddit : Unearthed Arcana" type="Source" source="Reddit : Unearthed Arcana" id="ID_RDDT_SOURCE_R_UA">
+		<description>
+			<![CDATA[<p>Homebrew content posted on the r/UnearthedArcana Subreddit.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">RDDT</set>
+			<set name="url">https://www.reddit.com/r/UnearthedArcana/</set>
+			<set name="author" abbreviation="RDDT">Unearthed Arcana Subreddit</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+	<element name="D&amp;D Wiki" type="Source" source="D&amp;D Wiki" id="ID_HOMEBREW_SOURCE_DND_WIKI">
+		<description>
+			<![CDATA[<p></p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">WIKI</set>
+			<set name="url">https://www.dandwiki.com/wiki/5e_Homebrew</set>
+			<set name="author" abbreviation="WIKI">D&amp;D Wiki</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+	<element name="Reddit : Griffon's Saddlebag" type="Source" source="Reddit : Griffon's Saddlebag" id="ID_RDDT_SOURCE_R_GS">
+		<description>
+			<![CDATA[<p>Homebrew content posted on the r/TheGriffonsSaddlebag Subreddit.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">TGSB</set>
+			<set name="url">https://www.reddit.com/r/TheGriffonsSaddlebag/</set>
+			<set name="author" abbreviation="RDDT">The Griffon's Saddlebag Subreddit</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+	<element name="Reddit : Griffon's Saddlebag" type="Source" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_SOURCE_R_GS">
+		<description>
+			<![CDATA[<p>Homebrew content posted on the r/TheGriffonsSaddlebag Subreddit.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">TGSB</set>
+			<set name="url">https://www.reddit.com/r/TheGriffonsSaddlebag/</set>
+			<set name="author" abbreviation="TGSB">The Griffon's Saddlebag Subreddit</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+	<element name="Eris' Tome of Eldritch Knowledge" type="Source" source="Eris' Tome of Eldritch Knowledge" id="ID_ETEK_SOURCE_ETEK">
+		<description>
+			<![CDATA[<p>Eris' Tome of Eldritch Knowledge made by u/beholdersnbasements.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">ETEK</set>
+			<set name="url">https://www.reddit.com/r/UnearthedArcana/comments/fjen44/eriss_tome_of_eldritch_knowledge_v20_7_pact_boons/</set>
+			<set name="author" abbreviation="ETEK">u/beholdersnbasements</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+	<element name="Neva's Elemental Codex" type="Source" source="Neva's Elemental Codex" id="ID_NEC_SOURCE_NEC">
+		<description>
+			<![CDATA[<p>Neva's Elemental Codex by u/Bisounoursdestenebre</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">NEC</set>
+			<set name="url">https://www.reddit.com/r/UnearthedArcana/comments/iksi5k/nevas_elemental_codex_11_an_homebrew_book_with_27/</set>
+			<set name="author" abbreviation="NEC">u/Bisounoursdestenebre</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+	<element name="Koa's Magical Narcotics and Illicit Substances" type="Source" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_SOURCE_KMNIS">
+		<description>
+			<![CDATA[<p>Koa's Magical Narcotics and Illicit Substances by u/keonikoa</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">KMNIS</set>
+			<set name="url">https://www.reddit.com/r/UnearthedArcana/comments/op0rbc/koas_magical_narcotics_and_illicit_substances_a/</set>
+			<set name="author" abbreviation="KMNIS">u/keonikoa</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+	<element name="Kibble's Generic Elemental Spells" type="Source" source="Kibble's Generic Elemental Spells" id="ID_KGES_SOURCE_KGES">
+		<description>
+			<![CDATA[<p>Kibble's Generic Elemental Spells by u/KibblesTasty</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">KGES</set>
+			<set name="url">https://www.reddit.com/r/UnearthedArcana/comments/mrbg15/kibbles_generic_elemental_spells_all_the_spells/</set>
+			<set name="author" abbreviation="KGES">u/KibblesTasty</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+	<element name="Tome of Mystical Tattoos" type="Source" source="Tome of Mystical Tattoos" id="ID_TOMT_SOURCE_KGES">
+		<description>
+			<![CDATA[<p>Tome of Mystical Tattoos by Karl Nicolas</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">TOMT</set>
+			<set name="url">https://www.kickstarter.com/projects/natwuns/tome-of-mystical-tattoos-for-5e</set>
+			<set name="author" abbreviation="TOMT">Karl Nicolas</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>
