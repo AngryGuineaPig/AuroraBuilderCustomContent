@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+		<update version="0.0.1">
+			<file name="Ursus.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Ursus.xml" />
+		</update>
+	</info>
+	<element name="Ursus" type="Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACE_URSUS">
+		<description>
+      <p>The Ursus are multi-faceted individuals, not that unlike humans. Ursus are highly social beings with intelligence comparable to other civilized humanoids. Ursus often share friendships, resources and security. They form hierarchies and have structures kinship relationships. Ursus are not as unpredictable and dangerous as their bestial counterparts, they are often gentle and tolerant, however if this patience is pushed then they are often far worse than people imagine</p>
+			<h4>Rowdy, Yet Reliable</h4>
+			<p>Mothers are affectionate, protective, devoted and attentive with their young, not unlike humans. Ursus are capable of being emotive and empathetic, each being an individual with unique personalities. Both young and old Ursus engage in social play and have ritualistic mechanisms to meet strangers and decided on friends. Ursus are adept at distinguishing between types of behaviors.</p>
+			<h4>Strength and Pride</h4>
+      <p>Ursus are strong and powerful beings, in both physicality and character. Guided by a sense of wisdom and community, they do not often follow paths that would lead them to exerting their brawn. However they are entirely capable and willing to fight if necessary, specializing in heavy weapons and armour that they can put to great use due to their often hulking forms.</p>
+      <h4>Ursus Names</h4>
+      <p>Ursus have no normal names, often being named after a trait that they possess with strange translations to common.</p>
+			<h4>Ursus TRAITS</h4>
+			<p>Your Ursus character has the following racial traits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Ursus reach maturity at 15 and can live till about 90</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Ursus are free and wild, tending towards chaotic alignments</p>
+			<p class="indent"><strong><em>Size.</em></strong> Ursus grow to ge 7 to 8 ft tall at adulthood, they have thick fur and can weigh up to 400lbs, your size is medium</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Bite.</em></strong> Due to the strong jaws of an Ursus your unarmed attacks deal 1d6 damage + your strength modifier slashing damage.</p>
+      <p class="indent"><strong><em>Natural Intuition.</em></strong> You have proficiency in the insight skill.</p>
+      <p class="indent"><strong><em>Powerful Build.</em></strong> You count as one size larger when determining carry capacity.</p>
+      <p class="indent"><strong><em>Ursus Weapon Training.</em></strong> You have proficiency with greatswords, greataxes and mauls.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and can communicate through grunts and roars.</p>
+		</description>
+		<setters>
+			<set name="names" type="male"></set>
+      <set name="names" type="female"></set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d6">7'1"</set>
+			<set name="weight" modifier="1d6">350 lbs.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Ursus)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_BITE" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_POWERFUL_BUILD" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_URSUS_SUBRACE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL" />
+		</rules>
+	</element>
+  <element name="Bite" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_BITE">
+		<description>
+			<p>Due to the strong jaws of an Ursus your unarmed attacks deal 1d6 damage + your strength modifier slashing damage. </p>
+		</description>
+		<sheet>
+			<description>Due to the strong jaws of an Ursus your unarmed attacks deal 1d6 damage + {{strength:modifier}} slashing damage.</description>
+		</sheet>
+	</element>
+  <element name="Powerful Build" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_POWERFUL_BUILD">
+    <description>
+      <p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+    </description>
+    <sheet>
+      <description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+    </sheet>
+    <rules>
+      <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+    </rules>
+  </element>
+ <element name="Ursus Subrace" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_URSUS_SUBRACE">
+    <description>
+      <p>There are three types of Ursus, Grizz'ursus, Pan'ursus and Pol'ursus</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Sub Race" name="Ursus Subrace" supports="Ursus" />
+    </rules>
+  </element>
+  <element name="Grizz'ursus" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_GRIZZURSUS">
+    <supports>Ursus</supports>
+    <description>
+      <p>Your people lived in a dense forest. Your fur is black, brown or dark grey and you are most at home in mountains.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span>Your Constitution score increases by 1.<br />
+        <span class="feature">Darkvision</span>You gain 60ft of darkvision due to your adaptation to caves.<br />
+		    <span class="feature">Born in the Wild</span> While in forests, difficult terrain doesn't slow you or your group and you have advantage on foraging checks.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ursus)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GRIZZURSUS_BORN_IN_THE_WILD" />
+      <grant type="Vision" id="ID_VISION_DARKVISION" />
+    </rules>
+  </element>
+  <element name="Born in the Wild" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GRIZZURSUS_BORN_IN_THE_WILD">
+    <description>
+      <p>While in forests, difficult terrain doesn't slow you or your group and you have advantage on foraging checks.</p>
+    </description>
+    <sheet>
+      <description>While in forests, difficult terrain doesn't slow you or your group and you have advantage on foraging checks.</description>
+    </sheet>
+  </element>
+  <element name="Pan'ursus" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_PANURSUS">
+    <supports>Ursus</supports>
+    <description>
+      <p>You were raised in the lowlands, your fur is white with black patches.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Dexterity score increases by 1.<br />
+        <span class="feature">Folivore</span> Eating a pound of plants grants your sustenance for a day and you have advantage on attack rolls against plants.<br />
+		    <span class="feature">Tumbler</span> You can reduce any fall damage by 1d6 + your dexterity modifier.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ursus)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_PANURSUS_FOLIVORE" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_PANURSUS_TUMBLER" />
+    </rules>
+  </element>
+  <element name="Folivore" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_PANURSUS_FOLIVORE">
+    <description>
+      <p>Eating a pound of plants grants your sustenance for a day and you have advantage on attack rolls against plants.</p>
+    </description>
+    <sheet>
+      <description>Eating a pound of plants grants your sustenance for a day and you have advantage on attack rolls against plants.</description>
+    </sheet>
+  </element>
+  <element name="Tumbler" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_PANURSUS_TUMBLER">
+    <description>
+      <p>You can reduce any fall damage by 1d6 + your dexterity modifier.</p>
+    </description>
+    <sheet>
+      <description>You can reduce any fall damage by 1d6 + {{dexterity:modifier}}.</description>
+    </sheet>
+  </element>
+  <element name="Pol'ursus" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_POLURSUS">
+    <supports>Ursus</supports>
+    <description>
+      <p>You grew up in cold remote places of ice and sea. Your fur is pale white.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Wisdom score increases by 1.<br />
+        <span class="feature">Snowborn</span> You have advantage on stealth checks in snowy terrain, you are resistant to cold damage and cold climates don't affect you.<br />
+		    <span class="feature">Survivor</span> You are proficient in the survivor skill.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ursus)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_POLURSUS_SNOWBORN" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+    </rules>
+  </element>
+  <element name="Snowborn" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_POLURSUS_SNOWBORN">
+    <description>
+      <p>You have advantage on stealth checks in snowy terrain, you are resistant to cold damage and cold climates don't affect you.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on stealth checks in snowy terrain, you are resistant to cold damage and cold climates don't affect you.</description>
+    </sheet>
+  </element>
+</elements>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+		<update version="0.0.1">
+			<file name="SteelBound.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/SteelBound.xml" />
+		</update>
+	</info>
+	<element name="Steel-Bound" type="Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACE_STEEL_BOUND">
+		<description>
+			<p>Forced to become a facsimile of their lives, those that sacrifice their flesh for metal are on a path not many would dream of. They are often killed on the battlefield before their time, and their soul binds itself to the armour they wear.</p>
+			<h4>Steel-Bound Names</h4>
+      		<p>A steel bounds name is often based off their old name, often with metal or armor relation thrown in.</p>
+			<p><strong>Names:</strong> Plate, Steel, Iron, Rust, Chain, Don, Shield, Scale</p>
+			<h4>Steel-Bound Traits</h4>
+			<p>As a Steel-Bound you gain the following traits:</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your constitution increases by 1</p>
+			<p class="indent"><strong><em>Age.</em></strong> As a being of metal Steel-Bound are not affected by time, their armour will often weather over time giving the illusion of age however there is no overall effect to the soul.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Steel-Bound will tend to vary in alignment based of the subrace they belong to. Jagged will tend towards chaotic and slightly evil, Forge minds towards neutral and Ironsouls towards Lawful Good.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Though armour varies in size, Steel-Bound are medium creatures.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed depends on your subrace, as shown below.</p>
+			<p class="indent"><strong><em>Mechanical Nature.</em></strong> You do not need to eat, drink, sleep or breathe, you are immune to disease and resistant to poison damage. Traditional medicine does nothing for you however magical healing does. Additionally the mending spell heals 1d6 hit points if cast upon you.</p>
+			<p class="indent"><strong><em>Armoured Self.</em></strong> Being comprised of armour you are proficient with any form of armour. You do not don armour instead transfering your soul to a set of armour over the course of 1 hour.</p>
+ 		  	<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write common as well as one other language of your choice.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> There are three types of Steel-Bound, Jagged, Forgeminds and Ironsouls</p>
+		</description>
+		<setters>
+			<set name="names" type="Construct">Plate, Steel, Iron, Rust, Chain, Don, Shield, Scale</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d6">5'6"</set>
+			<set name="weight" modifier="1d6">160 lbs.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Steel Bound)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Language (Steel-Bound)" supports="Standard||Exotic" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_MECHANICAL_NATURE" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_ARMOURED_SELF" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_STEELBOUND_SUBRACE" />
+    </rules>
+	</element>
+  <element name="Mechanical Nature" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_MECHANICAL_NATURE">
+		<description>
+			<p>You do not need to eat, drink, sleep or breathe, you are immune to disease and resistant to poison damage. Traditional medicine does nothing for you however magical healing does. Additionally the mending spell heals 1d6 hit points if cast upon you.</p>
+		</description>
+		<sheet>
+			<description>You do not need to eat, drink, sleep or breathe, you are immune to disease and resistant to poison damage. Traditional medicine does nothing for you however magical healing does. Additionally the mending spell heals 1d6 hit points if cast upon you.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	<element name="Armoured Self" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_ARMOURED_SELF">
+		<description>
+			<p>Being comprised of armour you are proficient with any form of armour. You do not don armour instead transferring your soul to a set of armour over the course of 1 hour.</p>
+		</description>
+		<sheet>
+			<description>Being comprised of armour you are proficient with any form of armour. You do not don armour instead transferring your soul to a set of armour over the course of 1 hour.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+		</rules>
+	</element>
+	<element name="Steel-Bound Subrace" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_STEELBOUND_SUBRACE">
+    <description>
+      <p>There are three types of Steel-Bound, Jagged, Forgemind and Ironsoul</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Sub Race" name="Steel-Bound Subrace" supports="SteelBound" />
+    </rules>
+  </element>
+  <element name="Jagged" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_JAGGED">
+    <supports>SteelBound</supports>
+    <description>
+	<p>Those that cannot cope with their new existence become deranged and dangerous. Referred to as the Jagged, these shells tear apart other Steel-Bound and use their parts as decoration</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Strength or Constitution increases by 1.<br />
+        <span class="feature">Aggressive Assault.</span> Your base walking speed is 35 feet. Additionally your unarmed attacks deal 1d4 + your strength modifier on a hit.<br />
+		<span class="feature">Artificial Cannibalism.</span> You can spend 1 hour cannibalizing the corpse of any construct, gaining temporary hit points equal to your level.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+		<select type="Ability Score Improvement" name="Ability Score Increase (Jagged)" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_CONSTITUTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Jagged)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+		<stat name="innate speed" value="35" bonus="base" />
+		<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_AGGRESSIVE_ASSAULT" />
+		<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_ARTIFICIAL_CANNIBALISM" />
+    </rules>
+  </element>
+  <element name="Aggressive Assault" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_AGGRESSIVE_ASSAULT">
+		<description>
+			<p>Your unarmed strikes deal 1d4 + strength modifier bludgeoning damage on a hit.</p>
+		</description>
+		<sheet>
+			<description>Your unarmed strikes deal 1d4 + {{strength:modifier}} bludgeoning damage on a hit.</description>
+		</sheet>
+	</element>
+	<element name="Artificial Cannibalism" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_ARTIFICIAL_CANNIBALISM">
+		<description>
+			<p>You can spend 1 hour cannibalizing the corpse of any construct, gaining temporary hit points equal to your level.</p>
+		</description>
+		<sheet>
+			<description>You can spend 1 hour cannibalizing the corpse of any construct, gaining {{level}} temporary hit points.</description>
+		</sheet>
+	</element>
+	<element name="Forgemind" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_FORGEMIND">
+    <supports>SteelBound</supports>
+    <description>
+	<p>Forgeminds have spent the years since their transformation having their bodies modified, and honing their minds alongside them.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Intelligence increases by 1.<br />
+        <span class="feature">Mechanical Thrusters.</span> As a bonus action you can gain a 15ft flight speed until the end of your turn. You can use this a number of times equal to your proficiency bonus per long rest.<br />
+		<span class="feature">Arcane Library.</span> When a spell is cast within 60ft of you, you can use your reaction to instantly become aware of what spell it was once per short rest. In addition you learn one wizard cantrip.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+		<select type="Spell" name="Cantrip (Forgemind)" supports="Wizard, 0" level="1" number="1" spellcasting="Wizard" />
+		<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Forgemind)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+		<stat name="innate speed" value="30" bonus="base" />
+		<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_MECHANICAL_THRUSTERS" />
+		<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_ARCANE_LIBRARY" />
+    </rules>
+  </element>
+  <element name="Mechanical Thrusters" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_MECHANICAL_THRUSTERS">
+		<description>
+			<p>As a bonus action you can gain a 15ft flight speed until the end of your turn. You can use this a number of times equal to your proficiency bonus per long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>As a bonus action you can gain a 15ft flight speed until the end of your turn. You can use this a {{proficiency}} times per long rest.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Library" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_ARCANE_LIBRARY">
+		<description>
+			<p>When a spell is cast within 60ft of you, you can use your reaction to instantly become aware of what spell it was once per short rest. In addition you learn one wizard cantrip.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>When a spell is cast within 60ft of you, you can use your reaction to instantly become aware of what spell it was once per short rest. In addition you learn one wizard cantrip.</description>
+		</sheet>
+	</element>
+	<element name="Ironsoul" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_IRON_SOUL">
+    <supports>SteelBound</supports>
+    <description>
+	<p>Ironsouls often decide to use their new bodies for combat, often for the protection of those weaker than themselves, but sometimes for more selfish reasons.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Strength or Constitution increases by 1.<br />
+        <span class="feature">Mechanical Durability.</span> Your hit point maximum increases by 1 each level.<br />
+		<span class="feature">Protecting the Unit.</span> When a creature within 5ft of you is hit with an attack you can use your reaction to reduce the damage by 1d6 + half your level once per short rest.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+		<select type="Ability Score Improvement" name="Ability Score Increase (Ironsoul)" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_CONSTITUTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ironsoul)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+		<stat name="innate speed" value="30" bonus="base" />
+		<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_PROTECTING_THE_UNIT" />
+		<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_MECHANICAL_DURABILITY" />
+		<stat name="hp" value="level" />
+    </rules>
+  </element>
+  <element name="Protecting the Unit" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_PROTECTING_THE_UNIT">
+		<description>
+			<p>When a creature within 5ft of you is hit with an attack you can use your reaction to reduce the damage by 1d6 + half your level once per short rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>When a creature within 5ft of you is hit with an attack you can use your reaction to reduce the damage by 1d6 + {{level:half}} once per short rest.</description>
+		</sheet>
+	</element>
+	<element name="Mechanical Durability" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_MECHANICAL_DURABILITY">
+		<description>
+			<p>Your hit point maximum increases by 1 each level</p>
+		</description>
+		<sheet>
+			<description>Your hit point maximum increases by 1 each level</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+		<update version="0.0.1">
+			<file name="Living-Dolls.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Living-Dolls.xml" />
+		</update>
+	</info>
+	<element name="Living Doll" type="Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACE_LIVING_DOLL">
+		<description>
+      <p>Living dolls are a rare race of small humanoid constructs created by powerful mages from ordinary dolls. A few of these dolls have ended up on the material plane, however due to their arcane and therefore unnatural nature and often unnerving visages and voices they are seen as bad luck or evil by many who come across them.</p>
+			<h4>PRETTY LITTLE THINGS</h4>
+			<p>Living Dolls appear simply as dolls. They are small figures with the likeness of humans. Living dolls are typically made from dolls of very high quality, possessing a large level of detail making them even creepier to most. They are still obviously artificial as often their details are easy to pick out as different from a normal creature. Their eyes are glossy and often made from fragile glass. These eyes are often slightly too large and the pupils are not dark enough. Their skin is often smooth without texture due to the materials they are made of.</p>
+			<h4>AN ARTIFICIAL BIRTH</h4>
+      <p>Living dolls are created by binding souls to dolls and weaving life into them. Living dolls can only be created by the most powerful of mages who border on ascension to either godhood or lichdom. The motivation for creating one differs from person to person, a servant, a friend, or built to resemble and mimic a long lost friend or loved one. Though the dolls are often unaware of the reason behind their creation.</p>
+      <h4>Living Doll Names</h4>
+      <p>Living dolls often have names given by their creators, based off names the creator liked or people that the creator knew.</p>
+			<h4>LIVING DOLL TRAITS</h4>
+			<p>Your Living Doll character has the following racial traits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 2</p>
+			<p class="indent"><strong><em>Age.</em></strong> As a construct you don't age, however due to your size and nature living dolls often bear resemblance to children or young adults</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Living dolls have childlike natures, often tending towards good or neutral and almost always chaotic.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Living dolls are often diminutive, ranging from 2'6" to about 4ft, your size is small</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet.</p>
+			<p class="indent"><strong><em>Natural Darkvision.</em></strong> With your glass eyes having magical sight you are granted 60ft of natural darkvision.</p>
+      <p class="indent"><strong><em>Child's Play.</em></strong> You have advantage on all charisma checks dealing with children with the exception of intimidation.</p>
+      <p class="indent"><strong><em>Living Construct.</em></strong> You are immune to disease, you have advantage on saving throws against being poisoned, you don't need to eat, drink or breathe. You can't be put to sleep. Instead of sleeping you must remain inactive for 6 hours, all of your senses other than sight are unaffected in this state however you can't see. Healing kits and the medicine skill don't effect you, magical healing does and mending heals 1d4 hit points.</p>
+      <p class="indent"><strong><em>Ball Joints.</em></strong> Due to the strange nature of your body you are able to contort your limbs freely as long as they don't pop out from the socket, such as rotating your head 360 or bending your arm in the wrong direction.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and one other language that was the language of your creator.</p>
+      <p class="indent"><strong><em>Subrace.</em></strong> There are three different subraces based on what material you were made from.</p>
+		</description>
+		<setters>
+			<set name="names" type="male"></set>
+      <set name="names" type="female"></set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d6">2'6"</set>
+			<set name="weight" modifier="1d6">3 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Living Doll)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Language, Living Doll" supports="Standard||Exotic" />
+      <grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_CHILDS_PLAY" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_LIVING_CONSTRUCT" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_BALL_JOINTS" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_LIVING_DOLL_SUBRACE" />
+		</rules>
+	</element>
+  <element name="Child's Play" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_CHILDS_PLAY">
+		<description>
+			<p>You have advantage on all charisma checks dealing with children with the exception of intimidation.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on all charisma checks dealing with children with the exception of intimidation.</description>
+		</sheet>
+	</element>
+  <element name="Living Constructs" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_LIVING_CONSTRUCT">
+		<description>
+			<p>You are immune to disease, you have advantage on saving throws against being poisoned, you don't need to eat, drink or breathe. You can't be put to sleep. Instead of sleeping you must remain inactive for 6 hours, all of your senses other than sight are unaffected in this state however you can't see. Healing kits and the medicine skill don't effect you, magical healing does and mending heals 1d4 hit points.</p>
+		</description>
+		<sheet>
+			<description>You are immune to disease, you have advantage on saving throws against being poisoned, you don't need to eat, drink or breathe. You can't be put to sleep. Instead of sleeping you must remain inactive for 6 hours, all of your senses other than sight are unaffected in this state however you can't see. Healing kits and the medicine skill don't effect you, magical healing does and mending heals 1d4 hit points.</description>
+		</sheet>
+	</element>
+  <element name="Ball Joints" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_BALL_JOINTS">
+		<description>
+			<p>Due to the strange nature of your body you are able to contort your limbs freely as long as they don't pop out from the socket, such as rotating your head 360 or bending your arm in the wrong direction.</p>
+		</description>
+		<sheet>
+			<description>Due to the strange nature of your body you are able to contort your limbs freely as long as they don't pop out from the socket, such as rotating your head 360 or bending your arm in the wrong direction.</description>
+		</sheet>
+	</element>
+ <element name="Living Doll Subrace" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_LIVING_DOLL_SUBRACE">
+    <description>
+      <p>There are three types of Living Doll. Resin Dolls, Porcelain Dolls, and Wooden Dolls</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Sub Race" name="Living Doll Subrace" supports="Living Doll" />
+    </rules>
+  </element>
+  <element name="Resin Doll" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_RESIN_DOLL">
+    <supports>Living Doll</supports>
+    <description>
+      <p>Living dolls are most commonly made from resin dolls, and resemble humans the closest. As a resin living doll you are less vulnerable to physical damage, increasing your constitution.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Constitution score increases by 2.<br />
+        <span class="feature">Camouflage.</span> You have proficiency with Disguise kits.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Resin Doll)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+    </rules>
+  </element>
+  <element name="Porcelain Doll" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_PORCELAIN_DOLL">
+    <supports>Living Doll</supports>
+    <description>
+      <p>Living dolls are sometimes made from Porcelain dolls. Their skin is thicker but brittle</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Wisdom score increases by 1.<br />
+        <span class="feature">Made of Porcelain.</span> You have proficiency with potter's tools.<br />
+		    <span class="feature">Brittle Skin.</span> All piercing attacks have disadvantage, but all bludgeoning attacks have advantage.<br />
+        <span class="feature">Self Maintenance.</span> You know the mending Cantrip.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Porcelain Doll)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_PORCELAIN_DOLL_BRITTLE_SKIN" />
+      <grant type="Spell" id="ID_PHB_SPELL_MENDING" />
+    </rules>
+  </element>
+  <element name="Brittle Skin" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_PORCELAIN_DOLL_BRITTLE_SKIN">
+    <description>
+      <p>All piercing attacks have disadvantage, but all bludgeoning attacks have advantage.</p>
+    </description>
+    <sheet>
+      <description>All piercing attacks have disadvantage, but all bludgeoning attacks have advantage.</description>
+    </sheet>
+  </element>
+  <element name="Wooden Doll" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_WOODEN_DOLL">
+    <supports>Living Doll</supports>
+    <description>
+      <p>As a wooden doll, you are carved from wood. You are less susceptible to piercing but vulnerable to fire.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Strength score increases by 1.<br />
+        <span class="feature">Carved from Wood.</span> You have proficiency with woodcarvers's tools.<br />
+		    <span class="feature">Wooden Body.</span> All piercing attacks have disadvantage, but you have vulnerability to fire.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Wooden Doll)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_WOODEN_DOLL_WOODEN_BODY" />
+    </rules>
+  </element>
+  <element name="Wooden Body" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_WOODEN_DOLL_WOODEN_BODY">
+    <description>
+      <p>All piercing attacks have disadvantage, but you have vulnerability to fire.</p>
+    </description>
+    <sheet>
+      <description>All piercing attacks have disadvantage, but you have vulnerability to fire.</description>
+    </sheet>
+	<rules>
+    <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_FIRE" />
+	</rules>
+  </element>
+</elements>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Animated-Armour.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Animated-Armour.xml" />
+		</update>
+	</info>
+	<element name="Animated Armor" type="Race" source="D&amp;D Wiki" id="ID_WIKI_RACE_ANIMATED_ARMOUR">
+		<description>
+			<p>Trying his best to keep quiet, a hulking suit of dark crimson armor tip-toes his way over to an unsuspecting orc, his greataxe held high over his helmet. As a confused goblin looks around a dark room, a small, feminine, uninhabited set of silver armor reaches out to snap its neck. Leaving his companions behind, a medium-sized set of golden armor effortlessly walks through a cloud of toxic fumes spewed from fungi on the walls of a large cavern.</p>
+			<p>Animated suits of armor, or simply 'anarmors', are created to serve a specific purpose under their creator. When their creator dies, they are often left to lie dormant, waiting for the right moment to spring back into action. They find their place in vaults, towers, gardens, dungeons, mansions, castles; anywhere a sentry or guard might be. When animated armors are left alone for long enough, their magical programming comes undone. Oftentimes, upon awakening, these constructs attain a new level of sentience and seek out a new purpose. Some animated armors are inhabited by the souls of other sentient races, making them a living weapon.</p>
+			<h4>Living Weapons</h4>
+			<p>Animated armors are full sets of armor that can move and speak on their own, their various pieces of plating seemingly unburdened by gravity. While they have no physical presence inside them, they function like a person in a full suit of armor. They can be molded or cast to fit many races, and can be anything from small enough to comfortably fit a gnome to large enough to completely cover a half-orc. Their weight and size, as well as their design and material, are up to their creator. While metal is most often used, anarmors utilizing elements of leather, stone, or animal skins are not unheard of. Magic is used to bring the armor to life, either by using a spell to program it or by placing the soul of a living or formerly living being inside of it. Though they may not have any sensory organs whatsoever, magic ensures that anarmors can perceive what is around them. They can see, hear, and feel things, though not always to the extent that other races can, even if they were once a living being. They can also communicate by means of magic. Magic guides their artificial consciousnesses, translating their thoughts into sounds that can be perceived by other creatures. Their armor acts as their skin, and any damage inflicted upon their plating is felt as damage to what would be their physical form if they were a living being. Should they sustain enough damage, the spell holding their parts together will dissipate, leaving them to fall apart completely. Magical means, in any form they take, can be used to bring anarmors back together, even if it is only one piece at a time. At low health, animated armors often find that whole limbs will disconnect from their bodies, but certain spells can undo the damage and mend their armored exteriors as if they were composed of flesh. The gaps between their plating have no physical presence; if a certain anarmor is designed with a horizontal gap separating its torso from its waist, slashing through it without touching the plating will cause no damage whatsoever. Only striking the material the armor is composed of will cause physical harm to an animated armor. To hide the fact that they are living suits of armor as opposed to warriors simply wearing suits of armor, anarmors will use cloaks, scarves, or bandages to cover the gaps between their plating. Some anarmors have arcane lights that are fixed in the space inside their helmets. These projections are meant to resemble eyes, and shift and move according to what expression the anarmor might be making. Though they serve no function other than making it look like they have eyes, these lights are often enough to keep the average person from getting too suspicious.</p>
+      		<h4>Dormancy</h4>
+			<p>Normal suits of armor usually last as long as their material does, the elements hazing them until they eventually rust over and crumble to pieces. Animated armors are not usually this fragile, however. If magic is used to bring a suit of armor to life, another spell is usually cast on the armor to make it more durable. The stronger the spell, the longer the armor lasts. A typical anarmor can lie dormant for 250 years before losing its magic. The maximum lifespan of an animated armor is unknown, as a powerful enough spell could potentially keep one alive forever, but none have been known to keep their magic for more than 500 years. Unlike other creatures blessed with long life, anarmors don't actively pursue goals outside of what they were created to do; if a particular animated armor was created to protect a castle, it will stay in the castle, silently waiting for an intruder. That said, they can leave their posts or occupations if they wish, but most are not given a good enough reason to, remaining dormant until someone finds them. Unless they are doing their job constantly, they will become as still as a statue, waking only when a certain stimulus triggers a response. When they do awake, animated armors often find that they are in a world far different than the one they know. To them, time has passed by without them, leaving them lost in a strange and mysterious future. A time gap as small as fifty years can be enough to confuse an anarmor, but if they are intelligent enough, they will catch on to present-time customs fairly quickly, Still, some refuse to change their ways, speaking in forgotten tongues or using overly-wordy and poetic speech. Others do not speak at all.</p>
+			<h4>Reawakening and Rebirth</h4>
+			<p>Anarmors usually fall dormant at the post given to them by their creator, waiting for something to bring them back into consciousness. If their creator happens to die before or after they enter this state, their purpose will no longer be explicitly defined. When they regain consciousness, most anarmors stick to their prior orders, carrying out their tasks without complaint. But some, rather than do a task that is now impossible, pointless, or both, defy their creator's magical programming and seek out a new purpose. To some degree, this allows anarmors to develop personalities and become sentient. Glitches in the magical programming that make up an anarmor’s mind can also cause a personality to form. Anarmors that possess the soul of a formerly living being almost always realize who they once were, but some are forced to rediscover themselves or discover a new identity altogether. Others forget their initial purpose entirely, wandering around aimlessly until someone decides to claim them. Many times, an adventurer will stumble upon a long-forgotten animated armor and convince it to join them on their travels. Others are reactivated only to find that the thing they were meant to protect has been destroyed somehow, and seek vengeance. In this way, anarmors can be anything from loyal companions and protectors to destructive avengers and mercenaries.</p>
+			<h4>Ghosts in Armor</h4>
+			<p>Generally, people see animated armors as threats. The thought of a walking, talking suit of armor terrifies them, similar to how most races view tieflings. It doesn’t help that many adventurers are used to fighting animated armors, sentient or not. They are often likened to ghosts in armor, and many villages have their own tales of menacing suits of armor that move of their own volition. Because of this, anarmors that wander into unsuspecting towns are usually avoided completely, the only words spoken of them being whispers. Those who know better than this see wandering anarmors as potential companions, workers, or servants. Some are even ambitious or crazy enough to try and capture them by force, but this rarely works. Taverns and brothels usually look the other way, since being intangible except for one's armor doesn't lend itself to enjoying such frivolities. That said, an anarmor will usually try to avoid being discovered, unless a quirk in their personality programming says otherwise. They'll use cloaks, scarves, and bandages to cover the gaps in their armor and blend in. They'll stay away from crowded places, speaking only when spoken to and never causing too much of a scene. Some spend their time in taverns, never ordering any food or drink, hoping that the patrons will be too drunk to notice how empty they are on the inside. On the rare occasion that an animated armor is welcomed or even worshipped by the people of a village, an anarmor might serve the community as a guard or sentry. Others may take a more commanding role, like a war chief or even a deity. When it comes to other races, animated armors are interesting in that they can have an affinity with any race or none at all. It very much depends on the whether or not the anarmor identifies with the race the armor was originally made for.</p>
+			<h4>Animated Armor Names</h4>
+      		<p>An animated armor's name is usually bestowed by its creator. Sometimes, however, they forget their names. When this happens, a name can be given to them by a new owner or partner, or they can come up with a name themselves. When an anarmor comes up with a name for itself, it's usually something simple, something they see around them or remember from their past. Really, any name will do, whether it's based on their function, their appearance, or their surroundings. Some are based in the creator's native tongue, whatever that may be.</p>
+			<p><strong>Names:</strong> Ren, Tah, Nogo, Rex, Val, Ennard, Wall, Leaf, Rock, Batton, Olive, Red, Bo, Trey, Nolo, Neo, Zed, Tree, Boko, Zin, Tower, Ditch, Scrawl, Sandy, Goldie, Val, Ash, Kip, Minnie, Karla, Roh, Leah, Eva, Orca, Coco, Rei, Neah, Evie, Skye, Fish, Kat, Deb, Fer, Jo, Syn, Kit, Paint.</p>
+			<h4>Animated Armor Traits</h4>
+			<p>As an Animated Armor you gain the following traits:</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> your constitution increases by 1</p>
+			<p class="indent"><strong><em>Age.</em></strong> Since animated armors are essentially timeless, age is only a factor in terms of appearance, not maturity. This does not make an anarmor completely immune to the effects of aging, however. When considering an anarmor’s age, consider the physical age of the armor, the age of the consciousness taking control of the armor, whether the consciousness was created or implanted, and how long the armor and the consciousness have been bonded. A normal suit of armor may grow old, rust, and eventually disintegrate over several decades. However, due to their magical nature, anarmors can survive in the same suit of armor for several centuries without experiencing such effects. The maximum lifespan of an animated armor is unknown, but none have been known to keep their magic for more than 500 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong>  Animated armors generally hold to the will of their creator. Because of this, anarmors are typically of a lawful alignment.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Though armors vary in size and shape, an animated armor's height is based on the race it was designed to be worn by while its weight corresponds the armor on which its subrace is based. Regardless of the size of the race your armor was designed for, or the size of the armor you use your Soul Transfer trait to move into, your size is always Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed depends on your subrace, as shown below.</p>
+			<p class="indent"><strong><em>Antimagic Susceptibility.</em></strong> You are incapacitated while in the area of an antimagic field. If targeted by dispel magic, you must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.</p>
+			<p class="indent"><strong><em>Blindsight.</em></strong> You can perceive your surroundings without relying on sight within a specific radius. You have a blindsight range of 60 feet, but are blind beyond this radius.</p>
+      		<p class="indent"><strong><em>Construct.</em></strong> You are a suit of armor made of a variety of durable materials. Your creature type is construct instead of humanoid. As such, spells like cure wounds don't affect you, and you are immune to spells like crown of madness or dominate person because they specifically target humanoids. You are immune to poison damage, being poisoned, and diseases. You do not need to eat or breathe, and any food you do attempt to eat falls through the space where your head would be and into the bottom of your armor. Rather than sleeping, you enter an inactive state for 6 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal.</p>
+      		<p class="indent"><strong><em>False Appearance.</em></strong> While you remain motionless, you are indistinguishable from a normal suit of armor.</p>
+			<p class="indent"><strong><em>Mendable.</em></strong> When the mending spell is cast on you, it has the following alterations: It has a casting time of 1 action. If you have 0 hit points you become stable. As part of the casting of mending the caster may expend any level of spell slot to cause you to regain a number of hit points equal to 1d8, plus their spellcasting ability modifier. For each level of the spell slot expended you regain an additional 1d8 hit points.</p>
+		  	<p class="indent"><strong><em>Soul Transfer.</em></strong> You can transfer your consciousness into another suit of armor over the course of a short or long rest. During that time you or another creature performs an hour-long ritual. Over the course of that hour, you must remain within 5 feet of the armor, or the ritual fails. This change may alter your subrace accordingly, based on the desired armor's type. If you are not proficient in the armor you transfer yourself into, you will receive all the detriments that someone normally would by wearing a set of armor they are not proficient with, as well as a -2 penalty to your Armor Class.</p>
+		  	<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common, as well as the language of your creator. Given that animated armors are often created by powerful spellcasters, the exotic languages of magic such as Draconic or Primordial are commonly known by them.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> The armor your soul inhabits determines certain traits about you. The classifications are Light, Medium and Heavy.</p>
+		</description>
+		<setters>
+			<set name="names" type="construct">Ren, Tah, Nogo, Rex, Val, Ennard, Wall, Leaf, Rock, Batton, Olive, Red, Bo, Trey, Nolo, Neo, Zed, Tree, Boko, Zin, Tower, Ditch, Scrawl, Sandy, Goldie, Val, Ash, Kip, Minnie, Karla, Roh, Leah, Eva, Orca, Coco, Rei, Neah, Evie, Skye, Fish, Kat, Deb, Fer, Jo, Syn, Kit, Paint.</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d6">5'6"</set>
+			<set name="weight" modifier="1d6">160 lbs.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Animated Armour)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<select type="Language" name="Language (Animated Armor)" supports="Standard||Exotic" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_ANTIMAGIC_SUSCEPTIBILITY" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_CONSTRUCT" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_FALSE_APPEARANCE" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_MENDABLE" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_SOUL_TRANSFER" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_ARMOR_SUBRACE" />
+    </rules>
+	</element>
+  <element name="Construct" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_CONSTRUCT">
+		<description>
+			<p>You are a suit of armor made of a variety of durable materials. Your creature type is construct instead of humanoid. As such, spells like cure wounds don't affect you, and you are immune to spells like crown of madness or dominate person because they specifically target humanoids. You are immune to poison damage, being poisoned, and diseases. You do not need to eat or breathe, and any food you do attempt to eat falls through the space where your head would be and into the bottom of your armor. Rather than sleeping, you enter an inactive state for 6 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal.</p>
+		</description>
+		<sheet>
+			<description>You are a suit of armor made of a variety of durable materials. Your creature type is construct instead of humanoid. As such, spells like cure wounds don't affect you, and you are immune to spells like crown of madness or dominate person because they specifically target humanoids. You are immune to poison damage, being poisoned, and diseases. You do not need to eat or breathe, and any food you do attempt to eat falls through the space where your head would be and into the bottom of your armor. Rather than sleeping, you enter an inactive state for 6 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+		</rules>
+	</element>
+  <element name="Antimagic Susceptibility" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_ANTIMAGIC_SUSCEPTIBILITY">
+		<description>
+			<p>You are incapacitated while in the area of an antimagic field. If targeted by dispel magic, you must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.</p>
+		</description>
+		<sheet>
+			<description>You are incapacitated while in the area of an antimagic field. If targeted by dispel magic, you must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.</description>
+		</sheet>
+	</element>
+	<element name="Mendable" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_MENDABLE">
+		<description>
+			<p> When the mending spell is cast on you, it has the following alterations: It has a casting time of 1 action. If you have 0 hit points you become stable. As part of the casting of mending the caster may expend any level of spell slot to cause you to regain a number of hit points equal to 1d8, plus their spellcasting ability modifier. For each level of the spell slot expended you regain an additional 1d8 hit points.</p>
+		</description>
+		<sheet>
+			<description> When the mending spell is cast on you, it has the following alterations: It has a casting time of 1 action. If you have 0 hit points you become stable. As part of the casting of mending the caster may expend any level of spell slot to cause you to regain a number of hit points equal to 1d8, plus their spellcasting ability modifier. For each level of the spell slot expended you regain an additional 1d8 hit points.</description>
+		</sheet>
+	</element>
+	<element name="False Appearance" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FALSE_APPEARANCE">
+		<description>
+			<p>While you remain motionless, you are indistinguishable from a normal suit of armor.</p>
+		</description>
+		<sheet>
+			<description>While you remain motionless, you are indistinguishable from a normal suit of armor.</description>
+		</sheet>
+	</element>
+	<element name="Soul Transfer" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_SOUL_TRANSFER">
+		<description>
+			<p>You can transfer your consciousness into another suit of armor over the course of a short or long rest. During that time you or another creature performs an hour-long ritual. Over the course of that hour, you must remain within 5 feet of the armor, or the ritual fails. This change may alter your subrace accordingly, based on the desired armor's type. If you are not proficient in the armor you transfer yourself into, you will receive all the detriments that someone normally would by wearing a set of armor they are not proficient with, as well as a -2 penalty to your Armor Class.</p>
+		</description>
+		<sheet>
+			<description>You can transfer your consciousness into another suit of armor over the course of a short or long rest. During that time you or another creature performs an hour-long ritual. Over the course of that hour, you must remain within 5 feet of the armor, or the ritual fails. This change may alter your subrace accordingly, based on the desired armor's type. If you are not proficient in the armor you transfer yourself into, you will receive all the detriments that someone normally would by wearing a set of armor they are not proficient with, as well as a -2 penalty to your Armor Class.</description>
+		</sheet>
+	</element>
+	<element name="Animated Armor Subrace" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_ARMOR_SUBRACE">
+    <description>
+      <p>There are three types of animated armor, Light, Medium and Heavy</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Sub Race" name="Armor Subrace" supports="Armor" />
+    </rules>
+  </element>
+  <element name="Light Armor" type="Sub Race" source="D&amp;D Wiki" id="ID_WIKI_SUBRACE_LIGHT_ARMOR">
+    <supports>Armor</supports>
+    <description>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Dexterity score increases by 2.<br />
+        <span class="feature">Light-Footed</span> Your base walking speed is 35 feet.<br />
+		<span class="feature">Innate Light Armor</span> The armor your soul inhabits is leather armor, making your Armor Class 11 + your Dexterity modifier. If you use your Soul Transfer trait to transfer yourself to another piece of light armor then the formula for calculating your Armor Class becomes that of the armor you transfer yourself to. You are also affected by any other additional properties of the armor such as a Strength requirement, a disadvantage on Stealth checks, a bonus to your Armor Class or even a curse.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Animated Armour)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+	  <stat name="innate speed" value="35" bonus="base" />
+	  <stat name="ac:unarmored" value="1" />
+    </rules>
+  </element>
+  <element name="Medium Armor" type="Sub Race" source="D&amp;D Wiki" id="ID_WIKI_SUBRACE_MEDIUM_ARMOR">
+    <supports>Armor</supports>
+    <description>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Dexterity score increases by 1 and your Strength increases by 1.<br />
+        <span class="feature">Speed</span> Your base walking speed is 30 feet.<br />
+		<span class="feature">Innate Medium Armor</span> The armor your soul inhabits is scale mail, making your Armor Class 14 + your Dexterity modifier, to a maximum Dexterity bonus of 2. If you use your Soul Transfer trait to transfer yourself to another piece of medium armor then the formula for calculating your Armor Class becomes that of the armor you transfer yourself to. You are also affected by any other additional properties of the armor such as a Strength requirement, a disadvantage on Stealth checks, a bonus to your Armor Class or even a curse.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Animated Armour)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+	  <stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Animated Armour)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+	  <stat name="innate speed" value="30" bonus="base" />
+	  <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+	  <stat name="ac:unarmored" value="4" />
+    </rules>
+  </element>
+  <element name="Heavy Armor" type="Sub Race" source="D&amp;D Wiki" id="ID_WIKI_SUBRACE_HEAVY_ARMOR">
+    <supports>Armor</supports>
+    <description>
+      <p>     
+        <span class="feature">Ability Score Increase.</span> Your Strength increases by 2.<br />
+        <span class="feature">Heavy Footed</span> Your base walking speed is 25 feet.<br />
+		<span class="feature">Innate Heavy Armor</span> The armor your soul inhabits is chain mail, making your Armor Class 16. If you use your Soul Transfer trait to transfer yourself to another piece of heavy armor then the formula for calculating your Armor Class becomes that of the armor you transfer yourself to. You are also affected by any other additional properties of the armor such as a Strength requirement, a disadvantage on Stealth checks, a bonus to your Armor Class or even a curse.<br />
+        <span class="feature">Heavy Hitter</span> Your fists are as heavy as your steps. When you hit with an unarmed strike, you can deal 1d6 + your strength modifier bludgeoning damage, instead of the normal damage for an unarmed strike.<br />
+	  </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+		<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_HEAVY_HITTER" />
+	  <stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Animated Armour)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+	  <stat name="innate speed" value="25" bonus="base" />
+	  <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+	  <stat name="ac:unarmored" value="6" />
+	  <stat name="speed" value="-10" bonus="armor" requirements="![str:13]" />
+    </rules>
+  </element>
+  <element name="Heavy Hitter" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_HEAVY_HITTER">
+		<description>
+			<p>Your fists are as heavy as your steps. When you hit with an unarmed strike, you can deal 1d6 + your strength modifier bludgeoning damage, instead of the normal damage for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>Your fists are as heavy as your steps. When you hit with an unarmed strike, you can deal 1d6 + {{strength:modifier}} bludgeoning damage, instead of the normal damage for an unarmed strike.</description>
+		</sheet>
+	</element>
+</elements>

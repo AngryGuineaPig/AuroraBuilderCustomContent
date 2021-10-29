@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Argile.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Argile.xml" />
+		</update>
+	</info>
+	<element name="Argile" type="Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACE_ARGILE">
+		<description>
+			<h4>Physical Description</h4>
+			<p>Argiles are humanoid beings made from clay. Their material and method of construction are the same to that of golems, yet Argiles seem to have been built more closely to human proportion. Argiles are hollow and can break easily when putting under much force. The Hebrew letters carved into head read "emet", meaning "truth". Some legends have said that an Argile is killed by removing the first letter, making the word spell "met", meaning "dead". Otherwise, they may be able to live forever, though no one is certain. The mouth, nose, and eyes on an Argile are merely decoration, yet Argiles are still able to see, hear, smell, and speak. The mouth orifice never opens on its own without breaking the clay.</p>
+      		<h4>Argile Names</h4>
+      		<p>Argile's are named by their creators, therefore there names can vary as wide as the people that make them.</p>
+			<p><strong>Male Names:</strong> Khegme, Guhm, Gadla, Bhor</p>
+      		<p><strong>Female names:</strong> Khauc, Gran, Vuggac, Dahn</p>
+			<h4>Argile Traits</h4>
+			<p>As an Argile you gain the following traits:</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your strength increases by 2 and your constitution increases by 1</p>
+			<p class="indent"><strong><em>Age.</em></strong> Argiles do not age and a created fully matured.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Argiles are usually true neutral or whatever their creators whished.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Argiles often are created to resemble humans, you are between 5-6ft tall and your size is medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet.</p>
+			<p class="indent"><strong><em>Living Construct.</em></strong> You do not need to eat, drink or sleep and are immune to disease. Instead of sleeping you must remain inactive for 4 hours, you are fully aware of your surroundings in this state.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You gain 60ft of darkvision.</p>
+      		<p class="indent"><strong><em>Partial Magic Resistance.</em></strong> You have advantage on Strength and Constitution saves to do with magic damage.</p>
+      		<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write in common and one other Language.</p>
+		</description>
+		<setters>
+			<set name="names" type="male">Khegme, Guhm, Gadla, Bhor</set>
+			<set name="names" type="female">Khauc, Gran, Vuggac, Dahn</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d6">5'6"</set>
+			<set name="weight" modifier="1d6">160 lbs.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Argile)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Argile)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<select type="Language" name="Language (Argile)" supports="Standard||Exotic" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_LIVING_CONSTRUCT" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_PARTIAL_MAGIC_RESISTANCE" />
+    </rules>
+	</element>
+  <element name="Living Construct" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_LIVING_CONSTRUCT">
+		<description>
+			<p>You don't need to eat, drink or sleep. You also have immunity to disease. You must remain inactive for 4 hours a day, you are fully aware in this state.</p>
+		</description>
+		<sheet>
+			<description>You don't need to eat, drink or sleep. You also have immunity to disease. You must remain inactive for 4 hours a day, you are fully aware in this state.</description>
+		</sheet>
+	</element>
+  <element name="Partial Magic Resistance" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_PARTIAL_MAGIC_RESISTANCE">
+		<description>
+			<p>You have advantage on Strength and Constitution saving throws against magic.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Strength and Constitution saving throws against magic.</description>
+		</sheet>
+	</element>
+</elements>

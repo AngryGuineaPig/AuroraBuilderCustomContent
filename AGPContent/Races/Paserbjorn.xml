@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+		<update version="0.0.1">
+			<file name="Paserbjorn.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Paserbjorn.xml" />
+		</update>
+	</info>
+	<element name="Paserbjorn" type="Race" source="D&amp;D Wiki" id="ID_WIKI_RACE_PASERBJORN">
+		<description>
+			<h4>MAJESTIC BUT DANGEROUS</h4>
+			<p>Standing at just below the 7 foot mark Paserbjorn's are hard to miss, especially if not hidden. This size allows for a similar majesty offered to other large species, the majesty of a dragon in flight or a whale swimming. Despite this majesty in their action Paserbjorns are terrifying if pissed off.</p>
+			<p><strong>Paserbjorn Names:</strong> Iorek, Soren, Hjalmur, Iofur, Ragnar</p>
+			<h4>PASERBJORN TRAITS</h4>
+			<p>Your Paserbjorn character has the following racial traits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1, and your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Paserbjorns mature at a similar rate to humans reaching maturity at about 20 and can live a couple decades into their second century.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Paserbjorns by nature tend towards neutral alignments. Wild Paserbjorns tend towards chaotic, Civilized Paserbjorns tend towards lawful.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Paserbjorns range between 6 and 7 feet or above weighing 300 pounds or more. Your size is Medium</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Claws.</em></strong> Due to the claws that Paserbjorns naturally have your unarmed attacks deal 1d6 damage + your strength modifier slashing damage. Additionally if you are not weaing anything on your feet you are able to walk on ice as if it were normal terrain.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Giant.</p>
+		</description>
+		<setters>
+			<set name="names" type="male">Iorek, Soren, Hjalmur, Iofur, Ragnar</set>
+      <set name="names" type="female">Iorek, Soren, Hjalmur, Iofur, Ragnar</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d6">6'1"</set>
+			<set name="weight" modifier="1d6">290 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Paserbjorn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Paserbjorn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_GIANT" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_CLAWS" />
+			<grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_PASERBJORN_SUBRACE" />
+		</rules>
+	</element>
+<element name="Claws" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_CLAWS">
+		<description>
+			<p>Due to the claws that Paserbjorns naturally have your unarmed attacks deal 1d6 damage + {{strength:modifier}} slashing damage. Additionally if you are not wearing anything on your feet you are able to walk on ice as if it were normal terrain.</p>
+		</description>
+		<sheet>
+			<description>Due to the claws that Paserbjorns naturally have your unarmed attacks deal 1d6 damage + {{strength:modifier}} slashing damage. Additionally if you are not wearing anything on your feet you are able to walk on ice as if it were normal terrain.</description>
+		</sheet>
+	</element>
+ <element name="Paserbjorn Subrace" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_PASERBJORN_SUBRACE">
+    <description>
+      <p>There are two types of Paserbjorn. Cultured Paserbjorns and Wild Paserbjorns</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Sub Race" name="Paserbjorn Subrace" supports="Paserbjorn" />
+    </rules>
+  </element>
+  <element name="Cultured Paserbjorn" type="Sub Race" source="D&amp;D Wiki" id="ID_WIKI_SUBRACE_CULTURED_PASERBJORNS">
+    <supports>Paserbjorn</supports>
+    <description>
+      <p>As a Cultured Paserbjorn you are capable of assimilating yourself into civilized society and wish to do so whenever you can.</p>
+      <p class="indent">Cultured Paserbjorns tend to have much softer fur that tends to be well groomed.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span>Your Intelligence score increases by 1.<br />
+        <span class="feature">Linguistics</span>Through your attempts to become more civilized you learned a language<br />
+		<span class="feature">Studious</span>Through your attempts to become more civilized you gained a proficiency<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Paserbjorn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_PASERBJORN_CULTURED_LINGUISTICS" />
+      <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_PASERBJORN_CULTURED_STUDIOUS" />
+    </rules>
+  </element>
+  <element name="Linguistics" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_PASERBJORN_CULTURED_LINGUISTICS">
+    <description>
+      <p>You learn a language through your studies</p>
+    </description>
+    <sheet>
+      <description>You learn a language through your studies</description>
+    </sheet>
+	<rules>
+		<select type="Language" name="Language (Linguistics)" supports="Standard||Exotic"/>	
+	</rules>
+  </element>
+  <element name="Studious" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_PASERBJORN_CULTURED_STUDIOUS">
+    <description>
+      <p>You gain proficiency in either History, Arcana or Medicine</p>
+    </description>
+    <sheet>
+      <description>You gain proficiency in either History, Arcana or Medicine</description>
+    </sheet>
+	<rules>
+	 <select type="Proficiency" name="Skill Proficiency (Studious)" supports="ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_ARCANA" />	
+	</rules>
+  </element>
+  <element name="Wild Paserbjorn" type="Sub Race" source="D&amp;D Wiki" id="ID_WIKI_SUBRACE_WILD_PASERBJORNS">
+    <supports>Paserbjorn</supports>
+    <description>
+      <p>As a Wild Paserbjorn you are more rugged than your cultured siblings, far more capable in the wilds over the cities.</p>
+      <p class="indent">Wil Paserbjorns tend ragged and matted fur that hasn't been groomed very well.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span>Your Wisdom score increases by 1.<br />
+        <span class="feature">Arctic Explorer</span>Your skills at survival allow you proficiency in the Survival skill, additionally you gain resistance to the cold.<br />
+		<span class="feature">Eye for Deception</span>You gain advantage on Insight checks.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Paserbjorn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_PASERBJORN_WILD_ARCTIC_EXPLORER" />
+      <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_PASERBJORN_WILD_EYE_FOR_DECEPTION" />
+    </rules>
+  </element>
+  <element name="Arctic Explorer" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_PASERBJORN_WILD_ARCTIC_EXPLORER">
+    <description>
+      <p>Your skills at survival allow you proficiency in the Survival skill, additionally you gain resistance to the cold.</p>
+    </description>
+    <sheet>
+      <description>Your skills at survival allow you proficiency in the Survival skill, additionally you gain resistance to the cold.</description>
+    </sheet>
+	<rules>
+		<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
+		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+	</rules>
+  </element>
+  <element name="Eye for Deception" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_PASERBJORN_WILD_EYE_FOR_DECEPTION">
+    <description>
+      <p>You gain advantage on Insight checks.</p>
+    </description>
+    <sheet>
+      <description>You gain advantage on Insight checks.</description>
+    </sheet>
+  </element>
+</elements>

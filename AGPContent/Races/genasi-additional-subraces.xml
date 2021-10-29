@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+		<update version="0.0.1">
+			<file name="genasi-additional-subraces.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/genasi-additional-subraces.xml" />
+		</update>
+	</info>
+  <element name="Ash Genasi" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_GENASI_ASH">
+    <supports>Genasi</supports>
+    <description>
+      <p>As an ash genasi, your parents are air and fire genasi. As fickle as wind and flame, your moods are volatile but swift to pass.</p>
+      <p class="indent">Ash genasi typically have ash-grey skin tones, red to grey eyes and hair ranging from coal black to ash white. Ash genasi voices might sound like the wind cause by a conflagration, and may be accompanied by a constant warm breeze.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span>Your Dexterity score increases by 1.<br />
+        <span class="feature">Unending Breath.</span>You can hold your breath indefinitely while you’re not incapacitated.<br />
+        <span class="feature">Darkvision.</span>You have 60ft of Darkvision<br />
+        <span class="feature">Ashen Born.</span>You're acclimated to high altitude, including elevations above 20,000ft. You are also adapted to hot climates.<br />
+        <span class="feature">Touch the Conflagration.</span>You know the <i>control flames</i> cantrip. Once you reach 3rd level you can cast <i>feather fall</i> spell at 1st level once per long rest.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ash Genasi)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Vision" id="ID_VISION_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_ASH_UNENDING_BREATH" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_ASH_ASHEN_BORN" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_ASH_TOUCH_THE_CONFLAGRATION" />
+    </rules>
+  </element>
+  <element name="Unending Breath" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_ASH_UNENDING_BREATH">
+    <description>
+      <p>You can hold your breath indefinitely while you’re not incapacitated.</p>
+    </description>
+    <sheet>
+      <description>You can hold your breath indefinitely while you’re not incapacitated.</description>
+    </sheet>
+  </element>
+  <element name="Ashen Born" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_ASH_ASHEN_BORN">
+    <description>
+      <p>You're acclimated to high altitude, including elevations above 20,000ft. You are also adapted to hot climates.</p>
+    </description>
+    <sheet>
+      <description>You're acclimated to high altitude, including elevations above 20,000ft. You are also adapted to hot climates.</description>
+    </sheet>
+  </element>
+  <element name="Reach to the Blaze" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_ASH_TOUCH_THE_CONFLAGRATION">
+    <description>
+      <p>Touch the Conflagration. You know the <i>control flames</i> cantrip. Once you reach 3rd level you can cast <i>feather fall</i> spell at 1st level once per long rest.</p>
+    </description>
+    <sheet>
+      <description>You know the <i>control flames</i> cantrip. (Constitution)</description>
+      <description level="3">You know the <i>control flames</i> cantrip. Once you reach 3rd level you can cast <i>feather fall</i> spell at 1st level once per long rest. (Constitution)</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_FLAMES" />
+      <grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="3" />
+    </rules>
+  </element>
+  <element name="Dust Genasi" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_GENASI_DUST">
+    <supports>Genasi</supports>
+    <description>
+      <p>As a dust genasi, your parents are air and earth genasi. Solid yet shifting, your mind is as unknowable as a desert's shifting sands.</p>
+      <p class="indent">Dust genasi typically have pale skin, hair and eyes; all in light earthen tones. Some always have dust falling from their bodies whilst others are accompanied by a stiff dry breeze.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span>Your Dexterity score increases by 1.<br />
+        <span class="feature">Unending Breath.</span>You can hold your breath indefinitely while you’re not incapacitated.<br />
+        <span class="feature">Born of Dust.</span>You have resistance to force damage. You also don't suffer disadvantage on perception checks in strong winds.<br />
+        <span class="feature">Caress of Silt.</span>You know the <i>mage hand</i> cantrip, the hand appearing as a gust of dust. Once you reach 3rd level, you can cast <i>dust devil</i> at 1st level one per long rest.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Dust Genasi)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_DUST_UNENDING_BREATH" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_DUST_BORN_OF_DUST" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_DUST_CARESS_OF_SILT" />
+    </rules>
+  </element>
+  <element name="Unending Breath" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_DUST_UNENDING_BREATH">
+    <description>
+      <p>You can hold your breath indefinitely while you’re not incapacitated.</p>
+    </description>
+    <sheet>
+      <description>You can hold your breath indefinitely while you’re not incapacitated.</description>
+    </sheet>
+  </element>
+  <element name="Born of Dust" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_DUST_BORN_OF_DUST">
+    <description>
+      <p>You have resistance to force damage. You also don't suffer disadvantage on perception checks in strong winds.</p>
+    </description>
+    <sheet>
+      <description>You have resistance to force damage. You also don't suffer disadvantage on perception checks in strong winds.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+    </rules>
+  </element>
+  <element name="Caress of Silt" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_DUST_CARESS_OF_SILT">
+    <description>
+      <p>You know the <i>mage hand</i> cantrip, the hand appearing as a gust of dust. Once you reach 3rd level, you can cast <i>dust devil</i> at 1st level one per long rest.</p>
+    </description>
+    <sheet>
+      <description>You know the <i>mage hand</i> cantrip, the hand appearing as a gust of dust. (Constitution)</description>
+      <description level="3">You know the <i>mage hand</i> cantrip, the hand appearing as a gust of dust. Once you reach 3rd level, you can cast <i>dust devil</i> at 1st level one per long rest. (Constitution)</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" />
+      <grant type="Spell" id="ID_XGTE_SPELL_DUST_DEVIL" level="3" />
+    </rules>
+  </element>
+  <element name="Ice Genasi" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_GENASI_ICE">
+    <supports>Genasi</supports>
+    <description>
+      <p>As an ice genasi your parents are water and air genasi. Wandering like waves and wind, you have a curious and confident spirit.</p>
+      <p class="indent">Ice genasi are cold and clammy to the touch, an impression reinforced by pale or icy blue skin, hair and eyes. They smell of fresh snow and winter breeze, and some have voices like the cracking of ice.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span>Your Strength score increases by 1.<br />
+        <span class="feature">Unending Breath.</span>You can hold your breath indefinitely while you’re not incapacitated.<br />
+        <span class="feature">Born of Frost.</span>You have resistance to cold damage. You are acclimated to high altitude, including elevations above 20,000ft.<br />
+        <span class="feature">Call of the Blizzard.</span>You know the <i>shape water</i> cantrip. Once you reach 3rd level, you can cast <i>Armor of Agathys</i> at 1st level one per long rest.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ice Genasi)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_ICE_UNENDING_BREATH" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_ICE_BORN_OF_FROST" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_ICE_CALL_OF_THE_BLIZZARD" />
+    </rules>
+  </element>
+  <element name="Unending Breath" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_ICE_UNENDING_BREATH">
+    <description>
+      <p>You can hold your breath indefinitely while you’re not incapacitated.</p>
+    </description>
+    <sheet>
+      <description>You can hold your breath indefinitely while you’re not incapacitated.</description>
+    </sheet>
+  </element>
+  <element name="Born of Frost" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_ICE_BORN_OF_FROST">
+    <description>
+      <p>You have resistance to cold damage. You are acclimated to high altitude, including elevations above 20,000ft.</p>
+    </description>
+    <sheet>
+      <description>You have resistance to cold damage. You are acclimated to high altitude, including elevations above 20,000ft.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+    </rules>
+  </element>
+  <element name="Call of the Blizzard" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_ICE_CALL_OF_THE_BLIZZARD">
+    <description>
+      <p>You know the <i>Shape water</i> cantrip. Once you reach 3rd level, you can cast <i>Armor of Agathys</i> at 1st level one per long rest.</p>
+    </description>
+    <sheet>
+      <description>You know the <i>Shape water</i> cantrip. (Constitution)</description>
+      <description level="3">You know the <i>Shape water</i> cantrip. Once you reach 3rd level, you can cast <i>Armor of Agathys</i> at 1st level one per long rest. (Constitution)</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" />
+      <grant type="Spell" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS" level="3" />
+    </rules>
+  </element>
+  <element name="Ooze Genasi" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_GENASI_OOZE">
+    <supports>Genasi</supports>
+    <description>
+      <p>As an Ooze genasi your parents are water and earth genasi. You have the harsh and hungry nature of the swamp. Your decision tend to be slow moving, but always have a sense of inevitable persistence</p>
+      <p class="indent">Ooze genasi have skin of earthen tones, usually green or brown. Smelling of swamp and with jet black eyes they can be unnerving.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span>Your Strength score increases by 1.<br />
+        <span class="feature">Swamp Born.</span>You have advantage on saving throws against poison and resistance to poison damage. You automatically succeed against quicksand.<br />
+        <span class="feature">Amphibious.</span>You can breathe both air and water<br />
+        <span class="feature">Walk of Oblivion.</span>You know the <i>Druidcraft</i> cantrip. Once you reach 3rd level, you can cast <i>Ray of Sickness</i> at 1st level one per long rest.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ooze Genasi)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_OOZE_AMPHIBIOUS" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_OOZE_SWAMP_BORN" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_OOZE_WALK_OF_OBLIVION" />
+    </rules>
+  </element>
+  <element name="Amphibious" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_OOZE_AMPHIBIOUS">
+    <description>
+      <p>You can breathe both air and water.</p>
+    </description>
+    <sheet>
+      <description>You can breathe both air and water.</description>
+    </sheet>
+  </element>
+  <element name="Swamp Born" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_OOZE_SWAMP_BORN">
+    <description>
+      <p>You have advantage on saving throws against poison and resistance to poison damage. You automatically succeed against quicksand.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on saving throws against poison and resistance to poison damage. You automatically succeed against quicksand.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+    </rules>
+  </element>
+  <element name="Walk of Oblivion" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_OOZE_WALK_OF_OBLIVION">
+    <description>
+      <p>You know the <i>Druidcraft</i> cantrip. Once you reach 3rd level, you can cast <i>Ray of Sickness</i> at 1st level one per long rest.</p>
+    </description>
+    <sheet>
+      <description>You know the <i>Druidcraft</i> cantrip, the hand appearing as a gust of dust. (Constitution)</description>
+      <description level="3">You know the <i>Druidcraft</i> cantrip. Once you reach 3rd level, you can cast <i>Ray of Sickness</i> at 1st level one per long rest. (Constitution)</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+      <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" level="3" />
+    </rules>
+  </element>
+  <element name="Steam Genasi" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_GENASI_STEAM">
+    <supports>Genasi</supports>
+    <description>
+      <p>As a steam genasi, your parents are fire and water genasi. You have a personality like the lapping of waves and the dancing of flames.</p>
+      <p class="indent">Steam genasi typically have pale skin, hair and eyes that range in colour from red to blue. Steam always seems to emanate from their bodies and moisture seems to collect on their skin.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span>Your Wisdom score increases by 1.<br />
+        <span class="feature">Hold Breath.</span>You can hold your breath for a number of hours = you Constitution modifier.<br />
+        <span class="feature">Fire resistance.</span>You have resistance to fire damage<br />
+        <span class="feature">Vestige of Vapor.</span>You know the <i>Acid splash</i> cantrip. Once you reach 3rd level, you can cast <i>Fog Cloud</i> at 1st level one per long rest.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Steam Genasi)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_STEAM_HOLD_BREATH" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_STEAM_VESTIGE_OF_VAPOR" />
+    </rules>
+  </element>
+  <element name="Hold Breath" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_STEAM_HOLD_BREATH">
+    <description>
+      <p>You can hold your breath for {{constitution:modifier}} hours.</p>
+    </description>
+    <sheet>
+      <description>You can hold your breath for {{constitution:modifier}} hours.</description>
+    </sheet>
+  </element>
+  <element name="Vestige of Vapor" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_STEAM_VESTIGE_OF_VAPOR">
+    <description>
+      <p>You know the <i>Acid Splash</i> cantrip. Once you reach 3rd level, you can cast <i>Fog Cloud</i> at 1st level one per long rest.</p>
+    </description>
+    <sheet>
+      <description>You know the <i>Acid Splash</i> cantrip. (Constitution)</description>
+      <description level="3">You know the <i>Acid Splash</i> cantrip. Once you reach 3rd level, you can cast <i>Fog Cloud</i> at 1st level one per long rest. (Constitution)</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_ACID_SPLASH" />
+      <grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="3" />
+    </rules>
+  </element>
+  <element name="Magma Genasi" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_GENASI_MAGMA">
+    <supports>Genasi</supports>
+    <description>
+      <p>As a magma genasi, your parents are fire and earth genasi. You tend to avoid rash decisions, but are liable to explosions of hot and volatile anger.</p>
+      <p class="indent">Nearly all magma genasi are feverishly hot as if burning inside, an impression reinforced by the fissures in their basalt-black flesh, from which a dull red light glows. Magma genasi voices might sound like popping lava, and their eyes may flare when angered. Some are accompanied by the scent of brimstone.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span>Your Intelligence score increases by 1.<br />
+        <span class="feature">Darkvision.</span>You have 60ft of darkvision<br />
+        <span class="feature">Volcanic legacy.</span>You have resistance to fire damage additionally volcanic or rough earth terrains are no longer considered difficult terrains. You are adapted to hot climates.<br />
+        <span class="feature">Summons of Obsidian.</span>You know the <i>Mold Earth</i> cantrip. Once you reach 3rd level, you can cast <i>Searing Smite</i> at 1st level one per long rest.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Magma Genasi)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Vision" id="ID_VISION_DARKVISION" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_MAGMA_VOLCANIC_LEGACY" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_MAGMA_SUMMONS_OF_OBSIDIAN" />
+    </rules>
+  </element>
+  <element name="Volcanic Legacy" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_MAGMA_VOLCANIC_LEGACY">
+    <description>
+      <p>You have resistance to fire damage additionally volcanic or rough earth terrains are no longer considered difficult terrains. You are adapted to hot climates.</p>
+    </description>
+    <sheet>
+      <description>You have resistance to fire damage additionally volcanic or rough earth terrains are no longer considered difficult terrains. You are adapted to hot climates.</description>
+    </sheet>
+  </element>
+  <element name="Vestige of Vapor" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_MAGMA_SUMMONS_OF_OBSIDIAN">
+    <description>
+      <p>You know the <i>Mold Earth</i> cantrip. Once you reach 3rd level, you can cast <i>Searing Smite</i> at 1st level one per long rest.</p>
+    </description>
+    <sheet>
+      <description>You know the <i>Mold Earth</i> cantrip. (Constitution)</description>
+      <description level="3">You know the <i>Mold Earth</i> cantrip. Once you reach 3rd level, you can cast <i>Searing Smite</i> at 1st level one per long rest. (Constitution)</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" />
+      <grant type="Spell" id="ID_PHB_SPELL_SEARING_SMITE" level="3" />
+    </rules>
+  </element>
+  <element name="Storm Genasi" type="Sub Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_SUBRACE_GENASI_STORM">
+    <supports>Genasi</supports>
+    <description>
+      <p>As a storm genasi, your lineage is a blend of multiple different genasi, including blended genasi such as ice or ash, and pure genasi such as fire. You have some inherited fluctuating passions and great raw power from diverse lineage.</p>
+      <p class="indent">The storm manifests differently from one individual to the next. Storm genasi come in a great variety of vibrant electric colors such as yellow or blue, and more toned down thunder cloud greys. Some storm genasi have little crackles of electricity all over them, some have voices like booming thunder.</p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span>Your Charisma score increases by 1.<br />
+        <span class="feature">Storm Born.</span>You have resistance to lightning and thunder damage. You do not suffer disadvantage on perception checks due to heavy precipitation.<br />
+        <span class="feature">Heart of the Storm.</span>You know the <i>Mold Earth</i> cantrip. Once you reach 3rd level, you can cast <i>Searing Smite</i> at 1st level one per long rest.<br />
+      </p>  
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Storm Genasi)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_STORM_STORM_BORN" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_GENASI_STORM_HEART_OF_THE_STORM" />
+    </rules>
+  </element>
+  <element name="Storm Born" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_STORM_STORM_BORN">
+    <description>
+      <p>You have resistance to lightning and thunder damage. You do not suffer disadvantage on perception checks due to heavy precipitation.</p>
+    </description>
+    <sheet>
+      <description>You have resistance to lightning and thunder damage. You do not suffer disadvantage on perception checks due to heavy precipitation.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+    </rules>
+  </element>
+  <element name="Heart of the Storm" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_GENASI_STORM_HEART_OF_THE_STORM">
+    <description>
+      <p>You know the <i>Shocking Grasp</i> cantrip. Once you reach 3rd level, you can cast <i>Thunderwave</i> at 1st level one per long rest.</p>
+    </description>
+    <sheet>
+      <description>You know the <i>Shocking Grasp</i> cantrip. (Constitution)</description>
+      <description level="3">You know the <i>Shocking Grasp</i> cantrip. Once you reach 3rd level, you can cast <i>Thunderwave</i> at 1st level one per long rest. (Constitution)</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" />
+      <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="3" />
+    </rules>
+  </element>
+</elements>

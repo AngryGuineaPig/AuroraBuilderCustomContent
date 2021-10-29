@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+		<update version="0.0.1">
+			<file name="Ikwiikwii.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Ikwiikwii.xml" />
+		</update>
+	</info>
+	<element name="Ikwiikwii" type="Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACE_IKWIIKWII">
+		<description>
+      		<p>Ikwiikwii resemble bipedal owls with no wings and taloned hands. Some suspect they are a variant from the first owlbears who were selected at a smaller size. They are still stocky, sharing their larger cousins muscular build</p>
+			<p>Ikwiikwii prefer mountains and boreal forests, but they are hardy and capable hunters, and some live in the most barren of deserts. Rarely farmers most Ikwiikwii share an owlbears fury in combat and pride themselves on their hunting abilities.</p>
+			<p>Ikwiikwii mate for life as a general rule, and their families rarely exceed four individuals at a time. If a family grows too large the eldest child is encouraged to leave the nest and start their own families. The moment that the eldest leaves is when they become an adult, often being a great celebration where they are showered with gifts.</p>
+			<p>Ikwiikwii are shy, cautious and slow to trust, however their trust is a strong bond that they make with people.</p>
+      		<h4>Ikwiikwii Names</h4>
+      		<p>Ikwiikwii names stem often from flowers, as a ritual when a pregnancy is discovered the mother is blindfolded and randomly chooses a flower, the name of which becomes the child's name. Surnames are used for familial differentiation and stem from colours.</p>
+			<p><strong>Ikwiikwii Names:</strong> Violet, Candystick, Twayblade, Fairy, Fireweed, Kinnikinnick, Aconite, Ageratum, Aster, Azelea</p>
+      		<p><strong>Surnames:</strong>Aeneous, Amaranthine, Atrous, Badious, Cardinal, Celeste, Erythaean, Filemot, Hyacinthine, Lovat.</p>
+			<h4>Ikwiikwii Traits</h4>
+			<p>As an Ikwiikwii you gain the following traits:</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom increases by 2 and your strength increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Ikwiikwii reach maturity at 10 years, and live up to 60.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Ikwiikwii often tend towards neutral and good alignments</p>
+			<p class="indent"><strong><em>Size.</em></strong> Ikwiikwii are about 2-3 feet tall and weigh around 40lbs, your size is small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have darkvision up to 60 feet.</p>
+			<p class="indent"><strong><em>Keen Sight.</em></strong> You gain advantage on perception checks that rely on sight.</p>
+      		<p class="indent"><strong><em>Leverage.</em></strong> You can use weapons with the heavy property without the standard penalties for your small size.</p>
+      		<p class="indent"><strong><em>Owlbear Weaponry.</em></strong> You have claws that act as natural weapons dealing 1d4 slashing damage + your strength modifier.</p>
+      		<p class="indent"><strong><em>Hybrid Nature.</em></strong> You are a monstrosity as well as a humanoid.</p>
+      		<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write in common.</p>
+		</description>
+		<setters>
+			<set name="names" type="male">Violet, Candystick, Twayblade, Fairy, Fireweed, Kinnikinnick, Aconite, Ageratum, Aster, Azelea</set>
+			<set name="names" type="female">Violet, Candystick, Twayblade, Fairy, Fireweed, Kinnikinnick, Aconite, Ageratum, Aster, Azelea</set>
+      		<set name="names" type="nickname">Aeneous, Amaranthine, Atrous, Badious, Cardinal, Celeste, Erythaean, Filemot, Hyacinthine, Lovat.</set>
+			<set name="names-format">{{name}} ({{nickname}})</set>
+			<set name="height" modifier="2d6">2'0"</set>
+			<set name="weight" modifier="1d6">35 lbs.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+      		<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ikwiikwii)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Ikwiikwii)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_KEEN_SIGHT" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_LEVERAGE" />
+      		<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_OWLBEAR_WEAPONRY" />
+      		<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_HYBRID_NATURE" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+    </rules>
+	</element>
+  <element name="Keen Sight" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_KEEN_SIGHT">
+		<description>
+			<p>You gain advantage on perception checks that rely on sight.</p>
+		</description>
+		<sheet>
+			<description>You gain advantage on perception checks that rely on sight.</description>
+		</sheet>
+	</element>
+  <element name="Leverage" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_LEVERAGE">
+		<description>
+			<p>You no longer have disadvantage on weapon attacks with weapons with the heavy property.</p>
+		</description>
+		<sheet>
+			<description>You no longer have disadvantage on weapon attacks with weapons with the heavy property.</description>
+		</sheet>
+	</element>
+  <element name="Owlbear Weaponry" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_OWLBEAR_WEAPONRY">
+		<description>
+			<p>You have natural claws that mean that your unarmed attacks deal 1d4 + your strength modifier in slashing damage. Additionally it grants you a 25ft climbing speed.</p>
+		</description>
+		<sheet>
+			<description>You have natural claws that mean that your unarmed attacks deal 1d4 + {{strength:modifier}} in slashing damage. Additionally it grants you a 25ft climbing speed.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:climb" value="25" bonus="base" />
+		</rules>
+	</element>
+  <element name="Hybrid Nature" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_HYBRID_NATURE">
+		<description>
+			<p>You count as both a monstrosity and humanoid.</p>
+		</description>
+		<sheet>
+			<description>You count as both a monstrosity and humanoid.</description>
+		</sheet>
+	</element>
+</elements>

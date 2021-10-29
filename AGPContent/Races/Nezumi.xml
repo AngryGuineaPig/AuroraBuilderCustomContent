@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+		<update version="0.0.1">
+			<file name="Nezumi.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Nezumi.xml" />
+		</update>
+	</info>
+	<element name="Nezumi" type="Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACE_NEZUMI">
+		<description>
+      <p>The Nezumi, or "ratlings" as they are often called by humans, as a race of bipedal ratlike humanoids. They are an ancient race that, before their fall, lived in grand cities in a mighty empire. On an apocalyptic day Nezumi legend dubs "The Terrible Day when Air became Fire and Heaven Fell From Its Perch to Crush Our Glorious Home Beneath its Blackened Corpse," the empire of ratlings was destroyed and the region known to them as the Shadowlands was born. In the aftermath of that event, the ratlings have become hardy and wily scavengers, eking out a meager existence in the midst of the land's greatest horrors.</p>
+			<h4>Life as a Ratling</h4>
+			<p>Nezumi look like nothing so much as humanoid rats. They stand upright at similar heights to humans, with prominent teeth, ears and snouts. Their bodies are often covered in grey rough fur. They are wild and fierce, they have natural instincts to scavenge and protect each other fiercely.</p>
+			<h4>Names</h4>
+      <p>Nezumi names are often 3-5 syllables, consisting of guttural chokes, clicks and other harsher noises often separated by apostrophe. Oh- can be added when a Nezumi is given the title of teacher or holder of great knowledge. The ending of their names are their clan names and if one is of a high standing in the clan Ti- is added before the clan name. Nezumi often adopt nicknames for other creatures to refer to them by.</p>
+      <p><strong>Nezumi Names:</strong> At'tok'tuk, Chet'rop'tik, Chit'i'tchik'kan, Mack'uk, Mat'irt'chuck, Mat'tek, Oh-Chi'Chek, Rik'tik'Ti-Chek, Ropp'teh'tch</p>
+      <p><strong>Nicknames</strong>Bonegnawer, Bucktooth, Catcatcher, Forkear, Glintclaw.</p>
+			<h4>NEZUMI TRAITS</h4>
+			<p>Your Nezumi character has the following racial traits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1, and your Constitution score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Nezumi reach maturity around age 15 and can live up to 200, any Nezumi past age 50 are considered old as their lives are often short and end violently</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Nezumi tend towards chaotic alignment, but remain neutral in the choosing of good and evil.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Nezumi have a similar height range to humans, however they are often on the smaller size in terms of weight. Your size is Medium</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+      <p class="indent"><strong><em>Darkvision.</em></strong> You have 60ft of darkvision.</p>
+      <p class="indent"><strong><em>Keen Smell.</em></strong> You have advantage on perception checks that rely on smell.</p>
+      <p class="indent"><strong><em>Natural Skulkers.</em></strong> You are proficient in the stealth skill.</p>
+      <p class="indent"><strong><em>Nezumi Resilience.</em></strong> You have advantage on saving throws against poison and disease, and you have resistance to poison damage.</p>
+			<p class="indent"><strong><em>Claws.</em></strong> Due to the claws that Nezumi naturally have your unarmed attacks deal 1d4 damage + your strength modifier slashing damage.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and can use clicks and other noises to communicate with other Nezumi.</p>
+		</description>
+		<setters>
+			<set name="names" type="male">At'tok'tuk, Chet'rop'tik, Chit'i'tchik'kan, Mack'uk, Mat'irt'chuck, Mat'tek, Oh-Chi'Chek, Rik'tik'Ti-Chek, Ropp'teh'tch</set>
+      <set name="names" type="female">At'tok'tuk, Chet'rop'tik, Chit'i'tchik'kan, Mack'uk, Mat'irt'chuck, Mat'tek, Oh-Chi'Chek, Rik'tik'Ti-Chek, Ropp'teh'tch</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d6">6'1"</set>
+			<set name="weight" modifier="1d6">290 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Nezumi)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Nezumi)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <grant type="Vision" id="ID_VISION_DARKVISION" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_NEZUMI_CLAWS" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_KEEN_SMELL" />
+      <grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_NEZUMI_RESILIENCE" />
+		</rules>
+	</element>
+  <element name="Claws" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_NEZUMI_CLAWS">
+      <description>
+        <p>Due to the claws that Nezumis naturally have your unarmed attacks deal 1d4 damage + {{strength:modifier}} slashing damage.</p>
+      </description>
+      <sheet>
+        <description>Due to the claws that Nezumis naturally have your unarmed attacks deal 1d4 damage + {{strength:modifier}} slashing damage.</description>
+      </sheet>
+    </element>
+    <element name="Keen Smell" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_KEEN_SMELL">
+      <description>
+        <p>You have advantage on perception checks that rely on smell.</p>
+      </description>
+      <sheet>
+        <description>You have advantage on perception checks that rely on smell.</description>
+      </sheet>
+    </element>
+    <element name="Nezumi Resistance" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_NEZUMI_RESILIENCE">
+      <description>
+        <p>You have advantage on saving throws against poison and disease, and you have resistance to poison damage.</p>
+      </description>
+      <sheet>
+        <description>You have advantage on saving throws against poison and disease, and you have resistance to poison damage.</description>
+      </sheet>
+    </element>
+</elements>

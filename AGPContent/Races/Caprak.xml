@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Caprak.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Caprak.xml" />
+		</update>
+	</info>
+	<element name="Caprak" type="Race" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACE_CAPRAK">
+		<description>
+      		<p>The Caprak are a race of goat-like humanoids They have cloven hooves, goat like legs, tail, as well as fur that covers their entire body and a goat like head with a shorter muzzle. They have hair on top of their heads similar to other humanoids and their eyes have the a horizontal rectangular pupil similar to goats but a little more square.</p>
+			<p class="indent">Their fur can have the same colors and patterns of most goats, it can be pure white or different shades of brown or black. It can be of a solid color or with patches or spots and arranged in all kind of patterns.</p>
+			<h4>THE EXPERIMENT OF THE MAD WIZARD</h4>
+ 			<p>Caprak are the result of a twisted experiment by a mad elf wizard. They were used as a slave force for him while he researched ways to become immortal inside his facility in the middle of the forest.</p>
+			<p class="indent">For years they endured the abuses of their master until one day when they revolted. During the fight many caprak where killed but they finally killed their master with improvised spear.</p>
+			<h4>LOOKING FOR A PLACE IN THE WORLD</h4>
+ 			<p>After breaking free of their master, they were found by elven guards and taken to the capital to decide their fate by the council of elders. After much deliberation both in favor of letting the caprak free or eliminating them for being considered an aberration. Finally an elf life cleric, named Thiala Firhael convinced the majority of the council to let the caprak leave.</p>
+			<p class="indent">Guided by the young elf and fearing a change of heart by the council, the caprak headed towards the neighboring human kingdom, that was tolerant enough to let the settle in. Thankful for the divine intervention that saved them and the tolerance showed by the humans they became quite religious and loyal to the gods and the new kingdom they were now part of.</p>
+			<h4>CAPRAK TRAITS</h4>
+			<p>As a Caprak you gain the following traits:</p>
+			<p><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2, and your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Caprak mature at the same rate than humans and have a similar lifespan.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Caprak tend toward neutral good. They uphold the law of the kingdom they live in but value their freedom. Having been freed from slavery they hate the practice and those that do it.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Caprak range between 5 to 6 feet in height with lighter builds than humans, your size is medium Speed. Your base walking speed is 35 feet.</p>
+			<p class="indent"><strong><em>Able Climber.</em></strong> You have a climbing speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common and Elvish.</p>
+			<p class="indent"><strong><em>Herd Mentality.</em></strong> As long as you can see an ally within 15 feet of you, you have advantage on saving throws against being Charmed or Frightened.</p>
+			<p class="indent"><strong><em>Headbutt.</em></strong> You can use your head and horns to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to 1d6 + your Strength modifier.</p>
+			<p class="indent"><strong><em>Ramming Charge.</em></strong> If you move at least 20 feet in a straight line and then hit a large or smaller creature with your headbutt trait, (at least one attack) you can immediately use a bonus action to force the target of your attack to make a Strength saving throw, if it fails you can choose to either push it 10 feet away from you or knock it prone. The DC equals 8 + your proficiency bonus + your strength modifier.</p>
+			<p class="indent"><strong><em>Faithful Leaps.</em></strong> Whenever you make a long or high jump, you can add up to 5 feet to the distance you cover, even when making a standing jump. This extra distance costs movement as normal.</p>
+			<p class="indent"><strong><em>Sure-footed.</em></strong> You have advantage on Strength and Dexterity saving throws made against effects that would knock you prone.</p>
+		</description>
+		<setters>
+		</setters>
+		<sheet display="false" />
+		<rules>
+      		<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+		  	<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Caprak)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+		  	<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Caprak)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="35" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_ELVISH" />
+			<stat name="speed:climb" value="speed" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_HEARD_MENTALITY" />
+			<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_HEADBUTT" />
+      		<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_RAMMING_CHARGE" />
+      		<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_FAITHFUL_LEAPS" />
+     	 	<grant type="Racial Trait" id="ID_RDDT_RACIAL_TRAIT_SURE_FOOTED" />
+    </rules>
+	</element>
+  <element name="Heard Mentality" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_HEARD_MENTALITY">
+		<description>
+			<p>As long as you can see an ally within 15 feet of you, you have advantage on saving throws against being Charmed or Frightened.</p>
+		</description>
+		<sheet>
+			<description>As long as you can see an ally within 15 feet of you, you have advantage on saving throws against being Charmed or Frightened.</description>
+		</sheet>
+	</element>
+  <element name="Headbutt" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_HEADBUTT">
+		<description>
+			<p>You can use your head and horns to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to 1d6 + your Strength modifier.</p>
+		</description>
+		<sheet>
+			<description>You can use your head and horns to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to 1d6 + {{strength:modifier}}.</description>
+		</sheet>
+	</element>
+  <element name="Ramming Charge" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_RAMMING_CHARGE">
+		<description>
+			<p>If you move at least 20 feet in a straight line and then hit a large or smaller creature with your headbutt trait, (at least one attack) you can immediately use a bonus action to force the target of your attack to make a Strength saving throw, if it fails you can choose to either push it 10 feet away from you or knock it prone. The DC equals 8 + your proficiency bonus + your strength modifier.</p>
+		</description>
+		<sheet>
+			<description>If you move at least 20 feet in a straight line and then hit a large or smaller creature with your headbutt trait, (at least one attack) you can immediately use a bonus action to force the target of your attack to make a Strength saving throw, if it fails you can choose to either push it 10 feet away from you or knock it prone. The DC equals {{ramming:dc}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ramming:dc" value="8" />
+			<stat name="ramming:dc" value="proficiency" />
+			<stat name="ramming:dc" value="strength:modifier" />
+		</rules>
+	</element>
+  <element name="Faithful Leaps" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_FAITHFUL_LEAPS">
+		<description>
+			<p>Whenever you make a long or high jump, you can add up to 5 feet to the distance you cover, even when making a standing jump. This extra distance costs movement as normal.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a long or high jump, you can add up to 5 feet to the distance you cover, even when making a standing jump. This extra distance costs movement as normal.</description>
+		</sheet>
+	</element>
+  <element name="Sure Footed" type="Racial Trait" source="Reddit : Unearthed Arcana" id="ID_RDDT_RACIAL_TRAIT_SURE_FOOTED">
+		<description>
+			<p>You have advantage on Strength and Dexterity saving throws made against effects that would knock you prone.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Strength and Dexterity saving throws made against effects that would knock you prone.</description>
+		</sheet>
+	</element>
+</elements>
