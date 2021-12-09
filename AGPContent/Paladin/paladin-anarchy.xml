@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="paladin-anarchy.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Paladin/paladin-anarchy.xml" />
+		</update>
+	</info>
+	<element name="Oath of Anarchy" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_OATH_OF_ANARCHY">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of Anarch swears paladins to ideals of liberty, collectivism and a rejection of hierarchical rulership.</p>
+			<h5>TENETS OF ANARCHY</h5>
+			<p class="indent"><b><i>Liberty.</i></b> Chains imposed by unjust authority are meant to be broken.</p>
+			<p class="indent"><b><i>Revolution.</i></b> Change is only brought through sudden transformational struggle.</p>
+			<p class="indent"><b><i>Independence.</i></b> There shall be no lords over others. Power is best left in the hands of the people.</p>
+			<p class="indent"><b><i>Equity.</i></b> Each individual has equal worth. Hierarchies only lead to injustice.</p>
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_OATH_SPELLS" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_AURA_OF_DEFIANCE" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_FREE_SPIRITED" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_EXALTED_INSURGENT" />
+		</description>
+		<sheet display="false">
+			<description>The Oath of Anarch swears paladins to ideals of liberty, collectivism and a rejection of hierarchical rulership.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_OATH_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_AURA_OF_DEFIANCE" level="7"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_FREE_SPIRITED" level="15"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_EXALTED_INSURGENT" level="20"/>
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<p class="indent"></p>
+			<h5>Oath of Anarchy Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Bless, Expeditious Retreat</em></td></tr>
+				<tr><td>5th</td><td><em>Pass Without Trace, Shatter</em></td></tr>
+				<tr><td>9th</td><td><em>Dispel Magic, Haste</em></td></tr>
+				<tr><td>13th</td><td><em>Dimension Door, Freedom of Movement</em></td></tr>
+				<tr><td>17th</td><td><em>Passwall, Seeming</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You gain oath spells at the paladin levels listed.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BLESS" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASSWALL" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY">
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following Channel Divinity options.</p>
+			<p class="indent"><b><i>Syndical Solidarity.</i></b> You draw out collective strength among your allies in dire moments. As an action, choose up to six friendly creatures (including yourself) within 30ft of you can see or that can hear you and can understand you. Each creature gains temporary hit points equal to your paladin level</p>
+			<p class="indent"><b><i>Freed From Chains.</i></b> As an action, you present your holy symbol and speak a prayer of defiance. Each creature in 30ft of you that you choose can reroll a saving throw against a condition effecting them.</p>
+		</description>
+		<sheet display="false">
+			<description>Syndical Solidarity / Freed From Chains.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY_SYNDICAL_SOLIDARITY" />
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY_FREED_FROM_CHAINS" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Syndical Solidarity" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY_SYNDICAL_SOLIDARITY">
+		<description>
+			<p>You draw out collective strength among your allies in dire moments. As an action, choose up to six friendly creatures (including yourself) within 30ft of you can see or that can hear you and can understand you. Each creature gains temporary hit points equal to your paladin level</p>
+		</description>
+		<sheet alt="Syndical Solidarity" action="Bonus Action" usage="Channel Divinity">
+			<description>You draw out collective strength among your allies in dire moments. As an action, choose up to six friendly creatures (including yourself) within 30ft of you can see or that can hear you and can understand you. Each creature gains {{level:paladin}} temporary hit points</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Freed From Chains" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY_FREED_FROM_CHAINS">
+		<description>
+			<p>As an action, you present your holy symbol and speak a prayer of defiance. Each creature in 30ft of you that you choose can reroll a saving throw against a condition effecting them.</p>
+		</description>
+		<sheet alt="Freed From Chains" action="Bonus Action" usage="Channel Divinity">
+			<description>As an action, you present your holy symbol and speak a prayer of defiance. Each creature in 30ft of you that you choose can reroll a saving throw against a condition effecting them.</description>
+		</sheet>
+	</element>	
+	<element name="Aura of Defiance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_AURA_OF_DEFIANCE">
+		<description>
+			<p>Starting at 7th level, you and friendly creatures within 10ft of you have advantage on saving throws against attacks spells or other effects that would reduce their speed, paralyze them or restrain them. At 18th level this extends to 30ft.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Starting at 7th level, you and friendly creatures within 10ft of you have advantage on saving throws against attacks spells or other effects that would reduce their speed, paralyze them or restrain them.</description>
+			<description level="18">Starting at 18th level, you and friendly creatures within 30ft of you have advantage on saving throws against attacks spells or other effects that would reduce their speed, paralyze them or restrain them.</description>
+		</sheet>
+	</element>
+	<element name="Free Spirited" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_FREE_SPIRITED">
+		<description>
+			<p>Starting at 15th level, Your walking speed increases by 10ft and you can move across difficult terrain without expending additional movement</p>
+		</description>
+		<sheet>
+			<description>Starting at 15th level, Your walking speed increases by 10ft and you can move across difficult terrain without expending additional movement</description>
+		</sheet>
+		<rules>
+			<stat name="speed" value="10" bonus="movement"/>
+		</rules>
+	</element>
+	<element name="Exalted Insurgent" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_EXALTED_INSURGENT">
+		<description>
+			<p>At 20th level, you can use an acton to take the form of a fearless revolutionary. For 1 minute you gain the following benefits:</p>
+			<ul>
+				<li>You and friendly creatures within 30ft of you have advantage on attack rolls against a creature is there is at least one enemy of the target within 5ft of the target.</li>
+				<li>Friendly creatures that start their turn in 30ft of you have their speed increased by 15ft until the end of their turn.</li>
+				<li>You deal double damage to structures and objects.</li>
+			</ul>
+			<p>This effect ends early if you are incapacitated or die. Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>At 20th level, you can use an acton to take the form of a fearless revolutionary. For 1 minute you gain the following benefits:&#13;
+			You and friendly creatures within 30ft of you have advantage on attack rolls against a creature is there is at least one enemy of the target within 5ft of the target.&#13;
+			Friendly creatures that start their turn in 30ft of you have their speed increased by 15ft until the end of their turn.&#13;
+			You deal double damage to structures and objects.&#13;
+			This effect ends early if you are incapacitated or die. Once you use this feature, you can't use it again until you finish a long rest.</description>
+		</sheet>
+	</element>
+</elements>

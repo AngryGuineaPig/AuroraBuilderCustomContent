@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-ChronalFlow.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk-ChronalFlow.xml" />
+		</update>
+	</info>
+	<element name="Way of Chronal Flow" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_CHRONAL_FLOW">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the Way of Chronal Flow focus their ki to slightly bend time to their whims. Their training allows them to create slight changes in the flow of time and harness this natural force. Peering into the the near future, they confuse foes with unpredictable moves, and are adept at evading and striking in unexpected ways.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_CHRONAL_FLOW_PRESCIENT_SIGHT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_CHRONAL_FLOW_CHRONAL_SHIFTING" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_CHRONAL_FLOW_DILATION_ASSAULT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_CHRONAL_FLOW_TIME_DOMINATION" />
+		</description>
+		<sheet display="false">
+			<description>Monks of the Way of Chronal Flow focus their ki to slightly bend time to their whims. Their training allows them to create slight changes in the flow of time and harness this natural force. Peering into the the near future, they confuse foes with unpredictable moves, and are adept at evading and striking in unexpected ways.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_CHRONAL_FLOW_PRESCIENT_SIGHT" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_CHRONAL_FLOW_CHRONAL_SHIFTING" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_CHRONAL_FLOW_DILATION_ASSAULT" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_CHRONAL_FLOW_TIME_DOMINATION" level="6"/>
+		</rules>
+	</element>
+	<element name="Prescient Sight" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_CHRONAL_FLOW_PRESCIENT_SIGHT">
+		<description>
+			<p>When you choose this tradition at 3rd level, you have begun to peer into the future and anticipate your foes' actions. You gain the following benefits.</p>
+			<p class="indent"><b>Battle Precognition.</b> You cannot be surprised while you are conscious, and you add your wisdom modifier to initiative rolls.</p>
+			<p class="indent"><b>Punishing Strike.</b> When a creature misses you with an attack, you can immediately use your reaction to make an unarmed strike against that creature.</p>
+		</description>
+		<sheet>
+			<description>When you choose this tradition at 3rd level, you have begun to peer into the future and anticipate your foes' actions. You gain the following benefits.&#13;
+			Battle Precognition. You cannot be surprised while you are conscious, and you add your wisdom modifier to initiative rolls.&#13;
+			Punishing Strike. When a creature misses you with an attack, you can immediately use your reaction to make an unarmed strike against that creature.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Chronal Shifting" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_CHRONAL_FLOW_CHRONAL_SHIFTING">
+		<description>
+			<p>At 6th level, you gain the ability to shift through the flow of time, and your future sight lets you affect your course of action. You can spend 2 ki points to cast mirror image, blur, or augury, without providing material components. Additionally, you gain the guidance cantrip if you don’t already know it.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>At 6th level, you gain the ability to shift through the flow of time, and your future sight lets you affect your course of action. You can spend 2 ki points to cast mirror image, blur, or augury, without providing material components. Additionally, you gain the guidance cantrip if you don’t already know it.</description>
+		</sheet>
+		<rules>
+			<grant type="spell" id="ID_PHB_SPELL_GUIDANCE" />
+			<grant type="spell" id="ID_PHB_SPELL_BLUR" />
+			<grant type="spell" id="ID_PHB_SPELL_MIRROR_IMAGE" />
+			<grant type="spell" id="ID_PHB_SPELL_AUGURY" />
+		</rules>
+	</element>
+	<element name="Dilation Assault" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_CHRONAL_FLOW_DILATION_ASSAULT">
+		<description>
+			<p>At 11th level, your power to influence the flow of time with ki manifests. Whenever you spend a ki point to use Flurry of Blows, Patient Defense or Step of the Wind as a bonus action, you may make an extra unarmed strike as part of your bonus action.</p>
+		</description>
+		<sheet>
+			<description>At 11th level, your power to influence the flow of time with ki manifests. Whenever you spend a ki point to use Flurry of Blows, Patient Defense or Step of the Wind as a bonus action, you may make an extra unarmed strike as part of your bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Time Domination" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_CHRONAL_FLOW_TIME_DOMINATION">
+		<description>
+			<p>At 17th level, you can deftly manipulate time. During combat, you can take an extra turn. You may choose at which point during initiative order you do this. Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>At 17th level, you can deftly manipulate time. During combat, you can take an extra turn. You may choose at which point during initiative order you do this. Once you use this feature, you can’t use it again until you finish a short or long rest.</description>
+		</sheet>
+	</element>
+</elements>

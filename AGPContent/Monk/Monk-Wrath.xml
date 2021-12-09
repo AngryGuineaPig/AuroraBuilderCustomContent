@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-Wrath.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk-Wrath.xml" />
+		</update>
+	</info>
+	<element name="Way of Wrath" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_WRATH">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the way of Wrath are often shunned from traditional monasteries, the way of wrath is similar to the bloodlust of a barbarians rage, letting your hatred and rage fill yourself, loosing control to it and allowing your connection to the life force of everything, ki, power extraordinary abilities. </p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WRATH_WRATHFUL_TRANCE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WRATH_WILL_BREAKER" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WRATH_INVIGORATING_WRATH" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WRATH_RAGING DEMON" />
+		</description>
+		<sheet display="false">
+			<description>Monks of the way of Wrath are often shunned from traditional monasteries, the way of wrath is similar to the bloodlust of a barbarians rage, letting your hatred and rage fill yourself, loosing control to it and allowing your connection to the life force of everything, ki, power extraordinary abilities.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WRATH_WRATHFUL_TRANCE" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WRATH_WILL_BREAKER" level="7"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WRATH_INVIGORATING_WRATH" level="11"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WRATH_RAGING DEMON" level="17"/>
+		</rules>
+	</element>
+	<element name="Wrathful Trance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WRATH_WRATHFUL_TRANCE">
+		<description>
+			<p>When you choose this tradition you gain the ability to give in to the hate and enter a state of mind called a wrathful trance. The trance lasts up to 2 minutes, it ends if you are incapacitated or when you choose to end it. For one attack per turn you can add your half monk level round up to the attack roll and damage dice.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you choose this tradition you gain the ability to give in to the hate and enter a state of mind called a wrathful trance. The trance lasts up to 2 minutes, it ends if you are incapacitated or when you choose to end it. For one attack per turn you can add {{level:monk:half:up}} to the attack roll and damage dice.</description>
+		</sheet>
+	</element>
+	<element name="Will Breaker" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WRATH_WILL_BREAKER">
+		<description>
+			<p>Whilst in a Wrathful trance you can spend two ki points to cast the <i>fear</i> spell without offering any components</p>
+			<p>Additionally you gain double your proficiency bonus to intimidation checks</p>
+		</description>
+		<sheet usage="Ki">
+			<description>Whilst in a Wrathful trance you can spend two ki points to cast the <i>fear</i> spell without offering any components
+			 Additionally you gain double your proficiency bonus to intimidation checks</description>
+		</sheet>
+		<rules>
+			<grant type="proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_INTIMIDATION"/>
+		</rules>
+	</element>
+	<element name="Invigorating Wrath" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WRATH_INVIGORATING_WRATH">
+		<description>
+			<p>At 11th level when you deal damage using at attack whilst in a Wrathful Trance you recover 1d4 hit point every time you deal damage.</p>
+		</description>
+		<sheet>
+			<description>At 11th level when you deal damage using at attack whilst in a Wrathful Trance you recover 1d4 hit point every time you deal damage.</description>
+		</sheet>
+	</element>
+	<element name="Raging Demon" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WRATH_RAGING DEMON">
+		<description>
+			<p>At 17th level you can choose to end your Wrathful Trance early by expending all hatred into a single attack. You can spend a number of ki points to enhance the final attack. For each ki point you spend you deal another 1d10 + martial arts bonus for this final attack. For each round before the maximum of 20 you end the trance you deal an additional 1d8 damage. You can't use the Wrathful Trance feature after this until you have completed a short or long rest where you spend at least one hour re-building the rage inside.</p>
+		</description>
+		<sheet action="Action" usage="ki">
+			<description>At 17th level you can choose to end your Wrathful Trance early by expending all hatred into a single attack. You can spend a number of ki points to enhance the final attack. For each ki point you spend you deal another 1d10 + {{martial arts:damage}} for this final attack. For each round before the maximum of 20 you end the trance you deal an additional 1d8 damage. You can't use the Wrathful Trance feature after this until you have completed a short or long rest where you spend at least one hour re-building the rage inside.</description>
+		</sheet>
+	</element>
+</elements>

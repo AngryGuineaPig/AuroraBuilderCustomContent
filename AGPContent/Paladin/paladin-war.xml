@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="paladin-war.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Paladin/paladin-war.xml" />
+		</update>
+	</info>
+	<element name="Oath of War" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_OATH_OF_WAR">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>On a battle field everyone fights for something, whether good or evil everyone has something that ignites the spark of passion. Paladins who take this oath thrive in the thick of war, searching for a good fight.</p>
+			<h5>TENETS OF WAR</h5>
+			<p class="indent"><b><i>Violence Versus War.</i></b> War is grand and glorious. Killing someone in a dark alley with a dagger, or poisoning their wine is not. Knot that difference and ensure you don't cross that line.</p>
+			<p class="indent"><b><i>The Front Lines Await.</i></b> Their is no honour in waiting behind the barricade. Wade nto the thick of battle and let your foes face your fury.</p>
+			<p class="indent"><b><i>Always Be Prepared.</i></b> Those who let their guard down died before they find glory. Always be ready to fight.</p>
+			<p class="indent"><b><i>Fight Only The Worthy.</i></b> You seek opponents, not victims. You should not bathe your blade in the blood of the weak, it will only grow nourished on the blood of the strong.</p>
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_OATH_SPELLS" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_CHANNEL_DIVINITY" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_AURA_OF_GLORY" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_BLADES_OF_STRIFE" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_ANGEL_OF_HONOUR" />
+		</description>
+		<sheet display="false">
+			<description>On a battle field everyone fights for something, whether good or evil everyone has something that ignites the spark of passion. Paladins who take this oath thrive in the thick of war, searching for a good fight.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_OATH_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_CHANNEL_DIVINITY" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_AURA_OF_GLORY" level="7"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_BLADES_OF_STRIFE" level="15"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_ANGEL_OF_HONOUR" level="20"/>
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<p class="indent"></p>
+			<h5>Oath of War Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Shield of Faith, Zephyr Strike</em></td></tr>
+				<tr><td>5th</td><td><em>Cordon of Arrows, Spiritual Weapon</em></td></tr>
+				<tr><td>9th</td><td><em>Crusader's Mantle, Enemies Abound</em></td></tr>
+				<tr><td>13th</td><td><em>Guardian of Faith, Staggering Smite</em></td></tr>
+				<tr><td>17th</td><td><em>Hold Monster, Steel Wind Strike</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You gain oath spells at the paladin levels listed.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD_OF_FAITH" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ZEPHYR_STRIKE" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CORDON_OF_ARROWS" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CRUSADERS_MANTLE" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ENEMIES_ABOUND" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STAGGERING_SMITE" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_CHANNEL_DIVINITY">
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following Channel Divinity options.</p>
+			<p class="indent"><b><i>Champion Of War.</i></b> As a bonus action, you can use your Channel Divinity to bless a creature within 30 feet of you with the power of battle. The creature has advantage on attack rolls until the end of its next turn.</p>
+			<p class="indent"><b><i>Improved Warfare.</i></b> As an action, you can use your Channel Divinity to glean information on a target within 30 feet of you. The creature must make an intelligence saving throw. On a failed save you learn the creatures type, immunities, resistances and vulnerabilities.</p>
+		</description>
+		<sheet display="false">
+			<description>Champion of War / Improved Warfare.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_CHANNEL_DIVINITY_CHAMPION_OF_WAR" />
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_CHANNEL_DIVINITY_IMPROVED_WARFARE" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Champion of War" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_CHANNEL_DIVINITY_CHAMPION_OF_WAR">
+		<description>
+			<p>As a bonus action, you can use your Channel Divinity to bless a creature within 30 feet of you with the power of battle. The creature has advantage on attack rolls until the end of its next turn.</p>
+		</description>
+		<sheet alt="Champion of War" action="Bonus Action" usage="Channel Divinity">
+			<description>As a bonus action, you can use your Channel Divinity to bless a creature within 30 feet of you with the power of battle. The creature has advantage on attack rolls until the end of its next turn.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Improved Warfare" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_CHANNEL_DIVINITY_IMPROVED_WARFARE">
+		<description>
+			<p>As an action, you can use your Channel Divinity to glean information on a target within 30 feet of you. The creature must make an intelligence saving throw. On a failed save you learn the creatures type, immunities, resistances and vulnerabilities.</p>
+		</description>
+		<sheet alt="Improved Warfare" action="Bonus Action" usage="Channel Divinity">
+			<description>As an action, you can use your Channel Divinity to glean information on a target within 30 feet of you. The creature must make an intelligence saving throw. On a failed save you learn the creatures type, immunities, resistances and vulnerabilities.</description>
+		</sheet>
+	</element>	
+	<element name="Aura of Glory" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_AURA_OF_GLORY">
+		<description>
+			<p>Starting at 7th level, you and friendly creatures within 10ft can add your wisdom modifier to their attack and damage rolls, this doubles if they are below half max hit points. At 18th level this extends to 30ft.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Starting at 7th level, you and friendly creatures within 10ft can add {{wisdom:modifier}} to their attack and damage rolls, this doubles if they are below half max hit points.</description>
+			<description level="18">Starting at 18th level, you and friendly creatures within 30ft can add {{wisdom:modifier}} to their attack and damage rolls, this doubles if they are below half max hit points.</description>
+		</sheet>
+	</element>
+	<element name="Blades of Strife" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_BLADES_OF_STRIFE">
+		<description>
+			<p>Starting at 15th level, once per turn when you land a weapon attack against a creature, you can additionally deal the weapons damage to another creature within 5ft of the attack's original target.</p>
+		</description>
+		<sheet>
+			<description>Starting at 15th level, once per turn when you land a weapon attack against a creature, you can additionally deal the weapons damage to another creature within 5ft of the attack's original target.</description>
+		</sheet>
+	</element>
+	<element name="Angel of Honour" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_WAR_ANGEL_OF_HONOUR">
+		<description>
+			<p>At 20th level, you can use an acton to take the form of an angle of battle. For 1 minute you gain the following benefits:</p>
+			<ul>
+				<li>You gain 20 ht points at the start of each of your turns.</li>
+				<li>You can make an additional attack whenever you take the attack action.</li>
+				<li>Your Strength score increases by 4.</li>
+			</ul>
+			<p>This effect ends early if you are incapacitated or die. Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>Gain the following benefits for 1 hour: &#13;
+			You gain 20 ht points at the start of each of your turns. &#13;
+			You can make an additional attack whenever you take the attack action. &#13;
+			Your Strength score increases by 4. </description>
+		</sheet>
+	</element>
+</elements>

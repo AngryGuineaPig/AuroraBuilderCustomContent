@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="paladin-ash.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Paladin/paladin-ash.xml" />
+		</update>
+	</info>
+	<element name="Oath of Ash" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_OATH_OF_ASH">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>Paladins who vow the Oath of Ash seek to preserve the longevity of civilization, dedicating every resource at their disposal to securing future prosperity. Paladins sworn to this oath believe that progress is not automatic nor inevitable, but a journey where each step demands sacrifice, struggle, and suffering. To them, only those with unbreakable focus and determination can wield the brilliant torch of progress. These paladins achieve this by cauterizing the detrimental aspects of civilization with their calamitous power, purging it of its imperfections. The salvation they seek is the knowledge that their labors will help bring about a new dawn for civilization.</p>
+			<h5>TENETS OF ASH</h5>
+			<p class="indent"><b><i>Don't Fear the Light.</i></b> Fan the flames of progress that separate man from beast. Without the radiance of innovation, the halls of progress cannot be navigated.</p>
+			<p class="indent"><b><i>Fire Knows No Mercy.</i></b> Know that sacrifice is a natural part of the cycle and cannot be avoided. Don't let your emotions cloud your judgment. If the greater good can only be achieved by feeding the flames the fuel of life, so be it.</p>
+			<p class="indent"><b><i>From Ashes Come Life.</i></b> The most fertile lands were built by the fires of volcanoes. At times, destruction is necessary to spark the birth of life anew. Don't hesitate to become its actor.</p>
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_OATH_SPELLS" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_CHANNEL_DIVINITY" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_AURA_OF_THE_EPICENTRE" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_MANTLE_CRUSHER" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_TECTONIC_SAINT" />
+		</description>
+		<sheet display="false">
+			<description>Paladins who vow the Oath of Ash seek to preserve the longevity of civilization, dedicating every resource at their disposal to securing future prosperity. Paladins sworn to this oath believe that progress is not automatic nor inevitable, but a journey where each step demands sacrifice, struggle, and suffering. To them, only those with unbreakable focus and determination can wield the brilliant torch of progress. These paladins achieve this by cauterizing the detrimental aspects of civilization with their calamitous power, purging it of its imperfections. The salvation they seek is the knowledge that their labors will help bring about a new dawn for civilization.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_OATH_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_CHANNEL_DIVINITY" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_AURA_OF_THE_EPICENTRE" level="7"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_MANTLE_CRUSHER" level="15"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_TECTONIC_SAINT" level="20"/>
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<p class="indent"></p>
+			<h5>Oath of ash Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>burning hands, earth tremor</em></td></tr>
+				<tr><td>5th</td><td><em>heat metal, maximilian’s earthen grasp</em></td></tr>
+				<tr><td>9th</td><td><em>erupting earth, Melf's minute meteors</em></td></tr>
+				<tr><td>13th</td><td><em>stoneskin, wall of fire</em></td></tr>
+				<tr><td>17th</td><td><em>transmute rock, wall of stone</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You gain oath spells at the paladin levels listed.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEAT_METAL" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_MAXIMILIANS_EARTHEN_GRASP" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ERUPTING_EARTH" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_MELFS_MINUTE_METEORS" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_TRANSMUTE_ROCK" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_CHANNEL_DIVINITY">
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following Channel Divinity options.</p>
+			<p class="indent"><b><i>Pyroclastic Tide.</i></b> As an action, you can assume a pyroclastic form for the rest of your turn. While in this form, you ignore all difficult terrain, can enter and occupy the space of another creature, and are under the effect of the dash and disengage actions. You can also pass through small holes, narrow openings, and even mere cracks. When you move, you create 5-foot squares of difficult terrain under you and any creature in your path must make a Dexterity saving throw. If it fails, it is shoved and takes a number of d6 equal to your proficiency bonus in fire damage on a failed save, or half as much damage on a successful one. You ignore difficult terrain created by this effect.</p>
+			<p class="indent"><b><i>Igneous Coliseum.</i></b> As a bonus action or a reaction to you or an ally being forced to make a saving throw, you can cause an up to 20-foot radius circle of ground centered around you or an ally within 30 feet to sink or rise (your choice) up to a height equal to 10 times your proficiency bonus in feet. This effect must be maintained with Concentration for up to 10 minutes. When it ends, the ground rumbles as it shifts into its original position, creating difficult terrain at the edge of the effect's radius. You ignore difficult terrain created by this effect. If the radius cuts through a creature's space, the creature is shifted to one side of the radius (your choice). If a creature would be enclosed completely in the radius, that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the radius.</p>
+		</description>
+		<sheet display="false">
+			<description>Pyroclastic Tide / Igneous Coliseum.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_CHANNEL_DIVINITY_PYROCLASTIC_TIDE" />
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_CHANNEL_DIVINITY_IGNEOUS_COLISEUM" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Pyroclastic Tide" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_CHANNEL_DIVINITY_PYROCLASTIC_TIDE">
+		<description>
+			<p>As an action, you can assume a pyroclastic form for the rest of your turn. While in this form, you ignore all difficult terrain, can enter and occupy the space of another creature, and are under the effect of the dash and disengage actions. You can also pass through small holes, narrow openings, and even mere cracks. When you move, you create 5-foot squares of difficult terrain under you and any creature in your path must make a Dexterity saving throw. If it fails, it is shoved and takes a number of d6 equal to your proficiency bonus in fire damage on a failed save, or half as much damage on a successful one. You ignore difficult terrain created by this effect.</p>
+		</description>
+		<sheet alt="Pyroclastic Tide" action="Action" usage="Channel Divinity">
+			<description>As an action, you can assume a pyroclastic form for the rest of your turn. While in this form, you ignore all difficult terrain, can enter and occupy the space of another creature, and are under the effect of the dash and disengage actions. You can also pass through small holes, narrow openings, and even mere cracks. When you move, you create 5-foot squares of difficult terrain under you and any creature in your path must make a Dexterity saving throw. If it fails, it is shoved and takes a number of d6 equal to your proficiency bonus in fire damage on a failed save, or half as much damage on a successful one. You ignore difficult terrain created by this effect.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Igneous Coliseum" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_CHANNEL_DIVINITY_IGNEOUS_COLISEUM">
+		<description>
+			<p>As a bonus action or a reaction to you or an ally being forced to make a saving throw, you can cause an up to 20-foot radius circle of ground centered around you or an ally within 30 feet to sink or rise (your choice) up to a height equal to 10 times your proficiency bonus in feet. This effect must be maintained with Concentration for up to 10 minutes. When it ends, the ground rumbles as it shifts into its original position, creating difficult terrain at the edge of the effect's radius. You ignore difficult terrain created by this effect. If the radius cuts through a creature's space, the creature is shifted to one side of the radius (your choice). If a creature would be enclosed completely in the radius, that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the radius.</p>
+		</description>
+		<sheet alt="Igneous Coliseum" action="Bonus Action" usage="Channel Divinity">
+			<description>As a bonus action or a reaction to you or an ally being forced to make a saving throw, you can cause an up to 20-foot radius circle of ground centered around you or an ally within 30 feet to sink or rise (your choice) up to a height equal to 10 times your proficiency bonus in feet. This effect must be maintained with Concentration for up to 10 minutes. When it ends, the ground rumbles as it shifts into its original position, creating difficult terrain at the edge of the effect's radius. You ignore difficult terrain created by this effect. If the radius cuts through a creature's space, the creature is shifted to one side of the radius (your choice). If a creature would be enclosed completely in the radius, that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the radius.</description>
+		</sheet>
+	</element>	
+	<element name="Aura of the Epicentre" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_AURA_OF_THE_EPICENTRE">
+		<description>
+			<p>Starting at 7th level, hostile creatures within 10 feet of you treat the ground as difficult terrain and take fire damage equal to your Charisma modifier (minimum of 1) for every 10 feet they move within the range of your scorching aura. You can choose to suppress this aura at will. At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Starting at 7th level, hostile creatures within 10 feet of you treat the ground as difficult terrain and take fire damage equal to your Charisma modifier (minimum of 1) for every 10 feet they move within the range of your scorching aura. You can choose to suppress this aura at will.</description>
+			<description level="18">Starting at 18th level, hostile creatures within 30 feet of you treat the ground as difficult terrain and take fire damage equal to your Charisma modifier (minimum of 1) for every 10 feet they move within the range of your scorching aura. You can choose to suppress this aura at will.</description>
+		</sheet>
+	</element>
+	<element name="Mantle Crusher" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_MANTLE_CRUSHER">
+		<description>
+			<p>Starting at 15th level, Whenever a creature hits you with an attack, the ground shakes as you absorb the impact of the strike, and you can use your reaction to force creatures of your choice within 10 feet of you to make a Dexterity saving throw against your spell save DC. If it fails, it is knocked prone and takes bludgeoning damage equal to half your paladin level.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Starting at 15th level, Whenever a creature hits you with an attack, the ground shakes as you absorb the impact of the strike, and you can use your reaction to force creatures of your choice within 10 feet of you to make a Dexterity saving throw against your spell save DC. If it fails, it is knocked prone and takes bludgeoning damage equal to half your paladin level.</description>
+		</sheet>
+	</element>
+	<element name="Angel of Honour" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ASH_TECTONIC_SAINT">
+		<description>
+			<p>At 20th level, you can use an acton to take the form of an angle of battle. For 1 minute you gain the following benefits:</p>
+			<ul>
+				<li>A veil of smoky ash cloaks you from hostile sight, creating an aura of soot that radiates 30 feet from you. The first time any hostile creature enters the smoke or starts its turn there during a battle, the creature must succeed on a Constitution saving throw against your spell save DC or become blinded until the start of their next turn.</li>
+				<li>You and allied creatures within the ashy aura gain resistance to fire damage and ignore the difficult terrain you create. Hostile creatures lose resistance to fire damage and those with immunity to fire damage are treated as if they had resistance to fire damage instead.</li>
+				<li>Whenever you are to take fire damage, you instead gain temporary hit points equal to half of the damage.</li>
+				<li>When you move 0 feet on your turn, the ground around you melts into lava, transmuting into a 15-foot square of difficult terrain. Each tile of lava deals damage equal to half your paladin level in fire damage to any creature that enters it for the first time or ends its turn there. The area cools down and returns to normal terrain after 1 minute.</li>
+			</ul>
+			<p>This effect ends early if you are incapacitated or die. Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>Gain the following benefits for 1 minute: &#13;
+			A veil of smoky ash cloaks you from hostile sight, creating an aura of soot that radiates 30 feet from you. The first time any hostile creature enters the smoke or starts its turn there during a battle, the creature must succeed on a Constitution saving throw against your spell save DC or become blinded until the start of their next turn.&#13;
+			You and allied creatures within the ashy aura gain resistance to fire damage and ignore the difficult terrain you create. Hostile creatures lose resistance to fire damage and those with immunity to fire damage are treated as if they had resistance to fire damage instead.&#13;
+			Whenever you are to take fire damage, you instead gain temporary hit points equal to half of the damage.&#13;
+			When you move 0 feet on your turn, the ground around you melts into lava, transmuting into a 15-foot square of difficult terrain. Each tile of lava deals damage equal to half your paladin level in fire damage to any creature that enters it for the first time or ends its turn there. The area cools down and returns to normal terrain after 1 minute.</description>
+		</sheet>
+	</element>
+</elements>

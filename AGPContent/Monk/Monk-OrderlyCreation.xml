@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-OrderlyCreation.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk-OrderlyCreation.xml" />
+		</update>
+	</info>
+	<element name="Way of Orderly Creation" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_ORDERLY_CREATION">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the way of Orderly Creation study the very nature by which all things come into existence. This is often done by slowly separating things into their respective base components. Monks of Orderly Creation use their ki to both create and destroy.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_ORDERLY_CREATION_LAW_OF_CORPOREALITY" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_ORDERLY_CREATION_LAW_OF_ANIMATION" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_ORDERLY_CREATION_LAWS_OF_SENTIENCE_AND_AUTONOMY" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_ORDERLY_CREATION_LAW_OF_UNCREATION" />
+		</description>
+		<sheet display="false">
+			<description>Monks of the way of Orderly Creation study the very nature by which all things come into existence. This is often done by slowly separating things into their respective base components. Monks of Orderly Creation use their ki to both create and destroy.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_ORDERLY_CREATION_LAW_OF_CORPOREALITY" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_ORDERLY_CREATION_LAW_OF_ANIMATION" level="6"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_ORDERLY_CREATION_LAWS_OF_SENTIENCE_AND_AUTONOMY" level="11"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_ORDERLY_CREATION_LAW_OF_UNCREATION" level="17"/>
+		</rules>
+	</element>
+	<element name="Law of Corporeality" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_ORDERLY_CREATION_LAW_OF_CORPOREALITY">
+		<description>
+			<p>Starting at 3rd level, you begin to learn the many aspects of corporeality, each of which can be accessed with ki points.</p>
+			<p class="indent"><b>Aspects</b> you learn two aspects at 3rd level and a further three at 11th level. Some aspects are defensive benefits some are for offensive means. To apply an aspect to an attack it must be stated before the attack roll.</p>
+		</description>
+		<sheet usage="ki">
+			<description>Starting at 3rd level, you begin to learn the many aspects of corporeality, each of which can be accessed with ki points.&#13;
+			Aspects. you learn two aspects at 3rd level and a further three at 11th level. Some aspects are defensive benefits some are for offensive means. To apply an aspect to an attack it must be stated before the attack roll.</description>
+		</sheet>
+		<rules>
+      		<select type="Archetype Feature" name="Aspects (Level 3)" supports="Aspect of Corporeality" level="3" number="2" />
+      		<select type="Archetype Feature" name="Aspects (Level 11)" supports="Aspect of Corporeality" level="11" number="3" />
+    	</rules>
+	</element>
+ 	<element name="Aspect of Body" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_BODY">
+    	<supports>Aspect of Corporeality</supports>
+    	<description>
+      		<p>As a bonus action, you can spend 1 ki point to become partially ethereal for 1 minute, you can move through solid objects or creatures during your movement, attacks of opportunity against you are made with disadvantage. If you end your turn in a solid object you take 1d10 force damage.</p>
+    	</description>
+    	<sheet action="Bonus Action">
+      		<description>As a bonus action, you can spend 1 ki point to become partially ethereal for 1 minute, you can move through solid objects or creatures during your movement, attacks of opportunity against you are made with disadvantage. If you end your turn in a solid object you take 1d10 force damage.</description>
+    	</sheet>
+  	</element>
+	<element name="Aspect of Form" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_FORM">
+    	<supports>Aspect of Corporeality</supports>
+    	<description>
+      		<p>As a bonus action, you can spend 2 ki points to overcome resistances to physical (bludgeoning, slashing or piercing) damage, you also treat immunities as resistances. This lasts till the end of your next turn.</p>
+    	</description>
+    	<sheet action="Bonus Action">
+      		<description>As a bonus action, you can spend 2 ki points to overcome resistances to physical (bludgeoning, slashing or piercing) damage, you also treat immunities as resistances. This lasts till the end of your next turn.</description>
+    	</sheet>
+  	</element>
+	<element name="Aspect of Persistance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_PERSISTANCE">
+    	<supports>Aspect of Corporeality</supports>
+    	<description>
+      		<p>As a bonus action, you can spend 1 ki point to imbue your next melee attack with the power to shut down an enemies defences till the end of your next turn, when you strike a creature with this attack they are "weakened" till the end of their next turn. When they roll any form of saving throw for conditions or to avoid damage from spells they roll with disadvantage.</p>
+    	</description>
+    	<sheet action="Bonus Action">
+      		<description>As a bonus action, you can spend 1 ki point to imbue your next melee attack with the power to shut down an enemies defences till the end of your next turn, when you strike a creature with this attack they are "weakened" till the end of their next turn. When they roll any form of saving throw for conditions or to avoid damage from spells they roll with disadvantage.</description>
+    	</sheet>
+  	</element>
+	<element name="Aspect of Sight" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_SIGHT">
+    	<supports>Aspect of Corporeality</supports>
+    	<description>
+      		<p>As a bonus action, you can spend 1 ki point to enhance your next strike this the ability to hamper a creatures sight, the creature must make a save against your ki save DC or become blinded for one minute.</p>
+    	</description>
+    	<sheet action="Bonus Action">
+      		<description>As a bonus action, you can spend 1 ki point to enhance your next strike this the ability to hamper a creatures sight, the creature must make a save against your ki save DC or become blinded for one minute.</description>
+    	</sheet>
+  	</element>
+	<element name="Aspect of Smell" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_SMELL">
+    	<supports>Aspect of Corporeality</supports>
+    	<description>
+      		<p>As a bonus action, you can spend 2 ki points to enhance your smell for one minute, gaining advantage on all perception checks that could use smell, additionally the blinded condition doesn't imposed disadvantage on attack rolls whilst this aspect is active.</p>
+    	</description>
+    	<sheet action="Bonus Action">
+      		<description>As a bonus action, you can spend 2 ki points to enhance your smell for one minute, gaining advantage on all perception checks that could use smell, additionally the blinded condition doesn't imposed disadvantage on attack rolls whilst this aspect is active.</description>
+    	</sheet>
+	</element>
+	<element name="Aspect of Touch" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_TOUCH">
+    	<supports>Aspect of Corporeality</supports>
+    	<description>
+      		<p>As a bonus action, you can spend 1 ki point to empower yourself for 1 minute, you can choose one attack roll per turn to have advantage, additionally all melee strikes deal additional force damage = twice your Wisdom modifier</p>
+    	</description>
+    	<sheet action="Bonus Action">
+      		<description>As a bonus action, you can spend 1 ki point to empower yourself for 1 minute, you can choose one attack roll per turn to have advantage, additionally all melee strikes deal additional force damage = {{Touch:damage}}</description>
+    	</sheet>
+		<rules>
+			<stat name="Touch:Damage" value="Wisdom:modifier"/>
+			<stat name="Touch:Damage" value="Wisdom:modifier"/>
+		</rules>
+	</element>
+	<element name="Aspect of Autonomy" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_AUTONOMY">
+    	<requirements>[level:11]</requirements>
+		<supports>Aspect of Corporeality</supports>
+    	<description>
+			<p class="flavor">11th level required.</p>
+      		<p>As an action, you can spend 3 ki points to touch a creature that is charmed or frightened. That creature is no longer charmed or frightened. You can use this feature once per long rest.</p>
+    	</description>
+    	<sheet action="Action" usage="1/Long Rest">
+      		<description>As an action, you can spend 3 ki points to touch a creature that is charmed or frightened. That creature is no longer charmed or frightened.</description>
+    	</sheet>
+	</element>
+	<element name="Aspect of Sentience" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_SENTIENCE">
+    	<requirements>[level:11]</requirements>
+		<supports>Aspect of Corporeality</supports>
+    	<description>
+			<p class="flavor">11th level required.</p>
+      		<p>As an action, you can spend 4 ki points to touch a creature, until the end of your next turn that creature can no longer cast any spells. Any spells that they were maintaining concentration on fizzle out. you can use this feature once per long rest.</p>
+    	</description>
+    	<sheet action="Action" usage="1/Long Rest">
+      		<description>As an action, you can spend 4 ki points to touch a creature, until the end of your next turn that creature can no longer cast any spells. Any spells that they were maintaining concentration on fizzle out.</description>
+    	</sheet>
+	</element>
+	<element name="Law of Animation" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_ORDERLY_CREATION_LAW_OF_ANIMATION">
+		<description>
+			<p>At 6th level you learn two acts:</p>
+			<p><b>Act of Flow</b> When you meditate for five minutes or longer, your senses begin to align, you can add your wisdom modifier to investigation checks made within 300 feet of where you meditated.</p>
+			<p><b>Act of Will</b> While touching a creature you can detect whether they are possessed, charmed or frightened.</p>
+		</description>
+		<sheet>
+			<description>At 6th level you learn two acts:&#13;
+			Act of Flow: When you meditate for five minutes or longer, your senses begin to align, you can add {{wisdom:modifier}} to investigation checks made within 300 feet of where you meditated.&#13;
+			Act of Will: While touching a creature you can detect whether they are possessed, charmed or frightened.</description>
+		</sheet>
+	</element>
+	<element name="Laws of Sentience and Autonomy" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_ORDERLY_CREATION_LAWS_OF_SENTIENCE_AND_AUTONOMY">
+		<description>
+			<p>At 11th level you can choose 3 more Aspects of Corporeality, additional there are two more to choose from: Aspect of Autonomy and Aspect of Sentience.</p>
+		</description>
+		<sheet>
+			<description>At 11th level you can choose 3 more Aspects of Corporeality, additional there are two more to choose from: Aspect of Autonomy and Aspect of Sentience.</description>
+		</sheet>
+	</element>
+	<element name="Law of Uncreation" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_ORDERLY_CREATION_LAW_OF_UNCREATION">
+		<description>
+			<p>Starting at 17th level you touch has the power to return creation to its more base components. As an action you can spend 5 ki points to force a creature you can touch to make a constitution saving throw. On a failed throw they take 10d10 force damage or half as much on a successful one. If this reduces a target to 0 hit points they are reduced to ash, everything non magical on their persons is reduced to ash. You can disable aspects to increase the damage, for each aspect disabled it increases the damage by 5d10. You cna disable up to 3 aspects. A disabled aspect cannot be used for the next 48 hours. When you disable an aspect there is a 50% chance of suffering a drawback. Roll a d20, if the value is greater than 10 nothing happens, if it is 10 or less you suffer a drawback listed on the table.</p>
+			<h5>DRAWBACK TABLE</h5>
+			<table>
+				<thead>
+					<tr><td>Aspect Disabled</td><td>Drawback</td></tr>
+				</thead>
+				<tr><td>Body</td><td>You gain a point of exhaustion and have disadvantage on constitution saving throws</td></tr>
+				<tr><td>Form</td><td>You have vulnerability yo bludgeoning, slashing and piercing damage. This bypasses any resistances or immunities you have.</td></tr>
+				<tr><td>Persistance</td><td>Spells that apply the following conditions to you have their durations doubled: <i>Blinded, Charmed, Deafened, Frightened, Paralyzed, Poisoned, Stunned.</i></td></tr>
+				<tr><td>Sight</td><td>You are blind. You have the blindness condition applied and have disadvantage on dexterity saving throws.</td></tr>
+				<tr><td>Smell</td><td>You lose your sense of smell and can no longer breath through your nose. You no longer gain Unarmoured Movement bonus.</td></tr>
+				<tr><td>Touch</td><td>You lose your sense of touch from your shoulders to your fingertips. you have disadvantage on strength checks and attack rolls.</td></tr>
+				<tr><td>Autonomy</td><td>At the start of your turn roll a d20, on a 1-14 you are incapacitated until the end of your turn, on a 15-20 you're fine.</td></tr>
+				<tr><td>Sentience</td><td>You suffer from lapses in thought and speech. You have disadvantage on intelligence, wisdom and charisma saving throws.</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Starting at 17th level you touch has the power to return creation to its more base components. As an action you can spend 5 ki points to force a creature you can touch to make a constitution saving throw. On a failed throw they take 10d10 force damage or half as much on a successful one. If this reduces a target to 0 hit points they are reduced to ash, everything non magical on their persons is reduced to ash. You can disable aspects to increase the damage, for each aspect disabled it increases the damage by 5d10. You cna disable up to 3 aspects. A disabled aspect cannot be used for the next 48 hours. When you disable an aspect there is a 50% chance of suffering a drawback. Roll a d20, if the value is greater than 10 nothing happens, if it is 10 or less you suffer a drawback listed on the table.</description>
+		</sheet>
+	</element>
+</elements>

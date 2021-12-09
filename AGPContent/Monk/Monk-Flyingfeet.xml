@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-Flyingfeet.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk-Flyingfeet.xml" />
+		</update>
+	</info>
+	<element name="Way of Flying Feet" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_FLYING_FEET">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the Way of flying feet learned to be one with the flow.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_FLYING_FEET_AEROBATIC_BASHES" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_FLYING_FEET_FLUX_OF_KI" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_FLYING_FEET_PERPLEXING_MOMENTUM" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_FLYING_HARMONIC_FLOW" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_FLYING_FEET_AEROBATIC_BASHES" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_FLYING_FEET_FLUX_OF_KI" level="6"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_FLYING_FEET_PERPLEXING_MOMENTUM" level="11"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_FLYING_HARMONIC_FLOW" level="17"/>
+		</rules>
+	</element>
+	<element name="Aerobatic Bashes" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_FLYING_FEET_AEROBATIC_BASHES">
+		<description>
+			<p>Starting when you choose this tradition at 3rd level, you can harness the energy of your movement into your strikes. If you move at least 10ft before taking a melee attack on your turn you can take up to a -5 to the attack roll for double this added to the damage. (-1 --> +2, -2 --> +4)</p>
+		</description>
+		<sheet>
+			<description>Starting when you choose this tradition at 3rd level, you can harness the energy of your movement into your strikes. If you move at least 10ft before taking a melee attack on your turn you can take up to a -5 to the attack roll for double this added to the damage. (-1 --> +2, -2 --> +4)</description>
+		</sheet>
+	</element>
+	<element name="Flux of Ki" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_FLYING_FEET_FLUX_OF_KI">
+		<description>
+			<p>At 6th level, you are so used to channeling your ki into your movement that you do it instinctively. Your speed increases by 10ft and you no longer need to spend a ki point to take Step of the Wind as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>At 6th level, you are so used to channeling your ki into your movement that you do it instinctively. Your speed increases by 10ft and you no longer need to spend a ki point to take Step of the Wind as a bonus action.</description>
+		</sheet>
+		<rules>
+			<stat name="flux:movement" value="10" bonus="unarmored movement" level="6" />
+		</rules>
+	</element>
+	<element name="Perplexing Momentum" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_FLYING_FEET_PERPLEXING_MOMENTUM">
+		<description>
+			<p>At 11th level, you have become so nimble, that your speed leaves others dazed. Your pace no longer limits your ability to move stealthily, and when you take the Dash action, Perception checks against you have disadvantage. Additionally, when you hit a creature with your Aerobatic Bashes, it induces disadvantage on saving throws against the stunning strike ability or any other source of stunning until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>At 11th level, you have become so nimble, that your speed leaves others dazed. Your pace no longer limits your ability to move stealthily, and when you take the Dash action, Perception checks against you have disadvantage. Additionally, when you hit a creature with your Aerobatic Bashes, it induces disadvantage on saving throws against the stunning strike ability or any other source of stunning until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Harmonic Flow" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_FLYING_HARMONIC_FLOW">
+		<description>
+			<p>At 17th level, Your control over the flow of ki can be used to ward off attack against you. At the end of your turn, for every time you successfully hit a target with Aerobatic Bashes, you gain a number of temporary hit points equal to your wisdom modifier.</p>
+		</description>
+		<sheet>
+			<description>At 17th level, Your control over the flow of ki can be used to ward off attack against you. At the end of your turn, for every time you successfully hit a target with Aerobatic Bashes, you gain {{wisdom:modifier}} temporary hit points.</description>
+		</sheet>
+	</element>
+</elements>

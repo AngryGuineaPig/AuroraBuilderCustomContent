@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+	    <update version="0.0.1">
+			<file name="Paladin.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Paladin.index" />
+		</update>
+	</info>
+	<files>
+        <file name="paladin-anarchy.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Paladin/paladin-anarchy.xml" />
+		<file name="paladin-ash.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Paladin/paladin-ash.xml" />
+		<file name="paladin-commonman.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Paladin/paladin-commonman.xml" />
+		<file name="paladin-metal.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Paladin/paladin-metal.xml" />
+		<file name="paladin-primordials.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Paladin/paladin-primordials.xml" />
+		<file name="paladin-war.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Paladin/paladin-war.xml" />
+    </files>
+</index>

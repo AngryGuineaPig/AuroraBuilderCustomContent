@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-FlowingGrace.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk-FlowingGrace.xml" />
+		</update>
+	</info>
+	<element name="Way of the Flowing Grace" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_THE_FLOWING_GRACE">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>The flowing monk moves as the waters and winds. They glide with grace around and among their enemies, manipulating their foes' aggression into weakness. Monks who follow this tradition learn to wait and listen, moving only when pushed or pulled by the tide of battle. In this way, they stand resolute and untouchable by all but the quickest of foes.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_FLOWING_GRACE_FLOWING_DODGE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_FLOWING_GRACE_GUIDING_WINDS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_FLOWING_GRACE_PERPETUAL_VIGILANCE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_FLOWING_GRACE_PERFECT_GRACE" />
+		</description>
+		<sheet display="false">
+			<description>The flowing monk moves as the waters and winds. They glide with grace around and among their enemies, manipulating their foes' aggression into weakness. Monks who follow this tradition learn to wait and listen, moving only when pushed or pulled by the tide of battle. In this way, they stand resolute and untouchable by all but the quickest of foes.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_FLOWING_GRACE_FLOWING_DODGE" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_FLOWING_GRACE_GUIDING_WINDS" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_FLOWING_GRACE_PERPETUAL_VIGILANCE" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_FLOWING_GRACE_PERFECT_GRACE" level="6"/>
+		</rules>
+	</element>
+	<element name="Flowing Dodge" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_FLOWING_GRACE_FLOWING_DODGE">
+		<description>
+			<p>Starting at 3rd level, you can enter a state of utter grace when threatened. When you use your Patient Defense feature, you may enter a flowing stance until the start of your next turn. While in this stance you gain the following benefits.</p>
+			<p class="indent">You have a bonus to AC equivalent to the number of hostile creatures within 5ft of you.</p>
+			<p class="indent">When you hit a creature with an opportunity attack they take additional damage equal to your monk level.</p>
+		</description>
+		<sheet>
+			<description>Starting at 3rd level, you can enter a state of utter grace when threatened. 	When you use your Patient Defense feature, you may enter a flowing stance until the start of your next turn. While in this stance you gain the following benefits.&#13;
+			You have a bonus to AC equivalent to the number of hostile creatures within 5ft of you.&#13;
+			When you hit a creature with an opportunity attack they take {{level:monk}} additional damage
+			</description>
+		</sheet>
+	</element>
+	<element name="Guiding Winds" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_FLOWING_GRACE_GUIDING_WINDS">
+		<description>
+			<p>At 6th level, you gain the ability to show your allies the safe, invisible pathways through a battlefield. When you use your Step of the Wind feature, each willing creature of your choice within 5ft of you can use its reaction to move up to half its walking speed without provoking attacks of opportunity.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>At 6th level, you gain the ability to show your allies the safe, invisible pathways through a battlefield. When you use your Step of the Wind feature, each willing creature of your choice within 5ft of you can use its reaction to move up to half its walking speed without provoking attacks of opportunity.</description>
+		</sheet>
+	</element>
+	<element name="Perpetual Vigilance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_FLOWING_GRACE_PERPETUAL_VIGILANCE">
+		<description>
+			<p>At 11th level, you become adept at seizing the opportunities that come to you in battle. You have advantage on attack rolls made on other creatures' turns (such as attacks of opportunity).</p>
+		</description>
+		<sheet>
+			<description>At 11th level, you become adept at seizing the opportunities that come to you in battle. You have advantage on attack rolls made on other creatures' turns (such as attacks of opportunity).</description>
+		</sheet>
+	</element>
+	<element name="Perfect Grace" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_FLOWING_GRACE_PERFECT_GRACE">
+		<description>
+			<p>At 17th level, you enter the final level of serenity. You can take two reactions a round instead of just one. Additionally as part of an opportunity attack you may move up to half your walking speed without provoking attacks of opportunity yourself.</p>
+		</description>
+		<sheet>
+			<description>At 17th level, you enter the final level of serenity. You can take two reactions a round instead of just one. Additionally as part of an opportunity attack you may move up to half your walking speed without provoking attacks of opportunity yourself.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-Resolve.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk-Resolve.xml" />
+		</update>
+	</info>
+	<element name="Way of Resolve" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_WAY_OF_RESOLVE">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the way of Resolve are beings of brute-force, treating every fight as if it may be their last. They call upon their grit to persevere, consume Ki to support their impositions, and are known for falling only once they have spent every ounce of their strength.</p>
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_UNYIELDING_GRIT" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_ENFORCER" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_MUSCLE_BASED_PROTECTION" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_ONE_TWO_COMBO" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_LIMITLESS_STAMINA" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_DEADLY_FORTITUDE" />
+		</description>
+		<sheet display="false">
+			<description>Monks of the way of Resolve are beings of brute-force, treating every fight as if it may be their last.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_UNYIELDING_GRIT" level="3"/>
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_ENFORCER" level="3"/>
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_MUSCLE_BASED_PROTECTION" level="3"/>
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_ONE_TWO_COMBO" level="6"/>
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_LIMITLESS_STAMINA" level="11"/>
+			<grant type="Archetype Feature" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_DEADLY_FORTITUDE" level="17"/>
+		</rules>
+	</element>
+	<element name="Unyielding Grit" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_UNYIELDING_GRIT">
+		<description>
+			<p>Starting when you choose this tradition at 3rd level, you learn how to tap into your primal will to live. If you are below half of your max hp you can use your bonus action to focus and regain HP = your strength modifier + your wisdom modifier + your monk level. You may use this ability once per short rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>If you are below half of your max hp you can use your bonus action to focus and regain {{Grit:hp}} hp. You may use this ability once per short rest.</description>
+			<description level="11" usage="2/Short Rest">If you are below half of your max hp you can use your bonus action to focus and regain {{Grit:hp}} hp. You may use this ability twice per short rest.</description>
+		</sheet>
+		<rules>
+			<stat name="Grit:hp" value="wisdom:modifier" />
+			<stat name="Grit:hp" value="level:monk" />
+			<stat name="Grit:hp" value="strength:modifier" />
+		</rules>
+	</element>
+	<element name="Enforcer" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_ENFORCER">
+		<description>
+			<p>At 3rd level, you gain proficiency on Intimidation checks, improvised weapons are now considered monk weapons for you. Additionally you can spend one ki point to gain advantage on a strength related check.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>Improvised weapons are now considered monk weapons for you. Additionally you can spend one ki point to gain advantage on a strength related check.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+		</rules>
+	</element>
+	<element name="Muscle-Based Protection" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_MUSCLE_BASED_PROTECTION">
+		<description>
+			<p>At 3rd level you get to add your strength score to your Armour class</p>
+		</description>
+		<sheet>
+			<description>You add {{strength:modifier}} to your armour class</description>
+		</sheet>
+		<rules>
+			<stat name="ac" value="strength:modifier"/>
+		</rules>
+	</element>
+	<element name="One-Two Combo" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_ONE_TWO_COMBO">
+		<description>
+			<p>At level 6 if the first attack in your flurry of blows succeeds you can choose to add one of the following effects to the second:</p>
+			<p class="indent"> You gain your wisdom modifier to hit and your strength modifier to damage</p>
+			<p class="indent"> At 11th level you can choose to grapple with your second attack and gain your wisdom modifier as a bonus to the grapple check</p>
+		</description>
+		<sheet>
+			<description>At level 6 if the first attack in your flurry of blows succeeds you can choose to add one of the following effects to the second:&#13;
+			You gain {{wisdom:modifier}} to hit and {{strength:modifier}} to damage&#13;
+			At 11th level you can choose to grapple with your second attack and gain {{wisdom:modifier}} as a bonus to the grapple check</description>
+		</sheet>
+	</element>
+	<element name="Limitless Stamina" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_LIMITLESS_STAMINA">
+		<description>
+			<p>When you use Unyielding Grit you gain resistance to non-magical Slashing,Piercing and Bludgeoning damage for the next half an hour</p>
+		</description>
+		<sheet action="Action" usage="Ki">
+			<description>When you use Unyielding Grit you gain resistance to non-magical Slashing,Piercing and Bludgeoning damage for the next half an hour</description>
+		</sheet>
+	</element>
+	<element name="Deadly Fortitude" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_WAY_OF_RESOLVE_DEADLY_FORTITUDE">
+		<description>
+			<p>At 17th level, your ability to persevere when you should be has reached an unprecedented level. When you hit 0 hit points you automatically use Deadly Fortitude. Whilst a 0 hit points you are still conscious, you can take your turn as normal. At the start of your turn you still make all the death saving throws, for each one you fail you gain two levels of exhaustion (until you fail 3 where you die from failure and from exhaustion) Any damage you take in this state is tallied to the side. If this exceeds your maximum hit points you die instantly, any healing spells take damage away from this tally first and then add hit points to your total. You can use this once per long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you hit 0 hit points you automatically use Deadly Fortitude. Whilst a 0 hit points you are still conscious, you can take your turn as normal. At the start of your turn you still make all the death saving throws, for each one you fail you gain two levels of exhaustion (until you fail 3 where you die from failure and from exhaustion) Any damage you take in this state is tallied to the side. If this exceeds your maximum hit points you die instantly, any healing spells take damage away from this tally first and then add hit points to your total.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-Water.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk-Water.xml" />
+		</update>
+	</info>
+	<element name="Way of Water" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_WATER">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the Way of Water take inspiration from water's never-ending flow from one place to another. They imitate its ability to gently flow in one moment, or come crashing down the next, learning to smoothly transition from flowing evasion to devastating counter attack.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WATER_GENTLE_STREAM_CRUSHING_CURRENT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WATER_SWEEPING_TIDE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WATER_FORM_OF_FLOWING_RIVER" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WATER_STILLNESS_OF_THE_POND" />
+		</description>
+		<sheet display="false">
+			<description>Monks of the Way of Water take inspiration from water's never-ending flow from one place to another. They imitate its ability to gently flow in one moment, or come crashing down the next, learning to smoothly transition from flowing evasion to devastating counter attack.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WATER_GENTLE_STREAM_CRUSHING_CURRENT" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WATER_SWEEPING_TIDE" level="6"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WATER_FORM_OF_FLOWING_RIVER" level="11"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WATER_STILLNESS_OF_THE_POND" level="17"/>
+		</rules>
+	</element>
+	<element name="Gentle Stream, Crushing Current" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WATER_GENTLE_STREAM_CRUSHING_CURRENT">
+		<description>
+			<p>Starting when you choose this tradition at 3rd level, you can influence your ki to flow through your body as a stream flows down a hill. When you use your patient defense, you gain advantage on the first attack next turn.</p>
+		</description>
+		<sheet>
+			<description>Starting when you choose this tradition at 3rd level, you can influence your ki to flow through your body as a stream flows down a hill. When you use your patient defense, you gain advantage on the first attack next turn.</description>
+		</sheet>
+	</element>
+	<element name="Sweeping Tide" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WATER_SWEEPING_TIDE">
+		<description>
+			<p>At 6th level, you have learned a technique to knock enemies feet from under them as the undercurrent in a tide does. When an enemy succeeds their saving throw against your stunning strike you can spend an additional ki point to knock them prone instead.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>At 6th level, you have learned a technique to knock enemies feet from under them as the undercurrent in a tide does. When an enemy succeeds their saving throw against your stunning strike you can spend an additional ki point to knock them prone instead.</description>
+		</sheet>
+	</element>
+	<element name="Form of the Flowing River" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WATER_FORM_OF_FLOWING_RIVER">
+		<description>
+			<p>At 11th level, you embody the essence of water, and move as if you were a flowing stream. You can move through crowds of people and difficult terrain unimpeded, and you are considered one size smaller for the purposes of squeezing.</p>
+		</description>
+		<sheet>
+			<description>At 11th level, you embody the essence of water, and move as if you were a flowing stream. You can move through crowds of people and difficult terrain unimpeded, and you are considered one size smaller for the purposes of squeezing.</description>
+		</sheet>
+	</element>
+	<element name="Stillness of the Pond" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WATER_STILLNESS_OF_THE_POND">
+		<description>
+			<p>At 17th level, your soul is as still as a pond and you can expand this aura of calm like ripples from an impact. You can expend 5 ki points to create an aura reaching out 20ft from you of complete calm. Any offensive spell or attack that moves past this aura or is made within this aura fails automatically friendly or otherwise. Additionally when you strike a creature who tried to make an offensive action in the aura you gain advantage. This effect ends after 30 seconds or until you end it as a bonus action or until you end it by making an attack. If you end it by making an attack you gain a number of d10 to the damage equivalent to the number of turns the aura was active. For example if you attacked after the first turn you'd gain 1d10, but after five turns it would be 5d10.</p>
+		</description>
+		<sheet>
+			<description>At 17th level, your soul is as still as a pond and you can expand this aura of calm like ripples from an impact. You can expend 5 ki points to create an aura reaching out 20ft from you of complete calm. Any offensive spell or attack that moves past this aura or is made within this aura fails automatically friendly or otherwise. Additionally when you strike a creature who tried to make an offensive action in the aura you gain advantage. This effect ends after 30 seconds or until you end it as a bonus action or until you end it by making an attack. If you end it by making an attack you gain a number of d10 to the damage equivalent to the number of turns the aura was active. For example if you attacked after the first turn you'd gain 1d10, but after five turns it would be 5d10.</description>
+		</sheet>
+	</element>
+</elements>

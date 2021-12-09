@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1">
+		<update version="0.2">
 			<file name="sources.xml" url="placeholder" />
 		</update>
 	</info>
@@ -18,7 +18,7 @@
 	</element>
 	<element name="D&amp;D Wiki" type="Source" source="D&amp;D Wiki" id="ID_HOMEBREW_SOURCE_DND_WIKI">
 		<description>
-			<![CDATA[<p></p>]]>
+			<![CDATA[<p>Homebrew content posted on www.danddwiki.com</p>]]>
 		</description>
 		<setters>
 			<set name="abbreviation">WIKI</set>
@@ -35,17 +35,6 @@
 			<set name="abbreviation">TGSB</set>
 			<set name="url">https://www.reddit.com/r/TheGriffonsSaddlebag/</set>
 			<set name="author" abbreviation="RDDT">The Griffon's Saddlebag Subreddit</set>
-			<set name="homebrew">true</set>
-		</setters>
-	</element>
-	<element name="Reddit : Griffon's Saddlebag" type="Source" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_SOURCE_R_GS">
-		<description>
-			<![CDATA[<p>Homebrew content posted on the r/TheGriffonsSaddlebag Subreddit.</p>]]>
-		</description>
-		<setters>
-			<set name="abbreviation">TGSB</set>
-			<set name="url">https://www.reddit.com/r/TheGriffonsSaddlebag/</set>
-			<set name="author" abbreviation="TGSB">The Griffon's Saddlebag Subreddit</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>

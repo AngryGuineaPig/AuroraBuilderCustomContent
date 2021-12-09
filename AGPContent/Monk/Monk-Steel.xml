@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-Steel.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk-Steel.xml" />
+		</update>
+	</info>
+	<element name="Way of Steel" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_STEEL">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the Way of Steel strive to imitate the strength, flexibility, and refinability of steel. Through rigorous training, they hardening their bodies to be like the plates of armour, and their fists like the head of a warhammer.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_STEEL_IRON_BODY" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_STEEL_FISTS_OF_STEEL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_STEEL_TEMPERED_BODY" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_STEEL_STEEL_SOUL" />
+		</description>
+		<sheet display="false">
+			<description>Monks of the Way of Steel strive to imitate the strength, flexibility, and refinability of steel. Through rigorous training, they hardening their bodies to be like the plates of armour, and their fists like the head of a warhammer.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_STEEL_IRON_BODY" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_STEEL_FISTS_OF_STEEL" level="6"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_STEEL_TEMPERED_BODY" level="11"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_STEEL_STEEL_SOUL" level="17"/>
+		</rules>
+	</element>
+	<element name="Iron Body" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_STEEL_IRON_BODY">
+		<description>
+			<p>Starting when you choose this tradition at 3rd level, your body's ability to take hits has been boosted. As a reaction you can spend a ki point ot add 3 to your ac.</p>
+		</description>
+		<sheet action="Reaction" usage="Ki">
+			<description>Starting when you choose this tradition at 3rd level, your body's ability to take hits has been boosted. As a reaction you can spend a ki point ot add 3 to your ac.</description>
+		</sheet>
+	</element>
+	<element name="Fists of Steel" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_STEEL_FISTS_OF_STEEL">
+		<description>
+			<p>At 6th level, you've mastered techniques to harden your body in just the right ways, allowing your fists to strike like a sledgehammer. As a bonus action you can expend 2 kip points to add 1d8 bludgeoning damage to all of your melee attacks for the next minute.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Ki">
+			<description>At 6th level, you've mastered techniques to harden your body in just the right ways, allowing your fists to strike like a sledgehammer. As a bonus action you can expend 2 kip points to add 1d8 bludgeoning damage to all of your melee attacks for the next minute.</description>
+		</sheet>
+	</element>
+	<element name="Tempered Body" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_STEEL_TEMPERED_BODY">
+		<description>
+			<p>At 11th level, your body has taken on the ever-improving nature of steel. You are resistant to fire and cold damage. Additionally, if you use your Fists of Steel feature the turn after you've taken fire or cold damage, you can deal 1d6 of that type in addition.</p>
+		</description>
+		<sheet>
+			<description>At 11th level, your body has taken on the ever-improving nature of steel. You are resistant to fire and cold damage. Additionally, if you use your Fists of Steel feature the turn after you've taken fire or cold damage, you can deal 1d6 of that type in addition.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+	<element name="Steel Soul" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_STEEL_STEEL_SOUL">
+		<description>
+			<p>At 17th level, your body is like a suit of armour. When you are reduced to 0 hit points you can expend 3 ki points to be reduced to 1 hit point instead.</p>
+		</description>
+		<sheet>
+			<description>At 17th level, your body is like a suit of armour. When you are reduced to 0 hit points you can expend 3 ki points to be reduced to 1 hit point instead.</description>
+		</sheet>
+	</element>
+</elements>

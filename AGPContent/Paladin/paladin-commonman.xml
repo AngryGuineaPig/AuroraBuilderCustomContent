@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="paladin-commonman.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Paladin/paladin-commonman.xml" />
+		</update>
+	</info>
+	<element name="Oath of the Common Man" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_OATH_OF_THE_COMMON_MAN">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>A simple blacksmith raises his hammer above the glowing-hot steel. It strikes once. Twice. He lifts it a third, and holds it in his grasp as he studies the steel. As if in anticipation, the hammer begins to quake with holy force and he brings it down again and again, his divine strength aiding his work.</p>
+			<p>A half-elf clad in common clothes watches her friend prepare alchemical mixtures, combining the contents of distilled vials into one another before letting loose a shriek as the concoction erupts before her. Looking on the failed works of her friend, the half-elf pats her back with a smile. "It is alright," she speaks, "try once more, sister. Your work is of the utmost importance."</p>
+			<p>Adorned in simple, self-made mail, a dragonborn readies his hammer as he stands before the liege lord who has enslaved his people. On this day, the tyranny ends. On this day, his people go free.</p>
+			<p>The Oath of the Common Man is born of togetherness, mutual suffering, and righteous indignation at those who would put their boot heel to the collective neck of the worst-off in society. When a greedy baron levies unfair taxes that cut the poor to the bone, when a pompous dragon ransacks the countryside to build his own personal hoard, when a bloodthirsty tyrant forces the poor into conscripted service in his armies, to fight and die on the frontlines, the paladin of the Common Man will be there with the fury of the oppressed at their back, with thunder in their voice and fire in their eyes, and the will of the people behind their every word and action. To a paladin of the Common Man,  tyrants and avaricious industrialists are worse than any fiend, and they must be thrown down, their schemes bent and broken, before the might of those they sought to keep down.</p>
+			<p>Paladins of the Common Man always wear armor and clothing that is simple, un-ornate, but well cared-for and kept up with the labor and dedication that comes only from earnest devotion.</p>
+			<h5>TENETS OF THE COMMON MAN</h5>
+			<p>The tenets that a paladin of the Common Man obeys vary wildly from individual to individual, but all carry within them the same revolutionary spirit, the single idea that the change the world needs to break free from tyranny is destined to happen, but that much work needs to be done alongside every common man and woman to bring this collective dream to fruition. A paladin of the Common Man thus roughly upholds the following tenets: </p>
+			<p class="indent"><b><i>Equality.</i></b> All creatures are inherently equal, and those that deny this fact for their own gain do the common man harm.</p>
+			<p class="indent"><b><i>Community.</i></b> A struggle is meaningless if it is not done together for a greater purpose than oneself. Stand and fight with your brothers and sisters for the betterment of all.</p>
+			<p class="indent"><b><i>Respect.</i></b> Give respect, love, and kindness to those disenfranchised who find themselves without any. They are your comrades, and the reason you fight.</p>
+			<p class="indent"><b><i>Change.</i></b> The world must change if it is to be any better, and it will not change if we do not act. Do your part to make a more just future.</p>
+			<p class="indent"><b><i>Labour.</i></b> You are not above the work that the common man does. Whenever you have a chance, labor with them as they do and work to ease their difficult lot in life.</p>
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_OATH_SPELLS" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_CHANNEL_DIVINITY" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_AURA_OF_SOLIDARITY" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_REVOLUTIONARY_SPIRIT" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_STRENGTH_OF_THE_PEOPLE" />
+		</description>
+		<sheet display="false">
+			<description>The Oath of the Common Man is born of togetherness, mutual suffering, and righteous indignation at those who would put their boot heel to the collective neck of the worst-off in society. When a greedy baron levies unfair taxes that cut the poor to the bone, when a pompous dragon ransacks the countryside to build his own personal hoard, when a bloodthirsty tyrant forces the poor into conscripted service in his armies, to fight and die on the frontlines, the paladin of the Common Man will be there with the fury of the oppressed at their back, with thunder in their voice and fire in their eyes, and the will of the people behind their every word and action. To a paladin of the Common Man,  tyrants and avaricious industrialists are worse than any fiend, and they must be thrown down, their schemes bent and broken, before the might of those they sought to keep down.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_OATH_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_CHANNEL_DIVINITY" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_AURA_OF_SOLIDARITY" level="7"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_REVOLUTIONARY_SPIRIT" level="15"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_STRENGTH_OF_THE_PEOPLE" level="20"/>
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<p class="indent"></p>
+			<h5>Oath of The Common Man Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Longstrider, Sanctuary</em></td></tr>
+				<tr><td>5th</td><td><em>Enhance Ability, Calm Emotions</em></td></tr>
+				<tr><td>9th</td><td><em>Counterspell, Protection From Energy</em></td></tr>
+				<tr><td>13th</td><td><em>Fabricate, Freedom of Movement</em></td></tr>
+				<tr><td>17th</td><td><em>Legend Lore, Wall Of Stone</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You gain oath spells at the paladin levels listed.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FABRICATE" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_CHANNEL_DIVINITY">
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following Channel Divinity options.</p>
+			<p class="indent"><b><i>Worker's Harmony.</i></b> As an action, you unleash a message of unity in a loud, booming voice, calling on the spirits of common laborers who have died in oppression to come to aid you, or another. Either you are considered to be aided by the Help action from an unseen or indistinct source for a number of rounds equal to your Charisma modifier (minimum 1), or one friendly creature within 30 feet of you that you choose (including yourself) gains proficiency with a specific type of crafting tools for one hour.</p>
+			<p class="indent"><b><i>Turn the Bourgeois.</i></b>  Those that hold themselves a class above the common working man must be brought down and made to fear the peasantry. As an action, you utter an indictment against those who would trample the rights of laborers, inspiring the same terror in them that they inflict on those they believe to be beneath them. Each creature that considers itself inherently better than the common man (typically including most fey, non-chaotic fiends, and dragons - your DM is the ultimate arbiter of this) that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
+		</description>
+		<sheet display="false">
+			<description>Worker's Harmony / Turn the Bourgeois.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_CHANNEL_DIVINITY_WORKERS_HARMONY" />
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_CHANNEL_DIVINITY_TURN_THE_BOURGEOIS" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Worker's Harmony" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_CHANNEL_DIVINITY_WORKERS_HARMONY">
+		<description>
+			<p>As an action, you unleash a message of unity in a loud, booming voice, calling on the spirits of common laborers who have died in oppression to come to aid you, or another. Either you are considered to be aided by the Help action from an unseen or indistinct source for a number of rounds equal to your Charisma modifier (minimum 1), or one friendly creature within 30 feet of you that you choose (including yourself) gains proficiency with a specific type of crafting tools for one hour.</p>
+		</description>
+		<sheet alt="Worker's Harmony" action="Action" usage="Channel Divinity">
+			<description>As an action, you unleash a message of unity in a loud, booming voice, calling on the spirits of common laborers who have died in oppression to come to aid you, or another. Either you are considered to be aided by the Help action from an unseen or indistinct source for {{charisma:modifier}} rounds, or one friendly creature within 30 feet of you that you choose (including yourself) gains proficiency with a specific type of crafting tools for one hour.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Turn the Bourgeois" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_CHANNEL_DIVINITY_TURN_THE_BOURGEOIS">
+		<description>
+			<p>Those that hold themselves a class above the common working man must be brought down and made to fear the peasantry. As an action, you utter an indictment against those who would trample the rights of laborers, inspiring the same terror in them that they inflict on those they believe to be beneath them. Each creature that considers itself inherently better than the common man (typically including most fey, non-chaotic fiends, and dragons - your DM is the ultimate arbiter of this) that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
+		</description>
+		<sheet alt="Turn the Bourgeois" action="Bonus Action" usage="Channel Divinity">
+			<description>Those that hold themselves a class above the common working man must be brought down and made to fear the peasantry. As an action, you utter an indictment against those who would trample the rights of laborers, inspiring the same terror in them that they inflict on those they believe to be beneath them. Each creature that considers itself inherently better than the common man (typically including most fey, non-chaotic fiends, and dragons - your DM is the ultimate arbiter of this) that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</description>
+		</sheet>
+	</element>	
+	<element name="Aura of Solidarity" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_AURA_OF_SOLIDARITY">
+		<description>
+			<p>Beginning at 7th level, whenever you or a friendly creature within 10 feet of you takes damage, you may choose to instead divide that damage evenly between all friendly targets within this aura, rounding up fractions to the nearest whole hit point. As an example: If there are 3 friendly creatures in this aura (yourself included) and one takes 20 hitpoints of damage, you may choose to have all three friendly creatures take 7 hitpoints of damage instead.</p>
+			<p>At 18th level, the range of this aura increases to 30 feet</p>
+		</description>
+		<sheet>
+			<description>Beginning at 7th level, whenever you or a friendly creature within 10 feet of you takes damage, you may choose to instead divide that damage evenly between all friendly targets within this aura, rounding up fractions to the nearest whole hit point. As an example: If there are 3 friendly creatures in this aura (yourself included) and one takes 20 hitpoints of damage, you may choose to have all three friendly creatures take 7 hitpoints of damage instead.</description>
+			<description level="18">Beginning at 18th level, whenever you or a friendly creature within 30 feet of you takes damage, you may choose to instead divide that damage evenly between all friendly targets within this aura, rounding up fractions to the nearest whole hit point. As an example: If there are 3 friendly creatures in this aura (yourself included) and one takes 20 hitpoints of damage, you may choose to have all three friendly creatures take 7 hitpoints of damage instead.</description>
+		</sheet>
+	</element>
+	<element name="Revolutionary Spirit" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_REVOLUTIONARY_SPIRIT">
+		<description>
+			<p>Starting at 15th level, you may take the Help action as a bonus action on each of your turns.</p>
+		 	<p>In addition, you have advantage on all Charisma checks involving interaction with laborers and the common man.</p>
+		</description>
+		<sheet>
+			<description>Starting at 15th level, you may take the Help action as a bonus action on each of your turns.&#13;
+			In addition, you have advantage on all Charisma checks involving interaction with laborers and the common man.</description>
+		</sheet>
+	</element>
+	<element name="Strength of the People" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_COMMON_MAN_STRENGTH_OF_THE_PEOPLE">
+		<description>
+			<p>At 20th level, you can transform yourself into a larger-than-life icon of the working class and their revolutionary struggle. Using your action, you can gain the following benefits for 1 minute, as long as you can see or hear a conscious friendly creature:</p>
+			<ul>
+				<li>You grow to large size and your equipment grows with you, doubling your reach and movement speed.</li>
+				<li>At the start of each of their turns, any friendly creature that can see or hear you (including yourself) gains a number of temporary hit points equal to your Charisma modifier. </li>
+				<li>As a bonus action on your turn, you may apply the benefits of the Help action to a number of friendly creatures equal to half your Charisma modifier, rounded up (minimum 1), within 30 feet of you and that can see or hear you.</li>
+			</ul>
+			<p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>At 20th level, you can transform yourself into a larger-than-life icon of the working class and their revolutionary struggle. Using your action, you can gain the following benefits for 1 minute, as long as you can see or hear a conscious friendly creature:&#13;
+			You grow to large size and your equipment grows with you, doubling your reach and movement speed.&#13;
+			At the start of each of their turns, any friendly creature that can see or hear you (including yourself) gains {{charisma:modifier}} temporary hit points. &#13;
+			As a bonus action on your turn, you may apply the benefits of the Help action to {{charisma:modifier:half:up}} friendly creatures, within 30 feet of you and that can see or hear you.&#13;
+			Once you use this feature, you can't use it again until you finish a long rest.</description>
+		</sheet>
+	</element>
+</elements>

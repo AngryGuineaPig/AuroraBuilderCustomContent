@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk.index" />
+		</update>
+	</info>
+	<files>
+        <file name="Monk-Blademaster.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Blademaster.xml" />
+		<file name="Monk-ChronalFlow.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-ChronalFlow.xml" />
+		<file name="Monk-Dreamer.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Dreamer.xml" />
+		<file name="Monk-Dynamis.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Dynamis.xml" />
+		<file name="Monk-FlowingGrace.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-FlowingGrace.xml" />
+		<file name="Monk-Flyingfeet.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Flyingfeet.xml" />
+		<file name="Monk-Gravitation.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Gravitation.xml" />
+		<file name="Monk-OrderlyCreation.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-OrderlyCreation.xml" />
+		<file name="Monk-Qicard.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Qicard.xml" />
+		<file name="Monk-Resolve.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Resolve.xml" />
+		<file name="Monk-Soulknife.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Soulknife.xml" />
+		<file name="Monk-Steel.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Steel.xml" />
+		<file name="Monk-Water.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Water.xml" />
+		<file name="Monk-Winterfury.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Winterfury.xml" />
+		<file name="Monk-Wrath.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Wrath.xml" />
+    </files>
+</index>

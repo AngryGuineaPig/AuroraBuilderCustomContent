@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-Gravitation.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk-Gravitation.xml" />
+		</update>
+	</info>
+	<element name="Way of Gravitation" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_GRAVITATION">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the way of Gravitation use their ki to manipulate the very force of gravity. To them it is a simple extension of their natural force.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_GRAVITATION_GRAVITATIONAL_PUNCHES" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_GRAVITATION_LIGHT_AS_A_FEATHER" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_GRAVITATION_FLUCTUATE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_GRAVITATION_LOW_GRAVITY" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_GRAVITATION_PLUMMET" />
+		</description>
+		<sheet display="false">
+			<description>Monks of the way of Gravitation use their ki to manipulate the very force of gravity. To them it is a simple extension of their natural force.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_GRAVITATION_GRAVITATIONAL_PUNCHES" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_GRAVITATION_LIGHT_AS_A_FEATHER" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_GRAVITATION_FLUCTUATE" level="6"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_GRAVITATION_LOW_GRAVITY" level="11"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_GRAVITATION_PLUMMET" level="17"/>
+		</rules>
+	</element>
+	<element name="Gravitational Punches" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_GRAVITATION_GRAVITATIONAL_PUNCHES">
+		<description>
+			<p>Starting when you choose this tradition at 3rd level your blows are so heavy that they reform gravity around them. you gain the following benefits to your unarmed attacks:</p>
+			<p class="indent"> Whenever you strike two different creatures with you unarmed attacks within five rounds of each other you can spend a ki point to create an attraction between the two. They must make a strength saving throw against your ki DC or be pulled towards each other at a rate of 10ft per round. When they collide they take a damage as if they had been falling towards each other</p>
+			<p class="indent"> If you strike the same creature twice in the same round you can create a gravitational anchor. You can spend 1 ki point to create the anchor, for each 5ft the creature tries to move they must make a strength check against your ki DC. if they fail they loose all further movement on this turn.</p>
+		</description>
+		<sheet usage="ki">
+			<description>Whenever you strike two different creatures with you unarmed attacks within five rounds of each other you can spend a ki point to create an attraction between the two. They must make a strength saving throw against your ki DC or be pulled towards each other at a rate of 10ft per round. When they collide they take a damage as if they had been falling towards each other.&#13;
+			If you strike the same creature twice in the same round you can create a gravitational anchor. You can spend 1 ki point to create the anchor, for each 5ft the creature tries to move they must make a strength check against your ki DC. if they fail they loose all further movement on this turn.</description>
+		</sheet>
+	</element>
+	<element name="Light as a Feather" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_GRAVITATION_LIGHT_AS_A_FEATHER">
+		<description>
+			<p>At third level you can manipulate gravity around yourself, you can stand up from prone using 5ft of movement.</p>
+			<p>Additionally you can spend a ki point to increase you high jump by 10ft, your long jump by 15ft, or reduce falling damage by 1d10.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>At third level you can manipulate gravity around yourself, you can stand up from prone using 5ft of movement.&#13;
+			Additionally you can spend a ki point to increase you high jump by 10ft, your long jump by 15ft, or reduce falling damage by 1d10.</description>
+		</sheet>
+	</element>
+	<element name="Fluctuate" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_GRAVITATION_FLUCTUATE">
+		<description>
+			<p>At 6th level you get the following abilities:</p>
+			<p class="indent"><b>Catch</b> You can spend a ki point as a reaction to cast feather fall on yourself without any components</p>
+			<p class="indent"><b>Anchor</b> As a reaction to being moved you can choose to increase gravity and not be moved instead</p>
+		</description>
+		<sheet>
+			<description>At 6th level you get the following abilities:&#13;
+			Catch You can spend a ki point as a reaction to cast feather fall on yourself without any components.&#13;
+			Anchor As a reaction to being moved you can choose to increase gravity and not be moved instead</description>
+		</sheet>
+	</element>
+	<element name="Low Gravity" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_GRAVITATION_LOW_GRAVITY">
+		<description>
+			<p>At 11th level when you use your step of the wind feature you gain flying speed equal to your walking speed until the end of the round.</p>
+			<p>Additionally whenever you hit someone with your unarmed strike they take force damage equal to twice your wisdom modifier</p>
+		</description>
+		<sheet>
+			<description>At 11th level when you use your step of the wind feature you gain flying speed equal to your walking speed until the end of the round.&#13;
+			Additionally whenever you hit someone with your unarmed strike they take force damage equal to twice your wisdom modifier</description>
+		</sheet>
+	</element>
+	<element name="Plummet" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_GRAVITATION_PLUMMET">
+		<description>
+			<p>At 17th level your abilities at manipulating gravity have grown to the point where you can control direction to an unprecedented degree. When you strike a creature you can spend a number of ki points to launch it in a direction you choose. The creature must make a strength save against your ki DC on a success they move half the distance on a fail they move the full distance. The distance they move is equivalent to 30ft X the number of ki points you spend.</p>
+		</description>
+		<sheet action="Action" usage="Ki">
+			<description>At 17th level your abilities at manipulating gravity have grown to the point where you can control direction to an unprecedented degree. When you strike a creature you can spend a number of ki points to launch it in a direction you choose. The creature must make a strength save against your ki DC on a success they move half the distance on a fail they move the full distance. The distance they move is equivalent to 30ft X the number of ki points you spend.</description>
+		</sheet>
+	</element>
+</elements>

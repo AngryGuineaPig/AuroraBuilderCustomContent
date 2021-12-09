@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-Dreamer.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk-Dreamer.xml" />
+		</update>
+	</info>
+	<element name="Way of the Dreamer" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_THE_DREAMER">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>The Ossended Host is an esoteric group of acolytes who worship the power of dreams and nightmares. Monks of this order spend night after night perfecting a form of meditation that can access a communal dream shared by all of their order. Within this dream, generations of monks have recorded legends, forgotten tomes, ancient histories, and much more. This wealth of knowledge is held within and maintained by the mysterious entity that leads the Ossended Host. No outsider has ever seen this being.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_DREAMER_DREAMERS_MEDITATION" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_DREAMER_UNWANTED_VISIONS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_DREAMER_SOOTHING_BOND" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_DREAMER_DREAMERS_INSIGHT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_DREAMER_WAKING_DREAM" />
+		</description>
+		<sheet display="false">
+			<description>The Ossended Host is an esoteric group of acolytes who worship the power of dreams and nightmares. Monks of this order spend night after night perfecting a form of meditation that can access a communal dream shared by all of their order. Within this dream, generations of monks have recorded legends, forgotten tomes, ancient histories, and much more. This wealth of knowledge is held within and maintained by the mysterious entity that leads the Ossended Host. No outsider has ever seen this being.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_DREAMER_DREAMERS_MEDITATION" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_DREAMER_UNWANTED_VISIONS" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_DREAMER_SOOTHING_BOND" level="6"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_DREAMER_DREAMERS_INSIGHT" level="11"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_DREAMER_WAKING_DREAM" level="17"/>
+		</rules>
+	</element>
+	<element name="Dreamer's Meditation" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_DREAMER_DREAMERS_MEDITATION">
+		<description>
+			<p>Starting when you choose this tradition at 3rd level, you gain the ability to access a communal dream through deep meditation. Whenever you sleep you find yourself in The Dream, and no longer dream normally. The Dream takes a unique form to each practitioner, though any dreamer is able to use the information the Ossended Host has stored there. If you spend a long rest sleeping you may study in The Dream, looking for information of your choice. At the end of the long rest, you may make an Intelligence check with advantage as though you were in a library searching for information. At 11th level, you may choose to spend your time to travel the Dreamlands rather than researching. When you use this feature you may instead cast dream or scrying. If cast in this way you don't require material components.</p>
+		</description>
+		<sheet>
+			<description>Starting when you choose this tradition at 3rd level, you gain the ability to access a communal dream through deep meditation. Whenever you sleep you find yourself in The Dream, and no longer dream normally. The Dream takes a unique form to each practitioner, though any dreamer is able to use the information the Ossended Host has stored there. If you spend a long rest sleeping you may study in The Dream, looking for information of your choice. At the end of the long rest, you may make an Intelligence check with advantage as though you were in a library searching for information.</description>
+			<description level="11">Starting when you choose this tradition at 3rd level, you gain the ability to access a communal dream through deep meditation. Whenever you sleep you find yourself in The Dream, and no longer dream normally. The Dream takes a unique form to each practitioner, though any dreamer is able to use the information the Ossended Host has stored there. If you spend a long rest sleeping you may study in The Dream, looking for information of your choice. At the end of the long rest, you may make an Intelligence check with advantage as though you were in a library searching for information. At 11th level, you may choose to spend your time to travel the Dreamlands rather than researching. When you use this feature you may instead cast dream or scrying. If cast in this way you don't require material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DREAM" level="11" spellcasting="Monk" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="11" spellcasting="Monk" prepared="true" />
+		</rules>
+	</element>
+	<element name="Unwanted Visions" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_DREAMER_UNWANTED_VISIONS">
+		<description>
+			<p>At 3rd level, you learn how to trigger memories of past dreams, both good and bad, by striking particular nerves. When you strike a creature, once per turn, you can force them to make a wisdom saving throw. On a failure they take psychic damage equal to your wisdom modifier and are charmed or frightened (your choice) by/of you until the start of your next turn.</p>
+		</description>
+		<sheet action="Action">
+			<description>At 3rd level, you learn how to trigger memories of past dreams, both good and bad, by striking particular nerves. When you strike a creature, once per turn, you can force them to make a wisdom saving throw. On a failure they take {{wisdom:modifier}} psychic damage and are charmed or frightened (your choice) by/of you until the start of your next turn.</description>
+		</sheet>      
+	</element>
+	<element name="Soothing Bond" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_DREAMER_SOOTHING_BOND">
+		<description>
+			<p>At 6th level, you may choose to spend some time in your dream visiting those near you, calming them and opening their minds. At the end of a long rest, up to 5 humanoids other than yourself, who slept within 100ft of your gain temporary hit points equal to your monk level + your wisdom modifier. These creatures become bonded to your dream for upt to 24 hours or until they lose the temporary hit points. While bonded to these creatures you may telepathically communicate with them while they are within 60ft of you and they have advantage on saving throws against being frightened.</p>
+		</description>
+		<sheet>
+			<description>At 6th level, you may choose to spend some time in your dream visiting those near you, calming them and opening their minds. At the end of a long rest, up to 5 humanoids other than yourself, who slept within 100ft of your gain {{bond:hp}} temporary hit points. These creatures become bonded to your dream for upt to 24 hours or until they lose the temporary hit points. While bonded to these creatures you may telepathically communicate with them while they are within 60ft of you and they have advantage on saving throws against being frightened.</description>
+		</sheet>
+		<rules>
+			<stat name="bond:hp" value="level:monk" />
+			<stat name="bond:hp" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Dreamer's Insight" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_DREAMER_DREAMERS_INSIGHT">
+		<description>
+			<p>At 11th level, The dreamer can sometimes tap into knowledge their conscious mind cannot understand, giving them brief flashes of insight during combat. When a creature hits you with an attack, you can spend 2 ki points as a reaction to gain insight into their future attacks. Until the end of your next turn, you don't provoke attacks of opportunity from them and their attack rolls against you are at disadvantage.</p>
+		</description>
+		<sheet action="Reaction" usage="ki">
+			<description>At 11th level, The dreamer can sometimes tap into knowledge their conscious mind cannot understand, giving them brief flashes of insight during combat. When a creature hits you with an attack, you can spend 2 ki points as a reaction to gain insight into their future attacks. Until the end of your next turn, you don't provoke attacks of opportunity from them and their attack rolls against you are at disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Waking Dream" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_DREAMER_WAKING_DREAM">
+		<description>
+			<p>At 17th level, you have spent so much time within The Dream, that it and the real world blur together, altering your mind beyond mortal recognition. You are immune to psychic damage and the charmed and frightened conditions, and can always perceive illusions for what they are. In addition if any creature attempts to charm you, frighten you, or read your thoughts, they must make an Intelligence saving throw, or take psychic damage equal to your monk level.</p>
+		</description>
+		<sheet>
+			<description>At 17th level, you have spent so much time within The Dream, that it and the real world blur together, altering your mind beyond mortal recognition. You are immune to psychic damage and the charmed and frightened conditions, and can always perceive illusions for what they are. In addition if any creature attempts to charm you, frighten you, or read your thoughts, they must make an Intelligence saving throw, or take {{level:monk}} psychic damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PSYCHIC" />
+		</rules>
+	</element>
+</elements>

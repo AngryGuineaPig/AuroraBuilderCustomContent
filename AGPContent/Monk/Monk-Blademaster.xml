@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-Blademaster.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk-Blademaster.xml" />
+		</update>
+	</info>
+	<element name="Way of the Blademaster" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_the Blademaster">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the Blademaster value beauty in combat, they turn a violent bloodbath into an artistic display mastering not only their own body but mastering the use of blades as an extension of their own body.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BLADEMASTER_SUPERIOR_SWORDSMANSHIP" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BLADEMASTER_BLADE_SURGE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BLADEMASTER_DUEL_OF_STEEL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BLADEMASTER_BLADE_DANCE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BLADEMASTER_OMNISLASH" />
+		</description>
+		<sheet display="false">
+			<description>Monks of the Blademaster value beauty in combat, they turn a violent bloodbath into an artistic display mastering not only their own body but mastering the use of blades as an extension of their own body.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BLADEMASTER_SUPERIOR_SWORDSMANSHIP" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BLADEMASTER_BLADE_SURGE" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BLADEMASTER_DUEL_OF_STEEL" level="6"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BLADEMASTER_BLADE_DANCE" level="11"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BLADEMASTER_OMNISLASH" level="17"/>
+		</rules>
+	</element>
+	<element name="Superior Swordsmanship" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BLADEMASTER_SUPERIOR_SWORDSMANSHIP">
+		<description>
+			<p>When you choose this tradition at 3rd level you gain proficiency with acrobatics, additionally you gain double your proficiency in acrobatics checks, additionally you gain proficiency in swords.</p>
+			<p class="indent">Whenever you use the deflect missiles or flurry of blows abilities you can replace an open hand with a bladed weapon. For flurry of blows you don't change the damage dice from your martial arts dice but the damage type changes to slashing or piercing depending on the weapon.</p>
+		</description>
+		<sheet usage="ki">
+			<description>When you choose this tradition at 3rd level you gain proficiency with acrobatics, additionally you gain double your proficiency in acrobatics checks, additionally you gain proficiency in swords.&#13;
+			Whenever you use the deflect missiles or flurry of blows abilities you can replace an open hand with a bladed weapon. For flurry of blows you don't change the damage dice from your martial arts dice but the damage type changes to slashing or piercing depending on the weapon.</description>
+		</sheet>
+		<rules>
+			<grant type="proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS"/>
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_ACROBATICS"/>
+			<grant type="Proficiency" id="ID_INTERNAL_WEAPON_GROUP_SWORDS"/>
+		</rules>
+	</element>
+	<element name="Blade Surge" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BLADEMASTER_BLADE_SURGE">
+		<description>
+			<p>After making a melee attack with a bladed weapon you can move up to your unarmoured movement without attacks of opportunity and then spend a bonus action to make another attack against a new creature.</p>
+		</description>
+		<sheet>
+			<description>After making a melee attack with a bladed weapon you can move up to {{monk:unarmored movement}}ft without attacks of opportunity and then spend a bonus action to make another attack against a new creature.</description>
+		</sheet>
+	</element>
+	<element name="Duel of Steel" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BLADEMASTER_DUEL_OF_STEEL">
+		<description>
+			<p>At 6th level your deflect missiles can be used against a melee attack as long as you have a bladed weapon.</p>
+			<p>Additionally you can spend a ki point and a bonus action to force a creature into a duel. When a creature is in a duel it can't take the disengage action, if it tries to make an action that is not focused on you you get an attack of opportunity, if anyone else tries to make an attack on you you can use a reaction to split the damage between you and the other duelist.</p>
+		</description>
+		<sheet action="Bonus Action" usage="ki">
+			<description>At 6th level your deflect missiles can be used against a melee attack as long as you have a bladed weapon.&#13;
+			Additionally you can spend a ki point and a bonus action to force a creature into a duel. When a creature is in a duel it can't take the disengage action, if it tries to make an action that is not focused on you you get an attack of opportunity, if anyone else tries to make an attack on you you can use a reaction to split the damage between you and the other duelist.</description>
+		</sheet>
+	</element>
+	<element name="Blade Dance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BLADEMASTER_BLADE_DANCE">
+		<description>
+			<p>At 11th level any time a creature falls prone within range it provokes an attack of opportunity. Additionally you gain an additional reaction every turn that can only be used for the deflect missiles reaction.</p>
+		</description>
+		<sheet>
+			<description>At 11th level any time a creature falls prone within range it provokes an attack of opportunity. Additionally you gain an additional reaction every turn that can only be used for the deflect missiles reaction.</description>
+		</sheet>
+	</element>
+	<element name="Omnislash" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BLADEMASTER_OMNISLASH">
+		<description>
+			<p>At 17th level your blade surge has reached a superior level. You can spend a number of ki points, for each point you can make two attacks, after each attack you can teleport up to your unarmoured movement bonus to an unoccupied space, when you land you can make any other attacks. Each of the attacks deal you martial arts dice + the weapons damage dice + your strength or dexterity bonus + your wisdom modifier + 2d10 force damage.</p>
+		</description>
+		<sheet action="Action" usage="Ki">
+			<description>At 17th level your blade surge has reached a superior level. You can spend a number of ki points, for each point you can make two attacks, after each attack you can teleport up to {{monk:unarmored movement}}ft to an unoccupied space, when you land you can make any other attacks. Each of the attacks deal you {{martial arts:dice}} + the weapons damage dice + {{martial arts:damage}} + {{wisdom:modifier}} + 2d10 force damage.</description>
+		</sheet>
+	</element>
+</elements>

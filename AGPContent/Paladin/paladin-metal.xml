@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="paladin-metal.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Paladin/paladin-metal.xml" />
+		</update>
+	</info>
+	<element name="Oath of Metal" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_OATH_OF_METAL">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>Paladins taking on the Oath of Metal have realized the meaning of life. Life doesn't matter. There is no greater purpose, the strong survives, the weak perish. Heaven and Hell are just places like any other. Death is just another road to walk on, and in the end, we shall all become children of the grave, deep in the iced earth.</p>
+			<h5>TENETS OF METAL</h5>
+			<p>The tenets of the Oath of Metal teaches to accept mortality. At the gates of death, only doom awaits. Your carcass shall be eaten, when the vultures come. Everybody dies.</p>
+			<p class="indent"><b><i>Heavy and Metal.</i></b> Be it weapons or amor, you do not take anything but the largest and heaviest of them. Always made of metal.</p>
+			<p class="indent"><b><i>Man of War.</i></b> Sworn t fight and die, you are among the metal warriors of the world. You shall bring destruction, suffering and pain. War is the answer.</p>
+			<p class="indent"><b><i>Holy War.</i></b> Gods do not walk the earth, they need you to fight their wars, and die for them.</p>
+			<p class="indent"><b><i>Fear of the Dark.</i></b> You are the reason men are afraid of the dark. Show them why they fear.</p>
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_OATH_SPELLS" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_CHANNEL_DIVINITY" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_SYMPHONY_OF_DESTRUCTION" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_DEATH_CLOCK" />
+			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_IRON_MAN" />
+		</description>
+		<sheet display="false">
+			<description>Paladins taking on the Oath of Metal have realized the meaning of life. Life doesn't matter. There is no greater purpose, the strong survives, the weak perish. Heaven and Hell are just places like any other. Death is just another road to walk on, and in the end, we shall all become children of the grave, deep in the iced earth.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_OATH_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_CHANNEL_DIVINITY" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_SYMPHONY_OF_DESTRUCTION" level="7"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_DEATH_CLOCK" level="15"/>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_IRON_MAN" level="20"/>
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<p class="indent"></p>
+			<h5>Oath of Metal Spells</h5>
+			<table>
+				<thread>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thread>
+				<tr><td>3rd</td><td><em>Earth Tremor, Thunderous Smite</em></td></tr>
+				<tr><td>5th</td><td><em>Dragon's Breath, Shatter</em></td></tr>
+				<tr><td>9th</td><td><em>Summon Lesser Demon, Thunder Step</em></td></tr>
+				<tr><td>13th</td><td><em>Shadow of Moil, Summon Greater Demon</em></td></tr>
+				<tr><td>17th</td><td><em>Infernal Calling, Steel Wind Strike</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You gain oath spells at the paladin levels listed.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDEROUS_SMITE" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_DRAGONS_BREATH" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SUMMON_LESSER_DEMONS" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_THUNDER_STEP" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SHADOW_OF_MOIL" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SUMMON_GREATER_DEMON" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_INFERNAL_CALLING" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_CHANNEL_DIVINITY">
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following Channel Divinity options.</p>
+			<p class="indent"><b><i>For Whom The Bell Tolls.</i></b> You can use your channel divinity to fill your enemies with dread and feelings of immediate doom, as they hear the toll of a bell, signaling their own demise. As an action you can force a creature within 60 feet of you to make a wisdom saving throw. On a failed save the target takes 3d10 + your paladin level in necrotic damage and they are frightened of you until the end of your next turn. While frightened in this way their speed is 0 and they cannot benefit from any bonus to their speed On a success they take half damage and aren't frightened.</p>
+			<p class="indent"><b><i>Heaviest Matter of the Universe.</i></b> You can use your channel divinity to magically add weight to your weapon, making a strike hit harder. As a bonus action you transform your weapon for 1 minute, it gains the heavy property and you must have a Strength score of 16 or more to continue o wield it. While transformed this way, you add 1d8 damage to damage rolls made with the weapon. For the duration the weapon is also considered magical for the purposes of overcoming resistances.</p>
+		</description>
+		<sheet display="false">
+			<description>For Whom The Bell Tolls / Heaviest Matter of the Universe.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_CHANNEL_DIVINITY_FOR_WHOM_THE_BELL_TOLLS" />
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_CHANNEL_DIVINITY_HEAVIEST_MATTER_OF_THE_UNIVERSE" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: For Whom The Bell Tolls" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_CHANNEL_DIVINITY_FOR_WHOM_THE_BELL_TOLLS">
+		<description>
+			<p>You can use your channel divinity to fill your enemies with dread and feelings of immediate doom, as they hear the toll of a bell, signaling their own demise. As an action you can force a creature within 60 feet of you to make a wisdom saving throw. On a failed save the target takes 3d10 + your paladin level in necrotic damage and they are frightened of you until the end of your next turn. While frightened in this way their speed is 0 and they cannot benefit from any bonus to their speed On a success they take half damage and aren't frightened.</p>
+		</description>
+		<sheet alt="For Whom The Bell Tolls" action="Action" usage="Channel Divinity">
+			<description>You can use your channel divinity to fill your enemies with dread and feelings of immediate doom, as they hear the toll of a bell, signaling their own demise. As an action you can force a creature within 60 feet of you to make a wisdom saving throw. On a failed save the target takes 3d10 + {{level:paladin}} in necrotic damage and they are frightened of you until the end of your next turn. While frightened in this way their speed is 0 and they cannot benefit from any bonus to their speed On a success they take half damage and aren't frightened.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Heaviest Matter of the Universe" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_CHANNEL_DIVINITY_HEAVIEST_MATTER_OF_THE_UNIVERSE">
+		<description>
+			<p>You can use your channel divinity to magically add weight to your weapon, making a strike hit harder. As a bonus action you transform your weapon for 1 minute, it gains the heavy property and you must have a Strength score of 16 or more to continue o wield it. While transformed this way, you add 1d8 damage to damage rolls made with the weapon. For the duration the weapon is also considered magical for the purposes of overcoming resistances.</p>
+		</description>
+		<sheet alt="Heaviest Matter of the Universe" action="Bonus Action" usage="Channel Divinity">
+			<description>You can use your channel divinity to magically add weight to your weapon, making a strike hit harder. As a bonus action you transform your weapon for 1 minute, it gains the heavy property and you must have a Strength score of 16 or more to continue o wield it. While transformed this way, you add 1d8 damage to damage rolls made with the weapon. For the duration the weapon is also considered magical for the purposes of overcoming resistances.</description>
+		</sheet>
+	</element>	
+	<element name="Symphony of Destruction" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_SYMPHONY_OF_DESTRUCTION">
+		<description>
+			<p>Starting at 7th level, a choir of spirits play a symphony around you while you're not incapacitated. The symphony can be heard for up to 10ft in every direction, but not through total cover. Any creature of your choice that hears the choir takes additional psychic damage equal to your Charisma modifier when they take damage from any source. At 18th level this symphony extends to 30ft.</p>
+		</description>
+		<sheet>
+			<description>Starting at 7th level, a choir of spirits play a symphony around you while you're not incapacitated. The symphony can be heard for up to 10ft in every direction, but not through total cover. Any creature of your choice that hears the choir takes {{charisma:modifier}} additional psychic damage when they take damage from any source.</description>
+			<description level="18">Starting at 18th level, a choir of spirits play a symphony around you while you're not incapacitated. The symphony can be heard for up to 30ft in every direction, but not through total cover. Any creature of your choice that hears the choir takes {{charisma:modifier}} additional psychic damage when they take damage from any source.</description>
+		</sheet>
+	</element>
+	<element name="Death Clock" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_DEATH_CLOCK">
+		<description>
+			<p>You are not ready to be laid to rest. Death is only for the weak. Starting at 15th level when you reach 0 hit points, you can choose to halt the gears that grind the living to dust. For 1d4+1 turns you can continue fighting as normal. During this time yu cannot be healed in any way and you do not roll death saving throws, even if you would take additional damage. After the effect ends you call unconscious on 0 hit points and take 1 level of exhaustion. You may use this ability once per long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Starting at 15th level when you reach 0 hit points, you can choose to halt the gears that grind the living to dust. For 1d4+1 turns you can continue fighting as normal. During this time yu cannot be healed in any way and you do not roll death saving throws, even if you would take additional damage. After the effect ends you call unconscious on 0 hit points and take 1 level of exhaustion. You may use this ability once per long rest.</description>
+		</sheet>
+	</element>
+	<element name="Iron Man" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_METAL_IRON_MAN">
+		<description>
+			<p>At 20th level, you gain the ability to awaken the warrior within, and turn your skin into living metal. You can use your action to become a metal warrior and gain the following benefits for 1 minute:</p>
+			<ul>
+				<li>You gain resistance to all damage and your AC becomes 20 if it isn't 20 or higher already.</li>
+				<li>You automatically succeed on any Strength saving throw that would knock you prone or move you against your will.</li>
+				<li>The bonus damage from Symphony of Destruction is doubled.</li>
+			</ul>
+			<p>This effect ends early if you are incapacitated or die. Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>At 20th level, you gain the ability to awaken the warrior within, and turn your skin into living metal. You can use your action to become a metal warrior and gain the following benefits for 1 minute: &#13;
+			You gain resistance to all damage and your AC becomes 20 if it isn't 20 or higher already.&#13;
+			You automatically succeed on any Strength saving throw that would knock you prone or move you against your will. &#13;
+			The bonus damage from Symphony of Destruction is doubled.&#13;
+			This effect ends early if you are incapacitated or die. Once you use this feature, you can't use it again until you finish a long rest.</description>
+		</sheet>
+	</element>
+</elements>

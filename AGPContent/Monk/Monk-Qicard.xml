@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-Qicard.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk-Qicard.xml" />
+		</update>
+	</info>
+	<element name="Way of the Qi Cards" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_QI_CARDS">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>The destiny is a deck of cards, and you never know what you'll draw tomorrow. You have learned to tap into the collective subconsciousness of all living thing and use this to inscribe Qi cards.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_QI_CARDS_BONUS_PROFICIENCIES" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_QI_CARDS_QI_CARDS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_QI_CARDS_TRAP_CARD" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_QI_CARDS_FOCUS_OF_THE_FOUR_KINGS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_QI_CARDS_HEART_OF_THE_CARDS" />
+		</description>
+		<sheet display="false">
+			<description>The destiny is a deck of cards, and you never know what you'll draw tomorrow. You have learned to tap into the collective subconsciousness of all living thing and use this to inscribe Qi cards.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_QI_CARDS_BONUS_PROFICIENCIES" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_QI_CARDS_QI_CARDS" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_QI_CARDS_TRAP_CARD" level="6"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_QI_CARDS_FOCUS_OF_THE_FOUR_KINGS" level="11"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_QI_CARDS_HEART_OF_THE_CARDS" level="17"/>
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_QI_CARDS_BONUS_PROFICIENCIES">
+		<description>
+			<p>Starting when you choose this tradition at 3rd level,you gain proficiency in sleight of hand, playing cards, calligrapher's supplies and painter's supplies.</p>
+		</description>
+		<sheet>
+			<description>Starting when you choose this tradition at 3rd level,you gain proficiency in sleight of hand, playing cards, calligrapher's supplies and painter's supplies.</description>
+		</sheet>
+		<rules>
+			<grant type="proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND"/>
+			<grant type="proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET"/>
+			<grant type="proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES"/>
+			<grant type="proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES"/>
+		</rules>
+	</element>
+	<element name="Qi Cards" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_QI_CARDS_QI_CARDS">
+		<description>
+			<p>At 3rd level, you can spend 1 hour and 1gp worth of materials to create a qi card using calligrapher's supplies or painter's tools, inscribing it with any cantrip of your choice. You can use a cantrip Qi card as many times as you'd like. Additionally you can create leveled spell Qi Cards, the card takes 1 hour for each spell level (5 hours for 5th level), and costs 5^spell level gp (5 for 1st, 25 for 2nd, 125 for 3rd, 625 for 4th etc). Each of these Qi cards can be used once per short rest and don't count against your prepared qi cards. Additionally it takes a number of ki points equivalent to the spell level to use the spell however to create a leveled card you must be of the required level (3ed level for a 2nd level spell, 5th level for 3rd, 7th level for 4th etc.)</p>
+			<p class="indent">After finishing as short rest you can prepare a number of qi cards equal to your wisdom modifier + half you monk level rounded up. While you hold a prepared Qi Card or a deck of Qi Cards you can cast the cantrips without providing a material component, wisdom is your spellcasting modifier for these spells. Casting a cantrip counts as an attack for purposes of other monk features.</p>
+		</description>
+		<sheet action="Action">
+			<description>At 3rd level, you can spend 1 hour and 1gp worth of materials to create a qi card using calligrapher's supplies or painter's tools, inscribing it with any cantrip of your choice. You can use a cantrip Qi card as many times as you'd like. Additionally you can create leveled spell Qi Cards, the card takes 1 hour for each spell level (5 hours for 5th level), and costs 5^spell level gp (5 for 1st, 25 for 2nd, 125 for 3rd, 625 for 4th etc). Each of these Qi cards can be used once per short rest and don't count against your prepared qi cards. Additionally it takes a number of ki points equivalent to the spell level to use the spell however to create a leveled card you must be of the required level (3ed level for a 2nd level spell, 5th level for 3rd, 7th level for 4th etc.). After finishing as short rest you can prepare {{qicard:number}} Qi Cards. While you hold a prepared Qi Card or a deck of Qi Cards you can cast the cantrips without providing a material component, your save dc is {{qicard:spellcasting}} and your attack bonus is {{qicard:modifier}}. Casting a cantrip counts as an attack for purposes of other monk features.</description>
+		</sheet>
+		<rules>
+			<stat name="qicard:number" value="wisdom:modifier"/>
+			<stat name="qicard:number" value="level:monk:half:up"/>
+			<stat name="qicard:modifier" value="wisdom:modifier"/>
+			<stat name="qicard:modifier" value="proficiency"/>
+			<stat name="qicard:spellcasting" value="8"/>
+			<stat name="qicard:spellcasting" value="wisdom:modifier"/>
+			<stat name="qicard:spellcasting" value="proficiency"/>
+		</rules>
+	</element>
+	<element name="Trap Card" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_QI_CARDS_TRAP_CARD">
+		<description>
+			<p>At 6th level you can spend 1 ki point to set a prepared qi card as a trap card. The cantrip must require a saving throw and cant be concentration. You can set a number of trap cards equal to your wisdom modifier. You can deactivate a trap card as a bonus action. When a creature enters within the range of the cantrip of your trap card the card activates and the spell is cast targeting the creature that activated it. After a card is activated it warps into your possession. When a trap is activated you are alerted immediately.</p>
+		</description>
+		<sheet usage="ki">
+			<description>At 6th level you can spend 1 ki point to set a prepared qi card as a trap card. The cantrip must require a saving throw and cant be concentration. You can have {{wisdom:modifier}} cards set at one time. You can deactivate a trap card as a bonus action. When a creature enters within the range of the cantrip of your trap card the card activates and the spell is cast targeting the creature that activated it. After a card is activated it warps into your possession. When a trap is activated you are alerted immediately.</description>
+		</sheet>
+	</element>
+	<element name="Focus of the Four Kings" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_QI_CARDS_FOCUS_OF_THE_FOUR_KINGS">
+		<description>
+			<p>At 11th level your focus is enhanced. If a cantrip requires concentrations its duration becomes 24 hours. Additionally, when any of your Qi Cards that are on the same plane of existence as you deals damage to a creature you can use your reaction to teleport into the nearest unoccupied space to that creature.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>At 11th level your focus is enhanced. If a cantrip requires concentrations its duration becomes 24 hours. Additionally, when any of your Qi Cards that are on the same plane of existence as you deals damage to a creature you can use your reaction to teleport into the nearest unoccupied space to that creature.</description>
+		</sheet>
+	</element>
+	<element name="Heart of the Cards" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_QI_CARDS_HEART_OF_THE_CARDS">
+		<description>
+			<p>At 17th level, you let the heart of the cards guide you in the most critical moments. When you take the attack action in which you replaced both attacks with Qi Card attacks, you can use your bonus action to prepare a Qi Card. Additionally you can use your action to expend 2 ki points to select one trap card and one creature within range of that spell as if you were casting. You can disable the rest of your trap cards including the selected one to cast the cantrip. If the target fails the saving throw then they take additional damage equivalent to 4 unarmed strikes for each trap card that you disabled. It takes half that amount on a successful save.</p>
+		</description>
+		<sheet action="Action" usage="Ki">
+			<description>At 17th level, you let the heart of the cards guide you in the most critical moments. When you take the attack action in which you replaced both attacks with Qi Card attacks, you can use your bonus action to prepare a Qi Card. Additionally you can use your action to expend 2 ki points to select one trap card and one creature within range of that spell as if you were casting. You can disable the rest of your trap cards including the selected one to cast the cantrip. If the target fails the saving throw then they take additional damage equivalent to 4 unarmed strikes for each trap card that you disabled. It takes half that amount on a successful save.</description>
+		</sheet>
+	</element>
+</elements>

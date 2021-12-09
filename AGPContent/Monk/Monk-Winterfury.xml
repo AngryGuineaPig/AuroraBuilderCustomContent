@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-Winterfury.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk-Winterfury.xml" />
+		</update>
+	</info>
+	<element name="Way of the Winters Fury" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_WINTERS_FURY">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the way of the Winters Fury live bitter, brutal lives on isolated mountain tops, meditating in thundering storms, freezing streams and skin tearing blizzards until their Ki aligns itself with the power of cold.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WINTERS_FURY_SWAY_THE_STORM" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WINTERS_FURY_COLDS_EMBRACE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WINTERS_FURY_ICICLES_ADVANTAGE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WINTERS_FURY_FROSTBITE_COUNTER" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WINTERS_FURY_BECOME_BLIZZARD" />
+		</description>
+		<sheet display="false">
+			<description>Monks of the way of the Winters Fury live bitter, brutal lives on isolated mountain tops, meditating in thundering storms, freezing streams and skin tearing blizzards until their Ki aligns itself with the power of cold.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WINTERS_FURY_SWAY_THE_STORM" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WINTERS_FURY_COLDS_EMBRACE" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WINTERS_FURY_ICICLES_ADVANTAGE" level="6"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WINTERS_FURY_FROSTBITE_COUNTER" level="11"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WINTERS_FURY_BECOME_BLIZZARD" level="17"/>
+		</rules>
+	</element>
+	<element name="Sway the Storm" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WINTERS_FURY_SWAY_THE_STORM">
+		<description>
+			<p>Starting when you choose this tradition at 3rd level, you learn the Gust and Shape Water cantrips.</p>
+		</description>
+		<sheet display="false">
+			<description>Starting when you choose this tradition at 3rd level, you learn the Gust and Shape Water cantrips.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_GUST" level="3" spellcasting="Monk" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" level="3" spellcasting="Monk" prepared="true" />
+		</rules>
+	</element>
+	<element name="Colds Embrace" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WINTERS_FURY_COLDS_EMBRACE">
+		<description>
+			<p>At 3rd level, you  gain the ability to encase your limbs in ice, allowing you to choose whether your unarmed strikes deal bludgeoning or slashing damage. Whenever you hit a creature with one of the attacks granted by flurry of blows you can impose one of the following effects:</p>
+			<p class="indent"><b>Frozen Ground.</b> Your target has their movement speed reduced to zero until the end of their next turn.</p>
+			<p class="indent"><b>Snowblind.</b> Your target makes a constitution save, if he fails he is blinded until the end of their next turn.</p>
+			<p class="indent"><b>Winters Bite.</b> You deal extra cold damage equal to your Wisdom modifier.</p>
+		</description>
+		<sheet action="Action">
+			<description>At 3rd level, you  gain the ability to encase your limbs in ice, allowing you to choose whether your unarmed strikes deal bludgeoning or slashing damage. Whenever you hit a creature with one of the attacks granted by flurry of blows you can impose one of the following effects:&#13;
+			Frozen Ground. Your target has their movement speed reduced to zero until the end of their next turn.&#13;
+			Snowblind. Your target makes a constitution save, if he fails he is blinded until the end of their next turn.&#13;
+			Winters Bite. You deal extra {{wisdom:modifier}} cold damage.</description>
+		</sheet>      
+	</element>
+	<element name="Icicles Advantage" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WINTERS_FURY_ICICLES_ADVANTAGE">
+		<description>
+			<p>At 6th level, you become resistant to cold damage. In addition whenever you use your unarmed movement to pass over a liquid you now freeze the liquid solid for the next minute. Therefore you won't fall if you end your turn on liquid.</p>
+		</description>
+		<sheet usage="ki">
+			<description>At 6th level, you become resistant to cold damage. In addition whenever you use your unarmed movement to pass over a liquid you now freeze the liquid solid for the next minute. Therefore you won't fall if you end your turn on liquid.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Frostbite Counter" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WINTERS_FURY_FROSTBITE_COUNTER">
+		<description>
+			<p>At 11th level, you learn to incorporate the aspects of a blizzard into your physical form. When you use your Patient Defense feature your body turns into a swirling flurry of snow. If ann attacker within 5ft of you misses you with an attack while this feature is active you can spend 1 ki point to use your reaction to let the hit pass through you and counter with two unarmed strikes.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>At 11th level, you learn to incorporate the aspects of a blizzard into your physical form. When you use your Patient Defense feature your body turns into a swirling flurry of snow. If ann attacker within 5ft of you misses you with an attack while this feature is active you can spend 1 ki point to use your reaction to let the hit pass through you and counter with two unarmed strikes.</description>
+		</sheet>
+	</element>
+	<element name="Become Blizzard" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_WINTERS_FURY_BECOME_BLIZZARD">
+		<description>
+			<p>At 17th level, you can fully unleash the wrath of your Winters Fury. As a bonus action, you turn yourself into a raging ice storm for 1 minute, granting yourself resistance to all tyoes except fire and immunity to cold. It allows you to move through the space of another creature or through gaps larger than 1 inch in diameter. Enemies that start their turn within 5ft or move into 5ft of you take cold damage equal to your wisdom modifier.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Ki">
+			<description>At 17th level, you can fully unleash the wrath of your Winters Fury. As a bonus action, you turn yourself into a raging ice storm for 1 minute, granting yourself resistance to all tyoes except fire and immunity to cold. It allows you to move through the space of another creature or through gaps larger than 1 inch in diameter. Enemies that start their turn within 5ft or move into 5ft of you take {{wisdom:modifier}} cold damage.</description>
+		</sheet>
+	</element>
+</elements>

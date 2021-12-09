@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-Soulknife.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk-Soulknife.xml" />
+		</update>
+	</info>
+	<element name="Way of the Soulknife" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_THE_SOULKNIFE">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Never caught unarmed, the soulknife is the literal embodiment of using the power of the mind as a weapon. These psychic warriors do battle using both their physical body and the mind blade, a telekenetic filed honed by the wielder's focus into a razor's edge. While the soulknife may not appear to be a traditional monk, the path that these psionically-gifted individuals take is so similar as to be identical, whetehr their powers are called "psi" or "ki". A soulknife meditates and develops both their minds and bodies much the same as any other monastic order.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_SOULKNIFE_MIND_BLADE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_SOULKNIFE_WILD_TALENT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_SOULKNIFE_PSYCHIC_STRIKE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_SOULKNIFE_IMBUED_BLADE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_SOULKNIFE_KNIFE_TO_THE_SOUL" />
+		</description>
+		<sheet display="false">
+			<description>Never caught unarmed, the soulknife is the literal embodiment of using the power of the mind as a weapon. These psychic warriors do battle using both their physical body and the mind blade, a telekenetic filed honed by the wielder's focus into a razor's edge. While the soulknife may not appear to be a traditional monk, the path that these psionically-gifted individuals take is so similar as to be identical, whetehr their powers are called "psi" or "ki". A soulknife meditates and develops both their minds and bodies much the same as any other monastic order.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_SOULKNIFE_MIND_BLADE" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_SOULKNIFE_WILD_TALENT" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_SOULKNIFE_PSYCHIC_STRIKE" level="7"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_SOULKNIFE_IMBUED_BLADE" level="11"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_SOULKNIFE_KNIFE_TO_THE_SOUL" level="17"/>
+		</rules>
+	</element>
+	<element name="Mind Blade" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_SOULKNIFE_MIND_BLADE">
+		<description>
+			<p>At 3rd level, your study and meditation is rewarded in the forming of your mind blade, a semi-solid weapon of psychic energy powered by your will. You can manifest your mind blade as a bonus action or reaction to rolling initiative and dismiss it at will. The mind blade has the form of a one handed weapon of your choice. It has a 5ft reach, deals 1d8 psychic damage, and has the finesse, light and thrown (20/60) properties and counts as a monk weapon you are proficient with. You cannot be disarmed of your mind blade, but if you stop wielding it or are incapacitated, you mind blade dissipates. When thrown you mind blade returns after the attack either hits or misses. If you are effected by an anti-magic effect you must make a DC15 wisdom saving throw to maintain or manifest your mind blade. When you use flurry of blows you can make one of the attacks with your mind blade.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>At 3rd level, your study and meditation is rewarded in the forming of your mind blade, a semi-solid weapon of psychic energy powered by your will. You can manifest your mind blade as a bonus action or reaction to rolling initiative and dismiss it at will. The mind blade has the form of a one handed weapon of your choice. It has a 5ft reach, deals 1d8 + {{mindblade:damage}} psychic damage at a +{{mindblade:attack}} vs AC, and has the finesse, light and thrown (20/60) properties and counts as a monk weapon you are proficient with. You cannot be disarmed of your mind blade, but if you stop wielding it or are incapacitated, you mind blade dissipates. When thrown you mind blade returns after the attack either hits or misses. If you are effected by an anti-magic effect you must make a DC15 wisdom saving throw to maintain or manifest your mind blade. When you use flurry of blows you can make one of the attacks with your mind blade.</description>
+		</sheet>
+		<rules>
+			<stat name="mindblade:damage" value="strength:modifier" bonus="mindblade" />
+			<stat name="mindblade:damage" value="dexterity:modifier" bonus="mindblade" />
+			<stat name="mindblade:attack" value="proficiency" />
+			<stat name="mindblade:attack" value="dexterity:modifier" bonus="mindblade" />
+			<stat name="mindblade:attack" value="strength:modifier" bonus="mindblade" />
+		</rules>
+	</element>
+	<element name="Wild Talent" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_SOULKNIFE_WILD_TALENT">
+		<description>
+			<p>At 3rd level you manifest minor psionic gifts. You learn the message and mage hand cantrips and do not need any components for them. In addition you can spend 1 ki point to cast identify or 2 to cast detect thoughts. Wisdom is your spellcasting modifier and you do not need to offer any form of components.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>At 3rd level you manifest minor psionic gifts. You learn the message and mage hand cantrips and do not need any components for them. In addition you can spend 1 ki point to cast identify or 2 to cast detect thoughts. Wisdom is your spellcasting modifier and you do not need to offer any form of components.</description>
+		</sheet>
+		<rules>
+			<grant type="spell" id="ID_PHB_SPELL_MESSAGE" />
+			<grant type="spell" id="ID_PHB_SPELL_MAGE_HAND" />
+			<grant type="spell" id="ID_PHB_SPELL_IDENTIFY" />
+			<grant type="spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" />
+		</rules>
+	</element>
+	<element name="Psychic Strike" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_SOULKNIFE_PSYCHIC_STRIKE">
+		<description>
+			<p>At 6th level your combat trance allows you to maintain a mental reserve of power - your psionic focus - which is recovered any time you roll initiative. At the start of your turn you can recover your psionic focus by reducing your speed to 0 for that turn or spending a ki point as a bonus action. When damage from your mind blade reduces a creature with intelligence of 6 or higher to 0 hit points you can use your reaction to regain your psionic focus and gain temporary hit points equal to half the damage dealt.</p>
+			<p><b>BLADE SKILLS:</b></p>
+			<p>When you strike a creature with your mind blade you can expend your psionic focus to perform one of the following:</p>
+			<p class="indent"><b>Bladewind.</b> Your mind blade shatters into flying shards of psychic energy. Immediately make one additional mind blade attack against another creature within 30ft of you, after which your mind blade dissipates.</p>
+			<p class="indent"><b>Neuroptic Blast.</b> At the start of its next turn, the target must make a constitution saving throw against your ki save DC or be blinded until the end of its turn.</p>
+			<p class="indent"><b>Synaptic Overload.</b> The target is unable to take the Dash, Disengage, or Dodge actions on its next turn.</p>
+		</description>
+		<sheet>
+			<description>At 16th level your combat trance allows you to maintain a mental reserve of power - your psionic focus - which is recovered any time you roll initiative. At the start of your turn you can recover your psionic focus by reducing your speed to 0 for that turn or spending a ki point as a bonus action. When damage from your mind blade reduces a creature with intelligence of 6 or higher to 0 hit points you can use your reaction to regain your psionic focus and gain temporary hit points equal to half the damage dealt.&#13;
+			BLADE SKILLS:&#13;
+			When you strike a creature with your mind blade you can expend your psionic focus to perform one of the following:&#13;
+			Bladewind. Your mind blade shatters into flying shards of psychic energy. Immediately make one additional mind blade attack against another creature within 30ft of you, after which your mind blade dissipates.&#13;
+			Neuroptic Blast. At the start of its next turn, the target must make a constitution saving throw against your ki save DC or be blinded until the end of its turn.&#13;
+			Synaptic Overload. The target is unable to take the Dash, Disengage, or Dodge actions on its next turn.</description>
+		</sheet>
+	</element>
+	<element name="Imbued Blade" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_SOULKNIFE_IMBUED_BLADE">
+		<description>
+			<p>At 11th level you can manifest your mind blade as if you were drawing a weapon reducing the time taken to negligable. As a bonus action you can expend your psionic focus and up to 3 ki points to enhance your mind blade as if concentrating on a spell. Your mind blade gains a magical bonus to attack and damage rolls equal to the expended ki for 10 minutes or until you loose concentration. While concentrating you have advantage on saving throws to maintain or manifest your mind blade.</p>
+		</description>
+		<sheet action="Bonus Action" usage="ki">
+			<description>At 11th level you can manifest your mind blade as if you were drawing a weapon reducing the time taken to negligable. As a bonus action you can expend your psionic focus and up to 3 ki points to enhance your mind blade as if concentrating on a spell. Your mind blade gains a magical bonus to attack and damage rolls equal to the expended ki for 10 minutes or until you loose concentration. While concentrating you have advantage on saving throws to maintain or manifest your mind blade.</description>
+		</sheet>
+	</element>
+	<element name="Knife to the Soul" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_SOULKNIFE_KNIFE_TO_THE_SOUL">
+		<description>
+			<p>At 17th level you can force your mind blade to make an incorporeal strike. When you take the attack action, you can expend your psionic focus. Each time this turn that you would make an attack with your mind blade, you can force the target to make a dexterity saving throw of dc 8 + your proficiency bonus + your dexterity bonus. On a failure the target takes psychic damage equal to the damage dealt by your mind blade + your wisdom modifier. This ignores resistance to psychic damage and immunities are treated like resistances.</p>
+		</description>
+		<sheet action="Action">
+			<description>At 17th level you can force your mind blade to make an incorporeal strike. When you take the attack action, you can expend your psionic focus. Each time this turn that you would make an attack with your mind blade, you can force the target to make a DC{{soul:dc}} dexterity saving throw. On a failure the target takes 1d8 + {{soul:damage}}. This ignores resistance to psychic damage and immunities are treated like resistances.</description>
+		</sheet>
+		<rules>
+			<stat name="soul:dc" value="8" />
+			<stat name="soul:dc" value="proficiency" />
+			<stat name="soul:dc" value="dexterity:modifier" />
+			<stat name="soul:damage" value="dexterity:modifier" bonus="mindblade" />
+			<stat name="soul:damage" value="strength:modifier" bonus="mindblade" />
+			<stat name="soul:damage" value="wisdom:modifier" />
+		</rules>
+	</element>
+</elements>
