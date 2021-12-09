@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+	        <update version="0.0.1">
+			<file name="Druid.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Druid.index" />
+		</update>
+	</info>
+	<files>
+        <file name="druid-dragons.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Druid/druid-dragons.xml" />
+    </files>
+</index>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	        <update version="0.0.1">
+			<file name="Fightingstyles.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Fighter/Fightingstyles.xml" />
+		</update>
+	</info>
+  <element name="Versatile Fighting" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_FIGHTINGSTYLE_VERSATILE_FIGHTING">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<description>
+			<p>Any weapons that you have proficiency with deal damage of 1 dice size larger, (1d4 becomes 1d6, 1d6 becomes 1d8)</p>
+		</description>
+		<sheet>
+			<description>Any weapons that you have proficiency with deal damage of 1 dice size larger, (1d4 becomes 1d6, 1d6 becomes 1d8)</description>
+		</sheet>
+	</element>
+	<element name="Volley" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_FIGHTINGSTYLE_VOLLEY">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<description>
+			<p>When you make a ranged attack roll you can take a -1d4 to an attack roll in order to make an additional attack.</p>
+		</description>
+		<sheet>
+			<description>When you make a ranged attack roll you can take a -1d4 to an attack roll in order to make an additional attack.</description>
+		</sheet>
+	</element>
+	<element name="Lacerate" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_FIGHTINGSTYLE_LACERATE">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<description>
+			<p>When you deal damage with a weapon that deals slashing damage you can select one die before you roll it and make it take half its maximum value (3 for a d6 etc).</p>
+		</description>
+		<sheet>
+			<description>When you deal damage with a weapon that deals slashing damage you can select one die before you roll it and make it take half its maximum value (3 for a d6 etc)</description>
+		</sheet>
+	</element>
+	<element name="Pulverize" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_FIGHTINGSTYLE_PULVERIZE">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<description>
+			<p>When you deal damage with a bludgeoning weapon roll 1d4. On a 4 all of the damage die are maximized, on a 1 they all roll a 1. You do not have to apply this.</p>
+		</description>
+		<sheet>
+			<description>When you deal damage with a bludgeoning weapon roll 1d4. On a 4 all of the damage die are maximized, on a 1 they all roll a 1. You do not have to apply this.</description>
+		</sheet>
+	</element>
+	<element name="Bastion" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_FIGHTINGSTYLE_BASTION">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<description>
+			<p>When you are wielding a shield you can use the help action. A single creature within 5ft of you gains 1d4 to their AC.</p>
+		</description>
+		<sheet>
+			<description>When you are wielding a shield you can use the help action. A single creature within 5ft of you gains 1d4 to their AC.</description>
+		</sheet>
+	</element>
+	<element name="Skirmisher" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_FIGHTINGSTYLE_SKIRMISHER">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<description>
+			<p>When you take the disengage action you can make ranged attack as part of the action, it can be made after any movement you make that turn.</p>
+		</description>
+		<sheet>
+			<description>When you take the disengage action you can make ranged attack as part of the action, it can be made after any movement you make that turn.</description>
+		</sheet>
+	</element>
+</elements>
+

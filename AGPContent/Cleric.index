@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+	        <update version="0.0.1">
+			<file name="Cleric.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Cleric.index" />
+		</update>
+	</info>
+	<files>
+        <file name="cleric-immortalitydomain.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Cleric/cleric-immortalitydomain.xml" />
+		<file name="cleric-plaguedomain.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Cleric/cleric-plaguedomain.xml" />
+		<file name="cleric-luckdomain.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Cleric/cleric-luckdomain.xml" />
+		<file name="cleric-madnessdomain.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Cleric/cleric-madnessdomain.xml" />
+    </files>
+</index>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="cleric-madnessdomain.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/Cleric/cleric-madnessdomain.xml" />
+		</update>
+	</info>
+	<element name="Madness Domain" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_CLERIC_DIVINE_DOMAIN_MADNESS">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>The domain of madness celebrates the variety of shapes the mind can take, reveling in the truth and freedom of madness. Many of the gods of madness are considered Evil by nature but that isn't quite true. However a lawful madness god doesn't exist</p>
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_DOMAIN_SPELLS" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_BONUS_CANTRIP" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_DIVINE_HALLUCINATIONS" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_GIFT_OF_MADNESS" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_CD_DREAD_WHISPERS" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_CRAZED_STUMBLING" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_POTENT_SPELLCASTING" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_ALREADY_MAD" />
+		</description>
+		<sheet>
+			<description>The domain of madness celebrates the variety of shapes the mind can take, reveling in the truth and freedom of madness. Many of the gods of madness are considered Evil by nature but that isn't quite true. However a lawful madness god doesn't exist</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_BONUS_CANTRIP" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_DIVINE_HALLUCINATIONS" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_GIFT_OF_MADNESS" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_CD_DREAD_WHISPERS" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_CRAZED_STUMBLING" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_POTENT_SPELLCASTING" level="8" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_ALREADY_MAD" level="17" />
+		</rules>
+	</element>
+	<element name="Domain Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_DOMAIN_SPELLS">
+		<description>
+			<p>You gain domain spells at the cleric levels listed in the Madness Domain Spells table. See the Divine Domain class feature for how domain spells work.</p>
+			<h5>Madness Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>Dissonant Whispers, Tasha's Hideous Laughter</em></td></tr>
+				<tr><td>3rd</td><td><em>Crown of Madness, Phantasmal Force</em></td></tr>
+				<tr><td>5th</td><td><em>Fear, Incite Self Harm</em></td></tr>
+				<tr><td>7th</td><td><em>Phantasmal Killer, Staggering Smite</em></td></tr>
+				<tr><td>9th</td><td><em>Modify Memory, Phantasmal Plunge</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DISSONANT_WHISPERS" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CROWN_OF_MADNESS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_FORCE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WIKI_INCITE_SELF_HARM" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_KILLER" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STAGGERING_SMITE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" level="9" spellcasting="Cleric" prepared="true" />
+		    <grant type="Spell" id="ID_WIKI_PHANTASMAL_PLUNGE" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+	<element name="Bonus Cantrip" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_BONUS_CANTRIP">
+		<description>
+			<p>When you choose this domain at 1st level you gain Vicious Mockery cantrip</p>
+		</description>
+		<sheet>
+			<description>When you choose this domain at 1st level you gain Vicious Mockery cantrip</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_VICIOUS_MOCKERY" level="1" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+	<element name="Divine Hallucinations" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_DIVINE_HALLUCINATIONS">
+		<description>
+			<p>At 1st level you can use an action to enter a trance. you become incapacitated for 1 minute and begin to see visions. The DM rolls a d6 in secret, on a 5 or 6 the vision shows a real threat, on a 1 to 4 the vision shows a fake threat. you can do this a number of times equivalent to your wisdom modifier per long rest</p>
+		</description>
+		<sheet usage="{{wisdom:modifier}}/Long Rest">
+			<description>At 1st level you can use an action to enter a trance. you become incapacitated for 1 minute and begin to see visions. The DM rolls a d6 in secret, on a 5 or 6 the vision shows a real threat, on a 1 to 4 the vision shows a fake threat. you can do this a number of times equivalent to {{wisdom:modifier}} times per long rest</description>
+		</sheet>
+	</element>
+	<element name="Gift of Madness" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_GIFT_OF_MADNESS">
+		<description>
+			<p>Immediately after a creature hits you you can use your reaction to force them to suffer from your madness. They must make a wisdom saving throw against your spell save, on a failed save they take 2 + your cleric level psychic damage and are frightened till the end of your next turn. You can use this a number of time equivalent to your wisdom modifier per long rest.</p>
+		</description>
+		<sheet usage="{{wisdom:modifier}}/Long Rest">
+			<description>Immediately after a creature hits you you can use your reaction to force them to suffer from your madness. They must make a wisdom saving throw against your spell save, on a failed save they take 2 + {{level:cleric}} psychic damage and are frightened till the end of your next turn. You can use this a number of time equivalent to {{wisdom:modifier}} times per long rest.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Dread Whispers" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_CD_DREAD_WHISPERS">
+		<description>
+			<p>As an action you choose a point you can see within 60 feet. Each creature within 10ft of the point must make a wisdom saving throw. on a failed saving throw they take 1d6 + your cleric level psychic damage and becomes frightened for 1 minute. In this frightened state it treats all other creatures as enemies.</p>
+		</description>
+		<sheet alt="Dread Whispers" action="Action" usage="Channel Divinity">
+			<description>As an action you choose a point you can see within 60 feet. Each creature within 10ft of the point must make a wisdom saving throw. on a failed saving throw they take 1d6 + {{level:cleric}} psychic damage and becomes frightened for 1 minute. In this frightened state it treats all other creatures as enemies.</description>
+		</sheet>
+	</element>
+	<element name="Crazed Stumbling" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_CRAZED_STUMBLING">
+		<description>
+			<p>Starting at 6th level When you deal psychic damage to a creature you can force it to walk up to 10ft in any direction.</p>
+		</description>
+		<sheet>
+			<description>Starting at 6th level When you deal psychic damage to a creature you can force it to walk up to 10ft in any direction.</description>
+		</sheet>
+	</element>
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_POTENT_SPELLCASTING">
+		<description>
+			<p>Starting at 8th level you can add your wisdom modifier to any damage you deal with a cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>Starting at 8th level you can add {{wisdom:modifier}} to any damage you deal with a cleric cantrip.</description>
+		</sheet>
+	</element>
+	<element name="Already Mad" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_MADNESS_ALREADY_MAD">
+		<description>
+			<p>At 17th level you can't be frightened or charmed and you have immunity to psychic damage.</p>
+		</description>
+		<sheet>
+			<description>At 17th level you can't be frightened or charmed and you have immunity to psychic damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+</elements>

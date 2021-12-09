@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	        <update version="0.0.1">
+			<file name="fighter-bladedancer.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Fighter/fighter-bladedancer.xml" />
+		</update>
+	</info>
+  	<element name="Bladedancer" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_WOTC_XGTE_ARCHETYPE_FIGHTER_BLADEDANCER">
+    	<supports>Martial Archetype</supports>
+    	<description>
+			<p>Bladedancers stand among the most harshly trained fighters, usually culled in a "Trial by fire". Forced into this life without say, bladedancers seek true perfection in hand-to-hand combat. Impervious to fear, pain and distractions these soldiers are a pinnacle of resilience, but also grace. Some prefer swinging a blade in each hand, and some prefer the added dexterity of wielding their weapons with two hands. Some may take a hundred years to truly master this technique and some may take a thousand.</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_REMARKABLE_ACCURACY"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_UNRELENTING"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SUPERIOR_AGILITY"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WEAKPOINT"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_GODLY_TECHNIQUE"/>
+		</description>
+		<setters>
+      		<set name="override">true</set>
+    	</setters>
+		<sheet display="false">
+			<description>Bladedancers stand among the most harshly trained fighters, usually culled in a "Trial by fire". Forced into this life without say, bladedancers seek true perfection in hand-to-hand combat. Impervious to fear, pain and distractions these soldiers are a pinnacle of resilience, but also grace. Some prefer swinging a blade in each hand, and some prefer the added dexterity of wielding their weapons with two hands. Some may take a hundred years to truly master this technique and some may take a thousand.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_REMARKABLE_ACCURACY" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_UNRELENTING" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SUPERIOR_AGILITY" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WEAKPOINT" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_GODLY_TECHNIQUE" level="18" />
+		</rules>
+	</element>
+	<element name="Remarkable Technique" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_REMARKABLE_ACCURACY">
+		<description>
+			<p>Starting when you choose this archetype at 3rd level, Through harsh training you have learned to swing with precision, perfectly utilizing the weight of the weapon. Whenever wielding more than one melee weapon you suffer no penalties as long as the weapons don't have the heavy property. Additionally you gain a bonus to attack rolls with melee weapons equal to half your dexterity modifier. Starting at 7th level this bonus increases to your full dexterity bonus as long as you have advantage on the attack.</p>
+		</description>
+		<sheet>
+			<description>Starting when you choose this archetype at 3rd level, Through harsh training you have learned to swing with precision, perfectly utilizing the weight of the weapon. Whenever wielding more than one melee weapon you suffer no penalties as long as the weapons don't have the heavy property. Additionally you gain a {{dexterity:modifier:half}} bonus to attack rolls with melee weapons.</description>
+			<description level="7">Starting when you choose this archetype at 3rd level, Through harsh training you have learned to swing with precision, perfectly utilizing the weight of the weapon. Whenever wielding more than one melee weapon you suffer no penalties as long as the weapons don't have the heavy property. Additionally you gain a {{dexterity:modifier:half}} bonus to attack rolls with melee weapons, this increases to {{dexterity:modifier}} when you have advantage on the attack roll.</description>
+		</sheet>
+	</element>
+	<element name="Unrelenting" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_UNRELENTING">
+		<description>
+			<p>At 7th level, your harsh training has taught you the savagery of combat. You become immune to the afraid and charmed conditions, you also have advantage on saving throws against being put to sleep. At 12th level, you gain advantage on saving throws for effects that would cause you to have disadvantage otherwise.</p>
+		</description>
+		<sheet>
+		<description>At 7th level, your harsh training has taught you the savagery of combat. You become immune to the afraid and charmed conditions, you also have advantage on saving throws against being put to sleep.</description>
+			<description level="12">At 12th level, your harsh training has taught you the savagery of combat. You become immune to the afraid and charmed conditions, you also have advantage on saving throws against being put to sleep. You gain advantage on saving throws for effects that would cause you to have disadvantage otherwise.</description>
+		</sheet>
+	</element>
+	<element name="Superior Agility" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SUPERIOR_AGILITY">
+		<description>
+			<p>At 10th level, you perfectly utilize advantages in combat. Whenever you have advantage on an attack roll you can choose instead to attack twice. If there are two sources that cause you to have advantage then you can attack three times or choose one of your two attacks to benefit from the advantage. This continues stacking for however many sources cause you to have advantage. A source of advantage is removed if you have a source of disadvantage and this too stacks.</p>
+		</description>
+		<sheet>
+			<description>At 10th level, you perfectly utilize advantages in combat. Whenever you have advantage on an attack roll you can choose instead to attack twice. If there are two sources that cause you to have advantage then you can attack three times or choose one of your two attacks to benefit from the advantage. This continues stacking for however many sources cause you to have advantage. A source of advantage is removed if you have a source of disadvantage and this too stacks.</description>
+		</sheet>
+	</element>
+	<element name="Weakpoint" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WEAKPOINT">
+		<description>
+			<p>At 15th level, your experience in combat has granted you insight into the weakpoints of your enemies. You critical range increases by 1 (20 --> 19-20 etc.) Additionally if your attack roll surpasses the targets armour class by more than double their bonus you critical hit them.(eg an AC of 14 would have a bonus of 4 therefore an 22 would critical, an AC of 20 would require a 40 to critical without rolling a critical.)</p>
+		</description>
+		<sheet>
+			<description>At 15th level, your experience in combat has granted you insight into the weakpoints of your enemies. You critical range increases by 1 (20 --> 19-20 etc.) Additionally if your attack roll surpasses the targets armour class by more than double their bonus you critical hit them.(eg an AC of 14 would have a bonus of 4 therefore an 22 would critical, an AC of 20 would require a 40 to critical without rolling a critical.)</description>
+		</sheet>
+	</element>
+	<element name="Godly Technique" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_GODLY_TECHNIQUE">
+		<description>
+			<p>At 18th level your complete mastery of bladedancing has granted you the power to hit with lethal precision. Whenever your attack roll hits with the weakpoint critical (surpasses double their ac bonus) and the target is below your maximum critical damage, they die instantly. When this happens all creatures that can see you within 60ft must make a wisdom saving throw or become frightened of you.</p>
+		</description>
+		<sheet>
+			<description>At 18th level your complete mastery of bladedancing has granted you the power to hit with lethal precision. Whenever your attack roll hits with the weakpoint critical (surpasses double their ac bonus) and the target is below your maximum critical damage, they die instantly. When this happens all creatures that can see you within 60ft must make a DC{{technique:save}} wisdom saving throw or become frightened of you.</description>
+		</sheet>
+		<rules>
+			<stat name="technique:save" value="8" />
+			<stat name="technique:save" value="dexterity:modifier" />
+			<stat name="technique:save" value="proficiency" />
+		</rules>
+	</element>
+</elements>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	        <update version="0.0.1">
+			<file name="druid-dragons.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Druid/druid-dragons.xml" />
+		</update>
+	</info>
+	<element name="Circle of The Dragon" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_CIRCLE_OF_THE_DRAGON">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Druids of the Circle of the Dragon devote themselves to the natural balance of all dragons, good and evil. Some are fanatics obsessed with obtaining draconic power, while others worship beings such as Bahamut or Tiamat in a quest to gain a divine ascension. Wherever they go, these druids bear with them a flaming passion and extraordinary pride.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DRAGON_EMISSARY_OF_THE_DRAGON" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DRAGON_CIRCLE_FORMS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DRAGON_FRIGHTFUL_TRANSFORMATION" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DRAGON_WILD_DRACONIC_FORM" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DRAGON_DRUIDIC_DRAGON_WINGS" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DRAGON_EMISSARY_OF_THE_DRAGON" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DRAGON_CIRCLE_FORMS" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DRAGON_FRIGHTFUL_TRANSFORMATION" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DRAGON_WILD_DRACONIC_FORM" level="10" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DRAGON_DRUIDIC_DRAGON_WINGS" level="14" />
+		</rules>
+	</element>
+	<element name="Emissary of the Dragon" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DRAGON_EMISSARY_OF_THE_DRAGON">
+		<description>
+			<p>You learn to speak, read, and write Draconic. In addition, you have advantage on saving throws against being charmed or frightened. While you can see a dragon, you ignore the effects of being charmed or frightened.</p>
+		</description>
+		<sheet>
+			<description>You learn to speak, read, and write Draconic. In addition, you have advantage on saving throws against being charmed or frightened. While you can see a dragon, you ignore the effects of being charmed or frightened.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+		</rules>
+    </element>
+	<element name="Circle Forms" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DRAGON_CIRCLE_FORMS">
+		<description>
+			<p>The rites of your circle grant you the ability to transform into the most feared creatures in all the realms. Starting at 2nd level, you can use your Wild Shape to transform into a dragon with a challenge rating as high as 1. This includes dragons you have not seen before. Additionally, you can transform into a dragon that has movement speeds from the Limitations column of the Beast Shapes table, but you cannot use those movement speeds until you’ve reached the appropriate druid levels shown on the table.</p>
+			<p class="indent">Starting at 6th level, you can transform into a dragon with a challenge rating as high as your druid level divided by 3, rounded down.</p>
+		</description>
+		<sheet>
+			<description>The rites of your circle grant you the ability to transform into the most feared creatures in all the realms. You can use your Wild Shape to transform into a dragon with a challenge rating as high as {{circle forms:cr}}. This includes dragons you have not seen before. Additionally, you can transform into a dragon that has movement speeds from the Limitations column of the Beast Shapes table, but you cannot use those movement speeds until you’ve reached the appropriate druid levels shown on the table.</description>
+		</sheet>
+		<rules>
+			<stat name="circle forms:cr" value="1" bonus="base" />
+			<stat name="circle forms:cr" value="2" level="6" bonus="base" />
+			<stat name="circle forms:cr" value="3" level="9" bonus="base" />
+			<stat name="circle forms:cr" value="4" level="12" bonus="base" />
+			<stat name="circle forms:cr" value="5" level="15" bonus="base" />
+			<stat name="circle forms:cr" value="6" level="18" bonus="base" />
+		</rules>
+	</element>
+	<element name="Frightful Transformation" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DRAGON_FRIGHTFUL_TRANSFORMATION">
+		<description>
+			<p>Starting at 6th level, when you wild shape, your each creature of your choice within 10 feet must succeed a Wisdom saving throw against your Druid spell save DC or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.</p>
+		</description>
+		<sheet>
+			<description>Starting at 6th level, when you wild shape, your each creature of your choice within 10 feet must succeed a Wisdom saving throw against your Druid spell save DC or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.</description>
+		</sheet>
+    </element>
+	<element name="Wild Draconic Form" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DRAGON_WILD_DRACONIC_FORM">
+		<description>
+			<p>At 10th level, you can expend two uses of Wild Shape to transform into a Druidic Dragon. When you do so, choose a type of dragon from the Draconic Essence table. Your breath weapon, damage immunity, and eye color while transformed are determined by the dragon type, as shown in the table.</p>
+			<table>
+				<thead>
+					<tr><td>Dragon</td><td>Damage Type</td><td>Breath Weapon</td></tr>
+				</thead>
+				<tr><td>Black</td>	<td>Acid</td>		<td>5 by 120 ft. line (Dex. save)</td></tr>
+				<tr><td>Blue</td>	<td>Lightning</td>	<td>5 by 120 ft. line (Dex. save)</td></tr>
+				<tr><td>Brass</td>	<td>Fire</td>		<td>5 by 120 ft. line (Dex. save)</td></tr>
+				<tr><td>Bronze</td>	<td>Lightning</td>	<td>5 by 120 ft. line (Dex. save)</td></tr>
+				<tr><td>Copper</td>	<td>Acid</td>		<td>5 by 120 ft. line (Dex. save)</td></tr>
+				<tr><td>Gold</td>	<td>Fire</td>		<td>60 ft. cone (Dex. save)</td></tr>
+				<tr><td>Green</td>	<td>Poison</td>		<td>60 ft. cone (Con. save)</td></tr>
+				<tr><td>Red</td>	<td>Fire</td>		<td>60 ft. cone (Dex. save)</td></tr>
+				<tr><td>Silver</td>	<td>Cold</td>		<td>60 ft. cone (Con. save)</td></tr>
+				<tr><td>White</td>	<td>Cold</td>		<td>60 ft. cone (Con. save)</td></tr>
+			</table>
+
+			<h5>Druidic Dragon</h5>
+			<p><em>Huge elemental, unaligned</em></p>
+			<br/>
+			<p class="indent"><strong>Hit Points</strong> equal to eight times your druid level</p>
+			<p class="indent"><strong>Armor Class</strong> 17 (natural armor)</p>
+			<p class="indent"><strong>Speed.</strong> 40 ft., burrow 30 ft., fly 80 ft., swim 40 ft.</p>
+			<table style="text-align:center">
+				<thead>
+					<tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr>
+				</thead>
+				<tr><td>20 (+5)</td><td>11 (+0)</td><td>18 (+4)</td><td>12 (+1)</td><td>20 (+5)</td><td>17 (+3)</td></tr>
+			</table>
+			<p class="indent"><strong>Skills:</strong> Perception +8, Stealth +3</p>
+			<p class="indent"><strong>Damage Immunities</strong> Acid, Cold, Fire, Lightning, or Poison (Determined by Draconic Essence)</p>
+			<p class="indent"><strong>Senses</strong> blindsight 60 ft., darkvision 120 ft., passive Perception 18</p>
+			<p class="indent"><strong>Languages</strong> Common, Draconic, Primordial</p>
+			<p class="indent"><strong>Challenge:</strong> 5</p>
+			<br />
+			<p class="indent"><strong>Elemental Nature.</strong> The druidic dragon sleeps but doesn't require air, food, or drink.</p>
+			<p class="indent"><strong>Environmental Camouflage.</strong> While the druidic dragon remains motionless with its limbs and appendages tucked close to its body, it resembles a natural formation. A creature within 30 feet of it can discern its true nature with a successful Intelligence (Nature) check against your druid spell save DC.</p>
+			<p class="indent"><strong>Empowered Attacks.</strong> The druidic dragon’s attacks are treated as magical for the purpose of bypassing resistance and immunity to nonmagical weapons.</p>
+			<h5 style="text-decoration:underline">Actions</h5>
+			<br/>
+			<p class="indent"><strong><em>Multiattack.</em></strong> The druidic dragon makes two attacks: one with its claws and one with its tail.</p>
+			<p class="indent"><strong><em>Bite.</em></strong> <em>Melee Weapon Attack</em>:  +8 to hit, reach 10 ft., one target. <em>Hit</em>: 16 (2d10 + 5) piercing damage.</p>
+			<p class="indent"><strong><em>Claw.</em></strong> <em>Melee Weapon Attack</em>:  +8 to hit, reach 5 ft., one target. <em>Hit</em>: 12 (2d6 + 5) slashing damage.</p>
+			<p class="indent"><strong><em>Tail.</em></strong> <em>Melee Weapon Attack</em>:  +8 to hit, reach 15 ft., one target. <em>Hit</em>: 14 (2d8 + 5) bludgeoning damage.</p>
+			<p class="indent"><strong><em>Breath Weapon (Recharge 5-6).</em></strong> The druidic dragon exhales destructive energy. Each creature in the area of exhalation must make a saving throw, the type of which is determined by the druidic dragon's draconic essence, against your druid spell save DC. A creature takes 35 (10d6) damage on a failed save, or half as much damage on a successful one.</p>
+			<h5 style="text-decoration:underline">Reactions</h5>
+			<br/>
+			<p class="indent"><strong><em>Frightful Reveal.</em></strong> When a creature that is unaware of the druidic dragon's presence is within 30 feet of it, the druidic dragon can use its reaction to frightfully reveal itself in its true nature. Each creature of its choice within 30 feet must make a Wisdom saving throw against your druid spell save DC or become frightened for 1 minute.</p>
+		</description>
+		<sheet>
+			<description>At 10th level, you can expend two uses of Wild Shape to transform into a Druidic Dragon. When you do so, choose a type of dragon from the Draconic Essence table. Your breath weapon, damage immunity, and eye color while transformed are determined by the dragon type, as shown in the table.</description>
+		</sheet>
+    </element>
+	<element name="Druidic Dragon Wings" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DRAGON_DRUIDIC_DRAGON_WINGS">
+		<description>
+			<p>At 14th level, you gain the ability to sprout a pair of Druidic Dragon Wings from your back, gaining a flying speed equal to your current speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn.</p>
+			<p class="indent">You can’t manifest your wings while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your wings might be destroyed when you manifest them.</p>
+		</description>
+		<sheet>
+			<description>At 14th level, you gain the ability to sprout a pair of Druidic Dragon Wings from your back, gaining a flying speed equal to your current speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn.&#13;
+			You can’t manifest your wings while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your wings might be destroyed when you manifest them.</description>
+		</sheet>
+    </element>
+</elements>
+	

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	        <update version="0.0.1">
+			<file name="fighter-lightningstriker.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Fighter/fighter-lightningstriker.xml" />
+		</update>
+	</info>
+  	<element name="Lightning Striker" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_WOTC_XGTE_ARCHETYPE_FIGHTER_LIGHTING_STRIKER">
+    	<supports>Martial Archetype</supports>
+    	<description>
+			<p>Being masters of fast combat Lighting Strikers excel in ending a fight as fast as possible.</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_HONED_REFLEXES"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_QUICK_DRAW_STYLE"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BURST_MOVEMENT"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_FLASH_ATTACK"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_PATH_OF_LEAST_RESISTANCE"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BOLT_STRIKE"/>
+		</description>
+		<setters>
+      		<set name="override">true</set>
+    	</setters>
+		<sheet display="false">
+			<description>Being masters of fast combat Lighting Strikers excel in ending a fight as fast as possible.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_HONED_REFLEXES" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_QUICK_DRAW_STYLE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BURST_MOVEMENT" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_FLASH_ATTACK" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PATH_OF_LEAST_RESISTANCE" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BOLT_STRIKE" level="18" />
+		</rules>
+	</element>
+	<element name="Honed Reflexes" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_HONED_REFLEXES">
+		<description>
+			<p>When you choose this archetype at 3rd level, you can't be surprised additionally you gain advantage on initiative.</p>
+		</description>
+		<sheet>
+			<description>When you choose this archetype at 3rd level, you can't be surprised additionally you gain advantage on initiative.</description>
+		</sheet>
+	</element>
+	<element name="Quick-Draw Style" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_QUICK_DRAW_STYLE">
+		<description>
+			<p>If you haven't made a melee attack against a creature that hasn't made an attack against you yet you gain advantage on that attack. Additionally any non heavy weapon counts as finesse for you.</p>
+		</description>
+		<sheet>
+			<description>If you haven't made a melee attack against a creature that hasn't made an attack against you yet you gain advantage on that attack. Additionally any non heavy weapon counts as finesse for you.</description>
+		</sheet>
+	</element>
+	<element name="Burst Movement" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BURST_MOVEMENT">
+		<description>
+			<p>At 7th level you have mastered you agility. You can take the dash action as a bonus action, if you take the dash action it is coupled with the disengage action as part of the same bonus action. Additionally when you move you can walk across liquids and vertical surfaces, if you end your turn on one of these surfaces you fall as normal. When you long jump the distance is doubled.</p>
+		</description>
+		<sheet>
+			<description>At 7th level you have mastered you agility. You can take the dash action as a bonus action, if you take the dash action it is coupled with the disengage action as part of the same bonus action. Additionally when you move you can walk across liquids and vertical surfaces, if you end your turn on one of these surfaces you fall as normal. When you long jump the distance is doubled.</description>
+		</sheet>
+	</element>
+	<element name="Flash Attack" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_FLASH_ATTACK">
+		<description>
+			<p>At 10th level, you've learned to use your momentum when you attack. When you attack with advantage due to Quick-Draw Style or directly after you move you add 1d6 lightning damage to your attack. This increases to 1d8 at 15th level and 1d10 at 18th level.</p>
+		</description>
+		<sheet action="Action">
+			<description>At 10th level, you've learned to use your momentum when you attack. When you attack with advantage due to Quick-Draw Style or directly after you move you add 1d6 lightning damage to your attack.</description>
+			<description level="15">At 15th level, you've learned to use your momentum when you attack. When you attack with advantage due to Quick-Draw Style or directly after you move you add 1d8 lightning damage to your attack.</description>
+			<description level="18">At 18th level, you've learned to use your momentum when you attack. When you attack with advantage due to Quick-Draw Style or directly after you move you add 1d10 lightning damage to your attack.</description>
+		</sheet>
+	</element>
+	<element name="Path of Least Resistance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PATH_OF_LEAST_RESISTANCE">
+		<description>
+			<p>At 15th level you've taken on lightning's ability to move quickly from place to place. When you hit an enemy with your Flash attack, if there are enemies within range of your speed you can move to the nearest one and make another flash attack. If the attack hits you can continue to do this as long as you do not miss and each new creature you have not struck that round. You can use this feature once per short rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>At 15th level you've taken on lightning's ability to move quickly from place to place. When you hit an enemy with your Flash attack, if there are enemies within range of your speed you can move to the nearest one and make another flash attack. If the attack hits you can continue to do this as long as you do not miss and each new creature you have not struck that round. You can use this feature once per short rest.</description>
+		</sheet>
+	</element>
+	<element name="Bolt Strike" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BOLT_STRIKE">
+		<description>
+			<p>At 18th level you've mastered the art of finishing the fight in a single strike. Choose a point within 100ft of you, you move in a straight line to this point making a melee attack on anyone within 5ft of you when you move. If you hit you add an additional 4d6 lightning damage, in this movement you ignore attacks of opportunity. Once you use this feature you can't again until you've finished a short rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>At 18th level you've mastered the art of finishing the fight in a single strike. Choose a point within 100ft of you, you move in a straight line to this point making a melee attack on anyone within 5ft of you when you move. If you hit you add an additional 4d6 lightning damage, in this movement you ignore attacks of opportunity. Once you use this feature you can't again until you've finished a short rest.</description>
+		</sheet>
+	</element>
+</elements>

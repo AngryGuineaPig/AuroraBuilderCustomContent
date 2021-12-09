@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="cleric-plaguedomain.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/Cleric/cleric-plaguedomain.xml" />
+		</update>
+	</info>
+	<element name="Plague Domain" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_CLERIC_DIVINE_DOMAIN_PLAGUE">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Mortals have long viewed Plague as a tool of the gods, clerics of the Plague domain are given the ability to become harbingers of this great death.</p>
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_DOMAIN_SPELLS" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_BLESSING_OF_MALADAY" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_PLAGUE_DOCTOR" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_CD_UNLEASH_THE_PLAGUE" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_BLACK_DEATH" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_POTENT_SPELLCASTING" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_HARBINGER_OF_PESTILENCE" />
+		</description>
+		<sheet>
+			<description>Mortals have long viewed Plague as a tool of the gods, clerics of the Plague domain are given the ability to become harbingers of this great death.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_BLESSING_OF_MALADAY" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_PLAGUE_DOCTOR" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_CD_UNLEASH_THE_PLAGUE" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_BLACK_DEATH" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_POTENT_SPELLCASTING" level="8" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_HARBINGER_OF_PESTILENCE" level="17" />
+		</rules>
+	</element>
+	<element name="Domain Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_DOMAIN_SPELLS">
+		<description>
+			<p>You gain domain spells at the cleric levels listed in the Plague Domain Spells table. See the Divine Domain class feature for how domain spells work.</p>
+			<h5>Plague Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>Detect Poison and Disease, Ray of Sickness</em></td></tr>
+				<tr><td>3rd</td><td><em>Lesser Restoration, Ray of Enfeeblement</em></td></tr>
+				<tr><td>5th</td><td><em>Feign Death, Stinking Cloud</em></td></tr>
+				<tr><td>7th</td><td><em>Aura of Purity, Blight</em></td></tr>
+				<tr><td>9th</td><td><em>Cloudkill, Contagion</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEIGN_DEATH" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STINKING_CLOUD" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_PURITY" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" level="9" spellcasting="Cleric" prepared="true" />
+		    <grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+	<element name="Blessing of Malady" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_BLESSING_OF_MALADY">
+		<description>
+			<p>You are immune to Disease. Additionally you learn the infestation and Poison spray cantrips.</p>
+		</description>
+		<sheet>
+			<description>You are immune to Disease. Additionally you learn the Poison spray cantrips.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_POISON_SPRAY" level="1" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+	<element name="Plague Doctor" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_PLAGUE_DOCTOR">
+		<description>
+			<p>At 1st level, you can imbue your healing magic with purifying magic, when you heal a creature you also purge one poison or disease that affects them. You can do this a number of times equivalent to your wisdom modifier per long rest</p>
+		</description>
+		<sheet usage="{{wisdom:modifier}}/Long Rest">
+			<description>At 1st level, you can imbue your healing magic with purifying magic, when you heal a creature you also purge one poison or disease that affects them. You can do this {{wisdom:modifier}} times per long rest</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Unleash The Plague" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_CD_UNLEASH_THE_PLAGUE">
+		<description>
+			<p>As a reaction when you deal poison or necrotic damage you can use your reaction to infect it with one of the following diseases that lasts a number of days equivalent to your cleric level. The target can make a constitution save every hour it is infected to fight the disease, this includes when you use your channel divinity.</p>
+			<p><b>Atrophy</b> The target has disadvantage on attack rolls, strength checks and dexterity checks.</p>
+			<p><b>Lethargy</b> The targets speed is halved and can't take reactions.</p>
+			<p><b>Migraine</b> The target has disadvantage on attack rolls, Intelligence, Wisdom and Charisma checks. It also has disadvantage on concentration checks.</p>
+			<p><b>Nausea</b> The target has disadvantage on saving throws against poison, disease and regurgitation.</p>
+			<p><b>Necrosis</b> Whenever the takes poison or necrotic damage, including the triggering damage, its hit point maximum is reduced by the damage until the disease is cured, additionally whenever it fails its save against the disease it takes 1d6 necrotic damage.</p>
+			<p><b>Psychosis</b> The target takes a random form of indefinite madness that lasts until the disease is cured and must make any attacks of opportunity even if they're against allies.</p>
+		</description>
+		<sheet alt="Unleash The Plague" action="Action" usage="Channel Divinity">>
+			<description>As a reaction when you deal poison or necrotic damage you can use your reaction to infect it with one of the following diseases that lasts a number of days equivalent to your cleric level. The target can make a constitution save every hour it is infected to fight the disease, this includes when you use your channel divinity. THe options are: Atrophy, Lethargy, Migraine, Nausea, Necrosis and Psychosis</description>
+		</sheet>
+	</element>
+	<element name="Black Death" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_BLACK_DEATH">
+		<description>
+			<p>By 6th level the blessing of your deity allows you afflict those who would normally resist your attacks. Whenever you cast a spell that deals poison or necrotic damage you can switch the damage type to necrotic or poison. Your spells can cause the poisoned condition to targets that are immune to the poisoned condition as long as they are not also immune to necrotic damage. If they are immune to both you can't overcome their poisoned immunity. The disease caused by Unleash the Plague is considered non magical and can't be dispelled by antimagic field or other such effects.</p>
+		</description>
+		<sheet >
+			<description>By 6th level the blessing of your deity allows you afflict those who would normally resist your attacks. Whenever you cast a spell that deals poison or necrotic damage you can switch the damage type to necrotic or poison. Your spells can cause the poisoned condition to targets that are immune to the poisoned condition as long as they are not also immune to necrotic damage. If they are immune to both you can't overcome their poisoned immunity. The disease caused by Unleash the Plague is considered non magical and can't be dispelled by antimagic field or other such effects.</description>
+		</sheet>
+	</element>
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_POTENT_SPELLCASTING">
+		<description>
+			<p>Starting at 8th level you can add your wisdom modifier to any damage you deal with a cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>Starting at 8th level you can add {{wisdom:modifier}} to any damage you deal with a cleric cantrip.</description>
+		</sheet>
+	</element>
+	<element name="Harbinger Of Pestilence" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_PLAGUE_HARBINGER_OF_PESTILENCE">
+		<description>
+			<p>At 17th level you are able to walk amongst the sick with impunity and are a master of spreading sickness to others. You are immune to poison damage and the poisoned condition. Additionally if a hostile creature dies whilst suffering from one of your plagues you regain that use of channel divinity.</p>
+		</description>
+		<sheet>
+			<description>At 17th level you are able to walk amongst the sick with impunity and are a master of spreading sickness to others. You are immune to poison damage and the poisoned condition. Additionally if a hostile creature dies whilst suffering from one of your plagues you regain that use of channel divinity.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+		</rules>
+	</element>
+</elements>

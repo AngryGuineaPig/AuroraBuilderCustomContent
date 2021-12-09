@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="cleric-luckdomain.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/Cleric/cleric-luckdomain.xml" />
+		</update>
+	</info>
+	<element name="Luck Domain" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_CLERIC_DIVINE_DOMAIN_LUCK">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>There are deities of good and deities of evil. Then there are those who decide that chance is the greatest mediator of good and evil. Clerics of the luck domain embrace this mediator, their holy symbols often reflect this, being playing cards or roulette balls.</p>
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_DOMAIN_SPELLS" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_BONUS_PROFICIENCIES" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_TIP_THE_SCALES" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_CD_STROKE_OF_LUCK" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_LUCKY_STREAK" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_POTENT_IMPROVISATION" />
+			<div element="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_ARCANE_ROULETTE" />
+		</description>
+		<sheet>
+			<description>There are deities of good and deities of evil. Then there are those who decide that chance is the greatest mediator of good and evil. Clerics of the luck domain embrace this mediator, their holy symbols often reflect this, being playing cards or roulette balls.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_TIP_THE_SCALES" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_CD_STROKE_OF_LUCK" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_LUCKY_STREAK" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_POTENT_IMPROVISATION" level="8" />
+			<grant type="Archetype Feature" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_ARCANE_ROULETTE" level="17" />
+		</rules>
+	</element>
+	<element name="Domain Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_DOMAIN_SPELLS">
+		<description>
+			<p>You gain domain spells at the cleric levels listed in the Luck Domain Spells table. See the Divine Domain class feature for how domain spells work.</p>
+			<h5>Luck Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>Bane, Bless</em></td></tr>
+				<tr><td>3rd</td><td><em>Enhance Ability, Rope Trick</em></td></tr>
+				<tr><td>5th</td><td><em>Bestow Curse, Remove Curse</em></td></tr>
+				<tr><td>7th</td><td><em>Banishment, Dimension Door</em></td></tr>
+				<tr><td>9th</td><td><em>Reincarnate</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BANE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLESS" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ROPE_TRICK" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_REINCARNATE" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_BONUS_PROFICIENCIES">
+		<description>
+			<p>When you choose this domain at 1st level you gain proficiency in the gaming sets and improvised weapons</p>
+		</description>
+		<sheet>
+			<description>When you choose this domain at 1st level you gain proficiency in the gaming sets and improvised weapons</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DICE_SET" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DRAGONCHESS_SET" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_THREE_DRAGON_ANTE_SET" />
+		</rules>
+	</element>
+	<element name="Tip the Scales" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_TIP_THE_SCALES">
+		<description>
+			<p>When you cast a spell that targets a friendly creature they have advantage on their next roll that requires a d20.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that targets a friendly creature they have advantage on their next roll that requires a d20.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Stroke of Luck" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_CD_STROKE_OF_LUCK">
+		<description>
+			<p>Starting at 2nd level you start to get the hang of luck. When friendly creatures are forced to make a saving throw you can use your reaction to grant a number of creatures = your wisdom modifier advantage on the saving throw.</p>
+		</description>
+		<sheet alt="Stroke of Luck" action="Reaction" usage="Channel Divinity">
+			<description>Starting at 2nd level you start to get the hang of luck. When friendly creatures are forced to make a saving throw you can use your reaction to grant a number of creatures = {{wisdom:modifier}} advantage on the saving throw.</description>
+		</sheet>
+	</element>
+	<element name="Lucky Streak" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_LUCKY_STREAK">
+		<description>
+			<p>You score a critical hit on a 7 or 20 but a critical fail on a 13 or 1.</p>
+		</description>
+		<sheet>
+			<description>You score a critical hit on a 7 or 20 but a critical fail on a 13 or 1.</description>
+		</sheet>
+	</element>
+	<element name="Potent Improvisation" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_POTENT_IMPROVISATION">
+		<description>
+			<p>Starting at 8th level you add your Wisdom modifier to attack and damage rolls with improvised weapons. Additionally once per turn with an improvised weapon you can deal an additional 1d8, this increases to 2d8 at 14th level</p>
+		</description>
+		<sheet>
+			<description>Starting at 8th level you add {{wisdom:modifier}} to attack and damage rolls with improvised weapons. Additionally once per turn with an improvised weapon you can deal an additional 1d8</description>
+			<description level="14">Starting at 8th level you add {{wisdom:modifier}} to attack and damage rolls with improvised weapons. Additionally once per turn with an improvised weapon you can deal an additional 2d8</description>
+		</sheet>
+	</element>
+	<element name="Arcane Roulette" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_UA_ARCHETYPE_FEATURE_DIVINE_DOMAIN_LUCK_ARCANE_ROULETTE">
+		<description>
+			<p>Starting at 17th level you can push your luck to the extreme. You can use your action once per long rest to use arcane roulette. Roll a 1d10 and the 9th level spell listed takes effect as if a cleric spell for you. You must choose a target before you roll.</p>
+			<h5>Arcane Roulette</h5>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>1</td><td>No Spell</td></tr>
+				<tr><td>2</td><td>Imprisonment</td></tr>
+				<tr><td>3</td><td>Invulnerability</td></tr>
+				<tr><td>4</td><td>Mass Heal</td></tr>
+				<tr><td>5</td><td>Power Word Heal</td></tr>
+				<tr><td>6</td><td>Power Word Kill</td></tr>
+				<tr><td>7</td><td>Time Stop</td></tr>
+				<tr><td>8</td><td>True Polymorph</td></tr>
+				<tr><td>9</td><td>Weird</td></tr>
+				<tr><td>0</td><td>Wish</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Starting at 17th level you can push your luck to the extreme. You can use your action once per long rest to use arcane roulette. Roll a 1d10 and the 9th level spell listed takes effect as if a cleric spell for you. You must choose a target before you roll.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="fighter-gladiator.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Fighter/fighter-gladiator.xml" />
+		</update>
+	</info>
+  	<element name="Gladiator" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_WOTC_XGTE_ARCHETYPE_FIGHTER_GLADIATOR">
+    	<supports>Martial Archetype</supports>
+    	<description>
+			<p>A Gladiator isn't all about combat; the fierce fighter of the arena thirsts for recognition, and the right to boast their strength. When the people see you and the style of your form and armour, they know your fighting style, your specialty, and how you are a force to be feared.</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_GLADIATOR_BUILD"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_IRRESISTIBLE_CHALLENGE"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WIN_THE_CROWD"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ESCALATING_ODDS"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARDENT_RECOGNITION"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_GLORIOUS_MOMENT"/>
+		</description>
+		<setters>
+      		<set name="override">true</set>
+    	</setters>
+		<sheet display="false">
+			<description>A Gladiator isn't all about combat; the fierce fighter of the arena thirsts for recognition, and the right to boast their strength. When the people see you and the style of your form and armour, they know your fighting style, your specialty, and how you are a force to be feared.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_GLADIATOR_BUILD" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_IRRESISTIBLE_CHALLENGE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WIN_THE_CROWD" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ESCALATING_ODDS" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARDENT_RECOGNITION" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_GLORIOUS_MOMENT" level="18" />
+		</rules>
+	</element>
+	<element name="Gladiator Build" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_GLADIATOR_BUILD">
+		<description>
+			<p>When you choose this archetype at 3rd level you gain a specialty in one of the following fighting styles:</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Gladiator Syle" supports="Gladiator Style" level="3" number="1" />
+		</rules>
+	</element>
+<!--Gladiator Styles-->
+	<!--Secutor-->
+	<element name="Secutor" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STYLE_SECUTOR">
+    	<supports>Gladiator Style</supports>
+    	<description>
+      		<p>A secutor is a master of light armor and shortswords.</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SECUTOR_EXPERT_HANDLING"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SECUTOR_COMFORT_ARMOR"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SECUTOR_MASTERED_GRIP"/>
+    	</description>
+    	<sheet>
+      		<description>A secutor is a master of light armor and shortswords.</description>
+    	</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SECUTOR_EXPERT_HANDLING" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SECUTOR_COMFORT_ARMOR" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SECUTOR_MASTERED_GRIP" level="15" />
+		</rules>
+  	</element>
+	<element name="Expert Handling" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SECUTOR_EXPERT_HANDLING">
+		<description>
+			<p>Starting at 3rd level, you gain a bonus to damage rolls made with a shortsword equal to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>Starting at 3rd level, you gain a +{{proficiency}} to damage rolls made with a shortsword.</description>
+		</sheet>
+	</element>
+	<element name="Comfort Armor" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SECUTOR_COMFORT_ARMOR">
+		<description>
+			<p>Starting at 10th level, if you are wearing light armour you gain an additional 10ft of movement and may take the Disengage action as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Starting at 10th level, if you are wearing light armour you gain an additional 10ft of movement and may take the Disengage action as a bonus action.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed" value="10" bonus="armoured movement" equipped="[armor:light]"/>
+		</rules>
+	</element>
+	<element name="Mastered Grip" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SECUTOR_MASTERED_GRIP">
+		<description>
+			<p>At 15th level, you've gone beyond the standard nature of attacking with the shortsword, using all your strength you have learned to wield the shortsword in both hands. This grants the shortsword the versatile (1d10) feature when you wield it.</p>
+		</description>
+		<sheet>
+			<description>At 15th level, you've gone beyond the standard nature of attacking with the shortsword, using all your strength you have learned to wield the shortsword in both hands. This grants the shortsword the versatile (1d10) feature when you wield it.</description>
+		</sheet>
+	</element>
+	<!--Scissor-->
+	<element name="Scissor" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STYLE_SCISSOR">
+    	<supports>Gladiator Style</supports>
+    	<description>
+      		<p>A scissor is a master of two-weapon fighting.</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SCISSOR_DEXTEROUS_FIGHTING"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SCISSOR_PINCER_MANEUVER"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SCISSOR_DUAL_STRIKE"/>
+    	</description>
+    	<sheet>
+      		<description>A scissor is a master of two-weapon fighting.</description>
+    	</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SCISSOR_DEXTEROUS_FIGHTING" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SCISSOR_PINCER_MANEUVER" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SCISSOR_DUAL_STRIKE" level="15" />
+		</rules>
+  	</element>
+	<element name="Dexterous Fighting" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SCISSOR_DEXTEROUS_FIGHTING">
+		<description>
+			<p>Starting at 3rd level, when you engage in two weapon fighting you can add your ability modifier to the second attack.</p>
+		</description>
+		<sheet>
+			<description>Starting at 3rd level, when you engage in two weapon fighting you can add your ability modifier to the second attack.</description>
+		</sheet>
+	</element>
+	<element name="Pincer Maneuver" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SCISSOR_PINCER_MANEUVER">
+		<description>
+			<p>Starting at 10th level, When you take the disengage action whilst wielding a separate weapon in either hand you can make a single attack with one of the weapons as part of the disengage action.</p>
+		</description>
+		<sheet>
+			<description>Starting at 10th level, When you take the disengage action whilst wielding a separate weapon in either hand you can make a single attack with one of the weapons as part of the disengage action.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+	<element name="Dual Strike" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SCISSOR_DUAL_STRIKE">
+		<description>
+			<p>At 15th level, You have developed a technique worthy of the finesse needed to wield two weapons at once, striking opponents with double the ferocity. When you take a bonus action to make an attack with your second weapon you may make a single attack with both weapons instead. Roll to hit once, on a hit roll damage for both weapons.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>At 15th level, You have developed a technique worthy of the finesse needed to wield two weapons at once, striking opponents with double the ferocity. When you take a bonus action to make an attack with your second weapon you may make a single attack with both weapons instead. Roll to hit once, on a hit roll damage for both weapons.</description>
+		</sheet>
+	</element>
+	<!--Hoplite-->
+	<element name="Hoplite" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STYLE_HOPLITE">
+    	<supports>Gladiator Style</supports>
+    	<description>
+      		<p>A Hoplite is a master of spears, fighting in both close range and throwing them from afar.</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_HOPLITE_EXPERT_HANDLING"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_HOPLITE_SPEAR_THROWER"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_HOPLITE_MASTERED_GRIP"/>
+    	</description>
+    	<sheet>
+      		<description>A Hoplite is a master of spears, fighting in both close range and throwing them from afar.</description>
+    	</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_HOPLITE_EXPERT_HANDLING" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_HOPLITE_SPEAR_THROWER" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_HOPLITE_MASTERED_GRIP" level="15" />
+		</rules>
+  	</element>
+	<element name="Expert Handling" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_HOPLITE_EXPERT_HANDLING">
+		<description>
+			<p>Starting at 3rd level, you gain a bonus to damage dealt with spears equal to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>Starting at 3rd level, you gain a bonus +{{proficiency}} to damage dealt with spears.</description>
+		</sheet>
+	</element>
+	<element name="Spear Thrower" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_HOPLITE_SPEAR_THROWER">
+		<description>
+			<p>Starting at 10th level, the range of your thrown attack with a spear is tripled to (60/180).</p>
+		</description>
+		<sheet>
+			<description>Starting at 10th level, the range of your thrown attack with a spear is tripled to (60/180).</description>
+		</sheet>
+	</element>
+	<element name="Mastered Grip" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_HOPLITE_MASTERED_GRIP">
+		<description>
+			<p>At 15th level, You've mastered the spear nad the stance made to deliver the killing blow even from a distance at the cost of precision. Any time you attack with a spear you can choose to take a -5 penalty to the attack roll for a +10 to damage. This must be declared before rolling to hit.</p>
+		</description>
+		<sheet>
+			<description>At 15th level, You've mastered the spear nad the stance made to deliver the killing blow even from a distance at the cost of precision. Any time you attack with a spear you can choose to take a -5 penalty to the attack roll for a +10 to damage. This must be declared before rolling to hit.</description>
+		</sheet>
+	</element>
+	<!--Provocator-->
+	<element name="Provocator" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STYLE_PROVOCATOR">
+    	<supports>Gladiator Style</supports>
+    	<description>
+      		<p>A Provocator is a master of heavy armor, shields and using their defenses as improvised offense.</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_PROVOCATOR_DEFLECTION"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_PROVOCATOR_SHIELD_STRIKER"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_PROVOCATOR_PARAGON_DEFENSE"/>
+    	</description>
+    	<sheet>
+      		<description>A Provocator is a master of heavy armor, shields and using their defenses as improvised offense.</description>
+    	</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PROVOCATOR_DEFLECTION" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PROVOCATOR_SHIELD_STRIKER" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PROVOCATOR_PARAGON_DEFENSE" level="15" />
+		</rules>
+  	</element>
+
+	<element name="Deflection" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PROVOCATOR_DEFLECTION">
+		<description>
+			<p>Starting at 3rd level, you can use your reaction while wielding a shield to reduce the damage you take from a hit by 1d10 + proficiency.</p>
+		</description>
+		<sheet>
+			<description>Starting at 3rd level, you can use your reaction while wielding a shield to reduce the damage you take from a hit by 1d10 + {{proficiency}}</description>
+		</sheet>
+	</element>
+	<element name="Shield Striker" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PROVOCATOR_SHIELD_STRIKER">
+		<description>
+			<p>Starting at 10th level, you have learned to make use of your shield to attack opponents. You can use your shield as a melee weapon dealing 1d4 bludgeoning damage. You are proficient in the use of a shield this way. Additionally if you hit a target, once per turn, you can reduce their movement to half until the end of its next turn.</p>
+		</description>
+		<sheet>
+			<description>Starting at 10th level, you have learned to make use of your shield to attack opponents. You can use your shield as a melee weapon dealing 1d4 bludgeoning damage. You are proficient in the use of a shield this way. Additionally if you hit a target, once per turn, you can reduce their movement to half until the end of its next turn.</description>
+		</sheet>
+	</element>
+	<element name="Paragon Defense" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PROVOCATOR_PARAGON_DEFENSE">
+		<description>
+			<p>At 15th level, whenever you take the Dodge action, while wielding a shield, you gain a special reaction until the start of your next turn. You can use this special reaction to make an opportunity attack with a melee weapon against a creature that missed your with an attack you can use this reaction an infinite number of times but can only use it on each creature once.</p>
+		</description>
+		<sheet>
+			<description>At 15th level, whenever you take the Dodge action, while wielding a shield, you gain a special reaction until the start of your next turn. You can use this special reaction to make an opportunity attack with a melee weapon against a creature that missed your with an attack you can use this reaction an infinite number of times but can only use it on each creature once.</description>
+		</sheet>
+	</element>
+	<!--Thrax-->
+	<element name="Thrax" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STYLE_THRAX">
+    	<supports>Gladiator Style</supports>
+    	<description>
+      		<p>A Provocator is a master of medium armor and longswords.</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_THRAX_EXPERT_HANDLING"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_THRAX_COMFORT_ARMOR"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_THRAX_SURE_STRIKE"/>
+    	</description>
+    	<sheet>
+      		<description>A Provocator is a master of medium armor and longswords.</description>
+    	</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_THRAX_EXPERT_HANDLING" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_THRAX_COMFORT_ARMOR" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_THRAX_SURE_STRIKE" level="15" />
+		</rules>
+  	</element>
+	<element name="Expert Handling" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_THRAX_EXPERT_HANDLING">
+		<description>
+			<p>Starting at 3rd level, you gain a bonus to damage rolls with a longsword equal to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>Starting at 3rd level, you gain a bonus +{{proficiency}} to damage rolls with a longsword.</description>
+		</sheet>
+	</element>
+	<element name="Comfort Armor" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_THRAX_COMFORT_ARMOR">
+		<description>
+			<p>Starting at 10th level, if you are wearing medium armour you gain an additional 10ft of movement and may take the Disengage action as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>Starting at 10th level, if you are wearing medium armour you gain an additional 10ft of movement and may take the Disengage action as a bonus action.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed" value="10" bonus="armoured movement" equipped="[armor:medium]"/>
+		</rules>
+	</element>
+	<element name="Sure Strike" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_THRAX_SURE_STRIKE">
+		<description>
+			<p>At 15th level, you've mastered the longsword as if it were an extension of your arm. Once per long rest you can have one of your longsword strikes automatically hit regardless of disadvantages or the AC of a creature. This strike can be made as part of the attack action</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>At 15th level, you've mastered the longsword as if it were an extension of your arm. Once per long rest you can have one of your longsword strikes automatically hit regardless of disadvantages or the AC of a creature. This strike can be made as part of the attack action</description>
+		</sheet>
+	</element>
+	<element name="Irresistible Challenge" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_IRRESISTIBLE_CHALLENGE">
+		<description>
+			<p>Starting at 3rd level, you can use your bonus action to cast Compelled Duel, or cast it as part of your second wind feature. The dc is 8 + proficiency + charisma modifier. You don't have to maintain concentration on the spell. You can use this feature once per short rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+		<description>Starting at 3rd level, you can use your bonus action to cast Compelled Duel, or cast it as part of your second wind feature. The dc is {{challenge:dc}}. You don't have to maintain concentration on the spell. You can use this feature once per short rest.</description>
+		</sheet>
+		<rules>
+			<stat name="challenge:dc" value="8" />
+			<stat name="challenge:dc" value="proficiency" />
+			<stat name="challenge:dc" value="charisma:modifier" />
+			<grant type="spell" id="ID_PHB_SPELL_COMPELLED_DUEL" />
+		</rules>
+	</element>
+	<element name="Win The Crowd" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WIN_THE_CROWD">
+		<description>
+			<p>At 7th level, you add your proficiency bonus to intimidation check. Additionally you gain advantage on persuasion checks related to haggling the price of a key item of your Gladiator build. (Eg spears for hoplites.)</p>
+		</description>
+		<sheet>
+			<description>At 7th level, you add your proficiency bonus to intimidation check. Additionally you gain advantage on persuasion checks related to haggling the price of a key item of your Gladiator build. (Eg spears for hoplites.)</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+		</rules>
+	</element>
+	<element name="Escalating Odds" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ESCALATING_ODDS">
+		<description>
+			<p>At 10th level, you are inured to battles of attrition, eventually gaining the upper hand against your opponent by memorizing the flow of combat. During combat, at the end of each of your turns you gain an Escalating Odds point. You can spend any Escalating Odds points you have to gain a +1 to an attack roll, you can spend any number of points on a single attack. Any time you lose consciousness or combat ends you lose any escalating Odds points.</p>
+		</description>
+		<sheet>
+			<description>At 10th level, you are inured to battles of attrition, eventually gaining the upper hand against your opponent by memorizing the flow of combat. During combat, at the end of each of your turns you gain an Escalating Odds point. You can spend any Escalating Odds points you have to gain a +1 to an attack roll, you can spend any number of points on a single attack. Any time you lose consciousness or combat ends you lose any escalating Odds points.</description>
+		</sheet>
+	</element>
+	<element name="Ardent Recognition" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARDENT_RECOGNITION">
+		<description>
+			<p>At 15th level, you become an icon of combat and glory. Whenever a creature witnesses you kill another creature, and knows your name, it will be able to recall you perfectly for the next decade. Additionally you can spend ten minutes gathering information on a person. The amount of information you can find or recall is directly linked to any combat experience that you may have had with them. The amount of information, if any, is up to the discretion of the DM.</p>
+		</description>
+		<sheet>
+			<description>At 15th level, you become an icon of combat and glory. Whenever a creature witnesses you kill another creature, and knows your name, it will be able to recall you perfectly for the next decade. Additionally you can spend ten minutes gathering information on a person. The amount of information you can find or recall is directly linked to any combat experience that you may have had with them. The amount of information, if any, is up to the discretion of the DM.</description>
+		</sheet>
+	</element>
+	<element name="Glorious Moment" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_GLORIOUS_MOMENT">
+		<description>
+			<p>You learn this feature at 18th level. A Gladiator's battle should not end without their moment of glory; an act of emboldening prowess that anyone would pay to behold. Before your take the attack action on your turn you can choose one of the following:</p>
+			<p class="indent"><b>Moment of Finality.</b> You discard all hesitation and place all your strength into one decisive strike, hoping to end the battle. You make one attack against a creature within reach, you forgo any additional attacks you would normally gain as part of the attack action. For each attack you forgo you add a +5 to your damage roll. Additionally when you hit your roll as if you had landed all strikes you would normally make in the attack action.</p>
+			<p class="indent"><b>Moment of Splendor.</b> You flourish your weapon, preparing to make a spectacle out of your opponent. After you finish your last attack with the attack action all creatures within 60ft of your that can see you must make a wisdom save. The DC for this is 8 + proficiency + charisma modifier. If the creature has been attacked by you this turn then it automatically succeeds. If a creature fails they become charmed by you for 1 minute.</p>
+			<p class="indent"><b>Moment of Vehemence</b> Your display of zeal and combat fervor strikes fear into many.  After you finish your last attack with the attack action all creatures within 60ft of your that can see you must make a wisdom save. The DC for this is 8 + proficiency + charisma modifier. If a creature fails they become frightened of you for 1 minute. If a creature ends its turn without line of sight to you then it may repeat the save.</p>
+			<p>You may use this ability once per long rest, however if your attack action made as part of the Glorious moment is the final blow to the final creature in a combat, you regain the use of the feature.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You learn this feature at 18th level. A Gladiator's battle should not end without their moment of glory; an act of emboldening prowess that anyone would pay to behold. Before your take the attack action on your turn you can choose one of the following:
+					<b>Moment of Finality.</b> You discard all hesitation and place all your strength into one decisive strike, hoping to end the battle. You make one attack against a creature within reach, you forgo any additional attacks you would normally gain as part of the attack action. For each attack you forgo you add a +5 to your damage roll. Additionally when you hit your roll as if you had landed all strikes you would normally make in the attack action.
+					<b>Moment of Splendor.</b> You flourish your weapon, preparing to make a spectacle out of your opponent. After you finish your last attack with the attack action all creatures within 60ft of your that can see you must make a wisdom save. The DC for this is {{challenge:dc}}. If the creature has been attacked by you this turn then it automatically succeeds. If a creature fails they become charmed by you for 1 minute.
+					<b>Moment of Vehemence</b> Your display of zeal and combat fervor strikes fear into many.  After you finish your last attack with the attack action all creatures within 60ft of your that can see you must make a wisdom save. The DC for this is {{moment:dc}}. If a creature fails they become frightened of you for 1 minute. If a creature ends its turn without line of sight to you then it may repeat the save.
+			You may use this ability once per long rest, however if your attack action made as part of the Glorious moment is the final blow to the final creature in a combat, you regain the use of the feature.</description>
+		</sheet>
+		<rules>
+			<stat name="moment:dc" value="8" />
+			<stat name="moment:dc" value="proficiency" />
+			<stat name="moment:dc" value="strength:modifier" />
+		</rules>
+	</element>
+</elements>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+	        <update version="0.0.1">
+			<file name="Fighter.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Fighter.index" />
+		</update>
+	</info>
+	<files>
+        <file name="fighter-bladedancer.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Fighter/fighter-bladedancer.xml" />
+		 <file name="fighter-gladiator.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Fighter/fighter-gladiator.xml" />
+		<file name="fighter-lightningstriker.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Fighter/fighter-lightningstriker.xml" />
+		<file name="fighter-mageslayer.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Fighter/fighter-mageslayer.xml" />
+		<file name="fighter-standardbearer.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Fighter/fighter-standardbearer.xml" />
+		<file name="fighter-stonewarrior.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Fighter/fighter-stonewarrior.xml" />
+		<file name="Fightingstyles.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Fighter/Fightingstyles.xml" />
+    </files>
+</index>
