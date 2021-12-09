@@ -10,5 +10,9 @@
         <file name="sources.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/sources.xml" />
 		<!--Races-->
 		<file name="Races.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races.index" />
+		<!--Classes-->
+		<file name="Artificer.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer.index" />
+		<file name="Barbarian.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian.index" />
+		<file name="Bard.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Bard.index" />
 	</files>
 </index>

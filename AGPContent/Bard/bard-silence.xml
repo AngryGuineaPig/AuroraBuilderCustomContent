@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="bard-silence.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Bard/bard-silence.xml" />
+		</update>
+	</info>
+  <element name="College of Silence" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_COLLEGE_OF_SILENCE">
+    <supports>Bard College</supports>
+    <description>
+      <p>Bards of the College of Silence reject the idea that all performance must be musical, instead choosing the absence of sound to emphasize other talents. Harnessing the power of silence is a rare talent that only a handful can master.</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_SILENCE_MUTE" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_SILENCE_ACTIONS_SPEAK_LOUDER_THAN_WORDS" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_SILENCE_THE_SOUND_OF_SILENCE" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_SILENCE_STRONG_BUT_SILENT_TYPE" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_SILENCE_MUTE" level="3" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_SILENCE_ACTIONS_SPEAK_LOUDER_THAN_WORDS" level="3" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_SILENCE_THE_SOUND_OF_SILENCE" level="6" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_SILENCE_STRONG_BUT_SILENT_TYPE" level="14" />
+    </rules>
+  </element>
+  <element name="Mute" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_SILENCE_MUTE">
+    <description>
+      <p>Beginning at 3rd level, you begin to appreciate that words are not always necessary. You learn the message cantrip and can cast it as a bonus action without verbal components. When casting message you are able to target a number of creatures equal to your charisma modifier. At 6th level, you never need to present verbal components.</p>
+    </description>
+    <sheet action="Bonus Action" usage="{{charisma:modifier}} Creatures">
+      <description>You begin to appreciate that words are not always necessary. You learn the message cantrip and can cast it as a bonus action without verbal components. When casting message you are able to target {{charisma:modifier}} creatures.</description>
+      <description level="6">You begin to appreciate that words are not always necessary. You learn the message cantrip and can cast it as a bonus action without verbal components. When casting message you are able to target {{charisma:modifier}} creatures. At 6th level, you never need to present verbal components.</description>
+    </sheet>
+    <rules>
+      <grant type="spell" id="ID_PHB_SPELL_MESSAGE" />
+    </rules>
+  </element>
+  <element name="Actions Speak Louder Than Words" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_SILENCE_ACTIONS_SPEAK_LOUDER_THAN_WORDS">
+    <description>
+      <p>At 3rd level, you develop the ability to grant others strength through their own silence. Whenever a creature uses one of your bardic inspiration die to increase an attack roll, they can apply the roll to damage as well however if they do so they are unable to speak until the start of their next turn.</p>
+    </description>
+    <sheet usage="Bardic Inspiration">
+      <description>At 3rd level, you develop the ability to grant others strength through their own silence. Whenever a creature uses one of your bardic inspiration die to increase an attack roll, they can apply the roll to damage as well however if they do so they are unable to speak until the start of their next turn.</description>
+    </sheet>
+  </element>
+  <element name="The Sound of Silence" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_SILENCE_THE_SOUND_OF_SILENCE">
+    <description>
+      <p>Starting at 6th level, you are able to create pockets of peace and quiet. You can cast the silence spell without expending a spell slot a number of times equal to you charisma modifier per long rest. The radius of the spell if cast in this way is doubled.</p>
+    </description>
+    <sheet usage="{{charisma:modifier}}/Long Rest}}">
+      <description>Starting at 6th level, you are able to create pockets of peace and quiet. You can cast the silence spell without expending a spell slot {{charisma:modifier}} times per long rest. The radius of the spell if cast in this way is doubled.</description>
+    </sheet>
+  </element>
+  <element name="Strong But Silent Type" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_SILENCE_STRONG_BUT_SILENT_TYPE">
+    <description>
+      <p>At 14th level, your ability to empower others through silence fully awakens. Creatures that use your bardic inspiration gain the following benefits until the start of their next turn or until they speak.</p>
+      <p class="indent">Their AC increases by 2</p>
+      <p class="indent">They gain temporary hit points equal to your bard level</p>
+      <p class="indent">They may deal additional damage equal to your charisma modifier for one attack on their turn.</p>
+    </description>
+    <sheet>
+      <description>At 14th level, your ability to empower others through silence fully awakens. Creatures that use your bardic inspiration gain the following benefits until the start of their next turn or until they speak.&#13;
+      Their AC increases by 2.&#13;
+      They gain {{level:bard}} temporary hit points.&#13;
+      They may deal {{charisma:modifier}} additional damage for one attack on their turn.</description>
+    </sheet>
+  </element>
+</elements>

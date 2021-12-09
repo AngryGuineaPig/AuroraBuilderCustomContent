@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Artificer-Infusions.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Infusions.xml" />
+		</update>
+	</info>
+<!--Arcane Instrument-->	
+	<element name="Arcane Instrument" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_ARCANE_INSTRUMENT">
+		<supports>Artificer Infusion</supports>
+		<requirements></requirements>
+		<prerequisite></prerequisite>
+		<description>
+			<p><em>Item: A Rod or Wand</em></p>
+			<p>This magic object is infused with a cantrip from the artificer spell list (your choice upon infusion). The user can use their action to produce the cantrip from the object, using your Intelligence as the spellcasting ability.</p>
+		</description>
+		<sheet>
+			<description>You can create an Arcane Instrument</description>
+		</sheet>
+	</element>
+	<element name="Arcane Instrument" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_ARCANE_INSTRUMENT">
+		<description>
+			<p>This magic object is infused with a cantrip from the artificer spell list (your choice upon infusion). The user can use their action to produce the cantrip from the object, using your Intelligence as the spellcasting ability.</p>
+		</description>
+		<setters>
+			<set name="category">Rods</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Rod</set>
+			<set name="rarity">Artificer Infusion</set>
+		</setters>
+		<rules>
+			<select type="Spell" name="Arcane Instrument" supports="0, Artificer" number="1" />
+		</rules>
+	</element>
+<!--Arm Launcher-->
+	<element name="Arm Launcher" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_ARM_LAUNCHER">
+		<supports>Artificer Infusion</supports>
+		<requirements></requirements>
+		<prerequisite></prerequisite>
+		<description>
+			<p><em>Item: A glove or gauntlet</em></p>
+			<p>This tiny magical launcher can be loaded with a Tiny object, including but not limited to; ball bearings, caltrops, a vial of acid, holy water, or oil. As a bonus action the wearer can activate the launcher and make a ranged attack at a target within 20 feet. The launcher requires an action to reload with another Tiny object.</p>
+		</description>
+		<sheet>
+			<description>You can create an Arm Launcher</description>
+		</sheet>
+	</element>
+	<element name="Arm Launcher" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_ARM_LAUNCHER">
+		<description>
+			<p>This tiny magical launcher can be loaded with a Tiny object, including but not limited to; ball bearings, caltrops, a vial of acid, holy water, or oil. As a bonus action the wearer can activate the launcher and make a ranged attack at a target within 20 feet. The launcher requires an action to reload with another Tiny object.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Items</set>
+			<set name="rarity">Artificer Infusion</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+<!--Featherweight Belt-->
+	<element name="Featherweight Belt" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_FEATHERWEIGHT_BELT">
+		<supports>Artificer Infusion</supports>
+		<requirements></requirements>
+		<prerequisite></prerequisite>
+		<description>
+			<p><em>Item: A belt or cloak (requires attunement) </em></p>
+			<p>When worn, this magic belt reduces the user to one-tenth of their normal weight. Starting at 9th-level it reduces the wearer to one-hundredth of their normal weight.</p>
+		</description>
+		<sheet>
+			<description>You can create a Featherweight Belt</description>
+		</sheet>
+	</element>
+	<element name="Featherweight Belt" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_FEATHERWEIGHT_BELT">
+		<description>
+			<p>When worn, this magic belt reduces the user to one-tenth of their normal weight. Starting at 9th-level it reduces the wearer to one-hundredth of their normal weight.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">waist</set>
+			<set name="type">Wondrous Items</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+<!--Featherweight Weapon-->
+	<element name="Featherweight Weapon" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_FEATHERWEIGHT_WEAPON">
+		<supports>Artificer Infusion</supports>
+		<requirements></requirements>
+		<prerequisite></prerequisite>
+		<description>
+			<p><em>Item: A weapon with the heavy property </em></p>
+			<p>This magic weapon grants a +1 bonus to attack and damage rolls made with it, and it no longer has the heavy property.</p>
+		</description>
+		<sheet>
+			<description>You can create a Featherweight Weapon</description>
+		</sheet>
+	</element>
+	<element name="Featherweight Weapon" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_FEATHERWEIGHT_WEAPON">
+		<supports>!ID_INTERNAL_WEAPON_PROPERTY_HEAVY</supports>
+		<description>
+			<p>This magic weapon grants a +1 bonus to attack and damage rolls made with it, and it no longer has the heavy property.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any heavy weapon">Weapon</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_PROPERTY_HEAVY</set>
+			<set name="name-format">Featherweight {{parent}}</set>
+		</setters>
+	</element>
+<!--Goggles of Clearsight-->
+	<element name="Goggles of Clearsight" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_GOGGLES_OF_CLEARSIGHT">
+		<supports>Artificer Infusion</supports>
+		<requirements></requirements>
+		<prerequisite></prerequisite>
+		<description>
+			<p><em>Item: A pair of goggles or glasses </em></p>
+			<p>While wearing these goggles, the wearer can see through lightly obscured areas without disadvantage on Wisdom (Perception) checks. In addition, the wearer no longer suffers the negative effects from the Sunlight Sensitivity trait.</p>
+		</description>
+		<sheet>
+			<description>You can create Goggles of Clearsight</description>
+		</sheet>
+	</element>
+	<element name="Goggles of Clearsight" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_GOGGLES_OF_CLEARSIGHT">
+		<description>
+			<p>While wearing these goggles, the wearer can see through lightly obscured areas without disadvantage on Wisdom (Perception) checks. In addition, the wearer no longer suffers the negative effects from the Sunlight Sensitivity trait.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Items</set>
+			<set name="rarity">Artificer Infusion</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+<!--Homing Weapon-->
+	<element name="Homing Weapon" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_HOMING_WEAPON">
+		<supports>Artificer Infusion</supports>
+		<requirements></requirements>
+		<prerequisite></prerequisite>
+		<description>
+			<p><em>Item: A ranged or thrown weapon</em></p>
+			<p>The wielder of this magic weapon ignores the disadvantage imposed when attacking at the weapon's long range.</p>
+		</description>
+		<sheet>
+			<description>You can create a Homing Weapon</description>
+		</sheet>
+	</element>
+	<element name="Homing Weapon" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_HOMING_WEAPON">
+		<description>
+			<p>The wielder of this magic weapon ignores the disadvantage imposed when attacking at the weapon's long range.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any ranged or thrown weapon">Weapon</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED||ID_INTERNAL_WEAPON_PROPERTY_THROWN</set>
+		</setters>
+	</element>
+<!--Power Whip-->
+	<element name="Power Whip" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_POWER_WHIP">
+		<supports>Artificer Infusion</supports>
+		<requirements></requirements>
+		<prerequisite></prerequisite>
+		<description>
+			<p><em>Item: A whip or chain</em></p>
+			<p>This magic weapon grants a +1 bonus to attack and damage rolls made with it, and it's damage die increases to 1d8.</p>
+		</description>
+		<sheet>
+		</sheet>
+			<description>You can create a Power Whip</description>
+	</element>
+	<element name="Power Whip" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_POWER_WHIP">
+		<description>
+			<p>This magic weapon grants a +1 bonus to attack and damage rolls made with it, and it's damage die increases to 1d8.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="">Weapon</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="weapon">Whip</set>
+			<set name="enhancement"></set>
+		</setters>
+	</element>
+<!--Martial Gauntlet-->
+	<element name="Martial Gauntlet" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_MARTIAL_GAUNTLET">
+		<supports>Artificer Infusion</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 6th-level artificer</em></p>
+			<p><em>Item: An armored gauntlet (requires attunement)</em></p>
+			<p>You attach either a martial weapon lacking the heavy or two handed properties, or a shield to the gauntlet. The wearer gains proficiency with the attached item, and it cannot be removed from the gauntlet while this infusion is active.</p>
+		</description>
+		<sheet>
+			<description>You can create a Martial Gauntlet</description>
+		</sheet>
+	</element>
+	<element name="Martial Gauntlet" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_MARTIAL_GAUNTLET">
+		<description>
+			<p>You attach either a martial weapon lacking the heavy or two handed properties, or a shield to the gauntlet. The wearer gains proficiency with the attached item, and it cannot be removed from the gauntlet while this infusion is active.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Items</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+<!--Ring of Proficiency-->
+	<element name="Ring of Proficiency" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_RING_OF_PROFICIENCY">
+		<supports>Artificer Infusion</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 6th-level artificer</em></p>
+			<p><em>Item: A ring (requires attunement)</em></p>
+			<p>The wearer of this ring gains proficiency with one skill or tool, or they learn one language (your choice upon infusion).</p>
+		</description>
+		<sheet>
+			<description>You can create a Ring of Proficiency</description>
+		</sheet>
+	</element>
+	<element name="Ring of Proficiency, Tool" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_RING_OF_PROFICIENCY_TOOL">
+		<description>
+			<p>The wearer of this ring gains proficiency with one skill or tool, or they learn one language (your choice upon infusion).</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+			<set name="type">Rings</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Proficiency, Ring of Proficiency" supports="Artisan tools" />
+		</rules>
+	</element>
+	<element name="Ring of Proficiency, Language" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_RING_OF_PROFICIENCY_LANGUAGE">
+		<description>
+			<p>The wearer of this ring gains proficiency with one skill or tool, or they learn one language (your choice upon infusion).</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+			<set name="type">Rings</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<select type="Language" name="Language, Ring of Proficiency" supports="Standard||Exotic" />
+		</rules>
+	</element>
+<!--Skyfall Harness-->
+	<element name="Skyfall Harness" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_SKYFALL_HARNESS">
+		<supports>Artificer Infusion</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Item: A cloak, vest or harness</em></p>
+			<p>This magic harness automatically sizes to fit the wearer, and can be worn over clothing or light armor. It has wing-like fins between your limbs that can slow your fall or allow you to glide. When you fall, and aren't incapacitated, you subtract up to 100 feet from your fall when calculating falling damage, and can move 2 feet horizontally every 1 foot you fall.</p>
+		</description>
+		<sheet>
+			<description>You can create a Skyfall Harness</description>
+		</sheet>
+	</element>
+	<element name="Skyfall Harness" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_SKYFALL_HARNESS">
+		<description>
+			<p>This magic harness automatically sizes to fit the wearer, and can be worn over clothing or light armor. It has wing-like fins between your limbs that can slow your fall or allow you to glide. When you fall, and aren't incapacitated, you subtract up to 100 feet from your fall when calculating falling damage, and can move 2 feet horizontally every 1 foot you fall.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">waist</set>
+			<set name="type">Wondrous Items</set>
+			<set name="rarity">Artificer Infusion</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+<!--Immovable Boots-->
+	<element name="Immovable Boots" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_IMMOVABLE_BOOTS">
+		<supports>Artificer Infusion</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Item: A pair of boots(requires attunement)</em></p>
+			<p>When the user is standing on a flat surface, they can use an action to activate the boots, magically fixing the user in place. Until you use an action to deactivate the boots, you do not move, even if you are defying gravity.</p>
+			<p class="indent">A creature can use an action to make a DC 30 Strength check, separating your boots from the surface on a success.</p>
+		</description>
+		<sheet>
+			<description>You can create Immovable Boots</description>
+		</sheet>
+	</element>
+	<element name="Immovable Boots" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_IMMOVABLE_BOOTS">
+		<description>
+			<p>When the user is standing on a flat surface, they can use an action to activate the boots, magically fixing the user in place. Until you use an action to deactivate the boots, you do not move, even if you are defying gravity.</p>
+			<p class="indent">A creature can use an action to make a DC 30 Strength check, separating your boots from the surface on a success.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">feet</set>
+			<set name="type">Wondrous Items</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+<!--Light Blade-->
+	<element name="Light Blade" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_LIGHT_BLADE">
+		<supports>Artificer Infusion</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Item: A sword hilt or wand(requires attunement)</em></p>
+			<p>While grasping the item, the wielder can use a bonus action to cause a blade of pure radiance to spring into existence, or disappear, from the end of the item. While the blade exists, this magic item is a simple weapon with the finesse property. The luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet. The light is sunlight.</p>
+			<p class="indent">The wielder gains a +1 bonus to attack and damage rolls made with this weapon, and deals 1d8 radiant damage on hit.</p>
+		</description>
+		<sheet>
+			<description>You can create a Light Blade</description>
+		</sheet>
+	</element>
+	<element name="Light Blade" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_LIGHT_BLADE">
+		<description>
+			<p>While grasping the item, the wielder can use a bonus action to cause a blade of pure radiance to spring into existence, or disappear, from the end of the item. While the blade exists, this magic item is a simple weapon with the finesse property. The luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet. The light is sunlight.</p>
+			<p class="indent">The wielder gains a +1 bonus to attack and damage rolls made with this weapon, and deals 1d8 radiant damage on hit.</p>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wands</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+<!--Repulsion Gauntlets-->
+	<element name="Repulsion Gauntlets" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_REPULSION_GAUNTLETS">
+		<supports>Artificer Infusion</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<description>
+			<p><em>Item: A pair of gloves or gauntlets(requires attunement)</em></p>
+			<p>These magical gauntlets have 4 charges. When the wearer hits a creature with an unarmed strike they can expend 1 charge and force the target to make a Strength saving throw against your artificer spell save DC. On a failed save, the creature is knocked back 15 feet. The gauntlets regain all expended charges at dawn.</p>
+		</description>
+		<sheet>
+			<description>You can create Repulsion Gauntlets</description>
+		</sheet>
+	</element>
+	<element name="Repulsion Gauntlets" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_REPULSION_GAUNTLETS">
+		<description>
+			<p>These magical gauntlets have 4 charges. When the wearer hits a creature with an unarmed strike they can expend 1 charge and force the target to make a Strength saving throw against your artificer spell save DC. On a failed save, the creature is knocked back 15 feet. The gauntlets regain all expended charges at dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Items</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+<!--Chameleon Armour-->
+	<element name="Chameleon Armour" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_CHAMELEON_ARMOUR">
+		<supports>Artificer Infusion</supports>
+		<requirements>[level:10]</requirements>
+		<prerequisite>10th-level artificer</prerequisite>
+		<description>
+			<p><em>Item: a suit of armor (requires attunement)</em></p>
+			<p>This armor has 4 charges. While wearing this magical armor the wearer can use an action to expend some of its charges to cast one of the following Spells: <em>invisibility</em> (2 charges) or <em>greater invisibility</em> (4 charges). The armor regains all expended charges at dawn.</p>
+		</description>
+		<sheet>
+			<description>You can create Chameleon Armour</description>
+		</sheet>
+	</element>
+	<element name="Chameleon Armour" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_ARMOR_CHAMELEON_ARMOUR">
+		<description>
+			<p>This armor has 4 charges. While wearing this magical armor the wearer can use an action to expend some of its charges to cast one of the following Spells: <em>invisibility</em> (2 charges) or <em>greater invisibility</em> (4 charges). The armor regains all expended charges at dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Chameleon {{parent}}</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+<!--Elemental Weapon-->
+	<element name="Elemental Weapon" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_ELEMENTAL_WEAPON">
+		<supports>Artificer Infusion</supports>
+		<requirements>[level:10]</requirements>
+		<prerequisite>10th-level artificer</prerequisite>
+		<description>
+			<p><em>Item: A melee weapon (requires attunement)</em></p>
+			<p>You infuse a weapon with elemental energy. As a bonus action the wielder can speak the weapon's command word (chosen upon infusion) and cause elemental energy to burst forth. The weapon deals an additional 1d4 of one of the following damage types, which you choose when you infuse the item: acid, cold, fire, or lightning damage.</p>
+			<p class="indent">The additional elemental damage from this infusion increases to 1d6 when you reach 14th level in this class.</p>
+		</description>
+		<sheet>
+			<description>You can create an Elemental Weapon</description>
+		</sheet>
+	</element>
+	<element name="Elemental Weapon" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_ELEMENTAL_WEAPON">
+		<description>
+			<p>You infuse a weapon with elemental energy. As a bonus action the wielder can speak the weapon's command word (chosen upon infusion) and cause elemental energy to burst forth. The weapon deals an additional 1d4 of one of the following damage types, which you choose when you infuse the item: acid, cold, fire, or lightning damage.</p>
+			<p class="indent">The additional elemental damage from this infusion increases to 1d6 when you reach 14th level in this class.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any heavy weapon">Weapon</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE</set>
+			<set name="name-format">Elemental {{parent}}</set>
+		</setters>
+	</element>
+<!--Ring of the Elements-->
+	<element name="Ring of the Elements" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_RING_OF_THE_ELEMENTS">
+		<supports>Artificer Infusion</supports>
+		<requirements>[level:10]</requirements>
+		<prerequisite>10th-level artificer</prerequisite>
+		<description>
+			<p><em>Item: A ring (requires attunement)</em></p>
+			<p>Upon infusing this magic ring you select one of the following damage types: acid, cold, fire, poison, lightning, or thunder. When the wearer casts a spell that deals the selected damage type, they can choose for the spell to deal maximum damage to one target of the spell, instead of rolling.</p>
+			<p class="indent">Once this ring is activated it cannot be used again until the wearer completes a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You can create a Ring of the Elements</description>
+		</sheet>
+	</element>
+	<element name="Ring of the Elements" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_RING_OF_THE_ELEMENTS">
+		<description>
+			<p>Upon infusing this magic ring you select one of the following damage types: acid, cold, fire, poison, lightning, or thunder. When the wearer casts a spell that deals the selected damage type, they can choose for the spell to deal maximum damage to one target of the spell, instead of rolling.</p>
+			<p class="indent">Once this ring is activated it cannot be used again until the wearer completes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+			<set name="type">Rings</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+<!--Vampiric Weapon-->
+	<element name="Vampiric Weapon" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_VAMPIRIC_WEAPON">
+		<supports>Artificer Infusion</supports>
+		<requirements>[level:10]</requirements>
+		<prerequisite>10th-level artificer</prerequisite>
+		<description>
+			<p><em>Item: A melee weapon (requires attunement)</em></p>
+			<p>You enchant a weapon to drain life from enemies. When the wielder rolls a 20 on an attack roll with this weapon the target takes an additional 2d6 necrotic damage, provided it isn't a construct or undead. The wielder gains temporary hit points equal to the extra necrotic damage dealt.</p>
+			<p class="indent">The additional necrotic damage from this infusion increases to 4d6 when you reach 14th level in this class.</p>
+		</description>
+		<sheet>
+			<description>You can create a Vampiric Weapon</description>
+		</sheet>
+	</element>
+	<element name="Vampiric Weapon" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_VAMPIRIC_WEAPON">
+		<description>
+			<p>You enchant a weapon to drain life from enemies. When the wielder rolls a 20 on an attack roll with this weapon the target takes an additional 2d6 necrotic damage, provided it isn't a construct or undead. The wielder gains temporary hit points equal to the extra necrotic damage dealt.</p>
+			<p class="indent">The additional necrotic damage from this infusion increases to 4d6 when you reach 14th level in this class.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any heavy weapon">Weapon</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE</set>
+			<set name="name-format">Vampiric {{parent}}</set>
+		</setters>
+	</element>
+<!--Helm of Mind Shielding-->
+	<element name="Helm of Mind Shielding" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_HELM_OF_MIND_SHIELDING">
+		<supports>Artificer Infusion</supports>
+		<requirements>[level:14]</requirements>
+		<prerequisite>14th-level artificer</prerequisite>
+		<description>
+			<p><em>Item: helm, hat, or diadem (requires attunement)</em></p>
+			<p>The wearer of this magic helm is resistant to psychic damage, immune to the charmed and frightened conditions, and any magic that allows another creature to read their thoughts or telepathically communicate with them.</p>
+		</description>
+		<sheet>
+			<description>You can create a Helm of Mind Shielding</description>
+		</sheet>
+	</element>
+	<element name="Helm of Mind Shielding" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_HELM_OF_MIND_SHIELDING">
+		<description>
+			<p>The wearer of this magic helm is resistant to psychic damage, immune to the charmed and frightened conditions, and any magic that allows another creature to read their thoughts or telepathically communicate with them.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Items</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+<!--Masterwork Homunculus-->
+	<element name="Masterwork Homunculus" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_MASTERWORK_HOMUNCULUS">
+		<supports>Artificer Infusion</supports>
+		<requirements>[level:14]</requirements>
+		<prerequisite>14th-level artificer</prerequisite>
+		<description>
+			<p>You have discovered the secrets to the creation of life. You learn the clone spell. It counts as an artificer spell for you and you always have it prepared, but it doesn't count against the total number of spells you can prepare each day. You can cast clone without expending a spell slot as long as you have the material components available.</p>
+		<p class="indent">If you replace this infusion with another at any point during the incubation period, the spell immediately fails.</p>
+		</description>
+		<sheet>
+			<description>You learn the clone spell. It counts as an artificer spell for you and you always have it prepared, but it doesn't count against the total number of spells you can prepare each day. You can cast clone without expending a spell slot as long as you have the material components available.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_CLONE" />
+		</rules>
+	</element>
+<!--Mystic Armament-->
+	<element name="Mystic Armament" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARTIFICER_INFUSION_MYSTIC_ARMAMENT">
+		<supports>Artificer Infusion</supports>
+		<requirements>[level:14]</requirements>
+		<prerequisite>14th-level artificer</prerequisite>
+		<description>
+			<p><em>Item: A melee weapon (requires attunement)</em></p>
+			<p>This item has 4 charges. While wielding this magic weapon, the user can use their action and one charge to cast <em>steel wind strike</em>, using the infused weapon as the spellcasting focus, without expending a spell slot. When cast in this way, the wielder uses your Intelligence as the spellcasting ability. The weapon regains all expended charges at the end of a long rest.</p>
+		</description>
+		<sheet>
+			<description>You can create a Mystic Armament</description>
+		</sheet>
+	</element>
+	<element name="Mystic Armament" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_MYSTIC_ARMAMENT">
+		<description>
+			<p>This item has 4 charges. While wielding this magic weapon, the user can use their action and one charge to cast <em>steel wind strike</em>, using the infused weapon as the spellcasting focus, without expending a spell slot. When cast in this way, the wielder uses your Intelligence as the spellcasting ability. The weapon regains all expended charges at the end of a long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any heavy weapon">Weapon</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE</set>
+			<set name="name-format">Mystic {{parent}}</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" />
+		</rules>
+	</element>
+</elements>

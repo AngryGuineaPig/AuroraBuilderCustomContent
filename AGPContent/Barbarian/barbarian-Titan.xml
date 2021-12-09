@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="barbarian-Titan.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Bararian/barbarian-Titan.xml" />
+		</update>
+	</info>
+    <element name="Path of The Titan" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_PATH_OF_TITAN">
+        <supports>Primal Path</supports>
+        <description>
+            <p>For some, the size of mortal weapons is a suggestion rather than a limitation.</p>
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_TITAN_TITANIC_MIGHT" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_TITAN_TITANIC_RAGE" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_TITAN_GRIM_DETERMINATION" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_TITAN_REND" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_TITAN_DREAD_MANEUVER" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_TITAN_EVER_MIGHTY" />
+        </description>
+        <sheet display="true">
+            <description>For some, the size of mortal weapons is a suggestion rather than a limitation.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TITAN_TITANIC_MIGHT" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TITAN_TITANIC_RAGE" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TITAN_GRIM_DETERMINATION" level="6" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TITAN_REND" level="6" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TITAN_DREAD_MANEUVER" level="10" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TITAN_EVER_MIGHTY" level="14" />
+        </rules>
+    </element>
+    <element name="Titanic Might" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TITAN_TITANIC_MIGHT">
+        <description>
+            <p>Starting at 3rd level, you gain a great strength within yourself. When not raging with a strength score of 16 or greater, you can engage in two weapon fighting with two weapons even if they don't have the light property, as long as they don't have the heavy or two handed property.</p>
+            <p>With a strength score of 18 or higher while not raging, you can use a two handed weapon in one hand however you have disadvantage on attack rolls.</p>
+            <p>With a strength score of 20 or higher, while not raging you can engage in two weapon fighting with two, one-handed heavy weapons.</p>
+        </description>
+        <sheet>
+            <description>Starting at 3rd level, you gain a great strength within yourself. When not raging with a strength score of 16 or greater, you can engage in two weapon fighting with two weapons even if they don't have the light property, as long as they don't have the heavy or two handed property. &#13;
+            With a strength score of 18 or higher while not raging, you can use a two handed weapon in one hand however you have disadvantage on attack rolls. &#13;
+            With a strength score of 20 or higher, while not raging you can engage in two weapon fighting with two, one-handed heavy weapons.</description>
+        </sheet>
+    </element>
+    <element name="Titanic Rage" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TITAN_TITANIC_RAGE">
+        <description>
+            <p>Starting at 3rd level, once per long rest you can enter a titanic rage. In this state you gain all the benefits of titanic might, (can engage in two weapon fighting with two, one-handed heavy weapons, and can use a two handed weapon in one hand at disadvantage). Additionally you can increase the range of any thrown weapons by double and can now throw any weapon without the thrown property with a (20/60) range. You do not apply proficiency bonus with this throw even if you are proficient with the weapon you are throwing.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>Starting at 3rd level, once per long rest you can enter a titanic rage. In this state you gain all the benefits of titanic might, (can engage in two weapon fighting with two, one-handed heavy weapons, and can use a two handed weapon in one hand at disadvantage). Additionally you can increase the range of any thrown weapons by double and can now throw any weapon without the thrown property with a (20/60) range. You do not apply proficiency bonus with this throw even if you are proficient with the weapon you are throwing.</description>
+        </sheet>
+    </element>
+    <element name="Grim Determination" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TITAN_GRIM_DETERMINATION">
+        <description>
+            <p>At 6th level, you have advantage on saving throws against being charmed or frightened whilst raging.</p>
+        </description>
+        <sheet>
+            <description>At 6th level, you have advantage on saving throws against being charmed or frightened whilst raging.</description>
+        </sheet>
+    </element>
+    <element name="Rend" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TITAN_REND">
+        <description>
+            <p>At 6th level, if on your turn you hit a creature with consecutive attacks using two different two handed weapons, you can make the creature take additional damage equal to your rage modifier.</p>
+        </description>
+        <sheet>
+            <description>At 6th level, if on your turn you hit a creature with consecutive attacks using two different two handed weapons, you can make the creature take additional damage equal to your {{barbarian rage:damage}}.</description>
+        </sheet>
+    </element>    
+    <element name="Dread Maneuver" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TITAN_DREAD_MANEUVER">
+        <description>
+            <p>At 10th level, you can perform awesome attacks during your titanic might rage. You can perform the following maneuvers.</p>
+            <p class="indent"><b>Cleaving Leap.</b> When you make a jump, you can triple your jumping distance. If you long jump at least 30ft of high jump at least 10ft, you can use the attack action to make 1 attack with each weapon with advantage against a creature within range when you land or when you enter their threatened squares if they are flying. The attack deals additional damage equal to your barbarian level.</p>
+            <p class="indent"><b>Steel Whirlwind.</b> You can use your action to begin a deadly dance. You can move up to half your movement speed. This movement provokes attacks of opportunity at disadvantage. You can make a single weapon attack against each creature that enters your threatened squares when you are moving.</p>
+            <p>You can use this feature once per long rest</p>
+        </description>
+        <sheet usage="1/Long Rest" action="Action">
+            <description>At 10th level, you can perform awesome attacks during your titanic might rage. You can perform the following maneuvers.&#13;
+            Cleaving Leap. When you make a jump, you can triple your jumping distance. If you long jump at least 30ft of high jump at least 10ft, you can use the attack action to make 1 attack with each weapon with advantage against a creature within range when you land or when you enter their threatened squares if they are flying. The attack deals {{level:barbarian}} additional damage.&#13;
+            Steel Whirlwind. You can use your action to begin a deadly dance. You can move up to half your movement speed. This movement provokes attacks of opportunity at disadvantage. You can make a single weapon attack against each creature that enters your threatened squares when you are moving.&#13;
+            You can use this feature once per long rest</description>
+        </sheet>
+    </element>
+    <element name="Ever-Mighty" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TITAN_EVER_MIGHTY">
+        <description>
+            <p>Starting at 14th level, you can use your Titanic Might rage whenever you wish an infinite number of times per day. You can draw two two handed weapons when you would normally be able to draw one.</p>
+        </description>
+        <sheet>
+            <description>Starting at 14th level, you can use your Titanic Might rage whenever you wish an infinite number of times per day. You can draw two two handed weapons when you would normally be able to draw one.</description>
+        </sheet>
+    </element>
+</elements>

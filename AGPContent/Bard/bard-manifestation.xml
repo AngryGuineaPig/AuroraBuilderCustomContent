@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="bard-manifestation.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Bard/bard-manifestation.xml" />
+		</update>
+	</info>
+  <element name="College of Manifestation" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_COLLEGE_OF_MANIFESTATIONS">
+    <supports>Bard College</supports>
+    <description>
+      <p>Bards who study the wats of manifestation project their art into the world, literally. As they practice their art, they can magically form objects made of magical force that can manipulate the world around them as much or as little as they themselves could. A musician might summon a dancing sword to fight to the rhythm he plays. A painter may quickly paint a wall to look like a passageway. A dancer might summon fiery ribbons to dance alongside her. The variety of possibilities is both dazzling and terrifying.</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_MANIFESTATIONS_ARTISTIC_PROJECTION" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_MANIFESTATIONS_DUET_PERFORMANCE" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_MANIFESTATIONS_MANIFESTING_PERFORMANCE" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_MANIFESTATIONS_ARTISTIC_PROJECTION" level="3" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_MANIFESTATIONS_DUET_PERFORMANCE" level="6" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_MANIFESTATIONS_MANIFESTING_PERFORMANCE" level="14" />
+    </rules>
+  </element>
+  <element name="Artistic Projection" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_MANIFESTATIONS_ARTISTIC_PROJECTION">
+    <description>
+      <p>At 3rd level, you gain the ability to manifest your creative power into the world around you. As a bonus action, you can expend one of your Bardic Inspirations to summon one of the following artistic projections, following their rules for how they are used and summoned.</p>
+      <p class="indent"><b>Barrier.</b> You summon a wall of magical force within 30ft of you. The wall is up to 15ft wide, 10ft tall and 5ft thick. You can also have it or a circle of up to 10ft in diameter or a 10x10 square with the same height and thickness. You choose what the wall looks like. It has an AC of 15 and hit points equal ot the highest roll of your inspiration die times two. Creatures you choose can pass through it, others must destroy it first.</p>
+      <p class="indent"><b>Guardian.</b> You summon an interpretation of your desire to protect. You can summon a guardian and attach it to a creature you choose within 30ft. Once per turn, whenever the creature takes damage from an attack or spell, they can roll your inspiration die and decrease the damage taken by the amount rolled.</p>
+      <p class="indent"><b>Weapon.</b> You can summon a weapon of magical force within 30ft of you and make a melee spell attack with it. The attack deals your bardic inspiration die + your bard level in damage of a type of your choice. On subsequent turns you can use a bonus action to move the weapon up to 25ft and repeat this attack, expending another inspiration die for each attack made.</p>
+      <p>Each projection only lasts for 1 minute and you can only summon sone projection at a time.</p>
+    </description>
+    <sheet>
+      <description>At 3rd level, you gain the ability to manifest your creative power into the world around you. As a bonus action, you can expend one of your Bardic Inspirations to summon one of the following artistic projections, following their rules for how they are used and summoned.&#13;
+      Barrier. You summon a wall of magical force within 30ft of you. The wall is up to 15ft wide, 10ft tall and 5ft thick. You can also have it or a circle of up to 10ft in diameter or a 10x10 square with the same height and thickness. You choose what the wall looks like. It has an AC of 15 and {{barrier:hp}} hit points. Creatures you choose can pass through it, others must destroy it first.&#13;
+      Guardian. You summon an interpretation of your desire to protect. You can summon a guardian and attach it to a creature you choose within 30ft. Once per turn, whenever the creature takes damage from an attack or spell, they can roll 1d{{bardic-inspiration:dice}} and decrease the damage taken by the amount rolled.&#13;
+      Weapon. You can summon a weapon of magical force within 30ft of you and make a melee spell attack with it. The attack deals your 1d{{bardic-inspiration:dice}} + {{level:bard}} in damage of a type of your choice. On subsequent turns you can use a bonus action to move the weapon up to 25ft and repeat this attack, expending another inspiration die for each attack made.&#13;
+      Each projection only lasts for 1 minute and you can only summon sone projection at a time.</description>
+    </sheet>
+    <rules>
+      <stat name="barrier:hp" value="bardic-inspiration:dice" />
+      <stat name="barrier:hp" value="bardic-inspiration:dice" />
+    </rules>
+  </element>
+  <element name="Duet Performance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_MANIFESTATIONS_DUET_PERFORMANCE">
+    <description>
+      <p>At 6th level, you can create illusory copies of people so real that they are almost in discernable from their real counterparts in both appearance and skills. If you perform for at least 1 minute, you can choose a creature that witnessed the whole performance and create an illusory duet of them. You choose what the duet is wearing, but its body is a complete replica of the subject. While the duet exists, it can interact with the world, it can walk, climb, talk and do any other mundane task other than make attacks or cast spells. It can also perform skill checks using the same bonuses as the original creature. Once it performs 4 checks (not including perception or stealth),it takes damage or 8 hours have passed the duet dissipates into smoke. You can summon a duet once per short rest.</p>
+    </description>
+    <sheet usage="1/Short Rest">
+      <description>At 6th level, you can create illusory copies of people so real that they are almost in discernable from their real counterparts in both appearance and skills. If you perform for at least 1 minute, you can choose a creature that witnessed the whole performance and create an illusory duet of them. You choose what the duet is wearing, but its body is a complete replica of the subject. While the duet exists, it can interact with the world, it can walk, climb, talk and do any other mundane task other than make attacks or cast spells. It can also perform skill checks using the same bonuses as the original creature. Once it performs 4 checks (not including perception or stealth),it takes damage or 8 hours have passed the duet dissipates into smoke. You can summon a duet once per short rest.</description>
+    </sheet>
+  </element>
+  <element name="Manifesting Performance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_MANIFESTATIONS_MANIFESTING_PERFORMANCE">
+    <description>
+      <p>By 14th level, your mastery of your artistic projections allows you to spend time creating larger and larger projections over longer periods of time. If you perform for at least 1 minute, you can summon a gargantuan or smaller object within 120ft of you. The object can be anything from a large rock or statue, a small structure, a section of a castle wall or other things created in the bard's imagination. The object remains for a number of hours equal to your bard level. It has an AC of 15 and hit points equal to 50 + five times your bard level. If it is reduced to zero hit points, or you use this feature again, it dissipates and all creatures in or on the object fall harmlessly to the ground. You can use this feature once per long rest.</p>
+    </description>
+    <sheet>
+      <description>By 14th level, your mastery of your artistic projections allows you to spend time creating larger and larger projections over longer periods of time. If you perform for at least 1 minute, you can summon a gargantuan or smaller object within 120ft of you. The object can be anything from a large rock or statue, a small structure, a section of a castle wall or other things created in the bard's imagination. The object remains for {{level:bard}} hours. It has an AC of 15 and {{manifestation:hp}} hit points . If it is reduced to zero hit points, or you use this feature again, it dissipates and all creatures in or on the object fall harmlessly to the ground. You can use this feature once per long rest.</description>
+    </sheet>
+    <rules>
+      <stat name="manifestation:hp" value="50" />
+      <stat name="manifestation:hp" value="level:bard" />
+      <stat name="manifestation:hp" value="level:bard" />
+      <stat name="manifestation:hp" value="level:bard" />
+      <stat name="manifestation:hp" value="level:bard" />
+      <stat name="manifestation:hp" value="level:bard" />
+    </rules>
+  </element>
+</elements>

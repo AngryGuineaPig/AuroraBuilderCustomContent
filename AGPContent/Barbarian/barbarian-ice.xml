@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="barbarian-ice.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian/barbarian-ice.xml" />
+		</update>
+	</info>
+    <element name="Path of Ice" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_PATH_OF_ICE">
+        <supports>Primal Path</supports>
+        <description>
+            <p>Barbarians of the Path of Ice are a unique case in that their rage doesn't resemble that of any other barbarians. Instead, it takes the form of cold, intelligent concentration and observation. Their anger gives them focus, and they use it much to their enemies' detriment.</p>
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_ICE_FROZEN_HEART" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_ICE_TOTAL_CONCENTRATION" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_ICE_FURY_OF_THE_BLIZZARD" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_ICE_EYES_OF_THE_WINTER_WOLF" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_ICE_FLASH_FREEZING" />
+        </description>
+        <sheet display="true">
+            <description>Barbarians of the Path of Ice are a unique case in that their rage doesn't resemble that of any other barbarians. Instead, it takes the form of cold, intelligent concentration and observation. Their anger gives them focus, and they use it much to their enemies' detriment.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ICE_FROZEN_HEART" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ICE_TOTAL_CONCENTRATION" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ICE_FURY_OF_THE_BLIZZARD" level="6" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ICE_EYES_OF_THE_WINTER_WOLF" level="10" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ICE_FLASH_FREEZING" level="14" />
+        </rules>
+    </element>
+    <element name="Frozen Heart" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ICE_FROZEN_HEART">
+        <description>
+            <p>Starting when you choose this path at 3rd level, the essence of the ice is imbedded into your very soul. You have resistance to cold and freezing temperatures don't effect you. At 10th level this increases to an immunity.</p>
+        </description>
+        <sheet display="false">
+            <description>Starting when you choose this path at 3rd level, the essence of the ice is imbedded into your very soul. You have resistance to cold and freezing temperatures don't effect you.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+    <element name="Total Concentration" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ICE_TOTAL_CONCENTRATION">
+        <description>
+            <p>Starting at 3rd level, you enter Total Concentration when you rage. You now have advantage on intelligence checks and saving throws. Attacks that target you have disadvantage. You have resistance to fire and psychic damage.</p>
+        </description>
+        <sheet>
+            <description>Starting at 3rd level, you enter Total Concentration when you rage. You now have advantage on intelligence checks and saving throws. Attacks that target you have disadvantage. You have resistance to fire and psychic damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+        </rules>
+    </element>
+    <element name="Fury of the Blizzard" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ICE_FURY_OF_THE_BLIZZARD">
+        <description>
+            <p>At 6th Level, your familiarity with the winter allows you to summon it during the tides of battle. As an action, choose a point within 60ft of you, In a 30ft radius around that point a blizzard blankets the battlefield. The area becomes difficult terrain and heavily obscured, any creatures that end their turns inside take 3d6 cold damage. Once you use this feature you can't again until you finish a short rest.</p>
+        </description>
+        <sheet action="action" usage="1/Short Rest">
+            <description>At 6th Level, your familiarity with the winter allows you to summon it during the tides of battle. As an action, choose a point within 60ft of you, In a 30ft radius around that point a blizzard blankets the battlefield. The area becomes difficult terrain and heavily obscured, any creatures that end their turns inside take 3d6 cold damage. Once you use this feature you can't again until you finish a short rest.</description>
+        </sheet>
+    </element>    
+    <element name="Eyes of the Winter Wolf" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ICE_EYES_OF_THE_WINTER_WOLF">
+        <description>
+            <p>At 10th level, your levelheadedness allows you to strike true when you see an opening, If you get advantage on a melee attack roll, the attack deals an extra 1d6 cold damage. This increases to 1d8 at 14th level.</p>
+        </description>
+        <sheet >
+            <description>At 10th level, your levelheadedness allows you to strike true when you see an opening, If you get advantage on a melee attack roll, the attack deals an extra 1d6 cold damage.</description>
+            <description level="14">At 14th level, your levelheadedness allows you to strike true when you see an opening, If you get advantage on a melee attack roll, the attack deals an extra 1d8 cold damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" />
+        </rules>
+    </element>
+    <element name="Flash Freezing" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ICE_FLASH_FREEZING">
+        <description>
+            <p>At 14th level, you can channel your fury to control your body temperature. When you grapple an enemy, you can use your bonus action to attempt to flash freeze them. If you do so the target must make a Constitution save against 8 + your proficiency + your Constitution modifier. On a failure they take 6d8 cold damage and their speed is reduced to 0 until the start of your next turn. On a success the creature takes half the damage and can still move. If a creature is reduced to 0 hit points it becomes a solid block fo ice. Once you have used this feature you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest" action="Bonus Action">
+            <description>At 14th level, you can channel your fury to control your body temperature. When you grapple an enemy, you can use your bonus action to attempt to flash freeze them. If you do so the target must make a Constitution save against {{flashfreeze:dc}}. On a failure they take 6d8 cold damage and their speed is reduced to 0 until the start of your next turn. On a success the creature takes half the damage and can still move. If a creature is reduced to 0 hit points it becomes a solid block fo ice. Once you have used this feature you can't use it again until you finish a long rest.</description>
+        </sheet>
+        <rules>
+            <stat name="flashfreeze:dc" value="8"/>
+            <stat name="flashfreeze:dc" value="proficiency"/>
+            <stat name="flashfreeze:dc" value="constitution:modifier"/>
+        </rules>
+    </element>
+</elements>

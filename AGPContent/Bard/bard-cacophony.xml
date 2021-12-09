@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="bard-cacophony.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Bard/bard-cacophony.xml" />
+		</update>
+	</info>
+  <element name="College of Cacophony" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_COLLEGE_OF_CACOPHONY">
+    <supports>Bard College</supports>
+    <description>
+      <p>Where most bards refine the music they use in their magic, bards from the College of Cacophony focus on the strings of magic in music in their most brutal, raw form. Somewhat esoteric and, by many considered experimental, these bards often attract specific individuals and perform at specific venues as they are a far cry of most bards.</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_CACOPHONY_BOOMING_VOICE" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_CACOPHONY_CREATE_CACOPHONY" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_CACOPHONY_THUNDEROUS_BOOM" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_CACOPHONY_STUNNING_IMPACT" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_CACOPHONY_DROWN_DOWN" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_CACOPHONY_BOOMING_VOICE" level="3" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_CACOPHONY_CREATE_CACOPHONY" level="3" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_CACOPHONY_THUNDEROUS_BOOM" level="6" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_CACOPHONY_STUNNING_IMPACT" level="14" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_CACOPHONY_DROWN_DOWN" level="14" />
+    </rules>
+  </element>
+  <element name="Booming Voice" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_CACOPHONY_BOOMING_VOICE">
+    <description>
+      <p>Beginning at 3rd level, your voice is a booming force. Thunder damage you deal is unaffected by areas of silence. Your voice can be heard normally in areas if silence and in tough weather conditions. You cannot be magically silenced or deafened.</p>
+    </description>
+    <sheet>
+      <description>Beginning at 3rd level, your voice is a booming force. Thunder damage you deal is unaffected by areas of silence. Your voice can be heard normally in areas if silence and in tough weather conditions. You cannot be magically silenced or deafened.</description>
+    </sheet>
+  </element>
+  <element name="Create Cacophony" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_CACOPHONY_CREATE_CACOPHONY">
+    <description>
+      <p>At 3rd level, you can use your bonus action to expend a Bardic Inspiration in order to create a kind of cacophonous noise inside the target's head.</p>
+      <p class="indent"><b>Dissonance.</b> A target you can see within 60ft of you starts hearing sour, dissonant notes. That creature must succeed on a wisdom saving throw or suffer disadvantage on its attack rolls until the end of its next turn.</p>
+      <p class="indent"><b>Noise.</b> A target within 60ft of you starts hearing loud distracting noises inside its head. If it is concentrating on a spell it must roll a concentration check at disadvantage or lose concentration. In addition any concentration checks it makes for the next minute are at disadvantage.</p>
+      <p class="indent"><b>Growl.</b> A target within 60ft of you starts hearing an aggressive primal sound. The creature must succeed on a wisdom saving throw or be frightened of you until the end of your next turn.</p>
+    </description>
+    <sheet action="Bonus Action" usage="Bardic Inspiration">
+      <description>At 3rd level, you can use your bonus action to expend a Bardic Inspiration in order to create a kind of cacophonous noise inside the target's head.&#13;
+          Dissonance. A target you can see within 60ft of you starts hearing sour, dissonant notes. That creature must succeed on a wisdom saving throw or suffer disadvantage on its attack rolls until the end of its next turn.&#13;
+          Noise. A target within 60ft of you starts hearing loud distracting noises inside its head. If it is concentrating on a spell it must roll a concentration check at disadvantage or lose concentration. In addition any concentration checks it makes for the next minute are at disadvantage.&#13;
+          Growl. A target within 60ft of you starts hearing an aggressive primal sound. The creature must succeed on a wisdom saving throw or be frightened of you until the end of your next turn.</description>
+    </sheet>
+  </element>
+  <element name="Thunderous Boom" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_CACOPHONY_THUNDEROUS_BOOM">
+    <description>
+      <p>Starting at 6th level, when you unleash powerful noises, you do so with extra ferocity. When you deal thunder damage you can reroll any die once taking the new roll. You may do this once per short rest.</p>
+    </description>
+    <sheet usage="1/Short Rest">
+      <description>Starting at 6th level, when you unleash powerful noises, you do so with extra ferocity. When you deal thunder damage you can reroll any die once taking the new roll. You may do this once per short rest.</description>
+    </sheet>
+  </element>
+  <element name="Stunning Impact" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_CACOPHONY_STUNNING_IMPACT">
+    <description>
+      <p>At 14th level, your noises are too much for the ears of your targets to handle. When you deal thunder damage and roll maximum on at least one die, you can cause all creatures affected to make a constitution saving throw or be stunned until the end of its next turn on a failed save.</p>
+    </description>
+    <sheet>
+      <description>At 14th level, your noises are too much for the ears of your targets to handle. When you deal thunder damage and roll maximum on at least one die, you can cause all creatures affected to make a constitution saving throw or be stunned until the end of its next turn on a failed save.</description>
+    </sheet>
+  </element>
+  <element name="Drown Down" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_CACOPHONY_DROWN_DOWN">
+    <description>
+      <p>Starting at 14th level you gain the ability to react instinctively to disrupt magical incantations. When a creature you can see and hear within 60ft of you casts a spell with a vocal component, you can use your reaction to attempt to disrupt that spell. The target must make a concentration save or lose concentration on the spell and have it fail. They still expend the spell slot but the spell has no effect. You can do this once per long rest.</p>
+    </description>
+    <sheet action="Reaction" usage="1/Long Rest">
+      <description>Starting at 14th level you gain the ability to react instinctively to disrupt magical incantations. When a creature you can see and hear within 60ft of you casts a spell with a vocal component, you can use your reaction to attempt to disrupt that spell. The target must make a concentration save or lose concentration on the spell and have it fail. They still expend the spell slot but the spell has no effect. You can do this once per long rest.</description>
+    </sheet>
+  </element>
+</elements>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="barbarian-fire.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian/barbarian-fire.xml" />
+		</update>
+	</info>
+    <element name="Path of Fire" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_PATH_OF_FIRE">
+        <supports>Primal Path</supports>
+        <description>
+            <p>Barbarians of the Path of Fire draw their rage from the blazing heat of their souls, taking inspiration from the lame's ability to continue growing indefinitely, consuming all around it.</p>
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_FIRE_RISING_FIRE" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_FIRE_WARMTH_OF_THE_FIRE" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_FIRE_FIERY_SOUL" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_FIRE_ERUPTING_FURY" />
+        </description>
+        <sheet display="true">
+            <description>Barbarians of the Path of Fire draw their rage from the blazing heat of their souls, taking inspiration from the lame's ability to continue growing indefinitely, consuming all around it.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_FIRE_RISING_FIRE" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_FIRE_WARMTH_OF_THE_FIRE" level="6" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_FIRE_FIERY_SOUL" level="10" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_FIRE_ERUPTING_FURY" level="14" />
+        </rules>
+    </element>
+    <element name="Rising Fire" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_FIRE_RISING_FIRE">
+        <description>
+            <p>Starting when you choose this path at 3rd level, the fire in you is drawn out by your weapons. While you rage, your melee weapons attacks deal an additional d4 fire damage. This damage increases to a d6 at 6th level, d8 at 10th, d10 at 14th, d12 at 18th.</p>
+        </description>
+        <sheet display="false">
+            <description>Starting when you choose this path at 3rd level, the fire in you is drawn out by your weapons. While you rage, your melee weapons attacks deal an additional d4 fire damage.</description>
+            <description level="6">At 6th level, the fire in you is drawn out by your weapons. While you rage, your melee weapons attacks deal an additional d6 fire damage.</description>
+            <description level="10">At 10th level, the fire in you is drawn out by your weapons. While you rage, your melee weapons attacks deal an additional d8 fire damage.</description>
+            <description level="14">At 14th level, the fire in you is drawn out by your weapons. While you rage, your melee weapons attacks deal an additional d10 fire damage.</description>
+            <description level="18">At 18th level, the fire in you is drawn out by your weapons. While you rage, your melee weapons attacks deal an additional d12 fire damage.</description>
+        </sheet>
+    </element>
+    <element name="Warmth of the Flame" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_FIRE_WARMTH_OF_THE_FIRE">
+        <description>
+            <p>At 6th level, the fire in your soul also warms your body. You are resistant to cold damage and suffer no adverse effects from extreme cold. When you rage this becomes an immunity.</p>
+        </description>
+        <sheet>
+            <description>At 6th level, the fire in your soul also warms your body. You are resistant to cold damage and suffer no adverse effects from extreme cold. When you rage this becomes an immunity.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+    <element name="Fiery Soul" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_FIRE_FIERY_SOUL">
+        <description>
+            <p>At 10th Level, your rage has grown into an all consuming wildfire. When you reduce an enemy to 0 hit points while raging, you gain 15 temporary hit points.</p>
+        </description>
+        <sheet>
+            <description>At 10th Level, your rage has grown into an all consuming wildfire. When you reduce an enemy to 0 hit points while raging, you gain 15 temporary hit points.</description>
+        </sheet>
+    </element>    
+    <element name="Erupting Fury" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_FIRE_ERUPTING_FURY">
+        <description>
+            <p>At 14th level, your anger is like a chamber of pressure in a volcano, ready to explode out at any moment. When you enter a rage, any creatures within 15ft of you must make a dexterity save with a DC of 8+ your proficiency modifier + your constitution modifier. On a failure, the creature takes 6d6 + your constitution bonus fire damage and is pushed 10ft away. On a success, they take half as much and aren't pushed.</p>
+        </description>
+        <sheet >
+            <description>At 14th level, your anger is like a chamber of pressure in a volcano, ready to explode out at any moment. When you enter a rage, any creatures within 15ft of you must make a dexterity save with a DC of {{flashfreeze:dc}}. On a failure, the creature takes 6d6 + {{constitution:modifier}} fire damage and is pushed 10ft away. On a success, they take half as much and aren't pushed.</description>
+        </sheet>
+        <rules>
+            <stat name="flashfreeze:dc" value="8"/>
+            <stat name="flashfreeze:dc" value="proficiency"/>
+            <stat name="flashfreeze:dc" value="constitution:modifier"/>
+        </rules>
+    </element>
+</elements>

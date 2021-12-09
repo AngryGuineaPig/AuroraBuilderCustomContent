@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="bard-journeys.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Bard/bard-journeys.xml" />
+		</update>
+	</info>
+  <element name="College of Journeys" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_COLLEGE_OF_JOURNEYS">
+    <supports>Bard College</supports>
+    <description>
+      <p>Many bards learn of the arcane arts and the skills of the world from books or teachers. Others learn of the world through traveling its varied terrains.</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_JOURNEYS_BONUS_PROFICIENCIES" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_JOURNEYS_TRAVELERS_LORE" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_JOURNEYS_INSPIRE_URGENCY" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_JOURNEYS_FROM_THITHER_TO_YONDER" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_JOURNEYS_THE_PLANAR_SHUFFLE" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_JOURNEYS_BONUS_PROFICIENCIES" level="3" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_JOURNEYS_TRAVELERS_LORE" level="3" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_JOURNEYS_INSPIRE_URGENCY" level="3" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_JOURNEYS_FROM_THITHER_TO_YONDER" level="6" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_JOURNEYS_THE_PLANAR_SHUFFLE" level="14" />
+    </rules>
+  </element>
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_JOURNEYS_BONUS_PROFICIENCIES">
+    <description>
+      <p>You gain proficiency in one of Animal Handling, Navigator's Tools, Land Vehicles or Water Vehicles. In addition you gain 5ft speed of movement, this increases to 10ft at 14th level.</p>
+    </description>
+    <sheet>
+      <description>You gain proficiency in one of Animal Handling, Navigator's Tools, Land Vehicles or Water Vehicles. In addition you gain 5ft speed of movement, this increases to 10ft at 14th level.</description>
+    </sheet>
+    <rules>
+      <select type="proficiency" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS, ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER, ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND, ID_PROFICIENCY_SKILL_PROFICIENCY_ANIMAL_HANDLING" />
+      <stat name="journey:movement" value="5" bonus="movement" level="3" />
+      <stat name="journey:movement" value="10" bonus="movement" level="14" />
+
+      <stat name="innate speed:misc" value="journey:movement" bonus="movement" requirements="[innate speed:1]" />
+			<stat name="innate speed:climb:misc" value="journey:movement" bonus="movement" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="journey:movement" bonus="movement" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="journey:movement" bonus="movement" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="journey:movement" bonus="movement" requirements="[innate speed:burrow:1]" />
+    </rules>
+  </element>
+  <element name="Traveler's Lore" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_JOURNEYS_TRAVELERS_LORE">
+    <description>
+      <p>At 3rd level, your time spent traveling throughout the world has hastened your pace and broadened your horizons.</p>
+      <p class="indent">You do not suffer movement reduction due to hard terrain, if you play your instrument whilst traveling rather than watching another creature gains advantage on foraging, tracking or navigation checks.</p>
+      <p class="indent">You gain a number of spells based on your level much like a Cleric as you slowly learn whilst exploring the world.</p>
+      <h5>College of Journey Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Bard Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Jump, Swoop</em></td></tr>
+				<tr><td>5th</td><td><em>Misty Step</em></td></tr>
+				<tr><td>7th</td><td><em>Blink, Fly</em></td></tr>
+				<tr><td>9th</td><td><em>Mordenkainen's Private Sanctum</em></td></tr>
+				<tr><td>11th</td><td><em>Far Step, Passwall</em></td></tr>
+			</table>
+    </description>
+    <sheet>
+      <description>At 3rd level, your time spent traveling throughout the world has hastened your pace and broadened your horizons. You gain a number of spells based on your level much like a Cleric as you slowly learn whilst exploring the world.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_JUMP" level="3" spellcasting="Bard" prepared="true" />
+      <grant type="Spell" id="ID_WIKI_SWOOP" level="3" spellcasting="Bard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="5" spellcasting="Bard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINK" level="7" spellcasting="Bard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLY" level="7" spellcasting="Bard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MORDENKAINENS_PRIVATE_SANCTUM" level="9" spellcasting="Bard" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_FAR_STEP" level="11" spellcasting="Bard" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASSWALL" level="11" spellcasting="Bard" prepared="true" />
+    </rules>
+  </element>
+  <element name="Inspire Urgency" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_JOURNEYS_INSPIRE_URGENCY">
+    <description>
+      <p>You learn to inspire speed and agility in your allies. A creature that has one of your bardic inspiration die can use that die, when it does so it automatically takes the dash and disengage actions involuntarily.</p>
+    </description>
+    <sheet>
+      <description>You learn to inspire speed and agility in your allies. A creature that has one of your bardic inspiration die can use that die, when it does so it automatically takes the dash and disengage actions involuntarily.</description>
+    </sheet>
+    <rules></rules>
+  </element>
+  <element name="From Thither to Yonder" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_JOURNEYS_FROM_THITHER_TO_YONDER">
+    <description>
+      <p>At 6th level, As a bonus action you can move yourself or one other creature up to 30ft to an unoccupied space you can see. If the creature is willing they are teleported there and can use a reaction to make an opportunity attack with advantage due to surprise. If the creature is not willing they must make a dexterity saving throw or be teleported.</p>
+      <p class="indent">When a creature within 30ft of you gets hit you can use your reaction to impose disadvantage and move the creature up to 30ft to an unoccupied space. You can do either of these two things a number of times equal to your charisma modifier per long rest, both abilities take up a usage.</p>
+    </description>
+    <sheet action="Bonus Action/Reaction" usage="{{charisma:modifier}}/Long Rest">
+      <description>At 6th level, As a bonus action you can move yourself or one other creature up to 30ft to an unoccupied space you can see. If the creature is willing they are teleported there and can use a reaction to make an opportunity attack with advantage due to surprise. If the creature is not willing they must make a dexterity saving throw or be teleported. When a creature within 30ft of you gets hit you can use your reaction to impose disadvantage and move the creature up to 30ft to an unoccupied space. You can do either of these two things a number of times equal to your charisma modifier per long rest, both abilities take up a usage.</description>
+    </sheet>
+  </element>
+  <element name="The Planar Shuffle" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_JOURNEYS_THE_PLANAR_SHUFFLE">
+    <description>
+      <p>Starting at 14th level you can dance to the resonant tunes of the planes. You can begin this dance as a bonus action. For the next minute at the beginning of your turn you can teleport up to 10ft you can also grab another creature and teleport them with you retaining the same orientation. You can use this ability 3 times per long rest.</p>
+    </description>
+    <sheet action="Bonus Action" usage="3/Long Rest">
+      <description>Starting at 14th level you can dance to the resonant tunes of the planes. You can begin this dance as a bonus action. For the next minute at the beginning of your turn you can teleport up to 10ft you can also grab another creature and teleport them with you retaining the same orientation. You can use this ability 3 times per long rest.</description>
+    </sheet>
+  </element>
+</elements>

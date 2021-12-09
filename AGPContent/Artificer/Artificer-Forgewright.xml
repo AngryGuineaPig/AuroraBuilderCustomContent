@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>	
+	<info>
+		<update version="0.0.1">
+			<file name="Artificer-Forgewright.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Forgewright.xml" />
+		</update>
+	</info>
+	<element name="Forgewright" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ARTIFICER_FORGEWRIGHT">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>While most artificers are primarily inventors that take up a life of adventure to further their research or test experiments in the field, those known as forgewrights seek out battle for its own sake. Reveling in the thrill of combat, they combine their innovative spirit with their skill as a warrior to forge the signature weapon of a forgewright, an arcane armament.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_TOOLS_OF_THE_TRADE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_FORGEWRIGHT_SPELLS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_ARCANE_ARMAMENT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_EXTRA_ATTACK" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_ARCANE_SMITE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_MASTER_FORGEWRIGHT" />
+		</description>
+		<sheet display="false">
+			<description>While most artificers are primarily inventors that take up a life of adventure to further their research or test experiments in the field, those known as forgewrights seek out battle for its own sake. Reveling in the thrill of combat, they combine their innovative spirit with their skill as a warrior to forge the signature weapon of a forgewright, an arcane armament.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_TOOLS_OF_THE_TRADE" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_FORGEWRIGHT_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_ARCANE_ARMAMENT" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_EXTRA_ATTACK" level="5" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_ARCANE_SMITE" level="9" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_MASTER_FORGEWRIGHT" level="15" />
+		</rules>
+	</element>
+	<element name="Tools of the Trade" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_TOOLS_OF_THE_TRADE">
+		<description>
+			<p>When you adopt the forgewright specialty at 3rd level, you gain proficiency with smith's tools and martial weapons. If you are already proficient with smith's tools, you gain proficiency in another set of artisan's tools of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>When you adopt the forgewright specialty at 3rd level, you gain proficiency with smith's tools and martial weapons. If you are already proficient with smith's tools, you gain proficiency in another set of artisan's tools of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, FORGEWRIGHT" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Forgewright Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_FORGEWRIGHT_SPELLS">
+		<description>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Forgewright Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">FORGEWRIGHT SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>compelled duel, zephyr strike</em></td></tr>
+				<tr><td>5th</td><td><em>cloud of daggers, misty step</em></td></tr>
+				<tr><td>9th</td><td><em>blinding smite, conjure barrage</em></td></tr>
+				<tr><td>13th</td><td><em>fire shield, staggering smite</em></td></tr>
+				<tr><td>17th</td><td><em>conjure volley, steel wind strike</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Forgewright Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMPELLED_DUEL" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ZEPHYR_STRIKE" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CLOUD_OF_DAGGERS" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINDING_SMITE" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_BARRAGE" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STAGGERING_SMITE" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_VOLLEY" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Arcane Armament" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_ARCANE_ARMAMENT">
+		<description>
+			<p>Your intimate knowledge of warfare and arcane magic allows you to combine both with ease. Starting at 3rd level, you learn to forge an arcane armament. At the end of each long rest, you touch one melee weapon and turn it into your arcane armament, granting it the following properties:</p>
+			<ul>
+				<li>The weapon you is considered magic if it was not already.</li>
+				<li>You can use your Intelligence, in place of Strength or Dexterity, for the attack and damage rolls.</li>
+				<li>You gain a +1 bonus to your attack and damage rolls with it, unless the base weapon granted a higher bonus. This bonus increases to +2 at 9th-level and +3 at 15th-level.</li>
+				<li>It can bear one of your infusions, even if it was already a magic item before becoming your arcane armament.</li>
+				<li>Bonuses to attack an damage rolls innate to the weapon, or from an infusion, do not stack with the bonuses from this feature. You must choose one instance to use.</li>
+			</ul>
+			<p class="indent">Your arcane armament is usable only by you. Enchanting a second weapon causes the magic in the first to end.</p>
+		</description>
+		<sheet>
+			<description>Your intimate knowledge of warfare and arcane magic allows you to combine both with ease. Starting at 3rd level, you learn to forge an arcane armament. At the end of each long rest, you touch one melee weapon and turn it into your arcane armament, granting it the following properties:&#13;
+			•The weapon you is considered magic if it was not already.&#13;
+			•You can use your Intelligence, in place of Strength or Dexterity, for the attack and damage rolls.&#13;
+			•You gain a +{{armament:damage}} bonus to your attack and damage rolls with it, unless the base weapon granted a higher bonus.&#13;
+			•It can bear one of your infusions, even if it was already a magic item before becoming your arcane armament.&#13;
+			•Bonuses to attack an damage rolls innate to the weapon, or from an infusion, do not stack with the bonuses from this feature. You must choose one instance to use.&#13;
+			Your arcane armament is usable only by you. Enchanting a second weapon causes the magic in the first to end.</description>
+		</sheet>
+		<rules>
+			<stat name="armament:damage" value="1" />
+			<stat name="armament:damage" value="1" level="9" />
+			<stat name="armament:damage" value="1" level="15" />
+
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_EXTRA_ATTACK">
+		<description>
+			<p>You wield your arcane armament as an extension of yourself. Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You wield your arcane armament as an extension of yourself. Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Arcane Smite" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_ARCANE_SMITE">
+		<description>
+			<p>Your connection with your arcane armament has grown, allowing you to enhance your strikes. Beginning at 9th level, when you hit a target with a magic weapon attack you can channel magical energy through your arcane armament to create one of the following effects:</p>
+			<ul>
+				<li>The target takes an extra 2d6 force damage. You can expend a spell slot to increase this damage. The damage increases by 1d6 per level of the spell slot you expend.</li>
+				<li>You gain temporary hit points equal to your artificer level.</li>
+				<li>You can force the target to make a Strength saving throw. On a failed save they are knocked prone.</li>
+			</ul>
+			<p class="indent">You can use this ability a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{intelligence:modifier}}/Long Rest">
+			<description>Your connection with your arcane armament has grown, allowing you to enhance your strikes. Beginning at 9th level, when you hit a target with a magic weapon attack you can channel magical energy through your arcane armament to create one of the following effects:&#13;
+			•The target takes an extra 2d6 force damage. You can expend a spell slot to increase this damage. The damage increases by 1d6 per level of the spell slot you expend.&#13;
+			•You gain {{level:artificer}} temporary hit points.&#13;
+			•You can force the target to make a Strength saving throw. On a failed save they are knocked prone.&#13;
+			You can use this ability a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+	<element name="Master Forgewright" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_FORGEWRIGHT_MASTER_FORGEWRIGHT">
+		<description>
+			<p>You have become a master among forgewright artificers, and your Arcane Armament is a legend among magic weapons. Upon reaching 15th level, you can extend the power of your arcane armament to your allies. As an action, choose a number of weapons equal to your Intelligence modifier (minimum of 1) within 30 feet. For the next minute these weapons deal an additional 1d6 force damage on hit.</p>
+			<p class="indent">You can use this feature once per long rest, unless you spend a spell slot of 3rd-level or higher to use it again.</p>
+		</description>
+		<sheet>
+			<description>You have become a master among forgewright artificers, and your Arcane Armament is a legend among magic weapons. Upon reaching 15th level, you can extend the power of your arcane armament to your allies. As an action, choose {{intelligence:modifier}} weapons within 30 feet. For the next minute these weapons deal an additional 1d6 force damage on hit.&#13;
+			You can use this feature once per long rest, unless you spend a spell slot of 3rd-level or higher to use it again.</description>
+		</sheet>
+	</element>
+</elements>

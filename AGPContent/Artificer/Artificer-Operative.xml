@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>	
+	<info>
+		<update version="0.0.1">
+			<file name="Artificer-Operative.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Operative.xml" />
+		</update>
+	</info>
+	<element name="Operative" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ARTIFICER_OPERATIVE">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>An Operative is an artificer who uses their genius to infiltrate an organization, steal information, and escape into the night. Operatives are often hired as spies or even assassins, selling their considerable talents to rival orders, wealthy merchants, and anyone else who can afford their price.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OPERATIVE_OPERATIVE_SPELLS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OPERATIVE_CHAMELEON_ENGINE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OPERATIVE_HIDDEN_WEAPON" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OPERATIVE_BACKUP_PLAN" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OPERATIVE_MASTER_INFILTRATOR" />
+		</description>
+		<sheet display="false">
+			<description>An Operative is an artificer who uses their genius to infiltrate an organization, steal information, and escape into the night. Operatives are often hired as spies or even assassins, selling their considerable talents to rival orders, wealthy merchants, and anyone else who can afford their price.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OPERATIVE_OPERATIVE_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OPERATIVE_CHAMELEON_ENGINE" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OPERATIVE_HIDDEN_WEAPON" level="5" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OPERATIVE_BACKUP_PLAN" level="9" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OPERATIVE_MASTER_INFILTRATOR" level="15" />
+		</rules>
+	</element>
+	<element name="Operative Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OPERATIVE_OPERATIVE_SPELLS">
+		<description>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Operative Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">OPERATIVE SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>illusory script, unseen servant</em></td></tr>
+				<tr><td>5th</td><td><em>detect thoughts, pass without trace</em></td></tr>
+				<tr><td>9th</td><td><em>clairvoyance, nondetection</em></td></tr>
+				<tr><td>13th</td><td><em>dimension door, greater invisibility</em></td></tr>
+				<tr><td>17th</td><td><em>modify memory, seeming</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Operative Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ILLUSORY_SCRIPT" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Chameleon Engine" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OPERATIVE_CHAMELEON_ENGINE">
+		<description>
+			<p>At 3rd level, you construct a chameleon engine: a device you can use to cloak your appearance. Your chameleon engine is a Tiny object; you decide your engine's appearance.</p>
+			<p class="indent">While your chameleon engine is on your person, you can use your action and expend a spell slot of 1st level or higher to activate it. Your engine remains active for 1 hour, or until it is more than 5 feet away from you. As a bonus action, you can use your activated engine in one of the following ways:</p>
+			<ul>
+				<li>You make yourself—and anything on your person—look different. You can't alter your height or width by more than 1 foot, and you can't change your body type. Touching your disguise reveals it to be illusory, because things can pass through it. Otherwise, you can look however you like.</li>
+				<li>You blend into your surroundings, becoming invisible until you move, or until you take an action or reaction. The first time you cast an artificer spell while invisible, you can roll 1d8 and add the result to one damage roll of the spell.</li>
+			</ul>
+			<p class="indent">Any of your engine's effects end early when it deactivates. You can activate your engine once without expending a spell slot. You can't do so again until you finish a long rest.</p>
+			<p class="indent">During a long rest, you can create a new chameleon engine if you have a set of thieves' tools with you. If you already have an engine from this feature, the first one is destroyed.</p>
+		</description>
+		<sheet>
+			<description>At 3rd level, you construct a chameleon engine: a device you can use to cloak your appearance. Your chameleon engine is a Tiny object; you decide your engine's appearance.&#13;
+			While your chameleon engine is on your person, you can use your action and expend a spell slot of 1st level or higher to activate it. Your engine remains active for 1 hour, or until it is more than 5 feet away from you. As a bonus action, you can use your activated engine in one of the following ways:&#13;
+			• You make yourself—and anything on your person—look different. You can't alter your height or width by more than 1 foot, and you can't change your body type. Touching your disguise reveals it to be illusory, because things can pass through it. Otherwise, you can look however you like.&#13;
+			• You blend into your surroundings, becoming invisible until you move, or until you take an action or reaction. The first time you cast an artificer spell while invisible, you can roll 1d8 and add the result to one damage roll of the spell.&#13;
+			Any of your engine's effects end early when it deactivates. You can activate your engine once without expending a spell slot. You can't do so again until you finish a long rest.
+			During a long rest, you can create a new chameleon engine if you have a set of thieves' tools with you. If you already have an engine from this feature, the first one is destroyed.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+	<element name="Chameleon Engine" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_ARMOR_ARTIFICER_CHAMELEON_ENGINE">
+		<description>
+			<p>The Operative Artificer's Flying Machine.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" >Wondrous Items</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="name-format">Chameleon Engine</set>
+			<set name="attunement">false</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+	<element name="Hidden Weapon" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OPERATIVE_HIDDEN_WEAPON">
+		<description>
+			<p>Starting at 5th level, if you have your thieves' tools with you when you finish a long rest, you can disguise an arcane focus as an ordinary trinket, such as a watch, cane, or quill, turning it into a hidden weapon. Your hidden weapon doesn't appear magical to spells and effects such as detect magic. It returns to its true form if you use this feature again, or if you die.</p>
+			<p class="indent">You can use your hidden weapon as a spellcasting focus. When you cast an artificer spell through the hidden weapon, you can add your Intelligence modifier to one damage roll of the spell. In addition, if the spell has verbal components, you can ignore them if the spell also has somatic components.</p>
+		</description>
+		<sheet>
+			<description>Starting at 5th level, if you have your thieves' tools with you when you finish a long rest, you can disguise an arcane focus as an ordinary trinket, such as a watch, cane, or quill, turning it into a hidden weapon. Your hidden weapon doesn't appear magical to spells and effects such as detect magic. It returns to its true form if you use this feature again, or if you die.&#13;
+			You can use your hidden weapon as a spellcasting focus. When you cast an artificer spell through the hidden weapon, you can add your Intelligence modifier to one damage roll of the spell. In addition, if the spell has verbal components, you can ignore them if the spell also has somatic components.</description>
+		</sheet>
+	</element>
+	<element name="Backup Plan" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OPERATIVE_BACKUP_PLAN">
+		<description>
+			<p>Starting at 9th level, you can adapt to new situations on the fly. As an action, you can replace one of your prepared spells wth another spell you can prepare from the artificer spell list.</p>
+			<p class="indent">Alternatively, you can use your action to end one of your artificer infusions and imbue a nonmagical object you touch with an infusion. If you replace an infusion, you can't imbue an object with that infusion again until you finish a long rest.</p>
+			<p class="indent">You can use this feature a number of times equal to your Intelligence modifier (a minimum of once), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{intelligence:modifier}}/Long Rest">
+			<description>Starting at 9th level, you can adapt to new situations on the fly. As an action, you can replace one of your prepared spells wth another spell you can prepare from the artificer spell list.&#13;
+			Alternatively, you can use your action to end one of your artificer infusions and imbue a nonmagical object you touch with an infusion. If you replace an infusion, you can't imbue an object with that infusion again until you finish a long rest.&#13;
+			You can use this feature a number of times equal to your Intelligence modifier (a minimum of once), and you regain all expended uses when you finish a long rest.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+	<element name="Master Infiltrator" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OPERATIVE_MASTER_INFILTRATOR">
+		<description>
+			<p>Starting when you reach 15th level, you master the use of your Chameleon Engine. You gain the following benefits:</p>
+			<ul>
+				<li>When you use your engine to change your appearance, you can make your voice sound different for the duration. You can perfectly mimic the voice of another creature, or distort your voice enough to be unrecognizable.</li>
+				<li>When you use your engine to become invisible, moving doesn't cause you to become visible again.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Starting when you reach 15th level, you master the use of your Chameleon Engine. You gain the following benefits:&#13;
+			• When you use your engine to change your appearance, you can make your voice sound different for the duration. You can perfectly mimic the voice of another creature, or distort your voice enough to be unrecognizable.&#13;
+			• When you use your engine to become invisible, moving doesn't cause you to become visible again.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+</elements>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>	
+	<info>
+		<update version="0.0.1">
+			<file name="Artificer-Dungeoneer.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Dungeoneer.xml" />
+		</update>
+	</info>
+	<element name="Dungeoneer" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ARTIFICER_DUNGEONEER">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>While most focus on singular inventions, dungeoneers use their know-how to weaponize mundane objects. Trusted to safeguard untold riches and powerful artifacts, dungeoneers use basic adventuring gear to construct defensive traps, puzzles, and structures that can repel all but the most hardy adventurers. Did you learn your craft in the service of a powerful creature, or under the tutilage of a master?</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_TOOLS_OF_THE_TRADE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_DUNGEONEER_SPELLS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_DUNGEONCRAFT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_RESOURCEFUL_FIGHTING" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_EXTRA_ATTACK" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_ARCANE_IMPROVISATION" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_MASTER_DUNGEONEER" />
+		</description>
+		<sheet display="false">
+			<description>While most focus on singular inventions, dungeoneers use their know-how to weaponize mundane objects. Trusted to safeguard untold riches and powerful artifacts, dungeoneers use basic adventuring gear to construct defensive traps, puzzles, and structures that can repel all but the most hardy adventurers. Did you learn your craft in the service of a powerful creature, or under the tutilage of a master?</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_TOOLS_OF_THE_TRADE" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_DUNGEONEER_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_DUNGEONCRAFT" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_RESOURCEFUL_FIGHTING" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_EXTRA_ATTACK" level="5" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_ARCANE_IMPROVISATION" level="9" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_MASTER_DUNGEONEER" level="15" />
+		</rules>
+	</element>
+	<element name="Tools of the Trade" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_TOOLS_OF_THE_TRADE">
+		<description>
+			<p>When you adopt the dungeoneer specialty at 3rd level, you gain proficiency with carpenter's tools and mason's tools. If you already proficient with either of these tools, you gain proficiency with another set of artisan's tools of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>When you adopt the dungeoneer specialty at 3rd level, you gain proficiency with carpenter's tools and mason's tools. If you already proficient with either of these tools, you gain proficiency with another set of artisan's tools of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, Dungeoneer" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS" />
+			<select type="Proficiency" name="Tool Proficiency, Dungeoneer" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Dungeoneer Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_DUNGEONEER_SPELLS">
+		<description>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Dungeoneer Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">DUNGEONEER SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>alarm, unseen servant</em></td></tr>
+				<tr><td>5th</td><td><em>arcane lock, knock</em></td></tr>
+				<tr><td>9th</td><td><em>glyph of warding, Leomund's tiny hut</em></td></tr>
+				<tr><td>13th</td><td><em>guardian of faith, Otiluke’s resilient sphere</em></td></tr>
+				<tr><td>17th</td><td><em>passwall, wall of stone</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Dungeoneer Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ALARM" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ARCANE_LOCK" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_KNOCK" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GLYPH_OF_WARDING" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEOMUNDS_TINY_HUT" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASSWALL" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Dungeoncraft" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_DUNGEONCRAFT">
+		<description>
+			<p>Starting at 3rd level, when you finish a long rest, you can create a number of objects from the Dungeoncraft Table equal to your proficiency bonus. If an object forces a creature to make a saving throw they use your artificer spell save DC.</p>
+			<table>
+				<tr><td>Acid (1 vial)</td>				<td>Hunting Trap</td></tr>
+				<tr><td>Alchemist's Fire (1 Vial)</td>	<td>Lock and Key</td></tr>
+				<tr><td>Ball Bearings (1,000)</td>		<td>Manacles ad Key</td></tr>
+				<tr><td>Block and Tackle</td>			<td>Oil (1 Vial)</td></tr>
+				<tr><td>Caltrops (200)</td>				<td>Portable Ram</td></tr>
+				<tr><td>Candles (10)</td>				<td>Rope (50ft)</td></tr>
+				<tr><td>Chain (25 ft)</td>				<td>Sledge Hammer</td></tr>
+				<tr><td>Crowbar</td>					<td>Shovel</td></tr>
+				<tr><td>Grappling Hook</td>				<td>Torches (5)</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Starting at 3rd level, when you finish a long rest, you can create {{proficiency}} objects from the Dungeoncraft Table. If an object forces a creature to make a saving throw they use your artificer spell save DC.</description>
+		</sheet>
+	</element>
+	<element name="Resourceful Fighting" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_RESOURCEFUL_FIGHTING">
+		<description>
+			<p>Beginning at 3rd level, you can arm yourself with whatever is around you, turning mundane objects into weapons. You gain proficiency with improvised weapons, and when you attack with an improvised weapon you can use your Intelligence, in place of Strength or Dexterity, for attack and damage rolls.</p>
+		</description>
+		<sheet>
+			<description>Beginning at 3rd level, you can arm yourself with whatever is around you, turning mundane objects into weapons. You gain proficiency with improvised weapons, and when you attack with an improvised weapon you can use your Intelligence, in place of Strength or Dexterity, for attack and damage rolls.</description>
+		</sheet>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_EXTRA_ATTACK">
+		<description>
+			<p>Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Arcane Improvisation" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_ARCANE_IMPROVISATION">
+		<description>
+			<p>Starting at 9th level, when you cast a Dungeoneer Spell that has a material component, you can cast the spell without providing the material component. Once you use this feature you must finish a long rest before you can do so again.</p>
+			<p class="indent">In addition, your improvised weapons and Dungeoncraft objects are considered magic for the purpose of overcoming resistances and immunities.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Starting at 9th level, when you cast a Dungeoneer Spell that has a material component, you can cast the spell without providing the material component. Once you use this feature you must finish a long rest before you can do so again.&#13;
+			In addition, your improvised weapons and Dungeoncraft objects are considered magic for the purpose of overcoming resistances and immunities.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+	<element name="Master Dungeoneer" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DUNGEONEER_MASTER_DUNGEONEER">
+		<description>
+			<p>You have become a master Dungeoneer. Upon reaching 15th level, when a creature makes a saving throw against one of your Dungeoncraft Objects or Dungeoneer Spells, they have disadvantage on their saving throw.</p>
+			<p class="indent">In addition you can cast the passwall and wall of stone spells as rituals. Their casting time becomes 1 hour, they don't consume spell slots, and the structure is permanent.</p>
+		</description>
+		<sheet>
+			<description>You have become a master Dungeoneer. Upon reaching 15th level, when a creature makes a saving throw against one of your Dungeoncraft Objects or Dungeoneer Spells, they have disadvantage on their saving throw.&#13;
+			In addition you can cast the passwall and wall of stone spells as rituals. Their casting time becomes 1 hour, they don't consume spell slots, and the structure is permanent.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+</elements>

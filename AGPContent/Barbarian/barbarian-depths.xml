@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="barbarian-depths.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian/barbarian-depths.xml" />
+		</update>
+	</info>
+    <element name="Path of The Depths" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_PATH_OF_DEPTHS">
+        <supports>Primal Path</supports>
+        <description>
+            <p>Many barbarians use their raw rage and adrenaline to display martial prowess, but there are also how through force of will learn to control this rage to temper it into a much more terrifying force.</p>
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_QUIRK" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_AQUATIC_ADAPTATION" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_RAGING_WATERS" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_MOVING_CURRENT" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_UNDER_THE_WATERS" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_CRASHING_WAVE" />
+        </description>
+        <sheet display="true">
+            <description>Many barbarians use their raw rage and adrenaline to display martial prowess, but there are also how through force of will learn to control this rage to temper it into a much more terrifying force.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_QUIRK" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_AQUATIC_ADAPTATION" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_RAGING_WATERS" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_MOVING_CURRENT" level="6" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_UNDER_THE_WATERS" level="10" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_CRASHING_WAVE" level="14" />
+        </rules>
+    </element>
+    <element name="Quirk" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_QUIRK">
+        <description>
+            <p>You have developed a slight cosmetic feature, roll 1d8 to choose a quirk from the table</p>
+            <h5>QUIRKS</h5>
+			<table>
+				<thead>
+					<tr><td>D8</td><td>Quirk</td></tr>
+				</thead>
+				<tr><td>1</td><td>You have webbing between your fingers and toes.</td></tr>
+				<tr><td>2</td><td>You constantly sound like you're underwater.</td></tr>
+				<tr><td>3</td><td>You developed gills.</td></tr>
+				<tr><td>4</td><td>You have faint fish scales.</td></tr>
+				<tr><td>5</td><td>Coral, seaweed or other sea life has begun to grow on you.</td></tr>
+				<tr><td>6</td><td>You much prefer to sleep in water either completely submerged or partially submerged.</td></tr>
+                <tr><td>7</td><td>You have a slight aquatic animal cosmetic addition. Such as as subtle fins, tentacle-like fingers.</td></tr>
+                <tr><td>8</td><td>You have a slight fish tail.</td></tr>
+			</table>
+        </description>
+        <sheet display="false">
+            <description>You have developed a slight cosmetic feature, roll 1d8 to choose a quirk from the table</description>
+        </sheet>
+    </element>
+    <element name="Aquatic Adaptation" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_AQUATIC_ADAPTATION">
+        <description>
+            <p>You have adapted to the water, you gain a swimming speed of 30ft and can breathe both air and water.</p>
+        </description>
+        <sheet>
+            <description>You have adapted to the water, you gain a swimming speed of 30ft and can breathe both air and water.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:swim" value="speed" bonus="30" />
+        </rules>
+    </element>
+    <element name="Raging Waters" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_RAGING_WATERS">
+        <description>
+            <p>At 3rd Level you learn how to channel the strength of water into your rage. When you enter rage you begin to slightly leak seawater. The first creature you hit on each turn take an additional 1d8 cold damage and can be pushed up to 10ft in a straight line away from you. this increases 2d8 at 6th level, 3d8 at 10th level and 4d8 at 14th level.</p>
+        </description>
+        <sheet>
+            <description>At 3rd Level you learn how to channel the strength of water into your rage. When you enter rage you begin to slightly leak seawater. The first creature you hit on each turn take an additional 1d8 cold damage and can be pushed up to 10ft in a straight line away from you.</description>
+            <description level="6">At 6th Level you learn how to channel the strength of water into your rage. When you enter rage you begin to slightly leak seawater. The first creature you hit on each turn take an additional 2d8 cold damage and can be pushed up to 10ft in a straight line away from you.</description>
+            <description level="10">At 10th Level you learn how to channel the strength of water into your rage. When you enter rage you begin to slightly leak seawater. The first creature you hit on each turn take an additional 3d8 cold damage and can be pushed up to 10ft in a straight line away from you.</description>
+            <description level="14">At 14th Level you learn how to channel the strength of water into your rage. When you enter rage you begin to slightly leak seawater. The first creature you hit on each turn take an additional 4d8 cold damage and can be pushed up to 10ft in a straight line away from you.</description>
+        </sheet>
+    </element>    
+    <element name="Moving Current" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_MOVING_CURRENT">
+        <description>
+            <p>At 6th level, you can move more like flowing water. You gain resistance to cold damage and have advantages on saves against restraining or grappling.</p>
+        </description>
+        <sheet >
+            <description>At 6th level, you can move more like flowing water. You gain resistance to cold damage and have advantages on saves against restraining or grappling.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+    <element name="Under the Waters" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_UNDER_THE_WATERS">
+        <description>
+            <p>At 10th level, you can aid your allies in aquatic environments. You can ritually cast water breathing. Additionally when you aid someone on any form of check to do with swimming they can use your bonus if it is higher. Charisma is your spellcasting ability</p>
+        </description>
+        <sheet >
+            <description>At 10th level, you can aid your allies in aquatic environments. You can ritually cast water breathing. Additionally when you aid someone on any form of check to do with swimming they can use your bonus if it is higher. Charisma is your spellcasting ability</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_WATER_BREATHING" level="10" spellcasting="Barbarian" prepared="true" />
+        </rules>
+    </element>
+    <element name="Crashing Wave" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DEPTHS_CRASHING_WAVE">
+        <description>
+            <p>At 14th level, when you move more than 20ft towards a target then strike them you deal an additional 1d8 cold damage and 1d8 force damage. Additionally they must make a strength save against 8 + proficiency + strength modifier or be pushed 20ft and be knocked prone, on a success they are not moved or knocked prone.</p>
+        </description>
+        <sheet >
+            <description>At 14th level, when you move more than 20ft towards a target then strike them you deal an additional 1d8 cold damage and 1d8 force damage. Additionally they must make a strength save against {{crashingwave:dc}} or be pushed 20ft and be knocked prone, on a success they are not moved or knocked prone.</description>
+        </sheet>
+        <rules>
+            <stat name="crashingwave:dc" value="8"/>
+            <stat name="crashingwave:dc" value="proficiency"/>
+            <stat name="crashingwave:dc" value="strength:modifier"/>
+        </rules>
+    </element>
+</elements>

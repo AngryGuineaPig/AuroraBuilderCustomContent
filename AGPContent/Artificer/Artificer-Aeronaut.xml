@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Artificer-Aeronaut.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Aeronaut.xml" />
+		</update>
+	</info>
+	<element name="Aeronaut" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ARTIFICER_AERONAUT">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>One of the most dangerous obsessions an artificer can pursue has always been mechanical flight. Many strive for this lofty goal, and all but the most dedicated, and often the most foolhardy, artificers fail in their pursuits. Experiments that end in disastrous explosions, catastrophic falls from the sky, and deadly malfunctions are not out of the norm for an Aeronaut perfecting their mechanical flying machine. You constantly strive to achieve the lofty goal of every Aeronaut, the creation of an arcane flying machine.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_TOOLS_OF_THE_TRADE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_AERONAUT_SPELLS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_FLYING_MACHINE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_AIRBORNE_ASSAULT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_AERIAL_MANEUVERS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_MASTER_AERONAUT" />
+		</description>
+		<sheet display="false">
+			<description>One of the most dangerous obsessions an artificer can pursue has always been mechanical flight. Many strive for this lofty goal, and all but the most dedicated, and often the most foolhardy, artificers fail in their pursuits. Experiments that end in disastrous explosions, catastrophic falls from the sky, and deadly malfunctions are not out of the norm for an Aeronaut perfecting their mechanical flying machine. You constantly strive to achieve the lofty goal of every Aeronaut, the creation of an arcane flying machine.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_TOOLS_OF_THE_TRADE" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_AERONAUT_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_FLYING_MACHINE" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_AIRBORNE_ASSAULT" level="5" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_AERIAL_MANEUVERS" level="9" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_MASTER_AERONAUT" level="15" />
+		</rules>
+	</element>
+	<element name="Tools of the Trade" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_TOOLS_OF_THE_TRADE">
+		<description>
+			<p>When you adopt this specialization at 3rd level, you gain proficiency with woodcarver's tools. If you are already proficient with woodcarver's tools you instead gain proficiency with one type of artisan's tools of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>When you adopt this specialization at 3rd level, you gain proficiency with woodcarver's tools. If you are already proficient with woodcarver's tools you instead gain proficiency with one type of artisan's tools of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, Aeronaut" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Aeronaut Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_AERONAUT_SPELLS">
+		<description>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Aeronaut Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">AERONAUT SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>feather fall, zephyr strike</em></td></tr>
+				<tr><td>5th</td><td><em>dust devil, warding wind</em></td></tr>
+				<tr><td>9th</td><td><em>fly, wind wall</em></td></tr>
+				<tr><td>13th</td><td><em>death ward, summon elemental (air)</em></td></tr>
+				<tr><td>17th</td><td><em>control winds, steel wind strike</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Aeronaut Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ZEPHYR_STRIKE" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_DUST_DEVIL" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_WARDING_WIND" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLY" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WIND_WALL" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Flying Machine" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_FLYING_MACHINE">
+		<description>
+			<p>Upon reaching 3rd level, your experiments with flight have paid off. At the end of a long rest, as long as you have access to your woodcarver's tools, you can construct a flying machine, choosing its appearance. Your flying machine is a magical item that requires attunement and can be used as a spellcasting focus for your artificer spells. It is constructed to fit your size, and It can be worn over normal clothing and light or medium armor. You must spend time during each long rest maintaining your flying machine with woodcarver's tools. If you do not, your flying machine ceases to function.</p>
+			<p class="indent">While you have your flying machine equipped and attuned, you gain a 15 foot flying speed. This flying speed does not stack with flying speeds gained from other features or spells.</p>
+			<p class="indent">At certain artificer levels, this flying speed increases: to 20 feet at 5th level, 30 feet at 9th level, and 60 feet at 15th level.</p>
+		</description>
+		<sheet>
+			<description>Upon reaching 3rd level, your experiments with flight have paid off. At the end of a long rest, as long as you have access to your woodcarver's tools, you can construct a flying machine, choosing its appearance. Your flying machine is a magical item that requires attunement and can be used as a spellcasting focus for your artificer spells. It is constructed to fit your size, and It can be worn over normal clothing and light or medium armor. You must spend time during each long rest maintaining your flying machine with woodcarver's tools. If you do not, your flying machine ceases to function.&#13;
+			While you have your flying machine equipped and attuned, you gain a {{flying machine:speed}} foot flying speed. This flying speed does not stack with flying speeds gained from other features or spells.</description>
+		</sheet>
+		<rules>
+			<stat name="flying machine:speed" value="15" />
+			<stat name="flying machine:speed" value="5" level="5" />
+			<stat name="flying machine:speed" value="10" level="9" />
+			<stat name="flying machine:speed" value="30" level="15" />
+		</rules>
+	</element>
+	<element name="Flying Machine" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_ARMOR_ARTIFICER_FLYING_MACHINE">
+		<description>
+			<p>The Aeronaut Artificer's Flying Machine.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Any Light or Medium">Armor</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
+			<set name="name-format">{{parent}} Flying Machine</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="innate speed:fly" value="flying machine:speed" bonus="Armour" />
+		</rules>
+	</element>
+	<element name="Airborne Assault" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_AIRBORNE_ASSAULT">
+		<description>
+			<p>Your flying machine allows you to attack from unorthodox positions to inflict more damage. Starting at 5th level, when you have your flying machine equipped and are at least 5 feet off the ground, your attacks deal an additional 1d8 damage. At 15th level, the bonus damage increases to 2d8.</p>
+			<p class="indent">In addition, if you become prone or restrained while flying with your flying machine, you remain in place in the air. If you are incapacitated, you fall at a rate of 10 feet per round.</p>
+		</description>
+		<sheet>
+			<description>Your flying machine allows you to attack from unorthodox positions to inflict more damage. Starting at 5th level, when you have your flying machine equipped and are at least 5 feet off the ground, your attacks deal an additional 1d8 damage.&#13;
+			In addition, if you become prone or restrained while flying with your flying machine, you remain in place in the air. If you are incapacitated, you fall at a rate of 10 feet per round.</description>
+			<description level="15">Your flying machine allows you to attack from unorthodox positions to inflict more damage. When you have your flying machine equipped and are at least 5 feet off the ground, your attacks deal an additional 2d8 damage.&#13;
+			In addition, if you become prone or restrained while flying with your flying machine, you remain in place in the air. If you are incapacitated, you fall at a rate of 10 feet per round.</description>
+		</sheet>
+	</element>
+	<element name="Aerial Maneuvers" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_AERIAL_MANEUVERS">
+		<description>
+			<p>You have greatly improved the maneuverability of your flying machine. Beginning at 9th level, you can use the Dash action as a bonus action on your turn. You can dash in this way a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</p>
+			<p class="indent">In addition, while you have your flying machine equipped, you gain a bonus to your Dexterity ability checks and saving throws equal to your Intelligence modifier (minimum of 1).</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You have greatly improved the maneuverability of your flying machine. Beginning at 9th level, you can use the Dash action as a bonus action on your turn. You can dash in this way {{proficiency}} times, and regain all expended uses when you finish a long rest.&#13;
+			In addition, while you have your flying machine equipped, you gain a +{{intelligence:modifier}} bonus to your Dexterity ability checks and saving throws.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity:save:misc" value="1" bonus="Aerial" />
+			<stat name="dexterity:save:misc" value="intelligence:modifier" bonus="Aerial" />
+		</rules>
+	</element>
+	<element name="Master Aeronaut" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_AERONAUT_MASTER_AERONAUT">
+		<description>
+			<p>Upon reaching 15th level, become an Aeronautical expert. If have your flying machine equipped and you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+		</description>
+		<sheet>
+			<description>Upon reaching 15th level, become an Aeronautical expert. If have your flying machine equipped and you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+</elements>

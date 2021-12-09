@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Artificer-Atomicist.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Atomicist.xml" />
+		</update>
+	</info>
+	<element name="Atomicist" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ARTIFICER_ATOMICIST">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>Masters of the Atom Atomicists are potent spellcasters and tinkerers who take advantage of the dangerous nature of toying with the building blocks of reality.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_TOOLS_OF_THE_TRADE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_ATOMICIST_SPELLS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_MAGICAL_RADIATION" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_PROTECTIVE_SUIT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_POISONOUS_LIGHT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_GOING_NUCLEAR" />
+		</description>
+		<sheet display="false">
+			<description>Masters of the Atom Atomicists are potent spellcasters and tinkerers who take advantage of the dangerous nature of toying with the building blocks of reality.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_TOOLS_OF_THE_TRADE" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_ATOMICIST_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_MAGICAL_RADIATION" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_PROTECTIVE_SUIT" level="5" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_POISONOUS_LIGHT" level="9" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_GOING_NUCLEAR" level="15" />
+		</rules>
+	</element>
+	<element name="Tools of the Trade" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_TOOLS_OF_THE_TRADE">
+		<description>
+			<p>When you adopt this specialization at 3rd level, you gain proficiency with alchemist’s supplies. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency with alchemist’s supplies. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, Atomicist" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+		</rules>
+	</element>
+	<element name="Atomicist Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_ATOMICIST_SPELLS">
+		<description>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Atomicist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">ATOMICIST SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>guiding bolt, ray of sickness</em></td></tr>
+				<tr><td>5th</td><td><em>ray of enfeeblement, scorching ray</em></td></tr>
+				<tr><td>9th</td><td><em>aura of vitality, daylight</em></td></tr>
+				<tr><td>13th</td><td><em>aura of life, sickening radiance</em></td></tr>
+				<tr><td>17th</td><td><em>antilife shell, wall of light</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Atomicist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_VITALITY" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_LIFE" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SICKENING_RADIANCE" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANTILIFE_SHELL" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_WALL_OF_LIGHT" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Magical Radiation" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_MAGICAL_RADIATION">
+		<description>
+			<p>At 3rd level, you learn how to use magic to split matter. As a bonus action using your tinkers tools, you can begin emitting a poisonous radiation for one minute. Creatures that move to within 5 feet of you or begin their turn within five feet of you must make a Constitution saving throw against your spellcasting DC or take 1d10 radiant damage. You can end this effect with a bonus action, and this effect ends early if you are knocked unconscious.</p>
+			<p class="indent">You may use this effect a number of times equal to your proficiency modifier. You regain spent uses after a long rest.</p>
+			<p class="indent">Additionally at 3rd level, any time you cast a cantrip or spell that would deal fire, force, necrotic, or poison damage, you can instead have it deal radiant damage.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>At 3rd level, you learn how to use magic to split matter. As a bonus action using your tinkers tools, you can begin emitting a poisonous radiation for one minute. Creatures that move to within {{radiation:distance}} feet of you or begin their turn within five feet of you must make a Constitution saving throw against your spellcasting DC or take {{radiation:damage}}d10 radiant damage. You can end this effect with a bonus action, and this effect ends early if you are knocked unconscious.&#13;
+			You may use this effect {{proficiency}} times. You regain spent uses after a long rest.
+			Additionally at 3rd level, any time you cast a cantrip or spell that would deal fire, force, necrotic, or poison damage, you can instead have it deal radiant damage.</description>
+		</sheet>
+		<rules>
+			<stat name="radiation:distance" value="5" />
+			<stat name="radiation:distance" value="5" level="9" />
+			<stat name="radiation:distance" value="10" level="15" />
+			<stat name="radiation:damage" value="1" />
+			<stat name="radiation:damage" value="1" level="9" />
+			<stat name="radiation:damage" value="1" level="15" />
+		</rules>
+	</element>
+	<element name="Protective Suit" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_PROTECTIVE_SUIT">
+		<description>
+			<p>You have developed a protective suit to shield yourself from the hazards of your magic. After a long rest, you can touch any set of armor and modify it into a protective suit. You are proficient with it while you are wearing it, and you have resistance to radiant and poison damage and have advantage on saving throws against poison.</p>
+			<p class="indent">Additionally, when you attack with a melee weapon, you deal radiant damage in addition to the weapon’s normal damage equal to your Intelligence modifier (minimum of 1).</p>
+		</description>
+		<sheet>
+			<description>You have developed a protective suit to shield yourself from the hazards of your magic. After a long rest, you can touch any set of armor and modify it into a protective suit. You are proficient with it while you are wearing it, and you have resistance to radiant and poison damage and have advantage on saving throws against poison.&#13;
+			Additionally, when you attack with a melee weapon, you deal {{intelligence:modifier}} radiant damage in addition to the weapon’s normal damage.</description>
+		</sheet>
+	</element>
+	<element name="Protective Suit" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_ARMOR_ARTIFICER_PROTECTIVE_SUIT">
+		<description>
+			<p>The Atomicist Artificer's Protective Suit.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" >Armor</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Protective {{parent}}</set>
+			<set name="attunement">false</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	<element name="Poisonous Light" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_POISONOUS_LIGHT">
+		<description>
+			<p>At 9th level, your studies into atomic energy have enhanced your deadly use of it. Your Magical Radiation now extends out to 10 feet and it deals 2d10 radiant damage.</p>
+			<p class="indent">Additionally, any time you deal radiant damage, the target must make a Constitution saving throw against your spellcasting DC. If they fail, they are poisoned for one minute. They may re-attempt this saving throw on any of their subsequent turns as an action. If at any point, they succeed on this saving throw, they are immune to this effect for one hour.</p>
+		</description>
+		<sheet>
+			<description>Any time you deal radiant damage, the target must make a Constitution saving throw against your spellcasting DC. If they fail, they are poisoned for one minute. They may re-attempt this saving throw on any of their subsequent turns as an action. If at any point, they succeed on this saving throw, they are immune to this effect for one hour.</description>
+		</sheet>
+	</element>
+	<element name="Going Nuclear" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ATOMICIST_GOING_NUCLEAR">
+		<description>
+			<p>By 15th level, your studies have made your mastery of the atom without compare. As an action, you may cast disintegrate as a 7th-level spell, except it deals radiant damage instead of force. You can do this once, and regain the ability to do this after a long rest or by choosing to gain a level of exhaustion.</p>
+			<p class="indent">Additionally, now your Magical Radiation extends to 20 feet and deals 3d10 radiant damage. You may choose to have it affect objects and structures, as well.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_DISINTEGRATE" />
+			</div>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>By 15th level, your studies have made your mastery of the atom without compare. As an action, you may cast disintegrate as a 7th-level spell, except it deals radiant damage instead of force. You can do this once, and regain the ability to do this after a long rest or by choosing to gain a level of exhaustion.</description>
+		</sheet>
+	</element>
+</elements>

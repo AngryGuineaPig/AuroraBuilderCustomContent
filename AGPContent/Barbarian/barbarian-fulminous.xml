@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="barbarian-fulminous.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian/barbarian-fulminous.xml" />
+		</update>
+	</info>
+    <element name="Path of The Fulminous" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_PATH_OF_FULMINOUS">
+        <supports>Primal Path</supports>
+        <description>
+            <p>Even in the worst of storms, with winds crashing all around and rain beating down, there is one force that stands out as the most powerful. The lightning strike. Barbarians who follow this path try to emulate this power.</p>
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_FULMINOUS_LIGHTNINGS_FURY" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_FULMINOUS_FULMINOUS_SOUL" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_FULMINOUS_SUDDEN_STORM" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_FULMINOUS_STORM_BOLT" />
+        </description>
+        <sheet display="true">
+            <description>Even in the worst of storms, with winds crashing all around and rain beating down, there is one force that stands out as the most powerful. The lightning strike. Barbarians who follow this path try to emulate this power.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_FULMINOUS_LIGHTNINGS_FURY" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_FULMINOUS_FULMINOUS_SOUL" level="6" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_FULMINOUS_SUDDEN_STORM" level="10" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_FULMINOUS_STORM_BOLT" level="14" />
+        </rules>
+    </element>
+    <element name="Lightning's Fury" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_FULMINOUS_LIGHTNINGS_FURY">
+        <description>
+            <p>Starting at 3rd level, when you rage you are empowered with the fury of a lightning strike granting you the following benefits. Your unarmed strikes deal 1d6 bludgeoning damage. The bonus rage damage that you deal is lightning. If you take the attack action you can make an unarmed strike as part of the same action.</p>
+        </description>
+        <sheet>
+            <description>Starting at 3rd level, when you rage you are empowered with the fury of a lightning strike granting you the following benefits. Your unarmed strikes deal 1d6 bludgeoning damage. The bonus rage damage that you deal is lightning. If you take the attack action you can make an unarmed strike as part of the same action.</description>
+        </sheet>
+    </element>
+    <element name="Fulminous Soul" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_FULMINOUS_FULMINOUS_SOUL">
+        <description>
+            <p>At 6th level, the power of lightning has permeated your soul. You gain resistance to thunder and lightning damage. In addition, your unarmed strikes you make when raging count as magical.</p>
+        </description>
+        <sheet>
+            <description>At 6th level, the power of lightning has permeated your soul. You gain resistance to thunder and lightning damage. In addition, your unarmed strikes you make when raging count as magical.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+        </rules>
+    </element>
+    <element name="Sudden Storm" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_FULMINOUS_SUDDEN_STORM">
+        <description>
+            <p>At 10th level, you gain the ability to ready your allies for battle. When you roll initiative, you can use your reaction to give all allies in 30ft advantage on the roll. If you use this there is no surprise round against you. You can use this feature once per short rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Short Rest">
+            <description>At 10th level, you gain the ability to ready your allies for battle. When you roll initiative, you can use your reaction to give all allies in 30ft advantage on the roll. If you use this there is no surprise round against you.</description>
+        </sheet>
+    </element>    
+    <element name="Storm Bolt" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_FULMINOUS_STORM_BOLT">
+        <description>
+            <p>At 14th level, you can become what you are emulating. When you move 10ft in any straight line during a single turn whilst raging you can become a lightning bolt. You instantly travel 30ft in a straight line. The transformation removes the grappled or restrained conditions, and the instant movement doesn't provoke attacks of opportunity. At the end of this movement you return to your original form and all creatures around you must make a constitution save (DC = 8 + proficiency + constitution modifier) or take 1d6 + half your barbarian level thunder damage. On a success the target takes half damage.</p>
+        </description>
+        <sheet >
+            <description>At 14th level, you can become what you are emulating. When you move 10ft in any straight line during a single turn whilst raging you can become a lightning bolt. You instantly travel 30ft in a straight line. The transformation removes the grappled or restrained conditions, and the instant movement doesn't provoke attacks of opportunity. At the end of this movement you return to your original form and all creatures around you must make a constitution save (DC = {{stormbolt:dc}}) or take 1d6 + {{level:barbarian:half:up}} level thunder damage. On a success the target takes half damage.</description>
+        </sheet>
+        <rules>
+            <stat name="stormbolt:dc" value="8"/>
+            <stat name="stormbolt:dc" value="proficiency"/>
+            <stat name="stormbolt:dc" value="constitution:modifier"/>
+        </rules>
+    </element>
+</elements>

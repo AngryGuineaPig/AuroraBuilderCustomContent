@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+	        <update version="0.0.1">
+			<file name="Artificer.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer.index" />
+		</update>
+	</info>
+	<files>
+        <file name="Artificer-Composer.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Composer.xml" />
+        <file name="Artificer-Dungeoneer.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Dungeoneer.xml" />
+        <file name="Artificer-Forgewright.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Forgewright.xml" />
+        <file name="Artificer-Sigilist.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Sigilist.xml" />
+        <file name="Artificer-Aeronaut.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Aeronaut.xml" />
+        <file name="Artificer-Archivist.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Archivist.xml" />
+        <file name="Artificer-Atomicist.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Atomicist.xml" />
+        <file name="Artificer-Operative.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Operative.xml" />
+        <file name="Artificer-Infusions.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Infusions.xml" />
+	</files>
+</index>

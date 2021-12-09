@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>	
+	<info>
+		<update version="0.0.1">
+			<file name="Artificer-Composer.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Composer.xml" />
+		</update>
+	</info>
+	<element name="Composer" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ARTIFICER_COMPOSER">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>Behind every great musician, every standing ovation, every sold out concert, there is someone who put quill to parchment and penned the notes. These great minds are known as composers. Unlike other bards and entertainers, composers take a more mathematical and cerebral approach to music and song. They are masters of patterns that go unnoticed, and when they apply their analytical minds to a problem it is only a matter of time before they find a solution.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_TOOLS_OF_THE_TRADE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_COMPOSER_SPELLS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_MUSICAL_APPARATUS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_THUNDEROUS_NOTE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_RESONANT_FREQUENCY" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_MASTER_COMPOSER" />
+		</description>
+		<sheet display="false">
+			<description>Behind every great musician, every standing ovation, every sold out concert, there is someone who put quill to parchment and penned the notes. These great minds are known as composers. Unlike other bards and entertainers, composers take a more mathematical and cerebral approach to music and song. They are masters of patterns that go unnoticed, and when they apply their analytical minds to a problem it is only a matter of time before they find a solution.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_TOOLS_OF_THE_TRADE" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_COMPOSER_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_MUSICAL_APPARATUS" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_THUNDEROUS_NOTE" level="5" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_RESONANT_FREQUENCY" level="9" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_MASTER_COMPOSER" level="15" />
+		</rules>
+	</element>
+	<element name="Tools of the Trade" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_TOOLS_OF_THE_TRADE">
+		<description>
+			<p>When you adopt the composer specialty at 3rd level, you gain proficiency with smith's tools and one instrument of your choice. If you already proficient with smith's tools, you gain proficiency with another set of artisan's tools of your choice. At the end of a long rest, you can switch the instrument proficiency you gained from this feature with another instrument, provided you have the new instrument available.</p>
+		</description>
+		<sheet display="false">
+			<description>When you adopt the composer specialty at 3rd level, you gain proficiency with smith's tools and one instrument of your choice. If you already proficient with smith's tools, you gain proficiency with another set of artisan's tools of your choice. At the end of a long rest, you can switch the instrument proficiency you gained from this feature with another instrument, provided you have the new instrument available.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, Composer" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+			<select type="Proficiency" name="Tool Proficiency, Composer" supports="Musical Instrument" />
+		</rules>
+	</element>
+	<element name="Composer Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_COMPOSER_SPELLS">
+		<description>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Composer Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">COMPOSER SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>charm person, thunderwave</em></td></tr>
+				<tr><td>5th</td><td><em>shatter, silence</em></td></tr>
+				<tr><td>9th</td><td><em>beacon of hope, fear</em></td></tr>
+				<tr><td>13th</td><td><em>charm monster, dominate beast</em></td></tr>
+				<tr><td>17th</td><td><em>destructive wave, dominate person</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Composer Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHATTER" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SILENCE" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_CHARM_MONSTER" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Musical Apparatus" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_MUSICAL_APPARATUS">
+		<description>
+			<p>Starting at 3rd level, you construct a completely unique musical instrument of your own design. You are proficient and with this instrument and it can be used as a spellcasting focus by you. Whenever you make skill check with this apparatus you can add double your proficiency bonus to the roll. If it is destroyed, you can construct a new musical apparatus with your smith's tools at the end of a long rest.</p>
+			<p class="indent">You can only maintain one musical apparatus at a time, and if you create a new one, your previous musical apparatus falls into disrepair and becomes unusable. Your musical apparatus can also be weaponized depending on its design. At the end of each long rest, you can choose one of the following options for your musical apparatus:</p>
+			<p class="indent"><em>Raucous Blast. </em>Your apparatus can assault creatures with a blast of painful sound. As an action, make a spell attack against a creature within 60 feet that can hear you. On hit the creature takes 1d8 thunder damage and is deafened until the start of your next turn. The damage increases by 1d8 at 5th-level (2d8), and again at 11th-level (3d8), and 17th-level (4d8).</p>
+			<p class="indent"><i>Ringing Strike. </i>Your apparatus is a simple weapon with the versatile property, and it deals 1d8 (1d10) bludgeoning damage on hit. You are considered proficient with it, and you can use your Intelligence, in place of Strength, for attack and damage rolls. In addition, you can cast the booming blade spell as long as your apparatus is the material component.</p>
+		</description>
+		<sheet>
+			<description>Starting at 3rd level, you construct a completely unique musical instrument of your own design. You are proficient and with this instrument and it can be used as a spellcasting focus by you. Whenever you make skill check with this apparatus you can add double your proficiency bonus to the roll. If it is destroyed, you can construct a new musical apparatus with your smith's tools at the end of a long rest.&#13;
+			You can only maintain one musical apparatus at a time, and if you create a new one, your previous musical apparatus falls into disrepair and becomes unusable. Your musical apparatus can also be weaponized depending on its design. At the end of each long rest, you can choose one of the following options for your musical apparatus:&#13;
+			Raucous Blast. Your apparatus can assault creatures with a blast of painful sound. As an action, make a spell attack against a creature within 60 feet that can hear you. On hit the creature takes {{raucous:damage}}d8 thunder damage and is deafened until the start of your next turn. &#13;
+			Ringing Strike. Your apparatus is a simple weapon with the versatile property, and it deals 1d8 (1d10) bludgeoning damage on hit. You are considered proficient with it, and you can use your Intelligence, in place of Strength, for attack and damage rolls. In addition, you can cast the booming blade spell as long as your apparatus is the material component.</description>
+		</sheet>
+		<rules>
+			<stat name="raucous:damage" value="1" />
+			<stat name="raucous:damage" value="1" level="5" />
+			<stat name="raucous:damage" value="1" level="11" />
+			<stat name="raucous:damage" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Thunderous Note" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_THUNDEROUS_NOTE">
+		<description>
+			<p>Starting at 5th level, when you deal thunder damage to a creature you gain a bonus to the damage roll equal to your Intelligence modifier (minimum of 1).</p>
+			<p class="indent">In addition, when you attack with your musical apparatus, you can expend a spell slot to knock the target back. The creature is knocked back 10 feet for a 1st-level spell slot, and an additional 10 feet for each spell level higher than 1st.</p>
+		</description>
+		<sheet>
+			<description>Starting at 5th level, when you deal thunder damage to a creature you gain a bonus +{{intelligence:modifier}} to the damage roll.&#13;
+			In addition, when you attack with your musical apparatus, you can expend a spell slot to knock the target back. The creature is knocked back 10 feet for a 1st-level spell slot, and an additional 10 feet for each spell level higher than 1st.</description>
+		</sheet>
+	</element>
+	<element name="Resonant Frequency" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_RESONANT_FREQUENCY">
+		<description>
+			<p>Beginning at 9th level, as an action you can play a note at a pitch that causes a creature of your choice within 10 feet to resonate with undetectable vibrations for 1 hour. The next time that creature is hit with a melee attack, the attacker must make a Constitution saving throw. On a failed save, they take 2d8 thunder damage and cannot take reactions until the beginning of their next turn. On a successful save they take half damage and can use their reaction as normal.</p>
+			<p class="indent">You may use this feature a number of times equal to your Intelligence modifier (minimum of 1), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{intelligence:modifier}}/Long Rest">
+			<description>Beginning at 9th level, as an action you can play a note at a pitch that causes a creature of your choice within 10 feet to resonate with undetectable vibrations for 1 hour. The next time that creature is hit with a melee attack, the attacker must make a Constitution saving throw. On a failed save, they take 2d8 thunder damage and cannot take reactions until the beginning of their next turn. On a successful save they take half damage and can use their reaction as normal.&#13;
+			You may use this feature {{intelligence:modifier}} times, and you regain all expended uses when you finish a long rest.</description>
+			<description level="15">Beginning at 9th level, as an action you can play a note at a pitch that causes a creature of your choice within 10 feet to resonate with undetectable vibrations for 1 hour. The next time that creature is hit with a melee attack, the attacker must make a Constitution saving throw. On a failed save, they take 4d8 thunder damage and cannot take reactions until the beginning of their next turn. On a successful save they take half damage and can use their reaction as normal.&#13;
+			You may use this feature {{intelligence:modifier}} times, and you regain all expended uses when you finish a long rest.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+	<element name="Master Composer" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_COMPOSER_MASTER_COMPOSER">
+		<description>
+			<p>You have mastered both the theory and applications of sound and used this knowledge to improve the effectiveness of your musical apparatus and your composer techniques. Upon reaching 15th level, you gain the following features:</p>
+			<ul>
+				<li>You are immune to thunder damage and the deafened condition.</li>
+				<li>You can change the weaponized effect of your musical apparatus at the end of a short or long rest.</li>
+				<li>When you use your Thunderous Note feature Large or smaller are knocked prone.</li>
+				<li>The damage of Resonant Frequency becomes to 4d8.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have mastered both the theory and applications of sound and used this knowledge to improve the effectiveness of your musical apparatus and your composer techniques. Upon reaching 15th level, you gain the following features:&#13;
+			•You are immune to thunder damage and the deafened condition.&#13;
+			•You can change the weaponized effect of your musical apparatus at the end of a short or long rest.&#13;
+			•When you use your Thunderous Note feature Large or smaller are knocked prone.
+			•The damage of Resonant Frequency becomes to 4d8.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_THUNDER" />
+		</rules>
+	</element>
+</elements>

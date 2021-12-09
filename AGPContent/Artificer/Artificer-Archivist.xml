@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>	
+	<info>
+		<update version="0.0.1">
+			<file name="Artificer-Archivist.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Archivist.xml" />
+		</update>
+	</info>
+	<element name="Archivist" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ARTIFICER_ARCHIVIST">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>For centuries chroniclers and librarians have sought the best way to store vast troves of information. While most were satisfied with scrolls, tomes, and books, the first archivists strove for something greater, storing libraries worth of information in one solitary object, and created the first artificial minds. As an archivist, you are on the cutting edge of arcane advancement. Like all new breakthroughs, you must be careful with who you allow to witness this ability. How will you use your fringe ability to create artificial intelligence?</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_TOOLS_OF_THE_TRADE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_ARCHIVIST_SPELLS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_ARTIFICIAL_MIND" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_ACUTE_OVERLOAD" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_IMPROVED_CONSCIOUSNESS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_MASTER_ARCHIVIST" />
+		</description>
+		<sheet display="false">
+			<description>For centuries chroniclers and librarians have sought the best way to store vast troves of information. While most were satisfied with scrolls, tomes, and books, the first archivists strove for something greater, storing libraries worth of information in one solitary object, and created the first artificial minds. As an archivist, you are on the cutting edge of arcane advancement. Like all new breakthroughs, you must be careful with who you allow to witness this ability. How will you use your fringe ability to create artificial intelligence?</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_TOOLS_OF_THE_TRADE" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_ARCHIVIST_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_ARTIFICIAL_MIND" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_ACUTE_OVERLOAD" level="5" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_IMPROVED_CONSCIOUSNESS" level="9" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_MASTER_ARCHIVIST" level="15" />
+		</rules>
+	</element>
+	<element name="Tools of the Trade" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_TOOLS_OF_THE_TRADE">
+		<description>
+			<p>When you adopt this specialization at 3rd level, you gain proficiency with calligrapher's supplies. If you already have proficiency with calligrapher's supplies you gain proficiency with another type of artisan's tools of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>When you adopt this specialization at 3rd level, you gain proficiency with calligrapher's supplies. If you already have proficiency with calligrapher's supplies you gain proficiency with another type of artisan's tools of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, ARCHIVIST" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+		</rules>
+	</element>
+	<element name="Archivist Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_ARCHIVIST_SPELLS">
+		<description>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Archivist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">ARCHIVIST SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>comprehend languages, dissonant whispers</em></td></tr>
+				<tr><td>5th</td><td><em>detect thoughts, mind spike</em></td></tr>
+				<tr><td>9th</td><td><em>hypnotic pattern, tongues</em></td></tr>
+				<tr><td>13th</td><td><em>locate creature, phantasmal killer</em></td></tr>
+				<tr><td>17th</td><td><em>modify memory, synaptic static</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Archivist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMPREHEND_LANGUAGES" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISSONANT_WHISPERS" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_MIND_SPIKE" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TONGUES" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_KILLER" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SYNAPTIC_STATIC" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Artificial Mind" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_ARTIFICIAL_MIND">
+		<description>
+			<p>Starting at 3rd level, you can awaken artificial minds. At the end of each long rest, you can touch a Tiny nonmagical object with calligrapher's supplies, awakening a mind within. While the mind is inside it, the object is a magic item that requires attunement, and you can use it as a spellcasting focus. If you rouse an artificial mind while you already have one from this feature, the mind transfers to the new object. While attuned to the mind, you gain the following features:</p>
+			<p class="indent"><em>Information Overload. </em>Your artificial mind can overload the minds of your enemies with information. As an action, you can force a creature that you can see within 30 feet to make an Intelligence saving throw. On a failed save, it takes 1d8 psychic damage and disadvantage on the next attack roll it makes before the start of your next turn. The damage of this feature increases as you gain levels in this class: to 2d8 at 5th level, 3d8 at 11th, and 4d8 at 17th level.</p>
+			<p class="indent"><i>Magical Telephony. </i>You can communicate telepathically with any creature carrying one of your infused items within a 1-mile radius. The creature can respond telepathically.</p>
+			<p class="indent"><i>Skill Proficiencies. </i>You gain proficiency in two skills from the respective column on the table below. The material of the object that houses your artificial mind determines the skills you choose from, as its nature affects its innate knowledge.</p>
+			<table>
+				<thead>
+					<tr><td>Material</td><td>Examples</td><td>Skill Proficiencies</td></tr>
+				</thead>
+				<tr><td>Animal</td><td>Parchment, Leather, Bone</td><td>Animal Handling, Insight, Perception, Survival</td></tr>
+				<tr><td>Mineral</td><td>Gems, Glass, Metal, Stone</td><td>Deception, Intimidation, Performance, Persuasion</td></tr>
+				<tr><td>Plant</td><td>Paper, Wood, Leaves</td><td>Arcana, History, Nature, Religion</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Starting at 3rd level, you can awaken artificial minds. At the end of each long rest, you can touch a Tiny nonmagical object with calligrapher's supplies, awakening a mind within. While the mind is inside it, the object is a magic item that requires attunement, and you can use it as a spellcasting focus. If you rouse an artificial mind while you already have one from this feature, the mind transfers to the new object. While attuned to the mind, you gain the following features:&#13;
+			Information Overload. Your artificial mind can overload the minds of your enemies with information. As an action, you can force a creature that you can see within 30 feet to make an Intelligence saving throw. On a failed save, it takes {{overload:damage}}d8 psychic damage and disadvantage on the next attack roll it makes before the start of your next turn.&#13;
+			Magical Telephony. You can communicate telepathically with any creature carrying one of your infused items within a 1-mile radius. The creature can respond telepathically.&#13;
+			Skill Proficiencies. You gain proficiency in two skills from the respective column on the table below. The material of the object that houses your artificial mind determines the skills you choose from, as its nature affects its innate knowledge.</description>
+		</sheet>
+		<rules>
+			<stat name="overload:damage" value="1" />
+			<stat name="overload:damage" value="1" level="5" />
+			<stat name="overload:damage" value="1" level="11" />
+			<stat name="overload:damage" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Artificial Mind, Animal" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_ARTIFICIAL_MIND_ANIMAL">
+		<description>
+			<p>An Archivists Artificial Mind</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency, Animal Artificial Mind" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" />
+		</rules>
+	</element>
+	<element name="Artificial Mind, Mineral" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_ARTIFICIAL_MIND_MINERAL">
+		<description>
+			<p>An Archivists Artificial Mind</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency, Mineral Artificial Mind" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" number="2" />
+		</rules>
+	</element>
+	<element name="Artificial Mind, Plant" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_ARTIFICIAL_MIND_PLANT">
+		<description>
+			<p>An Archivists Artificial Mind</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency, Plant Artificial Mind" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" number="2" />
+		</rules>
+	</element>
+	<element name="Acute Overload" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_ACUTE_OVERLOAD">
+		<description>
+			<p>Starting at 5th level, when you deal psychic damage to a creature you gain a bonus to the damage roll equal to your Intelligence modifier (minimum of +1).</p>
+			<p class="indent">In addition, you can expend a spell slot to increase the psychic damage dealt by your Information Overload feature. The damage increases by 2d8 for a 1st-level spell slot, and an additional 1d8 for each spell level higher than 1st-level.</p>
+		</description>
+		<sheet>
+			<description>Starting at 5th level, when you deal psychic damage to a creature you gain a bonus +{{intelligence:modifier}} to the damage roll.
+			In addition, you can expend a spell slot to increase the psychic damage dealt by your Information Overload feature. The damage increases by 2d8 for a 1st-level spell slot, and an additional 1d8 for each spell level higher than 1st-level.</description>
+		</sheet>
+	</element>
+	<element name="Improved Consciousness" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_IMPROVED_CONSCIOUSNESS">
+		<description>
+			<p>The cognitive abilities of the artificial mind have grown and it can aid you in spellcasting. Starting at 9th level, when you are forced to make a Constitution saving throw to maintain concentration on a spell, you gain a bonus to the saving throw equal to your Intelligence modifier (minimum of +1).</p>
+		</description>
+		<sheet>
+			<description>The cognitive abilities of the artificial mind have grown and it can aid you in spellcasting. Starting at 9th level, when you are forced to make a Constitution saving throw to maintain concentration on a spell, you gain a bonus +{{intelligence:modifier}} to the saving throw.</description>
+		</sheet>
+	</element>
+	<element name="Master Archivist" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ARCHIVIST_MASTER_ARCHIVIST">
+		<description>
+			<p>Upon reaching 15th level you have attained the peak of archival expertise. As an action on your turn, you can turn into pure information and teleport to an unoccupied space within 60 feet that you can see, or to an unoccupied space within 5 feet of an object bearing one of your infusions.</p>
+		</description>
+		<sheet>
+			<description>Upon reaching 15th level you have attained the peak of archival expertise. As an action on your turn, you can turn into pure information and teleport to an unoccupied space within 60 feet that you can see, or to an unoccupied space within 5 feet of an object bearing one of your infusions.</description>
+		</sheet>
+	</element>
+</elements>

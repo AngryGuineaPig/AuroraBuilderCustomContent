@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>	
+	<info>
+		<update version="0.0.1">
+			<file name="Artificer-Sigilist.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Sigilist.xml" />
+		</update>
+	</info>
+	<element name="Sigilist" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ARTIFICER_SIGILIST">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>There are some who toe the line between artificery and magic, manipulating the Wave through symbols of binding and protection. They specialize in crafting arcane glyphs which ward against harm, and while they are known by many names across many cultures, they're most commonly referred to as Sigilists.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_TOOLS_OF_THE_TRADE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_SIGILIST_SPELLS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_WARDCRAFTING" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_DISRUPTING_SIGIL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_IMPROVED_WARDCRAFTING" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_BARRIER_WARD" />
+		</description>
+		<sheet display="false">
+			<description>There are some who toe the line between artificery and magic, manipulating the Wave through symbols of binding and protection. They specialize in crafting arcane glyphs which ward against harm, and while they are known by many names across many cultures, they're most commonly referred to as Sigilists.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_TOOLS_OF_THE_TRADE" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_SIGILIST_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_WARDCRAFTING" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_DISRUPTING_SIGIL" level="5" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_IMPROVED_WARDCRAFTING" level="9" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_BARRIER_WARD" level="15" />
+		</rules>
+	</element>
+	<element name="Tools of the Trade" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_TOOLS_OF_THE_TRADE">
+		<description>
+			<p>When you adopt the Sigilist specialty at 3rd level, you gain proficiency with calligrapher's supplies. If you already proficient with calligrapher's supplies, you gain proficiency with another set of artisan's tools of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>When you adopt the Sigilist specialty at 3rd level, you gain proficiency with calligrapher's supplies. If you already proficient with calligrapher's supplies, you gain proficiency with another set of artisan's tools of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, SIGILIST" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+		</rules>
+	</element>
+	<element name="Sigilist Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_SIGILIST_SPELLS">
+		<description>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Sigilist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">SIGILIST SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>protection from evil and good, shield of faith</em></td></tr>
+				<tr><td>5th</td><td><em>aid, protection from poison</em></td></tr>
+				<tr><td>9th</td><td><em>magic circle, protection from energy</em></td></tr>
+				<tr><td>13th</td><td><em>death ward, freedom of movement</em></td></tr>
+				<tr><td>17th</td><td><em>dispel evil and good, teleportation circle</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Sigilist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD_OF_FAITH" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AID" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_POISON" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_CIRCLE" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TELEPORTATION_CIRCLE" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Wardcrafting" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_WARDCRAFTING">
+		<description>
+			<p>You gain the ability to Inscribe items with various sigils of protection</p>
+			<p class="indent">Over the course of a short rest, you can Inscribe a number of wards equal to half your proficiency bonus. The total number of Inscribed wards can't exceed your proficiency bonus.</p>
+			<p class="indent">A friendly creature with the ward on their person becomes its Bearer and gains benefits from its protection. When you Inscribe a ward, choose one of the following benefits.</p>
+			<ul>
+				<li>Choose a skill or tool proficiency. Whenever the bearer makes an skill or tool check for the skill or tool you chose they may add a d4 to the roll.</li>
+				<li>Choose a damage type. Damage dealt by the bearer overcomes resistances to this type of damage.</li>
+				<li>Choose an artificer spell of a level for which you have spell slots. The bearer may use their spell slots to cast this spell at the inscribed level or higher.</li>
+			</ul>
+			<p class="indent">Additionally, when the bearer of a ward is hit by an attack or fails a saving throw, you may use your reaction to destroy the ward in a burst of protective magic. Until the start of the Bearer's next turn, attack rolls against the Bearer have disadvantage.</p>
+			<p class="indent">Inscribed Wards fade after 24 hours if they are not destroyed beforehand.</p>
+		</description>
+		<sheet>
+			<description>You gain the ability to Inscribe items with various sigils of protection
+			Over the course of a short rest, you can Inscribe {{proficiency:half}} wards. The total number of Inscribed wards can't exceed {{proficiency}}.&#13;
+			A friendly creature with the ward on their person becomes its Bearer and gains benefits from its protection. When you Inscribe a ward, choose one of the following benefits.&#13;
+			•Choose a skill or tool proficiency. Whenever the bearer makes an skill or tool check for the skill or tool you chose they may add a d4 to the roll.&#13;
+			•Choose a damage type. Damage dealt by the bearer overcomes resistances to this type of damage.&#13;
+			•Choose an artificer spell of a level for which you have spell slots. The bearer may use their spell slots to cast this spell at the inscribed level or higher.&#13;
+			Additionally, when the bearer of a ward is hit by an attack or fails a saving throw, you may use your reaction to destroy the ward in a burst of protective magic. Until the start of the Bearer's next turn, attack rolls against the Bearer have disadvantage.&#13;
+			Inscribed Wards fade after 24 hours if they are not destroyed beforehand.</description>
+		</sheet>
+	</element>
+	<element name="Disrupting Sigil" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_DISRUPTING_SIGIL">
+		<description>
+			<p>Once per turn, when you damage a creature with an Artificer cantrip, you may use your bonus action to temporarily mark it with a disrupting sigil. Until the start of your next turn, whenever that creature makes an attack roll or saving throw they subtract a d4 from the roll. You may do this a number of times equal to your intelligence modifier per short rest.</p>
+		</description>
+		<sheet>
+			<description>Once per turn, when you damage a creature with an Artificer cantrip, you may use your bonus action to temporarily mark it with a disrupting sigil. Until the start of your next turn, whenever that creature makes an attack roll or saving throw they subtract a d4 from the roll. You may do this {{intelligence:modifier}} times per short rest.</description>
+		</sheet>
+	</element>
+	<element name="Improved Wardcrafting" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_IMPROVED_WARDCRAFTING">
+		<description>
+			<p>Your skill with creating magical sigils increases. You gain additional options when Inscribing wards:</p>
+			<ul>
+				<li>Choose a damage type. The Bearer gains resistance to damage of that type</li>
+				<li>Choose an ability, whenever the Bearer makes an ability check or saving throw for that ability, they can add a d4 to the roll.</li>
+				<li>When you choose a damage type for the Bearer to ignore resistances of, it also now ignores immunities to that damage type.</li>
+				<li>Choose an Artificer cantrip. The Bearer can cast that cantrip using Intelligence as their spellcasting ability.</li>
+			</ul>
+			<p class="indent">Additionally, the d4 from your Disrupting Sigil ability increases to a d6.</p>
+		</description>
+		<sheet>
+			<description>Your skill with creating magical sigils increases. You gain additional options when Inscribing wards:&#13;
+			•Choose a damage type. The Bearer gains resistance to damage of that type&#13;
+			•Choose an ability, whenever the Bearer makes an ability check or saving throw for that ability, they can add a d4 to the roll.&#13;
+			•When you choose a damage type for the Bearer to ignore resistances of, it also now ignores immunities to that damage type.&#13;
+			•Choose an Artificer cantrip. The Bearer can cast that cantrip using Intelligence as their spellcasting ability.&#13;
+			Additionally, the d4 from your Disrupting Sigil ability increases to a d6.</description>
+		</sheet>
+	</element>
+	<element name="Barrier Ward" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SIGILIST_BARRIER_WARD">
+		<description>
+			<p>Your mastery with defensive sigilry enables you to create a perpetual shield around warded creatures. Each of your wards provides its Bearer with a pool of extra HP equal to your artificer level. Whenever the bearer would take damage they can choose to use the Wards HP. The ward doesn't have the same immunities and resistances as you, it is resistant to poison and force damage and nothing else.</p>
+			<p class="indent">Additionally, the d6 from your Disrupting Sigil feature increases to a d8.</p>
+		</description>
+		<sheet>
+			<description>Your mastery with defensive sigilry enables you to create a perpetual shield around warded creatures. Each of your wards provides its Bearer with a pool of extra HP equal to your artificer level. Whenever the bearer would take damage they can choose to use the Wards HP. The ward doesn't have the same immunities and resistances as you, it is resistant to poison and force damage and nothing else.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="barbarian-hero.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian/barbarian-hero.xml" />
+		</update>
+	</info>
+    <element name="Path of Heroes" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_PATH_OF_HEROES">
+        <supports>Primal Path</supports>
+        <description>
+            <p>Most barbarians are known for their heavy weapons, quick and furious temper and savage nature. But there are barbarians who choose to take a path in which they focus on delivering deadly punches.</p>
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_HEROES_HEROS_FISTS" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_HEROES_INDOMITABLE_SPIRIT" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_HEROES_SIGNATURE_MOVE" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_HEROES_ONE_FOR_ALL" />
+        </description>
+        <sheet display="true">
+            <description>Most barbarians are known for their heavy weapons, quick and furious temper and savage nature. But there are barbarians who choose to take a path in which they focus on delivering deadly punches.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_HEROES_HEROS_FISTS" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_HEROES_INDOMITABLE_SPIRIT" level="6" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_HEROES_SIGNATURE_MOVE" level="10" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_HEROES_ONE_FOR_ALL" level="14" />
+        </rules>
+    </element>
+    <element name="Hero's Fist" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_HEROES_HEROS_FISTS">
+        <description>
+            <p>Starting when you choose this path at 3rd level, you can add your rage damage to both attack and damage rolls with your unarmed strikes. Your unarmed strikes normally deal 1d8 + your strength modifier.</p>
+            <p>Whilst raging, each turn the first unarmed strike that hits a target deals an additional 1d8, which increases to 1d10 at 10th level. Your unarmed strikes deal a critical hit on a 19 or 20.</p>
+        </description>
+        <sheet display="false">
+            <description>Starting when you choose this path at 3rd level, your unarmed strikes normally deal 1d8 + {{strength:modifier}}.&#13;
+            Whilst raging, you can add your rage damage to both attack and damage rolls with your unarmed strikes. Each turn the first unarmed strike that hits a target deals an additional 1d8, which increases to 1d10 at 10th level. Your unarmed strikes deal a critical hit on a 19 or 20.</description>
+        </sheet>
+    </element>
+    <element name="Indomitable Spirit" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_HEROES_INDOMITABLE_SPIRIT">
+        <description>
+            <p>Starting at 6th level, because of your Indomitable Spirit you have advantage on saves against the charmed, frightened or paralyzed conditions. When you succeed a saving throw against being frightened you can use your reaction to try and frighten the creature. The creature must make a wisdom save. The DC is 8 + your proficiency + your strength modifier. Additionally your fists now count as magic weapons.</p>
+        </description>
+        <sheet>
+            <description>Starting at 6th level, because of your Indomitable Spirit you have advantage on saves against the charmed, frightened or paralyzed conditions. When you succeed a saving throw against being frightened you can use your reaction to try and frighten the creature. The creature must make a DC{{Spirit:dc}} wisdom save. Additionally your fists now count as magic weapons.</description>
+        </sheet>
+        <rules>
+            <stat name="Spirit:dc" value="8"/>
+            <stat name="Spirit:dc" value="proficiency"/>
+            <stat name="Spirit:dc" value="strength:modifier"/>
+        </rules>
+    </element>
+    <element name="Signature Move" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_HEROES_SIGNATURE_MOVE">
+        <description>
+            <p>At 10th Level, you have created a signature move, this counts as an unarmed attack and has one of the following effects, this increases to 2 at 14th level and 3 at 18th level:</p>
+            <p class="indent">Before you attack, you can dash for free, if you move more than 30ft in a line towards the target (movement and dash) then the attack deals additional damage equivalent to your dexterity modifier number of d4s</p>
+            <p class="indent">Before you attack you can jump into the air and dash down and deal an additional d4 for every 5 ft you are above your target.</p>
+            <p class="indent">When you attack you also gain temporary hit points equivalent to your barbarian level + your constitution modifier </p>
+            <p class="indent">With your attack you can mage an additional attack as part of the same attack that deals an additional 1d6 damage</p>
+            <p class="indent">When you attack you deal an extra 1d8 fire, lightning or cold damage</p>
+            <p>You can use this feature a number of times equivalent to your strength modifier per long rest.</p>
+        </description>
+        <sheet action="action" usage="{{strength:modifier}}/Long Rest">
+            <description>At 10th Level, you have created a signature move, this counts as an unarmed attack and has one of the following effects, this increases to 2 at 14th level and 3 at 18th level:&#13;
+            Before you attack, you can dash for free, if you move more than 30ft in a line towards the target (movement and dash) then the attack deals additional damage equivalent to {{dexterity:modifier}}d4s&#13;
+            Before you attack you can jump into the air and dash down and deal an additional d4 for every 5 ft you are above your target.&#13;
+            When you attack you also gain temporary hit points equivalent to {{level:barbarian}} + {{constitution:modifier}} &#13;
+            With your attack you can mage an additional attack as part of the same attack that deals an additional 1d6 damage&#13;
+            When you attack you deal an extra 1d8 fire, lightning or cold damage</description>
+        </sheet>
+    </element>    
+    <element name="One for All" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_HEROES_ONE_FOR_ALL">
+        <description>
+            <p>At 14th level, whenever you enter your rage or use your signature move all allies within 15ft gain the following benefits for the next minute</p>
+            <p class="indent">They gain temporary hit points equivalent to half your barbarian level + your constitution modifier</p>
+            <p class="indent">They have advantage on saving throws against being Charmed, Frightened and Paralyzed.</p>
+            <p>Additionally when you are below 1/4 of your maximum hit points, your signature move deals triple damage or the hit points you receive are tripled.</p>
+            <p>At 18th level the range of the aura increases 30ft and the threshold becomes 1/2 maximum hit points.</p>
+        </description>
+        <sheet >
+            <description>At 14th level, whenever you enter your rage or use your signature move all allies within 15ft gain the following benefits for the next minute:&#13;
+            They gain temporary hit points equivalent to {{level:barbarian:half}} + {{constitution:modifier}}&#13;
+            They have advantage on saving throws against being Charmed, Frightened and Paralyzed.&#13;
+            Additionally when you are below 1/4 of your maximum hit points, your signature move deals triple damage or the hit points you receive are tripled.&#13;
+            At 18th level the range of the aura increases 30ft and the threshold becomes 1/2 maximum hit points.</description>
+        </sheet>
+    </element>
+
+</elements>

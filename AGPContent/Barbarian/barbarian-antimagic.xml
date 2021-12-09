@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="barbarian-antimagic.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian/barbarian-antimagic.xml" />
+		</update>
+	</info>
+    <element name="Path of Antimagic" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_PATH_OF_ANTIMAGIC">
+        <supports>Primal Path</supports>
+        <description>
+            <p>Barbarians that follow this path use their rage to push through the damage of magic and resist its effects. After all, if some creatures can use their minds to affect the barbarian, then the barbarian can use their minds to ignore those effects. The Path of Antimagic is a simple one, headed straight through whatever magics might try and stand in your way.</p>
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_ANTIMAGIC_MIND_OVER_MAGIC" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_ANTIMAGIC_UNSTOPPABLE_JUGGERNAUT" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_ANTIMAGIC_MAGIC_SENSE" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_ANTIMAGIC_MAGICAL_MAGNET" />
+        </description>
+        <sheet display="true">
+            <description>Barbarians that follow this path use their rage to push through the damage of magic and resist its effects. After all, if some creatures can use their minds to affect the barbarian, then the barbarian can use their minds to ignore those effects. The Path of Antimagic is a simple one, headed straight through whatever magics might try and stand in your way.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ANTIMAGIC_MIND_OVER_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ANTIMAGIC_UNSTOPPABLE_JUGGERNAUT" level="6" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ANTIMAGIC_MAGIC_SENSE" level="10" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ANTIMAGIC_MAGICAL_MAGNET" level="14" />
+        </rules>
+    </element>
+    <element name="Mind over Magic" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ANTIMAGIC_MIND_OVER_MAGIC">
+        <description>
+            <p>Starting when you choose this path at 3rd level, your rage begins to shield you. While raging you have resistance to all spell damage.</p>
+        </description>
+        <sheet display="false">
+            <description>Starting when you choose this path at 3rd level, your rage begins to shield you. While raging you have resistance to all spell damage.</description>
+        </sheet>
+    </element>
+    <element name="Unstoppable Juggernaut" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ANTIMAGIC_UNSTOPPABLE_JUGGERNAUT">
+        <description>
+            <p>Starting at 6th level, not even magical trickery can stop you. While raging, your speed by magic and any magical effects that would paralyse or petrify you instead causes the effects of the slow spell. Additionally, if you are frightened by a spell, willingly moving towards the source counts a difficult terrain.</p>
+        </description>
+        <sheet>
+            <description>Starting at 6th level, not even magical trickery can stop you. While raging, your speed by magic and any magical effects that would paralyse or petrify you instead causes the effects of the slow spell. Additionally, if you are frightened by a spell, willingly moving towards the source counts a difficult terrain.</description>
+        </sheet>
+    </element>
+    <element name="Magic Sense" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ANTIMAGIC_MAGIC_SENSE">
+        <description>
+            <p>At 10th Level, your continuous battle with magical forces has honed your ability to notice magic to an uncanny degree. You gain the ability to cast detect magic as a ritual. Additionally, you have advantage on intelligence and wisdom checks vs illusions.</p>
+        </description>
+        <sheet>
+            <description>At 10th Level, your continuous battle with magical forces has honed your ability to notice magic to an uncanny degree. You gain the ability to cast detect magic as a ritual. Additionally, you have advantage on intelligence and wisdom checks vs illusions.</description>
+        </sheet>
+    </element>    
+    <element name="Magical Magnet" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ANTIMAGIC_MAGICAL_MAGNET">
+        <description>
+            <p>At 14th level, you begin to draw magic towards you to snuff it out. If a creature within 10ft of you is targeted by a spell, you can use your reaction to force the spell to target you. If the spell requires an attack roll it is made with disadvantage, if it requires a saving throw it is made with advantage.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>At 14th level, you begin to draw magic towards you to snuff it out. If a creature within 10ft of you is targeted by a spell, you can use your reaction to force the spell to target you. If the spell requires an attack roll it is made with disadvantage, if it requires a saving throw it is made with advantage.</description>
+        </sheet>
+    </element>
+</elements>

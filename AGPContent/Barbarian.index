@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+	        <update version="0.0.1">
+			<file name="Barbarian.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian.index" />
+		</update>
+	</info>
+	<files>
+        <file name="barbarian-antimagic.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian/barbarian-antimagic.xml" />
+        <file name="barbarian-depths.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian/barbarian-depths.xml" />
+        <file name="barbarian-fire.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian/barbarian-fire.xml" />
+        <file name="barbarian-focus.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian/barbarian-focus.xml" />
+        <file name="barbarian-fulminous.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian/barbarian-fulminous.xml" />
+        <file name="barbarian-hero.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian/barbarian-hero.xml" />
+        <file name="barbarian-ice.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian/barbarian-ice.xml" />
+        <file name="barbarian-Titan.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Barbarian/barbarian-Titan.xml" />
+	</files>
+</index>
