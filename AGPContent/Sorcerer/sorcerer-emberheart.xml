@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="sorcerer-emberheart.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-emberheart.xml" />
+		</update>
+	</info>
+	<element name="Emberheart" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_SORCERER_ARCHETYPE_EMBER_HEART">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>You have been touched by primordial fire. Did you receive this power as a gift from a noble Efreeti, or were you born near a rift leading to the elemental plane of fire? This ember of primal flame within you may manifest in your outward appearance or through your emotions. Most Emberheart sorcerers revel in their exotic appearance; flame red hair, eyes like glowing embers, or dark skin with magma peering through cracks. Is your flaming soul a raging inferno, unable to be controlled, or, do you seek to master your power?</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_EMBER_HEART_EMBERHEART_MAGIC" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_EMBER_HEART_HEART_OF_FLAME" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_EMBER_HEART_WILD_FIRE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_EMBER_HEART_KINDLE_THE_FLAME" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_EMBER_HEART_PRIMORDIAL_INFERNO" />
+		</description>
+		<sheet display="false">
+			<description>You have been touched by primordial fire. Did you receive this power as a gift from a noble Efreeti, or were you born near a rift leading to the elemental plane of fire? This ember of primal flame within you may manifest in your outward appearance or through your emotions. Most Emberheart sorcerers revel in their exotic appearance; flame red hair, eyes like glowing embers, or dark skin with magma peering through cracks. Is your flaming soul a raging inferno, unable to be controlled, or, do you seek to master your power?</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_EMBER_HEART_EMBERHEART_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_EMBER_HEART_HEART_OF_FLAME" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_EMBER_HEART_WILD_FIRE" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_EMBER_HEART_KINDLE_THE_FLAME" level="14" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_EMBER_HEART_PRIMORDIAL_INFERNO" level="18" />
+		</rules>
+	</element>
+	<element name="Emberheart Magic" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_EMBER_HEART_EMBERHEART_MAGIC">
+		<description>
+			<p>You learn certain spells at the sorcerer levels noted in the Emberheart Magic table. They count as sorcerer spells for you, but don't count against your number of Spells Known.</p>
+			<p class="indent">Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or evocation spell from the sorcerer, warlock, or wizard spell list.</p>
+			<h5 class="caption">Emberheart Magic</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>burning hands, hellish rebuke</em></td></tr>
+				<tr><td>3rd</td><td><em>flaming sphere, scorching ray</em></td></tr>
+				<tr><td>5th</td><td><em>fireball, Melf's minute meteors</em></td></tr>
+				<tr><td>7th</td><td><em>fire shield, summon elemental(fire)</em></td></tr>
+				<tr><td>9th</td><td><em>flame strike, immolation</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or evocation spell from the sorcerer, warlock, or wizard spell list.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Spell, Emberheart Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="1" default="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Emberheart Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Hellish Rebuke" level="1" default="ID_PHB_SPELL_HELLISH_REBUKE" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Emberheart Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Flaming Sphere" level="3" default="ID_PHB_SPELL_FLAMING_SPHERE" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Emberheart Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="3" default="ID_PHB_SPELL_SCORCHING_RAY" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Emberheart Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="5" default="ID_PHB_SPELL_FIREBALL" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Emberheart Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="5" default="ID_XGTE_SPELL_MELFS_MINUTE_METEORS" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Emberheart Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Fire Shield" level="7" default="ID_PHB_SPELL_FIRE_SHIELD" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Emberheart Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Summon Elemental" level="7" default="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Emberheart Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Flame Strike" level="9" default="ID_PHB_SPELL_FLAME_STRIKE" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Emberheart Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="9" default="ID_XGTE_SPELL_IMMOLATION" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Heart of Flame" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_EMBER_HEART_HEART_OF_FLAME">
+		<description>
+			<p>The primordial fire in your soul emboldens you. Starting at 1st level, you are resistant to fire damage and have advantage on saving throws to resist being charmed or frightened.</p>
+			<p class="indent">In addition, you can speak, read, and write Ignan.</p>
+		</description>
+		<sheet>
+			<description>The primordial fire in your soul emboldens you. Starting at 1st level, you are resistant to fire damage and have advantage on saving throws to resist being charmed or frightened. In addition, you can speak, read, and write Ignan.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Language" id="ID_MM_LANGUAGE_IGNAN" />
+		</rules>
+	</element>
+	<element name="Wild Fire" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_EMBER_HEART_WILD_FIRE">
+		<description>
+			<p>Starting at 6th level, when you reduce a creature to 0 hit points with a spell that deals fire damage, you can use you reaction to cause the creature to explode. Creatures within 10 feet must make a Dexterity saving throw. A target takes fire damage based on the size of the slain creature on a failed save, or half as much damage on a successful one. Small creatures deal 1d6 fire damage, and for each size category above Small, the explosion deals an additional 1d6 damage. Tiny or smaller creatures produce no explosion.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{proficiency}}/Long Rest">
+			<description>Starting at 6th level, when you reduce a creature to 0 hit points with a spell that deals fire damage, you can use you reaction to cause the creature to explode. Creatures within 10 feet must make a Dexterity saving throw. A target takes fire damage based on the size of the slain creature on a failed save, or half as much damage on a successful one. Small creatures deal 1d6 fire damage, and for each size category above Small, the explosion deals an additional 1d6 damage. Tiny or smaller creatures produce no explosion.</description>
+		</sheet>
+	</element>
+	<element name="Kindle the Flame" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_EMBER_HEART_KINDLE_THE_FLAME">
+		<description>
+			<p>You are restored by flame. Beginning at 14th level, when you cast a spell of 1st-level or higher that deals fire damage, you can choose to regain hit points equal to the level at which the spell was cast + your Charisma modifier (minimum of 1).</p>
+		</description>
+		<sheet>
+			<description>You are restored by flame. Beginning at 14th level, when you cast a spell of 1st-level or higher that deals fire damage, you can choose to regain hit points equal to the level at which the spell was cast + your Charisma modifier (minimum of 1).</description>
+		</sheet>
+	</element>
+	<element name="Primordial Inferno" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_EMBER_HEART_PRIMORDIAL_INFERNO">
+		<description>
+			<p>You have mastered the elemental fire that burns within your soul, allowing you to become more elemental then mortal. Upon reaching 18th level, you no longer need to eat, drink, or sleep, and you are immune to fire damage.</p>
+			<p class="indent">In addition, when you take damage from a creature within 60 feet, that you can see, you can use your reaction to spend 2 sorcery points and rebuke them with elemental flame. The creature must make a Dexterity saving throw, and on a failed save they take fire damage equal to your sorcerer level.</p>
+		</description>
+		<sheet>
+			<description>You have mastered the elemental fire that burns within your soul, allowing you to become more elemental then mortal. Upon reaching 18th level, you no longer need to eat, drink, or sleep, and you are immune to fire damage.&#13;
+			In addition, when you take damage from a creature within 60 feet, that you can see, you can use your reaction to spend 2 sorcery points and rebuke them with elemental flame. The creature must make a Dexterity saving throw, and on a failed save they take {{level:sorcerer}} fire damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" />
+		</rules>
+	</element>
+	<append id="ID_PHB_SPELL_FLAME_STRIKE">
+		<supports>Flame Strike</supports>
+	</append>
+</elements>

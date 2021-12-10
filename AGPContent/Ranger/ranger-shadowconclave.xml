@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+	    <update version="0.0.1">
+			<file name="ranger-shadowconclave.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Ranger/ranger-shadowconclave.xml" />
+		</update>
+	</info>
+    <element name="Shadow Conclave" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_RANGER_SHADOW_CONCLAVE">
+        <supports>Ranger Archetype, Ranger Conclave</supports>
+        <description>
+            <p>Shadow Conclaves are at home in the darkest places: deep under the earth, in Shadowy alleyways, in primeval forests, and wherever else the light dims. Most folk enter such places with trepidation, but a SHADOW CONCLAVE ventures boldly into the darkness, seeking to ambush threats before they can reach the broader world. Such rangers are often found in the Underdark, but they will go any place where evil lurks in the shadows.</p>
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_SHADOW_REMNANTS" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_SHADOW_MAGIC" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_UNENDING_SIGHT" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_MARGE_WITH_SHADOW" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_SHADOW_STRIKE" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_MY_SHADOW_AND_I" />
+        </description>
+        <sheet>
+            <description>Shadow Conclaves are at home in the darkest places: deep under the earth, in Shadowy alleyways, in primeval forests, and wherever else the light dims.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_SHADOW_REMNANTS" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_SHADOW_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_UNENDING_SIGHT" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_MARGE_WITH_SHADOW" level="7" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_SHADOW_STRIKE" level="11" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_MY_SHADOW_AND_I" level="15" />
+        </rules>
+    </element>
+    <element name="Shadow Magic" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_SHADOW_MAGIC">
+        <description>
+            <p>Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the SHADOW CONCLAVE Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.</p>       
+            <h5>SHADOW CONCLAVE SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Ranger Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td><em>Hex</em></td></tr>
+                <tr><td>5rd</td><td><em>Darkness</em></td></tr>
+                <tr><td>9th</td><td><em>Nondetection</em></td></tr>
+                <tr><td>13th</td><td><em>Shadow of Moil</em></td></tr>
+                <tr><td>17th</td><td><em>Mislead</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HEX" level="3" spellcasting="Ranger"/>
+            <grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5" spellcasting="Ranger" />
+            <grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" level="9" spellcasting="Ranger" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SHADOW_OF_MOIL" level="13" spellcasting="Ranger" />
+            <grant type="Spell" id="ID_PHB_SPELL_MISLEAD" level="17" spellcasting="Ranger" />
+        </rules>
+    </element>
+    <element name="Shadow Remnants" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_SHADOW_REMNANTS">
+        <description>
+            <p>At 3rd level, you can conjure shadowy replicas of your attacks that trail just behind them, containing a fragment of their original power. When you're not in an area of bright light, each time you make a weapon attack on your turn, your target takes 1d4 damage of the weapon's type regardless of whether or not the original attack hit. Additionally as a bonus action you can darken a 10ft diameter one light level for 1 minute.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>At 3rd level, you can conjure shadowy replicas of your attacks that trail just behind them, containing a fragment of their original power. When you're not in an area of bright light, each time you make a weapon attack on your turn, your target takes 1d4 damage of the weapon's type regardless of whether or not the original attack hit. Additionally as a bonus action you can darken a 10ft diameter one light level for 1 minute.</description>
+        </sheet>
+    </element>
+    <element name="Unending Sight" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_UNENDING_SIGHT">
+        <description>
+            <p>At 3rd level, no shadows can hide your enemies from you. You gain 60ft darkvision however it also works in magical darkness.</p>
+        </description>
+        <sheet>
+            <description>At 3rd level, no shadows can hide your enemies from you. You gain 60ft darkvision however it also works in magical darkness.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+        </rules>
+    </element>
+    <element name="Merge with Shadow" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_MARGE_WITH_SHADOW">
+        <description>
+            <p>By 7th level, While you are in darkness and not moving you can use an action to become invisible to all but truesight. Should you attack, or force a creature to make a saving throw, you must use and action to become invisible again. Additionally when you are in darkness or dim light you can teleport up to 90ft as a bonus action.</p>
+        </description>
+        <sheet action="Action/Bonus Action">
+            <description>By 7th level, While you are in darkness and not moving you can use an action to become invisible to all but truesight. Should you attack, or force a creature to make a saving throw, you must use and action to become invisible again. Additionally when you are in darkness or dim light you can teleport up to 90ft as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Shadow Strike" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_SHADOW_STRIKE">
+        <description>
+            <p>At 11th level, you learn to strike as a shadow, unleashing a devastating bombardment of attacks on your enemies. As an action you can make 4 strikes within range of you, these done's hve to be on the same target. These attacks can only be used with a melee weapon that does not have the heavy property, or a ranged weapon. You can use this when you are in darkness and can perform this feature a number of times equivalent to your wisdom modifier per long rest.</p>
+        </description>
+        <sheet action="Action" usage="{{wisdom:modifier}}/Long Rest">
+            <description>At 11th level, you learn to strike as a shadow, unleashing a devastating bombardment of attacks on your enemies. As an action you can make 4 strikes within range of you, these done's hve to be on the same target. These attacks can only be used with a melee weapon that does not have the heavy property, or a ranged weapon. You can use this when you are in darkness and can perform this feature {{wisdom:modifier}} per long rest.</description>
+        </sheet>
+    </element>
+    <element name="My Shadow and I" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_SHADOW_MY_SHADOW_AND_I">
+        <description>
+            <p>Starting at 15th level, you have changed your focus to letting shadows help and guide you to enforcing your will on your own shadow. As an action you can detach your shadow and have it latch onto another creature you can see, make a ranged spell attack on a hit your shadow latches on, on a miss it doesn't. Your shadow retains its shape but acts on your will. While you don't have your shadow you lose 10 from have your maximum hit points. While your shadow is attached to another creature you always know where that creature is as long as it is on the same plane as you. Additionally any attacks you make against the creature your shadow is attached to are made with advantage. Your shadow can attempt to siphon health from the attached creature to you. The creature must make a Constitution saving throw or take 2d8 necrotic damage, you gain the number of hit points the creature looses.</p>
+        </description>
+        <sheet action="Action">
+            <description>Starting at 15th level, you have changed your focus to letting shadows help and guide you to enforcing your will on your own shadow. As an action you can detach your shadow and have it latch onto another creature you can see, make a ranged spell attack on a hit your shadow latches on, on a miss it doesn't. Your shadow retains its shape but acts on your will. While you don't have your shadow you lose 10 from have your maximum hit points. While your shadow is attached to another creature you always know where that creature is as long as it is on the same plane as you. Additionally any attacks you make against the creature your shadow is attached to are made with advantage. Your shadow can attempt to siphon health from the attached creature to you. The creature must make a Constitution saving throw or take 2d8 necrotic damage, you gain the number of hit points the creature looses.</description>
+        </sheet>
+    </element>
+</elements>

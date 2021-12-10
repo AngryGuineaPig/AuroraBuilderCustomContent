@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	    <update version="0.0.1">
+	    <update version="0.0.2">
 			<file name="paladin-anarchy.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Paladin/paladin-anarchy.xml" />
 		</update>
 	</info>
-	<element name="Oath of Anarchy" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_OATH_OF_ANARCHY">
+	<element name="Oath of Anarchy" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_OATH_OF_ANARCHY">
 		<supports>Sacred Oath</supports>
 		<description>
 			<p>The Oath of Anarch swears paladins to ideals of liberty, collectivism and a rejection of hierarchical rulership.</p>
@@ -14,24 +14,24 @@
 			<p class="indent"><b><i>Revolution.</i></b> Change is only brought through sudden transformational struggle.</p>
 			<p class="indent"><b><i>Independence.</i></b> There shall be no lords over others. Power is best left in the hands of the people.</p>
 			<p class="indent"><b><i>Equity.</i></b> Each individual has equal worth. Hierarchies only lead to injustice.</p>
-			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_OATH_SPELLS" />
-			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY" />
-			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_AURA_OF_DEFIANCE" />
-			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_FREE_SPIRITED" />
-			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_EXALTED_INSURGENT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_OATH_SPELLS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_AURA_OF_DEFIANCE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_FREE_SPIRITED" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_EXALTED_INSURGENT" />
 		</description>
 		<sheet display="false">
 			<description>The Oath of Anarch swears paladins to ideals of liberty, collectivism and a rejection of hierarchical rulership.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_OATH_SPELLS" level="3"/>
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY" level="3"/>
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_AURA_OF_DEFIANCE" level="7"/>
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_FREE_SPIRITED" level="15"/>
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_EXALTED_INSURGENT" level="20"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_OATH_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_AURA_OF_DEFIANCE" level="7"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_FREE_SPIRITED" level="15"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_EXALTED_INSURGENT" level="20"/>
 		</rules>
 	</element>
-	<element name="Oath Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_OATH_SPELLS">
+	<element name="Oath Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_OATH_SPELLS">
 		<description>
 			<p>You gain oath spells at the paladin levels listed.</p>
 			<p class="indent"></p>
@@ -63,7 +63,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" level="17" spellcasting="Paladin" prepared="true" />
 		</rules>
 	</element>
-	<element name="Channel Divinity" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY">
+	<element name="Channel Divinity" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY">
 		<description>
 			<p>When you take this oath at 3rd level, you gain the following Channel Divinity options.</p>
 			<p class="indent"><b><i>Syndical Solidarity.</i></b> You draw out collective strength among your allies in dire moments. As an action, choose up to six friendly creatures (including yourself) within 30ft of you can see or that can hear you and can understand you. Each creature gains temporary hit points equal to your paladin level</p>
@@ -73,11 +73,11 @@
 			<description>Syndical Solidarity / Freed From Chains.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY_SYNDICAL_SOLIDARITY" />
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY_FREED_FROM_CHAINS" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY_SYNDICAL_SOLIDARITY" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY_FREED_FROM_CHAINS" />
 		</rules>
 	</element>
-	<element name="Channel Divinity: Syndical Solidarity" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY_SYNDICAL_SOLIDARITY">
+	<element name="Channel Divinity: Syndical Solidarity" type="Archetype Feature" source="Player’s Handbook" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY_SYNDICAL_SOLIDARITY">
 		<description>
 			<p>You draw out collective strength among your allies in dire moments. As an action, choose up to six friendly creatures (including yourself) within 30ft of you can see or that can hear you and can understand you. Each creature gains temporary hit points equal to your paladin level</p>
 		</description>
@@ -85,7 +85,7 @@
 			<description>You draw out collective strength among your allies in dire moments. As an action, choose up to six friendly creatures (including yourself) within 30ft of you can see or that can hear you and can understand you. Each creature gains {{level:paladin}} temporary hit points</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: Freed From Chains" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY_FREED_FROM_CHAINS">
+	<element name="Channel Divinity: Freed From Chains" type="Archetype Feature" source="Player’s Handbook" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_CHANNEL_DIVINITY_FREED_FROM_CHAINS">
 		<description>
 			<p>As an action, you present your holy symbol and speak a prayer of defiance. Each creature in 30ft of you that you choose can reroll a saving throw against a condition effecting them.</p>
 		</description>
@@ -93,7 +93,7 @@
 			<description>As an action, you present your holy symbol and speak a prayer of defiance. Each creature in 30ft of you that you choose can reroll a saving throw against a condition effecting them.</description>
 		</sheet>
 	</element>	
-	<element name="Aura of Defiance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_AURA_OF_DEFIANCE">
+	<element name="Aura of Defiance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_AURA_OF_DEFIANCE">
 		<description>
 			<p>Starting at 7th level, you and friendly creatures within 10ft of you have advantage on saving throws against attacks spells or other effects that would reduce their speed, paralyze them or restrain them. At 18th level this extends to 30ft.</p>
 		</description>
@@ -102,7 +102,7 @@
 			<description level="18">Starting at 18th level, you and friendly creatures within 30ft of you have advantage on saving throws against attacks spells or other effects that would reduce their speed, paralyze them or restrain them.</description>
 		</sheet>
 	</element>
-	<element name="Free Spirited" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_FREE_SPIRITED">
+	<element name="Free Spirited" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_FREE_SPIRITED">
 		<description>
 			<p>Starting at 15th level, Your walking speed increases by 10ft and you can move across difficult terrain without expending additional movement</p>
 		</description>
@@ -113,7 +113,7 @@
 			<stat name="speed" value="10" bonus="movement"/>
 		</rules>
 	</element>
-	<element name="Exalted Insurgent" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_EXALTED_INSURGENT">
+	<element name="Exalted Insurgent" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_ANARCHY_EXALTED_INSURGENT">
 		<description>
 			<p>At 20th level, you can use an acton to take the form of a fearless revolutionary. For 1 minute you gain the following benefits:</p>
 			<ul>

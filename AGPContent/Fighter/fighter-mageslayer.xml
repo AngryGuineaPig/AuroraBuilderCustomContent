@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	        <update version="0.0.1">
+	        <update version="0.0.2">
 			<file name="fighter-mageslayer.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Fighter/fighter-mageslayer.xml" />
 		</update>
 	</info>
-  	<element name="Mage Slayer" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_WOTC_XGTE_ARCHETYPE_FIGHTER_MAGE_SLAYER">
+  	<element name="Mage Slayer" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FIGHTER_MAGE_SLAYER">
     	<supports>Martial Archetype</supports>
     	<description>
 			<p>Fighters that train with an order of Mage Slayers learn a variety of techniques to deal crushing blows to magic users, disrupting concentration and interrupting casting in a disciplined campaign to counter and disable an enemy caster.</p>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SLAYERS_TARGET"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_DEVASTATING_STRIKE"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_STUDIED_HUNTER"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_PREDATORY_FOCUS"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_RELENTLESS_HUNTER"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SLAYERS_TARGET"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DEVASTATING_STRIKE"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_STUDIED_HUNTER"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_PREDATORY_FOCUS"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_RELENTLESS_HUNTER"/>
 		</description>
 		<setters>
       		<set name="override">true</set>
@@ -22,14 +22,14 @@
 			<description>Fighters that train with an order of Mage Slayers learn a variety of techniques to deal crushing blows to magic users, disrupting concentration and interrupting casting in a disciplined campaign to counter and disable an enemy caster.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SLAYERS_TARGET" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DEVASTATING_STRIKE" level="7" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_STUDIED_HUNTER" level="10" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PREDATORY_FOCUS" level="15" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_RELENTLESS_HUNTER" level="18" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SLAYERS_TARGET" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DEVASTATING_STRIKE" level="7" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STUDIED_HUNTER" level="10" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_PREDATORY_FOCUS" level="15" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RELENTLESS_HUNTER" level="18" />
 		</rules>
 	</element>
-	<element name="Slayer's Target" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SLAYERS_TARGET">
+	<element name="Slayer's Target" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SLAYERS_TARGET">
 		<description>
 			<p>Starting when you choose this archetype at 3rd level, you can use your bonus action to mark an enemy you can see within 60ft of you. If they visibly attempt to cast a spell you can use your reaction to make an attack against that creature. On a hit they must make a concentration check at disadvantage. If they fail then the spell fails, it consumes a spell slot however there are no further effects. After 1 minute the target ends. You can use this feature a number of times equivalent to your fighter level per short rest. At 6th level this increases to two targets, three at 10th level, 4 at 14th level and 5 at 18th</p>
 		</description>
@@ -42,7 +42,7 @@
 		</sheet>
 	</element>
 
-	<element name="Devastating Strike" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DEVASTATING_STRIKE">
+	<element name="Devastating Strike" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DEVASTATING_STRIKE">
 		<description>
 			<p>At 7th level, you learn to focus your attacks into fewer more powerful strikes. As an action you can make a single attack. If you hit, you roll double the dice. At 11th level this increases to three times the damage and at 20th it increases to four times.</p>
 		</description>
@@ -52,7 +52,7 @@
 			<description level="20">At 20th level, you learn to focus your attacks into fewer more powerful strikes. As an action you can make a single attack. If you hit, you roll quadruple the dice.</description>
 		</sheet>
 	</element>
-	<element name="Studied Hunter" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_STUDIED_HUNTER">
+	<element name="Studied Hunter" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STUDIED_HUNTER">
 		<description>
 			<p>At 10th level, if you spend at least one minute observing a creature, even if in combat, you can glean two pieces of information based off the ones below. The DM will reply either equal, inferior or superior in comparison to your own.</p>
 			<p>Casting ability: the creatures casting ability (wisdom, intelligence or charisma) not in comparison to yours but which ability they use.</p>
@@ -72,7 +72,7 @@
 			Current hit points: In comparison to your current hit points</description>
 		</sheet>
 	</element>
-	<element name="Predatory Focus" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PREDATORY_FOCUS">
+	<element name="Predatory Focus" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_PREDATORY_FOCUS">
 		<description>
 			<p>At 15th level, your singular focus on your target makes you harder to stop. When you mark a Slayer's Target until your next turn any spells they make against you are made at disadvantage and you have advantage on the saving throws.</p>
 		</description>
@@ -80,7 +80,7 @@
 			<description>At 15th level, your singular focus on your target makes you harder to stop. When you mark a Slayer's Target until your next turn any spells they make against you are made at disadvantage and you have advantage on the saving throws.</description>
 		</sheet>
 	</element>
-	<element name="Relentless Hunter" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_RELENTLESS_HUNTER">
+	<element name="Relentless Hunter" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RELENTLESS_HUNTER">
 		<description>
 			<p>At 18th level your hunger to destroy your target increases. You can mark up to 5 targets with your Slayer's Target as long as you can see them regardless of the range, All benefits of Slayer's Target and Predatory Focus last until you drop them or loose sight of them for over a minute.</p>
 		</description>

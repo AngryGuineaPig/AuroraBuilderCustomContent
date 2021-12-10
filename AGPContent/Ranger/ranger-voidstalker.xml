@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+	    <update version="0.0.1">
+			<file name="ranger-voidstalker.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Ranger/ranger-voidstalker.xml" />
+		</update>
+	</info>
+    <element name="Voidstalker" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_RANGER_VOIDSTALKER">
+        <supports>Ranger Archetype, Ranger Conclave</supports>
+        <description>
+            <p>Voidstalker rangers are rangers who favour the bow, imbuing their bows with the ferocious nature of the void to become highly mobile, highly lethal archers.</p>
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_RANGER_VOIDSTALKER_ARCANE_ARROWS" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_RANGER_VOIDSTALKER_VOIDSTALKER_MAGIC" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_RANGER_VOIDSTALKER_MAGIC_EMPOWERMENT" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_RANGER_VOIDSTALKER_ARCANE_BOOST" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_RANGER_VOIDSTALKER_VOID_BOW" />
+        </description>
+        <sheet>
+            <description>Voidstalker rangers are rangers who favour the bow, imbuing their bows with the ferocious nature of the void to become highly mobile, highly lethal archers.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_VOIDSTALKER_ARCANE_ARROWS" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_VOIDSTALKER_VOIDSTALKER_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_VOIDSTALKER_MAGIC_EMPOWERMENT" level="7" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_VOIDSTALKER_ARCANE_BOOST" level="11" />
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_VOIDSTALKER_VOID_BOW" level="15" />
+        </rules>
+    </element>
+    <element name="Voidstalker Magic" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_VOIDSTALKER_VOIDSTALKER_MAGIC">
+        <description>
+            <p>Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Voidstalker Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.</p>       
+            <h5>VOIDSTALKER SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Ranger Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td><em>Detect Magic</em></td></tr>
+                <tr><td>5rd</td><td><em>Misty Step</em></td></tr>
+                <tr><td>9th</td><td><em>Dispel Magic</em></td></tr>
+                <tr><td>13th</td><td><em>Greater Invisibility</em></td></tr>
+                <tr><td>17th</td><td><em>Conjure Elemental</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" level="3" spellcasting="Ranger"/>
+            <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="5" spellcasting="Ranger" />
+            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" level="9" spellcasting="Ranger" />
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="13" spellcasting="Ranger" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" level="17" spellcasting="Ranger" />
+        </rules>
+    </element>
+    <element name="Arcane Arrows" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_VOIDSTALKER_ARCANE_ARROWS">
+        <description>
+            <p>At 3rd level, you gain the ability to create an arrow infused with magic. Your eyes and bow glow faintly as you pull back the string, and a arrow made of energy forms in the bow. At 3rd level you can form cantrip arrows, at 5th level you can form 1st level arrows, at 7th level you can form 2nd level arrows and at 9th level you can form 3rd level arrows. You have 3 arrows of each type per long rest.</p>
+        </description>
+        <sheet action="3/Long Rest">
+            <description>At 3rd level, you gain the ability to create an arrow infused with magic. Your eyes and bow glow faintly as you pull back the string, and a arrow made of energy forms in the bow. You can spend an action to create and fire a cantrip arrow. You can use 3 of these per long rest.</description>
+            <description level="5">At 5th level, you gain the ability to create an arrow infused with magic. Your eyes and bow glow faintly as you pull back the string, and a arrow made of energy forms in the bow. You can spend an action to create and fire a cantrip or a 1st level arrow. You can use 3 cantrip arrows and 3 1st level arrows per long rest.</description>
+            <description level="7">At 7th level, you gain the ability to create an arrow infused with magic. Your eyes and bow glow faintly as you pull back the string, and a arrow made of energy forms in the bow. You can spend an action to create and fire a cantrip, 1st level, or 2nd level arrow. You can use 3 cantrip arrows, 3 1st level arrows and 3 2nd level arrows per long rest.</description>
+            <description level="9">At 9th level, you gain the ability to create an arrow infused with magic. Your eyes and bow glow faintly as you pull back the string, and a arrow made of energy forms in the bow. You can spend an action to create and fire a cantrip, 11st level, 2nd level or 3rd level arrow. You can use 3 cantrip, 1st level, 2nd level and 3rd level arrows per long rest.</description>
+        </sheet>
+    </element>
+    <element name="Magic Empowerment" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_VOIDSTALKER_MAGIC_EMPOWERMENT">
+        <description>
+            <p>At 7th level, your movement speed increases by 15ft, when you take fall damage it is reduced by (10 x your ranger level), you can impose disadvantage on attacks up to a number of times equal to your dexterity modifier per short rest. Additionally you gain the lunge ability.</p>
+            <p class="indent"><b>Lunge.</b> as an action you can launch yourself in any direction as far as your movement speed. When you do so you do not impose attacks of opportunity additionally as a bonus action you can take one attack with your bow whilst in motion.</p>
+        </description>
+        <sheet action="Action">
+            <description>At 7th level, your movement speed increases by 15ft, when you take fall damage it is reduced by {{empowerment:fall}}, you can impose disadvantage on attacks up to {{dexterity:modifier}} per short rest. Additionally you gain the lunge ability.&#13;
+            Lunge.As an action you can launch yourself in any direction as far as your movement speed. When you do so you do not impose attacks of opportunity additionally as a bonus action you can take one attack with your bow whilst in motion.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:misc" requirements="[innate speed:1]" value="15"/>
+            <stat name="innate speed:climb:misc" requirements="[innate speed:climb:1]" value="15"/>
+            <stat name="innate speed:fly:misc" requirements="[innate speed:fly:1]" value="15"/>
+            <stat name="innate speed:swim:misc" requirements="[innate speed:swim:1]" value="15"/>
+            <stat name="innate speed:burrow:misc" requirements="[innate speed:burrow:1]" value="15"/>
+            <stat name="empowerment:fall" value="level:ranger" />
+            <stat name="empowerment:fall" value="level:ranger" />
+            <stat name="empowerment:fall" value="level:ranger" />
+            <stat name="empowerment:fall" value="level:ranger" />
+            <stat name="empowerment:fall" value="level:ranger" />
+            <stat name="empowerment:fall" value="level:ranger" />
+            <stat name="empowerment:fall" value="level:ranger" />
+            <stat name="empowerment:fall" value="level:ranger" />
+            <stat name="empowerment:fall" value="level:ranger" />
+            <stat name="empowerment:fall" value="level:ranger" />
+        </rules>
+    </element>
+    <element name="Arcane Boost" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_VOIDSTALKER_ARCANE_BOOST">
+        <description>
+            <p>By 11th level, using your stores of magical power, you can boost your physical abilities for a short period. You can use a bonus action to activate one of the following effects for 1 minute once per long rest:</p>
+            <p class="indent"><b>Spell Shield.</b> You gain a +2 to AC as you are enshrouded in magical energy</p>
+            <p class="indent"><b>Arcane Vision.</b> Your eyes begin to glow with energy and you gain the ability to see up to 120ft in both magical and non magical darkness and have advantage on all checks that would use your eyes.</p>
+            <p class="indent"><b>Spell Sniper.</b> If you don't move on your turn you gain advantage on all attack rolls, additionally you gain 1d8 force damage if your attack lands.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Long Rest">
+            <description>By 11th level, using your stores of magical power, you can boost your physical abilities for a short period. You can use a bonus action to activate one of the following effects for 1 minute once per long rest:&#13;
+                Spell Shield. You gain a +2 to AC as you are enshrouded in magical energy&#13;
+                Arcane Vision. Your eyes begin to glow with energy and you gain the ability to see up to 120ft in both magical and non magical darkness and have advantage on all checks that would use your eyes.&#13;
+                Spell Sniper. If you don't move on your turn you gain advantage on all attack rolls, additionally you gain 1d8 force damage if your attack lands.</description>
+        </sheet>
+    </element>
+    <element name="Void Bow" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RANGER_VOIDSTALKER_VOID_BOW">
+        <description>
+            <p>At 17th level, you've unlocked the void energy within you. You can summon your void bow, a magical longbow that generates its own ammunition. As an action you can summon the bow and it lasts for 1 minute. As an action you can fire 3 arrows from the bow, each arrow deals 10d6 force damage in a 10ft radius on a failed dexterity save against your spellsave DC. At 20th level you can fire 5 arrows as an action rather than 3. You can use this feature once per long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>At 17th level, you've unlocked the void energy within you. You can summon your void bow, a magical longbow that generates its own ammunition. As an action you can summon the bow and it lasts for 1 minute. As an action you can fire 3 arrows from the bow, each arrow deals 10d6 force damage in a 10ft radius on a failed dexterity save against your spellsave DC. You can use this feature once per long rest.</description>
+            <description>At 20th level, you've unlocked the void energy within you. You can summon your void bow, a magical longbow that generates its own ammunition. As an action you can summon the bow and it lasts for 1 minute. As an action you can fire 5 arrows from the bow, each arrow deals 10d6 force damage in a 10ft radius on a failed dexterity save against your spellsave DC. You can use this feature once per long rest.</description>
+        </sheet>
+    </element>
+</elements>

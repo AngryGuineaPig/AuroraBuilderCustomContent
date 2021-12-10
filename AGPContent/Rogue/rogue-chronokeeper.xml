@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+	    <update version="0.0.1">
+			<file name="rogue-chronokeeper.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Rogue/rogue-chronokeeper.xml" />
+		</update>
+	</info>
+    <element name="Chronokeeper" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_CHRONOKEEPER">
+        <supports>Roguish Archetype</supports>
+        <description>
+            <p>You focus your training on the magical study of chronomancy, and use that time-manipulating magic to make it so things tend to go your way. Rather than learning spells as an Arcane Trickster does, you learn unique arcane techniques passed through Chronokeepers. Though, in rare cases, particularly prodigious rogues can learn these techniques without a mentor.</p>
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_CHRONOKEEPER_CHRNONOSHIFT" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_CHRONOKEEPER_HIDDEN_IN_TIME" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_CHRONOKEEPER_FORETHOUGHT" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_CHRONOKEEPER_TIMESPLIT" />
+        </description>
+        <sheet display="false">
+            <description>You focus your training on the magical study of chronomancy, and use that time-manipulating magic to make it so things tend to go your way. Rather than learning spells as an Arcane Trickster does, you learn unique arcane techniques passed through Chronokeepers. Though, in rare cases, particularly prodigious rogues can learn these techniques without a mentor.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CHRONOKEEPER_CHRNONOSHIFT" level="3"/>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CHRONOKEEPER_HIDDEN_IN_TIME" level="9"/>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CHRONOKEEPER_FORETHOUGHT" level="13"/>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CHRONOKEEPER_TIMESPLIT" level="17"/>
+        </rules>
+    </element>
+    <element name="Chronoshift" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CHRONOKEEPER_CHRNONOSHIFT">
+        <description>
+            <p>Starting at 3rd level, you may manipulate time in your favor. When you roll initiative, you mark your current location in space and time for up to 10 minutes. Once during these 10 minutes you may use your bonus action to teleport back to this location as long as it is unoccupied and within 60ft. Once you have teleported you gain sneak attack on your next hit as long as it is made before the end of your turn.</p>
+            <p class="indent">When you use this bonus action, once per long rest, you may choose to regain temporary hit points equal to you intelligence modifier.</p>
+        </description>
+        <sheet action="Bonus Action" >
+            <description>Starting at 3rd level, you may manipulate time in your favor. When you roll initiative, you mark your current location in space and time for up to 10 minutes. Once during these 10 minutes you may use your bonus action to teleport back to this location as long as it is unoccupied and within 60ft. Once you have teleported you gain sneak attack on your next hit as long as it is made before the end of your turn.&#13;
+            When you use this bonus action, once per long rest, you may choose to regain {{intelligence:modifier}} temporary hit points.</description>
+        </sheet>
+    </element>
+    <element name="Hidden in Time" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CHRONOKEEPER_HIDDEN_IN_TIME">
+        <description>
+            <p>Starting at 9th level, you can leap back to a previous position as you conceal yourself from enemies. When you take the Hide action on your turn, you can choose to teleport to an unoccupied space within 15ft that you've occupied since the start of your last turn, before you make the Stealth check.</p>
+        </description>
+        <sheet>
+            <description>Starting at 9th level, you can leap back to a previous position as you conceal yourself from enemies. When you take the Hide action on your turn, you can choose to teleport to an unoccupied space within 15ft that you've occupied since the start of your last turn, before you make the Stealth check.</description>
+        </sheet>
+    </element>
+    <element name="Forethought" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CHRONOKEEPER_FORETHOUGHT">
+        <description>
+            <p>At 13th level, you learn to call upon glimpses of the future. As a bonus action, you roll a d20, the next time you would roll a d20 this turn you can choose to use this roll rather than rolling.</p>
+            <p class="indent">You may use this feature a number of times equal to your Intelligence modifier and you regain all expended uses of it when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{intelligence:modifier}}/Long Rest" action="Bonus Action">
+            <description>At 13th level, you learn to call upon glimpses of the future. As a bonus action, you roll a d20, the next time you would roll a d20 this turn you can choose to use this roll rather than rolling.&#13;
+            You may use this feature {{intelligence:modifier}} times and you regain all expended uses of it when you finish a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Timesplit" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CHRONOKEEPER_TIMESPLIT">
+        <description>
+            <p>Starting at 17th level, you learn to use your chronomatic abilities to split your reality into two separate timelines, and then take the better of the two. At the start of a turn, you can choose to activate this feature. After you do so, you complete your turn as normal. When that turn ends, however, you immediately repeat the turn rather than moving on to the next one. You begin the turn again in the same state as you started it, and the world around you is returned to that state as well. You then complete the turn again, potentially taking different actions and creating new outcomes.</p>
+            <p class="indent">At the end of the second turn, you choose one of the two turns This turn fully completes, and all actions and outcomes become finalized, whereas the other turn is disregarded as if it never happened. However both yourself and all other creatures are aware of the fact that it happened and whatever events ocurred within it.</p>
+            <p class="indent">Once you use this feature you cannot use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>Starting at 17th level, you learn to use your chronomatic abilities to split your reality into two separate timelines, and then take the better of the two. At the start of a turn, you can choose to activate this feature. After you do so, you complete your turn as normal. When that turn ends, however, you immediately repeat the turn rather than moving on to the next one. You begin the turn again in the same state as you started it, and the world around you is returned to that state as well. You then complete the turn again, potentially taking different actions and creating new outcomes.&#13;
+            At the end of the second turn, you choose one of the two turns This turn fully completes, and all actions and outcomes become finalized, whereas the other turn is disregarded as if it never happened. However both yourself and all other creatures are aware of the fact that it happened and whatever events ocurred within it.&#13;
+            Once you use this feature you cannot use it again until you finish a long rest.</description>
+        </sheet>
+    </element>
+</elements>

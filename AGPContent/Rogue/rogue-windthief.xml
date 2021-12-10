@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+	    <update version="0.0.1">
+			<file name="rogue-windthief.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Rogue/rogue-windthief.xml" />
+		</update>
+	</info>
+    <element name="Wind Thief" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WIND_THIEF">
+        <supports>Roguish Archetype</supports>
+        <description>
+            <p>Rogues of the Wind Thief archetype are swift and precise. They dash past without warning, strike at a weakpoint and dash away in he blink of an eye.</p>
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_WIND_THIEF_SWIFTNESS_OF_THE_WIND" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_WIND_THIEF_STRIKE_OF_THE_WIND" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_WIND_THIEF_SLIPPERY_LIKE_THE_WIND" />
+            <div element="ID_RDDT_ARCHETYPE_FEATURE_WIND_THIEF_WINDY_EVASION" />
+        </description>
+        <sheet>
+            <description>Rogues of the Wind Thief archetype are swift and precise. They dash past without warning, strike at a weakpoint and dash away in he blink of an eye.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WIND_THIEF_SWIFTNESS_OF_THE_WIND" level="3"/>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WIND_THIEF_STRIKE_OF_THE_WIND" level="9"/>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WIND_THIEF_SLIPPERY_LIKE_THE_WIND" level="13"/>
+            <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WIND_THIEF_WINDY_EVASION" level="17"/>
+        </rules>
+    </element>
+    <element name="Swiftness of the Wind" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WIND_THIEF_SWIFTNESS_OF_THE_WIND">
+        <description>
+            <p>Starting at 3rd level, your speed increases by 10ft, opportunity attacks made against you are made with disadvantage whilst you aren't wearing armour heavier than light.</p>
+        </description>
+        <sheet >
+            <description>Starting at 3rd level, your speed increases by 10ft, opportunity attacks made against you are made with disadvantage whilst you aren't wearing armour heavier than light.</description>
+        </sheet>
+        <rules>
+            <stat name="wind:movement" value="10" bonus="movement" level="3" />
+			<stat name="innate speed:misc" value="wind:movement" bonus="movement" equipped="[armor:none]||[armor:light]" requirements="[innate speed:1]" />
+			<stat name="innate speed:climb:misc" value="wind:movement" bonus="movement" equipped="[armor:none]||[armor:light]" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="wind:movement" bonus="movement" equipped="[armor:none]||[armor:light]" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="wind:movement" bonus="movement" equipped="[armor:none]||[armor:light]" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="wind:movement" bonus="movement" equipped="[armor:none]||[armor:light]" requirements="[innate speed:burrow:1]" />
+        </rules>
+    </element>
+    <element name="Strike of the Wind" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WIND_THIEF_STRIKE_OF_THE_WIND">
+        <description>
+            <p>Starting at 9th level, if you move 15ft or more in a straight line before attacking, you gain advantage on the attack roll.</p>
+        </description>
+        <sheet>
+            <description>Starting at 9th level, if you move 15ft or more in a straight line before attacking, you gain advantage on the attack roll..</description>
+        </sheet>
+    </element>
+    <element name="Slippery like the Wind" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WIND_THIEF_SLIPPERY_LIKE_THE_WIND">
+        <description>
+            <p>At 13th level, you've mastered the wind's incorporeal nature. As an action, you can slip out of being grappled. Though a space no smaller then 3 inches by 3 inches, or through a cracked door or window. Once you use this feature you can't use it again until you finish a short rest.</p>
+        </description>
+        <sheet usage="1/Short Rest" action="Action">
+            <description>At 13th level, you've mastered the wind's incorporeal nature. As an action, you can slip out of being grappled. Though a space no smaller then 3 inches by 3 inches, or through a cracked door or window. Once you use this feature you can't use it again until you finish a short rest.</description>
+        </sheet>
+    </element>
+    <element name="Born of Flame" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WIND_THIEF_WINDY_EVASION">
+        <description>
+            <p>Starting at 17th level, you can use your wind techniques to avoid what would otherwise be certain doom. If you are hit by an attack or spell, or fail a saving throw against an area effect such as fireball, you can turn the hit not a miss or a failed save into a success. Once you use this feature you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>Starting at 17th level, you can use your wind techniques to avoid what would otherwise be certain doom. If you are hit by an attack or spell, or fail a saving throw against an area effect such as fireball, you can turn the hit not a miss or a failed save into a success. Once you use this feature you can't use it again until you finish a long rest.</description>
+        </sheet>
+    </element>
+</elements>

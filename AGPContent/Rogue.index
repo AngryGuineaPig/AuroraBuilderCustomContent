@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+	    <update version="0.0.1">
+			<file name="Rogue.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Rogue.index" />
+		</update>
+	</info>
+	<files>
+        <file name="rogue-ashstalker.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Rogue/rogue-ashstalker.xml" />
+		<file name="rogue-chronokeeper.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Rogue/rogue-chronokeeper.xml" />
+		<file name="rogue-windthief.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Rogue/rogue-windthief.xml" />
+    </files>
+</index>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	    <update version="0.0.1">
+	    <update version="0.0.2">
 			<file name="paladin-primordials.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Paladin/paladin-primordials.xml" />
 		</update>
 	</info>
-	<element name="Oath of The Primordials" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_OATH_OF_THE_PRIMORDIALS">
+	<element name="Oath of The Primordials" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_OATH_OF_THE_PRIMORDIALS">
 		<supports>Sacred Oath</supports>
 		<description>
 			<p>Many Paladins pledge themselves to gods. Very few pledge themselves to the elements or the world itself.</p>
@@ -14,24 +14,24 @@
 			<p class="indent"><b><i>Embody the Elements.</i></b> Be as passionate as fire. As adaptable as water. As steadfast as stone. As free as the wind. As verbose as thunder. As quick as lightning.</p>
 			<p class="indent"><b><i>Speak the Splendor.</i></b> When possible, and when there are those willing to listen, teach them the wonders and splendors of the natural world. Before attempting to destroy those who would destroy it, teach them why it is worth protecting.</p>
 			<p class="indent"><b><i>Restoration.</i></b> In the case of environmental damage, heal and restore what is possible, when possible for you.</p>
-			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_OATH_SPELLS" />
-			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_CHANNEL_DIVINITY" />
-			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_AURA_OF_THE_ELEMENTS" />
-			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_ELEMENTAL_WARDEN" />
-			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_ELEMENTAL_AVATAR" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_OATH_SPELLS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_CHANNEL_DIVINITY" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_AURA_OF_THE_ELEMENTS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_ELEMENTAL_WARDEN" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_ELEMENTAL_AVATAR" />
 		</description>
 		<sheet display="false">
 			<description>Many Paladins pledge themselves to gods. Very few pledge themselves to the elements or the world itself.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_OATH_SPELLS" level="3"/>
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_CHANNEL_DIVINITY" level="3"/>
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_AURA_OF_THE_ELEMENTS" level="7"/>
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_ELEMENTAL_WARDEN" level="15"/>
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_ELEMENTAL_AVATAR" level="20"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_OATH_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_CHANNEL_DIVINITY" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_AURA_OF_THE_ELEMENTS" level="7"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_ELEMENTAL_WARDEN" level="15"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_ELEMENTAL_AVATAR" level="20"/>
 		</rules>
 	</element>
-	<element name="Oath Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_OATH_SPELLS">
+	<element name="Oath Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_OATH_SPELLS">
 		<description>
 			<p>You gain oath spells at the paladin levels listed.</p>
 			<p class="indent"></p>
@@ -63,7 +63,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_WRATH_OF_NATURE" level="17" spellcasting="Paladin" prepared="true" />
 		</rules>
 	</element>
-	<element name="Channel Divinity" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_CHANNEL_DIVINITY">
+	<element name="Channel Divinity" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_CHANNEL_DIVINITY">
 		<description>
 			<p>When you take this oath at 3rd level, you gain the following Channel Divinity options.</p>
 			<p class="indent"><b><i>Return To Form.</i></b> You can use your Channel Divinity to invoke the healing spirits of nature. As and action you cause a swath of infertile land up to a square mile in a cube, cursed or otherwise, to become healthy land where plants can grow. Plants show small signs of growing shortly after this takes effect.</p>
@@ -73,11 +73,11 @@
 			<description>Return to Form / Elemental Strike.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_CHANNEL_DIVINITY_RETURN_TO_FORM" />
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_CHANNEL_DIVINITY_ELEMENTAL_STRIKE" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_CHANNEL_DIVINITY_RETURN_TO_FORM" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_CHANNEL_DIVINITY_ELEMENTAL_STRIKE" />
 		</rules>
 	</element>
-	<element name="Channel Divinity: Return to Form" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_CHANNEL_DIVINITY_RETURN_TO_FORM">
+	<element name="Channel Divinity: Return to Form" type="Archetype Feature" source="Player’s Handbook" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_CHANNEL_DIVINITY_RETURN_TO_FORM">
 		<description>
 			<p>You can use your Channel Divinity to invoke the healing spirits of nature. As and action you cause a swath of infertile land up to a square mile in a cube, cursed or otherwise, to become healthy land where plants can grow. Plants show small signs of growing shortly after this takes effect.</p>
 		</description>
@@ -85,7 +85,7 @@
 			<description>You can use your Channel Divinity to invoke the healing spirits of nature. As and action you cause a swath of infertile land up to a square mile in a cube, cursed or otherwise, to become healthy land where plants can grow. Plants show small signs of growing shortly after this takes effect.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: Elemental Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_CHANNEL_DIVINITY_ELEMENTAL_STRIKE">
+	<element name="Channel Divinity: Elemental Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_CHANNEL_DIVINITY_ELEMENTAL_STRIKE">
 		<description>
 			<p>You can use your Channel Divinity to invoke the wrath of the elements. When you make a melee attack roll you can use your Channel Divinity to deal an additional 4d6 damage, 1d6 of cold, fire, lightning, thunder.</p>
 		</description>
@@ -93,7 +93,7 @@
 			<description>You can use your Channel Divinity to invoke the wrath of the elements. When you make a melee attack roll you can use your Channel Divinity to deal an additional 4d6 damage, 1d6 of cold, fire, lightning, thunder.</description>
 		</sheet>
 	</element>	
-	<element name="Aura of The Elements" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_AURA_OF_THE_ELEMENTS">
+	<element name="Aura of The Elements" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_AURA_OF_THE_ELEMENTS">
 		<description>
 			<p>Starting at 7th level, the elements have designated yous as their protector. You and friendly creatures within 10ft of you have resistance to cold, fire, lightning and thunder damage. This extends to 30ft at 18th level</p>
 		</description>
@@ -108,7 +108,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
 		</rules>
 	</element>
-	<element name="Elemental Warden" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_ELEMENTAL_WARDEN">
+	<element name="Elemental Warden" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_ELEMENTAL_WARDEN">
 		<description>
 			<p>Starting at 15th level, you age 1 year for every 10 years that pass and you can't be aged by magical means. There is also a slight cosmetic change that incorporates the elements.</p>
 		</description>
@@ -116,7 +116,7 @@
 			<description>Starting at 15th level, you age 1 year for every 10 years that pass and you can't be aged by magical means. There is also a slight cosmetic change that incorporates the elements.</description>
 		</sheet>
 	</element>
-	<element name="Elemental Avatar" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_ELEMENTAL_AVATAR">
+	<element name="Elemental Avatar" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OATH_OF_THE_PRIMORDIALS_ELEMENTAL_AVATAR">
 		<description>
 			<p>At 20th level, You can use your action to undergo a transformation for 1 minute you gain the following benefits: You gain immunities to the damage types listed in aura of the elements. You gain a flying speed of 60ft. As a bonus action you choose 3 creatures that must make a charisma saving throw. On a failed save they take your paladin level of damage in one of the types of damage listed in your aura of the elements. on a successful save the damage is halved.</p>
 			<p>This effect ends early if you are incapacitated or die. Once you use this feature, you can't use it again until you finish a long rest.</p>

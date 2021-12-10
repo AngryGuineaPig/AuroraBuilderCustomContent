@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="sorcerer-oozeblooded.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-oozeblooded.xml" />
+		</update>
+	</info>
+	<element name="Ooze Blooded" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_SORCERER_ARCHETYPE_OOZE_BLOODED">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Your innate magic comes from corrosive arcane ooze that is mingled with your blood. Many with this power can trace their magic back to an ancestor who worshiped Juiblex.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OOZE_BLOODED_SLIME_SECRETION" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OOZE_BLOODED_CORROSIVE_STRIKE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OOZE_BLOODED_OOZE_FORM" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OOZE_BLOODED_SUPPLE_BODY" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_OOZE_BLOODED_SPLIT" />
+		</description>
+		<sheet>
+			<description>Your innate magic comes from corrosive arcane ooze that is mingled with your blood. Many with this power can trace their magic back to an ancestor who worshiped Juiblex.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OOZE_BLOODED_SLIME_SECRETION" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OOZE_BLOODED_CORROSIVE_STRIKE" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OOZE_BLOODED_OOZE_FORM" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OOZE_BLOODED_SUPPLE_BODY" level="14" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_OOZE_BLOODED_ZERO_SPLIT" level="18" />
+		</rules>
+	</element>
+	<element name="Slime Secretion" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OOZE_BLOODED_SLIME_SECRETION">
+		<description>
+			<p>At 1st level, you are able to open your pores and emit a thick slime, that absorbs harm. As a bonus action you can gain 1d6 temporary hit points. This increases to 2d6 at 5th level, 3d6 at 11th and 4d6 at 17th. While you have these hit points any creature that deals melee damage to you takes acid damage equal to your charisma modifier.</p>
+
+		</description>
+		<sheet action="Bonus Action">
+			<description>At 1st level, you are able to open your pores and emit a thick slime, that absorbs harm. As a bonus action you can gain 1d6 temporary hit points. While you have these hit points any creature that deals melee damage to you takes {{charisma:modifier}} acid damage.</description>
+			<description level="5">At 5th level, you are able to open your pores and emit a thick slime, that absorbs harm. As a bonus action you can gain 2d6 temporary hit points. While you have these hit points any creature that deals melee damage to you takes {{charisma:modifier}} acid damage.</description>
+			<description level="11">At 11th level, you are able to open your pores and emit a thick slime, that absorbs harm. As a bonus action you can gain 3d6 temporary hit points. While you have these hit points any creature that deals melee damage to you takes {{charisma:modifier}} acid damage.</description>
+			<description level="17">At 17th level, you are able to open your pores and emit a thick slime, that absorbs harm. As a bonus action you can gain 4d6 temporary hit points. While you have these hit points any creature that deals melee damage to you takes {{charisma:modifier}} acid damage.</description>
+		</sheet>
+	</element>
+	<element name="Corrosive Strike" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OOZE_BLOODED_CORROSIVE_STRIKE">
+		<description>
+			<p>At 1st level, your fists are coated in a potent acid. Your unarmed strikes deal 1d6 + your charisma modifier acid damage.</p>
+		</description>
+		<sheet>
+			<description>At 1st level, your fists are coated in a potent acid. Your unarmed strikes deal 1d6 + your {{charisma:modifier}} acid damage.</description>
+		</sheet>
+	</element>
+	<element name="Ooze Form" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OOZE_BLOODED_OOZE_FORM">
+		<description>
+			<p>At 6th level, you can spend 1 sorcery point to temporarily allow the slime within you to take over your body. You can end this at any time. While in ooze form you are immune to acid damage, you gain a bonus to AC equal to your charisma modifier, your corrosive strikes ignore acid resistance and you have advantage on all ability checks and saving throws to escape a grapple or avoid being grappled.</p>
+		</description>
+		<sheet>
+			<description>At 6th level, you can spend 1 sorcery point to temporarily allow the slime within you to take over your body. You can end this at any time. While in ooze form you are immune to acid damage, you gain a bonus to +{{charisma:modifier}} to AC, your corrosive strikes ignore acid resistance and you have advantage on all ability checks and saving throws to escape a grapple or avoid being grappled.</description>
+		</sheet>
+	</element>
+	<element name="Supple Body" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OOZE_BLOODED_SUPPLE_BODY">
+		<description>
+			<p>At 14th level you can mould and twist your form into unnatural shapes. You can move freely through small holes, narrow opening and even mere cracks. Additionally you can climb on any surface including vertical or inverted surfaces without requiring an ability check.</p>
+		</description>
+		<sheet>
+			<description>At 14th level you can mould and twist your form into unnatural shapes. You can move freely through small holes, narrow opening and even mere cracks. Additionally you can climb on any surface including vertical or inverted surfaces without requiring an ability check.</description>
+		</sheet>
+	</element>
+	<element name="Split" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_OOZE_BLOODED_SPLIT">
+		<description>
+			<p>At 18th level you can split a part of your body off to create an Oozeling, a replica of yourself. It is an extension of your consciousness with the following changes. It has the creature type of Ooze, it's current and maximum hit points are half of yours, it cannot cast spells, but can perform any other actions that your would be able to, it can concentrate on a spell that you have cast following the normal rules for maintaining concentration.</p>
+		</description>
+		<sheet action="Action">
+			<description>At 18th level you can split a part of your body off to create an Oozeling, a replica of yourself. It is an extension of your consciousness with the following changes. It has the creature type of Ooze, it's current and maximum hit points are half of yours, it cannot cast spells, but can perform any other actions that your would be able to, it can concentrate on a spell that you have cast following the normal rules for maintaining concentration.</description>
+		</sheet>
+	</element>
+</elements>

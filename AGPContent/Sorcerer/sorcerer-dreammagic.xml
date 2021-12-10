@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="sorcerer-dreammagic.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-dreammagic.xml" />
+		</update>
+	</info>
+	<element name="Dream Magic" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_SORCERER_ARCHETYPE_DREAM_MAGIC">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Your innate magic comes from a place of dreams. This could be from a place that you only connect to while you sleep, or a plane or realm of dreams to which you have been exposed. You may even have a connection to, or have been cursed by, a creature of nightmares or dreams.</p>
+			<p class="indent">Dream sorcerers often first manifest their powers in their sleep, leading some to not realise they actually have these powers at first. It is also not uncommon for those who have not started mastering their powers to unwittingly use their magic whilst asleep in response to something in their dreams.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DREAM_MAGIC_DREAMING_MIND" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DREAM_MAGIC_SLUMBERING_POWER" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DREAM_MAGIC_TERRORS_OF_THE_NIGHT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DREAM_MAGIC_PROTECTIVE_STUPOR" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_DREAM_MAGIC_DREAM_WALKER" />
+		</description>
+		<sheet>
+			<description>Your innate magic comes from a place of dreams. This could be from a place that you only connect to while you sleep, or a plane or realm of dreams to which you have been exposed. You may even have a connection to, or have been cursed by, a creature of nightmares or dreams.&#13;
+			Dream sorcerers often first manifest their powers in their sleep, leading some to not realise they actually have these powers at first. It is also not uncommon for those who have not started mastering their powers to unwittingly use their magic whilst asleep in response to something in their dreams.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DREAM_MAGIC_DREAMING_MIND" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DREAM_MAGIC_SLUMBERING_POWER" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DREAM_MAGIC_TERRORS_OF_THE_NIGHT" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DREAM_MAGIC_PROTECTIVE_STUPOR" level="14" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DREAM_MAGIC_DREAM_WALKER" level="18" />
+		</rules>
+	</element>
+	<element name="Dreaming Mind" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DREAM_MAGIC_DREAMING_MIND">
+		<description>
+			<p>At 1st level, your dreams are protected by the magic you gain from them. Magic cannot put you to sleep unless you allow it to, and if magic is affecting your dreams you are immediately aware of it.</p>
+			<p class="indent">Additionally, while sleeping, you can hear and see as if conscious, however all other effects of the sleeping condition effect you.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>At 1st level, your dreams are protected by the magic you gain from them. Magic cannot put you to sleep unless you allow it to, and if magic is affecting your dreams you are immediately aware of it.&#13;
+			Additionally, while sleeping, you can hear and see as if conscious, however all other effects of the sleeping condition effect you.</description>
+		</sheet>
+	</element>
+	<element name="Slumbering Power" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DREAM_MAGIC_SLUMBERING_POWER">
+		<description>
+			<p>Starting at 1st level, you learn the sleep spell, which doesn't count against your number of spells known.</p>
+			<p class="indent">When you reach 2nd level in this class, when you cast the sleep spell you can expend a number of sorcery points equal to half the level of the spell slot (rounded up), when you do so all rolls of less than 4 on the d8 are counted as 5.</p>
+		</description>
+		<sheet>
+			<description>Starting at 1st level, you learn the sleep spell, which doesn't count against your number of spells known.&#13;
+			When you reach 2nd level in this class, when you cast the sleep spell you can expend a number of sorcery points equal to half the level of the spell slot (rounded up), when you do so all rolls of less than 4 on the d8 are counted as 5.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SLEEP" level="1" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+	<element name="Terrors of the Night" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DREAM_MAGIC_TERRORS_OF_THE_NIGHT">
+		<description>
+			<p>At 6th level, you gain the power to manifest fears hidden deep in the subconscious of your foes. When you hit a creature you can see with a spell attack or a creature you can see fails a saving throw against one of your spells, you can choose to create an illusory manifestation of the target's deepest fears in an unoccupied space within 30ft of the target.</p>
+			<p class="indent">The target must make a Wisdom saving throw against your sorcerer spell save DC, becoming frightened of the illusion until it disappears on a failed save. The target ca repeat the saving throw at the end of each of its turns. THe illusion lasts for 1 minute, or until you lose your concentration (as if casting a concentration spell.) THe illusion moves with the target always staying within 30ft of it. Once you use this feature you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>At 6th level, you gain the power to manifest fears hidden deep in the subconscious of your foes. When you hit a creature you can see with a spell attack or a creature you can see fails a saving throw against one of your spells, you can choose to create an illusory manifestation of the target's deepest fears in an unoccupied space within 30ft of the target.&#13;
+			The target must make a Wisdom saving throw against your sorcerer spell save DC, becoming frightened of the illusion until it disappears on a failed save. The target ca repeat the saving throw at the end of each of its turns. THe illusion lasts for 1 minute, or until you lose your concentration (as if casting a concentration spell.) THe illusion moves with the target always staying within 30ft of it. Once you use this feature you can't use it again until you finish a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="Protective Stupor" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DREAM_MAGIC_PROTECTIVE_STUPOR">
+		<description>
+			<p>At 14th level, when a creature you can see attacks you or another creature you can see within 60ft of you, you may use your reaction to cause the attacker's mind to slumber for a moment. The attacker must make a Wisdom saving throw or have disadvantage on all attack rolls until the end of its next turn of a failed save or only on this one attack on a successful save.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>At 14th level, when a creature you can see attacks you or another creature you can see within 60ft of you, you may use your reaction to cause the attacker's mind to slumber for a moment. The attacker must make a Wisdom saving throw or have disadvantage on all attack rolls until the end of its next turn of a failed save or only on this one attack on a successful save.</description>
+		</sheet>
+	</element>
+	<element name="Dream Walker" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DREAM_MAGIC_DREAM_WALKER">
+		<description>
+			<p>At 18th level, not even being asleep can stop you. When something causes you to become unconscious, you can instead spend 3 sorcery points to enter a semi-conscious state. While in this state you do not suffer any of the effects of being unconscious such as not being able to move or take actions. If knocked unconscious by being reduced to 0 hit points you may use this ability however you must still make death saves as usual and suffer the normal effects of taking damage at 0 hit points. This state lasts 10 minutes or until you are no longer unconscious, and when it ends if you are still unconscious you may simply spend 3 more points in order to continue this state.</p>
+			<p class="indent">Additionally, your power over dreams grows, you learn the dream spell. Also, your dreams can no longer be affected by any magic unless you allow it.</p>
+		</description>
+		<sheet>
+			<description>At 18th level, not even being asleep can stop you. When something causes you to become unconscious, you can instead spend 3 sorcery points to enter a semi-conscious state. While in this state you do not suffer any of the negative effects of being unconscious such as not being able to move or take actions. If knocked unconscious by being reduced to 0 hit points you may use this ability however you must still make death saves as usual and suffer the normal effects of taking damage at 0 hit points. This state lasts 10 minutes or until you are no longer unconscious, and when it ends if you are still unconscious you may simply spend 3 more points in order to continue this state.&#13;
+			Additionally, your power over dreams grows, you learn the dream spell. Also, your dreams can no longer be affected by any magic unless you allow it.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DREAM" />
+		</rules>
+	</element>
+</elements>

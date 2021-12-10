@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	        <update version="0.0.1">
+	        <update version="0.0.2">
 			<file name="fighter-standardbearer.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Fighter/fighter-standardbearer.xml" />
 		</update>
 	</info>
@@ -9,12 +9,12 @@
     	<supports>Martial Archetype</supports>
     	<description>
 			<p>All soldiers are trained to withstand the perils and distress of war. A few are trained to maintain morale and act as a symbol for all allies to push forward. Anyone can carry a flag into battle, but only a standard-bearer can make the best of their position on the battlefield to ensure victory for their allies.</p>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_STANDARD"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_INSPIRE"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_STAND_FAST"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_INVIGORATING_BANNER"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_HERALDRY_OF_HOPE"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_BATTLE_STANDARD"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_INSPIRE"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_STAND_FAST"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_INVIGORATING_BANNER"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_HERALDRY_OF_HOPE"/>
 		</description>
 		<setters>
       		<set name="override">true</set>
@@ -23,15 +23,15 @@
 			<description>All soldiers are trained to withstand the perils and distress of war. A few are trained to maintain morale and act as a symbol for all allies to push forward. Anyone can carry a flag into battle, but only a standard-bearer can make the best of their position on the battlefield to ensure victory for their allies.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_STANDARD" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_INSPIRE" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_STAND_FAST" level="7" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_INVIGORATING_BANNER" level="10" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_HERALDRY_OF_HOPE" level="18" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BATTLE_STANDARD" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_INSPIRE" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STAND_FAST" level="7" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_INVIGORATING_BANNER" level="10" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_HERALDRY_OF_HOPE" level="18" />
 		</rules>
 	</element>
-	<element name="Bonus Proficiencies" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES">
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES">
 		<description>
 			<p>When you choose this archetype at 3rd level, you gain proficiency in Weaver's Tools and your choice of Deception, Intimidation, Performance or Persuasion.</p>
 		</description>
@@ -43,7 +43,7 @@
 			<select type="Proficiency" name="Skill Proficiency, Standard Bearer" supports="ID_PROFICIENCY_SKILL_DECEPTION, ID_PROFICIENCY_SKILL_INTIMIDATION, ID_PROFICIENCY_SKILL_PERFORMANCE, ID_PROFICIENCY_SKILL_PERSUASION" />
 		</rules>
 	</element>
-	<element name="Battle Standard" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_STANDARD">
+	<element name="Battle Standard" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BATTLE_STANDARD">
 		<description>
 			<p>When you adopt this subclass you gain a war glag known as a battle standard. Wearing your battle standard or attaching it to any polearm counts as wielding it. All battle standards are designed to inspire your allies and bear a symbol upon them. A battle standard costs 5gp to make and can either be tailored at a shop or made using Weaver's tools during a long rest.</p>
 		</description>
@@ -51,7 +51,7 @@
 			<description>When you adopt this subclass you gain a war glag known as a battle standard. Wearing your battle standard or attaching it to any polearm counts as wielding it. All battle standards are designed to inspire your allies and bear a symbol upon them. A battle standard costs 5gp to make and can either be tailored at a shop or made using Weaver's tools during a long rest.</description>
 		</sheet>
 	</element>
-	<element name="Inspire" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_INSPIRE">
+	<element name="Inspire" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_INSPIRE">
 		<description>
 			<p>At 3rd level as an action, while wielding your battle standard, all allied creatures within 30ft of you that can see you are inspired. These creatures gain a bonus to weapon damage rolls equal to your charisma modifier until the start of your next turn. You can use this feature twice per short rest. At 15th level, you can do this as a bonus action 3 times per short rest.</p>
 		</description>
@@ -60,7 +60,7 @@
 			<description>At 15th level as a Bonus Action, while wielding your battle standard, all allied creatures within 30ft of you that can see you are inspired. These creatures gain a bonus +{{charisma:modifier}} to weapon damage rolls until the start of your next turn. You can use this feature three times per short rest.</description>
 		</sheet>
 	</element>
-	<element name="Stand Fast" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_STAND_FAST">
+	<element name="Stand Fast" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STAND_FAST">
 		<description>
 			<p>At 7th level, while wielding your battle standard at the start of initiative, roll 1d10 + your charisma modifier. You and all allied creatures that can see your battle standard gain temporary hit points equal to the roll.</p>
 		</description>
@@ -68,7 +68,7 @@
 			<description>At 7th level, while wielding your battle standard at the start of initiative, roll 1d10 + {{charisma:modifier}}. You and all allied creatures that can see your battle standard gain temporary hit points equal to the roll.</description>
 		</sheet>
 	</element>
-	<element name="Invigorating Banner" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_INVIGORATING_BANNER">
+	<element name="Invigorating Banner" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_INVIGORATING_BANNER">
 		<description>
 			<p>At 10th level your battle standard acts as a reminder of your victories, reinvigorating your allies. As part of a short rest, you and all allied creatures that can see your battle standard can add your charisma modifier to every hit die spent to recover hit points.</p>
 		</description>
@@ -76,7 +76,7 @@
 			<description>At 10th level your battle standard acts as a reminder of your victories, reinvigorating your allies. As part of a short rest, you and all allied creatures that can see your battle standard can add {{charisma:modifier}} to every hit die spent to recover hit points</description>
 		</sheet>
 	</element>
-	<element name="Heraldry of Hope" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_HERALDRY_OF_HOPE">
+	<element name="Heraldry of Hope" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_HERALDRY_OF_HOPE">
 		<description>
 			<p>At 18th level your presence on the battlefield bolsters your allies to endure under your banner. While wielding your battle standard, allied creatures other than yourself within 30 ft of you that make a saving throw may add your charisma modifier to that saving throw. They may do this once per round.</p>
 		</description>

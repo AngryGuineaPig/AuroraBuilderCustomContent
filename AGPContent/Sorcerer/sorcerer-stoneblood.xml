@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="sorcerer-stoneblood.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-stoneblood.xml" />
+		</update>
+	</info>
+	<element name="Stoneblood" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_SORCERER_ARCHETYPE_STONEBLOOD">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>You are a stoneblood sorcerer, a mortal with an intrinsic tie to the elemental plane of earth. The stalwart power of stone suffuses your body making you immovable and unyielding as the mountains. Did you gain this power from an ancient earth elemental, barter for it with the greedy Dao, or are you descended from the original dwarves, molded from the bedrock of the world? The power that dwells within your blood urges you to remain steadfast in your decisions, and hoard the fruits of the earth; precious gems and alloys.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_STONEBLOOD_STONEBLOOD_MAGIC" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_STONEBLOOD_HEART_OF_STONE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_STONEBLOOD_CRUSHING_BLOW" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_STONEBLOOD_AEGIS_OF_STONE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_STONEBLOOD_PRIMORDIAL_BULWARK" />
+		</description>
+		<sheet display="false">
+			<description>You are a stoneblood sorcerer, a mortal with an intrinsic tie to the elemental plane of earth. The stalwart power of stone suffuses your body making you immovable and unyielding as the mountains. Did you gain this power from an ancient earth elemental, barter for it with the greedy Dao, or are you descended from the original dwarves, molded from the bedrock of the world? The power that dwells within your blood urges you to remain steadfast in your decisions, and hoard the fruits of the earth; precious gems and alloys.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STONEBLOOD_STONEBLOOD_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STONEBLOOD_HEART_OF_STONE" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STONEBLOOD_CRUSHING_BLOW" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STONEBLOOD_AEGIS_OF_STONE" level="14" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STONEBLOOD_PRIMORDIAL_BULWARK" level="18" />
+		</rules>
+	</element>
+	<element name="Stoneblood Magic" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STONEBLOOD_STONEBLOOD_MAGIC">
+		<description>
+			<p>You learn certain spells at the sorcerer levels noted in the Stoneblood Magic table. They count as sorcerer spells for you, but don't count against your number of Spells Known.</p>
+			<p class="indent">Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or evocation spell from the sorcerer, warlock, or wizard spell list.</p>
+			<h5 class="caption">Stoneblood Magic</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>earth tremor, sanctuary</em></td></tr>
+				<tr><td>3rd</td><td><em>maximilian's earthen grasp, spike growth</em></td></tr>
+				<tr><td>5th</td><td><em>erupting earth, meld into stone</em></td></tr>
+				<tr><td>7th</td><td><em>stone shape, summon elemental(earth)</em></td></tr>
+				<tr><td>9th</td><td><em>steel wind strike, wall of stone</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or evocation spell from the sorcerer, warlock, or wizard spell list.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Spell, Stoneblood Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="1" default="ID_XGTE_SPELL_EARTH_TREMOR" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stoneblood Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Sanctuary" level="1" default="ID_PHB_SPELL_SANCTUARY" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stoneblood Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Earthen Grasp" level="3" default="ID_XGTE_SPELL_MAXIMILIANS_EARTHEN_GRASP" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stoneblood Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Spike Growth" level="3" default="ID_PHB_SPELL_SPIKE_GROWTH" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stoneblood Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Erupting Earth" level="5" default="ID_XGTE_SPELL_ERUPTING_EARTH" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stoneblood Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Meld Into Stone" level="5" default="ID_PHB_SPELL_MELD_INTO_STONE" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stoneblood Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Stone Shape" level="7" default="ID_PHB_SPELL_STONE_SHAPE" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stoneblood Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Summon Elemental" level="7" default="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stoneblood Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Steel Wind Strike" level="9" default="ID_XGTE_SPELL_STEEL_WIND_STRIKE" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stoneblood Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="9" default="ID_PHB_SPELL_WALL_OF_STONE" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Heart of Stone" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STONEBLOOD_HEART_OF_STONE">
+		<description>
+			<p>You can draw upon the earthen magic within you harden your physical form for a limited time. Starting at 1st level, you can use a bonus action to take on an elemental form, your physical form becomes covered in rock and stone, and you gain the following benefits:</p>
+			<ul>
+				<li>You gain temporary hit points equal to your sorcerer level.</li>
+				<li>If you are not wearing armor or wielding a shield, your armor class is equal to 13 + your Constitution modifier.</li>
+				<li>You use your Constitution modifier for the attack and damage rolls of your unarmed strikes.</li>
+				<li>Your unarmed strikes deal 1d10 bludgeoning damage. If you strike with two free hands, the d10 becomes a d12.</li>
+			</ul>
+			<p class="indent">This transformation lasts for one minute, until you end it as a bonus action, or fall unconscious. You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent">In addition, you can speak, read, and write Terran.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You can draw upon the earthen magic within you harden your physical form for a limited time. Starting at 1st level, you can use a bonus action to take on an elemental form, your physical form becomes covered in rock and stone, and you gain the following benefits:&#13;
+			•You gain temporary hit points equal to your sorcerer level.&#13;
+			•If you are not wearing armor or wielding a shield, your armor class is equal to {{stone:ac}}.&#13;
+			•You use your Constitution modifier for the attack and damage rolls of your unarmed strikes.&#13;
+			•Your unarmed strikes deal 1d10 bludgeoning damage. If you strike with two free hands, the d10 becomes a d12.&#13;
+			This transformation lasts for one minute, until you end it as a bonus action, or fall unconscious. You can use this ability {{proficiency}} times, and you regain all expended uses when you finish a long rest.&#13;
+			In addition, you can speak, read, and write Terran.</description>
+		</sheet>
+		<rules>
+			<stat name="stone:ac" value="13" />
+			<stat name="stone:ac" value="constitution:modifier" />
+			<grant type="Language" id="ID_MM_LANGUAGE_TERRAN" />
+		</rules>
+	</element>
+	<element name="Crushing Blow" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STONEBLOOD_CRUSHING_BLOW">
+		<description>
+			<p>You have learned to draw upon the crushing weight of the earth to augment your strikes. Starting at 6th level, when you hit a creature with a melee weapon attack or unarmed strike, you can expend sorcery points to deal additional bludgeoning damage to the target. The extra damage is 2d6 for 2 sorcery points, plus 1d6 for each additional sorcery point you expend. This bludgeoning damage is considered magical for the sake of overcoming resistances and immunities.</p>
+			<p class="indent">Each time you use this feature you can spend a maximum number of sorcery points equal to half your sorcerer level.</p>
+			<p class="indent">In addition, your unarmed strikes while in your elemental form from your Heart of Stone feature count as magical for the sake of overcoming resistances and immunities.</p>
+		</description>
+		<sheet>
+			<description>You have learned to draw upon the crushing weight of the earth to augment your strikes. Starting at 6th level, when you hit a creature with a melee weapon attack or unarmed strike, you can expend sorcery points to deal additional bludgeoning damage to the target. The extra damage is 2d6 for 2 sorcery points, plus 1d6 for each additional sorcery point you expend. This bludgeoning damage is considered magical for the sake of overcoming resistances and immunities. Each time you use this feature you can spend a maximum of {{level:sorcerer:half}} sorcery points.&#13;
+			In addition, your unarmed strikes while in your elemental form from your Heart of Stone feature count as magical for the sake of overcoming resistances and immunities.</description>
+		</sheet>
+	</element>
+	<element name="Aegis of Stone" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STONEBLOOD_AEGIS_OF_STONE">
+		<description>
+			<p>Your connection to the elemental magic of earth allows you to extend its mystical protection to you and your allies. Beginning at 14th level, you can use a bonus action to expend 3 sorcery points and grant an aegis of protective earth magic to one creature you touch, including possibly yourself. The creature gains resistance to nonmagical bludgeoning, piercing, and slashing damage for 1 minute.</p>
+			<p class="indent">When a creature hits the protected target with a melee attack, you can use your reaction to teleport to an unoccupied space within 5 feet of the attacker and make one melee weapon attack against them. You can teleport in this way only if you and the attacker are on the same surface. If you use this ability to grant a protective aegis to another creature, the effect immediately ends for the first creature.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Beginning at 14th level, you can use a bonus action to expend 3 sorcery points and grant an aegis of protective earth magic to one creature you touch, including possibly yourself. The creature gains resistance to nonmagical bludgeoning, piercing, and slashing damage for 1 minute.&#13;
+			When a creature hits the protected target with a melee attack, you can use your reaction to teleport to an unoccupied space within 5 feet of the attacker and make one melee weapon attack against them. You can teleport in this way only if you and the attacker are on the same surface. If you use this ability to grant a protective aegis to another creature, the effect immediately ends for the first creature.</description>
+		</sheet>
+	</element>
+	<element name="Primordial Bulwark" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STONEBLOOD_PRIMORDIAL_BULWARK">
+		<description>
+			<p>You have mastered the elemental earth that dwells deep within your soul, allowing you to become more elemental then mortal. Upon reaching 18th level, you no longer need to eat, drink, or sleep, and you are permanently resistant to bludgeoning, piercing, and slashing damage. In addition, you can have your Aegis of Stone active on up to three creatures at one time.</p>
+		</description>
+		<sheet>
+			<description>You have mastered the elemental earth that dwells deep within your soul, allowing you to become more elemental then mortal. Upon reaching 18th level, you no longer need to eat, drink, or sleep, and you are permanently resistant to bludgeoning, piercing, and slashing damage. In addition, you can have your Aegis of Stone active on up to three creatures at one time.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+		</rules>
+	</element>
+	<append id="ID_PHB_SPELL_SANCTUARY">
+		<supports>Sanctuary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SPIKE_GROWTH">
+		<supports>Spike Growth</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_MAXIMILIANS_EARTHEN_GRASP">
+		<supports>Earthen Grasp</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MELD_INTO_STONE">
+		<supports>Meld Into Stone</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_ERUPTING_EARTH">
+		<supports>Erupting Earth</supports>
+	</append>
+	<append id="ID_PHB_SPELL_STONE_SHAPE">
+		<supports>Stone Shape</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_STEEL_WIND_STRIKE">
+		<supports>Steel Wind Strike</supports>
+	</append>
+</elements>

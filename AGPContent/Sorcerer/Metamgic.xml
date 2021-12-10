@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Metamagic.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/Metamagic.xml" />
+		</update>
+	</info>
+	<element name="Elevated Spell" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_SORCERER_METAMAGIC_ELEVATED_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>Before you cast a spell you can expend sorcery points equivalent to double the spells level (1 for a cantrip, 2 for 1st level, 4 for second etc) you can choose one roll made in that spell and use the maximum possible, this could be one die of damage or something else.</p>
+			<p class="indent">You can use Elevated Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+		</description>
+		<sheet>
+			<description>Before you cast a spell you can expend sorcery points equivalent to the spells level (1 for a cantrip, 2 for 1st level, 4 for second etc) you can choose one roll made in that spell and use the maximum possible, this could be one die of damage or something else.You can use Maximised Spell even if you have already used a different Metamagic option during the casting of the spell.</description>
+		</sheet>
+	</element>
+	<element name="Intensified Spell" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_SORCERER_METAMAGIC_INTENSIFIED_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>Before you cast the spell you can expend sorcery points equivalent to double the spells level (1 for a cantrip, 2 for a 1st level, 4 for a 2nd etc), once you roll damage times the damage by 1.5</p>
+			<p class="indent">You can use Intensified Spell even if you have already used a different Metamagic option during the casting of the spell. Apply Intensified Spells bonus to damage after anything else.</p>
+		</description>
+		<sheet>
+			<description>Before you cast the spell you can expend sorcery points equivalent to double the spells level (1 for a cantrip, 2 for a 1st level, 4 for a 2nd etc), once you roll damage times the damage by 1.5</description>
+		</sheet>
+	</element>
+	<element name="Maximized Spell" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_SORCERER_METAMAGIC_MAXIMIZED_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>Before you cast a spell you can expend sorcery points equivalent to triple the spells level (1 for a cantrip, 3 for 1st level, 6 for second etc) all variables for that spell take their maximum value. (a d6 becomes a 6)</p>
+			<p class="indent">You can use Maximized Spell even if you have already used a different Metamagic option during the casting of the spell. Apply Maximized spell before any other metamagic</p>
+		</description>
+		<sheet>
+			<description>Before you cast a spell you can expend sorcery points equivalent to triple the spells level (1 for a cantrip, 3 for 1st level, 6 for second etc) all variables for that spell take their maximum value. (a d6 becomes a 6)</description>
+		</sheet>
+	</element>
+	<element name="Area Control" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_SORCERER_METAMAGIC_AREA_CONTROL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast an area spell, you can select certain spaces under the area and declare that they are not to be affected. Creatures in this space avoid the spell's effect. This takes 1 sorcery point per ten squares effected by a spell (eg. a 10x10 spell has 4 squares therefore 1 point, a 30x30 spell has 36 squares therefore 4 points.)</p>
+			<p class="indent">You can use Area Control even if you have already used a different Metamagic option during the casting of the spell.</p>
+		</description>
+		<sheet>
+			<description>When you cast an area spell, you can select certain spaces under the area and declare that they are not to be affected. Creatures in this space avoid the spell's effect. This takes 1 sorcery point per ten squares effected by a spell (eg. a 10x10 spell has 4 squares therefore 1 point, a 30x30 spell has 36 squares therefore 4 points.) You can use Area Control even if you have already used a different Metamagic option during the casting of the spell.</description>
+		</sheet>
+	</element>
+	<element name="Bane Spell" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_SORCERER_METAMAGIC_BANE_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>You may choose one type of creature and gain extra damage against it, this creature is declared after a long rest and can be reset after each long rest, you may only have one Bane at a time. Any variable, numeric affect is doubled when the chosen type is the target. For instance, a Bane Spell (dragon) magic missile would deal 2d4 + 1 per bolt against dragons. This takes 1 sorcery point per die doubled (1d4 is one point, 3d6 is 3 points).</p>
+			<p class="indent">You can use Bane Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+		</description>
+		<sheet>
+			<description>You may choose one type of creature and gain extra damage against it, this creature is declared after a long rest and can be reset after each long rest, you may only have one Bane at a time. Any variable, numeric affect is doubled when the chosen type is the target. For instance, a Bane Spell (dragon) magic missile would deal 2d4 + 1 per bolt against dragons. This takes 1 sorcery point per die doubled (1d4 is one point, 3d6 is 3 points). You can use Bane Spell even if you have already used a different Metamagic option during the casting of the spell.</description>
+		</sheet>
+	</element>
+	<element name="Blasting Spell" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_SORCERER_METAMAGIC_BLASTING_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>Any spell that deals fire damage detonates in a concussive explosion. If you hit a target with a blasting spell all targets within 5 ft of the person who receives damage get blasted back 10ft per sorcery point spent, when they land they become prone if they were launched 20ft or more.</p>
+			<p class="indent">You can use Blasting Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+		</description>
+		<sheet>
+			<description>Any spell that deals fire damage detonates in a concussive explosion. If you hit a target with a blasting spell all targets within 5 ft of the person who receives damage get blasted back 10ft per sorcery point spent, when they land they become prone if they were launched 20ft or more. You can use Blasting Spell even if you have already used a different Metamagic option during the casting of the spell.</description>
+		</sheet>
+	</element>
+	<element name="Reckless Spell" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_SORCERER_METAMAGIC_RECKLESS_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you roll damage for a spell you can spend 1 sorcery point per 2 damage dice to double that dice. If you do so however, you take half the original roll. (eg if you roll a 6 you double it to 12 but take 3 damage).</p>
+			<p class="indent">You can use Reckless Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+		</description>
+		<sheet>
+			<description>When you roll damage for a spell you can spend 1 sorcery point per 2 damage dice to double that dice. If you do so however, you take half the original roll. (eg if you roll a 6 you double it to 12 but take 3 damage).</description>
+		</sheet>
+	</element>
+	<element name="Amplified Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_AMPLIFIED_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell that has additional effects at higher levels, you can spend a number of sorcery points equal to 1 + the spell's level to increase the casting level by 1. If you use this metamagic on a cantrip you can treat it as if you were six levels higher. You can only ever increase a spells level to the level of your highest available spell slot.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that has additional effects at higher levels, you can spend a number of sorcery points equal to 1 + the spell's level to increase the casting level by 1. If you use this metamagic on a cantrip you can treat it as if you were six levels higher. You can only ever increase a spells level to the level of your highest available spell slot.</description>
+		</sheet>
+	</element>
+	<element name="Bouncing Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_BOUNCING_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell that targets only one creature and doesn't have a range of self, you can spend 3 sorcery points to mark it as a bouncing spell. As an action you can target a different creature within 30 feet of the original target. All of the spells effects are transferred to the new target. For every consecutive bounce you must expend 1 more sorcery point.</p>
+			<p class="indent">To be eligible for Bouncing Spell, a spell must be incapable of targeting more than one creature at the spell's current level.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that targets only one creature and doesn't have a range of self, you can spend 3 sorcery points to mark it as a bouncing spell. As an action you can target a different creature within 30 feet of the original target. All of the spells effects are transferred to the new target. For every consecutive bounce you must expend 1 more sorcery point.&#13;
+			To be eligible for Bouncing Spell, a spell must be incapable of targeting more than one creature at the spell's current level.</description>
+		</sheet>
+	</element>
+	<element name="Combined Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_COMBINED_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell on a creature already affected by the same spell, you can spend 2 sorcery points to have both of the spell effects apply.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell on a creature already affected by the same spell, you can spend 2 sorcery points to have both of the spell effects apply.</description>
+		</sheet>
+	</element>
+	<element name="Critical Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_CRITICAL_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell that requires an attack roll or a weapon attack, you can spend any number of sorcery points up to your charisma modifier, to increase that spells or weapons critical hit range by the number of sorcery points spent. You must apply this Metamagic before you know if the spell hits the target.</p>
+			<p class="indent">You can use Critical Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that requires an attack roll or a weapon attack, you can spend any number of sorcery points up to {{charisma:modifier}}, to increase that spells or weapons critical hit range by the number of sorcery points spent. You must apply this Metamagic before you know if the spell hits the target.&#13;
+			You can use Critical Spell even if you have already used a different Metamagic option during the casting of the spell.</description>
+		</sheet>
+	</element>
+	<element name="Delayed Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_DELAYED_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When casting a spell with a casting time of 1 minute or longer, you can spend 2 sorcery points to delay the spell. The spell stays delayed for up to 1 hour, and can be released with an action. If you do not release the spell by the end of that hour, the spell is lost. You can only hold one delayed spell at any given time.</p>
+		</description>
+		<sheet>
+			<description>When casting a spell with a casting time of 1 minute or longer, you can spend 2 sorcery points to delay the spell. The spell stays delayed for up to 1 hour, and can be released with an action. If you do not release the spell by the end of that hour, the spell is lost. You can only hold one delayed spell at any given time.</description>
+		</sheet>
+	</element>
+	<element name="Deliberate Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_DELIBERATE_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell with the casting time of 1 bonus action, you can spend 1 sorcery point to make it's casting time 1 action.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell with the casting time of 1 bonus action, you can spend 1 sorcery point to make it's casting time 1 action.</description>
+		</sheet>
+	</element>
+	<element name="Disruptive Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_DISRUPTIVE_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell that deals damage, you can spend 3 sorcery points to try and disrupt other creatures. Any creature which has to make a Constitution saving throw to maintain concentration after taking damage caused by this spell, does so with disadvantage.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that deals damage, you can spend 3 sorcery points to try and disrupt other creatures. Any creature which has to make a Constitution saving throw to maintain concentration after taking damage caused by this spell, does so with disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Echoing Spell*" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_ECHOING_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell that has the duration of Instantaneous and deals damage, you can spend a number of sorcery points equal to the spells level (minimum of 1), to have the target take half the damage dealt by the spell at the start of your next turn. (Eg. if you deal 8 damage this turn, the target takes 4 at the start of your next turn)</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that has the duration of Instantaneous and deals damage, you can spend a number of sorcery points equal to the spells level (minimum of 1), to have the target take half the damage dealt by the spell at the start of your next turn. (Eg. if you deal 8 damage this turn, the target takes 4 at the start of your next turn)</description>
+		</sheet>
+	</element>
+	<element name="Enlarged Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_ENLARGED_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell with a range that affects an area, you can spend a number of sorcery points equal to the spell's level (minimum of 1), to increase it's area of effect. Spells that have sphere area of effect increase their radius by 50%, spells that have square area of effect increase their side length by 50%, and spells with the range of cone, cylinder or line increase their reach by 50%.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell with a range that affects an area, you can spend a number of sorcery points equal to the spell's level (minimum of 1), to increase it's area of effect. Spells that have sphere area of effect increase their radius by 50%, spells that have square area of effect increase their side length by 50%, and spells with the range of cone, cylinder or line increase their reach by 50%.</description>
+		</sheet>
+	</element>
+	<element name="Esoteric Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_ESOTERIC_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types: force, necrotic, psychic, radiant.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types: force, necrotic, psychic, radiant.</description>
+		</sheet>
+	</element>
+	<element name="Focused Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_FOCUSED_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell that requires concentration, you can spend 2 sorcery points to give yourself a bonus equal to your charisma modifier on saving throws made to maintain concentration on this spell.</p>
+			<p class="indent">You can use Focused Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that requires concentration, you can spend 2 sorcery points to give yourself a +{{charisma:modifier}} bonus on saving throws made to maintain concentration on this spell.&#13;
+			You can use Focused Spell even if you have already used a different Metamagic option during the casting of the spell.</description>
+		</sheet>
+	</element>
+	<element name="Incanted Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_INCANTED_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell with the ritual tag you can spend 2 sorcery points to cast it as a ritual.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell with the ritual tag you can spend 2 sorcery points to cast it as a ritual.</description>
+		</sheet>
+	</element>
+	<element name="Piercing Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_PIERCING_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell that deals damage, you can spend 2 sorcery point to pierce through your enemies defenses. When you do so, the spell ignores any resistance to one of its damage types for this casting. If a target is immune to this damage type, it is treated as if it had resistance instead.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that deals damage, you can spend 2 sorcery point to pierce through your enemies defenses. When you do so, the spell ignores any resistance to one of its damage types for this casting. If a target is immune to this damage type, it is treated as if it had resistance instead.</description>
+		</sheet>
+	</element>
+	<element name="Readied Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_READIED_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you take the Ready action to ready a spell, you can spend any number of sorcery points (minimum of 1) to delay the casting of this spell until the trigger occurs. In this way, you do not hold concentration on this spell when you ready it and you do not expend a spell slot until the trigger occurs. This effect lasts for a number of rounds equal to the number of sorcery points expended.</p>
+		</description>
+		<sheet>
+			<description>When you take the Ready action to ready a spell, you can spend any number of sorcery points (minimum of 1) to delay the casting of this spell until the trigger occurs. In this way, you do not hold concentration on this spell when you ready it and you do not expend a spell slot until the trigger occurs. This effect lasts for a number of rounds equal to the number of sorcery points expended.</description>
+		</sheet>
+	</element>
+	<element name="Sculpted Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_SCULPTED_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell with a range that affects an area, you can expend 2 sorcery points to change the area's shape in one of the following ways:</p>
+			<ul>
+			<li>If the spell's range is a line, you can change it to a cone of one fourth the range.</li>
+			<li>If the spell's range is a cone, you can change it to a 5-foot-wide line with double range.</li>
+			<li>If the spell's range is a sphere, you can change its area to a cylinder of half radius and double height.</li>
+			<li>If the spell's range is a cylinder, you can change its area to a sphere of twice the radius.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you cast a spell with a range that affects an area, you can expend 2 sorcery points to change the area's shape in one of the following ways:&#13;
+			• If the spell's range is a line, you can change it to a cone of one fourth the range.&#13;
+			• If the spell's range is a cone, you can change it to a 5-foot-wide line with double range.&#13;
+			• If the spell's range is a sphere, you can change its area to a cylinder of half radius and double height.&#13;
+			• If the spell's range is a cylinder, you can change its area to a sphere of twice the radius.</description>
+		</sheet>
+	</element>
+	<element name="Shared Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_SHARED_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell with the range of self, you can spend 1 sorcery point to treat it as range of touch.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell with the range of self, you can spend 1 sorcery point to treat it as range of touch.</description>
+		</sheet>
+	</element>
+	<element name="Translocated Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_TRANSLOCATED_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell that has a point of origin, you can spend 3 sorcery points to mark it as a translocated spell. As an action you can change the location of its origin by up to 30 feet. For every consecutive translocation you must expend 1 more sorcery point.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that has a point of origin, you can spend 3 sorcery points to mark it as a translocated spell. As an action you can change the location of its origin by up to 30 feet. For every consecutive translocation you must expend 1 more sorcery point.</description>
+		</sheet>
+	</element>
+	<element name="Unbreakable Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_UNBREAKABLE_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell, you can spend any number of sorcery points (minimum of 1) to try and make the spell immune against effects that counter magic, such as the spells counterspell. The spells effective level increases by the number of sorcery points spent. For example if you cast the spell darkness and spend 3 sorcery points, it's effective level increases to 5th level.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell, you can spend any number of sorcery points (minimum of 1) to try and make the spell immune against effects that counter magic, such as the spells counterspell. The spells effective level increases by the number of sorcery points spent. For example if you cast the spell darkness and spend 3 sorcery points, it's effective level increases to 5th level.</description>
+		</sheet>
+	</element>
+	<element name="Unerring Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_UNERRING_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell that requires an attack roll or a dexterity saving throw, you can spend 1 sorcery point to ignore the effects of half and three-quarters cover.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that requires an attack roll or a dexterity saving throw, you can spend 1 sorcery point to ignore the effects of half and three-quarters cover.</description>
+		</sheet>
+	</element>
+	<element name="War Spell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SORCERER_METAMAGIC_WAR_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types: bludgeoning, piercing, slashing.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types: bludgeoning, piercing, slashing.</description>
+		</sheet>
+	</element>
+</elements>

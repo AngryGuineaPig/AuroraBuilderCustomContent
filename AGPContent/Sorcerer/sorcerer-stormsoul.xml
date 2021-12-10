@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="sorcerer-stormsoul.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-stormsoul.xml" />
+		</update>
+	</info>
+	<element name="Stormsoul" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_SORCERER_ARCHETYPE_STORMSOUL">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Within you dwells a spark of elemental air, marking you as a stormsoul sorcerer. You have an innate affinity with the storms and squalls of the material world. How did you come to bear this power within you? Were you blessed at birth by a noble Djinni, did you make a deal with a primordial air elemental, or were you born in the eye of a terrible storm?</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_STORMSOUL_MAGIC" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_HEART_OF_WINDS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_STORMBORN" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_STORM_GUIDE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_WINDCALLER" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_PRIMORDIAL_STORM" />
+		</description>
+		<sheet display="false">
+			<description>Within you dwells a spark of elemental air, marking you as a stormsoul sorcerer. You have an innate affinity with the storms and squalls of the material world. How did you come to bear this power within you? Were you blessed at birth by a noble Djinni, did you make a deal with a primordial air elemental, or were you born in the eye of a terrible storm?</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_STORMSOUL_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_HEART_OF_WINDS" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_STORMBORN" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_STORM_GUIDE" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_WINDCALLER" level="14" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_PRIMORDIAL_STORM" level="18" />
+		</rules>
+	</element>
+	<element name="Stormsoul Magic" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_STORMSOUL_MAGIC">
+		<description>
+			<p>You learn certain spells at the sorcerer levels noted in the Stormsoul Magic table. They count as sorcerer spells for you, but don't count against your number of Spells Known.</p>
+			<p class="indent">Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or evocation spell from the sorcerer, warlock, or wizard spell list.</p>
+			<h5 class="caption">Stormsoul Magic</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>feather fall, thunderwave</em></td></tr>
+				<tr><td>3rd</td><td><em>shatter, warding wind</em></td></tr>
+				<tr><td>5th</td><td><em>call lightning, wind wall</em></td></tr>
+				<tr><td>7th</td><td><em>storm sphere, summon elemental(air)</em></td></tr>
+				<tr><td>9th</td><td><em>control winds, maelstrom</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or evocation spell from the sorcerer, warlock, or wizard spell list.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Spell, Stormsoul Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Feather Fall" level="1" default="ID_PHB_SPELL_FEATHER_FALL" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stormsoul Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="1" default="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stormsoul Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="3" default="ID_PHB_SPELL_SHATTER" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stormsoul Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="3" default="ID_XGTE_SPELL_WARDING_WIND" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stormsoul Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Call Lightning" level="5" default="ID_PHB_SPELL_CALL_LIGHTNING" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stormsoul Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Wind Wall" level="5" default="ID_PHB_SPELL_WIND_WALL" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stormsoul Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="7" default="ID_XGTE_SPELL_STORM_SPHERE" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stormsoul Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Summon Elemental" level="7" default="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stormsoul Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Control Winds" level="9" default="ID_XGTE_SPELL_CONTROL_WINDS" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Stormsoul Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Maelstrom" level="9" default="ID_XGTE_SPELL_MAELSTROM" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Heart of Winds" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_HEART_OF_WINDS">
+		<description>
+			<p>When you call upon your inner storm you gain the ability to fly, if only briefly. Starting at 1st level, when you cast a spell of 1st-level or higher you gain a temporary flying speed equal to your remaining movement speed, that lasts until the end of your current turn. If you end your movement in the air you fall to the ground, taking appropriate falling damage. While flying you do not provoke opportunity attacks.</p>
+			<p class="indent">In addition, your connection to elemental air allows you to speak, read, and write Auran.</p>
+		</description>
+		<sheet>
+			<description>When you call upon your inner storm you gain the ability to fly, if only briefly. Starting at 1st level, when you cast a spell of 1st-level or higher you gain a temporary flying speed equal to your remaining movement speed, that lasts until the end of your current turn. If you end your movement in the air you fall to the ground, taking appropriate falling damage. While flying you do not provoke opportunity attacks. In addition, your connection to elemental air allows you to speak, read, and write Auran.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_MM_LANGUAGE_AURAN" />
+		</rules>
+	</element>
+	<element name="Stormborn" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_STORMBORN">
+		<description>
+			<p>Your control over the storm within you grows, empowering your physical form against tempestuous magic. Beginning at 6th level, you are resistant to lightning and thunder damage.</p>
+			<p class="indent">In addition, whenever you cast a spell of 1st-level or higher that deals lightning or thunder damage, you can expend additional sorcery points to cause stormy magic to erupt from you. For each additional sorcery point you expend you can force one creature within 15 feet of you to make a Dexterity saving throw. On a failed save, targets takes thunder damage equal to half your sorcerer level.</p>
+		</description>
+		<sheet>
+			<description>Your control over the storm within you grows, empowering your physical form against tempestuous magic. Beginning at 6th level, you are resistant to lightning and thunder damage.&#13;
+			In addition, whenever you cast a spell of 1st-level or higher that deals lightning or thunder damage, you can expend additional sorcery points to cause stormy magic to erupt from you. For each additional sorcery point you expend you can force one creature within 15 feet of you to make a Dexterity saving throw. On a failed save, targets takes {{level:sorcerer:half}} thunder damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
+	</element>
+	<element name="Storm Guide" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_STORM_GUIDE">
+		<description>
+			<p>In addition to controlling the storm within, your affinity for the winds allows you to exert control over the weather around you. Starting at 6th level, you can control existing weather conditions in the following ways:</p>
+			<ul>
+				<li>If it is raining, as an action, you can stop the rain from falling in a 20-foot radius sphere centered on you. You can end this effect as a bonus action on your turn.</li>
+				<li>If it is windy, as a bonus action, you can change the direction the wind blows within a 100-foot radius sphere centered on you. The wind blows in the direction you choose until the end of your next turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>In addition to controlling the storm within, your affinity for the winds allows you to exert control over the weather around you. Starting at 6th level, you can control existing weather conditions in the following ways:&#13;
+			•If it is raining, as an action, you can stop the rain from falling in a 20-foot radius sphere centered on you. You can end this effect as a bonus action on your turn.&#13;
+			•If it is windy, as a bonus action, you can change the direction the wind blows within a 100-foot radius sphere centered on you. The wind blows in the direction you choose until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Windcaller" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_WINDCALLER">
+		<description>
+			<p>Upon reaching 14th level, your power over the wind allows you to fly. You gain a flying speed equal to your movement speed. As you fly your lower extremities become a whirlwind.</p>
+		</description>
+		<sheet>
+			<description>Upon reaching 14th level, your power over the wind allows you to fly. You gain a flying speed equal to your movement speed. As you fly your lower extremities become a whirlwind.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="innate speed" />
+		</rules>
+	</element>
+	<element name="Primordial Storm" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STORMSOUL_PRIMORDIAL_STORM">
+		<description>
+			<p>You have mastered the elemental storm that rages within you, and you have become more elemental then mortal. Upon reaching 18th level, you no longer need to eat, drink, or sleep, and you are immune to lightning and thunder damage.</p>
+			<p class="indent">In addition, when you are hit by a melee attack, you can use your reaction to force the attacker to make a Strength saving throw. On a failed save, the creature takes thunder damage equal to your sorcerer level and is pushed back 30 feet in a straight line. On a successful save they take half damage and do not move.</p>
+		</description>
+		<sheet>
+			<description>You have mastered the elemental storm that rages within you, and you have become more elemental then mortal. Upon reaching 18th level, you no longer need to eat, drink, or sleep, and you are immune to lightning and thunder damage.&#13;
+			In addition, when you are hit by a melee attack, you can use your reaction to force the attacker to make a Strength saving throw. On a failed save, the creature takes {{level:sorcerer}} thunder damage and is pushed back 30 feet in a straight line. On a successful save they take half damage and do not move.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_THUNDER" />
+		</rules>
+	</element>
+	<append id="ID_PHB_SPELL_FEATHER_FALL">
+		<supports>Feather Fall</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CALL_LIGHTNING">
+		<supports>Call Lightning</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WIND_WALL">
+		<supports>Wind Wall</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_MAELSTROM">
+		<supports>Maelstrom</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_CONTROL_WINDS">
+		<supports>Control Winds</supports>
+	</append>
+</elements>

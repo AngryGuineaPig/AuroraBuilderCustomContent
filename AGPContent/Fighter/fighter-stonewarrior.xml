@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	        <update version="0.0.1">
+	        <update version="0.0.2">
 			<file name="fighter-stonewarrior.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Fighter/fighter-stonewarrior.xml" />
 		</update>
 	</info>
@@ -9,11 +9,11 @@
     	<supports>Martial Archetype</supports>
     	<description>
 			<p>Fighters of the Stone Warrior archetype exemplify the pinnacle of resilience and persistance They model themselves after the stone's raw durability and strength, but also its versatility. On top of boasting incredible defense, they learn techniques that are useful in a wide array of situations.</p>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SENTINEL_OF_STONE"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_TOUGHNESS_OF_GRANITE"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_IMPASSIBILITY_OF_SANDSTONE"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SHARPNESS_OF_OBSIDIAN"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_MASTER_OF_STONE"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SENTINEL_OF_STONE"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_TOUGHNESS_OF_GRANITE"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_IMPASSIBILITY_OF_SANDSTONE"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SHARPNESS_OF_OBSIDIAN"/>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_MASTER_OF_STONE"/>
 		</description>
 		<setters>
       		<set name="override">true</set>
@@ -22,14 +22,14 @@
 			<description>Fighters of the Stone Warrior archetype exemplify the pinnacle of resilience and persistance They model themselves after the stone's raw durability and strength, but also its versatility. On top of boasting incredible defense, they learn techniques that are useful in a wide array of situations.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SENTINEL_OF_STONE" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TOUGHNESS_OF_GRANITE" level="7" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_IMPASSIBILITY_OF_SANDSTONE" level="10" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SHARPNESS_OF_OBSIDIAN" level="15" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MASTER_OF_STONE" level="18" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SENTINEL_OF_STONE" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TOUGHNESS_OF_GRANITE" level="7" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_IMPASSIBILITY_OF_SANDSTONE" level="10" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SHARPNESS_OF_OBSIDIAN" level="15" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MASTER_OF_STONE" level="18" />
 		</rules>
 	</element>
-	<element name="Sentinel of Stone" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SENTINEL_OF_STONE">
+	<element name="Sentinel of Stone" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SENTINEL_OF_STONE">
 		<description>
 			<p>Starting when you choose this archetype at 3rd level, you've taken on the unmoving nature of stone. You have advantage against saving throws to resist being stunned or frightened and have immunity to being petrified.</p>
 		</description>
@@ -37,7 +37,7 @@
 			<description>Starting when you choose this archetype at 3rd level, you've taken on the unmoving nature of stone. You have advantage against saving throws to resist being stunned or frightened and have immunity to being petrified.</description>
 		</sheet>
 	</element>
-	<element name="Toughness of Granite" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TOUGHNESS_OF_GRANITE">
+	<element name="Toughness of Granite" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TOUGHNESS_OF_GRANITE">
 		<description>
 			<p>At 7th level, you embody the resilience of stone. If you end your turn without moving you +2 to your AC until the start of your next turn.</p>
 		</description>
@@ -45,7 +45,7 @@
 			<description>At 7th level, you embody the resilience of stone. If you end your turn without moving you +2 to your AC until the start of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Impassibility of Sandstone" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_IMPASSIBILITY_OF_SANDSTONE">
+	<element name="Impassibility of Sandstone" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_IMPASSIBILITY_OF_SANDSTONE">
 		<description>
 			<p>At 10th level, you can imitate how difficult it is to move through certain rocks. When you hit a creature with a melee attack you can "weigh it down". If you do so, its walking speed is halved and it can't take reactions until the start of your next turn. You can use this feature 3 times per short rest.</p>
 		</description>
@@ -53,7 +53,7 @@
 			<description>At 10th level, you can imitate how difficult it is to move through certain rocks. When you hit a creature with a melee attack you can "weigh it down". If you do so, its walking speed is halved and it can't take reactions until the start of your next turn. You can use this feature 3 times per short rest.</description>
 		</sheet>
 	</element>
-	<element name="Sharpness of Obsidian" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SHARPNESS_OF_OBSIDIAN">
+	<element name="Sharpness of Obsidian" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SHARPNESS_OF_OBSIDIAN">
 		<description>
 			<p>At 15th level, you can embody the jagged and sharp edges of volcanic glass. When you take damage from an enemy within melee range you can use your reaction to counter attack and make a melee strike against that creature.</p>
 		</description>
@@ -61,7 +61,7 @@
 			<description>At 15th level, you can embody the jagged and sharp edges of volcanic glass. When you take damage from an enemy within melee range you can use your reaction to counter attack and make a melee strike against that creature.</description>
 		</sheet>
 	</element>
-	<element name="Master of Stone" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MASTER_OF_STONE">
+	<element name="Master of Stone" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MASTER_OF_STONE">
 		<description>
 			<p>At 18th level you understand the true nature of stone. As an action, you can turn yourself into stone for 1 minute or until you use a bonus action to break it. This is not petrification and you are still able to function normally but gain the following benefits:</p>
 			<p>You gain resistance to slashing, piercing, cold, fire and psychic damage</p>

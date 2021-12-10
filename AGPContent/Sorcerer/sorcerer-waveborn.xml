@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="sorcerer-waveborn.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-waveborn.xml" />
+		</update>
+	</info>
+	<element name="Waveborn" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_SORCERER_ARCHETYPE_WAVEBORN">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Within you dwells a drop of elemental power drawn from primordial waters. You have an innate connection to the ocean depths, babbling brooks, and the frigid waters of frozen lakes. How did you come to wield the power of elemental waters? Did you inexplicably survive a shipwreck, awakening with oceanic power, or did you drink from a stream flowing from the elemental plane of water?</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_WAVEBORN_MAGIC" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_HEART_OF_THE_SEA" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_CURSE_OF_THE_DEPTHS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_WATERY_RESILIENCE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_OCEANIC_EMPOWERMENT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_PRIMORDIAL_WATERS" />
+		</description>
+		<sheet display="false">
+			<description>Within you dwells a drop of elemental power drawn from primordial waters. You have an innate connection to the ocean depths, babbling brooks, and the frigid waters of frozen lakes. How did you come to wield the power of elemental waters? Did you inexplicably survive a shipwreck, awakening with oceanic power, or did you drink from a stream flowing from the elemental plane of water?</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_WAVEBORN_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_HEART_OF_THE_SEA" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_CURSE_OF_THE_DEPTHS" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_WATERY_RESILIENCE" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_OCEANIC_EMPOWERMENT" level="14" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_PRIMORDIAL_WATERS" level="18" />
+		</rules>
+	</element>
+	<element name="Waveborn Magic" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_WAVEBORN_MAGIC">
+		<description>
+			<p>You learn certain spells at the sorcerer levels noted in the Waveborn Magic table. They count as sorcerer spells for you, but don't count against your number of Spells Known.</p>
+			<p class="indent">Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or evocation spell from the sorcerer, warlock, or wizard spell list.</p>
+			<h5 class="caption">Waveborn Magic</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>armour of agathys, ice knife</em></td></tr>
+				<tr><td>3rd</td><td><em>misty step, snowball swarm</em></td></tr>
+				<tr><td>5th</td><td><em>sleet storm, tidal wave</em></td></tr>
+				<tr><td>7th</td><td><em>control water, summon elemental(water)</em></td></tr>
+				<tr><td>9th</td><td><em>cone of cold, hold monster</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or evocation spell from the sorcerer, warlock, or wizard spell list.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Spell, Waveborn Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Armour of Agathys" level="1" default="ID_PHB_SPELL_ARMOR_OF_AGATHYS" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Waveborn Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="1" default="ID_XGTE_SPELL_ICE_KNIFE" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Waveborn Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="3" default="ID_PHB_SPELL_MISTY_STEP" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Waveborn Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="3" default="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Waveborn Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="5" default="ID_PHB_SPELL_SLEET_STORM" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Waveborn Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="5" default="ID_XGTE_SPELL_TIDAL_WAVE" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Waveborn Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Control Water" level="7" default="ID_PHB_SPELL_CONTROL_WATER" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Waveborn Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Summon Elemental" level="7" default="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Waveborn Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)" level="9" default="ID_PHB_SPELL_CONE_OF_COLD" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Waveborn Magic" supports="(Conjuration||Evocation),(($(spellcasting:list))||Warlock||Wizard)||Hold Monster" level="9" default="ID_PHB_SPELL_HOLD_MONSTER" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Heart of the Sea" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_HEART_OF_THE_SEA">
+		<description>
+			<p>The elemental waters within you have altered your physical form. Starting at 1st level, you are resistant to cold damage, you gain a swimming speed equal to your movement speed, and you can breathe both air and water.</p>
+			<p class="indent">In addition, your connection to elemental water allows you to speak, read, and write Aquan.</p>
+		</description>
+		<sheet>
+			<description>The elemental waters within you have altered your physical form. Starting at 1st level, you are resistant to cold damage, you gain a swimming speed equal to your movement speed, and you can breathe both air and water. In addition, your connection to elemental water allows you to speak, read, and write Aquan.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_MM_LANGUAGE_AQUAN" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<stat name="innate speed:swim:misc" value="innate:speed" />
+		</rules>
+	</element>
+	<element name="Curse of the Depths" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_CURSE_OF_THE_DEPTHS">
+		<description>
+			<p>When you draw upon the oceanic energy within you, your watery spells carry with them a deadly curse. Starting at 1st level, when you cast a spell that deals cold damage, reduces a creature's movement speed, or forces a creature to move, you can spend additional sorcery points to reduce the movement speed of the creature. For each sorcery point you expend, the movement speed of the creature is reduced by 5 feet.</p>
+		</description>
+		<sheet>
+			<description>When you draw upon the oceanic energy within you, your watery spells carry with them a deadly curse. Starting at 1st level, when you cast a spell that deals cold damage, reduces a creature's movement speed, or forces a creature to move, you can spend additional sorcery points to reduce the movement speed of the creature. For each sorcery point you expend, the movement speed of the creature is reduced by 5 feet.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+	<element name="Watery Resilience" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_WATERY_RESILIENCE">
+		<description>
+			<p>Beginning at 6th level, you can assume a watery form when under assault. When you are hit by an attack, you can use your reaction to shift into a liquid form, gaining resistance to bludgeoning, piercing, and slashing damage until the end of your current turn. As part of the same reaction you can immediately move up to your full movement speed without provoking opportunity attacks.</p>
+			<p class="indent">You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{proficiency}}/Long Rest">
+			<description>Beginning at 6th level, you can assume a watery form when under assault. When you are hit by an attack, you can use your reaction to shift into a liquid form, gaining resistance to bludgeoning, piercing, and slashing damage until the end of your current turn. As part of the same reaction you can immediately move up to your full movement speed without provoking opportunity attacks.&#13;
+			You can use this ability {{proficiency}} times, and you regain all expended uses when you finish a long rest.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+	<element name="Oceanic Empowerment" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_OCEANIC_EMPOWERMENT">
+		<description>
+			<p>Your improved control over the elemental waters that fuel your power improves your Curse of the Depths. Starting at 14th level, when you reduce the movement speed of a creature to 0 with your Curse of the Depths feature, you can force the creature to make an (additional) Constitution saving throw. On a failed save, the creature is covered in elemental ice and is restrained until the start of your next turn. A creature can use an action to scrape the ice off the target, ending the restrained condition early.</p>
+			<p class="indent">In addition, while you are using your swimming speed, you can take the Dash action as a bonus action on your turn.</p>
+		</description>
+		<sheet>
+			<description>Your improved control over the elemental waters that fuel your power improves your Curse of the Depths. Starting at 14th level, when you reduce the movement speed of a creature to 0 with your Curse of the Depths feature, you can force the creature to make an (additional) Constitution saving throw. On a failed save, the creature is covered in elemental ice and is restrained until the start of your next turn. A creature can use an action to scrape the ice off the target, ending the restrained condition early.&#13;
+			In addition, while you are using your swimming speed, you can take the Dash action as a bonus action on your turn.</description>
+		</sheet>
+	</element>
+	<element name="Primordial Waters" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAVEBORN_PRIMORDIAL_WATERS">
+		<description>
+			<p>Upon Reaching 18th level, your body and soul are permanently altered by the power of the primordial sea from which you draw your power. You no longer need to eat, drink, or sleep, you are immune to cold damage, and you are resistant to bludgeoning, piercing, and slashing damage.</p>
+			<p class="indent">In addition, when you are hit with a critical hit, you can use your reaction to turn the critical hit into a normal hit.</p>
+		</description>
+		<sheet>
+			<description>Upon Reaching 18th level, your body and soul are permanently altered by the power of the primordial sea from which you draw your power. You no longer need to eat, drink, or sleep, you are immune to cold damage, and you are resistant to bludgeoning, piercing, and slashing damage.&#13;
+			In addition, when you are hit with a critical hit, you can use your reaction to turn the critical hit into a normal hit.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+		</rules>
+	</element>
+	<append id="ID_PHB_SPELL_ARMOR_OF_AGATHYS">
+		<supports>Armour of Agathys</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONTROL_WATER">
+		<supports>Control Water</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HOLD_MONSTER">
+		<supports>Hold Monster</supports>
+	</append>
+</elements>

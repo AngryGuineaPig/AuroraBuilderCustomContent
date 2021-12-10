@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+	    <update version="0.0.1">
+			<file name="Ranger.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Ranger.index" />
+		</update>
+	</info>
+	<files>
+        <file name="ranger-shadowconclave.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Ranger/ranger-shadowconclave.xml" />
+		<file name="ranger-voidstalker.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Ranger/ranger-voidstalker.xml" />
+    </files>
+</index>

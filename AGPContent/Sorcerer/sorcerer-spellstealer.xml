@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="sorcerer-spellstealer.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-spellstealer.xml" />
+		</update>
+	</info>
+	<element name="Spell Stealer" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_SORCERER_ARCHETYPE_SPELL_STEALER">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Your magic is a perverted amalgamation of other spellcasters magic. You may have formed an incongruous bond of magic and blood by compressing arcane energy in your body forcefully, resulting in an artificial sorcerer whose magic is as interchangeable as books on a bookcase.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SPELL_STEALER_HIJACK" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SPELL_STEALER_QUELL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SPELL_STEALER_BLOWBACK" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SPELL_STEALER_ARCANE_REDISTRIBUTION" />
+			<h5>Spell Stealer Quirks</h5>
+			<table>
+				<thead>
+					<tr><td>d6</td><td>Quirks</td></tr>
+				</thead>
+				<tr><td>1</td><td>Your eye colour shifts to the same as the person you last stole from.</td></tr>
+				<tr><td>2</td><td>You find food tastes better when stolen.</td></tr>
+				<tr><td>3</td><td>Your fingers occasionally twitch unnaturally.</td></tr>
+				<tr><td>4</td><td>Occasionally your voice switches to that of the person you last stole from.</td></tr>
+				<tr><td>5</td><td>Your fingernails glow for a minute after you use magic.</td></tr>
+				<tr><td>6</td><td>You enjoy the attention when you pretend to read scrolls.</td></tr>
+        		</table>
+		</description>
+		<sheet>
+			<description>Your magic is a perverted amalgamation of other spellcasters magic. You may have formed an incongruous bond of magic and blood by compressing arcane energy in your body forcefully, resulting in an artificial sorcerer whose magic is as interchangeable as books on a bookcase.</description>
+		</sheet>
+		<rules>
+		<select type="List" name="Quirk" number="1">
+			<item id="1">Your eye colour shifts to the same as the person you last stole from.</item>
+			<item id="2">You find food tastes better when stolen.</item>
+			<item id="3">Your fingers occasionally twitch unnaturally.</item>
+			<item id="4">Occasionally your voice switches to that of the person you last stole from.</item>
+			<item id="5">Your fingernails glow for a minute after you use magic.</item>
+			<item id="6">You enjoy the attention when you pretend to read scrolls.</item>
+		</select>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SPELL_STEALER_HIJACK" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SPELL_STEALER_QUELL" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SPELL_STEALER_BLOWBACK" level="14" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SPELL_STEALER_ARCANE_REDISTRIBUTION" level="18" />
+		</rules>
+	</element>
+	<element name="Hijack" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SPELL_STEALER_HIJACK">
+		<description>
+			<p>At 1st level, you can use your action to make a ranged spell attack to produce an instantaneous arcane tether towards a spellcaster you can see within 60ft. The tether is visible but intangible. The tether fails on non-spellcasters.</p>
+			<p>Upon a successful tether you can choose a spell that you know they have or let the DM choose a random spell they know to copy. Once you are told the spell you can use a number of sorcery points equal to the spell level, the tether retracts from the spellcaster and that is now a spell you know, counting as a sorcerer spell. You can hold a number of spells using this feature equivalent to your charisma modifier.</p>
+		</description>
+		<sheet action="Action">
+			<description>At 1st level, you can use your action to make a ranged spell attack to produce an instantaneous arcane tether towards a spellcaster you can see within 60ft. The tether is visible but intangible. The tether fails on non-spellcasters. Upon a successful tether you can choose a spell that you know they have or let the DM choose a random spell they know to copy. Once you are told the spell you can use a number of sorcery points equal to the spell level, the tether retracts from the spellcaster and that is now a spell you know, counting as a sorcerer spell. You can hold {{charisma:modifier}} spells using this ability, when you try to copy another you can choose one spell to forget.</description>
+		</sheet>
+	</element>
+	<element name="Quell" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SPELL_STEALER_QUELL">
+		<description>
+			<p>Starting at 6th level you learn counterspell if you don't already know it. If you successfully counterspell you can expend a number of sorcery points equal to half the spell level round down to add it to your spells known. You can hold a number of spells equivalent to your charisma modifier.</p>
+		</description>
+		<sheet>
+			<description>Starting at 6th level you learn counterspell if you don't already know it. If you successfully counterspell you can expend a number of sorcery points equal to half the spell level round down to add it to your spells known. You can hold {{charisma:modifier}} spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COUNTERPELL" level="6" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+	<element name="Blowback" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SPELL_STEALER_BLOWBACK">
+		<description>
+			<p>At 14th level, the number of spells you can hold with Hijack and Quell doubles.</p>
+		</description>
+		<sheet>
+			<description>At 14th level, you can hold {{blowback:spells}} with Hijack and {{blowback:spells}} with Quell.</description>
+		</sheet>
+		<rules>
+			<stat name="blowback:spells" value="charisma:modifier"/>
+			<stat name="blowback:spells" value="charisma:modifier"/>
+		</rules>
+	</element>
+	<element name="Arcane Redistribution" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SPELL_STEALER_ARCANE_REDISTRIBUTION">
+		<description>
+			<p>At 18th level when you successfully quell a spell you can choose to convert it into a number of sorcery points equal to the spells level rather than learn it.</p>
+		</description>
+		<sheet>
+			<description>At 18th level when you successfully quell a spell you can choose to convert it into a number of sorcery points equal to the spells level rather than learn it.</description>
+		</sheet>
+	</element>
+</elements>
