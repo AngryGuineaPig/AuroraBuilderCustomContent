@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	    <update version="0.0.1">
-			<file name="Monk-Resolve.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk-Resolve.xml" />
+	    <update version="0.0.2">
+			<file name="Monk-Resolve.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Resolve.xml" />
 		</update>
 	</info>
 	<element name="Way of Resolve" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_WAY_OF_RESOLVE">
