@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-	    <update version="0.0.3">
+	    <update version="0.0.4">
 			<file name="Sorcerer.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer.index" />
 		</update>
 	</info>
 	<files>
-        	<file name="sorcerer-bloodmagic.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-bloodmagic.xml" />
+        <file name="sorcerer-bloodmagic.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-bloodmagic.xml" />
 		<file name="sorcerer-dreammagic.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-dreammagic.xml" />
 		<file name="sorcerer-emberheart.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-emberheart.xml" />
 		<file name="sorcerer-oozeblooded.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-oozeblooded.xml" />
@@ -15,5 +15,6 @@
 		<file name="sorcerer-stormsoul.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-stormsoul.xml" />
 		<file name="sorcerer-vortexsoul.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-vortexsoul.xml" />
 		<file name="sorcerer-waveborn.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-waveborn.xml" />
+		<file name="Metamagic.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/Metamagic.xml" />
     </files>
 </index>
