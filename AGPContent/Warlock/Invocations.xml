@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Invocations.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Warlock/Invocations.xml" />
+		</update>
+	</info>
+<!--Reddit-->
+	<element name="Arcana Unlocked" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_ARCANA_UNLOCKED">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Tome</prerequisite>
+		<requirements>ID_RDDT_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME</requirements>
+		<description>
+			<p>You learn one spell of your choice from any class.</p>
+		</description>
+		<sheet>
+			<description>You learn one spell of your choice from any class.</description>
+		</sheet>
+		<setters>
+		</setters>
+		<rules>
+			<select type="Spell" name="Arcana Unlocked" supports="0||1||2||3||4||5||6||7||8||9" />
+		</rules>
+	</element>
+	<element name="Book of Jokes" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_BOOK_OF_JOKES">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite></prerequisite>
+		<requirements></requirements>
+		<description>
+			<p>You can cast Tasha's Hideous Laughter once using a warlock spell slot. You can't do so again until you finish a long rest.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" />
+			</div>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast Tasha's Hideous Laughter once using a warlock spell slot. You can't do so again until you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" />
+		</rules>
+	</element>
+	<element name="Deathly Armour" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_DEATHLY_ARMOUR">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>9th level, Armour of Agathys spell</prerequisite>
+		<requirements>ID_PHB_SPELL_ARMOR_OF_AGATHYS, [level:9]</requirements>
+		<description>
+			<p>Whenever you cast Armour of Agathys, you can turn the cold damage into necrotic damage, additionally you have resistance to radiant and either necrotic or cold damage based on which damage type you chose to deal.</p>
+		</description>
+		<sheet>
+			<description>Whenever you cast Armour of Agathys, you can turn the cold damage into necrotic damage, additionally you have resistance to radiant and either necrotic or cold damage based on which damage type you chose to deal.</description>
+		</sheet>
+	</element>
+	<element name="Item Carrier" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_ITEM_CARRIER">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite></prerequisite>
+		<requirements></requirements>
+		<description>
+			<p>You can cast Tenser's Floating Disk at will, without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_TENSERS_FLOATING_DISK" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast Tenser's Floating Disk at will, without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_TENSERS_FLOATING_DISK" />
+		</rules>
+	</element>
+	<element name="Morbid Blade" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_MORBID_BLADE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>9th level, Pact of the Blade</prerequisite>
+		<requirements>[level:9], ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+		<description>
+			<p>Upon dealing a critical hit with your pact weapon you deal additional necrotic damage equivalent to your warlock level.</p>
+		</description>
+		<sheet>
+			<description>Upon dealing a critical hit with your pact weapon you deal {{level:warlock}} necrotic damage.</description>
+		</sheet>
+	</element>
+	<element name="Mouth of the Preacher" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_MOUTH|_OF_THE_PREACHER">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p>You can speak all languages.</p>
+		</description>
+		<sheet>
+			<description>You can speak all languages.</description>
+		</sheet>
+	</element>
+	<element name="Skill Scribe" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_SKILL_SCRIBE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Tome</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME</requirements>
+		<description>
+			<p>A new page appears in your Book of Shadows. With your permission, a creature can use its action to write its name on that page, which can hold a number of names equal to your charisma modifier.</p>
+			<p>As a bonus action you can grant a creature who's name is on the page a proficiency that you possess for 5 minutes. As an action you can remove a creatures name from the page.</p>
+		</description>
+		<sheet>
+			<description>A new page appears in your Book of Shadows. With your permission, a creature can use its action to write its name on that page, which can hold {{charisma:modifier}} names.
+				As a bonus action you can grant a creature who's name is on the page a proficiency that you possess for 5 minutes. As an action you can remove a creatures name from the page.</description>
+		</sheet>
+	</element>
+	<element name="Spy's Eye" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_SPYS_EYE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>7th level</prerequisite>
+		<requirements>[level:7]</requirements>
+		<description>
+			<p>You can see up to 1 mile away, able to see in dim light without disadvantage on perception checks, and perceive fine detail up to 100ft away.</p>
+		</description>
+		<sheet>
+			<description>You can see up to 1 mile away, able to see in dim light without disadvantage on perception checks, and perceive fine detail up to 100ft away.</description>
+		</sheet>
+	</element>
+	<element name="Spy's Ears" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_SPYS_EARS">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>7th level</prerequisite>
+		<requirements>[level:7]</requirements>
+		<description>
+			<p>You can understand all spoken languages.</p>
+		</description>
+		<sheet>
+			<description>You can understand all spoken languages.</description>
+		</sheet>
+	</element>
+	<element name="Patron's Skill" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_PATRONS_SKILL">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p>You gain proficiency in three skills or tools.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in three skills or tools.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Proficiency, Patron's Skill" supports="Skill||Artisan tools" />
+		</rules>
+	</element>
+	<element name="Quiet in the Library" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_QUIET_IN_THE_LIBRARY">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p>You can cast Silence at will, without expending a spell slot or material components</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_SILENCE" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast Silence at will, without expending a spell slot or material components</description>
+		</sheet>
+		<rules>
+			<grant type="spell" id="ID_PHB_SPELL_SILENCE" />
+		</rules>
+	</element>
+	<element name="Redirecting Blast" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_REDIRECTING_BLAST">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Eldritch Blast cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST</requirements>
+		<description>
+			<p>Once on each of your turns when you hit a creature with your Eldritch Blast their next attack has disadvantage against you.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_ELDRITCH_BLAST" />
+			</div>
+		</description>
+		<sheet>
+			<description>Once on each of your turns when you hit a creature with your Eldritch Blast their next attack has disadvantage against you.</description>
+		</sheet>
+	</element>
+	<element name="Ward Weapon" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_WARD_WEAPON">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Blade</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+		<description>
+			<p>When you are hit by an attack you can make an attack with your pact weapon as a reaction that deals an additionally 1d6 force damage. You can do this a number of times equal to your charisma modifier per long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{charisma:modifier}}/Long Rest">
+			<description>When you are hit by an attack you can make an attack with your pact weapon as a reaction that deals an additionally 1d6 force damage. You can do this {{charisma:modifier}} times per long rest.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom of a Thousand Years" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_WISDOM_OF_A_THOUSAND_YEARS">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Speak with Dead spell</prerequisite>
+		<requirements>ID_PHB_SPELL_SPEAK_WITH_DEAD</requirements>
+		<description>
+			<p>When you cast speak with dead, you can grant the corps a portion of knowledge through your patron. The corpse knows the information it would have if it was alive from the moment of its death to the moment you cast the spell. Its knowledge is limited to its situation and intellect.</p>
+		</description>
+		<sheet>
+			<description>When you cast speak with dead, you can grant the corps a portion of knowledge through your patron. The corpse knows the information it would have if it was alive from the moment of its death to the moment you cast the spell. Its knowledge is limited to its situation and intellect.</description>
+		</sheet>
+	</element>
+</elements>

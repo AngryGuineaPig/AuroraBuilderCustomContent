@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+	    <update version="0.0.1">
+			<file name="warlock-apocalypse.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Warlock/warlock-apocalypse.xml" />
+		</update>
+	</info>
+  <element name="The Apocalypse" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_APOCALYPSE">
+    <supports>Otherworldly Patron</supports>
+    <requirements />
+    <description>
+      <p>You have made a pact with a being that exemplifies destruction in its purest form.</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_EXPANDED_SPELL_LIST" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_CHANNEL_OF_APOCALYPSE" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_TOUCH_OF_RUIN" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_VISIONS_OF_APOCALYPSE" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_DEATHLY_PROTECTION" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_AVATAR_OF_DOOM" />
+    </description>
+    <sheet>
+      <description>You have made a pact with a being that exemplifies destruction in its purest form.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_CHANNEL_OF_APOCALYPSE" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_TOUCH_OF_RUIN" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_VISIONS_OF_APOCALYPSE" level="6"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_DEATHLY_PROTECTION" level="10"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_AVATAR_OF_DOOM" level="14"/>
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>The Apocalypse lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>APOCALYPSE EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>Command, Wrathful Smite</em></td></tr>
+        <tr><td>2nd</td><td><em>Blindness/Deafness, Shatter</em></td></tr>
+        <tr><td>3rd</td><td><em>Blink, Stinking Cloud</em></td></tr>
+        <tr><td>4th</td><td><em>Evard's Black Tentacles, Phantasmal Killer</em></td></tr>
+        <tr><td>5th</td><td><em>Insect Plague, Wall of Force</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Apocalypse lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_COMMAND</extend>
+      <extend>ID_PHB_SPELL_WRATHFUL_SMITE</extend>
+      <extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+      <extend>ID_PHB_SPELL_SHATTER</extend>
+      <extend>ID_PHB_SPELL_BLINK</extend>
+      <extend>ID_PHB_SPELL_STINKING_CLOUD</extend>
+      <extend>ID_PHB_SPELL_EVARDS_BLACK_TENTACLES</extend>
+      <extend>ID_PHB_SPELL_PANTASMAL_KILLER</extend>
+      <extend>ID_PHB_SPELL_INSECT_PLAGUE</extend>
+      <extend>ID_PHB_SPELL_WALL_OF_FORCE</extend>
+    </spellcasting>
+    <rules></rules>
+  </element>
+  <element name="Channel of Apocalypse" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_CHANNEL_OF_APOCALYPSE">
+    <description>
+      <p>Starting at 1st level, the vary nature of having a link to a world ending power gives you the following benefits:</p>
+      <p><b>Apocalyptic Visage.</b> As an action, you can alter your appearance to make it reflect the destructive nature of your patron.</p>
+      <p><b>History of Misery.</b> Whenever you make an intelligence check to recollect information about great catastrophes, you are always considered proficient in the related skill and have advantage on the roll.</p>
+      <p><b>Voice of Doomsayer.</b> You learn the thaumaturgy cantrip.</p>
+    </description>
+    <sheet>
+      <description>Starting at 1st level, the vary nature of having a link to a world ending power gives you the following benefits:&#13;
+      Apocalyptic Visage. As an action, you can alter your appearance to make it reflect the destructive nature of your patron.&#13;
+      History of Misery. Whenever you make an intelligence check to recollect information about great catastrophes, you are always considered proficient in the related skill and have advantage on the roll.&#13;
+      Voice of Doomsayer. You learn the thaumaturgy cantrip.</description>
+    </sheet>
+    <rules>
+        <grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" level="1" spellcasting="Warlock" prepared="true" />
+    </rules>
+  </element>
+  <element name="Touch of Ruin" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_TOUCH_OF_RUIN">
+    <description>
+      <p>At 1st level, you gain abilities based on the aspects of the apocalypse. You can choose one aspect.</p>
+    </description>
+    <sheet>
+      <description>At 1st level, you gain abilities based on the aspects of the apocalypse.</description>
+    </sheet>
+    <rules>
+      	<select type="Archetype Feature" name="Aspect" supports="Aspect of Apocalypse" level="3" number="1" />
+    </rules>
+  </element>
+  <element name="Death" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_DEATH">
+    	<supports>Aspect of Apocalypse</supports>
+    	<description>
+      		<p>You gain resistance to necrotic damage, and necrotic damage you deal ignores resistances. In addition you learn the inflict wounds spell.</p>
+    	</description>
+    	<sheet>
+      		<description>You gain resistance to necrotic damage, and necrotic damage you deal ignores resistances. In addition you learn the inflict wounds spell.</description>
+    	</sheet>
+      <rules>
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        <grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" level="1" spellcasting="Warlock" prepared="true" />
+      </rules>
+  </element>
+  <element name="Famine" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_FAMINE">
+    	<supports>Aspect of Apocalypse</supports>
+    	<description>
+      		<p>When you get targeted with a weapon attack, you can use your reaction to drain strength from the attacker, subtracting 1d4 from the roll, in addition you learn the bane spell.</p>
+    	</description>
+    	<sheet action="Reaction">
+      		<description>When you get targeted with a weapon attack, you can use your reaction to drain strength from the attacker, subtracting 1d4 from the roll, in addition you learn the bane spell.</description>
+    	</sheet>
+      <rules>
+        <grant type="Spell" id="ID_PHB_SPELL_BANE" level="1" spellcasting="Warlock" prepared="true" />
+      </rules>
+  </element>
+  <element name="Pestilence" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_PESTILENCE">
+    	<supports>Aspect of Apocalypse</supports>
+    	<description>
+      		<p>You gain resistance to poison damage and you have advantage on saving throws against being poisoned and diseased. In addition you gain the ray of sickness spell.</p>
+    	</description>
+    	<sheet>
+      		<description>You gain resistance to poison damage and you have advantage on saving throws against being poisoned and diseased. In addition you gain the ray of sickness spell.</description>
+    	</sheet>
+      <rules>
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" level="1" spellcasting="Warlock" prepared="true" />
+      </rules>
+  </element>
+  <element name="War" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_WAR">
+    	<supports>Aspect of Apocalypse</supports>
+    	<description>
+      		<p>You gain proficiency in martial weapons, medium armour and shields. In addition, you learn the shield spell</p>
+    	</description>
+    	<sheet>
+      		<description>You gain proficiency in martial weapons, medium armour and shields. In addition, you learn the shield spell</description>
+    	</sheet>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+        <grant type="Spell" id="ID_PHB_SPELL_SHIELD" level="1" spellcasting="Warlock" prepared="true" />
+      </rules>
+  </element>
+  <element name="Visions of Apocalypse" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_VISIONS_OF_APOCALYPSE">
+    <description>
+      <p>At 6th level, you learn how to bestow your foes with crushing visions of their demise, with the extent of that vision depending on your patron and the fears of your enemy. When being targeted by an attack from a creature you can see within 60ft of you you can use a reaction to force the target to make a wisdom saving throw. If the target fails they miss automatically and become frightened until the end of their next turn. Once you use this ability you can't use it again untl you finish a short or long rest.</p>
+    </description>
+    <sheet action="Reaction" usage="1/Short Rest">
+      <description>At 6th level, you learn how to bestow your foes with crushing visions of their demise, with the extent of that vision depending on your patron and the fears of your enemy. When being targeted by an attack from a creature you can see within 60ft of you you can use a reaction to force the target to make a wisdom saving throw. If the target fails they miss automatically and become frightened until the end of their next turn. Once you use this ability you can't use it again untl you finish a short or long rest.</description>
+    </sheet>
+  </element>
+  <element name="Deathly Protection" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_DEATHLY_PROTECTION">
+    <description>
+      <p>At 10th level, you are an emissary of death and don't succumb so easily to it. As a reaction to being reduced to 0 hit points you can use your reaction to attempt to drain vitality from your aggressor, as long as you can see it. Make a ranged spell attack against the creature. On a hit the target takes necrotic damage equal to your warlock level + your charisma modifier, you gain that amount of hit points. Once you use this feature you can't use it again until you finish a short rest.</p>
+    </description>
+    <sheet usage="1/Long Rest" action="Reaction">
+      <description>At 10th level, you are an emissary of death and don't succumb so easily to it. As a reaction to being reduced to 0 hit points you can use your reaction to attempt to drain vitality from your aggressor, as long as you can see it. Make a ranged spell attack against the creature. On a hit the target takes necrotic damage equal {{level:warlock}} + {{charisma:modifier}}, you gain that amount of hit points. Once you use this feature you can't use it again until you finish a short rest.</description>
+    </sheet>
+  </element>
+  <element name="Avatar of Doom" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_APOCALYPSE_AVATAR_OF_DOOM">
+    <description>
+      <p>At 14th level, you can become an avatar of doom, activating this ability as an Action. This transformation lasts for 1 minute and you can enter the state once per long rest. Choose one of the following options, you can change it each time you use the ability.</p>
+    </description>
+    <sheet usage="1/Long Rest" action="Action">
+      <description>At 10th level, you are an emissary of death and don't succumb so easily to it. As a reaction to being reduced to 0 hit points you can use your reaction to attempt to drain vitality from your aggressor, as long as you can see it. Make a ranged spell attack against the creature. On a hit the target takes necrotic damage equal {{level:warlock}} + {{charisma:modifier}}, you gain that amount of hit points. Once you use this feature you can't use it again until you finish a short rest.</description>
+    </sheet>
+    <rules>
+      	<select type="Archetype Feature" name="Aspect" supports="Aspect of Doom" level="14" number="4" />
+    </rules>
+  </element>
+  <element name="Death" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_DEATH_DOOM">
+    	<supports>Aspect of Doom</supports>
+    	<description>
+      		<p>You exude a gloomy aura that causes each creature you choose that starts and ends its turn within 15ft to take necrotic damage equal to half your warlock level.</p>
+    	</description>
+    	<sheet>
+      		<description>You exude a gloomy aura that causes each creature you choose that starts and ends its turn within 15ft to take necrotic damage equal {{level:warlock:half:down}}.</description>
+    	</sheet>
+  </element>
+  <element name="Famine" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_FAMINE_DOOM">
+    	<supports>Aspect of Doom</supports>
+    	<description>
+      		<p>You can use a bonus action on your turn to target one creature within 30ft, the target must make a Constitution saving throw. On a failed save they take 1d8 + your warlock level necrotic damage and fall prone, on a success they do not fall prone.</p>
+    	</description>
+    	<sheet action="Bonus Action">
+      		<description>You can use a bonus action on your turn to target one creature within 30ft, the target must make a Constitution saving throw. On a failed save they take 1d8 + {{level:warlock}} necrotic damage and fall prone, on a success they do not fall prone.</description>
+    	</sheet>
+  </element>
+  <element name="Pestilence" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_PESTILENCE_DOOM">
+    	<supports>Aspect of Doom</supports>
+    	<description>
+      		<p>You can use a bonus action on your turn to release a vile toxin. Make a ranged spell attack on a creature within 60ft. On a hit they take poison damage equal to your warlock level + your charisma modifier. In addition any damage you deal on your turn can be made into acid or poison.</p>
+    	</description>
+    	<sheet action="Bonus Action">
+      		<description>You can use a bonus action on your turn to release a vile toxin. Make a ranged spell attack on a creature within 60ft. On a hit they take poison damage equal to {{level:warlock}} + {{charisma:modifier}}. In addition any damage you deal on your turn can be made into acid or poison.</description>
+    	</sheet>
+  </element>
+  <element name="War" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ASPECT_OF_WAR_DOOM">
+    	<supports>Aspect of Doom</supports>
+    	<description>
+      		<p>When taking the Attack action, you can make an additional attack. You score a critical on a 19-20.</p>
+    	</description>
+    	<sheet>
+      		<description>When taking the Attack action, you can make an additional attack. You score a critical on a 19-20.</description>
+    	</sheet>
+  </element>
+</elements>

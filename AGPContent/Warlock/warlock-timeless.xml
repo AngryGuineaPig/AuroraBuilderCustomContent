@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+	    <update version="0.0.1">
+			<file name="warlock-timeless.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Warlock/warlock-timeless.xml" />
+		</update>
+	</info>
+  <element name="The Timeless" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_TIMELESS">
+    <supports>Otherworldly Patron</supports>
+    <description>
+      <p>You have made a pact with a being that exists beyond time. Perhaps they are a denizen of the Astral Plane, or some other dimension which has never felt time's unceasing touch, or even from the Twilight Realm known only to the Shade Lords from the first age of Sharth.</p>
+      <p class="indent">Does your patron seek an end to time in your world too? Or some other goal which only their a temporal eye can see?</p>
+      <p class="indent">Did your patron offer you their power as you thought your time was at an end or did you find more than you expected from a journey to another plane?</p>
+      <p class="indent">Wherever your powers came from, your timeless patron now offers you the power to control the flow of time to destroy your enemies and further its ageless agenda.</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_TIMELESS_EXPANDED_SPELL_LIST" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_TIMELESS_CRACK_TIME" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_TIMELESS_TIMELESS_BODY" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_TIMELESS_PRESCIENT_DEFENSE" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_TIMELESS_SHATTER_TIME" />
+    </description>
+    <sheet>
+      <description>You have made a pact with a being that exists beyond time. Perhaps they are a denizen of the Astral Plane, or some other dimension which has never felt time's unceasing touch, or even from the Twilight Realm known only to the Shade Lords from the first age of Sharth.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TIMELESS_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TIMELESS_CRACK_TIME" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TIMELESS_TIMELESS_BODY" level="6"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TIMELESS_PRESCIENT_DEFENSE" level="10"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TIMELESS_SHATTER_TIME" level="14"/>
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TIMELESS_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>The Timeless lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>TIMELESS EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>gift of alacrity, sleep</em></td></tr>
+        <tr><td>2nd</td><td><em>blur, fortune's favour</em></td></tr>
+        <tr><td>3rd</td><td><em>slow, wall of sand</em></td></tr>
+        <tr><td>4th</td><td><em>death ward, Otiluke's resilient sphere</em></td></tr>
+        <tr><td>5th</td><td><em>legend lore, temporal shunt</em></td></tr>
+        <tr><td>9th</td><td><em>time ravage, time stop</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Timeless lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_SLEEP</extend>
+      <extend>ID_WOTC_EGTW_SPELL_GIFT_OF_ALACRITY</extend>
+      <extend>ID_PHB_SPELL_BLUR</extend>
+      <extend>ID_WOTC_EGTW_SPELL_FORTUNES_FAVOR</extend>
+      <extend>ID_PHB_SPELL_SLOW</extend>
+      <extend>ID_XGTE_SPELL_WALL OF SAND</extend>
+      <extend>ID_PHB_SPELL_DEATH_WARD</extend>
+      <extend>ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE</extend>
+      <extend>ID_PHB_SPELL_LEGEND_LORE</extend>
+      <extend>ID_WOTC_EGTW_SPELL_TEMPORAL_SHUNT</extend>
+      <extend>ID_PHB_SPELL_TIME_STOP</extend>
+      <extend>ID_WOTC_EGTW_SPELL_TIME_RAVAGE</extend>
+    </spellcasting>
+    <rules></rules>
+  </element>
+  <element name="Crack Time" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TIMELESS_CRACK_TIME">
+    <description>
+      <p>At 1st level, your patron grants you a portion of their power to create time fissures. As an action, you can create a number of time fissures equal to your Charisma modifier within 60 feet of you that you can see. A time fissure is a point with a 5-foot square centred on it that does not obstruct line of sight or movement and is clearly visible. When a creature other than you enters a time fissure or starts its turn in one, it must make a Dexterity saving throw against your spell save DC. On a failure, the creature is frozen in time until the start of their next turn. A creature which is frozen in time is paralyzed, immune to all damage and all other conditions. Any effects which would last until the end of their next turn now last until the end of their turn after. Any conditions or effects the creature was under resume when they are no longer frozen in time.</p>
+      <p class="indent">A time fissure immediately disappears once a creature has been forced to make a saving throw from it, 1 minute has passed, you use this feature again or until you dismiss all your time fissures as a bonus action.</p>
+      <p class="indent">You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+    </description>
+    <sheet action="Action" usage="{{proficiency}}/Long Rest">
+      <description>At 1st level, your patron grants you a portion of their power to create time fissures. As an action, you can create {{charisma:modifier}} of time fissures within 60 feet of you that you can see. A time fissure is a point with a 5-foot square centred on it that does not obstruct line of sight or movement and is clearly visible. When a creature other than you enters a time fissure or starts its turn in one, it must make a Dexterity saving throw against your spell save DC. On a failure, the creature is frozen in time until the start of their next turn. A creature which is frozen in time is paralyzed, immune to all damage and all other conditions. Any effects which would last until the end of their next turn now last until the end of their turn after. Any conditions or effects the creature was under resume when they are no longer frozen in time.&#13;
+      A time fissure immediately disappears once a creature has been forced to make a saving throw from it, 1 minute has passed, you use this feature again or until you dismiss all your time fissures as a bonus action.&#13;
+      You can use this ability {{proficiency}} times, and you regain all expended uses when you finish a long rest.</description>
+    </sheet>
+    <rules>
+    <grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
+    </rules>
+  </element>
+  <element name="Timeless Body" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TIMELESS_TIMELESS_BODY">
+    <description>
+      <p>At 6th level, you have mastered your own time and can control processes which would cause you to decay. You have resistance to necrotic damage.</p>
+      <p class="indent">You no longer age and, as an action, you can change your appearance to that of an older or younger version of yourself. Your size cannot be changed in this way.</p>
+    </description>
+    <sheet>
+      <description>At 6th level, you have mastered your own time and can control processes which would cause you to decay. You have resistance to necrotic damage.&#13;
+      You no longer age and, as an action, you can change your appearance to that of an older or younger version of yourself. Your size cannot be changed in this way.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+    </rules>
+  </element>
+  <element name="Prescient Defense" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TIMELESS_PRESCIENT_DEFENSE">
+    <description>
+      <p>At 10th level, you receive glimpses of the future when one would deal harm to you. As a reaction when you are targeted by an attack, you can impose disadvantage on the attack roll and immediately teleport to where you were at the start of your previous turn. If you are now behind total cover from the triggering attack, the creature may spend that attack against a different target.</p>
+      <p class="indent">You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+    </description>
+    <sheet action="Reaction" usage="{{proficiency}}/Long Rest">
+      <description>At 10th level, you receive glimpses of the future when one would deal harm to you. As a reaction when you are targeted by an attack, you can impose disadvantage on the attack roll and immediately teleport to where you were at the start of your previous turn. If you are now behind total cover from the triggering attack, the creature may spend that attack against a different target.&#13;
+      You can use this ability {{proficiency}} times, and you regain all expended uses when you finish a long rest.</description>
+    </sheet>
+  </element>
+  <element name="Shatter Time" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TIMELESS_SHATTER_TIME">
+    <description>
+      <p>At 14th level, you can cause your time fissures to burst and rip those around them from their current time. As an action, you can expend a spell slot and destroy all of your time fissures forcing each creature within 10 feet of a time fissure to make a Wisdom saving throw against your spell save DC. On a failure, a creature takes 1d10 necrotic damage for each level of the spell slot you expended, or half as much damage on a success. If a creature fails this safe, you can impose one of the following additional effects:</p>
+      <ul>
+        <li>The creature is magically aged by 1 year.</li>
+        <li>The creature's speed is halved until the end if its next turn.</li>
+        <li>The creature cannot take reactions until the end of its next turn.</li>
+        <li>The creature is frozen in time as per the rules of the Crack Time feature.</li>
+      </ul>
+      <p class="indent">If a creature fails the saving throw by 5 or more, they are magically aged by one year. Creatures within 10 feet of multiple time fissures are affected only once.</p>
+    </description>
+    <sheet action="Action">
+      <description>At 14th level, you can cause your time fissures to burst and rip those around them from their current time. As an action, you can expend a spell slot and destroy all of your time fissures forcing each creature within 10 feet of a time fissure to make a Wisdom saving throw against your spell save DC. On a failure, a creature takes 1d10 necrotic damage for each level of the spell slot you expended, or half as much damage on a success. If a creature fails this safe, you can impose one of the following additional effects:&#13;
+      •The creature is magically aged by 1 year.&#13;
+      •The creature's speed is halved until the end if its next turn.&#13;
+      •The creature cannot take reactions until the end of its next turn.&#13;
+      •The creature is frozen in time as per the rules of the Crack Time feature.&#13;
+      If a creature fails the saving throw by 5 or more, they are magically aged by one year.&#13; Creatures within 10 feet of multiple time fissures are affected only once.</description>
+    </sheet>
+  </element>
+  <element name="Pact of the Hourglass" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_HOURGLASS">
+		<supports>Pact Boon</supports>
+		<description>
+			<p>Your patron grants you a special hourglass with sands that are fixed in time. While you are holding this hourglass, you may spend 10 minutes performing a ritual to peer into the past or future of the location where you performed this ritual. Name a particular point in time within your maximum temporal range shown in the table below. The sands within the hourglass begin to depict events which happened at the point in time you described at the location where the ritual was performed. Your DM may give you a detailed description of what occurred at the time which you specified but cannot convey what sounds were present.</p>
+      <p class="indent">Your maximum temporal range depends on your warlock level and is shown in the following table.</p>
+      <table>
+        <thead>
+          <tr><td>Warlock Level</td><td>Maximum Temporal Past</td><td>Maximum Temporal Future</td></tr>
+        </thead>
+        <tr><td>3rd</td><td>1 Hour</td><td>10 Minutes</td></tr>
+        <tr><td>5th</td><td>1 Day</td><td>1 Hour</td></tr>
+        <tr><td>11th</td><td>1 Year</td><td>1 Day</td></tr>
+        <tr><td>17th</td><td>100 Years</td><td>10 Days</td></tr>
+      </table>
+      <p class="indent">If you witness an event which happened in the past, you gain special information about what related to that event. You have advantage on all Intelligence ability checks which relate to the event that you witnessed.</p>
+      <p class="indent">If you witnessed an event which happened in the future, you may reroll one ability check, saving throw or attack roll if you become present at that event. This may include during combat. You lose this ability once the event has passed or the situations have changed sufficiently that your prediction is no longer accurate.</p>
+      <p class="indent">If you lose your hourglass, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous hourglass. The hourglass crumbles to sand when you die.</p>
+		</description>
+		<sheet>
+			<description>Your patron grants you a special hourglass with sands that are fixed in time. While you are holding this hourglass, you may spend 10 minutes performing a ritual to peer into the past or future of the location where you performed this ritual. Name a particular point in time within your maximum temporal range shown in the table below. The sands within the hourglass begin to depict events which happened at the point in time you described at the location where the ritual was performed. Your DM may give you a detailed description of what occurred at the time which you specified but cannot convey what sounds were present.&#13;
+      If you witness an event which happened in the past, you gain special information about what related to that event. You have advantage on all Intelligence ability checks which relate to the event that you witnessed.&#13;
+      If you witnessed an event which happened in the future, you may reroll one ability check, saving throw or attack roll if you become present at that event. This may include during combat. You lose this ability once the event has passed or the situations have changed sufficiently that your prediction is no longer accurate.</description>
+		</sheet>
+	</element>
+  <element name="A Glimpse of the Future" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_A_GLIMPSE_OF_THE_FUTURE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>7th Level, Pact of the Hourglass</prerequisite>
+		<requirements>ID_RDDT_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_HOURGLASS, [level:7]</requirements>
+		<description>
+			<p>While your hourglass is on your person, you have advantage on initiative rolls and you cannot be surprised while you aren't incapacitated.</p>
+		</description>
+		<sheet>
+			<description>While your hourglass is on your person, you have advantage on initiative rolls and you cannot be surprised while you aren't incapacitated.</description>
+		</sheet>
+	</element>
+  <element name="By the way, I Know Everything" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_BTWIKE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Hourglass</prerequisite>
+		<requirements>ID_RDDT_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_HOURGLASS</requirements>
+		<description>
+			<p>When you would roll damage, you can instead deal the average damage for each dice rolled as follows: d4 (2), d6 (3), d8 (4), d10 (5), d12 (6). For example, were you to deal 1d10 + 1d6 damage, you would instead deal 6 + 4 damage without rolling. You must choose to do this before rolling damage die.</p>
+		</description>
+		<sheet>
+			<description>When you would roll damage, you can instead deal the average damage for each dice rolled as follows: d4 (2), d6 (3), d8 (4), d10 (5), d12 (6). For example, were you to deal 1d10 + 1d6 damage, you would instead deal 5 + 3 damage without rolling. You must choose before rolling damage die.</description>
+		</sheet>
+	</element>
+  <element name="The Time of Your Life" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_THE_TIME_OF_YOUR_LIFE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Hourglass</prerequisite>
+		<requirements>ID_RDDT_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_HOURGLASS</requirements>
+		<description>
+			<p>When you witness a future event with your hourglass, any creatures which were present at the event have disadvantage on the first saving throw you force them to make. This ability lasts until after the event you foresaw has occurred.</p>
+		</description>
+		<sheet>
+			<description>When you witness a future event with your hourglass, any creatures which were present at the event have disadvantage on the first saving throw you force them to make. This ability lasts until after the event you foresaw has occurred.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <element name="The Star Forger" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_STAR_FORGER">
+    <supports>Otherworldly Patron</supports>
+    <requirements />
+    <description>
+      <p>Your patron is the Star Forger, a creature of immense power and stature with an ability to traverse the galaxy and adjust the very stars themselves, Ancient astral dragons, particularly powerful star spawn, or even Elder Evils.</p>
+      <p class="indent">With the magic they've granted you, you're able to manipulate your own personal galaxy, bending small stars to your will. Additionally, you can suspend your magic, nurturing it as you wait of the the perfect moment to unleash the full power of the cosmos upon your foes</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_EXPANDED_SPELL_LIST" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_COSMIC_SUSPENSION" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_CENTRE_OF_THE_UNIVERSE" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_STELLAR_FLARE" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_APPROACH_VELOCITY" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_SUPERNOVA" />
+    </description>
+    <sheet>
+      <description>Your patron is the Star Forger, a creature of immense power and stature with an ability to traverse the galaxy and adjust the very stars themselves, Ancient astral dragons, particularly powerful star spawn, or even Elder Evils.&#13;
+      With the magic they've granted you, you're able to manipulate your own personal galaxy, bending small stars to your will. Additionally, you can suspend your magic, nurturing it as you wait of the the perfect moment to unleash the full power of the cosmos upon your foes</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_COSMIC_SUSPENSION" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_CENTRE_OF_THE_UNIVERSE" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_STELLAR_FLARE" level="6"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_APPROACH_VELOCITY" level="10"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_SUPERNOVA" level="14" />
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>The Star Forger lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>STAR FORGER EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>Guiding Bolt, Halt</em></td></tr>
+        <tr><td>2nd</td><td><em>Silence, Phantasmal Force</em></td></tr>
+        <tr><td>3rd</td><td><em>Daylight, Gravity Shift</em></td></tr>
+        <tr><td>4th</td><td><em>Fire Shield, Otiluke's Resilient Sphere</em></td></tr>
+        <tr><td>5th</td><td><em>Creation, Telekinesis</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Void lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_GUIDING_BOLT</extend>
+     <extend>ID_RDDT_SPELL_HALT</extend>
+      <extend>ID_PHB_SPELL_SILENCE</extend>
+      <extend>ID_PHB_SPELL_PHANTASMAL_FORCE</extend>
+      <extend>ID_RDDT_SPELL_GRAVITY_SHIFT</extend>
+      <extend>ID_PHB_SPELL_DAYLIGHT</extend>
+      <extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+      <extend>ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE</extend>
+      <extend>ID_PHB_SPELL_CREATION</extend>
+      <extend>ID_PHB_SPELL_TELEKINESIS</extend>
+    </spellcasting>
+    <rules></rules>
+  </element>
+  <element name="Cosmic Suspension" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_COSMIC_SUSPENSION">
+    <description>
+      <p>At 1st level, you can delay your spells, casting them when you need them the most. When you cast a warlock spell of 1st-level or higher on your turn, you may suspend it for up to 1 minute. A suspended spell has no immediate effect instead you may use your reaction to cast the spell at any point during that time (including on your turn). If the minute passes without you casting that spell the spell slot is used. You may only suspend 1 spell at a time.</p>
+    </description>
+    <sheet>
+      <description>At 1st level, you can delay your spells, casting them when you need them the most. When you cast a warlock spell of 1st-level or higher on your turn, you may suspend it for up to 1 minute. A suspended spell has no immediate effect instead you may use your reaction to cast the spell at any point during that time (including on your turn). If the minute passes without you casting that spell the spell slot is used. You may only suspend 1 spell at a time.</description>
+    </sheet>
+  </element>
+  <element name="Centre of the Universe" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_CENTRE_OF_THE_UNIVERSE">
+    <description>
+      <p>At 1st level, you may use your action to create 3 motes of light that shed bright light in a 5ft radius. As a free action you may dim them to produce dim light or no light. As a bonus action you may move a mote to any point within 60ft of you or have one return to you. If you move more than 60ft from a mote in automatically returns.</p>
+    </description>
+    <sheet action="Action">
+      <description>At 1st level, you may use your action to create 3 motes of light that shed bright light in a 5ft radius. As a free action you may dim them to produce dim light or no light. As a bonus action you may move a mote to any point within 60ft of you or have one return to you. If you move more than 60ft from a mote in automatically returns.</description>
+    </sheet>
+  </element>
+  <element name="Stellar Flare" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_STELLAR_FLARE">
+    <description>
+      <p>At 6th level, your galaxy begins to blaze. When a creature you can see moves within 10ft of one of your motes or starts its turn there, you can use your reaction to deal 1d4 radiant damage to that creature on a failed Constitution saving throw. This damage increases to 2d4 at 10th level and 3d4 at 14th level</p>
+    </description>
+    <sheet action="Reaction">
+      <description>At 6th level, your galaxy begins to blaze. When a creature you can see moves within 10ft of one of your motes or starts its turn there, you can use your reaction to deal 1d4 radiant damage to that creature on a failed Constitution saving throw.</description>
+      <description level="10">At 10th level, your galaxy begins to blaze. When a creature you can see moves within 10ft of one of your motes or starts its turn there, you can use your reaction to deal 2d4 radiant damage to that creature on a failed Constitution saving throw.</description>
+      <description level="14">At 14th level, your galaxy begins to blaze. When a creature you can see moves within 10ft of one of your motes or starts its turn there, you can use your reaction to deal 3d4 radiant damage to that creature on a failed Constitution saving throw.</description>
+    </sheet>
+  </element>
+  <element name="Approach Velocity" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_APPROACH_VELOCITY">
+    <description>
+      <p>At 10th level, you become immune to fall damage, you cannot be knocked prone while you're conscious and ignore non magical difficult terrain. Additionally, when you take the Dash action you may now move across liquid surfaces as if they were solid, you may still take damage from this and once you stop moving they act like liquids again.</p>
+    </description>
+    <sheet>
+      <description>At 10th level, you become immune to fall damage, you cannot be knocked prone while you're conscious and ignore non magical difficult terrain. Additionally, when you take the Dash action you may now move across liquid surfaces as if they were solid, you may still take damage from this and once you stop moving they act like liquids again.</description>
+    </sheet>
+  </element>
+  <element name="Supernova" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_SUPERNOVA">
+    <description>
+      <p>At 14th level your mere thoughts pull at the tapestry of the universe, bending it to your will. You may move any number of your motes as a bonus action on your turn. Additionally, as an action on your turn, you can have all of your motes spark with the light of creation. Creatures of your choice within 10ft of at least one of your motes must make a Constitution saving throw. On a failed save, a creature takes 14d4 radiant damage and is blinded until the end of you next turn. In a success, a creature takes half as much damage and isn't blinded. Once you use your motes in this way they go out and may not be summoned until you have finished a long rest.</p>
+    </description>
+    <sheet action="Action" usage="1/Long Rest">
+      <description>At 14th level your mere thoughts pull at the tapestry of the universe, bending it to your will. You may move any number of your motes as a bonus action on your turn. Additionally, as an action on your turn, you can have all of your motes spark with the light of creation. Creatures of your choice within 10ft of at least one of your motes must make a Constitution saving throw. On a failed save, a creature takes 14d4 radiant damage and is blinded until the end of you next turn. In a success, a creature takes half as much damage and isn't blinded. Once you use your motes in this way they go out and may not be summoned until you have finished a long rest.</description>
+    </sheet>
+  </element>
+<!--Eldritch Invocations-->
+  <element name="Celestial Expansion" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_CELESTIAL_EXPANSION">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>5th level, Star Forger Patron</prerequisite>
+		<requirements>[level:5], ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_COSMIC_SUSPENSION</requirements>
+		<description>
+			<p>You can cast <i>Melf's Minute Meteors</i> once per long rest using a warlock spell slot.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_MELFS_MINUTE_METEORS" />
+			</div>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast <i>Melf's Minute Meteors</i> once per long rest using a warlock spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MELFS_MINUTE_METEORS" />
+		</rules>
+	</element>
+  <element name="Cosmic Warfare" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_COSMIC_WARFARE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Blade, Star Forger Patron</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE, ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_COSMIC_SUSPENSION</requirements>
+		<description>
+			<p>When you have at least one of your motes orbiting you, weapon attacks made with your pact weapon deal an additional 1d4 radiant damage. Additionally, when you suspend a warlock spell with a casting time of 1 action you may make a single weapon attack with your pact weapon as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you have at least one of your motes orbiting you, weapon attacks made with your pact weapon deal an additional 1d4 radiant damage. Additionally, when you suspend a warlock spell with a casting time of 1 action you may make a single weapon attack with your pact weapon as a bonus action.</description>
+		</sheet>
+	</element>
+  <element name="Galactic Forces" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_GALACTIC_FORCES">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>6th level, Star Forger Patron</prerequisite>
+		<requirements>[level:6], ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_COSMIC_SUSPENSION</requirements>
+		<description>
+			<p>Whenever a creature fails its saving throw against your Stellar Flare feature, you may pull or push it up to 10ft towards or away from the mote.</p>
+		</description>
+		<sheet>
+			<description>Whenever a creature fails its saving throw against your Stellar Flare feature, you may pull or push it up to 10ft towards or away from the mote.</description>
+		</sheet>
+	</element>
+  <element name="Planar Wayfarer" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_PLANAR_WAYFARER">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Star Forger Patron</prerequisite>
+		<requirements>ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_COSMIC_SUSPENSION</requirements>
+		<description>
+			<p>Your walking speed increases by 10ft, this bonus is doubled while walking on any other plane of existence other than the material plane. Additionally you gain advantage on all ability checks to discern the location of planar portals or gateways.</p>
+		</description>
+		<sheet>
+			<description>Your walking speed increases by 10ft, this bonus is doubled while walking on any other plane of existence other than the material plane. Additionally you gain advantage on all ability checks to discern the location of planar portals or gateways.</description>
+		</sheet>
+		<rules>
+    <stat name="innate speed:misc" value="10" bonus="invocation" requirements="[innate speed:1]" />
+		</rules>
+	</element>
+  <element name="Star Chart" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_STAR_CHART">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Star Forger Patron, Pact of the Tome</prerequisite>
+		<requirements>ID_RDDT_ARCHETYPE_FEATURE_STAR_FORGER_COSMIC_SUSPENSION, ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME</requirements>
+		<description>
+			<p>You gain proficiency with Navigator's Tools and Cartographer's Tools, you may use your Book of Shadows in place of either. While you can see the night sky and are holding your Book of Shadows, you gain advantage on Survival checks to navigate or draw a map, and you know which direction is North.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency with Navigator's Tools and Cartographer's Tools, you may use your Book of Shadows in place of either. While you can see the night sky and are holding your Book of Shadows, you gain advantage on Survival checks to navigate or draw a map, and you know which direction is North.</description>
+		</sheet>
+		<rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+		</rules>
+	</element>
+<!--Spells-->
+  <element name="Gravity Shift" type="Spell" source="Reddit : Unearthed Arcana" id="ID_RDDT_SPELL_GRAVITY_SHIFT">
+    <supports></supports>
+    <description>
+      <p>You shift gravity around a point you can see within range. All creatures within 20ft of the point must make a Strength Saving throw, On a failed save the creatures take 5d6 force damage and you can choose to pull or push them 10ft towards or away from the point. On a successful save the creature takes half damage and isn't moved.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 action</set>
+      <set name="range">90ft</set>
+      <set name="duration">Instantaneous</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"></set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Halt" type="Spell" source="Reddit : Unearthed Arcana" id="ID_RDDT_SPELL_HALT">
+    <supports></supports>
+    <description>
+      <p>You impose a magical force in a 10ft sphere within range, attempting to hinder the movement of creatures inside. Creatures of your choice inside the sphere must succeed on a strength saving throw. On a failed save, it can't willingly move until the end of your next turn.</p>
+      <p>At Higher Levels. When you cast this spell using spell slot greater than 1st level the radius of the sphere increases by 5ft per spell level above 1st.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Abjuration</set>
+      <set name="time">1 action</set>
+      <set name="range">60ft</set>
+      <set name="duration">Instantaneous</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"></set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+</elements>

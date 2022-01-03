@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+	    <update version="0.0.1">
+			<file name="warlock-monster-in-the-closet.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Warlock/warlock-monster-in-the-closet.xml" />
+		</update>
+	</info>
+  <element name="The Monster in the Closet" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_MONSTER_IN_THE_CLOSET">
+    <supports>Otherworldly Patron</supports>
+    <requirements />
+    <description>
+      <p>The weird shadow on the wall, the unsettling creak of the floorboards, the soft scratch against the window. Sometimes the imaginary monsters hiding in the dark are not at all imaginary. Sometimes they don’t fade away as children grow into adults. Sometimes those adults prove to be just as frightening as the monsters themselves.</p>
+      <p class="indent">Warlocks with a Monster in the Closet patron might know their monster only as a haunting memory, or they may get together, person-to-monster, on a regular basis. The monster may have tormented the warlock in their youth or it may have quickly become a lifelong friend. Some of these boogiemen are lighthearted tricksters; others, dark and violent. Whether bound by caring or a shared loathing, warlock and monster work together in terrifying tandem.</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_EXPANDED_SPELL_LIST" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_SECURITY_BLANKET" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_CAST_IN_DARKNESS" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_LURKING_DANGER" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_ALWAYS_WATCHING" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_TWO_MONSTERS" />
+    </description>
+    <sheet display="false">
+      <description>The weird shadow on the wall, the unsettling creak of the floorboards, the soft scratch against the window. Sometimes the imaginary monsters hiding in the dark are not at all imaginary. Sometimes they don’t fade away as children grow into adults. Sometimes those adults prove to be just as frightening as the monsters themselves.&#13;
+      Warlocks with a Monster in the Closet patron might know their monster only as a haunting memory, or they may get together, person-to-monster, on a regular basis. The monster may have tormented the warlock in their youth or it may have quickly become a lifelong friend. Some of these boogiemen are lighthearted tricksters; others, dark and violent. Whether bound by caring or a shared loathing, warlock and monster work together in terrifying tandem.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_SECURITY_BLANKET" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_CAST_IN_DARKNESS" level="6"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_LURKING_DANGER" level="6"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_ALWAYS_WATCHING" level="10"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_TWO_MONSTERS" level="14"/>
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>The Monster in the Closet lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>MONSTER IN THE CLOSET EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>Sleep, Dissonant Whispers</em></td></tr>
+        <tr><td>2nd</td><td><em>Locate Object, See Invisibility</em></td></tr>
+        <tr><td>3rd</td><td><em>Glyph of Warding, Sending</em></td></tr>
+        <tr><td>4th</td><td><em>Greater Invisibility, Phantasmal Killer</em></td></tr>
+        <tr><td>5th</td><td><em>Creation, Dispel Evil and Good</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Monster in the Closet lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_SLEEP</extend>
+      <extend>ID_PHB_SPELL_DISSONANT_WHISPERS</extend>
+      <extend>ID_PHB_SPELL_LOCATE_OBJECT</extend>
+      <extend>ID_PHB_SPELL_SEE_INVISIBILITY</extend>
+      <extend>ID_PHB_SPELL_GLYPH_OF_WARDING</extend>
+      <extend>ID_PHB_SPELL_SENDING</extend>
+      <extend>ID_PHB_SPELL_GREATER_INVISIBILITY</extend>
+      <extend>ID_PHB_SPELL_PHANTASMAL_KILLER</extend>
+      <extend>ID_PHB_SPELL_CREATION</extend>
+      <extend>ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD</extend>
+    </spellcasting>
+    <rules></rules>
+  </element>
+  <element name="Security Blanket" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_SECURITY_BLANKET">
+    <description>
+      <p>You have a physical memento from childhood—a favorite toy, a blankey, a hand-drawn picture. While in possession of the memento, you have a bonus to all saving throws equal to your maximum Warlock spell slots.</p>
+      <p class="indent">The item is magically durable and can only be truly damaged with a spell like Wish. The item can be lost however, in which event, a warlock may go to extreme efforts to recover it.</p>
+    </description>
+    <sheet>
+      <description>You have a physical memento from childhood—a favorite toy, a blankey, a hand-drawn picture. While in possession of the memento, you have a +{{warlock:spellcasting:slot}} bonus to all saving throws.&#13;
+      The item is magically durable and can only be truly damaged with a spell like Wish. The item can be lost however, in which event, a warlock may go to extreme efforts to recover it.</description>
+    </sheet>
+    <rules>
+      <stat name="strength:save:misc" value="warlock:spellcasting:slot" />
+      <stat name="dexterity:save:misc" value="warlock:spellcasting:slot" />
+      <stat name="constitution:save:misc" value="warlock:spellcasting:slot" />
+      <stat name="intelligence:save:misc" value="warlock:spellcasting:slot" />
+      <stat name="wisdom:save:misc" value="warlock:spellcasting:slot" />
+      <stat name="charisma:save:misc" value="warlock:spellcasting:slot" />
+    </rules>
+  </element>
+  <element name="Cast in Darkness" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_CAST_IN_DARKNESS">
+    <description>
+      <p>Starting at 6th level, your patron slinks along with you just outside of the material plane, protecting you from harmful magics. You may cast <i>Counterspell</i> without using a spell slot. After using this ability, you may not use it again until you finish a long rest.</p>
+    </description>
+    <sheet usage="1/Long Rest">
+      <description>Starting at 6th level, your patron slinks along with you just outside of the material plane, protecting you from harmful magics. You may cast Counterspell without using a spell slot. After using this ability, you may not use it again until you finish a long rest.</description>
+    </sheet>
+  </element>
+  <element name="Lurking Danger" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_LURKING_DANGER">
+    <description>
+      <p>As a bonus action, you can call the monster partially into the world for 1 minute at your location. The monster acts on your initiative, and you may decide how it spends its action. It may not attack, but it may take other actions and may use your Warlock spell slots to cast spells that you know. It may not cast cantrips.</p>
+      <p class="indent">The monster is medium sized and shares your AC, movement speed, ability and saving throw modifiers, and maximum HP. It also has 120 foot darkvision and advantage on Intimidation checks.</p>
+      <p class="indent">After 1 minute or if the monster is reduced to 0 HP, it retreats from the material plane until you call on it again. You may not use this feature again until you finish a short or long rest.</p>
+    </description>
+    <sheet usage="1/Rest">
+      <description>As a bonus action, you can call the monster partially into the world for 1 minute at your location. The monster acts on your initiative, and you may decide how it spends its action. It may not attack, but it may take other actions and may use your Warlock spell slots to cast spells that you know. It may not cast cantrips.&#13;
+      The monster is medium sized and shares your AC, movement speed, ability and saving throw modifiers, and maximum HP. It also has 120 foot darkvision and advantage on Intimidation checks.&#13;
+      After 1 minute or if the monster is reduced to 0 HP, it retreats from the material plane until you call on it again. You may not use this feature again until you finish a short or long rest.</description>
+    </sheet>
+  </element>
+  <element name="Always Watching" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_ALWAYS_WATCHING">
+    <description>
+      <p>The monster will alert you if it senses danger. While sleeping, you may use your passive perception as if you were awake. You cannot be surprised at the start of combat.</p>
+    </description>
+    <sheet>
+      <description>The monster will alert you if it senses danger. While sleeping, you may use your passive perception as if you were awake. You cannot be surprised at the start of combat.</description>
+    </sheet>
+  </element>
+  <element name="Mystic Arcanum Improvement" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MONSTER_IN_THE_CLOSET_TWO_MONSTERS">
+    <description>
+      <p>While the monster is present using Lurking Danger and either you or your monster use the Attack action, the attacker may make three attacks as follows:</p>
+      <p class="indent"><b><i>Eldritch Assault.</i></b> <i>Magical Melee Weapon Attack:</i> add your spell attack modifier to hit, reach 5 feet, one target. Hit: 1d10 + Charisma Modifier force damage.</p>
+    </description>
+    <sheet>
+      <description>While the monster is present using Lurking Danger and either you or your monster use the Attack action, the attacker may make three attacks as follows:&#13;
+      Eldritch Assault. Magical Melee Weapon Attack: +{{spellcasting:attack}} to hit, reach 5 feet, one target. Hit: 1d10 + {{charisma:modifier}} force damage.</description>
+    </sheet>
+  </element>
+</elements>

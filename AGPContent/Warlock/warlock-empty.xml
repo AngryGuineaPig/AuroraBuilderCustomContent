@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+	    <update version="0.0.1">
+			<file name="warlock-empty.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Warlock/warlock-empty.xml" />
+	</info>
+  <element name="The Empty" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_EMPTY">
+    <supports>Otherworldly Patron</supports>
+    <requirements />
+    <description>
+      <p>Abandoned by all else mortals can find themselves filled with a bursting dread and embraced with as deafening silence. These people find themselves on a day to day basis staring into a void that whispers to them dark secrets and ideas, but only those who look into the void and scream back can truly understand how morbid these thoughts truly are. The Empty are those who when scorned by not only people, but the primal forces of the world be it the gods ore the elements themselves would do anything to fill an all encompassing void within themselves. Those cursed with this power feel only ever the need to consume and fill the void that lies within themselves.</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_EMPTY_EXPANDED_SPELL_LIST" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_EMPTY_SOUL_SHARDS" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_EMPTY_RAVENOUS_INTENT" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_EMPTY_DEVOURED_EMPATHY" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_EMPTY_STARVED_SINGULARITY" />
+    </description>
+    <sheet>
+      <description>Abandoned by all else mortals can find themselves filled with a bursting dread and embraced with as deafening silence. These people find themselves on a day to day basis staring into a void that whispers to them dark secrets and ideas, but only those who look into the void and scream back can truly understand how morbid these thoughts truly are. The Empty are those who when scorned by not only people, but the primal forces of the world be it the gods ore the elements themselves would do anything to fill an all encompassing void within themselves. Those cursed with this power feel only ever the need to consume and fill the void that lies within themselves.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_EMPTY_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_EMPTY_SOUL_SHARDS" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_EMPTY_RAVENOUS_INTENT" level="6"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_EMPTY_DEVOURED_EMPATHY" level="10"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_EMPTY_STARVED_SINGULARITY" level="14"/>
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_EMPTY_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>The Empty lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>EMPTY EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>Absorb Elements, False Life</em></td></tr>
+        <tr><td>2nd</td><td><em>Blindness/Deafness, Phantasmal Force</em></td></tr>
+        <tr><td>3rd</td><td><em>Life Transference, Protection from Energy</em></td></tr>
+        <tr><td>4th</td><td><em>Grasping Vine, Locate Creature</em></td></tr>
+        <tr><td>5th</td><td><em>Anitlife Shell, Maelstrom</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Empty lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_ABSORB_ELEMENTS</extend>
+      <extend>ID_PHB_SPELL_FALSE_LIFE</extend>
+      <extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+      <extend>ID_PHB_SPELL_PANTASMAL_FORCE</extend>
+      <extend>ID_PHB_SPELL_LIFE_TRANSFERENCE</extend>
+      <extend>ID_PHB_SPELL_PROTECTION_FROM_ENERGY</extend>
+      <extend>ID_PHB_SPELL_GRASPING_VINE</extend>
+      <extend>ID_PHB_SPELL_LOCATE_CREATURE</extend>
+      <extend>ID_PHB_SPELL_ANTILIFE_SHELL</extend>
+      <extend>ID_PHB_SPELL_MAELSTROM</extend>
+    </spellcasting>
+    <rules></rules>
+  </element>
+  <element name="Soul Shards" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_EMPTY_SOUL_SHARDS">
+    <description>
+      <p>At 1st level, you have a number of soul shards equal to your charisma modifier that can be used to amplify certain powers.</p>
+      <p><b>Soulburn.</b> Once per turn when casting a warlock spell of 1st level or higher that deals damage you may expend a soul shard to have the spell deal additional necrotic damage equal to your charisma modifier. If you later gain the pact of the blade or chain boon you may use this feature on attacks made with your pact weapon or familiar.</p>
+      <p><b>Haunt.</b> When you see and enemy within 30ft of you regain hit points as a result of a spell you may use your reaction to expend as many Soul Shards as you have to reduce the amount healed equal to your charisma modifier times the number of expended Soul Shards.</p>
+      <p>You regain all spend soul shards at the end of a long rest and half your warlock level at the end of a short rest.</p>
+    </description>
+    <sheet>
+      <description>At 1st level, you have {{charisma:modifier}} soul shards that can be used to amplify certain powers.&#13;
+      Soulburn. Once per turn when casting a warlock spell of 1st level or higher that deals damage you may expend a soul shard to have the spell deal {{charisma:modifier}} additional necrotic damage. If you later gain the pact of the blade or chain boon you may use this feature on attacks made with your pact weapon or familiar.&#13;
+      Haunt. When you see and enemy within 30ft of you regain hit points as a result of a spell you may use your reaction to expend as many Soul Shards as you have to reduce the amount healed equal to {{charisma:modifier}} times the number of expended Soul Shards.&#13;
+      You regain all spend soul shards at the end of a long rest and {{level:warlock:half:down}} at the end of a short rest.</description>
+    </sheet>
+  </element>
+  <element name="Ravenous Intent" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_EMPTY_RAVENOUS_INTENT">
+    <description>
+      <p>At 6th level, your hunger grows and your need to fuel yourself has become so intense that even pain means nothing as long as you can devour those around you. As a reaction when a creature makes an attack roll against you, you can grant the creature advantage on the attack roll and if the hit, you gain advantage on all attack rolls against that target until the end of you next turn, you can do this once per long rest.</p>
+    </description>
+    <sheet usage="1/Long Rest">
+      <description>At 6th level, your hunger grows and your need to fuel yourself has become so intense that even pain means nothing as long as you can devour those around you. As a reaction when a creature makes an attack roll against you, you can grant the creature advantage on the attack roll and if the hit, you gain advantage on all attack rolls against that target until the end of you next turn, you can do this once per long rest.</description>
+    </sheet>
+  </element>
+  <element name="Devoured Empathy" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_EMPTY_DEVOURED_EMPATHY">
+    <description>
+      <p>At 10th level the void has stripped so much of you away that you barely feel anything at all and as such your physique reflects that. You are immune to being charmed, frightened and stunned.</p>
+    </description>
+    <sheet>
+      <description>At 10th level the void has stripped so much of you away that you barely feel anything at all and as such your physique reflects that. You are immune to being charmed, frightened and stunned.</description>
+    </sheet>
+  </element>
+  <element name="Starved Singularity" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_EMPTY_STARVED_SINGULARITY">
+    <description>
+      <p>At 14th level, your hunger has grown so intense you're willing to rip apart those around you if it means it would fill the void. As an action you can unleash the void. All creatures within 30ft of you must make a charisma saving throw or suffer 6d6 necrotic damage on a failed save or half as much on a successful one. You gain temporary hit points equal to half of the total damage dealt. Once you've used this feature you can't again until you've finished a long rest.</p>
+    </description>
+    <sheet usage="1/Long Rest" action="Action">
+      <description>At 14th level, your hunger has grown so intense you're willing to rip apart those around you if it means it would fill the void. As an action you can unleash the void. All creatures within 30ft of you must make a charisma saving throw or suffer 6d6 necrotic damage on a failed save or half as much on a successful one. You gain temporary hit points equal to half of the total damage dealt. Once you've used this feature you can't again until you've finished a long rest.</description>
+    </sheet>
+  </element>
+</elements>

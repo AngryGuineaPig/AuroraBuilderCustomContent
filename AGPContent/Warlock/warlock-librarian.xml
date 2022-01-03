@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+	    <update version="0.0.1">
+			<file name="warlock-librarian.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Warlock/warlock-librarian.xml" />
+		</update>
+	</info>
+  <element name="The Librarian" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_LIBRARIAN">
+    <supports>Otherworldly Patron</supports>
+    <requirements />
+    <description>
+      <p>Your patron is the keeper of a large source of knowledge, be it facts, ingredients, or arcane secrets. You have reached out to them to gain the secrets of the multiverse and power. In return, you search for secret knowledge lost in time or those not found in the library.</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_EXPANDED_SPELL_LIST" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_PATRONS_GIFT" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_BOOKS_OF_SPELLS" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_ACCESS_TO_KNOWLEDGE" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_WORK_OF_FICTION" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_BETTER_ACCESS" />
+    </description>
+    <sheet>
+      <description>Your patron is the keeper of a large source of knowledge, be it facts, ingredients, or arcane secrets. You have reached out to them to gain the secrets of the multiverse and power. In return, you search for secret knowledge lost in time or those not found in the library.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_PATRONS_GIFT" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_BOOKS_OF_SPELLS" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_ACCESS_TO_KNOWLEDGE" level="6"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_WORK_OF_FICTION" level="10"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_BETTER_ACCESS" level="14"/>
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>The Librarian lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>LIBRARIAN EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>Alarm, Identify</em></td></tr>
+        <tr><td>2nd</td><td><em>Locate Object, Zone of Truth</em></td></tr>
+        <tr><td>3rd</td><td><em>Clairvoyance, Speak with Dead</em></td></tr>
+        <tr><td>4th</td><td><em>Fabricate, Leomund's Secret Chest</em></td></tr>
+        <tr><td>5th</td><td><em>Creation, Legend Lore</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Librarian lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_ALARM</extend>
+      <extend>ID_PHB_SPELL_IDENTIFY</extend>
+      <extend>ID_PHB_SPELL_LOCATE_OBJECT</extend>
+      <extend>ID_PHB_SPELL_ZONE_OF_TRUTH</extend>
+      <extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+      <extend>ID_PHB_SPELL_SPEAK_WITH_DEAD</extend>
+      <extend>ID_PHB_SPELL_FABRICATE</extend>
+      <extend>ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST</extend>
+      <extend>ID_PHB_SPELL_CREATION</extend>
+      <extend>ID_PHB_SPELL_LEGEND_LORE</extend>
+    </spellcasting>
+    <rules></rules>
+  </element>
+  <element name="Patron's Gift" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_PATRONS_GIFT">
+    <description>
+      <p>At 1st level, you gain a skill proficiency of your choice. You gain another at 6th, 10th and 14th level.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency, Patron's Gift" supports="Skill" number="1" level="1"/>
+      <select type="Proficiency" name="Skill Proficiency, Patron's Gift" supports="Skill" number="1" level="6"/>
+      <select type="Proficiency" name="Skill Proficiency, Patron's Gift" supports="Skill" number="1" level="10"/>
+      <select type="Proficiency" name="Skill Proficiency, Patron's Gift" supports="Skill" number="1" level="14"/>
+    </rules>
+  </element>
+  <element name="Book of Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_BOOKS_OF_SPELLS">
+    <description>
+      <p>At 1st level, you receive a book containing two warlock cantrips of your choice. You gain another cantrip at 6th level. These don't count against the number of cantrips known. You can only cast these with the book in your possession.</p>
+      <p class="indent"><b>Your Book of Spells.</b> The spells that you add to your book as you gain levels reflect the arcane findings you have found about the nature of the multiverse. You might find other spells during your adventures.</p>
+      <p class="indent"><b>Copying a Spell into the Book.</b> When you find a warlock spell of 1st level or higher, you can add it to your book. Copying a spell into your book involves reproducing the basic form of the spell. For each level of the spell, the process takes 3 hours and costs 50gp. The cost represents material components you expend as you master the spell. Once it is in your book you can cast it like any other spells.</p>
+      <p class="indent"><b>Replacing the Book.</b> You can copy a spell from your own book into another book. You only need 1 hour and 10gp per spell level and can do this even if your don't have the original spellbook.</p>
+      <p>If you later gain the Pact of the Tome feature, the book of shadows becomes your book of spells.</p>
+    </description>
+    <sheet usage="1/Long Rest">
+      <description>At 1st level, you receive a book containing two warlock cantrips of your choice. You gain another cantrip at 6th level. These don't count against the number of cantrips known. You can only cast these with the book in your possession.&#13;
+      Your Book of Spells. The spells that you add to your book as you gain levels reflect the arcane findings you have found about the nature of the multiverse. You might find other spells during your adventures.&#13;
+      Copying a Spell into the Book. When you find a warlock spell of 1st level or higher, you can add it to your book. Copying a spell into your book involves reproducing the basic form of the spell. For each level of the spell, the process takes 3 hours and costs 50gp. The cost represents material components you expend as you master the spell. Once it is in your book you can cast it like any other spells.&#13;
+      Replacing the Book. You can copy a spell from your own book into another book. You only need 1 hour and 10gp per spell level and can do this even if your don't have the original spellbook.&#13;
+      If you later gain the Pact of the Tome feature, the book of shadows becomes your book of spells.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="Cantrip (Book of Spells)" supports="Warlock, 0" level="1" number="2" spellcasting="Warlock" />
+    </rules>
+  </element>
+  <element name="Access to Knowledge" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_ACCESS_TO_KNOWLEDGE">
+    <description>
+      <p>At 6th level you can enter your patron's library through a doorway during a rest. Inside you can:</p>
+      <p class="indent">Learn a piece of information about a creature's lore or stats, however some creatures (DMs discretion) are not recorded.</p>
+      <p class="indent">Gain proficiency in a tool or skill for a day.</p>
+      <p class="indent">Learn the location of a mundane thing like town but not that of a specific creature.</p>
+      <p class="indent">Borrowing a spell. You can add a spell to your spellbook for a day, for every day you keep it past this one day limit you must pay a fine of 5 + (2 x number of days)gp per day. Inability to pay will cause a debt to rack up, and any currency found in the future, even if not your's, to be immediately sent to your patron.</p>
+      <p>You can use two of these effects per rest and you must sleep afterwards if you have to. Additionally you only take 2 hours per spell level to transcribe a spell to your spellbook.</p>
+    </description>
+    <sheet>
+      <description>At 6th level you can enter your patron's library through a doorway during a rest. Inside you can:&#13;
+      Learn a piece of information about a creature's lore or stats, however some creatures (DMs discretion) are not recorded.&#13;
+      Gain proficiency in a tool or skill for a day.&#13;
+      Learn the location of a mundane thing like town but not that of a specific creature.
+      Borrowing a spell. You can add a spell to your spellbook for a day, for every day you keep it past this one day limit you must pay a fine of 5 + (2 x number of days)gp per day. Inability to pay will cause a debt to rack up, and any currency found in the future, even if not your's, to be immediately sent to your patron.&#13;
+      You can use two of these effects per rest and you must sleep afterwards if you have to. Additionally you only take 2 hours per spell level to transcribe a spell to your spellbook.</description>
+    </sheet>
+  </element>
+  <element name="Work of Fiction" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_WORK_OF_FICTION">
+    <description>
+      <p>At 10th level, whenever you're targeted by an attack by a creature, you can use your reaction to write the attack out of existence. The creature has to make an intelligence saving throw against your spell save DC or the attack is negated, wasting any spell slot or ability if used. You have to do this before learning if the attack hits or misses. You can do this once per short rest.</p>
+    </description>
+    <sheet usage="1/Short Rest" action="Reaction">
+      <description>At 10th level, whenever you're targeted by an attack by a creature, you can use your reaction to write the attack out of existence. The creature has to make an intelligence saving throw against your spell save DC or the attack is negated, wasting any spell slot or ability if used. You have to do this before learning if the attack hits or misses. You can do this once per short rest.</description>
+    </sheet>
+  </element>
+  <element name="Better Access" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_LIBRARIAN_BETTER_ACCESS">
+    <description>
+      <p>At 14th level, your parton bequeaths unto you a shelf in his library. On this shelf you may store a warlock spell slot as a book. You must expend a slot to do so and this can only be done at the end of a short rest. The spell can be used at any point in the future. You can only store one spell like this at a time. Additionally, when you use Access to Knowledge to borrow a spell, you can borrow non-warlock spells.</p>
+    </description>
+    <sheet usage="One spell at a time">
+      <description>At 14th level, your parton bequeaths unto you a shelf in his library. On this shelf you may store a warlock spell slot as a book. You must expend a slot to do so and this can only be done at the end of a short rest. The spell can be used at any point in the future. You can only store one spell like this at a time. Additionally, when you use Access to Knowledge to borrow a spell, you can borrow non-warlock spells.</description>
+    </sheet>
+  </element>
+</elements>

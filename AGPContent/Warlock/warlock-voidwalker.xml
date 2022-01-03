@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+	    <update version="0.0.1">
+			<file name="warlock-voidwalker.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Warlock/warlock-voidwalker.xml" />
+		</update>
+	</info>
+  <element name="The Voidwalker" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_VOIDWALKER">
+    <supports>Otherworldly Patron</supports>
+    <requirements />
+    <description>
+      <p>Your patron is an entity ruling over the Void, a being of pure chaos. Despite its claims of neutrality of its motivations, it has been shaping the history of mankind for centuries and millennia. Beings of this sort include the Dead God, and the Void itself.</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_VOIDWALKER_EXPANDED_SPELL_LIST" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_VOIDWALKER_FAR_REACH" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_VOIDWALKER_VOID_GAZE" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_VOIDWALKER_CREATURE_OF_DARKNESS" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_VOIDWALKER_ARCANE_LINK" />
+    </description>
+    <sheet>
+      <description>Your patron is an entity ruling over the Void, a being of pure chaos. Despite its claims of neutrality of its motivations, it has been shaping the history of mankind for centuries and millennia. Beings of this sort include the Dead God, and the Void itself.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_VOIDWALKER_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_VOIDWALKER_FAR_REACH" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_VOIDWALKER_VOID_GAZE" level="6"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_VOIDWALKER_CREATURE_OF_DARKNESS" level="10"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_VOIDWALKER_ARCANE_LINK" level="14"/>
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_VOIDWALKER_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>The Voidwalker lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>VOIDWALKER EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>Command, Fog Cloud</em></td></tr>
+        <tr><td>2nd</td><td><em>Blur, Pass Without Trace</em></td></tr>
+        <tr><td>3rd</td><td><em>Blink, Haste</em></td></tr>
+        <tr><td>4th</td><td><em>Confusion, Faithful Hound</em></td></tr>
+        <tr><td>5th</td><td><em>Insect Plague, Mislead</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Voidwalker lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_COMMAND</extend>
+      <extend>ID_PHB_SPELL_FOG_CLOUD</extend>
+      <extend>ID_PHB_SPELL_BLUR</extend>
+      <extend>ID_PHB_SPELL_PASS_WITHOUT_TRACE</extend>
+      <extend>ID_PHB_SPELL_HASTE</extend>
+      <extend>ID_PHB_SPELL_BLINK</extend>
+      <extend>ID_PHB_SPELL_CONFUSION</extend>
+      <extend>ID_PHB_SPELL_MORDENKAINENS_FAITHFUL_HOUND</extend>
+      <extend>ID_PHB_SPELL_INSECT_PLAGUE</extend>
+      <extend>ID_PHB_SPELL_MISLEAD</extend>
+    </spellcasting>
+    <rules></rules>
+  </element>
+  <element name="Far Reach" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_VOIDWALKER_FAR_REACH">
+    <description>
+      <p>At 1st level, you gain one of the following features.</p>
+      <p class="indent"><b>Blink.</b> You can use your bonus action to teleport up to 10ft away to an unoccupied space you can see. While moving this way you don't provoke opportunity attacks and are invisible. You can also spend 15ft of movement to travel 30ft.</p>
+      <p class="indent"><b>Displace.</b> You can use your bonus action to form a Void link up to 30ft from you. On your next turn you can teleport to the Void link as a bonus action, not provoking attacks of opportunity. The link stays for 1 minute or until you dismiss it. If you move further than 60ft away from it it dissipates, you can teleport to the link as a bonus action as long as it exists. It is invisible.</p>
+    </description>
+    <sheet display="false">
+      <description></description>
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Far Reach" supports="Far Reach" level="1" number="1" />
+    </rules>
+  </element>
+  <element name="Blink" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BLINK">
+    	<supports>Far Reach</supports>
+    	<description>
+      		<p>You can use your bonus action to teleport up to 10ft away to an unoccupied space you can see. While moving this way you don't provoke opportunity attacks and are invisible. You can also spend 15ft of movement to travel 30ft.</p>
+    	</description>
+    	<sheet action="Bonus Action">
+      		<description>You can use your bonus action to teleport up to 10ft away to an unoccupied space you can see. While moving this way you don't provoke opportunity attacks and are invisible. You can also spend 15ft of movement to travel 30ft.</description>
+    	</sheet>
+  	</element>
+    <element name="Displace" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DISPLACE">
+    	<supports>Far Reach</supports>
+    	<description>
+      		<p>You can use your bonus action to form a Void link up to 30ft from you. On your next turn you can teleport to the Void link as a bonus action, not provoking attacks of opportunity. The link stays for 1 minute or until you dismiss it. If you move further than 60ft away from it it dissipates, you can teleport to the link as a bonus action as long as it exists. It is invisible.</p>
+    	</description>
+    	<sheet action="Bonus Action">
+      		<description>You can use your bonus action to form a Void link up to 30ft from you. On your next turn you can teleport to the Void link as a bonus action, not provoking attacks of opportunity. The link stays for 1 minute or until you dismiss it. If you move further than 60ft away from it it dissipates, you can teleport to the link as a bonus action as long as it exists. It is invisible.</description>
+    	</sheet>
+  	</element>
+  <element name="Void Gaze" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_VOIDWALKER_VOID_GAZE">
+    <description>
+      <p>At 6th level, you can use your bonus action or your action to see any living creature, construct or undead within 30ft of you.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description>At 6th level, you can use your bonus action or your action to see any living creature, construct or undead within 30ft of you.</description>
+    </sheet>
+  </element>
+  <element name="Creature of Darkness" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_VOIDWALKER_CREATURE_OF_DARKNESS">
+    <description>
+      <p>At 10th level you gain one of the following features.</p>
+      <p class="indent"><b>Shadow Walk.</b> You can use your action to transform into a shadow for 1 minute. In this state you and anything on your person are completely invisible. You cease to be invisible if you attack or cast a spell. While in this form you can end it by making a melee attack using your spell attack bonus dealing 4d10 force damage on a hit. This attack counts as an attack with a finesse weapon for purposes of a rogue's sneak attack. You can use this once per short rest.</p>
+      <p class="indent"><b>Devouring Swarm.</b> You can cast Conjure Animals at 5th level once per short rest. You can only summon a swarm of rats.</p>
+    </description>
+    <sheet display="false">
+      <description></description>
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Creature of Darkness" supports="Creature of Darkness" level="10" number="1" />
+    </rules>
+  </element>
+  <element name="Shadow Walk" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SHADOW_WALK">
+    	<supports>Creature of Darkness</supports>
+    	<description>
+      		<p>You can use your action to transform into a shadow for 1 minute. In this state you and anything on your person are completely invisible. You cease to be invisible if you attack or cast a spell. While in this form you can end it by making a melee attack using your spell attack bonus dealing 4d10 force damage on a hit. This attack counts as an attack with a finesse weapon for purposes of a rogue's sneak attack. You can use this once per short rest.</p>
+    	</description>
+    	<sheet action="Action" usage="1/Short Rest">
+      		<description>You can use your action to transform into a shadow for 1 minute. In this state you and anything on your person are completely invisible. You cease to be invisible if you attack or cast a spell. While in this form you can end it by making a melee attack using your spell attack bonus dealing 4d10 force damage on a hit. This attack counts as an attack with a finesse weapon for purposes of a rogue's sneak attack. You can use this once per short rest.</description>
+    	</sheet>
+  	</element>
+    <element name="Devouring Swarm" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DEVOURING_SWARM">
+    	<supports>Creature of Darkness</supports>
+    	<description>
+      		<p>You can cast Conjure Animals at 5th level once per short rest. You can only summon a swarm of rats.</p>
+    	</description>
+    	<sheet usage="1/Short Rest">
+      		<description>You can cast Conjure Animals at 5th level once per short rest. You can only summon a swarm of rats.</description>
+    	</sheet>
+      <rules>
+        <grant type="Spell" id="ID_PHB_SPELL_CONJURE_ANIMALS" spellcasting="Warlock" prepared="true" />
+  	  </rules>
+    </element>
+  <element name="Arcane Link" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_VOIDWALKER_ARCANE_LINK">
+    <description>
+      <p>At 14th level you gain one of the following features</p>
+      <p class="indent"><b>Apprentice.</b> As an action you can give the ability of Void Traverse and number a number of temporary hit points equal to half your warlock level + your Charisma modifier to a number of creatures equal to your Charisma modifier for 10 minutes. Void traverse is much like being ethereal, you can pass through solid materials as if they didn't exist, however you gain no bonuses to ac and are just as easy to hit as you would be normally. You can do this once per short rest.</p>
+      <p class="indent"><b>Domino.</b> As an acton you can link a number of creatures equal to 1 + half your charisma modifier within 60ft of you and within 30ft of each other. Each time one linked creature takes damage all of them do, the linked creatures take half the original damage as psychic damage. The link lasts 1 minute. You can do this once per short rest.</p>
+    </description>
+    <sheet display="false">
+      <description>At 14th level you gain one of the following features</description>
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Arcane Link" supports="Arcane Link" level="14" number="1" />
+    </rules>
+  </element>
+  <element name="Apprentice" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_APPRENTICE">
+    	<supports>Arcane Link</supports>
+    	<description>
+      		<p>As an action you can give the ability of Void Traverse and number a number of temporary hit points equal to half your warlock level + your Charisma modifier to a number of creatures equal to your Charisma modifier for 10 minutes. Void traverse is much like being ethereal, you can pass through solid materials as if they didn't exist, however you gain no bonuses to ac and are just as easy to hit as you would be normally. You can do this once per short rest.</p>
+    	</description>
+    	<sheet action="Action" usage="1/Short Rest">
+      		<description>As an action you can give the ability of Void Traverse and {{apprentice:hp}} temporary hit points to {{charisma:modifier}} creatures for 10 minutes. Void traverse is much like being ethereal, you can pass through solid materials as if they didn't exist, however you gain no bonuses to ac and are just as easy to hit as you would be normally. You can do this once per short rest.</description>
+    	</sheet>
+      <rules>
+        <stat name="apprentice:hp" value="charisma:modifier"/>
+        <stat name="apprentice:hp" value="level:warlock:half:up" />
+      </rules>
+  	</element>
+    <element name="Domino" type="Archetype Feature" source="Reddit: Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DOMINO">
+    	<supports>Arcane Link</supports>
+    	<description>
+      		<p>As an acton you can link a number of creatures equal to 1 + half your charisma modifier within 60ft of you and within 30ft of each other. Each time one linked creature takes damage all of them do, the linked creatures take half the original damage as psychic damage. The link lasts 1 minute. You can do this once per short rest.</p>
+    	</description>
+    	<sheet action="Action" usage="1/Short Rest">
+      		<description>As an acton you can link {{domino:number}} creatures within 60ft of you and within 30ft of each other. Each time one linked creature takes damage all of them do, the linked creatures take half the original damage as psychic damage. The link lasts 1 minute. You can do this once per short rest.</description>
+    	</sheet>
+      <rules>
+        <stat name="domino:number" value="1"/>
+        <stat name="domino:number" value="charisma:modifier:half:up"/>
+      </rules>
+    </element>
+</elements>

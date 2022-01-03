@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+	    <update version="0.0.1">
+			<file name="warlock-unusannus.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Warlock/warlock-unusannus.xml" />
+		</update>
+	</info>
+  <element name="Unus Annus" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_UNUS_ANNUS">
+    <supports>Otherworldly Patron</supports>
+    <requirements />
+    <description>
+      <p>We live our lives taking each second for granted. But what would you do if you knew how much time you had left? Warlocks of Unus Annus seek to answer this question. By taking this pack, they knowingly put a time limit on their lives, and intend on living out their lives to the fullest. Warlocks of this pact are perfectly content with the limited time of their lives, for they understand that all things must die, as is the natural order of things. They view undead as abominations that must all be destroyed, much like worshipers of the Raven Queen.</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_EXPANDED_SPELL_LIST" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_MEMENTO_MORI" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_VOICE_OF_TIME" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_REAPER_OF_TIME" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_DONT_TRY_THIS_AT_HOME" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_CARPE_DIEM" />
+    </description>
+    <sheet display="false">
+      <description>We live our lives taking each second for granted. But what would you do if you knew how much time you had left? Warlocks of Unus Annus seek to answer this question. By taking this pack, they knowingly put a time limit on their lives, and intend on living out their lives to the fullest. Warlocks of this pact are perfectly content with the limited time of their lives, for they understand that all things must die, as is the natural order of things. They view undead as abominations that must all be destroyed, much like worshipers of the Raven Queen.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_MEMENTO_MORI" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_VOICE_OF_TIME" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_REAPER_OF_TIME" level="6"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_DONT_TRY_THIS_AT_HOME" level="10"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_CARPE_DIEM" level="14"/>
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>The Unus Annus lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>UNUS ANNUS EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>Create or Destroy Water, Tasha's Hideous Laughter</em></td></tr>
+        <tr><td>2nd</td><td><em>Alter Self, Gentle Repose</em></td></tr>
+        <tr><td>3rd</td><td><em>Haste, Spirit Guardians</em></td></tr>
+        <tr><td>4th</td><td><em>Death Ward, Mordenkainen's Faithful Hound</em></td></tr>
+        <tr><td>5th</td><td><em>Creation, Legend Lore</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Unus Annus lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_CREATE_OR_DESTROY_WATER</extend>
+      <extend>ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER</extend>
+      <extend>ID_PHB_SPELL_ALTER_SELF</extend>
+      <extend>ID_PHB_SPELL_GENTLE_REPOSE</extend>
+      <extend>ID_PHB_SPELL_HASTE</extend>
+      <extend>ID_PHB_SPELL_SPIRIT_GUARDIANS</extend>
+      <extend>ID_PHB_SPELL_DEATH_WARD</extend>
+      <extend>ID_PHB_SPELL_MORDENKAINENS_FAITHFUL_HOUND</extend>
+      <extend>ID_PHB_SPELL_CREATION</extend>
+      <extend>ID_PHB_SPELL_LEGEND_LORE</extend>
+    </spellcasting>
+    <rules></rules>
+  </element>
+  <element name="Memento Mori" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_MEMENTO_MORI">
+    <description>
+      <p>Starting when you make this pact at 1st level, you are doomed to die in 1d20 years. You always know how much time you have left.</p>
+    </description>
+    <sheet>
+      <description>Starting when you make this pact at 1st level, you are doomed to die in 1d20 years. You always know how much time you have left.</description>
+    </sheet>
+  </element>
+  <element name="Voice of Time" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_VOICE_OF_TIME">
+    <description>
+      <p>Also at 1st level, you choose which of the two beings resonates with you the most, and decide whether you're an Unus or an Annus. Choose one of the following features. Once you choose one, you cannot choose another one.</p>
+      <p class="indent"><b>Voice of Unus.</b> You've decided that you are an Unus, and wear black robes to show it. As an Unus, you are proficient in the Performance and Persuasion skills.</p>
+      <p class="indent"><b>Voice of Annus.</b> You've decided that you are an Annus, and wear white robes to show it. As an Annus, you are proficient in the Athletics and Performance skills.</p>
+    </description>
+    <sheet >
+      <description>Also at 1st level, you choose which of the two beings resonates with you the most, and decide whether you're an Unus or an Annus. Choose one of the following features. Once you choose one, you cannot choose another one.</description>
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Voice of Time" supports="Voice of Time" />
+    </rules>
+  </element>
+  <element name="Voice of Unus" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_VOICE_OF_UNUS">
+    <supports>Voice of Time</supports>
+    <description>
+      <p>You've decided that you are an Unus, and wear black robes to show it. As an Unus, you are proficient in the Performance and Persuasion skills.</p>
+    </description>
+    <sheet>
+      <description>You've decided that you are an Unus, and wear black robes to show it. As an Unus, you are proficient in the Performance and Persuasion skills.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+    </rules>
+  </element>
+  <element name="Voice of Annus" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_VOICE_OF_ANNUS">
+    <supports>Voice of Time</supports>
+    <description>
+      <p>You've decided that you are an Annus, and wear white robes to show it. As an Annus, you are proficient in the Athletics and Performance skills.</p>
+    </description>
+    <sheet>
+      <description>You've decided that you are an Annus, and wear white robes to show it. As an Annus, you are proficient in the Athletics and Performance skills.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+    </rules>
+  </element>
+  <element name="Reaper of Time" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_REAPER_OF_TIME">
+    <description>
+      <p>At 6th level, you are gifted a specialized weapon from Unus and Annus. As an action, you can summon a scythe made of black or white flames, the color depending on whether you're an Unus or an Annus for 1 minute. This scythe deals necrotic damage equal to 1d6 + your spellcasting ability modifier, and you gain a number of hit points equivalent to the damage you dealt.</p>
+      <p class="indent">Additionally, if you use this scythe against an undead, you deal an additional 1d6 and deal radiant damage instead of necrotic damage, however you do not gain any hit points. This scythe is dispelled one you have been knocked unconscious or you dispel it as a bonus action. Once you use this ability, you cannot use it again until you finish a long rest.</p>
+      <p class="indent">This scythe's damage increases to 1d8 at 10th level, 1d10 at 14th level, and 1d12 at 18th level.</p>
+    </description>
+    <sheet action="Action" usage="1/Long Rest">
+      <description>At 6th level, you are gifted a specialized weapon from Unus and Annus. As an action, you can summon a scythe made of black or white flames, the color depending on whether you're an Unus or an Annus for 1 minute. This scythe deals necrotic damage equal to 1d{{scythe:die}} + {{charisma:modifier}}, and you gain a number of hit points equivalent to the damage you dealt.&#13;
+      Additionally, if you use this scythe against an undead, you deal an additional 1d{{scythe:die}} and deal radiant damage instead of necrotic damage, however you do not gain any hit points. This scythe is dispelled one you have been knocked unconscious or you dispel it as a bonus action. Once you use this ability, you cannot use it again until you finish a long rest.</description>
+    </sheet>
+    <rules>
+      <stat name="scythe:die" value="6" />
+      <stat name="scythe:die" value="2" level="10" />
+      <stat name="scythe:die" value="2" level="14" />
+      <stat name="scythe:die" value="2" level="18" />
+    </rules>
+  </element>
+  <element name="Don't Try This at Home" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_DONT_TRY_THIS_AT_HOME">
+    <description>
+      <p>At 10th level, you learn to turn your mistakes into dangerous means of success by improvising. Whenever you miss with an attack or spell, you can reroll it with a Performance check, and you have to take the new roll. If you roll a natural 1, you end up hitting yourself. You can use this ability a number of times equal to your Charisma modifier per long rest.</p>
+    </description>
+    <sheet usage="{{charisma:modifier}}/Long Rest">
+      <description>At 10th level, you learn to turn your mistakes into dangerous means of success by improvising. Whenever you miss with an attack or spell, you can reroll it with a Performance check, and you have to take the new roll. If you roll a natural 1, you end up hitting yourself. You can use this ability {{charisma:modifier}} times per long rest.</description>
+    </sheet>
+  </element>
+  <element name="Carpe Diem" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_CARPE_DIEM">
+    <description>
+      <p>Starting at 14th level, Unus and Annus are aware of your time left and wish to see you live out every single second. Whenever you make a death save, you roll with advantage. In addition, if you roll a natural 20 on a death save, you immediately stabilize and heal a number of hit points equal to half your Warlock level + your Constitution modifier.</p>
+    </description>
+    <sheet usage="{{charisma:modifier}}/Long Rest">
+      <description>Starting at 14th level, Unus and Annus are aware of your time left and wish to see you live out every single second. Whenever you make a death save, you roll with advantage. In addition, if you roll a natural 20 on a death save, you immediately stabilize and heal {{carpe:diem}} hit points.</description>
+    </sheet>
+    <rules>
+      <stat name="carpe:diem" value="level:warlock:half" />
+      <stat name="carpe:diem" value="constitution:modifier" />
+    </rules>
+  </element>
+<!--Invocations-->
+  <element name="Dance of Italy" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_DANCE_OF_ITALY">
+    <supports>Eldritch Invocation</supports>
+    <prerequisite>Prerequisite: 11th level, Pact of Unus Annus</prerequisite>
+    <requirements>[level:11], ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_MEMENTO_MORI</requirements>
+    <description>
+      <p>You can cast Otto's irresistible dance once using a warlock spell slot. You can't do so again until you finish a long rest.</p>
+      <div class="reference">
+        <div element="ID_PHB_SPELL_OTTOS_IRRESISTABLE_DANCE" />
+      </div>
+    </description>
+    <sheet>
+      <description>You can cast Otto's irresistible dance once using a warlock spell slot. You can't do so again until you finish a long rest.</description>
+    </sheet>
+  </element>
+  <element name="Gongoozeler's Call" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_GONGOOZELERS_CALL">
+    <supports>Eldritch Invocation</supports>
+    <prerequisite>Prerequisite: 3rd level, Pact of Unus Annus</prerequisite>
+    <requirements>[level:3], ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_MEMENTO_MORI</requirements>
+    <description>
+      <p>You can breathe underwater, and you gain a swimming speed equal to your walking speed.</p>
+      <p class="indent">Additionally, you can cast <i>shatter</i> at will, without expending a spell slot or material components. You can do this a number of times equal to your Charisma modifier per long rest.</p>
+      <div class="reference">
+        <div element="ID_PHB_SPELL_SHATTER" />
+      </div>
+    </description>
+    <sheet>
+      <description>You can breathe underwater, and you gain a swimming speed equal to your walking speed.&#13;
+      Additionally, you can cast shatter at will, without expending a spell slot or material components. You can do this {{charisma:modifier}} times per long rest.</description>
+    </sheet>
+    <rules>
+      <stat name="innate speed:swim:misc" value="innate speed" />
+    </rules>
+  </element>
+  <element name="HeeHoo's Madness" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_HEE_HOOS_MADNESS">
+    <supports>Eldritch Invocation</supports>
+    <prerequisite>Prerequisite: 15th level, Pact of Unus Annus</prerequisite>
+    <requirements>[level:15], ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_MEMENTO_MORI</requirements>
+    <description>
+      <p>You can cast <i>feeblemind</i> once using a warlock spell slot without expending material components. You can't do so again until you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description>You can cast feeblemind once using a warlock spell slot without expending material components. You can't do so again until you finish a long rest.</description>
+    </sheet>
+  </element>
+  <element name="Mors Vincit Omnia" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_MORS_VINCIT_OMNIA">
+    <supports>Eldritch Invocation</supports>
+    <prerequisite>Prerequisite: Pact of Unus Annus</prerequisite>
+    <requirements>ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_MEMENTO_MORI</requirements>
+    <description>
+      <p>Your spells deal extra radiant damage equal to your warlock level against undead. Additionally, if you die, you cannot become an undead.</p>
+    </description>
+    <sheet>
+      <description>Your spells deal {{level:warlock}} extra radiant damage against undead. Additionally, if you die, you cannot become an undead.</description>
+    </sheet>
+  </element>
+  <element name="Soul of Unus" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_SOUL_OF_UNUS">
+    <supports>Eldritch Invocation</supports>
+    <prerequisite>Prerequisite: Voice of Unus</prerequisite>
+    <requirements>ID_RDDT_ARCHETYPE_FEATURE_VOICE_OF_UNUS</requirements>
+    <description>
+      <p>You can cast <i>bless</i> at will, without expending a spell slot or material components. You can do this a number of times equal to your Charisma modifier per long rest.</p>
+      <div class="reference">
+        <div element="ID_PHB_SPELL_BLESS" />
+      </div>
+    </description>
+    <sheet>
+      <description>You can cast <i>bless</i> at will, without expending a spell slot or material components. You can do this {{charisma:modifier}} times per long rest.</description>
+    </sheet>
+  </element>
+  <element name="Soul of Annus" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_SOUL_OF_ANNUS">
+    <supports>Eldritch Invocation</supports>
+    <prerequisite>Prerequisite: Voice of Annus</prerequisite>
+    <requirements>ID_RDDT_ARCHETYPE_FEATURE_VOICE_OF_ANNUS</requirements>
+    <description>
+      <p>You can cast <i>bane</i> at will, without expending a spell slot or material components. You can do this a number of times equal to your Charisma modifier per long rest.</p>
+      <div class="reference">
+        <div element="ID_PHB_SPELL_BANE" />
+      </div>
+    </description>
+    <sheet>
+      <description>You can cast bane at will, without expending a spell slot or material components. You can do this {{charisma:modifier}} times per long rest.</description>
+    </sheet>
+  </element>
+  <element name="Spiral Master" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_SPIRAL_MASTER">
+    <supports>Eldritch Invocation</supports>
+    <prerequisite>Prerequisite: 3rd level, Pact of Unus Annus</prerequisite>
+    <requirements>[level:3], ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_MEMENTO_MORI</requirements>
+    <description>
+      <p>You can cast <i>hypnotic pattern</i> at will, without expending a spell slot or material components. You can do this a number of times equal to your Charisma modifier per long rest.</p>
+      <div class="reference">
+        <div element="ID_PHB_SPELL_HYPNOTIC_PATTERN" />
+      </div>
+    </description>
+    <sheet>
+      <description>You can cast hypnotic pattern at will, without expending a spell slot or material components. You can do this {{charisma:modifier}} times per long rest.</description>
+    </sheet>
+  </element>
+  <element name="Tempus Fugit" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_TEMPUS_FUGIT">
+    <supports>Eldritch Invocation</supports>
+    <prerequisite>Prerequisite: 17th level, Pact of Unus Annus</prerequisite>
+    <requirements>[level:17], ID_RDDT_ARCHETYPE_FEATURE_UNUS_ANNUS_MEMENTO_MORI</requirements>
+    <description>
+      <p>You can cast <i>time stop</i> once using a warlock spell slot without expending material components. You can't do so again until you finish a long rest.</p>
+      <div class="reference">
+        <div element="ID_PHB_SPELL_TIME_STOP" />
+      </div>
+    </description>
+    <sheet>
+      <description>You can cast time stop once using a warlock spell slot without expending material components. You can't do so again until you finish a long rest.</description>
+    </sheet>
+  </element>
+</elements>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+	    <update version="0.0.1">
+			<file name="warlock-ancientfrost.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Warlock/warlock-ancientfrost.xml" />
+	</info>
+  <element name="The Ancient Frost" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ANCIENT_FROST">
+    <supports>Otherworldly Patron</supports>
+    <requirements />
+    <description>
+      <p>Your patron is a powerful wielder of ice and cold. You have bound yourself to an ancient god of frost or cold.</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_ANCIENT_FROST_EXPANDED_SPELL_LIST" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_ANCIENT_FROST_COLD_BRINGER" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_ANCIENT_FROST_FROSTED_PACT" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_ANCIENT_FROST_ICE_ELEMENTAL" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_ANCIENT_FROST_PERMAFROST" />
+    </description>
+    <sheet>
+      <description>Your patron is a powerful wielder of ice and cold. You have bound yourself to an ancient god of frost or cold.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ANCIENT_FROST_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ANCIENT_FROST_COLD_BRINGER" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ANCIENT_FROST_FROSTED_PACT" level="6"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ANCIENT_FROST_ICE_ELEMENTAL" level="10"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ANCIENT_FROST_PERMAFROST" level="14"/>
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ANCIENT_FROST_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>The Ancient Frost lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>ANCIENT FROST EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>Chromatic orb (cold only), Ice Knife</em></td></tr>
+        <tr><td>2nd</td><td><em>Dragon's Breath (cold only), Snowball Storm</em></td></tr>
+        <tr><td>3rd</td><td><em>Sleet Storm, Water Walk</em></td></tr>
+        <tr><td>4th</td><td><em>Fire Shield (cold only), Ice Storm</em></td></tr>
+        <tr><td>5th</td><td><em>Cone of Cold, Steel Wind Strike</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Ancient Frost lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_CHROMATIC_ORB</extend>
+      <extend>ID_XGTE_SPELL_ICE_KNIFE</extend>
+      <extend>ID_XGTE_SPELL_DRAGONS_BREATH</extend>
+      <extend>ID_XGTE_SPELL_SNILLOCS_SNOWBALL_STORM</extend>
+      <extend>ID_PHB_SPELL_SLEET_STORM</extend>
+      <extend>ID_PHB_SPELL_WATER_WALK</extend>
+      <extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+      <extend>ID_PHB_SPELL_ICE_STORM</extend>
+      <extend>ID_PHB_SPELL_CONE_OF_COLD</extend>
+      <extend>ID_XGTE_SPELL_STEEL_WIND_STRIKE</extend>
+    </spellcasting>
+    <rules></rules>
+  </element>
+  <element name="Cold Bringer" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ANCIENT_FROST_COLD_BRINGER">
+    <description>
+      <p>At 1st level, you learn the <i>ray of frost</i> cantrip.</p>
+    </description>
+    <sheet>
+      <description>At 1st level, you learn the <i>ray of frost</i> cantrip.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_FROST" level="1" spellcasting="Warlock" prepared="true" />
+    </rules>
+  </element>
+  <element name="Frosted Pact" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ANCIENT_FROST_FROSTED_PACT">
+    <description>
+      <p>At 6th level, you can use your charisma modifier for attack and damage rolls with your pact weapon(pact of the blade). You can have an ice mephit for your familiar(pact of the chain). When you deal cold damage with a cantrip you can add your charisma to damage(pact of the tome)</p>
+    </description>
+    <sheet>
+      <description>At 6th level, you can use your charisma modifier for attack and damage rolls with your pact weapon(pact of the blade). You can have an ice mephit for your familiar(pact of the chain). When you deal cold damage with a cantrip you can add your charisma to damage(pact of the tome)</description>
+    </sheet>
+  </element>
+  <element name="Ice Elemental" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ANCIENT_FROST_ICE_ELEMENTAL">
+    <description>
+      <p>At 10th level you gain the ability to conjure an ice elemental, as an action you can cast Conjure Elemental. An ice elemental is the same as an earth elemental with a few changes: It has resistance to cold damage, it deals magical cold damage.</p>
+    </description>
+    <sheet>
+      <description>At 10th level you gain the ability to conjure an ice elemental as an action. An ice elemental is the same as an earth elemental with a few changes: It has resistance to cold damage, it deals magical cold damage.</description>
+    </sheet>
+  </element>
+  <element name="Permafrost" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ANCIENT_FROST_PERMAFROST">
+    <description>
+      <p>At 14th level whenever you cast a spell that deals cold damage it deals a further 2d8 cold damage, at 15th level it becomes 3d8, at 17th level it becomes 4d8</p>
+    </description>
+    <sheet>
+      <description>At 14th level whenever you cast a spell that deals cold damage it deals a further 2d8 cold damage</description>
+      <description level="15">At 15th level whenever you cast a spell that deals cold damage it deals a further 3d8 cold damage</description>
+      <description level="17">At 17th level whenever you cast a spell that deals cold damage it deals a further 4d8 cold damage</description>
+    </sheet>
+  </element>
+</elements>

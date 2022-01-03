@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+	    <update version="0.0.1">
+			<file name="warlock-twins.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Warlock/warlock-twins.xml" />
+		</update>
+	</info>
+  <element name="The Twins" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_TWINS">
+    <supports>Otherworldly Patron</supports>
+    <requirements />
+    <description>
+      <p>You have made a pact with a pair of patrons, two daggers, fey twins or a two headed mad god. Whatever it may be the two of them ffer up a new style of warlock.</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_TWINS_EXPANDED_SPELL_LIST" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_TWINS_BILOCATION" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_TWINS_TWINNED_CANTRIP" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_TWINS_TWINNED_SPELL" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_TWINS_MYSTIC_ARCANUM_IMPROVEMENT" />
+    </description>
+    <sheet>
+      <description>You have made a pact with a pair of patrons, two daggers, fey twins or a two headed mad god. Whatever it may be the two of them ffer up a new style of warlock.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TWINS_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TWINS_BILOCATION" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TWINS_TWINNED_CANTRIP" level="6"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TWINS_TWINNED_SPELL" level="10"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_TWINS_MYSTIC_ARCANUM_IMPROVEMENT" level="14"/>
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TWINS_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>The Twins lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>TWINS EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>Inflict Wounds, Cure Wounds</em></td></tr>
+        <tr><td>2nd</td><td><em>Arcane Lock, Knock</em></td></tr>
+        <tr><td>3rd</td><td><em>Haste, Slow</em></td></tr>
+        <tr><td>4th</td><td><em>Greater Invisibility, Locate Creature</em></td></tr>
+        <tr><td>5th</td><td><em>Raise Dead, Reincarnate</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Twins lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_INFLICT_WOUNDS</extend>
+      <extend>ID_PHB_SPELL_CURE_WOUNDS</extend>
+      <extend>ID_PHB_SPELL_ARCANE_LOCK</extend>
+      <extend>ID_PHB_SPELL_KNOCK</extend>
+      <extend>ID_PHB_SPELL_HASTE</extend>
+      <extend>ID_PHB_SPELL_SLOW</extend>
+      <extend>ID_PHB_SPELL_GREATER_INVISIBLITY</extend>
+      <extend>ID_PHB_SPELL_LOCATE_CREATURE</extend>
+      <extend>ID_PHB_SPELL_RAISE_DEAD</extend>
+      <extend>ID_PHB_SPELL_REINCARNATE</extend>
+    </spellcasting>
+    <rules></rules>
+  </element>
+  <element name="Bilocation" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TWINS_BILOCATION">
+    <description>
+      <p>At 1st level, the unusual nature of your patron allows you to be in two places at once. As a bonus action you can create a second instance of yourself, it appears in an unoccupied space that you can see in 30ft of you and lasts for 1 hour. When this effect ends you choose which image fades. Whenever you take any form of action, bonus action or movement you can choose wich instance performs the action. They share the same body, therefore they have the same hit points tacking damage as one, the same equipment and stats. You can use this feature once per long rest.</p>
+    </description>
+    <sheet usage="1/Long Rest" action="Bonus Action">
+      <description>At 1st level, the unusual nature of your patron allows you to be in two places at once. As a bonus action you can create a second instance of yourself, it appears in an unoccupied space that you can see in 30ft of you and lasts for 1 hour. When this effect ends you choose which image fades. Whenever you take any form of action, bonus action or movement you can choose wich instance performs the action. They share the same body, therefore they have the same hit points tacking damage as one, the same equipment and stats. You can use this feature once per long rest.</description>
+    </sheet>
+  </element>
+  <element name="Twinned Cantrip" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TWINS_TWINNED_CANTRIP">
+    <description>
+      <p>At 6th level, you are able to twin your cantrips. Whenever you cast a cantrip, you cast it twice in the same action, bonus action or reaction. Ending the effects of one spell, or if one of them is dispelled or countered they both are.</p>
+    </description>
+    <sheet>
+      <description>At 6th level, you are able to twin your cantrips. Whenever you cast a cantrip, you cast it twice in the same action, bonus action or reaction. Ending the effects of one spell, or if one of them is dispelled or countered they both are.</description>
+    </sheet>
+  </element>
+  <element name="Twinned Spell" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TWINS_TWINNED_SPELL">
+    <description>
+      <p>At 10th level you can twin your spells. When you cast a spell you can expend a spell slot one level higher to cast the spell twice in the same action, bonus action or reaction. Ending the effects of one spell, or if one of them is dispelled or countered, they both are.</p>
+    </description>
+    <sheet>
+      <description>At 10th level you can twin your spells. When you cast a spell you can expend a spell slot one level higher to cast the spell twice in the same action, bonus action or reaction. Ending the effects of one spell, or if one of them is dispelled or countered, they both are</description>
+    </sheet>
+  </element>
+  <element name="Mystic Arcanum Improvement" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_TWINS_MYSTIC_ARCANUM_IMPROVEMENT">
+    <description>
+      <p>At 14th level you can choose one more 6th level and 7th level spell to use with your Mystic Arcanum Improvement. When you gain 8th level and 9th level Mystic Arcanum spells you can choose two instead of one.</p>
+    </description>
+    <sheet>
+      <description>At 14th level you can choose one more 6th level and 7th level spell to use with your Mystic Arcanum Improvement. When you gain 8th level and 9th level Mystic Arcanum spells you can choose two instead of one.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="Arcanum Spell (Mystic Arcanum)" supports="Warlock,6" level="14" spellcasting="Warlock" />
+			<select type="Spell" name="Arcanum Spell (Mystic Arcanum)" supports="Warlock,7" level="14" spellcasting="Warlock" />
+			<select type="Spell" name="Arcanum Spell (Mystic Arcanum)" supports="Warlock,8" level="15" spellcasting="Warlock" />
+			<select type="Spell" name="Arcanum Spell (Mystic Arcanum)" supports="Warlock,9" level="17" spellcasting="Warlock" />
+    </rules>
+  </element>
+</elements>

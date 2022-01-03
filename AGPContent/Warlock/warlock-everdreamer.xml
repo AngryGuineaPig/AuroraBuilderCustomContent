@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+	    <update version="0.0.1">
+			<file name="warlock-everdreamer.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Warlock/warlock-everdreamer.xml" />
+		</update>
+	</info>
+  <element name="The Ever Dreamer" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_EVER_DREAMER">
+    <supports>Otherworldly Patron</supports>
+    <requirements />
+    <description>
+      <p>While most warlocks approach their patrons searching for unlimited power and fame, Warlocks of the Ever Dreamer are selected, for one reason or another, by a powerful entity to be their vessel on the material plane. In exchange, the ever dreamer offers a portion of its power to the Warlock.</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_EVER_DREAMER_EXPANDED_SPELL_LIST" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_EVER_DREAMER_RESTLESS_RETALIATION" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_EVER_DREAMER_MINDS_TRANSPORT" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_EVER_DREAMER_TIRELESS_FORM" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_EVER_DREAMER_DREAMERS_FINAL_REST" />
+    </description>
+    <sheet>
+      <description>While most warlocks approach their patrons searching for unlimited power and fame, Warlocks of the Ever Dreamer are selected, for one reason or another, by a powerful entity to be their vessel on the material plane. In exchange, the ever dreamer offers a portion of its power to the Warlock.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_EVER_DREAMER_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_EVER_DREAMER_RESTLESS_RETALIATION" level="1"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_EVER_DREAMER_MINDS_TRANSPORT" level="6"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_EVER_DREAMER_TIRELESS_FORM" level="10"/>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_EVER_DREAMER_DREAMERS_FINAL_REST" level="14"/>
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_EVER_DREAMER_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>The Ever Dreamer lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>EVER DREAMER EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>Silent Image, Sleep</em></td></tr>
+        <tr><td>2nd</td><td><em>Alter Self, Moonbeam</em></td></tr>
+        <tr><td>3rd</td><td><em>Catnap, Blink</em></td></tr>
+        <tr><td>4th</td><td><em>Phantasmal Killer, Resilient Sphere</em></td></tr>
+        <tr><td>5th</td><td><em>Animate Objects, Modify Memory</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Ever Dreamer lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_SILENT_IMAGE</extend>
+      <extend>ID_PHB_SPELL_SLEEP</extend>
+      <extend>ID_PHB_SPELL_ALTER_SELF</extend>
+      <extend>ID_PHB_SPELL_MOONBEAM</extend>
+      <extend>ID_XGTE_SPELL_CATNAP</extend>
+      <extend>ID_PHB_SPELL_BLINK</extend>
+      <extend>ID_PHB_SPELL_PHANTASMAL_KILLER</extend>
+      <extend>ID_PHB_SPELL_OLITUKES_RESILIENT_SPHERE</extend>
+      <extend>ID_PHB_SPELL_ANIMATE_OBJECTS</extend>
+      <extend>ID_PHB_SPELL_MODIFY_MEMORY</extend>
+    </spellcasting>
+    <rules></rules>
+  </element>
+  <element name="Restless Retaliation" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_EVER_DREAMER_RESTLESS_RETALIATION">
+    <description>
+      <p>Starting at 1st level, your patron teaches you about dreams, and how they can effect living creatures, even while they're awake. When a creature hits you with a melee attack, you can use your reaction to force them to make a constitution saving throw. On a failure they suffer a point of exhaustion for the next minute. You can use this feature a number of times equal to your charisma modifier per long rest. Creatures that are immune to exhaustion are immune to this effect.</p>
+    </description>
+    <sheet action="Reaction" usage="{{charisma:modifier}}/Long Rest">
+      <description>Starting at 1st level, your patron teaches you about dreams, and how they can effect living creatures, even while they're awake. When a creature hits you with a melee attack, you can use your reaction to force them to make a constitution saving throw. On a failure they suffer a point of exhaustion for the next minute. You can use this feature {{charisma:modifier}} times per long rest. Creatures that are immune to exhaustion are immune to this effect.</description>
+    </sheet>
+  </element>
+  <element name="Mind's Transport" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_EVER_DREAMER_MINDS_TRANSPORT">
+    <description>
+      <p>At 6th level, your patron allows you to temporarily occupy the minds of others. As a bonus action you can enter the mind of one willing creature within 60ft of you. While within the creatures mind, you have total cover, are immune to all damage except for psychic and are incapacitated. The only creature that can hear you is the creature whose mind you are in. At the start of the creatures next turn, or if they fall unconscious, you are ejected 10ft away from the creature. You can use this feature once per short rest.</p>
+    </description>
+    <sheet action="Bonus Action" usage="1/Short Rest">
+      <description>At 6th level, your patron allows you to temporarily occupy the minds of others. As a bonus action you can enter the mind of one willing creature within 60ft of you. While within the creatures mind, you have total cover, are immune to all damage except for psychic and are incapacitated. The only creature that can hear you is the creature whose mind you are in. At the start of the creatures next turn, or if they fall unconscious, you are ejected 10ft away from the creature. You can use this feature once per short rest.</description>
+    </sheet>
+  </element>
+  <element name="Tireless Form" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_EVER_DREAMER_TIRELESS_FORM">
+    <description>
+      <p>At 10th level your patron teaches you ways you can use your mind to defend yourself. You cannot be put to sleep against your will and attacks against you while you are unconscious are not auto-crits, additionally you are immune to psychic damage.</p>
+    </description>
+    <sheet>
+      <description>At 10th level your patron teaches you ways you can use your mind to defend yourself. You cannot be put to sleep against your will and attacks against you while you are unconscious are not auto-crits, additionally you are immune to psychic damage.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+    </rules>
+  </element>
+  <element name="Dreamer's Final Rest" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_EVER_DREAMER_DREAMERS_FINAL_REST">
+    <description>
+      <p>At 14th level, you can plunge a creature into a darkened slumber, filled with nightmares that attack them. As an action, choose a creature that you can see within 60ft of you. It must make a wisdom save. On a failed save it takes 8d8 psychic damage and is knocked unconscious for 1 minute or until it takes damage. On a successful save the creature takes half damage and is not knocked unconscious. Undead and constructs automatically succeed. You can do this once per long rest.</p>
+    </description>
+    <sheet usage="1/Long Rest" action="Action">
+      <description>At 14th level, you can plunge a creature into a darkened slumber, filled with nightmares that attack them. As an action, choose a creature that you can see within 60ft of you. It must make a wisdom save. On a failed save it takes 8d8 psychic damage and is knocked unconscious for 1 minute or until it takes damage. On a successful save the creature takes half damage and is not knocked unconscious. Undead and constructs automatically succeed. You can do this once per long rest.</description>
+    </sheet>
+  </element>
+</elements>
