@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="wizard-Mastery.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/Wizard-Mastery.xml" />
+		</update>
+	</info>
+	<element name="School of Mastery" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WIZARD_MASTERY">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Your focus of study is the experimental development of specialized casting of a number of preferred spells.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_ARCANE_SAVANT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_IMPROVED_SPELL_CRITICAL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_SLING_SPELL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_ELDRITCH_RESISTANCE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_SUPERIOR_SPELL_CRITICAL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_PREFERRED_SPELL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_ARCANE_SAVANT" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_PREFERRED_SPELL" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_IMPROVED_SPELL_CRITICAL" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_SLING_SPELL" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_ELDRITCH_RESISTANCE" level="10" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_SUPERIOR_SPELL_CRITICAL" level="14" />
+		</rules>
+	</element>
+	<element name="Preferred Spell" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_PREFERRED_SPELL">
+		<description>
+			<p><em>2nd-level School of Mastery feature</em></p>
+			<p>Each level you can choose a spell from your spellbook to become a preferred spell. When you cast this spell you gain a number of advantages based on your level.</p>
+			<p>At 2nd level you gain advantage to hit or induce disadvantage for saving throws</p>
+			<p>At 6th level you reduce the casting time to a bonus action if it isn't already</p>
+			<p>At 10th level you can choose a number of dice equivalent to your intelligence modifier to reroll for damage, you can choose to use the new roll or the old rolls. You can do this a number of time = your intelligence modifier per short rest.</p>
+			<p>At 14th level you can choose to cast it using a spell slot one level lower then you cast it, (an 8th level fireball uses a 7th level spell slot) you can use this a number of times = your intelligence modifier per short rest.</p>
+		</description>
+		<sheet>
+			<description>Each level you can choose a spell from your spellbook to become a preferred spell. When you cast this spell you gain a number of advantages based on your level. You gain advantage to hit or induce disadvantage for saving throws</description>
+			<description level="6">Each level you can choose a spell from your spellbook to become a preferred spell. When you cast this spell you gain a number of advantages based on your level. You gain advantage to hit or induce disadvantage for saving throws, you reduce the casting time to a bonus action if it isn't already</description>
+			<description level="10">Each level you can choose a spell from your spellbook to become a preferred spell. When you cast this spell you gain a number of advantages based on your level. You gain advantage to hit or induce disadvantage for saving throws, you reduce the casting time to a bonus action if it isn't already, you can choose a number of dice equivalent to your intelligence modifier to reroll for damage, you can choose to use the new roll or the old rolls. You can use this a number of times = {{intelligence:modifier}} per short rest.</description>
+			<description level="14">Each level you can choose a spell from your spellbook to become a preferred spell. When you cast this spell you gain a number of advantages based on your level. You gain advantage to hit or induce disadvantage for saving throws, you reduce the casting time to a bonus action if it isn't already, you can choose a number of dice equivalent to your intelligence modifier to reroll for damage, you can choose to use the new roll or the old rolls. You can use this a number of times = {{intelligence:modifier}} per short rest. You can choose to cast it using a spell slot one level lower then you cast it, (an 8th level fireball uses a 7th level spell slot) you can use this a number of times = {{intelligence:modifier}} per short rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+		</rules>
+	</element>
+	<element name="Arcane Savant" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_ARCANE_SAVANT">
+		<description>
+			<p><em>2nd-level School of Mastery feature</em></p>
+			<p>The time and cost for copying 1st and 2nd level spells into your spellbook is halved</p>
+		</description>
+		<sheet>
+			<description>The time and cost for copying 1st and 2nd level spells into your spellbook is halved</description>
+		</sheet>
+	</element>
+	<element name="Improved Spell Critical" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_IMPROVED_SPELL_CRITICAL">
+		<description>
+			<p><em>2nd-level School of Mastery feature</em></p>
+			<p>Your spells score a critical on a score of 19-20 additionally your spell save DC increases by one.</p>
+		</description>
+		<sheet>
+			<description>Your spells score a critical on a score of 19-20 additionally your spell save DC increases by one.</description>
+		</sheet>
+		<rules>
+			<stat name="spellcasting:dc" value="1" />
+		</rules>
+	</element>
+	<element name="Sling Spell" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_SLING_SPELL">
+		<description>
+			<p><em>6th-level School of Mastery feature</em></p>
+			<p>When you cast a spell as an action you can cast a cantrip with casting time of bonus action as part of the same action.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell as an action you can cast a cantrip with casting time of bonus action as part of the same action.</description>
+		</sheet>
+	</element>
+	<element name="Eldritch Resistance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_ELDRITCH_RESISTANCE">
+		<description>
+			<p><em>10th-level School of Mastery feature</em></p>
+			<p>Whenever a spell forces you to make a saving throw or you are forced to make a concentration check you can choose to gain advantage on the check once per short rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>Whenever a spell forces you to make a saving throw or you are forced to make a concentration check you can choose to gain advantage on the check once per short rest.</description>
+		</sheet>
+	</element>
+	<element name="Superior Spell Critical" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MASTERY_SUPERIOR_SPELL_CRITICAL">
+		<description>
+			<p><em>14th-level School of Mastery feature</em></p>
+			<p>Your spells score a critical on a score of 18-20 additionally your spell save DC increases by one.</p>
+		</description>
+		<sheet>
+			<description>Your spells score a critical on a score of 18-20 additionally your spell save DC increases by one.</description>
+		</sheet>
+		<rules>
+			<stat name="spellcasting:dc" value="1"/>
+		</rules>
+	</element>
+</elements>

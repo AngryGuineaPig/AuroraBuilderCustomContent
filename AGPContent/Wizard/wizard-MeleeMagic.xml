@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="wizard-MeleeMagic.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/Wizard-MeleeMagic.xml" />
+		</update>
+	</info>
+	<element name="Melee Magic" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WIZARD_MELEE_MAGIC">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Not all wizards spend their entire lives reading books in a library and hiding from combat throwing spells from afar. Some prefer to stand next to their opponent as they launch a firebolt into their chest. Though often frowned upon these mages stand in the thick of combat an it isn't uncommon for them to use weapons as spell focuses.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_MELEE_IMPERVIOUS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_MELEE_WARCASTER" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_MELEE_DEFENSIVE_MEASURES" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_MELEE_SPELL_BLITZ" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_MELEE_ARCANE_DETERRENT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_MELEE_SWIFT_CASTING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MELEE_IMPERVIOUS" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MELEE_WARCASTER" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MELEE_DEFENSIVE_MEASURES" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MELEE_SPELL_BLITZ" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MELEE_ARCANE_DETERRENT" level="10" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_MELEE_SWIFT_CASTING" level="14" />
+		</rules>
+	</element>
+	<element name="Warcaster" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MELEE_WARCASTER">
+		<description>
+			<p><em>2nd-level Melee Magic feature</em></p>
+			<p>As you have studied close quarters combat you have become proficient in light armour, additionally you are able to use any weapon you are proficient with as an arcane focus.</p>
+		</description>
+		<sheet>
+			<description>As you have studied close quarters combat you have become proficient in light armour, additionally you are able to use any weapon you are proficient with as an arcane focus.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+		</rules>
+	</element>
+	<element name="Impervious" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MELEE_IMPERVIOUS">
+		<description>
+			<p><em>2nd-level Melee Magic feature</em></p>
+			<p>When you cast a spell, that spell is no longer capable of damaging you, for example your fireball detonating next to your face will not harm you. Additionally you no longer have disadvantage within 5ft and any spell attacks within 5ft are treated as melee attacks (no disadvantage for prone). Additionally at 6th level you are able to dictate which creatures in your area of effect spells are effected, creating small pockets of protected space.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell, that spell is no longer capable of damaging you, for example your fireball detonating next to your face will not harm you. Additionally you no longer have disadvantage within 5ft and any spell attacks within 5ft are treated as melee attacks (no disadvantage for prone)</description>
+			<description level="6">When you cast a spell, that spell is no longer capable of damaging you, for example your fireball detonating next to your face will not harm you. Additionally you no longer have disadvantage within 5ft and any spell attacks within 5ft are treated as melee attacks (no disadvantage for prone). Additionally at 6th level you are able to dictate which creatures in your area of effect spells are effected, creating small pockets of protected space.</description>
+		</sheet>
+	</element>
+	<element name="Defensive Measures" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MELEE_DEFENSIVE_MEASURES">
+		<description>
+			<p><em>2nd-level Melee Magic feature</em></p>
+			<p>At 2nd level you've learned to utilise a small amount of magic to protect yourself even whilst fighting in the thick of combat. You can reduce the casting time of a number of spells to protect yourself reducing the time to a bonus action. You can only cast these spells if you have them prepared.</p>
+			<h5>DEFENSIVE MEASURES</h5>
+			<table>
+				<thead>
+					<tr><td>Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td>Armor of Agathys, Blade Ward,  Mage Armour</td></tr>
+				<tr><td>4th</td><td>Blur, Invisibility, Mirror Image</td></tr>
+				<tr><td>6th</td><td>Blink, Gaseous Form, Protection From Energy</td></tr>
+				<tr><td>8th</td><td>Fire Shield, Greater Invisibility</td></tr>
+				<tr><td>10th</td><td>Wall of Force, Wall of Stone, Bigby's Hand</td></tr>
+				<tr><td>12th</td><td>Investiture of Flame, Investiture of Ice, Investiture or Stone, Investiture of Necrosis, Investiture of Winds, Globe of Invulnerability</td></tr>
+			</table>
+		</description>
+		<sheet action="Bonus Action">
+			<description>At 2nd level you've learned to utilise a small amount of magic to protect yourself even whilst fighting in the thick of combat. You can reduce the casting time of a number of spells to protect yourself reducing the time to a bonus action. You can only cast these spells if you have them prepared.</description>
+			<description level="4">At 4th level you've learned to utilise a small amount of magic to protect yourself even whilst fighting in the thick of combat. You can reduce the casting time of a number of spells to protect yourself reducing the time to a bonus action. You can only cast these spells if you have them prepared.</description>
+			<description level="6">At 6th level you've learned to utilise a small amount of magic to protect yourself even whilst fighting in the thick of combat. You can reduce the casting time of a number of spells to protect yourself reducing the time to a bonus action. You can only cast these spells if you have them prepared.</description>
+			<description level="8">At 8th level you've learned to utilise a small amount of magic to protect yourself even whilst fighting in the thick of combat. You can reduce the casting time of a number of spells to protect yourself reducing the time to a bonus action. You can only cast these spells if you have them prepared.</description>
+			<description level="10">At 10th level you've learned to utilise a small amount of magic to protect yourself even whilst fighting in the thick of combat. You can reduce the casting time of a number of spells to protect yourself reducing the time to a bonus action. You can only cast these spells if you have them prepared.</description>
+			<description level="12">At 12th level you've learned to utilise a small amount of magic to protect yourself even whilst fighting in the thick of combat. You can reduce the casting time of a number of spells to protect yourself reducing the time to a bonus action. You can only cast these spells if you have them prepared.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS" level="2" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLADE_WARD" level="2" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_ARMOR" level="2" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLUR" level="4" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="4" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" level="4" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINK" level="6" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_PHB_SPELL_GASEOUS_FORM" level="6" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="6" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="8" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="8" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" level="10" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" level="10" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_PHB_SPELL_BIGBYS_HAND" level="10" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_FLAME" level="12" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_ICE" level="12" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_GRGR_SPELL_INVESTITURE_OF_NECROSIS" level="12" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_STONE" level="12" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_WIND" level="12" spellcasting="Wizard" prepared="false" />
+			<grant type="Spell" id="ID_PHB_SPELL_GLOBE_OF_INVULNERABILITY" level="12" spellcasting="Wizard" prepared="false" />
+		</rules>
+	</element>
+	<element name="Spell Blitz" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MELEE_SPELL_BLITZ">
+		<description>
+			<p><em>6th-level Melee Magic feature</em></p>
+			<p>When you cast a spell, instead of casting it at a range you can teleport up to the target as long as the spell would reach to an an unoccupied space, (a 30ft spell allows you to teleport 30ft towards a creature but only if the spell hits) you must then make this spell attack within 5ft. Once done this reduces your speed to 0 if it were not already. If you do this a creature has disadvantage on dexterity saves as it would be surprised.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell, instead of casting it at a range you can teleport up to the target as long as the spell would reach to an an unoccupied space, (a 30ft spell allows you to teleport 30ft towards a creature but only if the spell hits) you must then make this spell attack within 5ft. Once done this reduces your speed to 0 if it were not already. If you do this a creature has disadvantage on dexterity saves as it would be surprised.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Deterrent" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MELEE_ARCANE_DETERRENT">
+		<description>
+			<p><em>10th-level Melee Magic feature</em></p>
+			<p>When you roll to check if you keep up concentration after an attack, all creatures in melee range must make a dexterity save against your spell save DC or take 1d6 magic damage (overcomes all resistances and immunities) per spell level.</p>
+		</description>
+		<sheet>
+			<description>When you roll to check if you keep up concentration after an attack, all creatures in melee range must make a dexterity save against your spell save DC or take 1d6 magic damage (overcomes all resistances and immunities) per spell level.</description>
+		</sheet>
+	</element>
+	<element name="Swift Casting" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_MELEE_SWIFT_CASTING">
+		<description>
+			<p><em>14th-level Melee Magic feature</em></p>
+			<p>When you teleport using Spell Blitz you may, as part of that action, cast a cantrip within melee range</p>
+		</description>
+		<sheet>
+			<description>When you teleport using Spell Blitz you may, as part of that action, cast a cantrip within melee range</description>
+		</sheet>
+	</element>
+</elements>

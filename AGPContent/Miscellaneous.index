@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+	    <update version="0.0.1">
+			<file name="Miscellaneous.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous.index" />
+		</update>
+	</info>
+	<files>
+        <file name="Feats.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous/Feats.xml" />
+		<file name="Griffons-Saddlebag.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous/Griffons-Saddlebag.xml" />
+		<file name="Magic-Items.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous/Magic-Items.xml" />
+		<file name="Koa's-Magical-Narcotics-And-Illicit-Substances.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous/Koa's-Drugs-And-Illicit-Substances.xml" />
+		<file name="Kyibbles-Generic-Spells.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous/Kyibbles-Generic-Spells.xml" />
+		<file name="Mystical-Tattoos.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous/Mystical-Tattoos.xml" />
+		<file name="DandDwikispells.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous/DandDwikispells.xml" />
+    </files>
+</index>

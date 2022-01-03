@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Feats.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous/Feats.xml" />
+		</update>
+	</info>
+  <!-- Feats -->
+	<element name="Adamantine Spirit" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_ADAMANTINE SPIRIT">
+		<prerequisite>Constitution 16 or higher</prerequisite>
+		<requirements>[con:16]</requirements>
+		<description>
+			<p><i>Prerequisite: Constitution 16 or higher</i></p>
+			<ul>
+				<li>Any unarmed strikes that you make use a d6 and are counted as an adamantine bludgeoning weapon that you have proficiency with.</li>
+				<li>Additionally once per long rest you can use your reaction to make any critical hit against you into a normal hit.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Any unarmed strikes that you make use a d6 and are counted as an adamantine bludgeoning weapon that you have proficiency with.&#13;
+			Additionally once per long rest you can use your reaction to make any critical hit against you into a normal hit.</description>
+		</sheet>
+	</element>
+	<element name="Adept Aviator" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_ADEPT_AVIATOR">
+		<prerequisite>Permanent flight speed</prerequisite>
+		<requirements>[innate speed:fly:1]</requirements>
+		<description>
+			<p><i>Prerequisite: Permanent flight speed</i></p>
+			<ul>
+				<li>Your Dexterity score increases by 1.</li>
+				<li>Your flying speed increases by 10 feet.</li>
+				<li>You are immune to fall damage</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your Dexterity score increases by 1.&#13;
+			Your flying speed increases by 10 feet.&#13;
+			You are immune to fall damage</description>
+		</sheet>
+		<rules>
+		<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+	<element name="All for One and One for All" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_ALL_FOR_ONE_AND_ONE_FOR_ALL">
+		<prerequisite>Charisma 16 or higher</prerequisite>
+		<requirements>[cha:16]</requirements>
+		<description>
+			<p><i>Prerequisite: Charisma 16 or higher</i></p>
+			<ul>
+				<li>When you are in combat you exude a confidence that empowers both yourself and your allies.</li>
+				<li>All allies within 30ft of you gain a +1 to all attack and damage rolls, for each ally within 5ft of you, you gain a consecutive +1 up to a maximum of +3 for attack and damage rolls.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you are in combat you exude a confidence that empowers both yourself and your allies.&#13;
+			All allies within 30ft of you gain a +1 to all attack and damage rolls, for each ally within 5ft of you, you gain a consecutive +1 up to a maximum of +3 for attack and damage rolls.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Artillerist" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_ARCANE_ARTILLERIST">
+		<prerequisite>Ability to cast spells</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<p><i>Prerequisite: The ability to cast a spell</i></p>
+			<ul>
+				<li>If the spell as a range greater than self then the range is doubled.</li>
+				<li>Your spells' area or reach is also doubled (15-foot cone becomes 30-cone, 20-foot radius becomes 40-foot radius, etc.) You can do this 2 times per short rest</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>If the spell as a range greater than self then the range is doubled.&#13;
+			Your spells' area or reach is also doubled (15-foot cone becomes 30-cone, 20-foot radius becomes 40-foot radius, etc.) You can do this 2 times per short rest</description>
+		</sheet>
+	</element>
+	<element name="Arcane Specialist" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_ARCANE_SPECIALIST">
+		<prerequisite>Ability to cast spells</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<p><i>Prerequisite: The ability to cast a spell</i></p>
+			<ul>
+				<li>Your spellcasting attack modifier and save DC increases by 1</li>
+				<li>When you finish a long rest you can choose a single spell, when you cast this spell it requires a spell slot of one level lower than the level you're casting it at. Additionally you have +2 on the spell attack roll or induce -2 on saving throw.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your spellcasting attack modifier and save DC increases by 1&#13;
+			When you finish a long rest you can choose a single spell, when you cast this spell it requires a spell slot of one level lower than the level you're casting it at. &#13;Additionally you have +2 on the spell attack roll or induce -2 on saving throw.</description>
+		</sheet>
+		<rules>
+			<stat name="spellcasting:attack" value="1" />
+			<stat name="spellcasting:dc" value="1" />
+		</rules>
+	</element>
+	<element name="Armor Master" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_ARMOR_MASTER">
+		<prerequisite>Strength 13 or higher</prerequisite>
+		<requirements>[str:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Strength 13 or higher</i></p>
+			<ul>
+				<li>Increase your Strength score by 1, to a maximum of 20.</li>
+				<li>While wearing armor, you have a +1 bonus to your AC.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Increase your Strength score by 1, to a maximum of 20.&#13;
+			While wearing armor, you have a +1 bonus to your AC.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" />
+			<stat name="ac:misc" value="1" />
+		</rules>
+	</element>
+	<element name="Battle Mage" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_BATTLE_MAGE">
+		<prerequisite>Ability to cast a spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<p><i>Prerequisite: Ability to cast a spell</i></p>
+			<ul>
+				<li>When you make a ranged spell attack, you do not suffer disadvantage on the attack roll if you are within 5 feet of a hostile creature.</li>
+				<li>When you cast an instantaneous spell that requires a single spell attack roll, you can choose to take a -5 penalty to that attack roll. If you hit, you add +10 to the damage dealt by the spell, if the spell would otherwise deal damage.</li>
+				<li>You have advantage on Constitution saving throws that you make to maintain your concentration on a spell when you take damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you make a ranged spell attack, you do not suffer disadvantage on the attack roll if you are within 5 feet of a hostile creature.&#13;
+			When you cast an instantaneous spell that requires a single spell attack roll, you can choose to take a -5 penalty to that attack roll. If you hit, you add +10 to the damage dealt by the spell, if the spell would otherwise deal damage.&#13;
+			You have advantage on Constitution saving throws that you make to maintain your concentration on a spell when you take damage.</description>
+		</sheet>
+	</element>
+	<element name="Blind Savant" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_BLIND_SAVANT">
+		<prerequisite>Wisdom of 13 or higher</prerequisite>
+		<requirements>[wis:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Wisdom of 13 or higher</i></p>
+			<ul>
+				<li>Your wisdom increases by 1, to a maximum of 20</li>
+				<li>You gain blindsight of 60ft</li>
+				<li>Perception checks made without sight have advantage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your wisdom increases by 1, to a maximum of 20&#13;
+			You gain blindsight of 60ft&#13;
+			Perception checks made without sight have advantage.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1"/>
+			<grant id="ID_VISION_BLINDSIGHT" type="Vision"/>
+		</rules>
+	</element>
+	<element name="Bow Master" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_BOW_MASTER">
+		<prerequisite>Dexterity 15 or higher</prerequisite>
+		<requirements>[dex:15]</requirements>
+		<description>
+			<p><i>Prerequisite: Dexterity 15 or higher</i></p>
+			<ul>
+				<li>Increase your dexterity by 1 to a maximum of 20</li>
+				<li>You get +1 to attack rolls with a bow and you can make attacks with a bow using a bonus action.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Increase your dexterity by 1 to a maximum of 20&#13;
+			You get +1 to attack rolls with a bow and you can make attacks with a bow using a bonus action.</description>
+		</sheet>
+			<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+	<element name="Brutal Strength" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_BRUTAL_STRENGTH">
+		<prerequisite>Strength 18 or higher</prerequisite>
+		<requirements>[str:18]</requirements>
+		<description>
+			<p><i>Prerequisite: Strength 18 or higher</i></p>
+			<ul>
+				<li>Increase your strength by 1 to a maximum of 20</li>
+				<li>When dealing damage with a melee weapon add 1d4 to the damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Increase your strength by 1 to a maximum of 20&#13;
+			When dealing damage with a melee weapon add 1d4 to the damage.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" />
+		</rules>
+	</element>
+	<element name="Counter Striker" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_COUNTER_STRIKER">
+		<prerequisite>Dexterity 13 or higher</prerequisite>
+		<requirements>[dex:15]</requirements>
+		<description>
+			<p><i>Prerequisite: Dexterity of 13 or higher</i></p>
+			<ul>
+				<li>Increase your Dexterity by 1, to a maximum of 20</li>
+				<li>Whenever you are hit by a melee attack, as a reaction, you may immediately make a melee attack against the attacker.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Increase your Dexterity by 1, to a maximum of 20&#13;
+			Whenever you are hit by a melee attack, as a reaction, you may immediately make a melee attack against the attacker.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+	<element name="Critical Combo" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_CRITICAL_COMBO">
+		<prerequisite>Strength 15 or higher or Dexterity of 15 or higher, Critical Wrath</prerequisite>
+		<requirements>([str:15]||[dex:15]),ID_PHB_FEAT_CRITICAL_WRATH</requirements>
+		<description>
+			<p><i>Prerequisite: Strength 15 or higher or Dexterity of 15 or higher, Critical Wrath</i></p>
+			<ul>
+				<li>Increase your critical range by 1 (20 becomes 19-20, 19-20 becomes 18-20)</li>
+				<li>If you deal a critical hit to a target you can use your bonus action to attack that target again with advantage or any other target within range without advantage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Increase your critical range by 1 (20 becomes 19-20, 19-20 becomes 18-20)&#13;
+			If you deal a critical hit to a target you can use your bonus action to attack that target again with advantage or any other target within range without advantage.</description>
+		</sheet>
+	</element>
+	<element name="Critical Wrath" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_CRITICAL_WRATH">
+		<prerequisite>Strength 14 or higher or Dexterity 14 or higher</prerequisite>
+		<requirements>[str:14]||[dex:14]</requirements>
+		<description>
+			<p><i>Prerequisite: Strength 14 or Dexterity 14 or higher</i></p>
+			<ul>
+				<li>When wielding a melee weapon you're proficient with, gain +1 to attack rolls and deal 1 extra damage die on a critical hit. This also counts for spells that you cast that require melee spell attacks.</li>
+				<li>Your critical range  is made one larger, (20 becomes 19-20, 19-20 becomes 18-20)</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When wielding a melee weapon you're proficient with, gain +1 to attack rolls and deal 1 extra damage die on a critical hit.&#13;
+			The critical range with the weapon is made one larger, (20 becomes 19-20, 19-20 becomes 18-20)</description>
+		</sheet>
+	</element>
+	<element name="Crystal Eyes" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_CRYSTAL_EYES">
+		<prerequisite></prerequisite>
+		<requirements></requirements>
+		<description>
+			<p><i></i></p>
+			<ul>
+				<li>You have advantage on saving throws against being blinded</li>
+				<li>You gain 60ft of darkvision</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being blinded&#13;
+			You gain 60ft of darkvision</description>
+		</sheet>
+		<rules>
+			<grant id="ID_VISION_BLINDSIGHT" type="Vision"/>
+		</rules>
+	</element>
+	<element name="Deadshot" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_DEADSHOT">
+		<prerequisite>Dexterity of 13</prerequisite>
+		<requirements>[dex:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Dexterity 13 or higher</i></p>
+			<ul>
+				<li>Increase your Dexterity score by 1 to a maximum of 20.</li>
+				<li>You can reroll 1s on damage rolls made with ranged weapons.</li>
+				<li>Your critical range with ranged weapons increases by 1</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Increase your Dexterity score by 1 to a maximum of 20.&#13;
+			You can reroll 1s on damage rolls made with ranged weapons.&#13;
+			Your critical range with ranged weapons increases by 1</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+	<element name="Heavy Armour Master" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_HEAVY_ARMOUR_MASTER">
+		<prerequisite>Strength 14 or higher and heavy armour proficiency</prerequisite>
+		<requirements>[str:14],ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</requirements>
+		<description>
+			<p><i>Prerequisite: Strength 14 or higher and heavy armor proficiency.</i></p>
+			<ul>
+				<li>Increase your strength by 1 to a maximum of 20</li>
+				<li>When wearing heavy armour you reduce all non-magical piercing, bludgeoning or slashing damage by your constitution modifier + your proficiency bonus.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Increase your strength by 1 to a maximum of 20.&#13;
+			When wearing heavy armour you reduce all non-magical piercing, bludgeoning or slashing damage by your constitution modifier + your proficiency bonus.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" />
+		</rules>
+	</element>
+	<element name="Lethal Duelist" type="Feat" source="D&amp;D Wiki" id="ID_WIKI_FEAT_LETHAL_DUELIST">
+		<prerequisite>Strength 13 or higher</prerequisite>
+		<requirements>[str:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Strength 13 or higher</i></p>
+			<ul>
+				<li>When making an attack with a melee weapon you're proficient with you can choose to impose a penalty up to -5 on the attack roll. If the attack hits add the double the penalty to the damage roll (-1 to hit gives +2 damage)</li>
+				<li>If you score a critical hit with a weapon you're proficient with you can take a bonus action to attack the same target again provided you don't have a shield or weapon in your off hand.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When making an attack with a melee weapon you're proficient with you can choose to impose a penalty up to -5 on the attack roll. If the attack hits add the double the penalty to the damage roll (-1 to hit gives +2 damage)&#13;
+			If you score a critical hit with a weapon you're proficient with you can take a bonus action to attack the same target again provided you don't have a shield or weapon in your off hand.</description>
+		</sheet>
+	</element>
+	<element name="Sniper's Nest" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_SNIPER'S_NEST">
+		<prerequisite>Dexterity 13 or higher</prerequisite>
+		<requirements>[Dex:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Dexterity 13 or Higher</i></p>
+			<ul>
+				<li>If you haven't moved on your turn you can spend all movement to impose advantage on your next ranged attack, this can be done 4 times per short rest</li>
+				<li>Being prone doesn't imposed disadvantage on ranged attacks.</li>
+			</ul>
+		</description>
+		<sheet usage="4/Short Rest">
+			<description>If you haven't moved on your turn you can spend all movement to impose advantage on your next ranged attack, this can be done 4 times per short rest&#13;
+			Being prone doesn't imposed disadvantage on ranged attacks.</description>
+		</sheet>
+	</element>
+	<element name="Double Shot" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_DOUBLE_SHOT">
+		<prerequisite>Dexterity 13 or higher</prerequisite>
+		<requirements>[Dex:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Dexterity 13 or Higher</i></p>
+			<ul>
+				<li>Your dexterity increases by 1 to a max of 20</li>
+				<li>On your turn as part of a ranged attack with a non-reloading weapon you can fire a second shot with disadvantage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your dexterity increases by 1 to a max of 20&#13;
+			On your turn as part of a ranged attack with a non-reloading weapon you can fire a second shot with disadvantage.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+	<element name="Bow Bash" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_BOW_BASH">
+		<prerequisite>Dexterity 13 or higher</prerequisite>
+		<requirements>[Dex:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Dexterity 13 or Higher</i></p>
+			<ul>
+				<li>Your dexterity increases by 1 to a max of 20</li>
+				<li>You can make a melee attack with a ranged weapon dealing 1d8 + your strength modifier, then as a bonus action you can make a ranged attack on them without disadvantage</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your dexterity increases by 1 to a max of 20&#13;
+			You can make a melee attack with a ranged weapon dealing 1d8 + {{strength:modifier}}, then as a bonus action you can make a ranged attack on them without disadvantage</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+	<element name="Pinpoint Accuracy" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_PINPOINT_ACCURACY">
+		<prerequisite>Dexterity 13 or higher</prerequisite>
+		<requirements>[Dex:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Dexterity 13 or Higher</i></p>
+			<ul>
+				<li>When a creature you can see makes a ranged weapon attack within your range you can use your reaction to try to shoot it out of the air, make a ranged attack against their attack roll, if yours is higher their attack misses.</li>
+				<li>When you make a ranged weapon attack against an opponent you can try to disarm them, when you do they must make a strength save against your attack roll, if they fail they drop their weapon that they're holding.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When a creature you can see makes a ranged weapon attack within your range you can use your reaction to try to shoot it out of the air, make a ranged attack against their attack roll, if yours is higher their attack misses.&#13;
+			When you make a ranged weapon attack against an opponent you can try to disarm them, when you do they must make a strength save against your attack roll, if they fail they drop their weapon that they're holding.</description>
+		</sheet>
+	</element>
+	<element name="Flawless Shots" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_FLAWLESS_SHOTS">
+		<prerequisite>Dexterity 13 or higher</prerequisite>
+		<requirements>[Dex:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Dexterity 13 or Higher</i></p>
+			<ul>
+				<li>When you score a critical hit with a ranged weapon you add a modifier equivalent to the maximum damage possible (for a longbow 1d8 -> +8 damage), this is not effected by any multipliers for the critical.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you score a critical hit with a ranged weapon you add a modifier equivalent to the maximum damage possible (for a longbow 1d8 -> +8 damage), this is not effected by any multipliers for the critical.</description>
+		</sheet>
+	</element>
+	<element name="Far Touch" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_FAR_TOUCH">
+		<prerequisite>Ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<p><i>Prerequisite: Ability to cast at least one spell</i></p>
+			<ul>
+				<li>When you cast a spell with a range of Touch, you can increase that range to 10 ft. A number of times equal to your level per long rest, you can increase that distance to 30ft.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you cast a spell with a range of Touch, you can increase that range to 10 ft. {{level}} times per long rest, you can increase that distance to 30ft.</description>
+		</sheet>
+	</element>
+	<element name="Lightning Striker" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_LIGHTNING_STRIKER">
+		<prerequisite>Dexterity 13 or higher</prerequisite>
+		<requirements>[Dex:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Dexterity 13 or Higher</i></p>
+			<ul>
+				<li>When you engage in combat (one weapon or two) you can use your bonus action to make an attack with each weapon you are holding. Additionally when you take the attack action you can sheath and draw one weapon.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you engage in combat (one weapon or two) you can use your bonus action to make an attack with each weapon you are holding. Additionally when you take the attack action you can sheath and draw one weapon.</description>
+		</sheet>
+	</element>
+	<element name="Magic Striker" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_MAGIC_STRIKER">
+		<prerequisite>Dexterity 13 or higher</prerequisite>
+		<requirements>[Dex:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Dexterity 13 or Higher</i></p>
+			<ul>
+				<li>When you make a weapon attack, you can use your Spellcasting modifier instead of strength. If you cast a spell on your turn you can make a single weapon attack that deals an additional d6 per spell level (1d4 for a cantrip).</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you make a weapon attack, you can use your Spellcasting modifier instead of strength. If you cast a spell on your turn you can make a single weapon attack that deals an additional d6 per spell level (1d4 for a cantrip).</description>
+		</sheet>
+	</element>
+	<element name="Precise Striker" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_PRECISE_STRIKER">
+		<prerequisite>Dexterity 13 or higher</prerequisite>
+		<requirements>[Dex:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Dexterity 13 or Higher</i></p>
+			<ul>
+				<li>When you make an attack with a finesse weapon its damage die is increased by one size (d4 becomes d6). When you strike a creature for a second time on your turn the second attack deals your proficiency modifier in damage. When you deal a critical hit one of the damage die is treated as its maximum value.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you make an attack with a finesse weapon its damage die is increased by one size (d4 becomes d6). When you strike a creature for a second time on your turn the second attack deals {{proficiency}} in damage. When you deal a critical hit one of the damage die is treated as its maximum value.</description>
+		</sheet>
+	</element>
+	<element name="Shield Striker" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_SHIELD_STRIKER">
+		<prerequisite>Dexterity 13 or higher</prerequisite>
+		<requirements>[Dex:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Dexterity 13 or Higher</i></p>
+			<ul>
+				<li>Increase your constitution by 1 to a maximum of 20. You can use your shield to make a shove attack against creatures within 5ft of you as a bonus action. When you make this shove it take your strength modifier in bludgeoning damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Increase your constitution by 1 to a maximum of 20. You can use your shield to make a shove attack against creatures within 5ft of you as a bonus action. When you make this shove it take {{strength:modifier}} in bludgeoning damage.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Bulwark" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_BULWARK">
+		<prerequisite>Protection fighting style, proficiency with heavy armor</prerequisite>
+		<requirements>(ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR),ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION</requirements>
+		<description>
+			<p><i>Protection fighting style, proficiency with heavy armor</i></p>
+			<p>You are a bastion of flesh and steel for your allies, you gain the following benefits:</p>
+			<ul>
+				<li>When a creature targets you with an attack while you are wielding a shield, you can use your reaction to impose disadvantage on the attack roll.</li>
+				<li>While you are wearing heavy armor and a shield, allies within 5 feet of you gain the benefits of half cover as long as you aren't incapacitated.</li>
+				<li>When a creature within 5 feet of you is targeted with an attack, and you use your reaction to grant the attack roll disadvantage, you can reduce the damage that creature takes on a hit by 1d10 + your proficiency bonus, you then take that amount of damage instead.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When a creature targets you with an attack while you are wielding a shield, you can use your reaction to impose disadvantage on the attack roll.&#13;
+			While you are wearing heavy armor and a shield, allies within 5 feet of you gain the benefits of half cover as long as you aren't incapacitated.&#13;
+			When a creature within 5 feet of you is targeted with an attack, and you use your reaction to grant the attack roll disadvantage, you can reduce the damage that creature takes on a hit by 1d10 + your proficiency bonus, you then take that amount of damage instead.</description>
+		</sheet>
+	</element>
+	<element name="Cleave" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_CLEAVE">
+		<prerequisite>Strength 13 or higher</prerequisite>
+		<requirements>[Str:13]</requirements>
+		<description>
+			<p><i>Strength 13 or higher</i></p>
+			<p>You use the momentum of one of your strikes to cut into another creature. When you reduce a creature to 0 hit points with a melee weapon attack using Strength, and there is an excess of damage remaining in relation to the creature's hit points the excess carries over to another creature of your choice within reach provided that the original attack roll would also hit it. Repeat this process carrying over the remaining damage until there is no more valid targets or the carried over damage fails to reduce a creature to 0 hit points.</p>
+		</description>
+		<sheet>
+			<description>You use the momentum of one of your strikes to cut into another creature. When you reduce a creature to 0 hit points with a melee weapon attack using Strength, and there is an excess of damage remaining in relation to the creature's hit points the excess carries over to another creature of your choice within reach provided that the original attack roll would also hit it. Repeat this process carrying over the remaining damage until there is no more valid targets or the carried over damage fails to reduce a creature to 0 hit points.</description>
+		</sheet>
+	</element>
+	<element name="Dervish" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_DERVISH">
+		<prerequisite>Two-Weapon fighting style</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING</requirements>
+		<description>
+			<p><i>Two-Weapon fighting style</i></p>
+			<p>You are an unstoppable force when you wield a weapon in each hand, you gain the following benefits:</p>
+			<ul>
+				<li>You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.</li>
+				<li>Your walking speed increases by 10 feet while you are moving in between attacks provided you are wielding a separate melee weapon in each hand.</li>
+				<li>When you engage in two weapon fighting, you can make the additional attack with your off-hand weapon as part of the Attack action instead of a bonus action.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.&#13;
+			Your walking speed increases by 10 feet while you are moving in between attacks provided you are wielding a separate melee weapon in each hand.&#13;
+			When you engage in two weapon fighting, you can make the additional attack with your off-hand weapon as part of the Attack action instead of a bonus action.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" equipped="[primary:any],[secondary:any],[shield:none]" />
+		</rules>
+	</element>
+	<element name="Iron Grip" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_IRON_GRIP">
+		<prerequisite>Strength 13 or higher</prerequisite>
+		<requirements>[Str:13]</requirements>
+		<description>
+			<p><i>Strength 13 or higher</i></p>
+			<p>You have incredible physical might that allows you to wield large and heavy weapons in unintended ways, you gain the following benefits:</p>
+			<ul>
+				<li>You can use the larger damage die while wielding a weapon with the versatile property as if you were wielding it with two hands.</li>
+				<li>You don't have disadvantage on attack using a weapon with the heavy property if your size is Small.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can use the larger damage die while wielding a weapon with the versatile property as if you were wielding it with two hands.&#13;
+			You don't have disadvantage on attack using a weapon with the heavy property if your size is Small.</description>
+		</sheet>
+	</element>
+	<element name="Mauler" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_MAULER">
+		<prerequisite>Strength 13 or higher</prerequisite>
+		<requirements>[Str:13]</requirements>
+		<description>
+			<p><i>Strength 13 or higher</i></p>
+			<p>You can use the massive weight of your weapons to throw around your opponents, you gain the following benefits:</p>
+			<ul>
+				<li>When you make a melee weapon attack using a greateaxe, greatclub, greatsword, or maul, you increase your reach by and additional 5 feet.</li>
+				<li>When you hit a creature with a weapon attack using a weapon with the two-handed and/or heavy property you can use a bonus action to attempt to shove it.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you make a melee weapon attack using a greateaxe, greatclub, greatsword, or maul, you increase your reach by and additional 5 feet.&#13;
+			When you hit a creature with a weapon attack using a weapon with the two-handed and/or heavy property you can use a bonus action to attempt to shove it.</description>
+		</sheet>
+	</element>
+	<element name="Mobile Shooter" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_MOBILE_SHOOTER">
+		<prerequisite>Extra Attack feature</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK</requirements>
+		<description>
+			<p><i>Extra Attack feature</i></p>
+			<p>Your movement does not provoke attacks of opportunity while you are moving in between attacks provided that you move no more than 5 feet between each attack and you are wielding a ranged weapon.</p>
+		</description>
+		<sheet>
+			<description>Your movement does not provoke attacks of opportunity while you are moving in between attacks provided that you move no more than 5 feet between each attack and you are wielding a ranged weapon.</description>
+		</sheet>
+	</element>
+	<element name="Phalanx" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_PHALANX">
+		<prerequisite></prerequisite>
+		<requirements></requirements>
+		<description>
+			<p>Your advance is impervious while you are wielding a shield, you gain the following benefits:</p>
+			<ul>
+				<li>You gain a +1 bonus to AC while you are wielding a shield</li>
+				<li>While you are wielding a shield, you can use an action on your turn to move up to half your speed without provoking attacks of opportunity, any creature of your size or smaller in front of you must make a Strength saving throw (DC = 8 + your proficiency bonus + your Strength modifier) or be pushed back 10 feet, and any ally within 5 feet of you who can see you and is wielding a shield can use its reaction to move up to half their speed in the same direction and force any creature in front of them to make the same saving throw.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain a +1 bonus to AC while you are wielding a shield&#13;
+			While you are wielding a shield, you can use an action on your turn to move up to half your speed without provoking attacks of opportunity, any creature of your size or smaller in front of you must make a Strength saving throw (DC = 8 + your proficiency bonus + your Strength modifier) or be pushed back 10 feet, and any ally within 5 feet of you who can see you and is wielding a shield can use its reaction to move up to half their speed in the same direction and force any creature in front of them to make the same saving throw.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" equipped="[shield:any]" />
+		</rules>
+	</element>
+	<element name="Rampage" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_RAMPAGE">
+		<prerequisite></prerequisite>
+		<requirements></requirements>
+		<description>
+			<p>When you reduce a creature to 0 hit points with a melee weapon attack or you score a critical hit with one, you can use your reaction to move up half your speed towards another creature and make a weapon attack against them as part of the same reaction. This movement does not provoke attacks of opportunity</p>
+		</description>
+		<sheet>
+			<description>When you reduce a creature to 0 hit points with a melee weapon attack or you score a critical hit with one, you can use your reaction to move up half your speed towards another creature and make a weapon attack against them as part of the same reaction. This movement does not provoke attacks of opportunity</description>
+		</sheet>
+	</element>
+	<element name="Skewer" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_SKEWER">
+		<prerequisite></prerequisite>
+		<requirements></requirements>
+		<description>
+			<p>When you reduce a creature to 0 hit points with a weapon attack that dealt piercing damage, and there is an excess of damage remaining in relation to the creature's hit points the excess carries over to another creature of your choice within reach provided that it is directly behind the original target and the orginal attack roll would also hit it. Repeat this process carrying over the remaining damage until there is no more valid targets or the carried over damage fails to reduce a creature to 0 hit points.</p>
+		</description>
+		<sheet>
+			<description>When you reduce a creature to 0 hit points with a weapon attack that dealt piercing damage, and there is an excess of damage remaining in relation to the creature's hit points the excess carries over to another creature of your choice within reach provided that it is directly behind the original target and the orginal attack roll would also hit it. Repeat this process carrying over the remaining damage until there is no more valid targets or the carried over damage fails to reduce a creature to 0 hit points.</description>
+		</sheet>
+	</element>
+	<element name="Sniper" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_SNIPER">
+		<prerequisite>Archery fighting style</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY</requirements>
+		<description>
+			<p><i>Archery fighting style</i></p>
+			<p>You have learned to assume the right position and angle to dispatch your target from afar, you gain the following benefits:</p>
+			<ul>
+				<li>Being prone does not impose disadvantage on your ranged weapon attack rolls.</li>
+				<li>If you have moved less than half your walking speed on your turn, you can use a bonus action to reduce your speed to 0 until the start of your next turn and become prone, if you do, you gain advantage on the next ranged weapon attack you make and you deal an additional 1d6 damage to the target on a hit.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Being prone does not impose disadvantage on your ranged weapon attack rolls.&#13;
+			If you have moved less than half your walking speed on your turn, you can use a bonus action to reduce your speed to 0 until the start of your next turn and become prone, if you do, you gain advantage on the next ranged weapon attack you make and you deal an additional 1d6 damage to the target on a hit.</description>
+		</sheet>
+	</element>
+	<element name="Tactical Thrower" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_TACTICAL_THROWER">
+		<prerequisite>Thrown Weapon Fighting fighting style</prerequisite>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_THROWN_WEAPON_FIGHTING</requirements>
+		<description>
+			<p><i>Thrown Weapon Fighting fighting style</i></p>
+			<p>You can unleash a deadly flurry of projectiles and recover them as quickly as you threw them, you gain the following benefits:</p>
+			<ul>
+				<li>When you take the attack action on your turn and make a ranged attack using a weapon with the thrown property, you can use a bonus action to make a ranged weapon attack with a weapon with the thrown property using your off-hand, this attack obeys the rules for two-weapon fighting.</li>
+				<li>When you miss with a ranged attack roll using a weapon with the thrown property, you can use your reaction to cause the weapon to ricochet and go back to your hand provided that the attack wasn't at long range.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you take the attack action on your turn and make a ranged attack using a weapon with the thrown property, you can use a bonus action to make a ranged weapon attack with a weapon with the thrown property using your off-hand, this attack obeys the rules for two-weapon fighting.&#13;
+			When you miss with a ranged attack roll using a weapon with the thrown property, you can use your reaction to cause the weapon to ricochet and go back to your hand provided that the attack wasn't at long range.</description>
+		</sheet>
+	</element>
+	<element name="Wall Runner" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_WALL_RUNNER">
+		<prerequisite>Dexteirty 13 or higher</prerequisite>
+		<requirements>[Dex:13]</requirements>
+		<description>
+			<p><i>Dexterity 13 or higher</i></p>
+			<p>You have learned great acrobatic feats in combat by using structures to your advantage, you gain the following benefits:</p>
+			<ul>
+				<li>If you move at least 10 feet on a straight line while adjacent to a wall, you can move horizontally across it without falling.</li>
+				<li>You have advantage on Strength (Athletics) checks and Dexterity (Acrobatics) checks made to jump while you are moving across a wall.</li>
+				<li>You double your vertical jumping distance while you are moving across a wall.</li>
+				<li>You have advantage on the first melee weapon attack you make immediately after you stop moving across a wall.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>If you move at least 10 feet on a straight line while adjacent to a wall, you can move horizontally across it without falling.&#13;
+			You have advantage on Strength (Athletics) checks and Dexterity (Acrobatics) checks made to jump while you are moving across a wall.&#13;
+			You double your vertical jumping distance while you are moving across a wall.&#13;
+			You have advantage on the first melee weapon attack you make immediately after you stop moving across a wall.</description>
+		</sheet>
+	</element>
+	<element name="Whirlwind Striker" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_WHIRLWIND_STRIKER">
+		<prerequisite>Extra Attack feature</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK</requirements>
+		<description>
+			<p><i>Extra Attack feature</i></p>
+			<p>When you take the Attack action on your turn while you engage in two-weapon fighting, you can make one additional weapon attack with your off-hand weapon as part of the same action.</p>
+		</description>
+		<sheet>
+			<description>When you take the Attack action on your turn while you engage in two-weapon fighting, you can make one additional weapon attack with your off-hand weapon as part of the same action.</description>
+		</sheet>
+	</element>
+	<element name="Wrestler" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_WRESTLER">
+		<prerequisite>Strength 13 or higher</prerequisite>
+		<requirements>[Str:13]</requirements>
+		<description>
+			<p><i>Strength 13 or higher</i></p>
+			<p>You are an expert at fighting in close quarters and wrangling your foes, you gain the following benefits:</p>
+			<ul>
+				<li>You have advantage on Stregth (Athletics) checks made to grapple or shove a creature.</li>
+				<li>When you hit a creature with a melee weapon attack, you can use a bonus action to attempt to grapple or shove the creature.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have advantage on Stregth (Athletics) checks made to grapple or shove a creature.&#13;
+			When you hit a creature with a melee weapon attack, you can use a bonus action to attempt to grapple or shove the creature.</description>
+		</sheet>
+	</element>
+	<element name="Dueling Master" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_DUELING_MASTER">
+		<prerequisite></prerequisite>
+		<requirements></requirements>
+		<description>
+			<p>You've learned to be quick and precise with your weapons. You gain the following benefits:</p>
+			<ul>
+				<li>On your turn, when you miss with an attack with a melee weapon against a creature, you can make one melee weapon attack against the same creature as a bonus action.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>On your turn, when you miss with an attack with a melee weapon against a creature, you can make one melee weapon attack against the same creature as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Opportunist" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_OPPORTUNIST">
+		<prerequisite></prerequisite>
+		<requirements></requirements>
+		<description>
+			<p>You to take advantage of openings in your opponent's defenses. You gain the following benefits:</p>
+			<ul>
+				<li>When a creature within 5 feet of you makes an attack roll at disadvantage, you can use your reaction to make a melee weapon attack against that creature.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When a creature within 5 feet of you makes an attack roll at disadvantage, you can use your reaction to make a melee weapon attack against that creature.</description>
+		</sheet>
+	</element>
+	<element name="Pugilist" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_PUGILIST">
+		<prerequisite></prerequisite>
+		<requirements></requirements>
+		<description>
+			<p>You're practiced at fighting rough-and-tumble with nothing but your fists. You gain the following benefits:</p>
+			<ul>
+				<li>Your unarmed strike uses a d4 for damage.</li>
+				<li>When you take the Attack action with an unarmed strike, you can make one unarmed strike as a bonus action.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your unarmed strike uses a d4 for damage.&#13;
+			When you take the Attack action with an unarmed strike, you can make one unarmed strike as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Whip Master" type="Feat" source="Reddit : Unearthed Arcana" id="ID_RDDT_FEAT_WHIP_MASTER">
+		<prerequisite>Dexterity 13 or higher, Proficiency with Whips</prerequisite>
+		<requirements>[Dex:13],ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP</requirements>
+		<description>
+			<p>Having mastered the whip through dedicated practice, you gain the following benefits:</p>
+			<ul>
+				<li>When you use a whip, its damage die changes from a d4 to a d6.</li>
+				<li>When you hit a creature no more than one size larger than you with a whip on your turn, you can use a bonus action to make a special melee attack against the target. You make an attack roll contested by the target’s Strength (Athletics) check or Dexterity (Acrobatics) check. A creature can willingly lose this contest and you succeed automatically if the target is incapacitated. If you succeed, you either pull the target 5 feet toward you, or it drops one item of your choice that it’s holding.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you use a whip, its damage die changes from a d4 to a d6.&#13;
+			When you hit a creature no more than one size larger than you with a whip on your turn, you can use a bonus action to make a special melee attack against the target. You make an attack roll contested by the target’s Strength (Athletics) check or Dexterity (Acrobatics) check. A creature can willingly lose this contest and you succeed automatically if the target is incapacitated. If you succeed, you either pull the target 5 feet toward you, or it drops one item of your choice that it’s holding.</description>
+		</sheet>
+	</element>
+	<element name="Tough" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_TOUGH">
+		<description>
+			<p>Your hit points maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit points maximum increases by an additional 2 hit points.</p>
+		</description>
+		<sheet>
+			<description>Your hit points maximum increases by double your level.</description>
+		</sheet>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="level" />
+			<stat name="hp" value="level" />
+		</rules>
+	</element>
+</elements>
+

@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Magic-Items.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous/Magic-Items.xml" />
+		</update>
+	</info>
+<!--Weapons and Armour-->
+	<element name="Yin" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_YIN">
+		<description>
+			<p>This rapier is made of a jet black iron alloy with a bone white hilt.</p>
+			<p>All attacks made with this weapon have a +1 to hit and damage. When you score a critical hit with this weapon the target takes 1d8 necrotic damage and the rapier gains one charge. These charges can be used as a bonus action to cast Darkness.</p>
+			<p><b>Darkness</b></p>
+			<p class="indent"> Duration: 10 minutes. Magical darkness spreads from a point you choose within range to fill a 15-foot radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can’t see through this darkness, and nonmagical light can’t illuminate it. If the point you choose is on an object you are holding or one that isn’t being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness. If any of this spell’s area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rapier</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Rapier">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Rapier</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Yin</set>
+		</setters>
+	</element>
+	<element name="Yang" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_YANG">
+		<description>
+			<p>This rapier is made of a bone white iron alloy with a jet black hilt.</p>
+			<p>All attacks made with this weapon have a +1 to hit and damage. When you score a critical hit with this weapon the target takes 1d8 radiant damage and the rapier gains one charge. These charges can be used as a bonus action to cast Daylight.</p>
+			<p><b>Daylight</b></p>
+			<p class="indent"> Duration: 10 minutes. A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet. If you chose a point on an object you are holding or one that isn’t being worn or carried, the light shines from the object with and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light. If any of this spell’s area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rapier</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Rapier">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Rapier</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Yang</set>
+		</setters>
+	</element>
+	<element name="Vanisher's Throwing Knife" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_VANISHERS_THROWING_KNIFE">
+		<description>
+			<p>When you miss throwing this knife you can use your reaction to return it to your hand</p>
+			<p>Or you can use your reaction to reroll the attack roll teleporting it in front of the opponent. This can be done once per day.</p>
+			<p>As a bonus action you can return this dagger to your hand and throw it again if you hit.</p>
+		</description>
+		<setters>
+			<set name="keywords">Knife</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Dagger</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Vanisher's Throwing Knife</set>
+		</setters>
+	</element>
+	<element name="Lucky Seven" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_LUCKY_SEVEN">
+		<description>
+			<p>This sword has a golden four leaf clover in place of the pommel.</p>
+			<p>When you attack your deal a critical hit on a 7 and 20</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Longsword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Longsword</set>
+			<set name="name-format">Lucky Seven</set>
+		</setters>
+	</element>
+	<element name="Nameless" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_NAMELESS">
+		<description>
+			<p>This sword is an enigma, unknown to any historian or scholar. It cannot be identified except via the Legend Lore spell. It is beautiful in shape and design with a flawless, deadly blade. Its hilt bears the carving of a crying girl.</p>
+			<p class="indent">When you begin to attune to Nameless, you hear the following poem ring in your head, in the voice of a young girl.</p>
+			<p><i></i></p>
+			<p><i>To wield me, is to be forgotten</i></p>
+			<p><i>Nameless, Blameless, in the minds of men</i></p>
+			<p><i>To hold me, is to be made legend</i></p>
+			<p><i>Peerless deeds, yet unwritten by pen.</i></p>
+			<p><i></i></p>
+			<p>If you continue to attune and become attuned to the blade your world will forever change</p>
+			<p class="indent">The morning after attuning to the blade, no creature can remember your name, nor can they ever remember your name even if reminded. Additionally, any writing, fictional or non-fictional that make mention or reference to you no longer contain these portions. If a creature attempts to record information referencing you or mentioning you the information ceases to exist after 24 hours.</p>
+			<p class="indent">When you lose attunement to Nameless you are still affected by its curse. This curse can only be undone by a Wish spell or similar effect.</p>
+			<p class="indent">While you are attuned to Nameless you have a +3 bonus to attack and damage rolls and your Constitution score increases by 2 to a maximum of 24. Once per long rest as an action you may cast a DC20 9th level Modify Memory.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Any Sword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">Nameless</set>
+		</setters>
+	</element>
+	<element name="Quicksilver Weapon" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_QUICKSILVER_WEAPON">
+		<description>
+			<p>At first glance, this weapon is simply a block of silver. Once attuned to it the weapon melts in to a puddle and forms two bracers around your wrists. You gain a +2 to any attack rolls and damage including any unarmed strikes. As a bonus action you may change the quicksilver into any weapon that doesn't have the heavy property, a shield or return it to it's bracer form.</p>
+			<p>Additionally the weapon has 10 charges and regains 1d6+4 charges per hour. You may expend a charge to perform one of the following effects:</p>
+			<p class="indent"> As an action, launch the weapon in a 20ft line of liquid metal, any creatures must make a DC15 dexterity save or take 1d10+2 piercing damage</p>
+			<p class="indent"> As an action, turn the weapon into a long thin ribbon that wildy swings around you, all creatures within 5ft must make a DC15 dexterity save or take 1d10+2 slashing damage.</p>
+			<p class="indent"> As a reaction, form a layer of silver armour over yourself and any armour you have and gain a +3 to AC including for the triggering attack, this lasts until you change the form of the weapon again.</p>
+			<p class="indent"> As a bonus action, form a large multifaceted silver mirror. If this is within bright light all creatures within 15ft must make a DC15 constitution save or be blinded until the start of their next turn</p>
+			<p class="indent"> At will as part of a turn (not an action or bonus action as it is simply a thought) change the shape of the weapon into any other form of weapon or basic ammunition.</p> 
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Quicksilver {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Woollysheep Armour" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_WOOLLYSHEEP_ARMOUR">
+		<description>
+			<p>This armour is made from condensed Woollysheep cotton. While wearing it, you have resistance to cold and bludgeoning damage, and magic cannot put you to sleep. You do not have to doff this armour to gain the full benefits of a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Woollysheep {{parent}}</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+		</rules>
+	</element>
+<!--Wonderous Items-->
+	<element name="Alchemist Gauntlet" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_ALCHEMIST_GAUNTLET">
+		<description>
+		<p>The gloves have a long chain wrapped around the elbow, on this chain are a number of vials, those vials can hold potions which as a bonus action you can either inject into yourself or into the glove.</p>
+		<p>Potions such as those of healing are more likely to be injected into yourself, potions such as those designed to harm (poisons) are designed to be injected into someone else.</p>
+		</description>
+		<setters>
+			<set name="keywords">Gauntlets</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Amulet of Potent Spellcasting" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_AMULET_OF_POTENT_SPELLCASTING">
+		<description>
+		<p>When wearing this amulet, your spellcasting is enhanced. You gain the following benefits: Your spell save DC increases by 2, You gain a +2 to spell attack rolls, you gain +2 to concentration saves, when you deal damage or restore hit points you add 2 to the roll.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="2" />
+			<stat name="spellcasting:dc" value="2" />
+		</rules>
+	</element>
+	<element name="Necklace of Three Swigs" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_NECKLACE_OF_THREE_SWIGS">
+		<description>
+		<p>This is a trie of steel vials attached to a steel chain. The vials to not have corks or stoppers. The entire necklace has an aura of transmutation magic. You may pour up to three potions or elixirs into the necklace. As you do so each vial turns transparent, the potions won't pour out unless you want them to. As a reaction to damage or as a bonus action you may take one dose of one of the potions.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">uncommon</set>
+		</setters>
+	</element>
+	<element name="Teapot of Truth" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_TEAPOT_OF_TRUTH">
+		<description>
+		<p>Using this teapot you can brew 3 servings of tea per day. One serving is enough to fill a single cup. You can decide the flavour of the tea. 10 minutes after being poured out of the teapot the tea looses its magical properties.</p>
+		<p>A creature that drinks the tea must succeed on a DC15 charisma saving throw. On a failed save a creature can't knowingly speak a lie for the next 10 minutes. A creature doesn't know that this effect has occurred and neither do you.</p>
+		</description>
+		<setters>
+			<set name="keywords">Tea</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Memoria Phial" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_MEMORIA_PHIAL">
+		<description>
+		<p>Memoria Phials are crystal flasks used to store memories. A creature can use an action to drink a memoria phial, thereby experiencing the memory stored inside. Doing so causes the drinker to fall unconscious for 1 minute while it relives the memory. A creature can also spend 1 minute to store its memories in an empty memoria phial.</p>
+		<p>The recollections stored in memoria phials can last a few moments or an entire lifetime; it is impossible to know the duration or type of memory if the phial isn't labeled. A long lived necromancer might store important data to revisit later, a bankrupt noblemen might pawn their recollections of a famous courtesan, or an assassin might use a phial to forget their crimes and create a new identity. A memoria phial gound in the wild can be a treasure, a trap, or sometimes both. Roll d100 or choose an effect from the Memoria Phial Table:</p>
+		<table>
+			<thead>
+				<tr><td>d100</td><td>Memoria Phial Effects</td></tr>
+			</thead>
+			<tr><td>1-20</td><td>Mundane Memory: You revisit a few ordinary hours of a creature's life.</td></tr>
+			<tr><td>21-40</td><td>Important Moment: You relive a life-changing experience or historically significant event.</td></tr>
+			<tr><td>41-60</td><td>Blissful Reminiscence: You enjoy a joyful, erotic, or triumphant memory, which grants you 3d4 temporary hit points.</td></tr>
+			<tr><td>61-80</td><td>Traumatic Event: You suffer through a creature's painful memories. You must succeed on a DC13 Wisdom saving throw or take 3d6 psychic damage</td></tr>
+			<tr><td>81-90</td><td>Labyrinthine Memoir: You must succeed on a DC15 Intelligence saving throw or become trapped in a creature's recollections. On a failure, you remain unconscious until you succeed on an Intelligence saving throw, which you can repeat once per day, or until awakened by Greater Restoration or similar.</td></tr>
+			<tr><td>91-100</td><td>Another Life: You experience most of all of a creature's life from its perspective, spanning decades or even centuries. You must succeed on a DC18 Charisma saving throw or lose your personality, becoming convinced you are the creature whose memory you experienced. You can repeat this saving throw once per day, regaining your personality on a success, you also permanently gain 2 of the creature's skill proficiencies and become fluent in one of its languages.</td></tr>
+		</table>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Armour Class +1" type="Item" source="Player's Handbook" id="ID_PHB_AC_UP_1">
+		<description>
+			<p>A bonus +1 to Armour Class due to various reasons </p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1" />
+		</rules>
+	</element>
+	<element name="Armour Class +2" type="Item" source="Player's Handbook" id="ID_PHB_AC_UP_2">
+		<description>
+			<p>A bonus +2 to Armour Class due to various reasons </p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="2" />
+		</rules>
+	</element>
+	<element name="Armour Class +3" type="Item" source="Player's Handbook" id="ID_PHB_AC_UP_3">
+		<description>
+			<p>A bonus +3 to Armour Class due to various reasons </p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="3" />
+		</rules>
+	</element>
+<!--Runes-->
+	<element name="Ancestral Runes" type="Rule" source="Reddit : Unearthed Arcana" id="ID_RDDT_RULE_ANCESTRAL_RUNES">
+		<description>
+			<p>These language based runes are each from a line of the powerful Ancestral Runes. Magic-infused glyphs that vibrantly glow and pulse as if breathing with a life of their own. A creature can focus on such a rune over the course of a short rest, transferring it to the specified type of object where it becomes permanently emblazoned, empowering the object with new magical capabilities. The object the rune is transferred onto may be magical before the rune is transferred.</p>
+			<p>When attempting to transfer a rune onto an object, a creature must make an Arcana check. The DC is equal to 5*the rarity. 5 for common, 10 for uncommon, 15 for rare, 20 for very rare, 25 for legendary. If the creature speaks the language of the rune they have advantage on this check. If the creature fails roll a d20, on a 1 the rune is destroyed, on anything else the transfer simply fails.</p>
+		</description>
+	</element>
+	<element name="Acuity" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_ACUITY_RUNE">
+		<description>
+		<p>The creature who transfers this rune to a weapon chooses either Intelligence, Wisdom, or Charisma. When you make an attack with the weapon, you can use the chosen ability for the attack or damage rolls instead of strength or dexterity.</p>
+		<p class="indent"><b><i>Curse:</i></b> When you score a critical hit with the weapon, you take psychic damage equal to the ability modifier you used for the attack (minimum of 1).</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare(Infernal)(Any Weapon)</set>
+		</setters>
+	</element>
+	<element name="Reinforce +1" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_REINFORCE_+1_RUNE">
+		<description>
+		<p>Over the course of a minute, you can activate this rune to bolster your innate defenses for 1 hour. For the duration when you aren't wearing armour you gain a +1 to armour class. This bonus is granted on top of any other AC calculation as long as your aren't wearing armour, such as Unarmoured Defense.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare(Draconic)(Any Handheld Object)</set>
+		</setters>
+	</element>
+	<element name="Reinforce +2" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_REINFORCE_+2_RUNE">
+		<description>
+		<p>Over the course of a minute, you can activate this rune to bolster your innate defenses for 1 hour. For the duration when you aren't wearing armour you gain a +2 to armour class. This bonus is granted on top of any other AC calculation as long as your aren't wearing armour, such as Unarmoured Defense.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Very Rare(Draconic)(Any Handheld Object)</set>
+		</setters>
+	</element>
+	<element name="Reinforce +3" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_REINFORCE_+3_RUNE">
+		<description>
+		<p>Over the course of a minute, you can activate this rune to bolster your innate defenses for 1 hour. For the duration when you aren't wearing armour you gain a +3 to armour class. This bonus is granted on top of any other AC calculation as long as your aren't wearing armour, such as Unarmoured Defense.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Legendary(Draconic)(Any Handheld Object)</set>
+		</setters>
+	</element>
+	<element name="Sight" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_SIGHT_RUNE">
+		<description>
+		<p>As an action, you can activate this rune to see through the eyes of a creature that is wearing the other object this rune was transferred to. if the creature is on a different plane to you then the effect fails, or if the creature shifts to a different plane during the effect. You continue to see through the creature's eyes until either you or the creature are no longer wearing the object that bears the rune, or until your concentration ends (as if concentrating on a spell).</p>
+		<p class="indent">While perceiving through another creature in this way, it is aware of this effect and you gain the benefits of any special senses possessed by that creature, though you are blinded to your own surroundings.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Sylvan)(Two Pieces of Headwear)</set>
+		</setters>
+	</element>
+	<element name="Stride" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_STRIDE_RUNE">
+		<description>
+		<p>As an action, you can activate this rune to cast the <i>tree stride</i> spell. For the duration, your speed increases by 10 feet and non-magical difficult terrain costs you no extra movement. Once activated this rune cannot be used again until the next dawn.</p>
+		<p class="indent">A creature that can speak Druidic and activates this rune gainst the following additional benefits:</p>
+		<ul>
+			<li>You can cast the spell without an somatic or verbal components.</li>
+			<li>The spell doesn't require your concentration and lasts for its full duration or until you choose to end it early as a Bonus Action</li>
+			<li>As a Bonus Action on each of your turns, you can choose one other creature you can see within 30ft of you. Until the start of your next turn, that creature can magically move through any trees you do during this turn, as if by the <i>tree stride</i> spell.</li>
+		</ul>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Very Rare(Druidic)(Any Cape, Cloak or similar Backwear)</set>
+		</setters>
+	</element>
+	<element name="Comprehend" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_COMPREHEND_RUNE">
+		<description>
+		<p>While holding a spellcasting focus that bears this rune, you can activate the rune as an action. For the next 10 minutes or until the rune is activated again, you can understand the literal meaning of one written language of your choice, but you must be touching the surface on which the words are written while reading it. This effect doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.</p>
+		<p class="indent">Once activated, roll a d6. On a roll of 2 or lower, the rune cannot be used again until the next dawn, on any other roll it can be used again immediately </p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Dwarvish)(Any Spellcasting Focus)</set>
+		</setters>
+	</element>
+	<element name="Restore" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_RESTORE_RUNE">
+		<description>
+		<p>As an action, you can activate this rune to cast the <i>lesser restoration</i> spell. Depending on the level of the creature that activates the rune, casting the spell in this way grants the following additional benefits:</p>
+		<ul>
+			<li>Starting at 5th level, the target also regains hit points equal to your level.</li>
+			<li>Starting at 11th level, the condition you end as part of the spell can also be either charmed or frightened.</li>
+			<li>Starting at 17th level, the spell ends all diseases and conditions afflicting the target that it is capable of ending</li>
+		</ul>
+		<p class="indent">Once activated, this rune cannot be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare(Elvish)(Any Bracer, Gauntlet or similar Armwear)</set>
+		</setters>
+	</element>
+	<element name="Carnage" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_CARNAGE_RUNE">
+		<description>
+		<p>While holding a weapon that bears this rune, you can activate the rune as a bonus action to become a conduit of destruction for 1 minute. For the duration, when you kill a humanoid with the weapon, its corpse explodes. In addition, once on each of your turns when you hit a creature with the weapon, you can choose to roll on the table below, adding the corresponding effect.</p>
+		<table>
+			<thead>
+				<tr><td>d4</td><td>Effect</td></tr>
+			</thead>
+			<tr><td>1</td><td>The target and each creature within 10ft of it takes 1d10 fire damage</td></tr>
+			<tr><td>2</td><td>The target takes an extra 2d8 necrotic damage and you gain temporary hit points equal to half the extra necrotic damage dealt.</td></tr>
+			<tr><td>3</td><td>The target takes 3d6 lightning damage, which then arcs toward up to three other creatures of your choice within 30ft of it. These creatures must make a DC15 Dexterity saving throw, taking the same amount of lighting damage or half as much on a successful one.</td></tr>
+			<tr><td>4</td><td>You can make another attack with the weapon as part of the same action. You have advantage on this attack roll and the attack scores a critical hit on a roll of 19 or 20.</td></tr>
+		</table>
+		<p class="indent">Once activated, this rune cannot be used again until the next dusk.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Very Rare(Abyssal)(Any Melee Weapon)</set>
+		</setters>
+	</element>
+	<element name="Enlarge" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_ENLARGE_RUNE">
+		<description>
+		<p>While holding a weapon that bears this rune, you can activate the rune as a bonus action to cause the weapon to double in size for 1 minute. You can only activate the rune if you have a strength score of 19 or higher, and if you let go of the weapon, the effect ends.</p>
+		<p class="indent">For the duration, the weapon gains the heavy property if it doesn't have it already, and the weapon's base damage dice are doubled. This benefit doesn't apply to any additional damage such as smites.</p>
+		<p class="indent">Once activated, this rune cannot be used again until 8 hours passed.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Very Rare(Giant)(Any Melee Weapon)</set>
+		</setters>
+	</element>
+	<element name="Recall" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_RECALL_RUNE">
+		<description>
+		<p>While holding the object that bears this rune, you can activate the rune as an action to emit an aura in a 10ft radius circle on the ground around the object. This aura moves with the object, remaining centred on the object for 1 minute functioning as a beacon for teleportation magic. If you let go of the object, the effect ends.</p>
+		<p class="indent">For the duration, you can use a bonus action on each of your turns to teleport a willing creature you can see within 30ft of you to an unoccupied space within the aura. In addition, as long as the aura persists, whenever a friendly creature that can see the aura casts a spell or uses an effect that lets it teleport, it can choose to teleport to an unoccupied space within the aura, even if the aura is outside the range of the spell or effect.</p>
+		<p class="indent">Once activated, this rune cannot be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare(Orcish)(Any Spellcasting Focus)</set>
+		</setters>
+	</element>
+	<element name="Adept" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_ADEPT_RUNE">
+		<description>
+		<p>The creature who transfers this rune to a pair of gloves chooses one type of tool. While wearing the gloves, you are considered proficient with the chosen tool</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common(Gnomish)(Any Pair of Gloves)</set>
+		</setters>
+	</element>
+	<element name="Fly" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_FLY_RUNE">
+		<description>
+		<p>While holding the object that bears this rune, you can activate the rune as an action to grant the object a flying speed of 40ft. Until you choose to end the effect as a bonus action, the object can be ridden by standing or sitting on it, and it can carry up to 500 pounds. While riding the object you can mentally command it to move in any direction you wish, and you have advantage on ability checks and saving throws made to avoid falling off it.</p>
+		<p class="indent">For the duration, you can use a bonus action on each of your turns to teleport a willing creature you can see within 30ft of you to an unoccupied space within the aura. In addition, as long as the aura persists, whenever a friendly creature that can see the aura casts a spell or uses an effect that lets it teleport, it can choose to teleport to an unoccupied space within the aura, even if the aura is outside the range of the spell or effectAs a bonus action while riding the object, you can increase its flying speed to 60f for up to 1 hour. While its speed its increased in this way, you cannot fall off of it unless you are incapacitated. Once you use this property of the rune, it cannot be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare(Thieves' Cant)(Any Object that is at least 3ft long)</set>
+		</setters>
+	</element>
+	<element name="Subtle" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_SUBTLE_RUNE">
+		<description>
+		<p>Whenever you cast a spell, you can activate this rune to cause the spell to psionically manifest. When you cast a spell in this way, it requires no verbal or somatic components, and it requires no material components, unless they indicate a cost or are consumed by the spell.</p>
+		<p class="indent">Once you use this property of the rune, it cannot be used again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Deep Speech)(One creature with a brain and an intelligence over 3)</set>
+		</setters>
+	</element>
+	<element name="Formless" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_FORMLESS_RUNE">
+		<description>
+		<p>While wearing the object that bears this rune, you can activate the rune as an action on your turn to change your form based on the dialect the run is written in. When you do so, until the end of your turn, your body transforms into a swirling, amorphous mass of Water(Aquan), Gas(Auran), Fire(Ignan), or Sand(Terran).</p>
+		<p class="indent">While in this form, you gain the effects of the <i>gaseous form</i> spell, which doesn't require your concentration. At the end of your turn, you revert to your normal form, falling if you are in the air and nothing else is holding you aloft</p>
+		<p class="indent">Once you use this property of the rune, it cannot be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common(Primordial)(Any Upper Body Armour or Garment)</set>
+		</setters>
+	</element>
+	<element name="Vanish" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_VANISH_RUNE">
+		<description>
+		<p>Whenever you take damage from a hostile creature, you can activate this rune as a reaction to become invisible and immediately move up to your speed. While invisible in this way, anything you are wearing or carrying is also invisible, your steps make no sound and you leave behind no tracks or other traces of your passage. This invisibility lasts until the start of your next turn.</p>
+		<p class="indent">Once you use this property of the rune, it cannot be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Goblin)(Any Cape, Clock or similar Backwear)</set>
+		</setters>
+	</element>
+	<element name="Force" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_FORCE_RUNE">
+		<description>
+		<p>The blade or head of the weapon this rune is transferred to becomes translucent and glows with an arcane energy, which is harmless to the wielder. The weapon deals force damage instead of its normal damage type, and it sheds dim light in a 10ft radius. In addition, the weapon's weight is halved, and if it has the heavy property, small creatures don't have disadvantage on attack rolls with it.</p>
+		<p class="indent">As a bonus action, you can cause the blade or head of the weapon to withdraw into its handle and stop shedding its light, or you can cause it to re-emerge and shed its light once more.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Gnomish)(Any Axe, Hammer, or Sword)</set>
+		</setters>
+	</element>
+	<element name="Hydromancy" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_HYDORMANCY_RUNE">
+		<description>
+		<p>As an action, you can activate this rune to cast the <i>control water</i> spell. For the duration, you gain a swimming speed equal to your walking speed and can breathe underwater while you're within the area. Once activated, this rune cannot be used again until the next dawn.</p>
+		<p class="indent">A creature that can speak Druidic and activates this rune gains the following additional benefits:</p>
+		<ul>
+			<li>The area of water you choose can be a cube up to 300ft on a side, rather than 100ft.</li>
+			<li> You can designate a new area of water to affect that is within 300ft of you as an action on your turn.</li>
+			<li>Up to six other creatures of your choice gain the ability to breathe underwater as long as they remain in the area.</li>
+		</ul>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Very Rare(Druidic)(Any Rod, Staff or Wand)</set>
+		</setters>
+	</element>
+	<element name="Identify" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_IDENTIFY_RUNE">
+		<description>
+		<p>As an action, you can touch an object and activate this rune. If the object is a magic item, you learn its properties, as if by the <i>identify</i> spell.</p>
+		<p class="indent">Once activated, this rune cannot be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Halfling)(Any Spellcasting Focus)</set>
+		</setters>
+	</element>
+	<element name="Duplicate" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_DUPLICATE_RUNE">
+		<description>
+		<p>Over the course of a short, rest you can touch a rune that has been transferred to an object, using this rune to duplicate its effects. This rune must be of a rarity greater than or equal to that of the other rune.</p>
+		<p class="indent">At the end of the short rest, this rune must be transferred to the type of object specified in the other rune's description, and functions identically to that rune. This rune cannot be used to duplicate the effects of another duplicate rune.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Varies(Common)(Specified in Other Rune)</set>
+		</setters>
+	</element>
+	<element name="Reconnaissance" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_RECONNAISSANCE_RUNE">
+		<description>
+		<p>Over the course of 10 minutes, you can activate this rune while touching the ground, a wall, or a similar nonmagical surface. When you do so, you magically learn the following information about the area within 30ft of the point you're touching</p>
+		<ul>
+			<li>Approximately how many creatures have passed through the area within the past 24 hours</li>
+			<li>How long ago they passed through the area</li>
+			<li>Their sizes</li>
+			<li>Their creature types</li>
+			<li>Which direction they were traveling</li>
+			<li>Their travel pace</li>
+		</ul>
+		<p class="indent">You may also learn other similar information, at the DM's discretion. Once activated, this rune cannot be used again until the next dusk</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare(Undercommon)(Any Bracer, Gauntlet or similar Armwear)</set>
+		</setters>
+	</element>
+	<element name="Bolt" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_BOLT_RUNE">
+		<description>
+		<p>This rune has 3 charges. While holding the object that bears this rune, you can use an action to expend 1 or more of its charges to cast the <i>guiding bolt</i> spell from it, using a spell attack bonus of +5.</p>
+		<p class="indent">For 1 charge, you cast the spell at 1st level. You can increase the spell slot level by one for each additional chare you expend. On a hit, the mystical light glittering on the target takes the form of shimmering celestial runes, and if the target is a fiend or undead, it takes an extra 1d6 damage from the spell.</p>
+		<p class="intent">This rune regains 1d3 expended charges daily at dawn. If the rune reaches 0 charges the rune goes dim and you must wait 48 hours before it begins to regain charges.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Celestial)(Any Weapon or Spellcasting Focus)</set>
+		</setters>
+	</element>
+	<element name="Domination" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_DOMINATION_RUNE">
+		<description>
+		<p>As an action, you can touch a creature an activate this rune to cast <i>dominate person</i> on the target (save DC17). If you or creatures that are friendly to you are fighting the target, it doesn't have advantage on the saving throw if you are hidden from it when you activate the rune.</p>
+		<p class="indent">While dominated in this way, spectral runes visibly encircle the target's neck, wrists, and ankles, or otherwise hover around it if it doesn't have suitable body parts.</p>
+		<p class="intent">Once activated, this rune cannot be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Very Rare(Halfling)(Any Ring)</set>
+		</setters>
+	</element>
+	<element name="Call" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_CALL_RUNE">
+		<description>
+		<p>This rune has 5 charges. While holding the instrument that bears this rune, you can use an action to expend 1 or more of its charges and blow the instrument. In response, a number of giant eagles equal to the number of charges spent fly to your  location within 10 minutes, unless you are underground or otherwise unable to be reached.</p>
+		<p class="indent">The eagles are friendly to you and your companions and will help you for up to 4 hours. You can request that the eagles perform simple tasks such as "fly us across this chasm", "deliver a message" or "scout out that village and report back" however they have no obligation to do anything they deem to be dangerous.</p>
+		<p class="intent">This rune regains 1d4+1 expended charges every 7 days.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare(Celestial)(Any Wind Instrument)</set>
+		</setters>
+	</element>
+	<element name="Necrocide" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_NECROCIDE_RUNE">
+		<description>
+		<p>As an action, you can activate this rune to unleash a wave of energy that is toxic to nearby undead. When you do so, each undead within 30ft of you must make a DC15 Constitution saving throw. On a failed save, if the target is of CR 1/2 or les it is instantly destroyed; otherwise it takes 2d6 necrotic damage. This damage ignores resistances and immunities and a creature that has total cover from you is not affected.</p>
+		<ul>
+			<li>Starting at 11th level, if the target fails its saving throw it is destroyed if it is CR 1 or less; otherwise it takes 3d6 necrotic damage</li>
+			<li>Starting at 17th level, if the target fails its saving throw it is destroyed if it is CR 2 or less; otherwise it takes 4d6 necrotic damage</li>
+		</ul>
+		<p class="intent">Once activated, this rune cannot be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare(Elvish)(Any Spellcasting Focus)</set>
+		</setters>
+	</element>
+	<element name="Climb" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_CLIMB_RUNE">
+		<description>
+		<p>While holding one end of the rope that bears this rune, you can use an action to activate this rune. When you do so, the other end of the rope moves up to 60ft towards a point you choose, and then becomes magically fixed there.</p>
+		<p class="intent">Until you activate the rune again or use an action to end the effect, that end of the rope doesn't move, even if it's defying gravity. While this effect is active, the rope can hold up to 1000 pounds. More weight causes the effect to end and the rope to fall. A creature can use an action to pull on the rope and make a DC20 Strength check, ending the effect on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Thieves' Cant)(Any Rope)</set>
+		</setters>
+	</element>
+	<element name="Eavesdrop" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_EAVESDROP_RUNE">
+		<description>
+		<p>As an action, you can activate this rune and choose a space you can see within 500ft of you. For the next 10 minutes, or until you end the effect as an action, you can hear as if you were in that space.</p>
+		<p class="intent">Once activated, this rune cannot be used again until the next dawn</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Undercommon)(Any Earring, Helmet or other object worn on the head)</set>
+		</setters>
+	</element>
+	<element name="Synchronize" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_SYNCHRONIZE_RUNE">
+		<description>
+		<p>When you roll initiative at the start of combat, you can activate this rune and choose a willing creature you can see that is wearing another object this rune was transferred to . When you do so, you gain one of the following benefits of your choice:</p>
+		<ul>
+			<li>If you aren't surprised, and the target is, you can choose for the target to also not be surprised.</li>
+			<li>You can choose to make your initiative roll match that of the target.</li>
+			<li>You can immediately use your reaction to move up to your speed toward the target.</li>
+		</ul>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Sylvan)(Any Two Identical pieces of Jewelry)</set>
+		</setters>
+	</element>
+	<element name="Wings" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_WINGS_RUNE">
+		<description>
+		<p>Over the course of 1 minute, you can activate this rune to manifest a pair of spectral dragon wings from your back for up to 1 hour. While the wings are present, you have advantage on saving throws against the Frightful Presence of dragons, and you have a flying speed of 60ft and can hover. This effect ends early if you die, or if you dismiss the wings as a bonus action.</p>
+		<p class="indent">Once activated, this rune cannot be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Draconic)(Any Cape, Cloak, or similar Backwear)</set>
+		</setters>
+	</element>
+	<element name="Kick" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_KICK_RUNE">
+		<description>
+		<p>Whenever you make an unarmed strike to kick a creature with the footwear that bears this rune, the rune's magic flares. On a hit, the target is pushed up to 5ft away from you if it is no more that once size larger than you.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Gnomish)(Any Boots or Footwear)</set>
+		</setters>
+	</element>
+	<element name="Competency" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_COMPETENCY_RUNE">
+		<description>
+		<p>While wearing the armour or holding the weapon or shield that bears this rune, you are considered proficient with it even if you lack proficiency with that type of armour or weapon. You can only gain the benefits of one competency rune at a time, regardless of how many objects you're holding or wearing that bear such a rune.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Dwarvish)(Any Armour or Weapon)</set>
+		</setters>
+	</element>
+	<element name="Glow" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_GLOW_RUNE">
+		<description>
+		<p>As a bonus action, you can activate this rune to cause the weapon to vibrantly glow a colour of your choice for 1 minute. While glowing, the weapon sheds bright light in a 10ft radius and dim light for an additional 10ft.</p>
+		<p class="indent">In addition, once per turn when you hit a target with an attack with the glowing weapon, you can cause the target to shed dim light in a 5ft radius until the end of your next turn. While shedding this light, the target cannot benefit from being invisible.</p>
+		<ul>
+			<li>Starting a 5th level, when you cause a target to shed dim light, it also takes 1d6 radiant damage.</li>
+			<li>Starting at 11th level, once before your weapon stops glowing, you can cast the <i>branding smite</i> spell.</li>
+			<li>Starting at 17th level, when you cause a target to shed dim light, it takes 2d6 radiant damage, instead of 1d6.</li>
+		</ul>
+		<p class="indent">Once activated, this rune cannot be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Elvish)(Any Ranged Weapon)</set>
+		</setters>
+	</element>
+	<element name="Indestructible" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_INDESTRUCTIBLE_RUNE">
+		<description>
+		<p>The object or structure this rune is transferred to becomes magically warded against damage. Unless the rune is removed or disabled such as by being in an area of antimagic, the object or portion of structure bearing the rune cannot be destroyed or broken by any means short of a wish spell</p>
+		<p class="indent">If a specific use of a magic item would normally destroy it (such as expending its last charge), it instead merely loses its magic, but is not destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Very Rare(Gnomish)(Any Object or Portion of structure no longer than 60ft in any dimension)</set>
+		</setters>
+	</element>
+</elements>
+

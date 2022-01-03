@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+	    <update version="0.0.1">
+			<file name="Spells.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/Spells.xml" />
+		</update>
+	</info>
+<!--Neva's Elemental Codex-->
+  <element name="Ice Coffin" type="Spell" source="Neva's Elemental Codex" id="ID_NEC_SPELL_ICE_COFFIN">
+    <supports>Wizard, Sorcerer, Warlock</supports>
+    <description>
+      <p>Ice crystals burst out of the ground to encase an enemy in a coffin of pure ice. Choose a creature of size Large or smaller within range. This creature must make a Dexterity saving throw. If it fails, it takes 8d8 cold damage and is encased in a block of pure ice. If it succeeds, it only takes half damage and isn't encased in ice. As long as the creature is trapped in the ice block, the creature is stunned and takes 1d8 cold damage at the start of each of its turns. The only way to free the creature is to attack and destroy the ice block. It has an AC equal to 10 + your spellcasting ability modifier, 100 hit points, is vulnerable to fire and thunder damage and is immune to cold, psychic and poison damage. The block is destroyed when its hit points drop to 0. Creatures immune to the stunned condition only take the initial damage. Creatures immune to cold damage are not affected by the spell. If the spell lasts for its while duration and the creature is still alive, the creature is permanently trapped in ice. It no longer takes damage from this spell and the ice block can only be destroyed by a spell of 8th level or higher.</p>
+      <p class="indent">When you cast this spell at 9th level the initial damage increases by 2d8 and the repeating damage increases to 1d10 over 1d8.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">8</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Up to 10 minutes</set>
+      <set name="range">20ft</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a sapphire worth at least 200gp</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Circle of Frost" type="Spell" source="Neva's Elemental Codex" id="ID_NEC_SPELL_CIRCLE_OF_FROST">
+    <supports>Wizard, Sorcerer</supports>
+    <description>
+      <p>You stretch your hand and ice crystals spring out of it, crashing into a point within range, trapping your enemies into an icy quagmire. Each creature in a 20ft radius of that point must make a Constitution saving throw. Those who fail the save take 5d6 cold damage. Creatures that succeed at the saving throw take half damage. The affected terrain is considered difficult until the end of your next turn.</p>
+      <p class="indent">When you cast this spell at 4th level or higher the damage increases by 1d6 per level above 3rd.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">150ft</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a blue pearl</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Burning Cold" type="Spell" source="Neva's Elemental Codex" id="ID_NEC_SPELL_BURNING_COLD">
+    <supports>Wizard, Sorcerer, Warlock</supports>
+    <description>
+      <p>You touch a creature with your hand and make it's body temperature go down, freezing its body instantly. Make a melee spell attack against a creature. If the attacks hit, the creature takes 5d6 cold damage.</p>
+      <p class="indent">When you cast this spell at 3rd level or higher the damage increases by 1d6 per level above 2nd.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"></set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Ice Statues" type="Spell" source="Neva's Elemental Codex" id="ID_NEC_SPELL_ICE_STATUES">
+    <supports>Wizard, Sorcerer</supports>
+    <description>
+      <p>You choose 3 points within range, at these points an ice statue of yourself appears, these statues have an AC of 10 + your spellcasting ability modifier and 10 hit points, they are immune to cold, poison and psychic damage but vulnerable to fire and thunder damage. At any point during the spells duration you may force any number of the statues to explode. All creatures within 5ft of the exploding statue must make a Dexterity saving throw or take 3d6 cold damage on a failed save or half as much on a successful save.</p>
+      <p class="indent">When you cast this spell at 5th level or higher you can summon an additional statue for each level above 4th.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">60ft</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"></set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Static Arc" type="Spell" source="Neva's Elemental Codex" id="ID_NEC_SPELL_STATIC_ARC">
+    <supports>Wizard, Sorcerer</supports>
+    <description>
+      <p>You create and electric arc that bounces from enemy to enemy. Make a ranged spell attack against a creature within range. If the attack hits, it deals 3d6 lightning damage to the creature, then you choose a creature within 10ft of the target, using the same spell attack roll make an attack against the new creature, this creature takes 1d6 less damage. Repeat this process until the damage reaches 0. The spell cannot bounce to a creature it has already struck, if there are no targets within range the spell ends.</p>
+      <p class="indent">When you cast this spell at 3rd level or higher the damage increases by 1d6 for each level above 2nd.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">90ft</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">An amber fragment wrapped in wool</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Crashing Lightning" type="Spell" source="Neva's Elemental Codex" id="ID_NEC_SPELL_CRASHING_LIGHTNING">
+    <supports>Wizard, Sorcerer, Druid</supports>
+    <description>
+      <p>You invoke an enormous thunderbolt that comes crashing on the battlefield. Choose a point on the ground within range. All creatures within 20ft of the bolt (remember that the bolt reaches to the ceiling or sky) must make a Dexterity saving throw. Those who fail take 6d8 lightning damage those who succeed take half damage. The thunderbolt is able to move through any conductive materials, additionally it can brake through 5ft of wood, 3ft of stone or 1ft of metal, anything thicker will stop the bolt.</p>
+      <p class="indent">When you cast this spell at 5th level or higher the damage increases by 1d8 for each level above 4th.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">150ft</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">A tree branch</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Static Aura" type="Spell" source="Neva's Elemental Codex" id="ID_NEC_SPELL_STATIC_AURA">
+    <supports>Wizard, Sorcerer</supports>
+    <description>
+      <p>You emit an aura of electricity around you. Each creature that begins their turn or enters a 5ft radius around you must make a Constitution saving throw. If they fail they take 1d6 lightning damage or half as much on a successful save.</p>
+      <p class="indent">When you cast this spell at 2nd level or higher the damage increases by 1d6 for each level above 1st.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">Self (5ft radius)</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"></set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Magnetic Shell" type="Spell" source="Neva's Elemental Codex" id="ID_NEC_SPELL_MAGNETIC_SHELL">
+    <supports>Wizard, Sorcerer</supports>
+    <description>
+      <p>You create a bubble of electric energy around you. that bubble takes the form of a sphere of 20ft radius taking you as the centre moving with you. The bubble engulfs everything but cannot go through insulating materials. The sphere does not block gases or non-metallic liquid. On the other hand, metallic objects cannot enter the bubble and are pushed away from it. If the object is attached to something then it enters the bubble instead, if the object is worn or carried the creature must make a Strength saving throw or be pushed out of the bubble and take 2d10 lightning damage on a failed save, on a successful save the creature takes half damage and can enter the sphere. Any metal projectile that enters the field is flung back out, you can use your reaction to aim it at a target, if you don't it misses everything and lands somewhere in the surrounding area. If you choose to target a creature make a ranged spell attack against that creature, on a hit it takes the projectiles normal damage and an additional 4d10 lightning damage.</p>
+      <p class="indent">When you cast this spell at 6th level or higher the damage increases by 1d10 for each level above 5th.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">5</set>
+      <set name="school">Abjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">10 minutes</set>
+      <set name="range">Self (20ft radius)</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">A small glass marble and some wool</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Electric Surge" type="Spell" source="Neva's Elemental Codex" id="ID_NEC_SPELL_ELECTRIC_SURGE">
+    <supports>Sorcerer</supports>
+    <description>
+      <p>You concentrate your inner energy and release it in the form of a swarm of lightning that bursts out from your body in front of you in a 20ft cone. Each creature in this cone must make a Constitution saving throw or take 6d10 lightning damage on a failed save or half as much on a successful one. If a creature fails the save it looses its reaction. Additionally you loose your reaction if you cast this spell.</p>
+      <p class="indent">When you cast this spell at 7th level or higher the damage increases by 2d10 for each level above 6th.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">6</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self (20ft cone)</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"></set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Corrosive Blood" type="Spell" source="Neva's Elemental Codex" id="ID_NEC_SPELL_CORROSIVE_BLOOD">
+    <supports>Sorcerer, Druid</supports>
+    <description>
+      <p>You transmute your blood into an acid like substance that hurts those that attack you. Each time a creature deals you damage creatures in a 5ft radius around you must make a Dexterity saving throw. Those who fail the save take 2d6 damage or half as much on a successful one. A creature grappling you has disadvantage on this save. If a weapon that can corrode deals damage to you it takes a penalty of -1 to attack rolls, this penalty cumulates by 1 each time it deals damage to you. If a weapon cumulates 5 points the weapon is destroyed.</p>
+      <p class="indent">When you cast this spell at 4th level or higher the damage increases by 1d6 for each level above 3rd.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"></set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Dissolution" type="Spell" source="Neva's Elemental Codex" id="ID_NEC_SPELL_DISSOLUTION">
+    <supports>Sorcerer, Wizard, Artificer</supports>
+    <description>
+      <p>You create a flux of highly concentrated acid and fling it at an object. If at a creature make a ranged spell attack against the creature, on a hit the creature takes 5d10 acid damage, if this reduces it to 0 hit points the creature is dissolved leaving nothing but bones and magic items behind. If it strikes an object or surface make a ranged spell attack, on a hit it takes 5d10 acid damage, the acid bores a 5ft radius spherical hole into the object, or destroys it entirely if the object is smaller that 5ft in radius.</p>
+      <p class="indent">When you cast this spell at 6th level or higher the damage increases by 2d10 for each level above 5th.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">6</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">120ft</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">some saliva</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+</elements>

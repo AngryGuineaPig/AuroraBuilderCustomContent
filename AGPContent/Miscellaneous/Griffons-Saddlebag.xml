@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Griffons-Saddlebag.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous/Griffons-Saddlebag.xml" />
+		</update>
+	</info>
+<!--Weapons and Armour-->
+	<element name="Hour" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_HOUR">
+		<description>
+			<p>All attacks made with this weapon if attuned to either it or Minute gain a +1 to hit and a +1 to damage. You also get a +2 to AC if both of these weapons are equipped</p>
+			<p class="indent">Any critical hits made with this weapon induce the effects of the <i>Slow</i> spell on the target.</p>
+		</description>
+		<setters>
+			<set name="keywords">Shortsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Shortsword">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">Shortsword</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Hour</set>
+			<set name="armorClass">+1</set>
+		</setters>
+		<rules>
+			<stat name="ac" value="1"/>
+		</rules>
+	</element>
+	<element name="Minute" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_MINUTE">
+		<description>
+			<p>All attacks made with this weapon if attuned to either it or Hour gain a +1 to hit and a +1 to damage. You also get a +2 to AC if both of these weapons are equipped</p>
+			<p class="indent">Any critical hits made with this weapon induce the effects of the <i>Haste</i> spell on the wielder.</p>
+		</description>
+		<setters>
+			<set name="keywords">Longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Longsword">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">Longsword</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Minute</set>
+			<set name="armorClass">+1</set>
+		</setters>
+		<rules>
+			<stat name="ac" value="1"/>
+		</rules>
+	</element>
+	<element name="Harvest" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_HARVEST">
+		<description>
+			<p>This classic farmer's heirloom depicts wheat and field designs. When you hit a plant creature with an attack using this magic weapon, the target takes an additional 1d6 slashing damage. In addition, any non magical plant harvested with this sickle remains fresh for an extra 7 days</p>
+		</description>
+		<setters>
+			<set name="keywords">Sickle</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">false</set>
+			<set name="type" addition="Sickle">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Sickle</set>
+			<set name="name-format">Harvest</set>
+		</setters>
+	</element>
+	<element name="Aurum" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_AURUM">
+		<description>
+			<p>The shortsword is made of an enchanted alloy of steel with enough gold content to make it appear full gold. In the pommel is a single red ruby with a point.</p>
+			<p>All attacks made with this weapon if attuned to either it or Argentum gain a +1 to hit and a +1 to damage. If you engage in two weapon fighting with both of these weapons you can add your ability modifier to the attack made with the second dagger.</p>
+			<p><b>Tandem Critical:</b> Additionally if you make a critical hit with the first dagger you gain advantage on the attack roll with the second dagger.</p>
+			<p class="indent">If this dagger hits with the advantage granted by the tandem critical feature it deals an additional 1d4 fire damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">Shortsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Shortsword">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">Shortsword</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Aurum</set>
+		</setters>
+	</element>
+	<element name="Argentum" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_ARGENTUM">
+		<description>
+			<p>The shortsword is made of an enchanted alloy of steel with enough silver content to make it appear full silver. In the pommel is a single blue sapphire with a point.</p>
+			<p>All attacks made with this weapon if attuned to either it or Aurum gain a +1 to hit and a +1 to damage. If you engage in two weapon fighting with both of these weapons you can add your ability modifier to the attack made with the second dagger.</p>
+			<p><b>Tandem Critical:</b> Additionally if you make a critical hit with the first dagger you gain advantage on the attack roll with the second dagger.</p>
+			<p class="indent">If this dagger hits with the advantage granted by the tandem critical feature it deals an additional 1d4 cold damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">Shortsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Shortsword">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">Shortsword</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Argentum</set>
+		</setters>
+	</element>
+	<element name="Blood Moon Blade" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_BLOOD_MOON_BLADE">
+		<description>
+			<p>This fine blade is crafted from a strange black metal and bears a hole above the hilt that seems to draw in blood. You gain a +1 to attack and damage rolls made with this weapon. When you hit a Small or larger living creature with this weapon, that creature takes an extra 2d4 necrotic damage and you regain half the of that damage as hit points.</p>
+			<p><b>Curse.</b> This sword is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the sword, keeping it within reach at all times. You also have disadvantage on attack roll with any other weapon than this one. In addition, the number of hit points you heal magically is halved.</p>
+		</description>
+		<setters>
+			<set name="keywords">Longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Longsword">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Longsword</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Blood Moon Blade</set>
+		</setters>
+	</element>
+	<element name="Titan's Tooth Claymore" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_TITANS_TOOTH_CLAYMORE">
+		<requirements>[Str:17]</requirements>
+		<description>
+			<p>You must have a strength score of 17 or more to wield this blade.</p>
+			<p>Harvested from some great monster such as a storm giant or kraken and given a makeshift handle. You gain +2 to attack rolls and damage rolls and deal an extra 2d6 bludgeoning damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">Greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">false</set>
+			<set name="type" addition="Greatsword">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Greatsword</set>
+			<set name="enhancement">2</set>
+			<set name="name-format">Titan's Tooth Claymore</set>
+		</setters>
+	</element>
+	<element name="Tarrasque Plate" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_TARRASQUE_PLATE">
+		<description>
+			<p>This armour is made from the impenetrable plate of a Tarrasque. You have resistance to spell damage and gain a +1 to AC whenever you are hit by a spell roll a d6, on a 6 the spell doesn't effect you.</p>
+		</description>
+		<setters>
+			<set name="keywords">Plate</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="Plate">Armor</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="armor">Plate</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+	<element name="Angler's Armour" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_ANGLER'S_ARMOUR">
+		<description>
+			<p>The scales appear to be a glossy blue and the armour has dense netting rather than a leather interior.</p>
+			<p>While wearing this armor, you gain a +1 bonus to AC. You also gain a 30 foot swimming speed and can breathe underwater.</p>
+		</description>
+		<setters>
+			<set name="keywords">Scale Mail</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="Scale Mail">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">Scale Mail</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+			<stat name="speed:swim" value="speed" bonus="30" />
+		</rules>
+	</element>
+	<element name="Silver Eagle Studded Cuirass" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_SILVER_EAGLE_STUDDED_CUIRASS">
+		<description>
+			<p>This armour looks much like a normal leather cuirass, except that in the centre of the chest there's a steel eagle. </p>
+			<p>While wearing this armor, you gain a +1 bonus to AC. Additionally you can use a reaction to speak the command word. Once spoken two ghostly silver wings extend from the back of the cuirass and move you ten feet away from the attacker. This motion doesn't provoke attacks of opportunity, it also reduces the damage you'd take by 2d6.</p>
+		</description>
+		<setters>
+			<set name="keywords">studded, leather</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="studded leather">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">Studded Leather</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+	<element name="Heavy Golem Armour" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_HEAVY_GOLEM_ARMOUR">
+		<description>
+			<p>This heavy set of plate mail is 5½ feet tall, weighs 100 pounds, and is reconfigured from the pieces of an iron golem. Despite the armor’s larger size, a series of clever harnesses inside its chest piece comfortably support you inside it. While wearing this armor, your Strength score is 19, unless it’s already higher, and you are considered to be a Medium creature. Magic currents run through the inside of the armor and connect to you, allowing you to control the metal limbs as if they were your own. This magical connection causes you to still take any damage you receive while wearing the armor.</p>
+			<p>While wearing this armor, you can use a bonus action to speak its command word to force the armor to move more rapidly. When it does, you gain the effect of the "haste" spell (no concentration required), and the armor’s joints creak and groan from the increased strain. At the end of each of your turns while you’re under this effect, there is a cumulative 20 percent chance that the armor overheats. When it does, you take 1d10 fire damage from the armor, and the effect ends. Once this property of the armor has been used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Plate</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="Plate">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">Plate</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="strength:score:set" value="19" bonus="base" />
+		</rules>
+	</element>
+	<element name="Enzymatic Gastrostaff" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_ENZYMATIC_GASTROSTAFF">
+		<description>
+			<p>This staff was found in the regurgitated remains of a mighty tarrasque's meal, and is covered in a strange magical mucus. You have resistance to acid damage while holding this staff. This staff deals an additional 1d4 acid damage. In addition, you can use the attack action to touch a Medium or smaller willing creature to cast Enlarge/Reduce on the creature. Once this has been done it can't be done again till the next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Quarterstaff</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Quarterstaff">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="name-format">Enzymatic Gastrostaff</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>
+	<element name="Weaving Wasp Needles" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_WEAVING_WASP_NEEDLES">
+		<description>
+			<p>The two darts are long thing chopstick like slivers of black steel with yellow veins running up the side of the stiletto style blade with a very dark yellow leather handle wrap.</p>
+			<p>These darts come in a pair with a faint yellow incorporeal thread between them. When you deal damage with one of the needles it begins to circle a target and continues to make attacks against it without your input for 6 rounds. If within those six rounds you deal damage with the other needle the second needle pairs with the first and the thread binds the target (DC15 escape check) dealing 2d6 piercing damage per turn.</p>
+			<p>Additionally these darts act as weavers tools with a +5 to all checks. They can act independently to the user and don't require the user to hold them whilst they work</p>
+		</description>
+		<setters>
+			<set name="keywords">Dart</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Dart">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">Dart</set>
+			<set name="name-format">Weaving Wasp Needles</set>
+		</setters>
+	</element>
+	<element name="Direstone Dwarven Key" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_DIRESTONE_DWARVEN_KEY">
+		<description>
+			<p>This dwarven handaxe is specially issued to guards of the Direstone mines, treasury, and prisons. You gain a +1 bonus to attack and damage rolls made with this magic weapon. If it hits a stone object, the hit is automatically a critical hit.</p>
+			<p>In addition, you can use an action to speak the handaxe’s command word and strike a fixed stone surface with it, such as a wall or ceiling. If the surface is no more than 2 feet thick, it magically pulls apart to form a temporary doorway. The doorway is no more than 5 feet across in any dimension and closes at the end of your next turn, leaving no trace of it behind. The passage creates no instability in a structure surrounding it. When the opening disappears, any creatures or objects still in the doorway created by the handaxe are ejected to an unoccupied space on a random side of the stone surface and take 1d6 bludgeoning damage. Once this property has been used, it can’t be used again until 12 hours have passed.</p>
+		</description>
+		<setters>
+			<set name="keywords">Handaxe</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Handaxe">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Handaxe</set>
+			<set name="name-format">Direstone Dwarven Key</set>
+			<set name="enhancement">1</set>
+		</setters>
+	</element>
+	<element name="Eclipse Spear" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_ECLIPSE_SPEAR">
+		<description>
+			<p>When in moonlight this magic spear casts bright light in a 15ft radius and dim light for an additional 15ft. This spear pierces through darkness to find it's marks, allowing the attacks you make with it against targets obscured by magical darkness to be made without disadvantage. Attacks made deal either piercing or slashing. In addition, while holding the spear, you can use a bonus action to cast Branding Smite, once this has been used it can't be used again until the next dusk.</p>
+		</description>
+		<setters>
+			<set name="keywords">Spear</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Spear">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Spear</set>
+			<set name="name-format">Eclipse Spear</set>
+		</setters>
+	</element>
+	<element name="Furious Flail" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_FURIOUS_FLAIL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_HEAVY</supports>
+		<description>
+			<p>This magic stone Flail has the Heavy property. If you're raging while holding the flail, its volcanic nature reacts to your fury. When it dies the basalt handle extended, giving the weapon the reach and versatile (1d10) properties.In addition, while you're raging, the flail deals an extra 1d8 fire damage to any target it hits. You take 1d4 fire damage when the flail transforms in this way, and again at the start of each of your turns if you're holding the flail. The flail returns to it's normal form and cools if you are no longer holding it at the end of your turn or stop raging.</p>
+			<p class="indent"><b>Volcanic Fury.</b> You can use an action to smash the flail into the ground at a point within the weapon's range. WHen you do, the ground erupts, spewing a mixture of earth and fire in a 20ft cube centered on that point. Each creature other than you in that area must make a DC16 dexterity saving throw. On a failed save, a creature takes 2d12 bludgeoning damage and 2d12 fire damage, or half as much on a successful one. In addition, the ground becomes an area of difficult terrain until cleared. Each 5ft square takes 1 minute to clear. Once this property has been used, it can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Flail</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Flail">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Flail</set>
+			<set name="name-format">Furious Flail</set>
+		</setters>
+	</element>
+	<element name="Rope Caster" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_ROPE_CASTER">
+		<description>
+			<p>This magic weapon is a favorite among infiltrators. Its firing mechanism has no string, unlike other crossbows. Instead, this weapon can only be loaded with rope. Asa bonus action, you can load a length of rope into the crossbow. When you do, individual strands of the rope bind themselves to the crossbow limbs. You can make a ranged attack with the crossbow to fire the rope at a willing creature or an object within range that isn't being worn or carried. If it hits, the target takes no damage from the attack but is bound by the rope. If the rope is long enough, it magically wraps around the target in a single loop and securely ties itself , leaving the remaining rope to hang from the knot. If the target is a willing creature, the rope ties itself around the creature's chest or waist as a harness but doesn't restrain them. If the attack hits an unwilling target the rope falls to the ground. The rope is tied with a DC 10 strength or dexterity.</p>
+		</description>
+		<setters>
+			<set name="keywords">crossbow, hand</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">false</set>
+			<set name="type" addition="Crossbow, Hand">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">Crossbow, Hand</set>
+			<set name="name-format">Rope Caster</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+	<element name="Chromatic Obsidian Greataxe" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_CHROMATIC_OBSIDIAN_GREATAXE">
+		<description>
+			<p>This prismatic greataxe is made using chromatic obsidian, a dazzling type of stone found where several elemental planes meet. When you roll a 20 on an attack roll with this magic weapon, the target must make a DC15 Constitution saving throw. On a failed save the target takes 1d6 cold, fire, lightning and radiant damage, (4d6 total) or half as much on a success. For each 6 you roll there is an additional effect.</p>
+			<p>Cold: 		The targets speed is halved until the end of your next turn.</p>
+			<p>Fire: 		The target takes an extra 6 fire damage at the end of its next turn.</p>
+			<p>Lightning: 	The target can't take reactions until the end of its next turn.</p>
+			<p>Radiant:		The next attack roll made against the target before the end of your next turn has advantage.</p>
+		</description>
+		<setters>
+			<set name="keywords">Greataxe</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Greataxe">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Greataxe</set>
+			<set name="name-format">Chromatic Obsidian Greataxe</set>
+		</setters>
+	</element>
+	<element name="Unblade" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_UNBLADE">
+		<description>
+			<p>This item appears to be a small cremation urn. While grasping the urn, you can use a bonus action to speak its first command word and cause its lid to unseal. When you do, a curved blade of dark smoke pours from the mouth of the urn. Speaking the command word again reseals the urn and causes the blade to disappear. If you are proficient with shortswords or longswords, you are proficient with the "urnblade". You gain a +1 bonus to attack and damage rolls made with this magic weapon, which deals necrotic damage instead of slashing damage.</p>
+			<p><b>𝙎𝙝𝙖𝙙𝙤𝙬 𝘼𝙡𝙡𝙮.</b> While holding the urn, you can use an action to speak its second command word to animate your body’s shadow, transforming it into an undead creature. When you do, your body’s shadow detaches from you and becomes a shadow in an unoccupied space that you can see within 10 feet of you.</p>
+			<p>On your turn, you can mentally command the shadow if you aren’t incapacitated. You decide what action the shadow takes and where it moves during its next turn, or you can issue it a general command, such as to attack your enemies or guard a location. The GM has the shadow’s statistics. This shadow doesn’t cause a new one to appear when a non-evil humanoid dies from its attacks.</p>
+			<p>The "urnblade’s" bonus to attack and damage rolls becomes +2 while the summoned shadow exists. In addition, if you are the target of an attack and are within 5 feet of the shadow, you can use your reaction to command your shadow to become the target of the attack instead.</p>
+			<p>The shadow disappears when it drops to 0 hit points, when it’s farther than 120 feet from you, or when you use an action to dismiss it. When it disappears, your cast shadow returns. If the shadow drops to 0 hit points, there is a cumulative 5 percent chance that the urn turns to dust and is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">Scimitar</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Scimitar">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Scimitar</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Urnblade</set>
+		</setters>
+	</element>
+	<element name="Xibalban Blade" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_XIBALBAN_BLADE">
+		<description>
+			<p>This toothed obsidian blade absorbs any blood that’s left on it. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a creature that is not a construct, plant, or undead with this sword, that creature takes an extra 1d6 necrotic damage.</p>
+			<p>If the sword has dealt necrotic damage in this way in the past hour, you can use an action to hold the sword aloft and speak its command word to summon a blood elemental, as if you had cast the "conjure elemental" spell. Once this property of the sword has been used, it can’t be used again until the next dawn. A blood elemental uses the same statistics as a water elemental, with the following changes:</p>
+			<p class='indent'>The blood elemental has resistance to necrotic damage in addition to its other resistances.</p>
+			<p class='indent'>The blood elemental’s alignment is neutral evil.</p>
+			<p>When you hit with an attack using this sword while the blood elemental is under your control and within 120 feet of you, the elemental regains a number of hit points equal to the necrotic damage dealt by the sword.</p>
+		</description>
+		<setters>
+			<set name="keywords">Longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Longsword">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Longsword</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Xibalban Blade</set>
+		</setters>
+	</element>
+	<element name="Lamian Facestealer" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_LAMIAN_FACESTEALER">
+		<description>
+			<p>This dagger once belonged to an infamous lamian assassin and features a sculpted metal face at the base of the blade. When you attune to this weapon, the metal face magically changes to match your appearance. You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p>The dagger has 3 charges and regains 1d3 expended charges daily at dusk. When you hit a humanoid with this weapon, you can expend 1 of its charges to immediately recreate the effects of the "disguise self" spell (save DC 15), taking on the appearance of the target. When you do, the dagger’s metal face changes to match the appearance. This version of the spell allows you seem up to 3 feet shorter or taller when taking on the target’s appearance.</p>
+			<p>When you take on a creature’s appearance in this way, that creature must make a DC 15 Wisdom saving throw. On a failed save, that creature has disadvantage on Wisdom saving throws and all ability checks as long as you share its appearance in this way.</p>
+		</description>
+		<setters>
+			<set name="keywords">Dagger</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Dagger</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">Lamian Facestealer</set>
+		</setters>
+	</element>
+	<element name="Dusk Dagger (uncommon)" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_DUSK_DAGGER_U">
+		<description>
+			<p>This delicately curved dagger is ornamented with several crescent moon designs. When you hit a creature who is completely in dim light or darkness with this weapon, that creature takes an extra 1d4 psychic damage</p>
+		</description>
+		<setters>
+			<set name="keywords">Dagger</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">false</set>
+			<set name="type" addition="Dagger">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Dagger</set>
+			<set name="enhancement">0</set>
+			<set name="name-format">Dusk Dagger</set>
+		</setters>
+	</element>
+	<element name="Dusk Dagger (rare)" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_DUSK_DAGGER_R">
+		<description>
+			<p>This delicately curved dagger is ornamented with several crescent moon designs. When you hit a creature who is completely in dim light or darkness with this weapon, that creature takes an extra 1d8 psychic damage</p>
+		</description>
+		<setters>
+			<set name="keywords">Dagger</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">false</set>
+			<set name="type" addition="Dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Dagger</set>
+			<set name="enhancement">0</set>
+			<set name="name-format">Dusk Dagger</set>
+		</setters>
+	</element>
+	<element name="Dusk Dagger (very rare)" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_DUSK_DAGGER_VR">
+		<description>
+			<p>This delicately curved dagger is ornamented with several crescent moon designs. When you hit a creature who is completely in dim light or darkness with this weapon, that creature takes an extra 1d12 psychic damage</p>
+		</description>
+		<setters>
+			<set name="keywords">Dagger</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">false</set>
+			<set name="type" addition="Dagger">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Dagger</set>
+			<set name="enhancement">0</set>
+			<set name="name-format">Dusk Dagger</set>
+		</setters>
+	</element>
+	<element name="Oathkeeper's Resolve" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_OATHKEEPERS_RESOLVE">
+		<description>
+			<p>This star-shaped mithral buckler weighs 2 pounds and bolsters you sense of holy purpose. While holding this shield, you have a +2 to AC. This is in addition to the shields normal bonus.</p>
+			<p>The centre of the shield is ornamented with a durable, glassy lens that can project your holy radiance. You can use a bonus action while holding this shield to cause it to emit bright light from the lens in a 15ft radius and dim light for a further 15ft. The light lasts until you use a bonus action to extinguish it or fall unconscious.</p>
+			<p><b>Radiant Aura.</b> When you doff this shield or by using an action, you can speak the shield's command word and choose to throw it to a friendly creature (if it has a free hand) or unoccupied space within 30ft of you that you can see, causing the shield to radiate with your holy resolve and light. The shield's light becomes suffused with divine intention, casting bright light in a 30ft radius and dim-light for a further 30. This holy light lasts for 1 minute, and any friendly creature within the bright light gains the effects of your paladin auras. Completely covering the affected shield with an opaque object blocks the light. Once the light fades it can't be used again for 12 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">shield</set>
+			<set name="type">Shield</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="armor">shield</set>
+			<set name="name-format">Oathkeeper's Resolver</set>
+			<set name="enhancement">2</set>
+		</setters>
+	</element>
+	<element name="Monster Tamer's Shield" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_MONSTER_TAMERS_SHIELD">
+		<description>
+			<p>This shield punishes certain creatures for their hostility and comes from a culture whose dominion is in direct competition with powerful beasts. While holding this shield, whenever you take damage from a melee attack by a beast of monstrosity, that creature takes 1d4 psychic damage. In addition, you have advantage on Animal Handling checks.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">shield</set>
+			<set name="type">Shield</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="armor">shield</set>
+			<set name="name-format">Monster Tamer's Shield</set>
+		</setters>
+	</element>
+	<element name="Monster Tamer's Sword" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_MONSTER_TAMERS_SWORD">
+		<description>
+			<p>This magic weapon exerts dominance over certain creatures and was crafted by a culture known for its hunting and battling of monsters.</p>
+			<p>This sword has 6 charges and regains 1d4 + 2 expended charges daily at dawn. As a reaction when you reduce a Large or smaller beast or monstrosity of challenge rating 3 or lower to 0 hit points with this weapon, you can expend 1 of its charges to try and capture it instead. The creature must make a DC 15 Charisma saving throw. On a failed save, it disappears and is contained within the sword with 1 hit point. On a success, it resists the effect and falls to 0 hit points. Shapechangers automatically succeed on the saving throw. Only one creature can be captured by the sword at any one time.</p>
+			<p>As an action while holding the sword, you can speak its command phrase to release the stored creature. It reappears in an unoccupied space that you can see within 10 feet of you. The creature is friendly to you and your companions. Roll initiative for the creature, which has its own turns. It obeys any verbal commands that you issue to it. If you don't issue any commands to it, it defends itself from hostile creatures, but otherwise it takes no actions. The DM has the creature's statistics. The creature returns to the sword after 1 minute if you're within 100ft of it, or earlier if you touch the creature with the sword as an action. The Creature ceases to be friendly to you and your companions if it's unable to return to the sword, or if you release control of it using a bonus action, or if it takes damage from you or an ally.</p>
+			<p>While you're holding the sword and the creature is stored within it or within 30 feet of you, you can use a bonus action to speak the weapon's command word and expend one or more of its charges to restore 10 hit points per expended charge.</p>
+		</description>
+		<setters>
+			<set name="keywords">Sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">Monster Tamer's Sword</set>
+		</setters>
+	</element>
+	<element name="Camper's Crutch" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_CAMPERS_CRUTCH">
+		<description>
+			<p>This enchanted fire poker is a favorite among travelers. Attacks made with this magic weapon deal either bludgeoning or piercing damage (your choice). In addition as an action, you can use the poker to touch a pile of dry wood or other flammable object that isn't being worn or carried and speak the weapon's command word. When you do, the object catches fire and slowly begins to burn. Once this property has been used, it can't be used again until the following dusk.</p>
+		</description>
+		<setters>
+			<set name="keywords">Mace</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">false</set>
+			<set name="type" addition="Mace">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">Mace</set>
+			<set name="name-format">Camper's Crutch</set>
+		</setters>
+	</element>
+	<element name="War's Wager" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_WARS_WAGER">
+		<description>
+			<p>This golden axe is enchanted with haphazard divination magic. Its split blade features a spade, club, heart and diamond on each of its four faces. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a target with this weapon, you can choose to roll a second d20 before calculating the weapon's damage. If the roll is higher than 11 the weapon seeks out the targets weak point and the attack becomes a critical hit. If you roll 10 or lower the blade misses and deals a critical hit against you instead.</p>
+		</description>
+		<setters>
+			<set name="keywords">Greataxe</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">1</set>
+			<set name="type" addition="Greataxe">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Greataxe</set>
+			<set name="name-format">War's Wager</set>
+		</setters>
+	</element>
+<!--Potions-->
+	<element name="Rejuvenating Draft" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_REJUVENATING_DRAFT">		
+		<description>
+			<p>Once drunk you regain 1d3+1 (uncommon), 1d4+3 (rare), 1d6+4 (very rare) or all (legendary) spent hit dice. When a legendary rejuvenating draft is drunk the consumer gets 1d4 years younger.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Variable</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Bloody Marilith" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_BLOODY_MARILITH">		
+		<description>
+			<p>The potion is crimson red in colour and has thick viscous consistency, it tastes of hot peppers, spice and soured tomato juice. It is a very alcoholic beverage that effects people far more than normal. Once drunk you are able to take a reaction on every turn for 1d10 minutes</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Wispy sour" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_WISPY_SOUR">		
+		<description>
+			<p>This alcoholic beverage is magical in nature and therefore effects people twice as much as other beverages, it tastes like sweet cherries with a sour aftertaste. Once drunk you gain a flying speed of 10 feet for 1 minute but can only hover 2 feet above the ground.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Shifer's Shine" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_SHIFTER'S_SHINE">		
+		<description>
+			<p>This alcoholic beverage is magical in nature and therefore effects people twice as much as other beverages, it tastes of caramel. Once drunk your skin appears more vibrant, you gain advantage on charisma checks for 1 hour but only if the person can see you.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Djinn and Tonic" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_DJINN_AND_TONIC">		
+		<description>
+			<p>This alcoholic beverage is magical in nature and therefore effects people twice as much as other beverages it tastes smooth and bubbly with notes of juniper, elderberries, lavender and peach. Once drunk magical wind begins to make you more dramatic. Billowing hair, cloaks or clothing.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Djinni and Tonic" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_DJINN_AND_TONIC">		
+		<description>
+			<p>This alcoholic beverage is magical in nature and therefore effects people twice as much as other beverages this rare version tastes better, it tastes smooth and bubbly with notes of juniper, elderberries, lavender and peach. Once drunk you gain a gaseous form. You become incorporeal, able to move through non magical difficult terrain as if it were normal, you can pass through very thin walls additionally non magical attacks pass through you for half an hour.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Celestial Sunrise" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_CELESTIAL_SUNRISE">		
+		<description>
+			<p>This alcoholic beverage is magical in nature and therefore effects people twice as much as other beverages, it tastes like orange, honey and pineapple with a faint hint of pomegranate. Once drunk you shine, casting bright light for 30 feet and dim light a further 30 feet. </p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Bath Potion" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_BATH_POTION">		
+		<description>
+			<p>This alcoholic beverage is magical in nature and therefore effects people twice as much as other beverages, it tastes sweet. Once drunk any form of dirt or grime falls of the consumer and they smell like flowers.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Aged Goodberry Wine" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_AGED_GOODBERRY_WINE">		
+		<description>
+			<p>This bottle of thick red wine is miraculously made from magic goodberries and peonies using a close-kept secret. It tastes fruity and floral with notes of honey and the feeling of a fresh breeze and is deeply rejuvenating. The bottle comes with 1d4+3 servings and a serving takes 1 minute to drink.</p>
+			<p>When you drink this wine, you can regain hit points by spending any number of Hit Dice as if you'd finished a short rest. You gain 1 hit point per dice you spend this way. The wine provides enough sustenance for a creature for one day. In addition whenever you roll a charisma or wisdom ability check or saving throw, you add 1d4 to the roll.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+<!--Wondrous Items-->
+	<element name="Chain Devil Gauntlets" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_CHAIN_DEVIL_GAUNTLETS">
+		<description>
+		<p>These gloves are a deep crimson red, there are chains stitched into the fabric that start from the centre of the wrist on the back of the hand that then run up to the tips of all four fingers</p>
+		<p>Whilst wearing these gloves the wielder can make a ranged attack on a target they can see within 60 feet. This attack uses dexterity as a to hit and damage bonus and requires proficiency with a whip additionally they count as a monk weapon. The chains deal 2d6 damage and can be used to grapple a foe (DC 15 escape). While a creature is grappled you can try to throw them with the chain. The target must succeed a DC15 strength save or be moved 20ft in a chosen direction and take a further 2d6 force damage as they strike the ground in that location on a successful save, they are unmoved and take no damage. There can be two of these chains made by either hand for a total of four chains. The gauntlets also offer a +2 for any unarmed attacks made with them.</p>
+		</description>
+		<setters>
+			<set name="keywords">Gauntlets</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">2</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+		<rules>
+			<stat name="martial arts:attack" value="2" bonus="enhancement" />
+			<stat name="martial arts:damage" value="2" bonus="enhancement" />
+		</rules>
+	</element>
+	<element name="Fists of the Guiding Star" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_FISTS_OF_THE_GUIDING_STAR">
+		<description>
+		<p>Stars and celestial bodies glimmer through these hand wrappings. While wearing these wraps over your hands, you can use a bonus action to spend 1 ki point to cause small motes of starlight to guide a creature you can see within 30ft of you, giving it advantage on the next attack roll it makes before the end of your next turn. If that creature's next attack hits, the attack deals extra radiant damage equal to your martial arts die + your wisdom modifier. In addition you can cast the Light cantrip.</p>
+		</description>
+		<setters>
+			<set name="keywords">Gauntlets</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
+		</rules>
+	</element>
+	<element name="Wand of Merriment" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_WAND_OF_MERRIMENT">
+		<description>
+		<p>This wand is made from a sprig of holly and exudes an unmistakable aura of cheer from it. It has 10 holly berries that each contain 1 charge and are used to fuel the wand's properties. When you expend a charge from a berry, it wilts away and disappears. The wand regrows 1d6+4 berries daily at dawn. While you're attuned to the wand, you gain a +2 to Charisma checks and saving throws.</p>
+		<p><b>Spells.</b> While holding the wand, you can use an action to expend one or more of its charges to cast one of the following spells from it, using a spell save of DC 16: <i>Create food and water</i> (3 charges), <i>goodberry</i> (1 charge), <i>hideous laughter</i> (1 charge), <i>irresistible dance</i> (6 charges)</p>
+		<p><b>Dashing Through the Snow.</b> While holding the wand, you can use a bonus action to expend 2 of the charges to take the Dash action. When you do so, you can ignore ice or snow as difficult terrain.</p>
+		<p><b>Festive.</b> As an action, you can wave this wand over up to 1 gallon of water and expend a charge to convert it to a weak alcoholic beverage.</p>
+		<p>When you expend the last charge roll a d20. On a 1, the wand wilts and is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">Wand</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">Misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="enhancement"></set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+	<element name="Ehagan's Moving Ladder" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_EHAGANS_MOVING_LADDER">
+		<description>
+		<p>This small, square platform is 2 feet across, weighs 4 pounds, and can hold up to 400 pounds. While standing on the platform, you can use a bonus action to speak its command word to cause it to move up to 30ft up or down, or half that much if it's carrying more than 200 pounds. The platform can hover up to 60ft in the air in this way, and can't be moved horizontally except by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if you were climbing. When the platform's property has been used for a total of 10 minutes, its magic ceases to function until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Ladder</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">Misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Storm Seer Lamp" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_STORM_SEER_LAMP">
+		<description>
+		<p>This crystal lantern gives off a faint, refreshing small that reminds you of the ocean. As a bonus action, you can touch the crystal and cause it to glow. It casts bright light in a radius between 5-20ft (your choice) and dim light for an additional distance that's the same as the chosen bright light radius. You can alter the radius when you touch the crystal in this way. The lamp can glow for up to 8 hours before it has to rest until next dusk. You can turn the crystal off as a bonus action. If there is a storm within 1 mile of the lamp the crystal becomes an eerie grey.</p>
+		</description>
+		<setters>
+			<set name="keywords">Lamp</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">Misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Mind Master's Monocle" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_MIND_MASTERS_MONOCLE">
+		<description>
+		<p>This ancient golden monocle's lens is a roughly hewn ruby. While you wear this monocle, it magically floats in front of your eye, instead of resting on your face, and you can see through it. While peering through the lens, you always know if a creature you can see is concentrating on a spell. You perceive a concentrating creature's head as being shrouded in an indigo mist. The monocle has 10 charges and regains 1d6+4 at the dawn of a day.</p>
+		<p><b>Spells.</b> While wearing the monocle, you can use an action to cast a spell using you spellcasting ability expending a number of charges from the monocle. Arcane Eye (4 charges), Detect thoughts (2 charges), Telepathic Bond (5 charges)</p>
+		<p><b>Mental Assault</b> While wearing the monocle, you can use a bonus action to expend 3 charges and attempt to break a creatures concentration. The target must be within 60ft of you and you must be able to see them. The creature must make a contested intelligence check against you or loose concentration.</p>
+		</description>
+		<setters>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">Misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Chronomancer's Eyepiece" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_CHRONOMANCERS_EYEPIECE">
+		<description>
+		<p>This singular lens lets you faintly see and command the flow of time around a target. The eyepiece has 5 charges and regains 1d4+1 charges at dawn. While wearing the eyepiece you can expend 1 charge as a reaction at the end of another creatures turn to speak one of the eyepiece's two commands. You must be able to see the target and they must be within 60ft.</p>
+		<p><b>Past.</b> If the target is willing, it is teleported back to the space it was at the beginning of its turn. If another creature or object is occupying the space, the target is teleported to the nearest unoccupied space instead. An unwilling target must succeed a DC16 charisma save or be teleported against its will.</p>
+		<p><b>Future.</b> If the target is willing, it can immediately move again up to half its speed, without provoking attacks of opportunity. After a target moves this way its speed is halved for its next turn.</p>
+		</description>
+		<setters>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">Misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Stormbrewer's Bracers" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_STORMBREWERS_BRACERS">
+		<description>
+		<p>This pair of electrum bracers are always covered in a thin layer of condensation. When you roll for initiative, the bracers begin to billow out wafting clouds around your wrists. The clouds surrounding your wrists grow darker with every charge the bracers have, becoming a fierce storm when fully charged. The bracers can hold up to 5 charges. The bracers gain one charge each time you hit a creature with a melee attack whilst wearing them. If the bracers have 5 charges and you hit a creature they unleash a burst of electricity dealing 1d8 lightning damage to the creature and to two other creatures of your choice within 10ft. When you take lightning damage the damage is reduced by 1d8+4 and gain a charge.</p>
+		</description>
+		<setters>
+			<set name="keywords">Gauntlets</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Arcanist Gauntlets" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_ARCANIST_GAUNTLETS">
+		<description>
+		<p>This pair of rich silk gloves are guarded by an enchanted mithral shell that sporadically releases arcane power. You can use the gauntlets as a spellcasting focus while wearing them, and when you cast a spell using a 1st through 5th-level spell slot, you can choose to roll a d6. If you roll a number on the d6 equal to or greater than the spell’s slot level, the spell draws on the magic within the gauntlets, instead of your own, and is cast without expending a spell slot. The slot must be of a level you can normally cast. The gauntlets can provide up to 5 levels worth of spell slots in this way each day, and no two slots can be the same level.</p>
+		<p>If the number rolled on the d6 is less than the spell slot’s level, you cast the spell as normal and expend the spell slot. If you don’t have the spell slot to cast the spell, the spell fails and the slot is counted toward the gauntlets’ daily provided spell slots.</p>
+		<p>For example, a 9th-level wizard can use the gauntlets to provide either one 5th-level spell slot or a 4th- and 1st-level spell slot over the course of a day, but not two 2nd- or 3rd-level spell slots.</p>
+		</description>
+		<setters>
+			<set name="keywords">Gauntlets</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Brawler's Ring" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_BRAWLERS_RING">
+		<description>
+		<p>This brass ring has several splits in its metal that are filled with seams of jade. While Wearing this ring your unarmed attacks deal 1d4 bludgeoning damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">Ring</set>
+			<set name="category">Rings</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">ring</set>
+			<set name="type">Ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="equippable">true</set>
+		</setters>
+	</element>
+	<element name="Bloodmire Phiale" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_BLOODMIRE_PIALE">
+		<description>
+		<p>This shallow ceramic drinking bowl is enchanted to repurpose spilled blood into new life. The bowl holds up to 8 ounces of blood. Once filled the blood begins to slowly swirl on its own. If left to sit for 1 hour without spilling the blood in the bowl becomes a gruesome tonic that pulses with a faint, internal glow. Drinking the entire bowl of blood from it causes you to regain hit points. Roll a d12 on a 12 you take 12 necrotic damage and would be stable if reduced to 0 hit points. On a roll of less than 12 you heal that number +4 hit points. The blood is thick and sweet like honey. The bowl can be used once per day.</p>
+		</description>
+		<setters>
+			<set name="keywords">Bowl, chalice</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Heartless Cage Pendant" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_HEARTLESS_CAGE_PENDANT">
+		<description>
+		<p>This metal ribcage pendant has 12 pairs of ribs that contain a single roughly-hewn ruby that rattles around inside. The pendant has 1d4+8 charges when found. When a charge is expended a pair of the pendant's ribs magically rust.</p>
+		<p> While wearing this pendant, you can use your reaction to expend 1 charge when a hostile creature within 30ft drops to 0 hit points to force it to fail 3 death saves. When you do you gain 2d6+25 hit points, and that creature can't be restored to life by a spell less than 5th level.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Shimmering Spectacles" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_SHIMMERING_SPECTACLES">
+		<description>
+		<p>While wearing these glasses, you can use your bonus action to cause them to shine. The glasses shed bright light in a 5ft radius blinding all creatures except you if they fail a DC15 dexterity saving throw.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="slot">eyes</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Inker's Armband" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_INKERS_ARMBAND">
+		<description>
+		<p>This brushed metal bracelet is lined with a magical black ink. The ink only stains skin and harmlessly slides of clothing. While wearing the bracelet, you can use a bonus action to cause magical tattoos to appear on the arm that's wearing it. The tattoos remain until the bracelet is removed or you use a bonus action to remove them. These tattoos can be still or animated on a 6 second loop. Regardless of the tattoo, the armband only produces black ink.</p>
+		</description>
+		<setters>
+			<set name="keywords">armband</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+	<element name="Tome of Lost Knowledge" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_TOME_OF_LOST_KNOWLEDGE">
+		<description>
+		<p>This gold-trimmed book’s cover is embossed with a portrait of Ogden Fellweaver, a legendary wizard infamous for his ill-gotten knowledge. If you can attune to this item, you can use it as a spellbook and an arcane focus. If your attunement to the book ends, anything written in the book disappears.</p>
+		<p><b>𝘼𝙗𝙨𝙤𝙧𝙗 𝙆𝙣𝙤𝙬𝙡𝙚𝙙𝙜𝙚.</b> Immediately after a creature that you can see within 60 feet of you casts a spell of 1st level or higher, you can use your reaction to make an Intelligence (Arcana) check. The DC equals 10 + the spell’s level. On a success, the spell is magically added to the book in your own notation. You must be holding the book to use this property. If the added spell is a wizard spell and of a spell level you can prepare, you can prepare this spell just like your other spells. If the spell is not a wizard spell, its notation is garbled and impossible to use. Once this property has been used, it can’t be used again until a number of days equal to the spell’s level have passed.</p>
+		<p><b>𝙎𝙝𝙞𝙛𝙩 𝙆𝙣𝙤𝙬𝙡𝙚𝙙𝙜𝙚.</b> While using this book as your spellbook, you can replace up to 3 spells from your prepared list of spells when you finish a short rest. Once this property has been used, it can’t be used again until the next dawn.</p>
+		<p><b>𝙐𝙣𝙠𝙣𝙤𝙬𝙣 𝙆𝙣𝙤𝙬𝙡𝙚𝙙𝙜𝙚.</b> While holding the book, you can use an action to channel its hidden knowledge. When you do, you gain proficiency in one skill or tool of your choice until the next dawn. If you’re already proficient in the chosen skill or tool, your proficiency bonus is doubled, instead. Once this property has been used, it can’t be used again until the next dawn.</p>
+		<p><b>𝘾𝙪𝙧𝙨𝙚.</b> This book is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the book, keeping it within reach at all times. In addition, you are compelled to use this book as your spellbook. Each time you prepare a spell from another spellbook, you take psychic damage equal to the spell’s level.</p>
+		</description>
+		<setters>
+			<set name="keywords">Tome</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+	<element name="Griffon Coinpouch" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_GRIFFON_COINPOUCH">
+		<description>
+		<p>This stylized purse is sewn and stitched in the style of "the griffon’s saddlebag", a classic treasure and character from children’s stories and legends. The purse is 6 inches across and holds up to 1,000 coins. Coins taken from the purse are miraculously clean and shiny, as if freshly minted. The bag always weighs 1 pound, regardless of the number of coins within it.</p>
+		<p>At the GM’s discretion, a small slip of parchment can be found folded among the coins inside. The parchment can have anything on it, although it usually carries enigmatic warnings or peculiar words of guidance. You can write your own notes or roll a d8 and consult the table below to determine what the parchment says:</p>
+		<table>
+			<thead>
+				<tr><td>d8</td><td>Message</td></tr>
+			</thead>
+			<tbody>
+				<tr><td>1</td><td>Falling rocks play to the rhythm of catastrophe.</td></tr>
+				<tr><td>2</td><td>Whether or not you succeed, you can certainly try.</td></tr>
+				<tr><td>3</td><td>Draughts are meant to be drunk.</td></tr>
+				<tr><td>4</td><td>Strength in numbers.</td></tr>
+				<tr><td>5</td><td>Acid, fire, and diamonds can solve most problems.</td></tr>
+				<tr><td>6</td><td>Not all strangers are trustworthy.</td></tr>
+				<tr><td>7</td><td>Asking for directions is not a sign of weakness.</td></tr>
+				<tr><td>8</td><td>Keep on adventuring.</td></tr>
+			</tbody>
+		</table>
+		</description>
+		<setters>
+			<set name="keywords">Coinpouch</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+	<element name="Life Tether Ankh" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_LIFE_TETHER_ANKH">
+		<description>
+		<p>While wearing this necklace, you can choose to succeed ona death saving throw you would have otherwise failed (no action required). If you use the ankh in this way when suffering two failed death saving throws, you instead gain one success and one failure. Once the ankh has been used to succeed on a death saving throw, it shatters and is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">ankh</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+	<element name="Kestra's Bent Spoon" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_KESTRAS_BENT_SPOON">
+		<description>
+		<p>This silver spoon once belonged to a mystic with an unending appetite. It has three runes etched into the metal that perform various magical functions.</p>
+		<p class="indent"><i>Ulm</i>, in the bowl of the spoon, enhances the flavour of any sour or similarly spoonable dish by drawing out the more nuanced flavours that are often overlooked.</p>
+		<p class="indent"><i>Tox</i>, on the back of the spoon's head, causes the spoon to tarnish and dim when touched by a poison. The spoon remains this way until the next dawn, when its normal luster magically reappears.</p>
+		<p class="indent"><i>Seera</i>, on the handle, strengthens the power of certain psychic effects. While the spoon is on your person and you roll psychic damage, you can focus your attention on the spoon (no action required) to deal maximum damage on one of the damage dice. Once this rune has been used, it can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">spoon</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+	<element name="Wand of Dowsing" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_WAND_OF_DOWSING">
+		<description>
+		<p>This hazel wand has 3 charges. While holding it, you can use an action to expend 1 of its charges to cast the <i>locate object</i> spell from it. When the want is used to detect water, its range increases to 10 miles.</p>
+		<p>The wand regains 1d3 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the wand burst into a small cloud of harmless steam.</p>
+		</description>
+		<setters>
+			<set name="keywords">Wand</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+	<element name="Thalamus Thread" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_THALAMUS_THREAD">
+		<description>
+		<p>This pale grey thread is made from the remains of a powerful mystic's brain. The overdeveloped organ creates a congealed fiber that, once spun, can be used as a functional bowstring. It's always oily to the touch and leaves a faint residue on your fingers when pulled. Ranged attacks made with a weapon strung with this thread are considered magical.</p>
+		<p>When you hit a creature with a ranged attack using a bow or crossbow that was strung with this thread, you can speak the thread's command work as part of the attack to charge the projectile with psychic power. When you do, the target of the attack takes an extra 1d8 psychic damage and is forced to make a DC 15 Intelligence saving throw. On a failed save, the creature is stunned until the end of your next turn. On a successful save, the creature is not stunned. A construct or undead creature automatically succeeds on the saving throw. This property of the thread can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">String</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+	<element name="Performer's Puppet" type="Magic Item" source="Reddit : Griffon's Saddlebag" id="ID_TGSB_MAGIC_ITEM_PERFORMERS_PUPPET">
+		<description>
+		<p>This simple puppet is a favorite among street performers and traveling thespians. While wearing the puppet on your hand, you can use a bonus action to change the style, colour and shape of the puppet's clothing and face. The material is always made of a coloured canvas, but its eyes, stitching and other descriptive details can change when using this property. In addition, while wearing the puppet on your hand and holding it aloft, your voice originates from the puppet instead of you.</p>
+		</description>
+		<setters>
+			<set name="keywords">Puppet</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>
+</elements>

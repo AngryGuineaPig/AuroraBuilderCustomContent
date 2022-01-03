@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="wizard-Entropy.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/Wizard-Entropy.xml" />
+		</update>
+	</info>
+	<element name="School of Entropy" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WIZARD_ENTROPY">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Your focus of study is the experimental development of specialized casting of a number of preferred spells.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ENTROPY_ENTROPY_SAVANT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ENTROPY_DRAIN_LIFE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ENTROPY_NECROSIS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ENTROPY_DEATHS_REACH" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ENTROPY_SUPERIOR_NECROLORD" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ENTROPY_ENTROPY_SAVANT" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ENTROPY_DRAIN_LIFE" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ENTROPY_NECROSIS" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ENTROPY_DEATHS_REACH" level="10" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ENTROPY_SUPERIOR_NECROLORD" level="14" />
+		</rules>
+	</element>
+	<element name="Arcane Savant" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ENTROPY_ENTROPY_SAVANT">
+		<description>
+			<p><em>2nd-level School of Entropy feature</em></p>
+			<p>The time and cost for copying necromancy spells or spells that deal necrotic damage into your spellbook is halved.</p>
+		</description>
+		<sheet>
+			<description>The time and cost for copying necromancy spells or spells that deal necrotic damage into your spellbook is halved.</description>
+		</sheet>
+	</element>
+	<element name="Drain Life" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ENTROPY_DRAIN_LIFE">
+		<description>
+			<p><em>2nd-level School of Entropy feature</em></p>
+			<p>Your knowledge of life and death allows you to steal the life energy from creatures touched by your dark spells. Once per turn when you reduce one or more creatures to 0 hit points with a spell of 1st level or higher you gain temporary hit points equal to double the spell level, or three times if the damage was necrotic or was a necromancy spell. Alternatively, when a creature within 30ft of you is reduced to 0 hit points you can use your reaction to reap its life and regain 3 hit points.</p>
+		</description>
+		<sheet>
+			<description>Your knowledge of life and death allows you to steal the life energy from creatures touched by your dark spells. Once per turn when you reduce one or more creatures to 0 hit points with a spell of 1st level or higher you gain temporary hit points equal to double the spell level, or three times if the damage was necrotic or was a necromancy spell. Alternatively, when a creature within 30ft of you is reduced to 0 hit points you can use your reaction to reap its life and regain 3 hit points.</description>
+		</sheet>
+	</element>
+	<element name="Necrosis" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ENTROPY_NECROSIS">
+		<description>
+			<p><em>6th-level School of Entropy feature</em></p>
+			<p>Starting at 6th level, you've learned to suffuse your spells with negative energy, leaving your enemies weakened and vulnerable. Whenever you successfully hit one or more creatures with a spell that deals necrotic damage, or one or more creatures fail a save against a necromancy spell, you can choose a number of those creatures equal to half your wizard level, to suffer one of the following effects:</p>
+			<p class="indent"><b>Festering Wounds.</b> Whenever the creature takes damage they take an additional 1d4 necrotic damage.</p>
+			<p class="indent"><b>Withering Muscle.</b> The creature's movement speeds are reduced by 10 and it subtracts 1d4 from all damage rolls it makes.</p>
+			<p class="indent"><b>Decaying Mind.</b> The target has disadvantage on Constitution saving throws to maintain concentration, also they have disadvantage on Intelligence, Wisdom and Charisma checks and saves.</p>
+			<p class="ident"><b>Rotting Flesh.</b> The creature can't regain hit points</p>
+			<p>You can use this feature a number of times equivalent to your wisdom modifier per long rest and the effects last 1 minute</p>
+		</description>
+		<sheet usage="{{intelligence:modifier}}/Long Rest">
+			<description>Starting at 6th level, you've learned to suffuse your spells with negative energy, leaving your enemies weakened and vulnerable. Whenever you successfully hit one or more creatures with a spell that deals necrotic damage, or one or more creatures fail a save against a necromancy spell, you can choose a number of those creatures equal to half your wizard level, to suffer one of the following effects:&#13;
+			Festering Wounds. Whenever the creature takes damage they take an additional 1d4 necrotic damage.&#13;
+			Withering Muscle. The creature's movement speeds are reduced by 10 and it subtracts 1d4 from all damage rolls it makes.&#13;
+			Decaying Mind. The target has disadvantage on Constitution saving throws to maintain concentration, also they have disadvantage on Intelligence, Wisdom and Charisma checks and saves.&#13;
+			Rotting Flesh. The creature can't regain hit points
+			The effects last 1 minute</description>
+		</sheet>
+	</element>
+	<element name="Death's Reach" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ENTROPY_DEATHS_REACH">
+		<description>
+			<p><em>10th-level School of Entropy feature</em></p>
+			<p>At 10th level, you can briefly tap into the Negative Energy plane and imbue the weave around you with its energies. As a bonus action you can increase the range of a necromancy or necrotic damage spell, the range is doubled and touch spells increase to 30ft. Additionally necrotic damage you deal ignores resistances and treats immunities as resistances.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>At 10th level, you can briefly tap into the Negative Energy plane and imbue the weave around you with its energies. As a bonus action you can increase the range of a necromancy or necrotic damage spell, the range is doubled and touch spells increase to 30ft. Additionally necrotic damage you deal ignores resistances and treats immunities as resistances.</description>
+		</sheet>
+	</element>
+	<element name="Necrolord" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ENTROPY_SUPERIOR_NECROLORD">
+		<description>
+			<p><em>14th-level School of Entropy feature</em></p>
+			<p>At 14th level, you no longer need to eat, drink, sleep or breathe, you gain resistance to necrotic damage and poison damage. When you cast a spell that deals necrotic damage, you can choose any number of targets to be immune to the spell. Additionally, when you affect creatures with your Necrosis feature you can induce two effects.</p>
+		</description>
+		<sheet>
+			<description>At 14th level, you no longer need to eat, drink, sleep or breathe, you gain resistance to necrotic damage and poison damage, the resistance to necrotic damage increases to an immunity at 16th level. When you cast a spell that deals necrotic damage, you can choose any number of targets to be immune to the spell. Additionally, when you affect creatures with your Necrosis feature you can induce two effects.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC" level="16" />
+		</rules>
+	</element>
+</elements>

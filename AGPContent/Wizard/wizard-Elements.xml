@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="wizard-Elements.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/Wizard-Elements.xml" />
+		</update>
+	</info>
+	<element name="School of The Elements" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WIZARD_ELEMENTS">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Wizards of the tradition of Elemental mastery focus their study on magic that creates powerful elemental effects such as bitter cold, searing flames, rolling thunder and crackling lightning. Elementalists blend principles of transmutation and evocation, focusing on the relationship between the elements.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ELEMENTS_KNOWLEDGE_OF_THE_ELEMENTS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ELEMENTS_ELEMENTAL_CONTROL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ELEMENTS_ELEMENTAL_RESISTANCE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ELEMENTS_ELEMENTAL_ATTUNEMENT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_ELEMENTS_ELEMENTAL_EMBODIMENT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ELEMENTS_KNOWLEDGE_OF_THE_ELEMENTS" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ELEMENTS_ELEMENTAL_CONTROL" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ELEMENTS_ELEMENTAL_RESISTANCE" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ELEMENTS_ELEMENTAL_ATTUNEMENT" level="10" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ELEMENTS_ELEMENTAL_EMBODIMENT" level="14" />
+		</rules>
+	</element>
+	<element name="Knowledge of the Elements" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ELEMENTS_KNOWLEDGE_OF_THE_ELEMENTS">
+		<description>
+			<p><em>2nd-level School of Elements feature</em></p>
+			<p>When you choose this arcane tradition at 2nd level, you gain proficiency in the nature skill and learn primordial. Additionally when you make a check to do with elements of the elemental planes you have advantage and use double your proficiency modifier.</p>
+		</description>
+		<sheet>
+			<description>When you choose this arcane tradition at 2nd level, you gain proficiency in the nature skill and learn primordial. Additionally when you make a check to do with elements of the elemental planes you have advantage and use double your proficiency modifier.</description>
+		</sheet>
+		<grant name="language" id="ID_LANGUAGE_PRIMORDIAL"/>
+		<grant name="proficiency" id="ID_PROFICIENCY_SKILL_PROFICIENCY_NATURE"/>
+	</element>
+	<element name="Elemental Control" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ELEMENTS_ELEMENTAL_CONTROL">
+		<description>
+			<p><em>2nd-level School of Elements feature</em></p>
+			<p>When you choose this arcane tradition at 2nd level, you gain the control flames, gust, mold earth and shape water cantrips. When you cast a spell that deals acid, cold, fire, lightning or thunder damage you can choose to substitute this damage with one of the other four.</p>
+		</description>
+		<sheet>
+			<description>When you choose this arcane tradition at 2nd level, you gain the control flames, gust, mold earth and shape water cantrips. When you cast a spell that deals acid, cold, fire, lightning or thunder damage you can choose to substitute this damage with one of the other four.</description>
+		</sheet>
+		<rules>
+			<grant name="spell" id="ID_XGTE_SPELL_CONTROL_FLAMES" spellcasting="Wizard"/>
+			<grant name="spell" id="ID_XGTE_SPELL_GUST" spellcasting="Wizard"/>
+			<grant name="spell" id="ID_XGTE_SPELL_MOLD_EARTH" spellcasting="Wizard"/>
+			<grant name="spell" id="ID_XGTE_SPELL_SHAPE_WATER" spellcasting="Wizard"/>
+		</rules>
+	</element>
+	<element name="Elemental Resistance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ELEMENTS_ELEMENTAL_RESISTANCE">
+		<description>
+			<p><em>6th-level School of Elements feature</em></p>
+			<p>At 6th level choose either acid, cold, fire, lightning or thunder damage when you finish a long or short rest. You gain resistance to that damage type until you choose a new damage type at the end of a rest. Additionally you can use your reaction to extend this resistance to one creature within 30ft of you that you can see who just took that type of damage. You can do this a number of times equivalent to your intelligence modifier per long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{intelligence:modifier}}/Long Rest">
+			<description>At 6th level choose either acid, cold, fire, lightning or thunder damage when you finish a long or short rest. You gain resistance to that damage type until you choose a new damage type at the end of a rest. Additionally you can use your reaction to extend this resistance to one creature within 30ft of you that you can see who just took that type of damage.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Attunement" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ELEMENTS_ELEMENTAL_ATTUNEMENT">
+		<description>
+			<p><em>10th-level School of Elements feature</em></p>
+			<p>You gain an additional benefit based on which damage type you chose for your resistance.</p>
+			<table>
+				<thead>
+					<tr><td>Damage Type</td><td>Benefit</td></tr>
+				</thead>
+				<tr><td>Acid</td><td><em>You can breathe underwater and have a swim speed equal to your walking speed</em></td></tr>
+				<tr><td>Cold</td><td><em>You ignore all difficult terrain caused by spells or magical effects</em></td></tr>
+				<tr><td>Fire</td><td><em>You can't be set on fire, you gain 60ft of darkvision that works in both normal and magical darkness</em></td></tr>
+				<tr><td>Lightning</td><td><em>You cannot be blinded</em></td></tr>
+				<tr><td>Thunder</td><td><em>You can't be deafened and no spells or magical effects can prevent you from speaking</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain an additional benefit based on which damage type you chose for your resistance.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Embodiment" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ELEMENTS_ELEMENTAL_EMBODIMENT">
+		<description>
+			<p><em>14th-level School of Elements feature</em></p>
+			<p>At 14th level, you attain the ability to become one with the elements. As an action you can cast one of the following without expending a spell slot, <i>Investiture of fire, Investiture of cold, Investiture of stone, Investiture of wind</i>. Once you use this feature you can't again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>At 14th level, you attain the ability to become one with the elements. As an action you can cast one of the following without expending a spell slot, <i>Investiture of fire, Investiture of cold, Investiture of stone, Investiture of wind</i>. Once you use this feature you can't again until you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<grant name="spell" id="ID_XGTE_SPELL_INVESTITURE_OF_ICE" spellcasting="Wizard"/>
+			<grant name="spell" id="ID_XGTE_SPELL_INVESTITURE_OF_FLAME" spellcasting="Wizard"/>
+			<grant name="spell" id="ID_XGTE_SPELL_INVESTITURE_OF_STONE" spellcasting="Wizard"/>
+			<grant name="spell" id="ID_XGTE_SPELL_INVESTITURE_OF_WIND" spellcasting="Wizard"/>
+		</rules>
+	</element>
+</elements>

@@ -34,7 +34,7 @@
 		<setters>
 			<set name="abbreviation">TGSB</set>
 			<set name="url">https://www.reddit.com/r/TheGriffonsSaddlebag/</set>
-			<set name="author" abbreviation="RDDT">The Griffon's Saddlebag Subreddit</set>
+			<set name="author" abbreviation="TGSB">The Griffon's Saddlebag Subreddit</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>

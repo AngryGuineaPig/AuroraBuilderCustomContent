@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Koa's Magical Narcotics and Illicit Substances" type="Rule" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_INDESTRUCTIBLE_RUNE">
+		<description>
+		<h5>A Note About Rarity</h5>
+		<p>Although some the prices may seem similar (and rather cheap), despite one being a higher rarity than others, rarity is intended to show exactly how rare and hard to come by that specific illicit substance is. The prices are generally on the lower side since although they do provide benefits to a player, they almost always come at a cost and potential detriment.</p>
+		<p class="indent">Typically, Common and Uncommon drugs can be found fairly easily if one has a criminal contact or understands how to navigate the underbelly of society through black markets, speak-easies, and so on.</p>
+		<p class="indent">Rare and Very Rare drugs are akin to ‘designer drugs,’ and are much more difficult to obtain, refine, and access. Usually found in the upper echelons of society or within high ranking private circles within criminal organizations, these types of illicit substances are notably abused for specific reasons.</p>
+		<h5>Injections</h5>
+		<p>To consume some of the illicit substances produced by underground organizations by injection, most often a modified Stirge Syringe is necessary for the injection. A Stirge Syringe is created through taking the probiscious of a Stirge, and modifying it so it can withhold liquid and be injected subcutaneously through a stopper. Because some of the more addictive drugs utilize injections, many criminal organizations have monstrous farms where Striges are bred and harvested en masse to make for even more coin in having a monopoly of both the drug, and the tools necessary for consuming the drug.</p>
+		<p class="indent">Other than this, higher end clients may have their own ways of injecting by personal transmutation mages who can Fabricate needles and syringes, and no longer need Strige Syringes. Many of these are typically coated in gold, crystal, or other lucrative substances to visually set them above the typical riff-raff that may indulge.</p>
+		</description>
+	</element>
+	<element name="Aboleth Tears" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_ABOLETH_TEARS">
+		<description>
+			<p>Aboleth Tears are a type of cloudy, blue liquid created from distilled and enchanted Sahuagin blood.</p>
+			<p class="indent">Aboleth Tears are consumed orally or by injection as an Action, where it completely dilates the creature’s pupils, and causes the tear-ducts to produce a thin, almost brackish liquid. A creature who is subjected to a dose of Aboleth Tears when fully submerged can telepathically communicate to any creature who is also fully submerged, regardless if either creature knows or understands any languages for 1d8 hours; the duration extending for an additional 1d8 hours for each dose consumed.</p>
+			<p class="indent">For each dose of Aboleth Tears consumed, the creature must succeed on a Constitution saving throw of 13 or have disadvantage on Wisdom and Charisma saving throws and be Frightened of water for 2d4 hours for each dose consumed.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">80</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Babylon's Breath" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_BABYLONS_BREATH">
+		<description>
+			<p>Babylon’s Breath is an extract that is created from the treated and distilled organs and blood of a Mind Flayer, commonly used by aspiring scholars and academics.</p>
+			<p class="indent">Babylon’s Breath is consumed by injection as an Action, where the creature’s sweat becomes slimy and the creature feels a greater understanding of Intelligence and language around them. A creature subjected to a dose of Babylon’s Breath can understand, speak, and write all languages fluently, has advantage on all Intelligence checks made to decipher any script, and has vulnerability to Psychic damage for 1 hour; the duration extending for an additional hour per dose consumed.</p>
+			<p class="indent">For each dose of Babylon’s Breath consumed, the creature must succeed on a Constitution saving throw of 14 or become stunned for 1d4 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">100</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Beholder Tears" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_BEHOLDER_TEARS">
+		<description>
+			<p>Beholder Tears are a type of distilled extract that looks akin to crystal clear water with ethereal white slivers that dance within the liquid; that is made from the tears of Beholders, Gazers, Spectators, or other Beholder-kin.</p>
+			<p class="indent">A dose of Beholder Tears can be consumed by injection as an Action, where the creature’s eyes will turn completely white and their imagination will grow much more fantastical. A creature subjected to a dose of Beholder Tears gains Truesight out to 30 feet, has vulnerability to Psychic damage, and disadvantage on Wisdom, Intelligence, and Charisma saving throws for 1d4 hours; the duration extending for an additional 1d4 hours per dose consumed.</p>
+			<p class="indent">For each dose of Beholder Tears consumed, the creature must succeed on a Constitution saving throw of 15 or be knocked unconscious for 1d4 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">220</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Blackdrought" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_BLACKDROUGHT">
+		<description>
+			<p>Blackdrought is a thick, tar-like liquid that is distilled from the Black Sap of Blackwillows, trees imbued with necrotic influence, often found within swamps filled with undead life. Blackwillows are known to be very close cousins to Macbrean Ebony.</p>
+			<p class="indent">Blackdrought is consumed by injection into the bloodstream as an Action, where it acts as a powerful intoxicant. A creature who is not Undead subjected to a dose of Blackdrought cannot be Charmed nor Frightened for 1d6 hours; the duration extending for an additional 1d6 hours for each dose consumed. If a creature is Undead and subjected to a dose of Blackdrought, they have advantage on all saving throws for 1d6 hours; the duration extending for an additional 1d6 hours for each dose consumed.</p>
+			<p class="indent">For each dose of Blackdrought consumed, the creature must succeed on a Constitution saving throw of 15 or become poisoned for 2d4 hours; and while poisoned in this way the creature is considered vulnerable to Necrotic damage.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">60</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Blackvein Drought" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_BLACKVEIN_DROUGHT">
+		<description>
+			<p>Blackvein Drought is a purplish black extract that has been drawn and distilled from Death Jasmine that is commonly used by graverobbers.</p>
+			<p class="indent">Blackvein Drought is consumed by injection as an Action, where the creature’s veins and eyes visibly turn pitch black, and their skin begins to pale and grow cold. A creature subjected to a dose of Blackvein Drought has resistance to Necrotic damage, advantage on all Investigation and Perception checks made to find or spot Undead, and vulnerability to Radiant damage for 1d4 hours; the duration extending for an additional 1d4 hours per dose consumed.</p>
+			<p class="indent">For each dose of Blackvein Drought consumed, the creature must succeed on a Constitution saving throw of 14 or take 2d10 necrotic damage which reduces the creature’s maximum health by the amount of damage taken; which remains until the creature is subject to the Lesser Restoration spell.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">75</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Boiling Blood" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_BOILING_BLOOD">
+		<description>
+			<p>Distilled from the blood of aggressive monstrosities such as purple worms, the alchemical blood of flesh golems, and so on, Boiling Blood is a dark crimson paste with a thick and sticky consistency.</p>
+			<p class="indent">Boiling Blood is consumed topically by applying to the skin as an Action, where the creature feels their muscles expand and grow, the feelings of pain become completely nullified, and a matching sense of unbridled rage overcomes them. A creature subjected to one dose of Boiling Blood deals an additional +3 damage with Melee attacks, and has advantage on Strength checks for 1 minute; the duration extending for 1 additional minute for each dose applied.</p>
+			<p class="indent">For each dose of Boiling Blood applied, the creature must succeed on a Constitution saving throw of 13 or have their muscles seize up, and become paralyzed for 1d4 rounds.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">40</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Death's Sight" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_DEATHS_SIGHT">
+		<description>
+			<p>Death’s Sight is the name for a blackened, thick liquid made of Blackwillow Sap extract infused with Dragonsand and various necrotic energies that is commonly used by shadar-kai assasssins.</p>
+			<p class="indent">Death’s Sight is consumed by dropping the liquid into the eyes as an Action, where the eyes, eyelids, and skin around the eyes will completely blacken and become chilled; generating feelings of complacency and idle despair. A creature subjected to one dose of Death’s Sight immediately takes necrotic damage equal to the amount of hit dice they have, and gains the ability to see in dim light or darkness as if it were bright light out to 120 feet. Additionally the creature has an aptitude for finding living creatures; granting them advantage on Wisdom (Survival) checks made to find a living creature, and if creature that is neither a construct nor undead is within 120 feet of a creature subjected to Death’s Sight, they have disadvantage on their Dexterity (Stealth) checks made to hide from creature’s subjected to Death’s Sight. These benefits last for 1d4 hours, the duration extending for an additional 1d4 hours per dose consumed.</p>
+			<p class="indent">For each dose of Death’s Sight consumed, the creature must succeed on a Constitution saving throw of 16 or become cursed. While the creature is cursed, they suffer disadvantage on all Wisdom, Intelligence, and Charisma saving throws, and the curse can only be ameliorated via a spell akin to Remove Curse.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">120</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Dragon's Breath" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_DRAGONS_BREATH">
+		<description>
+			<p>Dragon’s Breath is a type of extremely fine iridescent crystalline powder refined from Dragonsand; a hyper-reactive magical reagent.</p>
+			<p class="indent">Dragon’s Breath is consumed by smoking a dose as an Action, where the creature’s eyes begin to glow akin to a Dragon’s and they feel their magical prowess enhanced. A creature subject to one dose of Dragon’s Breath gains 1 sorcery point and access to one Metamagic option for 1 hour; having 1 additional sorcery point for each dose taken.</p>
+			<p class="indent">For each dose of Dragon’s Breath consumed, the creature must succeed on a Constitution saving throw of 15 or be knocked unconscious for 1 hour.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">100</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Dragonheart" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_DRAGONHEART">
+		<description>
+			<p>Dragonheart is a type of effervescent vapor typically kept in a small vial that is made up of the highly concentrated fumes of burnt and distilled Dragonsand.</p>
+			<p class="indent">Dragonheart is consumed by inhaling a dose as an Action, where the creature feels their body seize up in magical power, as their eyes and mouth begin to glow and hum with power. If the creature casts a spell within the next minute that deals damage, instead of rolling dice to determine the damage dealt, the creature instead uses the highest number possible for each die rolled. When the creature casts a spell in this way, they gain levels of exhaustion equal to the level of the spell casted.</p>
+			<p class="indent">For each dose of Dragonheart consumed, the creature must succeed on a Constitution saving throw of 17 or lose their highest level spell slot, and take force damage equal to 5 times the level of the spell lost.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">300</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Druiddust" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_DRUIDDUST">
+		<description>
+			<p>Druiddust is a type of a powder made from the spores of Mycanoids and the distilled and dried essence of Drudivines, creating a fine brown and purple powder with specks of glowing verdant within.</p>
+			<p class="indent">Druiddust is consumed by gently sprinkling the eyes and tongue with the powder as an Action, which has an earthy taste and causes green, fibrous, and plant-like growths within the iris. A creature subjected to a dose of Druiddust gains the ability to understand and communicate with plants and animals for 1d4 hours; the duration extending for an additional 2d4 hours per dose consumed.</p>
+			<p class="indent">For each dose of Druiddust consumed, the creature must succeed on a Constitution saving throw of 13 or become Poisoned for 1d4 hours, suffering the Blinded condition while Poisoned in this way.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">30</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Emberpaste" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_EMBERPASTE">
+		<description>
+			<p>Emberpaste is a type of ashy black paste with veins of deep orange that glow akin to lava made from the distilled essence of flaming seeds coupled with the ashes of Magma and Smoke Mephits.</p>
+			<p class="indent">Emberpaste is consumed topically by applying to the skin as an Action, where the creature feels their skin and muscles heat up to the point where they faintly glow. A creature subjected to a dose of Emberpaste deals an additional 1d6 fire damage with unarmed strikes and has vulnerability to Cold damage for 1 minute; the duration extending for an additional minute per dose consumed.</p>
+			<p class="indent">For each dose of Emberpaste consumed, the creature must succeed on a Constitution saving throw of 14 or take 6d6 fire damage.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">80</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Etheaus" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_ETHEAUS">
+		<description>
+			<p>Etheaus is a type of distilled fume that looks akin to a faintly cobalt fog, that settles to the bottom of the glass container it is typically kept in; with occasional glimpses of a face if one looks long enough at the fumes. Etheaus is created from the distilled and burnt fumes of ectoplasm of spectres and ghosts.</p>
+			<p class="indent">A dose of Etheaus can be consumed by inhaling the fumes as an Action, where a faint, snow-like powder will begin to coat the edge of the creature’s vision, and their eyes will become increasingly more faint in color. A creature subjected to a dose of Etheaus can see into the Ethereal plane out for 10 feet, where the colors of the world drain away and turn to black, white, and gray tones for 1 hour; the duration extending for an additional hour per dose consumed.</p>
+			<p class="indent">For each dose of Etheaus consumed, the creature must succeed on a Constitution saving throw of 14 or become Stunned for 1d4 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">95</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Faedust" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_FAEDUST">
+		<description>
+			<p>Faedust is a type of pearly, translucent powder that has been distilled from Dust that is released from Pixies.</p>
+			<p class="indent">Faedust is consumed orally as an Action, where it has a highly individualized, sweet, and addicting flavor; that causes the creature to feel a sense of euphoria and jolliness. A creature who is subjected to a dose of Faedust turns Invisible for 2d4 minutes, or until the creature attacks, makes a damage roll, or forces a creature to make a saving throw; the duration extending for an additional 2d4 minutes for each dose consumed.</p>
+			<p class="indent">For each dose of Faedust consumed, the creature must succeed on a Constitution saving throw of 15 or become incapicatated and have their speed halved for 2d4 minutes for each dose consumed.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">120</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Faerie Breath" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_FAERIE_BREATH">
+		<description>
+			<p>Faerie Breath is a type of distilled fume that shines in various shades of violet, indigo, and pink, that is bottled directly from a Faerie Dragon’s Euphoria Breath.</p>
+			<p class="indent">Faerie Breath can be consumed by inhaling the fumes as an Action, where the creature will see the afterimages of vibrant colors at the edge of their vision, and have a faint feeling of euphoria. A creature subjected to a dose of Faerie Breath can see into the Feywild out to a range of 10 feet for 1d4 hours; the duration extending for an additional 1d4 hours per dose consumed For each dose of Faerie Breath consumed, the creature must succeed on a Constitution saving throw of 14 or act as if affected by the Confusion spell for 1d4 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">90</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Forget Me Not" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_FORGET_ME_NOT">
+		<description>
+			<p>Forget Me Not is made from a combination of dried and treated herbs that typically come from the feywild, or have emotion-altering properties. Forget Me Not is used commonlgy by war-torn veterans and those with a disturbed past.</p>
+			<p class="indent">A dose of Forget Me Not can be consumed by being smoked as an Action, where the creature will begin to slowly lose their memory and feel a sense of inner peace and happiness. A creature subjected to a dose of Forget Me Not completely forgets their memories of who they were for 1d4 hours, and suffers disadvantage on all Wisdom and Intelligence checks for 1d4 hours; the duration extending for an additional 1d4 hours per dose consumed. There is a 10% chance when these effects fade that the creature permanently forgets their past, as if the Modify Memory spell was casted on the creature.</p>
+			<p class="indent">For each dose of Forget Me Not consumed, the creature must succeed on a Constitution saving throw of 14 or suffer 1 level of exhaustion.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">110</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Fuse" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_FUSE">
+		<description>
+			<p>Fuse is a type of thick, umber liquid that is a byproduct of poisonous snake venom and trace amounts of dragonsand distilled with coffee beans.</p>
+			<p class="indent">Fuse is consumed orally as an Action, where the creature immediately feels invigorated and no longer feels the effects of exhaustion or lack of sleep. A creature subjected to a dose of Fuse is immune to the effects of Exhaustion for 1d4 hours; the duration extending for an additional 1d4 hours per dose consumed.</p>
+			<p class="indent">For each dose of Fuse consumed, the creature must succeed on a Constitution saving throw of 14 or suffer 1d2 levels of exhaustion.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">65</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Intacio Dust" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_INTACIO_DUST">
+		<description>
+			<p>Intacio Dust is a type of finely ground, blue and red powder refined from Jumping Beans that has been distilled with the blood of a Quickling.</p>
+			<p class="indent">Intacio Dust is consumed nasally as an Action, where the creature immediately is filled with incredible amounts of energy. A creature subjected to one dose of Intacio Dust has their speed doubled, advantage on Dexterity saving throws, and gains an additional action on each of their turns which can be only used to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action for 1 minute; the duration extending for 1 additional minute for each dose consumed. At the end of the duration, the creature suffers 1 level of exhaustion per dose consumed.</p>
+			<p class="indent">For each dose of Intacio Dust consumed, the creature must succeed on a Constitution saving throw of 16 or take one additional point of exhaustion.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">120</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Loorin Root" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_LOORIN_ROOT">
+		<description>
+			<p>Highly favored by athletes and gladiators, Loorin Root is a type of deep black and brown chewy dip that is concentrated, distilled, and dried Liveroot.</p>
+			<p class="indent">Loorin Root is consumed orally as an Action, where if the creature continually chews on the dip for the entirety of the duration, they will feel stronger, faster, and hardier. A creature subjected to a dose of Loorin root has advantage on Strength, Constitution, and Dexterity checks but has disadvantage on Charisma, Intelligence, and Wisdom checks and saving throws for 1 hour; the duration extending for an additional hour per dose consumed.</p>
+			<p class="indent">For each dose of Loorin Root consumed, the creature must succeed on a Constitution saving throw of 14 or be poisoned for 1d4 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">60</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Praetium Twist" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_PRAETIUM_TWIST">
+		<description>
+			<p>Praetium Twists are a type of bright blue, iridescent liquid that has been harvested from an area potent with Wild Magic, that is kept in its chaotic magical state through enchanted glass (that is typically twisted) that is harvested from the same area.</p>
+			<p class="indent">Praetium Twists are consumed orally as an Action, where the creature’s veins and eyes begin to glow in various spectrums of the rainbow as they feel uncontrollable, wild magic beginning to overflow from within them. A creature subjected to one dose of a Praetium Twist immediately rolls on the Wild Magic Surge table and produces that magical effect; using a Spell Save DC of 15 if one is needed. For each additional dose of Praetium Twist consumed, an additional magical effect occurs from rolling on the Wild Magic Surge table.</p>
+			<p class="indent">For each dose of Praetium Twist consumed, the creature must succeed on a Constitution saving throw of 15 or be knocked unconscious for 1d4 rounds.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">100</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Psiphon Powder" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_PSIPHON_POWDER">
+		<description>
+			<p>Psiphon Powder is a collection of fine, vaguely translucent, and bright purple crystals that glow based on the creature’s intelligence akin to a Psi Crystal. Created from crushed and distilled Psiphon Crystals found deep within the Underdark or within rich underground mines, Psiphon Crystals are rumored to be the base component that was used to create the Shardminds.</p>
+			<p class="indent">Psiphon Powder is consumed orally as an Action, where the creature is put into a state of higher understanding, as if they had eidetic memory. A creature subjected to a dose of Psiphon Powder is considered to be Proficient and have Expertise in one Skill that uses Intelligence, as well as vulnerability to psychic damage for 1d4 hours; the duration extending for an additional 1d4 hours per dose consumed.</p>
+			<p class="indent">For each dose of Psiphon Powder consumed, the creature must succeed on a Constitution saving throw of 16 or become Petrified in purple crystals for 1d4 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">180</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Sharkblood" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_SHARKBLOOD">
+		<description>
+			<p>Sharblood is a type of brackish blue liquid that is created from distilled Kellerfins, commonly used by divers.</p>
+			<p class="indent">Sharkblood is consumed orally as an Action, where the creature experiences extreme nausea and an upset stomach as they grow temporary gills, webbed extremities, and their irises become a vibrant yellow. A creature subjected to a dose of Sharkblood gains a swimming speed equal to their walking speed, the ability to breathe underwater, and Darkvision out to 60 feet while underwater for 1d4 hours; the duration extending for an additional 1d4 hours per dose consumed.</p>
+			<p class="indent">For each dose of Sharkblood consumed, the creature must succeed on a Constitution saving throw of 12 or become Incapitated for 1 round as they vomit and feel incredibly sick, before consequently becoming Poisoned for 1d4 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">40</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Somniroot" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_SOMNIROOT">
+		<description>
+			<p>Somniroot is a Dreamleaf root that has been saturated and boiled in various reagents to create a tea that acts akin to a psychedelic drug, utilized by some druidic tribes.</p>
+			<p class="indent">Somniroot is consumed orally through tea as an Action, where the creature experiences vivid hallucinations and a psychedelic trip. A creature subject to a dose of Somniroot has advantage on Wisdom checks for 1d4 hours, and if the creature rolls a 19 or 20 on their Constitution saving throw, they can cast the Scrying spell with a spell save DC of 15 without the need for material components.</p>
+			<p class="indent">For each dose of Somniroot consumed, the creature must succeed on a Constitution saving throw of 13 or become poisoned for 1d4 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">75</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Stamenskin" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_STAMENSKIN">
+		<description>
+			<p>Stamenskin is a type of slowly moving and grasping dark black and brown paste that is typically kept in an airtight glass container, made from distilled and enchanted Livingbark.</p>
+			<p class="indent">Stamenskin is consumed topically by applying to the skin as an Action, where the Stamenskin will quickly travel to cover the entirety of the creature, with the exception of the head, and coat the creature in a thin and rigid layer of bark. A creature subjected to a dose of Stamenskin can’t have their AC be less than 16, regardless of what type of armor they are wearing for 1 hour; the duration extending for an additional hour per dose consumed.</p>
+			<p class="indent">For each dose of Stamenskin consumed, the creature must succeed on a Constitution saving throw of 16 or become Petrified in wood for 1 hour.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">140</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Sunkiss" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_SUNKISS">
+		<description>
+			<p>Sunkiss is a combination of dried leaves and buds that can be smoked. It is created primarily from treated, dried, and distilled Sunblooms.</p>
+			<p class="indent">Sunkiss is consumed by smoking a dose as an Action, where the creature feels relaxed, more sociable, and light appears to be more brilliant to the affected creature. A creature subjected to a dose of Sunkiss is immune to the Frightened condition and has disadvantage on saving throws to resist being charmed for 1d4 hours; the duration extending for an additional 1d4 hours per dose consumed.</p>
+			<p class="indent">For each dose of Sunkiss consumed, the creature must succeed on a Constitution saving throw of 12 or gain 1 level of exhaustion.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">20</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Syphisalts" type="Magic Item" source="Koa's Magical Narcotics and Illicit Substances" id="ID_KMNIS_MAGIC_ITEM_SYPHISALTS">
+		<description>
+			<p>Syphisalts are a fine, purplish red powder that is faintly crystalline; refined from crushed Psiphon Crystals and other mind-altering crystals found within areas that have ties to the Far Realm.</p>
+			<p class="indent">Syphisalts are consumed by lining the inner lips with the syphisalts as an Action before it absorbs into the creature’s bloodstream; causing increased cognitive functions. Syphisalts addicts can be noted with a telltale purplish crimson stain on the lips. A creature subjected to one dose of Syphisalts gains advantage on all Intelligence checks for 1d4 hours; the duration extending for an additional 1d4 hours per each dose consumed.</p>
+			<p class="indent">For each dose of Syphisalts consumed, the creature must succeed on a Constitution saving throw of 15 or gain one level of exhaustion.</p>
+		</description>
+		<setters>
+			<set name="category">Magical Narcotics</set>
+			<set name="cost" currency="gp" addition="per dose">110</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Magical Narcotics</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+</elements>
+
