@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Koa's-Magical-Narcotics-And-Illicit-Substances.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous/Koa's-Magical-Narcotics-And-Illicit-Substances.xml" />
+		</update>
+	</info>
 	<element name="Koa's Magical Narcotics and Illicit Substances" type="Rule" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_INDESTRUCTIBLE_RUNE">
 		<description>
 		<h5>A Note About Rarity</h5>
