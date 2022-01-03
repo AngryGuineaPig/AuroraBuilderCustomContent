@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
   <info>
-	    <update version="0.0.1">
+	    <update version="0.0.2">
 			<file name="warlock-empty.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Warlock/warlock-empty.xml" />
-	</info>
+      </update>
+  </info>
   <element name="The Empty" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_EMPTY">
     <supports>Otherworldly Patron</supports>
     <requirements />

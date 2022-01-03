@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+  <info>
+	    <update version="0.0.1">
+			<file name="warlock-starforger.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Warlock/warlock-starforger.xml" />
+		</update>
+	</info>
   <element name="The Star Forger" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_STAR_FORGER">
     <supports>Otherworldly Patron</supports>
     <requirements />

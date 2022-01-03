@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
   <info>
-	    <update version="0.0.1">
+	    <update version="0.0.2">
 			<file name="warlock-ancientfrost.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Warlock/warlock-ancientfrost.xml" />
-	</info>
+      </update>
+  </info>
   <element name="The Ancient Frost" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ANCIENT_FROST">
     <supports>Otherworldly Patron</supports>
     <requirements />
