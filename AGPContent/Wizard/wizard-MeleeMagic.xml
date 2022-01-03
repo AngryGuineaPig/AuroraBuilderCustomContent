@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	    <update version="0.0.1">
-			<file name="wizard-MeleeMagic.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/Wizard-MeleeMagic.xml" />
+	    <update version="0.0.2">
+			<file name="wizard-MeleeMagic.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/wizard-MeleeMagic.xml" />
 		</update>
 	</info>
 	<element name="Melee Magic" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WIZARD_MELEE_MAGIC">

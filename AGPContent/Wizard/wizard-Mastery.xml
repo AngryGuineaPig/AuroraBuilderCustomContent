@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	    <update version="0.0.1">
-			<file name="wizard-Mastery.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/Wizard-Mastery.xml" />
+	    <update version="0.0.2">
+			<file name="wizard-Mastery.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/wizard-Mastery.xml" />
 		</update>
 	</info>
 	<element name="School of Mastery" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WIZARD_MASTERY">
