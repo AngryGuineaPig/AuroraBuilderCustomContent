@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	    <update version="0.0.1">
-			<file name="wizard-Entropy.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/Wizard-Entropy.xml" />
+	    <update version="0.0.2">
+			<file name="wizard-Entropy.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/wizard-Entropy.xml" />
 		</update>
 	</info>
 	<element name="School of Entropy" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WIZARD_ENTROPY">
