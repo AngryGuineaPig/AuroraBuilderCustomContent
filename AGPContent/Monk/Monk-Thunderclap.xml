@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-Thunderclap.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Thunderclap.xml" />
+		</update>
+	</info>
+	<element name="Way of the Thunderclap" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_THE_THUNDERCLAP">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Across the realms, one can encounter a vast variety of teachings and combat styles, each focusing on a different aspect of a warrior’s arsenal. Many monastic traditions focus on the primal power within one’s spirit, teaching students to release their ki in the form of elemental energy; which usually manifests as a specific element the user has affinity for.</p>
+			<p class="indent">The Way of the Thunderclap is a tradition tailored to those who have an affinity for lightning, being scarcely passed down within the lands of the material plane. Monks of this tradition learn how to use their elemental ki to generate an electric surge within their body, thus enhancing their speed of movement, as well as the effectiveness of their offense, to a level which can be considered unnatural.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERCLAP_INNATE_AFFINITY" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERCLAP_LIGHTNING_REFLEXES" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERCLAP_STORM_CHARGE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERCLAP_SURGING_FLUX" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERCLAP_INNATE_MASTERY" />
+		</description>
+		<sheet display="false">
+			<description>The Way of the Thunderclap is a tradition tailored to those who have an affinity for lightning, being scarcely passed down within the lands of the material plane. Monks of this tradition learn how to use their elemental ki to generate an electric surge within their body, thus enhancing their speed of movement, as well as the effectiveness of their offense, to a level which can be considered unnatural.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERCLAP_INNATE_AFFINITY" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERCLAP_LIGHTNING_REFLEXES" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERCLAP_STORM_CHARGE" level="6"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERCLAP_SURGING_FLUX" level="11"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERCLAP_INNATE_MASTERY" level="11"/>
+		</rules>
+	</element>
+	<element name="Innate Affinity" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERCLAP_INNATE_AFFINITY">
+		<description>
+			<p>When you choose this tradition at 3rd level, you gain proficiency in the Acrobatics skill.</p>
+			<p class="indent">Additionally, you learn the Shocking Grasp and Lightning Lure cantrips, and can spend 1 ki point to cast either of them as a bonus action on your turn. This can be done only once per turn. Wisdom is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Ki">
+			<description>When you choose this tradition at 3rd level, you learn the Shocking Grasp and Lightning Lure cantrips, and can spend 1 ki point to cast either of them as a bonus action on your turn. This can be done only once per turn. Wisdom is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_LIGHTNING_LURE" />
+		</rules>
+	</element>
+	<element name="Lightning Reflexes" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERCLAP_LIGHTNING_REFLEXES">
+		<description>
+			<p>At 3rd level, you learn how to use the voltaic nature of the ki flowing through you to control your muscles well beyond human reaction time. Once per turn, you may choose one of the following benefits:</p>
+			<ul>
+				<li> Sonic Burst - You can spend an additional ki point to use Flurry of Blows on your turn without expending a bonus action. When you do, your strikes emit a thunderous boom audible out to 100 feet. Only one Flurry of Blows may be used per turn.</li>
+				<li>Counter Rush - After using Patient Defense, you can use your reaction to make one unarmed strike against any creature that misses you with a melee attack.</li>
+				<li>Static Blur - When using Step of the Wind, your movement is unaffected by difficult terrain, you can move through any creature’s space, and you don’t provoke opportunity attacks. Once you use this benefit, you can't use it again until you move 0 feet on one of your turns.</li>
+			</ul>
+		</description>
+		<sheet usage="Ki">
+			<description>At 3rd level, you learn how to use the voltaic nature of the ki flowing through you to control your muscles well beyond human reaction time. Once per turn, you may choose one of the following benefits:&#13;
+			Sonic Burst - You can spend an additional ki point to use Flurry of Blows on your turn without expending a bonus action. When you do, your strikes emit a thunderous boom audible out to 100 feet. Only one Flurry of Blows may be used per turn.&#13;
+			Counter Rush - After using Patient Defense, you can use your reaction to make one unarmed strike against any creature that misses you with a melee attack.&#13;
+			Static Blur - When using Step of the Wind, your movement is unaffected by difficult terrain, you can move through any creature’s space, and you don’t provoke opportunity attacks. Once you use this benefit, you can't use it again until you move 0 feet on one of your turns.</description>
+		</sheet>
+	</element>
+	<element name="Storm Charge" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERCLAP_STORM_CHARGE">
+		<description>
+			<p>At 6th level, you can fully manifest your elemental power, enveloping yourself in a coat of lightning which grants an uncanny boost to your performance. As a bonus action, you can spend 2 ki points to enter a <b>Charged state</b>, lasting for 1 minute. While in this state, you gain the following benefits:</p> 
+			<ul>
+				<li>You shed bright light in a 5-foot radius and dim light for an additional 5 feet, as lightning furiously crackles around your body.</li>
+				<li>You gain resistance to lightning damage.</li>
+				<li>Your unarmed strikes deal an additional 1d4 lightning damage. This increases to 1d6 at 11th level. A creature can take this additional damage only once per turn.</li>
+				<li>Whenever a creature hits you with a melee attack, it must succeed on a Constitution saving throw or take lightning damage equal to your Wisdom modifier. This can happen only once per turn.</li>
+				<li>As a bonus action on your turn, you can expend 1 hit dice to gain 2 ki points. This can be done a number of times per use of Storm Charge equal to your proficiency bonus.</li>
+			</ul>
+			<p>You may use this ki feature a number of times equal to half your Wisdom modifier (rounded up), and regain any expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Ki">
+			<description>At 6th level, you can fully manifest your elemental power, enveloping yourself in a coat of lightning which grants an uncanny boost to your performance. As a bonus action, you can spend 2 ki points to enter a Charged state, lasting for 1 minute. While in this state, you gain the following benefits:&#13;
+			You shed bright light in a 5-foot radius and dim light for an additional 5 feet, as lightning furiously crackles around your body.&#13;
+			You gain resistance to lightning damage.&#13;
+			Your unarmed strikes deal an additional 1d{{storm:die}} lightning damage. A creature can take this additional damage only once per turn.&#13;
+			Whenever a creature hits you with a melee attack, it must succeed on a Constitution saving throw or take {{wisdom:modifier}} lightning damage. This can happen only once per turn.&#13;
+			As a bonus action on your turn, you can expend 1 hit dice to gain 2 ki points. This can be done {{proficiency}} times per use of Storm Charge.&#13;
+			You may use this ki feature {{storm:usage}} times, and regain any expended uses when you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<stat name="storm:die" value="4" />
+			<stat name="storm:die" value="2" level="11" />
+			<stat name="storm:usage" value="wisdom:modifier:half:up" />
+		</rules>
+	</element>
+	<element name="Surging Flux" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERCLAP_SURGING_FLUX">
+		<description>
+			<p>At 11th level, you are able to push the limits of your body and spirit, intensifying the stream of energy flowing through you at the cost of your vitality. You gain further benefits while in Charged state:</p> 
+			<ul>
+				<li>At the start of each of your turns, you gain a number of temporary hit points equal to your proficiency bonus, provided that you have at least 1 hit point. These temporary hit points disappear when your Storm Charge ends.</li>
+				<li>If you have half or less of your total hit dice remaining, you can expend a number of hit points equal to your martial arts die's highest roll in exchange for 1 ki point (no action required). This can be done only once per turn.</li>
+				<li>You can take one additional reaction per round. This can be done a number of times per use of Storm Charge equal to your Wisdom modifier.</li>
+			</ul>
+		</description>
+		<sheet usage="Ki">
+			<description>At 11th level, you are able to push the limits of your body and spirit, intensifying the stream of energy flowing through you at the cost of your vitality. You gain further benefits while in Charged state:&#13;
+			At the start of each of your turns, you gain {{proficiency}} temporary hit points, provided that you have at least 1 hit point. These temporary hit points disappear when your Storm Charge ends.&#13;
+			If you have half or less of your total hit dice remaining, you can expend {{martial arts:dice}} hit points in exchange for 1 ki point (no action required). This can be done only once per turn.&#13;
+			You can take one additional reaction per round. This can be done {{wisdom:modifier}} times per use of Storm Charge.</description>
+		</sheet>
+	</element>
+	<element name="Innate Mastery" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERCLAP_INNATE_MASTERY">
+		<description>
+			<p>At 17th level, you unlock the full potential of this elemental combat style. While in Charged state, you can take one additional bonus action per turn. Additionally, you gain access to the following ki feature:</p> 
+			<p class="indent"><b>Thunderclap Blitz.</b> As an action on your turn, you can spend 5 ki points to empower yourself and vanish in a burst of spark. Choose up to five creatures you can see within 60 feet of you. Make an unarmed strike or melee spell attack (your choice) against each target. On a hit, a target takes 6d10 lightning damage. You can then teleport to an unoccupied space you can see within 15 feet of one of the targets you hit or missed. All creatures within 10 feet of the space you teleported to must make a Constitution saving throw, taking 1d10 thunder damage and becoming deafened for 1 round on a failed save. This maneuver emits a resounding rumble audible out to 1000 feet.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>At 17th level, you unlock the full potential of this elemental combat style. While in Charged state, you can take one additional bonus action per turn. Additionally, you gain access to the following ki feature:&#13;
+			Thunderclap Blitz. As an action on your turn, you can spend 5 ki points to empower yourself and vanish in a burst of spark. Choose up to five creatures you can see within 60 feet of you. Make an unarmed strike or melee spell attack (your choice) against each target. On a hit, a target takes 6d10 lightning damage. You can then teleport to an unoccupied space you can see within 15 feet of one of the targets you hit or missed. All creatures within 10 feet of the space you teleported to must make a Constitution saving throw, taking 1d10 thunder damage and becoming deafened for 1 round on a failed save. This maneuver emits a resounding rumble audible out to 1000 feet.</description>
+		</sheet>
+	</element>
+</elements>

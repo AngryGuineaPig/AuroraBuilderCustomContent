@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-	    <update version="0.0.1">
+	    <update version="0.0.2">
 			<file name="Monk.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk.index" />
 		</update>
 	</info>
@@ -21,5 +21,6 @@
 		<file name="Monk-Water.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Water.xml" />
 		<file name="Monk-Winterfury.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Winterfury.xml" />
 		<file name="Monk-Wrath.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Wrath.xml" />
+		<file name="Monk-Thunderclap.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Thunderclap.xml" />
     </files>
 </index>
