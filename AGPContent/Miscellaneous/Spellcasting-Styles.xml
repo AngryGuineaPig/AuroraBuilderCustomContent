@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Spellcasting-Styles.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous/Spellcasting-Styles.xml" />
+		</update>
+	</info>
+	<element name="Spellcasting Styles" type="Rule" source="Reddit : Unearthed Arcana" id="ID_RDDT_RULE_SPELLCASTING_SYLES">
+		<prerequisite>Spellcasting</prerequisite>
+		<description>
+		<p>You adopt a particular style of spellcasting as your specialty. Choose one of the following options. You can't take the same Spellcasting Style option more than once, even if you get to choose again. Each Spellcasting Style also includes examples of spells that can be affected.</p>
+		<p class="indent">Cantrips are ingrained into a person's memory and actions, and thus can't be affected by Spellcasting Styles.</p>
+		<p class="indent"><b>Receiving Spellcasting Styles.</b> The DM can bestow a spellcasting style upon a spellcaster for any fair reason. You could recieve one at character creation, when you learn a certain level of spell, or by spending time learning under a master of magic. You could also be given one if you get the Ability Score Improvement class feature, regardless of whether you improve your ability scores or choose a feat.</p>
+		<p class="indent">Ideally, all spellcasters in a party should receive a spellcasting style at the same time, or close to it.</p>
+		<p class="indent"><b>Class Restrictions.</b>Not all spellcasting styles are made for the same type of campaign, and not all of them are equally viable in similar scenarios. Because of this, there is a list of classes under some spellcasting styles. Unless you are a member of that class, you are unable to take that spellcasting style. Of course, your DM may remove or modify these prerequisites to suit the party.</p>
+		<p class="indent">If a spellcasting style has no prerequisite class listed, then it can be assumed that any class can take it.</p>
+		</description>
+	</element>
+	<element name="Spellcasting Style" type="Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_ITEM_SPELLCASTING_STYLE">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You gain a spellcasting style.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Spellcasting Style" supports="spellcastingstyle" />
+		</rules>
+	</element>
+	<element name="Aegis" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_AEGIS">
+		<supports>spellcastingstyle</supports>
+		<prerequisite>Artificer (Armorer), Bard (Valor), Cleric, Paladin, Sorcerer</prerequisite>
+		<description>
+			<p>When you cast a spell that includes your spell save DC or spell attack bonus, you can reduce the DC and attack bonus by an amount up to your spellcasting ability modifier until the start of your next turn. Until then, your AC increases an amount equal to the amount the DC and attack bonus was reduced.</p>
+			<p><b>Example Spells.</b><i> ray of sickness, storm sphere, crown of stars.</i></p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that includes your spell save DC or spell attack bonus, you can reduce the DC and attack bonus by an amount up to your spellcasting ability modifier until the start of your next turn. Until then, your AC increases an amount equal to the amount the DC and attack bonus was reduced.</description>
+		</sheet>
+	</element>
+	<element name="Artillery" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_ARTILLERY">
+		<prerequisite>Artificer, Ranger, Sorcerer, Warlock, Wizard (Evocation)</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>When you cast a spell that requires a Constitution, Dexterity or Strength saving throw to avoid damage, all creatures in the spell's area has a -2 penalty to their saving throw if you are at least 30 feet away from them.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that requires a Constitution, Dexterity or Strength saving throw to avoid damage, all creatures in the spell's area has a -2 penalty to their saving throw if you are at least 30 feet away from them.</description>
+		</sheet>
+	</element>
+	<element name="Ascendant" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_ASCENDANT">
+		<prerequisite>Cleric, Sorcerer (Storm, Draconic), Wizard</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>When you cast a spell that deals damage while you are flying, the spell's save DC increases by +1 if you are elevated higher than them.</p>
+			<p><b>Example Spells.</b><i>aganazzar's scorcher, ice storm, fire storm.</i></p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that deals damage while you are flying, the spell's save DC increases by +1 if you are elevated higher than them.</description>
+		</sheet>
+	</element>
+	<element name="Attunement" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_ATTUNEMENT">
+		<prerequisite>Artificer, Sorcerer, Warlock, Wizard (Evocation, War)</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>When a creature attempts to dispel a spell that you have cast (such as counterspell or dispel magic), the DC required to be successful increases by +2.</p>
+			<p class="indent">In addition, when a spell you cast that deals damage would be canceled out by an an antimagic field, the spell deals half the normal damage, and is otherwise not affected by the field.</p>
+			<p><b>Example Spells.</b><i> cloud of daggers, flame strike, finger of death.</i></p>
+		</description>
+		<sheet>
+			<description>When a creature attempts to dispel a spell that you have cast (such as counterspell or dispel magic), the DC required to be successful increases by +2.&#13;
+			In addition, when a spell you cast that deals damage would be canceled out by an an antimagic field, the spell deals half the normal damage, and is otherwise not affected by the field.</description>
+		</sheet>
+	</element>
+	<element name="Blasting" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_BLASTING">
+		<prerequisite>Artificer (Artillerist), Druid, Sorcerer, Warlock</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>When you cast a spell that deals damage in a sphere or cone, you can increase the length of the cone, or the radius of the sphere, by 5 feet.</p>
+			<p><b>Example Spells.</b><i> cloud of daggers, flame strike, finger of death.</i></p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that deals damage in a sphere or cone, you can increase the length of the cone, or the radius of the sphere, by 5 feet.</description>
+		</sheet>
+	</element>
+	<element name="Communication" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_COMMUNICATION">
+		<prerequisite>Artificer, Bard (Lore), Cleric, Wizard (Divination)</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>When you cast a spell that has a limit on the number of words that can be included, you can add your spellcasting modifier to the number of words you can use.</p>
+			<p><b>Example Spells.</b><i> sending, suggestion, command.</i></p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that has a limit on the number of words that can be included, you can add your spellcasting modifier to the number of words you can use.</description>
+		</sheet>
+	</element>
+	<element name="Control" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_CONTROL">
+		<prerequisite>Bard, Cleric (Trickery), Sorcerer, Warlock</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>When you target a creature with an enchantment or illusion spell that forces them to make a Charisma or Wisdom saving throw, the DC for the spell increases by +1.</p>
+			<p><b>Example Spells.</b><i> command, geas, dominate monster.</i></p>
+		</description>
+		<sheet>
+			<description>When you target a creature with an enchantment or illusion spell that forces them to make a Charisma or Wisdom saving throw, the DC for the spell increases by +1.</description>
+		</sheet>
+	</element>
+	<element name="Desolation" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_DESOLATION">
+		<prerequisite>Artificer, Druid, Sorcerer, Wizard (Evocation)</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>When you cast an area of effect spell that deals either fire or cold damage, you can choose to have the area affected have either extreme heat (fire damage) or extreme cold (cold damage) for a number of hours equal to the spell's level.</p>
+			<p><b>Example Spells.</b><i> ice knife, ice storm, meteor swarm.</i></p>
+		</description>
+		<sheet>
+			<description>When you cast an area of effect spell that deals either fire or cold damage, you can choose to have the area affected have either extreme heat (fire damage) or extreme cold (cold damage) for a number of hours equal to the spell's level.</description>
+		</sheet>
+	</element>
+	<element name="Execution" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_EXECUTION">
+		<prerequisite>Cleric (Death, Grave), Sorcerer, Warlock, Wizard (Necromancy)</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>If a spell you cast reduces a creature to hit points equal to or less than three times the spell's level, you can choose to instantly reduce that creature to 0 hit points.</p>
+			<p><b>Example Spells.</b><i> chromatic orb, geas, prismatic spray</i></p>
+		</description>
+		<sheet>
+			<description>If a spell you cast reduces a creature to hit points equal to or less than three times the spell's level, you can choose to instantly reduce that creature to 0 hit points.</description>
+		</sheet>
+	</element>
+	<element name="Fixation" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_FIXATION">
+		<prerequisite>Bard, Sorcerer (Abberant Mind), Warlock, Wizard (War)</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>Being incapacitated, knocked unconscious or killed doesn't end your concentration on spells. The spell lasts its full duration unless it is exposed to an antimagic field, a dispel magic spell, or similar magic, in which case the spell immediately ends.</p>
+			<p><b>Example Spells.</b><i> hold person, eyebite, invulnerability</i></p>
+		</description>
+		<sheet>
+			<description>Being incapacitated, knocked unconscious or killed doesn't end your concentration on spells. The spell lasts its full duration unless it is exposed to an antimagic field, a dispel magic spell, or similar magic, in which case the spell immediately ends.</description>
+		</sheet>
+	</element>
+	<element name="Focus" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_FOCUS">
+		<prerequisite>Artificer (Armorer), Bard, Sorcerer, Warlock, Wizard</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>If you succeed on a check to maintain concentration a spell, you gain temporary hit points equal to your level.</p>
+			<p><b>Example Spells.</b><i> bless, flesh to stone, illusory dragon</i></p>
+		</description>
+		<sheet>
+			<description>If you succeed on a check to maintain concentration a spell, you gain temporary hit points equal to your level.</description>
+		</sheet>
+	</element>
+	<element name="Healing" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_HEALING">
+		<prerequisite>Artificer, Cleric, Druid, Paladin</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>When a creature regains hit points because of a spell you cast, it gains additional hit points equal to your proficiency bonus.</p>
+			<p><b>Example Spells.</b><i> healing word, aura of vitality, regenerate</i></p>
+		</description>
+		<sheet>
+			<description>When a creature regains hit points because of a spell you cast, it gains additional hit points equal to your proficiency bonus.</description>
+		</sheet>
+	</element>
+	<element name="Hoodwinking" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_HOODWINKING">
+		<prerequisite>Bard, Cleric (Trickery), Sorcerer, Warlock</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>The first time a creature makes a saving throw or attempts to discern the truth behind an illusion you cast or create, it automatically fails unless the creature has truesight.</p>
+			<p><b>Example Spells.</b><i> phantasmal force, mental prison, illusory dragon</i></p>
+		</description>
+		<sheet>
+			<description>The first time a creature makes a saving throw or attempts to discern the truth behind an illusion you cast or create, it automatically fails unless the creature has truesight.</description>
+		</sheet>
+	</element>
+	<element name="Mastery" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_MASTERY">
+		<prerequisite></prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>Choose a school of magic. Your spell save DC increases by +2, but only for spells of that school.</p>
+			<p><b>Example Spells.</b><i> ice knife, banishment, meteor swarm</i></p>
+		</description>
+		<sheet>
+			<description>Choose a school of magic. Your spell save DC increases by +2, but only for spells of that school.</description>
+		</sheet>
+	</element>
+	<element name="Melee" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_MELEE">
+		<prerequisite>Artificer, Paladin, Ranger, Sorcerer</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>You gain a +1 bonus to melee spell attack rolls.</p>
+			<p><b>Example Spells.</b><i> flame blade, bigby's hand, blade of disaster</i></p>
+		</description>
+		<sheet>
+			<description>You gain a +1 bonus to melee spell attack rolls.</description>
+		</sheet>
+	</element>
+	<element name="Rush" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_RUSH">
+		<prerequisite>Artificer, Paladin, Ranger</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>While concentrating on a spell, your speed increases by 10 feet, and you gain a climbing speed equal to your walking speed.</p>
+			<p><b>Example Spells.</b><i> bane, find the path, weird</i></p>
+		</description>
+		<sheet>
+			<description>While concentrating on a spell, your speed increases by 10 feet, and you gain a climbing speed equal to your walking speed.</description>
+		</sheet>
+	</element>
+	<element name="Shaman" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_SHAMAN">
+		<prerequisite>Bard, Druid, Ranger, Wizard</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>When you cast a spell as a ritual, the spell's casting time increases by 5 minutes, instead of 10.</p>
+			<p><b>Example Spells.</b><i> alarm, phantom steed, forbiddance</i></p>
+		</description>
+		<sheet>
+			<description>When you cast a spell as a ritual, the spell's casting time increases by 5 minutes, instead of 10.</description>
+		</sheet>
+	</element>
+	<element name="Subtelty" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_SUBTELTY">
+		<prerequisite>Bard, Ranger, Sorcerer, Wizard</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>Spells you cast don't require material components as long as they don't have a cost or is consumed by the spell.</p>
+			<p><b>Example Spells.</b><i> longstrider, control water, earthquake</i></p>
+		</description>
+		<sheet>
+			<description>Spells you cast don't require material components as long as they don't have a cost or is consumed by the spell.</description>
+		</sheet>
+	</element>
+	<element name="Support" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_SPELLCASTING_STYLE_SUPPORT">
+		<prerequisite>Artificer, Bard, Cleric, Druid, Paladin</prerequisite>
+		<supports>spellcastingstyle</supports>
+		<description>
+			<p>When a friendly creature is under the effect of a spell you are concentrating on, that creature gains temporary hit points equal to your spellcasting ability modifier at the start of its turn (a minimum of 1).</p>
+			<p><b>Example Spells.</b><i> enlarge/reduce, polymorph, stoneskin</i></p>
+		</description>
+		<sheet>
+			<description>When a friendly creature is under the effect of a spell you are concentrating on, that creature gains temporary hit points equal to your spellcasting ability modifier at the start of its turn (a minimum of 1).</description>
+		</sheet>
+	</element>
+</elements>
+

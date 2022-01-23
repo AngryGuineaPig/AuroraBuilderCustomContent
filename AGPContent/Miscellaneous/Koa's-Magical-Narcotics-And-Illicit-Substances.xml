@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	    <update version="0.0.1">
+	    <update version="0.0.2">
 			<file name="Koa's-Magical-Narcotics-And-Illicit-Substances.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous/Koa's-Magical-Narcotics-And-Illicit-Substances.xml" />
 		</update>
 	</info>
-	<element name="Koa's Magical Narcotics and Illicit Substances" type="Rule" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_INDESTRUCTIBLE_RUNE">
+	<element name="Koa's Magical Narcotics and Illicit Substances" type="Rule" source="Reddit : Unearthed Arcana" id="ID_RDDT_RULE_KMNAIS_RULE">
 		<description>
 		<h5>A Note About Rarity</h5>
 		<p>Although some the prices may seem similar (and rather cheap), despite one being a higher rarity than others, rarity is intended to show exactly how rare and hard to come by that specific illicit substance is. The prices are generally on the lower side since although they do provide benefits to a player, they almost always come at a cost and potential detriment.</p>
