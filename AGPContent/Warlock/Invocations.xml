@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	    <update version="0.0.1">
+	    <update version="0.0.2">
 			<file name="Invocations.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Warlock/Invocations.xml" />
 		</update>
 	</info>
@@ -189,6 +189,363 @@
 		</description>
 		<sheet>
 			<description>When you cast speak with dead, you can grant the corps a portion of knowledge through your patron. The corpse knows the information it would have if it was alive from the moment of its death to the moment you cast the spell. Its knowledge is limited to its situation and intellect.</description>
+		</sheet>
+	</element>
+	<element name="Bewildering Blast" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_BEWILDERING_BLAST">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Archfey Patron, Eldritch Blast Cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST,ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY</requirements>
+		<description>
+			<p>Your eldritch blast confuses and disorients your opponent, as your power awes them. Whenever you make a critical hit with your eldritch blast, that creature becomes charmed by you until the end of their next turn.</p>
+			<p class="indent">Additionally, you can choose to deal psychic damage, instead of force, for your eldritch blast.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a critical hit with your eldritch blast, that creature becomes charmed by you until the end of their next turn.&#13;
+			Additionally, you can choose to deal psychic damage, instead of force, for your eldritch blast.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Blast" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_ELEMENTAL_BLAST">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Genie Patron, Eldritch Blast Cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST,ID_WOTC_TCOE_ARCHETYPE_WARLOCK_THE_GENIE</requirements>
+		<description>
+			<p>Your eldritch blast crepitates with elemental energy. Whenever you score a critical hit with your eldritch blast, the next that creature would take damage of the type associated with your patron until the end of your next turn (bludgeoning, thunder, fire, or cold), it takes additional damage equal to your warlock level.</p>
+			<p class="indent">Additionally, you can choose to deal damage of the type associated with your patron, instead of force damage, for your eldritch blast.</p>
+		</description>
+		<sheet>
+			<description>Whenever you score a critical hit with your eldritch blast, the next that creature would take damage of the type associated with your patron until the end of your next turn, it takes {{level:warlock}} additional damage.&#13;
+			Additionally, you can choose to deal damage of the type associated with your patron, instead of force damage, for your eldritch blast.</description>
+		</sheet>
+	</element>
+	<element name="Eldritch Inferno" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_INFERNO">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Fiend Patron, Eldritch Blast Cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST,ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND</requirements>
+		<description>
+			<p>Your eldritch blast blazes with the energy of the lower planes. Whenever you score a critical hit with your eldritch blast, tendrils of flame rise from the ground to pull your target back down with it, causing the creature to be restrained until the end of its next turn.</p>
+			<p class="indent">Additionally, you can choose to deal fire damage, instead of force damage, for your eldritch blast.</p>
+		</description>
+		<sheet>
+			<description>Whenever you score a critical hit with your eldritch blast, tendrils of flame rise from the ground to pull your target back down with it, causing the creature to be restrained until the end of its next turn.&#13;
+			Additionally, you can choose to deal fire damage, instead of force damage, for your eldritch blast.</description>
+		</sheet>
+	</element>
+	<element name="Eldritch Madness" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_MADNESS">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Great Old One Patron, Eldritch Blast Cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST,ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_THE_GREAT_OLD_ONE</requirements>
+		<description>
+			<p>Your eldritch blast inflicts psychosis upon your foes. Whenever you score a critical hit with your eldritch blast, that creature becomes frightened of you until the end of their next turn, and must use its movement to get away from you if it can during its next turn.</p>
+			<p class="indent">Additionally, you can choose to deal psychic damage, instead of force, for your eldritch blast.</p>
+		</description>
+		<sheet>
+			<description>Whenever you score a critical hit with your eldritch blast, that creature becomes frightened of you until the end of their next turn, and must use its movement to get away from you if it can during its next turn.&#13;
+			Additionally, you can choose to deal psychic damage, instead of force, for your eldritch blast.</description>
+		</sheet>
+	</element>
+	<element name="Eldritch Maledict" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_MALEDICT">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Hexblade Patron, Eldritch Blast Cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST,ID_WOTC_XGTE_ARCHETYPE_HEXBLADE</requirements>
+		<description>
+			<p>Your eldritch blast can imbue minor curses into your foes.</p>
+			<p class="indent">Whenever you score a critical hit with your eldritch blast, you can curse it. A cursed creature can't make more than one attack until the end of your next turn.</p>
+			<p class="indent">Warlock abilities you have that reference a cursed (or Hexed) target can be affected through this curse.</p>
+			<p class="indent">Additionally, you can choose to deal necrotic or piercing damage, instead of force, for your eldritch blast.</p>
+		</description>
+		<sheet>
+			<description>Whenever you score a critical hit with your eldritch blast, you can curse it. A cursed creature can't make more than one attack until the end of your next turn.&#13;
+			Warlock abilities you have that reference a cursed (or Hexed) target can be affected through this curse.&#13;
+			Additionally, you can choose to deal necrotic or piercing damage, instead of force, for your eldritch blast.</description>
+		</sheet>
+	</element>
+	<element name="Eldritch Storm" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_STORM">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Fathomless Patron, Eldritch Blast Cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST,ID_WOTC_TCOE_ARCHETYPE_WARLOCK_THE_FATHOMLESS</requirements>
+		<description>
+			<p>Your eldritch blast crackles like a storm. Once per turn whenever you make a critical hit with your eldritch blast, its volatility causes another beam to fire. Choose another creature within 15 feet of the original target (you can choose the same target). That creature takes a single eldritch blast beam of damage.</p>
+			<p class="indent">Additionally, you can choose to deal cold or lightning damage, instead of force, for your eldritch blast.</p>
+		</description>
+		<sheet>
+			<description>Once per turn whenever you make a critical hit with your eldritch blast, its volatility causes another beam to fire. Choose another creature within 15 feet of the original target (you can choose the same target). That creature takes a single eldritch blast beam of damage.&#13;
+			Additionally, you can choose to deal cold or lightning damage, instead of force, for your eldritch blast.</description>
+		</sheet>
+	</element>
+	<element name="Languishing Blast" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_LANGUISHING_BLAST">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Undead or Undying Patron, Eldritch Blast Cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST,(ID_WOTC_SCAG_ARCHETYPE_UNDYING||ID_WOTC_VRGTR_ARCHETYPE_WARLOCK_THE_UNDEAD)</requirements>
+		<description>
+			<p>Your eldritch blast steals the life force away from your opponents. Whenever you score a critical hit with your eldritch blast, you regain a number of Hit Points equal to the damage dealt.</p>
+			<p class="indent">Additionally, you can choose to deal necrotic damage, instead of force, for your eldritch blast.</p>
+		</description>
+		<sheet>
+			<description>Whenever you score a critical hit with your eldritch blast, you regain a number of Hit Points equal to the damage dealt.&#13;
+			Additionally, you can choose to deal necrotic damage, instead of force, for your eldritch blast.</description>
+		</sheet>
+	</element>
+	<element name="Radiant Blast" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_RADIANT_BLAST">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Celestial Patron, Eldritch Blast Cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST,ID_WOTC_XGTE_ARCHETYPE_CELESTIAL</requirements>
+		<description>
+			<p>Your eldritch blast sears and blinds your foes. Whenever you make a critical hit with your eldritch blast, that creature becomes blinded until the end of their next turn.</p>
+			<p class="indent">You also gain a bonus to damage rolls with your eldritch blast against fiends and undead. This bonus is equal to half your proficiency bonus (rounded up).</p>
+			<p class="indent">Additionally, you can choose to deal radiant damage, instead of force, for your eldritch blast.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a critical hit with your eldritch blast, that creature becomes blinded until the end of their next turn.&#13;
+			You also gain a bonus to damage rolls with your eldritch blast against fiends and undead. This bonus is {{proficiency:half:up}}.&#13;
+			Additionally, you can choose to deal radiant damage, instead of force, for your eldritch blast.</description>
+		</sheet>
+	</element>
+	<element name="Blade of Curses" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_BLADE_OF_CURSES">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Hexblade Patron, Pact of the Blade, Hex Spell</prerequisite>
+		<requirements>ID_PHB_SPELL_HEX,ID_WOTC_XGTE_ARCHETYPE_HEXBLADE,ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+		<description>
+			<p>Your hex spell's damage increases to 1d8 with attack rolls made with your Pact Weapon. This bonus increases to 1d10 at 11th level and 1d12 at 17th.</p>
+		</description>
+		<sheet>
+			<description>Your hex spell's damage increases to 1d{{bladeofcurses:die}} with attack rolls made with your Pact Weapon.</description>
+		</sheet>
+		<rules>
+			<stat name="bladeofcurses:die" value="8" />
+			<stat name="bladeofcurses:die" value="2" level="11" />
+			<stat name="bladeofcurses:die" value="2" level="17" />
+		</rules>
+	</element>
+	<element name="Blade of Judgement" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_BLADE_OF_JUDGEMENT">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Celestial Patron, Pact of the Blade, 5th level</prerequisite>
+		<requirements>ID_WOTC_XGTE_ARCHETYPE_CELESTIAL,[level:5],ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+		<description>
+			<p>Once per turn whenever you hit a creature with your Pact Weapon, you can force that creature to make a Constitution saving throw. On a failure, that creature takes radiant damage equal to your Charisma modifier + your Warlock level and becomes stunned until the end of your next turn, or take half damage on a success.</p>
+			<p class="indent">Once you use this feature, you cannot use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>Once per turn whenever you hit a creature with your Pact Weapon, you can force that creature to make a Constitution saving throw. On a failure, that creature takes {{bladeofjudgement:damage}} radiant damage and becomes stunned until the end of your next turn, or take half damage on a success.&#13;
+			Once you use this feature, you cannot use it again until you finish a short or long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="bladeofjudgement:damage" value="charisma:modifier" />
+			<stat name="bladeofjudgement:damage" value="level:warlock" />
+		</rules>
+	</element>
+	<element name="Blade of Seasons" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_BLADE_OF_SEASONS">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Archfey Patron, Pact of the Blade, 5th level</prerequisite>
+		<requirements>ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY,ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+		<description>
+			<p>When you conjure your Pact Weapon, choose summer or winter. Your weapon gains an additional benefit based on the season you chose.</p>
+			<p class="indent"><strong><em>Summer.</em></strong> Your weapon glows with the warmth of summer. It glows with bright light up to 5 feet and dim light for an additional 10 feet, and scores a critical hit on a roll of a 19 or 20 on the d20.</p>
+			<p class="indent"><strong><em>Winter.</em></strong> Your weapon is covered in the frost of winter, and it extends to your person, granting you a +1 bonus to your armour class and immunity to the frightened condition.</p>
+		</description>
+		<sheet>
+			<description>When you conjure your Pact Weapon, choose summer or winter. Your weapon gains an additional benefit based on the season you chose.&#13;
+			Summer. Your weapon glows with the warmth of summer. It glows with bright light up to 5 feet and dim light for an additional 10 feet, and scores a critical hit on a roll of a 19 or 20 on the d20.&#13;
+			Winter. Your weapon is covered in the frost of winter, and it extends to your person, granting you a +1 bonus to your armour class and immunity to the frightened condition.</description>
+		</sheet>
+		<rules>
+			<stat name="bladeofjudgement:damage" value="charisma:modifier" />
+			<stat name="bladeofjudgement:damage" value="level:warlock" />
+		</rules>
+	</element>
+	<element name="Eldritch Armour" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_ARMOUR">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Blade</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+		<description>
+			<p>As an action, you can touch a suit of armor that isn’t being worn or carried by anyone and instantly don it, provided you aren’t wearing armor already. You are proficient with this suit of armor until it’s removed.</p>
+		</description>
+		<sheet>
+			<description>As an action, you can touch a suit of armor that isn’t being worn or carried by anyone and instantly don it, provided you aren’t wearing armor already. You are proficient with this suit of armor until it’s removed.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Blade" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_ELEMENTAL_BLADE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Blade, Genie Patron</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE, ID_WOTC_TCOE_ARCHETYPE_WARLOCK_THE_GENIE</requirements>
+		<description>
+			<p>Your Pact Weapon gains an additional bonus based on your patron, as detailed below.</p>
+			<p class="indent"><strong><em>Dao.</em></strong> Your weapon is made of heavy stone that bashes your opponents. Whenever you hit a creature with your Pact Weapon, that creature must succeed on a Strength saving throw or be forcibly pushed 5 feet away, and you immediately move 5 feet towards that creature if you have movement remaining.</p>
+			<p class="indent"><strong><em>Djinni.</em></strong> Your weapon becomes light as air. If your weapon does not have the heavy property, it gains the finesse and light properties. Otherwise, it loses the heavy property.</p>
+			<p class="indent"><strong><em>Efreeti.</em></strong> Your weapon becomes coated in flame. Once per turn whenever you make an attack roll with your Pact Weapon, you can cause your weapon to unleash a tendril of fire, increasing its reach by 10 feet and replacing its damage type with fire.</p>
+			<p class="indent"><strong><em>Marid.</em></strong> Your weapon is covered in perpetual frost. Whenever you hit a creature with your Pact Weapon, that creature's speed is reduced by 10 until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Your Pact Weapon gains an additional bonus based on your patron.</description>
+		</sheet>
+	</element>
+	<element name="Hellfire Step" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_HELLFIRE_STEP">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Blade, Fiend Patron, 5th level</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE,ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND,[level:5]</requirements>
+		<description>
+			<p>As a bonus action, you vanish in a flash of hellfire, teleporting up to 30 feet away to a location you can see. Each creature within 5 feet of you before and after the teleport must succeed on a Dexterity saving throw or take fire damage equal to your Warlock level, or half damage on a success. After using this feature, the next melee attack roll you make this turn is made with advantage.</p>
+			<p class="indent">Once you use this feature, you cannot use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>As a bonus action, you vanish in a flash of hellfire, teleporting up to 30 feet away to a location you can see. Each creature within 5 feet of you before and after the teleport must succeed on a Dexterity saving throw or take {{level:warlock}} fire damage, or half damage on a success. After using this feature, the next melee attack roll you make this turn is made with advantage.&#13;
+			Once you use this feature, you cannot use it again until you finish a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="Rebuke of the Deep" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_REBUKE_OF_THE_DEEP">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Blade, Fathomless Patron, 5th level</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE,ID_WOTC_TCOE_ARCHETYPE_WARLOCK_THE_FATHOMLESS,[level:5]</requirements>
+		<description>
+			<p>Whenever a creature hits you with an attack, you can use your reaction to unleash a mass of tentacles, forcing each creature within 10 feet of you to make a Strength saving throw. Each creature takes cold damage equal to your Warlock level + your Charisma modifier and are restrained until the end of your next turn on a failure, or take half damage on a success.</p>
+			<p class="indent">Once you use this feature, you cannot use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>Whenever a creature hits you with an attack, you can use your reaction to unleash a mass of tentacles, forcing each creature within 10 feet of you to make a Strength saving throw. Each creature takes {{rebukeofthedeep:damage}} cold damage and are restrained until the end of your next turn on a failure, or take half damage on a success.&#13;
+			Once you use this feature, you cannot use it again until you finish a short or long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="rebukeofthedeep:damage" value="level:warlock" />
+			<stat name="rebukeofthedeep:damage" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Reaper's Blade" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_REAPERS_BLADE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Blade, Undead or Undying Patron</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE,(ID_WOTC_VRGTR_ARCHETYPE_WARLOCK_THE_UNDEAD||ID_WOTC_SCAG_ARCHETYPE_UNDYING)</requirements>
+		<description>
+			<p>Whenever you reduce a creature to 0 Hit Points and kill it with your Pact Weapon, you can reap its soul, capturing it. You can have a maximum number of captured souls equal to your proficiency bonus. Whenever you finish a long rest, all souls you have captured are released.</p>
+			<p class="indent">You gain a bonus to your Armour Class equal to the number of souls you have captured. Additionally, once per turn whenever you make an attack roll and miss, you can expend a soul to add 1d6 to your roll, potentially turning that miss into a hit.</p>
+		</description>
+		<sheet>
+			<description>Whenever you reduce a creature to 0 Hit Points and kill it with your Pact Weapon, you can reap its soul, capturing it. You can have a maximum number of captured souls of {{proficiency}}. Whenever you finish a long rest, all souls you have captured are released.
+			&#13;
+			You gain a bonus to your Armour Class equal to the number of souls you have captured. Additionally, once per turn whenever you make an attack roll and miss, you can expend a soul to add 1d6 to your roll, potentially turning that miss into a hit.</description>
+		</sheet>
+	</element>
+	<element name="Tormenting Blade" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_TORMENTING_BLADE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Blade, Great Old One Patron</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE,ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_THE_GREAT_OLD_ONE</requirements>
+		<description>
+			<p>You can cast wrathful smite at will, without expending a spell slot.</p>
+			<p class="indent">Additionally, as a bonus action you can duress a frightened creature you can see within 30 feet of you, dealing psychic damage equal to your Charisma modifier.</p>
+		</description>
+		<sheet>
+			<description>You can cast wrathful smite at will, without expending a spell slot.&#13;
+			Additionally, as a bonus action you can duress a frightened creature you can see within 30 feet of you, dealing {{charimsa:modifier}} psychic damage.</description>
+		</sheet>
+	</element>
+	<element name="Angelic Guidance" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_ANGELIC_GUIDANCE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Chain, Celestial Patron</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN,ID_WOTC_XGTE_ARCHETYPE_CELESTIAL</requirements>
+		<description>
+			<p>You learn the guidance cantrip, and it does not count towards the number of cantrips you know. Additionally, you can cast it as a bonus action, and cast it from your familiar's position as long as you can see it or are perceiving through its senses.</p>
+		</description>
+		<sheet>
+			<description>You learn the guidance cantrip, and it does not count towards the number of cantrips you know. Additionally, you can cast it as a bonus action, and cast it from your familiar's position as long as you can see it or are perceiving through its senses.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" />
+		</rules>
+	</element>
+	<element name="Tales of the Archfey" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_TALES_OF_THE_ARCHFEY">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Tome, Archfey Patron</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME, ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY</requirements>
+		<description>
+			<p>You uncover pages of fables and faerie tales in your Book of Shadows, giving you a greater insight into your patron's power. Choose two enchantment or illusion spells from any class's spell list (the spells must be of a level you can cast them at or lower). You can cast both spells with your warlock spell slots, and regain the ability to cast these spells again when you finish a long rest.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one or both of these spells with another enchantment or illusion spell of your choice.</p>
+		</description>
+		<sheet display="false">
+		</sheet>
+		<rules>
+			<select type="Spell" name="Tales of the Archfey" supports="Illusion||Enchantment" number="2" spellcasting="Warlock" />
+		</rules>
+	</element>
+	<element name="Tome of Exaltation" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_TOME_OF_EXALTATION">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Tome, Celestial Patron</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME, ID_WOTC_XGTE_ARCHETYPE_CELESTIAL</requirements>
+		<description>
+			<p>Your uncover pages of various religious and holy scriptures in your Book of Shadows, granting you insight into divine magic. Whenever you learn a Warlock spell with your Pact Magic feature, you can replace it with a spell from the Cleric spell list instead. The spell must be of a level you could cast it at.</p>
+		</description>
+		<sheet display="false">
+		</sheet>
+		<spellcasting name="Warlock" extend="true" >
+			<extend>Cleric</extend>
+		</spellcasting>
+	</element>
+	<element name="Deep One's Magic" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_DEEP_ONES_MAGIC">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>5th level, Pact of the Tome, Fathomless Patron</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME, ID_WOTC_TCOE_ARCHETYPE_WARLOCK_THE_FATHOMLESS,[level:5]</requirements>
+		<description>
+			<p>Your insights into the magic of the deep grants you further control over your Tentacles of the Deep. You can summon up to two tentacles at a time, which you control at the same time (no additional actions required).</p>
+		</description>
+		<sheet>
+			<description>Your insights into the magic of the deep grants you further control over your Tentacles of the Deep. You can summon up to two tentacles at a time, which you control at the same time (no additional actions required).</description>
+		</sheet>
+	</element>
+	<element name="Devil's Contract" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_DEVILS_CONTRACT">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Tome, Fiend Patron</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME,ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND</requirements>
+		<description>
+			<p>A new page appears in your Book of Shadows. With your permission, a creature can use its action to write its name on that page, which can contain a number of names equal to your proficiency bonus. You can also rip out a piece of this page, after which you can reattach by pressing it to the page for 1 minute.</p>
+			<p class="indent">You have advantage on Charisma ability checks made against creatures whose name is on this page, and you always know what plane they're on and if they are dead or alive.</p>
+			<p class="indent">As an action, you can magically erase a name on the page by touching it.</p>
+		</description>
+		<sheet>
+			<description>A new page appears in your Book of Shadows. With your permission, a creature can use its action to write its name on that page, which can contain up to {{proficiency}} names. You can also rip out a piece of this page, after which you can reattach by pressing it to the page for 1 minute.&#13;
+			You have advantage on Charisma ability checks made against creatures whose name is on this page, and you always know what plane they're on and if they are dead or alive.&#13;
+			As an action, you can magically erase a name on the page by touching it.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Casting" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_ELEMENTAL_CASTING">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Tome, Genie Patron</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME,ID_WOTC_TCOE_ARCHETYPE_WARLOCK_THE_GENIE</requirements>
+		<description>
+			<p>You learn to mould spells to take a form better suited to your patron's nature. Whenever you cast a spell that deals damage, you can replace the damage with the type associated with your patron (bludgeoning, lightning, fire, or cold damage).</p>
+		</description>
+		<sheet>
+			<description>Whenever you cast a spell that deals damage, you can replace the damage with the type associated with your patron.</description>
+		</sheet>
+	</element>
+	<element name="Book of Eldritch Lore" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_BOOK_OF_ELDRITCH_LORE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Tome, Great Old One Patron</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME,ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_THE_GREAT_OLD_ONE</requirements>
+		<description>
+			<p>Your possession over your Book of Shadows grants you esoteric knowledge, but waning sanity due to its eldritch nature. Whenever you make an Intelligence ability check and fail, you can choose to reroll it, potentially turning it into a success. If you succeed, you cannot use this feature again until you finish a short or long rest and you must roll 1d6. On a roll of 4 or higher, you gain one Long-Term Madness (DMG 260), but it only lasts for 1d10 hours.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make an Intelligence ability check and fail, you can choose to reroll it, potentially turning it into a success. If you succeed, you cannot use this feature again until you finish a short or long rest and you must roll 1d6. On a roll of 4 or higher, you gain one Long-Term Madness, but it only lasts for 1d10 hours.</description>
+		</sheet>
+	</element>
+	<element name="Potent Hex" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_POTENT_HEX">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Tome, Hexblade Patron, 7th level, hex spell</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME,ID_WOTC_XGTE_ARCHETYPE_HEXBLADE,ID_PHB_SPELL_HEX,[level:7]</requirements>
+		<description>
+			<p>You uncover pages of maledicts and curses in your Book of Shadows, granting you greater control over your hex spell. Whenever you cast hex and choose an ability score as part of it, that creature has disadvantage on saving throws made with the chosen ability score as well.</p>
+		</description>
+		<sheet>
+			<description>You uncover pages of maledicts and curses in your Book of Shadows, granting you greater control over your hex spell. Whenever you cast hex and choose an ability score as part of it, that creature has disadvantage on saving throws made with the chosen ability score as well.</description>
+		</sheet>
+	</element>
+	<element name="Book of the Dead" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ELDRITCH_INVOCATION_BOOK_OF_THE_DEAD">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Tome, Undead or Undying Patron, 5th level</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME,(ID_WOTC_SCAG_ARCHETYPE_UNDYING||ID_WOTC_VRGTR_ARCHETYPE_WARLOCK_THE_UNDEAD),[level:7]</requirements>
+		<description>
+			<p>You uncover pages of necromantic magic in your Book of Shadows, granting you the ability to raise the dead. As an action, you can reanimate the corpse of a Small or Medium humanoid within 30 feet of you that hasn't been dead for longer than a minute. You can also reanimate a humanoid creature who dies within 30 feet of you in the same manner as a reaction. The corpse rises as a zombie under your control, as per the animate dead spell.</p>
+			<p class="indent">You can have a number of zombies under your control this way up to your proficiency bonus, and you cannot create new zombies with this feature if you have the maximum number under your control.</p>
+		</description>
+		<sheet>
+			<description>You uncover pages of necromantic magic in your Book of Shadows, granting you the ability to raise the dead. As an action, you can reanimate the corpse of a Small or Medium humanoid within 30 feet of you that hasn't been dead for longer than a minute. You can also reanimate a humanoid creature who dies within 30 feet of you in the same manner as a reaction. The corpse rises as a zombie under your control, as per the animate dead spell.&#13;
+			You can have a number of zombies under your control this way up to {{proficiency}}, and you cannot create new zombies with this feature if you have the maximum number under your control.</description>
 		</sheet>
 	</element>
 </elements>
