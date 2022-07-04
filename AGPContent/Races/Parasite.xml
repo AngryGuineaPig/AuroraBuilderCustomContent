@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="Parasite.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Parasite.xml" />
 		</update>
 	</info>
@@ -28,11 +28,11 @@
 			<p class="indent"><strong><em>Size.</em></strong> You are Medium or Small (this depends on the Host Body you choose, see below).</p>
 			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
 			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness as shades of gray.</p>
-			<p class="indent"><strong><em>Natural Shape.</em></strong> You gain advantage on perception checks that rely on sight.</p>
-      		<p class="indent"><strong><em>Host Body.</em></strong> You can use weapons with the heavy property without the standard penalties for your small size.</p>
-      		<p class="indent"><strong><em>Abhorrent Survival.</em></strong> You have claws that act as natural weapons dealing 1d4 slashing damage + your strength modifier.</p>
-      		<p class="indent"><strong><em>Parasitic Infection.</em></strong> You are a monstrosity as well as a humanoid.</p>
-      		<p class="indent"><strong><em>Natural Killer.</em></strong> You can speak, read and write in common.</p>
+			<p class="indent"><strong><em>Natural Shape.</em></strong> Your natural shape is that of a tiny worm-like aberration, this shape uses your Intelligence, Wisdom and Charisma scores, but your Strength score becomes 1, and your Dexterity and Constitution scores are reduced by 5. In your natural shape, you have 1 hit point, a walking speed of 10 feet and a climbing speed of 10 feet. While you are in this form, you cannot take actions other than the Dash and Hide actions and cannot wear or carry items or equipment or speak. If you remain in your natural shape for 24 hours without finding a host body, you die.</p>
+      		<p class="indent"><strong><em>Host Body.</em></strong> When you create this character, you have already found a host body. Choose a race from among the playable races. You gain the following elements of that race: any climbing, flying or swimming speeds it had, and you are its size and appear as one of that race. You lose these attributes if you change host or if your host body dies. As an action, you may leave your host body and revert to your natural shape, which appears in an unoccupied space within 5 feet of your host body, if you do your host body falls into a coma until you return to it.</p>
+      		<p class="indent"><strong><em>Abhorrent Survival.</em></strong> Whenever you would die, if your body isn't destroyed then only your host body dies and you revert to your natural shape, and appear in an unoccupied space within 5 feet of your dead host body.</p>
+      		<p class="indent"><strong><em>Parasitic Infection.</em></strong> You may perform an 1-hour ritual to change your host body. To do so, you must remain within 5 feet of the creature whose body you want to take control of for the duration. Additionally, that creature must be a small or medium humanoid, and it must either be willing or be incapacitated and have 1 or less hit points for the duration of the ritual. When you finish the ritual, the new body becomes your host body as your natural shape moves into it and takes control of it, and your old host body withers and dies. Doing this ritual doesn't change your ability scores as your new body warps to conform to your characteristics, however you do gain any climbing, flying or swimming speeds the host body possesses and you become small or medium depending on the host body's size. You have advantage on Charisma (deception) checks you make to pretend to be the creature whose body you have taken control of.</p>
+      		<p class="indent"><strong><em>Natural Killer.</em></strong> Choose claws, fangs or spikes. Whatever body you inhabit, it manifests the chosen characteristic. Your unarmed strikes deal 1d6 piercing (if you chose fangs or spikes) or slashing (if you chose claws) damage.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
