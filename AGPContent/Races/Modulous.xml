@@ -1,0 +1,1819 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<update version="0.0.1">
+			<file name="Modulous.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Modulous.xml" />
+		</update>
+	</info>
+	<element name="Modulon" type="Race" source="The Modulous Race" id="ID_TMDR_RACE_MODULON">
+		<description>
+      		<p>The Modulous and individual Modulons are creatures made of ambition. They are custom made constructed intelligences, capable of everything any other race is capable of, and sometimes more. Where each member of a race shares similar traits there are very few shared between Modulons, even that which is common, such as their construct nature is not certain. The only certainty is their origin, a Modulon is created by magic, a complex ritual infusing a quasi-soul into a constructed form. Other than that, each form and soul are unique.</p>
+			<h4>Bits and Pieces</h4>
+			<p>Each Modulon is created by one or more creators, they do not naturally exist. The first of the Modulons were made from scraps of armour pulled together from fallen soldiers and then enchanted to keep fighting when they were needed, due to their nature some of these Modulons are still pulling their half-decayed forms around the world of Emanon, however they are far rarer than their newer cousins, who are made of custom pieces rather than whatever was at hand.</p>
+      		<h4>Given Purpose</h4>
+      		<p>A Modulon is often given a mission or task at time of creation, often something like "protect this person" or "explore this place" or "destroy this thing" these often serve as catalysts for the new consciousnesses to develop into rounded creatures through a quest or task. Once this task is deemed complete, whether because they succeeded, or failed, or just gave up which though rare can happen, they will often spend a long period of time trying to find new purpose, sometimes finding it in a mystery they found along their first journey, sometimes just wondering around until they find something interesting enough.</p>
+     		<h4>Apathy and Fascination</h4>
+      		<p>The science behind morality is still a puzzle to most, where a quasi-consciousness can be constructed through arcane equations, giving an intelligence close enough to a normal race to pass as a full creature, a moral compass is far rarer. This is not to say it is impossible, but is to say that the majority of Modulons are apathetic to the vast majority of things, but can sometimes find fascination in the simplest things.</p>
+      		<h4>Modulon Names</h4>
+      		<p>Modulons are created creatures, as such their names vary as wide as the creatures capable of creating Modulons. Ancient Modulons tend towards simpler names, being unimportant tools, whereas purpose built newer models often have far more character part of which comes through a more natural name.</p>
+			<h4>Modulon Traits</h4>
+			<p>As a Modulon you gain the following traits:</p>
+			<p class="indent"><strong><em>Modular Construction</em></strong> All Modulon Traits come from what goes into making them, as such other than a few suggested traits there are no defining traits for a Modulon, as such when creating a Modulon you are given 12 points to spend, you can increase or decrease this through talks with your DM but 12 is the default. Each trait will have a point value assigned to it from 1+ the total value of all of the traits may not exceed your set max, default 12, however other than this there are no rules about how they may be spent, this reflects the totally custom feel of a Modulon.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Modulons are created lifeforms, as such they do not age but keep existing as long as their consciousness is contained</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Modulons are often created Neutral, as anything other than this is too complex for most to craft, however life experience or random mistakes can change this.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Modulons are often created to at least resemble Humanoid creatures, however your size is a buyable trait</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet, however this is modifiable through buyable traits</p>
+			<p class="indent"><strong><em>Free Traits.</em></strong> There are some free traits in the list, these are not required however they are the standard traits that would be expected in a race alongside unique traits, as such there is no cost to them, however they are still optional.</p>
+		</description>
+		<setters>
+			<set name="height" modifier="2d6">0'0"</set>
+			<set name="weight" modifier="1d6">0 lbs.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE" /> 
+			<grant type="Racial Trait" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION" /> 
+    </rules>
+	</element>
+	<element name="Modulon Subrace" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE">
+		<description>
+			<p>There are two types of Modulon, Ancient Modulons and Modern Modulons. They reflect the two time periods in which Modulons were created and the traits available to them reflect the technological advancements and the focus on what a Modulon of that time period was designed to do.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Modulon Subrace" supports="Modulon" number="1" />
+		</rules>
+	</element>
+	<element name="Ancient Modulon" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE_ANCIENT_MODULON">
+		<supports>Modulon</supports>
+		<description>
+			<p>Ancient Modulons are far older than their modern counterparts. They tend closer towards neutral as morality was useless to explore for the creators of the time. They are often made from cobbled together scraps of metal armour and other things that could be found. These Modulons tend to be hardier and more combat oriented than their modern counterparts. Additionally they tend to lack magical weapons or abilities as this was too much effort, though weaker magical powers can still be found in a few of them.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+	</element>
+	<element name="Modern Modulon" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE_MODERN_MODULON">
+		<supports>Modulon</supports>
+		<description>
+			<p>Modern Modulons are the newer specifications, they often come with custom built parts, with consciousnesses capable of complex moral decisions, and more in depth personalities. They're abilities tend to stray away from combat orientation and magical abilities are far more common. Additionally they tend to have more ornate designs, lots of time and care often goes into a modern modulon though there are still a few made of piecemeal equipment.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+	</element>
+  	<element name="Modular Construction" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION">
+		<description>
+			<p>All Modulon Traits come from what goes into making them, as such other than a few suggested traits there are no defining traits for a Modulon, as such when creating a Modulon you are given 12 points to spend, you can increase or decrease this through talks with your DM but 12 is the default. Each trait will have a point value assigned to it, the total value of all of the traits may not exceed your set max, default 12, however other than this there are almost no rules about how they may be spent, this reflects the totally custom feel of a Modulon, some traits don't work together such as darkvision and superior darkvision as superior darkvision overwrites darkvision. (Note there will always be some selects available as they have a negative value, as they are penalties rather than benefits, these are optional and do not need to be selected.)</p>
+		</description>
+		<sheet>
+			<description>You have {{modular:points}} to spend.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="12" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+<!--BTS ELEMENTS-->
+	<element name="Increased Points +1" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASED_POINTS_1">
+		<supports>Modular Construct</supports>
+		<description>
+			<p>This is an option here for those whose DM has given them additional points to spend. ONLY TAKE THIS IF YOUR DM HAS OKAYED IT.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="1" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Increased Points +2" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASED_POINTS_2">
+		<supports>Modular Construct</supports>
+		<description>
+			<p>This is an option here for those whose DM has given them additional points to spend. ONLY TAKE THIS IF YOUR DM HAS OKAYED IT.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="2" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Decreased Points -1" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_DECREASED_POINTS_1">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_DECREASED_POINTS_1)</requirements>
+		<description>
+			<p>This is an option here for those whose DM has given them fewer points to spend. ONLY TAKE THIS IF YOUR DM HAS OKAYED IT.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value=" -1 " />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Decreased Points -2" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_DECREASED_POINTS_2">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_DECREASED_POINTS_2)</requirements>
+		<description>
+			<p>This is an option here for those whose DM has given them fewer points to spend. ONLY TAKE THIS IF YOUR DM HAS OKAYED IT.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value=" -2 " />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+<!--Sizes-->
+	<element name="Size Medium" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SIZE_MEDIUM">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SIZE_SMALL|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SIZE_TINY)</requirements>
+		<description>
+			<p><em>Prerequisite: No other Size</em></p>
+			<p><em>Cost: 0 Points</em></p>
+			<p>Sets your Modulons Size to Medium</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="0" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Size Small" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SIZE_SMALL">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SIZE_MEDIUM|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SIZE_TINY)</requirements>
+		<description>
+			<p><em>Prerequisite: No other Size</em></p>
+			<p><em>Cost: -2 Points</em></p>
+			<p>Sets your Modulons Size to Small</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="2" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="-5" bonus="small size" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Size Tiny" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SIZE_TINY">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SIZE_MEDIUM|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SIZE_SMALL)</requirements>
+		<description>
+			<p><em>Prerequisite: No other Size</em></p>
+			<p><em>Cost: -4 Points</em></p>
+			<p>Sets your Modulons Size to Tiny</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="4" />
+			<grant type="Size" id="ID_SIZE_TINY" />
+			<stat name="innate speed" value="-10" bonus="small size" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+<!--Vulnerabilities-->
+	<element name="Acid Vulnerability" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_ACID_VULNERABILITY">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ACID)</requirements>
+		<description>
+			<p><em>Prerequisite: Not resistant or immune to Acid Damage</em></p>
+			<p><em>Cost: -2 Points</em></p>
+			<p>Gives your Modulon a Vulnerability to Acid Damage</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ACID" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Bludgeoning Vulnerability" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_BLUDGEONING_VULNERABILITY">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_BLUDGEONING)</requirements>
+		<description>
+			<p><em>Prerequisite: Not resistant or immune to Bludgeoning Damage</em></p>
+			<p><em>Cost: -2 Points</em></p>
+			<p>Gives your Modulon a Vulnerability to Bludgeoning Damage</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_BLUDGEONING" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Cold Vulnerability" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_COLD_VULNERABILITY">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD)</requirements>
+		<description>
+			<p><em>Prerequisite: Not resistant or immune to Cold Damage</em></p>
+			<p><em>Cost: -2 Points</em></p>
+			<p>Gives your Modulon a Vulnerability to Cold Damage</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_COLD" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Fire Vulnerability" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_FIRE_VULNERABILITY">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE)</requirements>
+		<description>
+			<p><em>Prerequisite: Not resistant or immune to Fire Damage</em></p>
+			<p><em>Cost: -2 Points</em></p>
+			<p>Gives your Modulon a Vulnerability to Fire Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_FIRE" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Force Vulnerability" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_FORCE_VULNERABILITY">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FORCE)</requirements>
+		<description>
+			<p><em>Prerequisite: Not resistant or immune to Force Damage</em></p>
+			<p><em>Cost: -2 Points</em></p>
+			<p>Gives your Modulon a Vulnerability to Force Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_FORCE" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Lightning Vulnerability" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_LIGHTNING_VULNERABILITY">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING)</requirements>
+		<description>
+			<p><em>Prerequisite: Not resistant or immune to Lightning Damage</em></p>
+			<p><em>Cost: -2 Points</em></p>
+			<p>Gives your Modulon a Vulnerability to Lightning Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_LIGHTNING" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Necrotic Vulnerability" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NECROTIC_VULNERABILITY">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC)</requirements>
+		<description>
+			<p><em>Prerequisite: Not resistant or immune to Necrotic Damage</em></p>
+			<p><em>Cost: -2 Points</em></p>
+			<p>Gives your Modulon a Vulnerability to Necrotic Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_NECROTIC" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Piercing Vulnerability" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_PIERCING_VULNERABILITY">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PIERCING)</requirements>
+		<description>
+			<p><em>Prerequisite: Not resistant or immune to Piercing Damage</em></p>
+			<p><em>Cost: -2 Points</em></p>
+			<p>Gives your Modulon a Vulnerability to Piercing Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_PIERCING" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Psychic Vulnerability" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_PSYCHIC_VULNERABILITY">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PSYCHIC)</requirements>
+		<description>
+			<p><em>Prerequisite: Not resistant or immune to Psychic Damage</em></p>
+			<p><em>Cost: -2 Points</em></p>
+			<p>Gives your Modulon a Vulnerability to Psychic Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_PSYCHIC" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Radiant Vulnerability" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_RADIANT_VULNERABILITY">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_RADIANT)</requirements>
+		<description>
+			<p><em>Prerequisite: Not resistant or immune to Radiant Damage</em></p>
+			<p><em>Cost: -2 Points</em></p>
+			<p>Gives your Modulon a Vulnerability to Radiant Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_RADIANT" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Slashing Vulnerability" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SLASHING_VULNERABILITY">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_SLASHING)</requirements>
+		<description>
+			<p><em>Prerequisite: Not resistant or immune to Slashing Damage</em></p>
+			<p><em>Cost: -2 Points</em></p>
+			<p>Gives your Modulon a Vulnerability to Slashing Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_SLASHING" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Thunder Vulnerability" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_THUNDER_VULNERABILITY">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_THUNDER)</requirements>
+		<description>
+			<p><em>Prerequisite: Not resistant or immune to Thunder Damage</em></p>
+			<p><em>Cost: -2 Points</em></p>
+			<p>Gives your Modulon a Vulnerability to Thunder Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_THUNDER" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+<!--Resistances-->
+	<element name="Acid Resistance" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_ACID_RESISTANCE">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ACID|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ACID),([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_ACID_RESISTANCE)</requirements>
+		<description>
+			<p><em>Prerequisite: Not vulnerable or immune to Acid Damage</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Resistance to Acid Damage</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Bludgeoning Resistance" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_BLUDGEONING_RESISTANCE">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_BLUDGEONING|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_BLUDGEONING),([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_BLUDGEONING_RESISTANCE)</requirements>
+		<description>
+			<p><em>Prerequisite: Not vulnerable or immune to Bludgeoning Damage</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Resistance to Bludgeoning Damage</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Cold Resistance" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_COLD_RESISTANCE">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_COLD|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD),([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_COLD_RESISTANCE)</requirements>
+		<description>
+			<p><em>Prerequisite: Not vulnerable or immune to Cold Damage</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Resistance to Cold Damage</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Fire Resistance" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_FIRE_RESISTANCE">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_FIRE|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE),([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_FIRE_RESISTANCE)</requirements>
+		<description>
+			<p><em>Prerequisite: Not vulnerable or immune to Fire Damage</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Resistance to Fire Damage</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Force Resistance" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_FORCE_RESISTANCE">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_FORCE|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FORCE),([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_FORCE_RESISTANCE)</requirements>
+		<description>
+			<p><em>Prerequisite: Not vulnerable or immune to Force Damage</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Resistance to Force Damage</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Lightning Resistance" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_LIGHTNING_RESISTANCE">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_LIGHTNING|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING),([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_LIGHTNING_RESISTANCE)</requirements>
+		<description>
+			<p><em>Prerequisite: Not vulnerable or immune to Lightning Damage</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Resistance to Lightning Damage</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Necrotic Resistance" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NECROTIC_RESISTANCE">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_NECROTIC|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC),([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NECROTIC_RESISTANCE)</requirements>
+		<description>
+			<p><em>Prerequisite: Not vulnerable or immune to Necrotic Damage</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Resistance to Necrotic Damage</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Piercing Resistance" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_PIERCING_RESISTANCE">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_PIERCING|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PIERCING),([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_PIERCING_RESISTANCE)</requirements>
+		<description>
+			<p><em>Prerequisite: Not vulnerable or immune to Piercing Damage</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Resistance to Piercing Damage</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Psychic Resistance" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_PSYCHIC_RESISTANCE">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_PSYCHIC|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PSYCHIC),([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_PSYCHIC_RESISTANCE)</requirements>
+		<description>
+			<p><em>Prerequisite: Not vulnerable or immune to Psychic Damage</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Resistance to Psychic Damage</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Radiant Resistance" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_RADIANT_RESISTANCE">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_RADIANT|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_RADIANT),([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_RADIANT_RESISTANCE)</requirements>
+		<description>
+			<p><em>Prerequisite: Not vulnerable or immune to Radiant Damage</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Resistance to Radiant Damage</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Slashing Resistance" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SLASHING_RESISTANCE">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_SLASHING|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_SLASHING),([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SLASHING_RESISTANCE)</requirements>
+		<description>
+			<p><em>Prerequisite: Not vulnerable or immune to Slashing Damage</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Resistance to Slashing Damage</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Thunder Resistance" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_THUNDER_RESISTANCE">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_THUNDER|ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_THUNDER),([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_THUNDER_RESISTANCE)</requirements>
+		<description>
+			<p><em>Prerequisite: Not vulnerable or immune to Thunder Damage</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a resistance to Thunder Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+<!--ASI-->
+	<element name="1st ASI +1" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_1">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_1)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a +1 Ability Score Increase to one Ability Score.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Modulon 1st)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA"/>
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="2nd ASI +1" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_2">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_2),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_1</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a +1 Ability Score Increase to one Ability Score.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Modulon 2nd)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA"/>
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="3rd ASI +1" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_3">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_3),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_1,ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_2</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a +1 Ability Score Increase to one Ability Score.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Modulon 3rd)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA"/>
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="4th ASI +1" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_4">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:3]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_4),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_3,ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_2,ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_1</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 3 Points</em></p>
+			<p>Gives your Modulon a +1 Ability Score Increase to one Ability Score.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-3" />
+			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Modulon 4th)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA"/>
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="5th ASI +1" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_5">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:4]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_5),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_4,ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_3,ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_2,ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_1</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 4 Points</em></p>
+			<p>Gives your Modulon a +1 Ability Score Increase to one Ability Score.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-4" />
+			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Modulon 5th)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA"/>
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="6th ASI +1" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_6">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:4]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_6),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_5,ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_4,ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_3,ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_2,ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_INCREASE_1_ASI_1</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 4 Points</em></p>
+			<p>Gives your Modulon a +1 Ability Score Increase to one Ability Score.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-4" />
+			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Modulon 6th)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA"/>
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+<!--Armour and Weapon Proficiencies-->
+	<element name="Light Armour Proficiency" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_LIGHT_ARMOUR_PROFICIENCY">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_LIGHT_ARMOUR_PROFICIENCY)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Gives your Modulon proficiency with Light Armour.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Medium Armour Proficiency" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_MEDIUM_ARMOUR_PROFICIENCY">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_MEDIUM_ARMOUR_PROFICIENCY),(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_LIGHT_ARMOUR_PROFICIENCY|ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR)</requirements>
+		<description>
+			<p><em>Prerequisite: Light Armour proficiency</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Gives your Modulon proficiency with Medium Armour.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Heavy Armour Proficiency" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_HEAVY_ARMOUR_PROFICIENCY">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_HEAVY_ARMOUR_PROFICIENCY),(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_LIGHT_ARMOUR_PROFICIENCY|ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR),(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_MEDIUM_ARMOUR_PROFICIENCY|ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR)</requirements>
+		<description>
+			<p><em>Prerequisite: Light and Medium Armour proficiency</em></p>
+			<p><em>Cost: 2 Point</em></p>
+			<p>Gives your Modulon proficiency with Heavy Armour and Shields.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Simple Weapon Proficiency" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SIMPLE_WEAPON_PROFICIENCY">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SIMPLE_WEAPON_PROFICIENCY)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon proficiency with Simple Weapons.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Martial Weapon Proficiency" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_MARTIAL_WEAPON_PROFICIENCY">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_MARTIAL_WEAPON_PROFICIENCY),(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SIMPLE_WEAPON_PROFICIENCY|ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS),ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE_ANCIENT_MODULON</requirements>
+		<description>
+			<p><em>Prerequisite: Simple Weapon Proficiency</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon proficiency with Martial Weapons.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+<!--Misc Traits-->
+	<element name="Bravery" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_BRAVERY">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_BRAVERY)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Gives your Modulon advantage on saving throws to resist the Frightened condition.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon advantage on saving throws to resist the Frightened condition.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Breath Weapon, Fire" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_BREATH_WEAPON_FIRE">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_BREATH_WEAPON_FIRE)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Fire based Breath Attack. You can use your action to exhale destructive energy. This produces a 15 foot cone dealing 2d6 fire damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + your proficiency modifier + your constitution modifier. A creature takes full damage on a failed save or half as much on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th and 5d6 at 16th. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon a Fire based Breath Attack. You can use your action to exhale destructive energy. This produces a 15 foot cone dealing 2d6 fire damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+			<description level="6">Gives your Modulon a Fire based Breath Attack. You can use your action to exhale destructive energy. This produces a 15 foot cone dealing 3d6 fire damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+			<description level="11">Gives your Modulon a Fire based Breath Attack. You can use your action to exhale destructive energy. This produces a 15 foot cone dealing 4d6 fire damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+			<description level="16">Gives your Modulon a Fire based Breath Attack. You can use your action to exhale destructive energy. This produces a 15 foot cone dealing 5d6 fire damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Breath Weapon, Cold" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_BREATH_WEAPON_COLD">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_BREATH_WEAPON_COLD)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Cold based Breath Attack. You can use your action to exhale destructive energy. This produces a 15 foot cone dealing 2d6 Cold damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + your proficiency modifier + your constitution modifier. A creature takes full damage on a failed save or half as much on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th and 5d6 at 16th. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon a Cold based Breath Attack. You can use your action to exhale destructive energy. This produces a 15 foot cone dealing 2d6 Cold damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+			<description level="6">Gives your Modulon a Cold based Breath Attack. You can use your action to exhale destructive energy. This produces a 15 foot cone dealing 3d6 Cold damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+			<description level="11">Gives your Modulon a Cold based Breath Attack. You can use your action to exhale destructive energy. This produces a 15 foot cone dealing 4d6 Cold damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+			<description level="16">Gives your Modulon a Cold based Breath Attack. You can use your action to exhale destructive energy. This produces a 15 foot cone dealing 5d6 Cold damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Breath Weapon, Thunder" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_BREATH_WEAPON_THUNDER">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_BREATH_WEAPON_THUNDER)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Thunder based Breath Attack. You can use your action to exhale destructive energy. This produces a 15 foot cone dealing 2d6 Thunder damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + your proficiency modifier + your constitution modifier. A creature takes full damage on a failed save or half as much on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th and 5d6 at 16th. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon a Thunder based Breath Attack. You can use your action to exhale destructive energy. This produces a 15 foot cone dealing 2d6 Thunder damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+			<description level="6">Gives your Modulon a Thunder based Breath Attack. You can use your action to exhale destructive energy. This produces a 15 foot cone dealing 3d6 Thunder damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+			<description level="11">Gives your Modulon a Thunder based Breath Attack. You can use your action to exhale destructive energy. This produces a 15 foot cone dealing 4d6 Thunder damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+			<description level="16">Gives your Modulon a Thunder based Breath Attack. You can use your action to exhale destructive energy. This produces a 15 foot cone dealing 5d6 Thunder damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Breath Weapon, Lightning" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_BREATH_WEAPON_LIGHTNING">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_BREATH_WEAPON_LIGHTNING)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Lightning based Breath Attack. You can use your action to exhale destructive energy. This produces a 30 foot line dealing 2d6 Lightning damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + your proficiency modifier + your constitution modifier. A creature takes full damage on a failed save or half as much on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th and 5d6 at 16th. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon a Lightning based Breath Attack. You can use your action to exhale destructive energy. This produces a 30 foot line dealing 2d6 Lightning damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+			<description level="6">Gives your Modulon a Lightning based Breath Attack. You can use your action to exhale destructive energy. This produces a 30 foot line dealing 3d6 Lightning damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+			<description level="11">Gives your Modulon a Lightning based Breath Attack. You can use your action to exhale destructive energy. This produces a 30 foot line dealing 4d6 Lightning damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+			<description level="16">Gives your Modulon a Lightning based Breath Attack. You can use your action to exhale destructive energy. This produces a 30 foot line dealing 5d6 Lightning damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Breath Weapon, Acid" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_BREATH_WEAPON_ACID">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_BREATH_WEAPON_ACID)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon a Acid based Breath Attack. You can use your action to exhale destructive energy. This produces a 30 foot line dealing 2d6 Acid damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + your proficiency modifier + your constitution modifier. A creature takes full damage on a failed save or half as much on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th and 5d6 at 16th. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon a Acid based Breath Attack. You can use your action to exhale destructive energy. This produces a 30 foot line dealing 2d6 Lightning damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+			<description level="6">Gives your Modulon a Acid based Breath Attack. You can use your action to exhale destructive energy. This produces a 30 foot line dealing 3d6 Acid damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+			<description level="11">Gives your Modulon a Acid based Breath Attack. You can use your action to exhale destructive energy. This produces a 30 foot line dealing 4d6 Lightning damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+			<description level="16">Gives your Modulon a Acid based Breath Attack. You can use your action to exhale destructive energy. This produces a 30 foot line dealing 5d6 Acid damage. A creature caught in this attack must make a dexterity saving throw, your DC for this is 8 + {{proficiency}} + {{constitution:modifier}}. A creature takes full damage on a failed save or half as much on a successful one. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Cantrip" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_CANTRIP_1">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_CANTRIP_1)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Gives your Modulon a single cantrip. Constitution is your spellcasting modifier for this cantrip</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Spell" name="Modular Construction, Cantrip" supports="0"/>
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Additional Cantrip" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_CANTRIP_2">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_CANTRIP_2),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_CANTRIP_1</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Gives your Modulon a single cantrip. Constitution is your spellcasting modifier for this cantrip</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Spell" name="Modular Construction, Additional Cantrip 1" supports="0"/>
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Additional Cantrip" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_CANTRIP_3">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_CANTRIP_3),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_CANTRIP_2</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Gives your Modulon a single cantrip. Constitution is your spellcasting modifier for this cantrip</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Spell" name="Modular Construction, Additional Cantrip 2" supports="0"/>
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Cunning" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_CUNNING">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:4]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_CUNNING),ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE_MODERN_MODULON</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 4 Points</em></p>
+			<p>Gives your Modulon advantage on all intelligence, wisdom and charisma saving throws against magic.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon advantage on all intelligence, wisdom and charisma saving throws against magic.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Darkvision" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_DARKVISION">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_DARKVISION),!ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SUPERIOR_DARKVISION</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Gives your Modulon Darkvision.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Extra Language" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_LANGUAGE_1">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_LANGUAGE_1)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Gives your Modulon an additional language that they can read, speak and write.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Language" name="Extra Language, Modulon 1" supports="Standard||Exotic" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Extra Language" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_LANGUAGE_2">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_LANGUAGE_2),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_LANGUAGE_1</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Gives your Modulon an additional language that they can read, speak and write.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Language" name="Extra Language, Modulon 2" supports="Standard||Exotic" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Extra Language" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_LANGUAGE_3">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_LANGUAGE_3),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_LANGUAGE_2</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Gives your Modulon an additional language that they can read, speak and write.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Language" name="Extra Language, Modulon 3" supports="Standard||Exotic" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Starting Languages" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_STARTING_LANGUAGES">
+		<supports>Modular Construct</supports>
+		<requirements></requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 0 Points</em></p>
+			<p>Gives your Modulon Common and one other language of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Starting Language, Modulon" supports="Standard||Exotic" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Extra Movement Speed" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_1">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_1)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Gives your Modulon an additional 5ft of walking speed.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<stat name="innate speed" value="5" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Extra Movement Speed" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_2">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_2),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_1</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Gives your Modulon an additional 5ft of walking speed.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<stat name="innate speed" value="5" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Extra Movement Speed" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_3">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_3),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_2</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Gives your Modulon an additional 5ft of walking speed.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<stat name="innate speed" value="5" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Extra Movement Speed" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_4">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_4),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_3</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Gives your Modulon an additional 5ft of walking speed.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<stat name="innate speed" value="5" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Fey Infusion" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_FEY_INFUSION">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_FEY_INFUSION),ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE_MODERN_MODULON</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Gives your Modulon advantage on saving throws against being charmed and they cannot be put to sleep by magic</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon advantage on saving throws against being charmed and they cannot be put to sleep by magic</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Innate Magic, Lesser" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_LESSER_INNATE_MAGIC">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_LESSER_INNATE_MAGIC),!ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_GREATER_INNATE_MAGIC</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon one cantrip. At third level they get access to one 1st level spell they can use once per long rest. Talk to your DM about which spells are acceptable.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon one cantrip. At third level they get access to one 1st level spell they can use once per long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<select type="Spell" name="Modular Construction Lesser Innate Magic, Cantrip" supports="0"/>
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Innate Magic, Greater" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_GREATER_INNATE_MAGIC">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:3]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_GREATER_INNATE_MAGIC),!ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_LESSER_INNATE_MAGIC,ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE_MODERN_MODULON</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 3 Points</em></p>
+			<p>Gives your Modulon one cantrip. At third level they get access to one 1st level spell they can use once per long rest. At 5th level they get access to one 2nd level spell they can use once per long rest. Talk to your DM about which spells are acceptable.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon one cantrip. At third level they get access to one 1st level spell they can use once per long rest. At 5th level they get access to one 2nd level spell they can use once per long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-3" />
+			<select type="Spell" name="Modular Construction Greater Innate Magic, Cantrip" supports="0"/>
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Living Construct" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_LIVING_CONSTRUCT">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_LIVING_CONSTRUCT)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Perfects your Modulons construct nature. Even though you were constructed, you are a living creature. You are immune to disease. You do not need to eat or breathe, but you can ingest food and drink if you wish. Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal.</p>
+		</description>
+		<sheet>
+			<description>Perfects your Modulons construct nature. Even though you were constructed, you are a living creature. You are immune to disease. You do not need to eat or breathe, but you can ingest food and drink if you wish. Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Lucky" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_LUCKY">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_LUCKY)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulon has a lucky item implanted in them. When you roll a 1 on an attack roll, ability check, or saving throw, you can re-roll the die and must use the new roll.</p>
+		</description>
+		<sheet>
+			<description>Your Modulon has a lucky item implanted in them. When you roll a 1 on an attack roll, ability check, or saving throw, you can re-roll the die and must use the new roll.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Natural Armour, +1" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_ARMOUR_1">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_ARMOUR_1),!(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_ARMOUR_2|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_ARMOUR_3)</requirements>
+		<description>
+			<p><em>Prerequisite: No other Natural Armour</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulon has had it's form augmented to withstand attacks. Whilst not wearing armour, your natural armour class equals 11 + your dexterity modifier</p>
+		</description>
+		<sheet>
+			<description>Your Modulon has had it's form augmented to withstand attacks. Whilst not wearing armour, your natural armour class equals 11 + {{dexterity:modifier}}</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<stat name="ac" value="1" bonus="natural" equipped="[armor:none],[shield:none]" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Natural Armour, +2" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_ARMOUR_2">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_ARMOUR_2),!(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_ARMOUR_1|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_ARMOUR_3)</requirements>
+		<description>
+			<p><em>Prerequisite: No other Natural Armour</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Your Modulon has had it's form augmented to withstand attacks. Whilst not wearing armour, your natural armour class equals 12 + your dexterity modifier</p>
+		</description>
+		<sheet>
+			<description>Your Modulon has had it's form augmented to withstand attacks. Whilst not wearing armour, your natural armour class equals 12 + {{dexterity:modifier}}</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<stat name="ac" value="2" bonus="natural" equipped="[armor:none],[shield:none]" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Natural Armour, +3" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_ARMOUR_3">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:4]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_ARMOUR_3),!(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_ARMOUR_1|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_ARMOUR_2),ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE_ANCIENT_MODULON</requirements>
+		<description>
+			<p><em>Prerequisite: No other Natural Armour</em></p>
+			<p><em>Cost: 4 Points</em></p>
+			<p>Your Modulon has had it's form augmented to withstand attacks. Whilst not wearing armour, your natural armour class equals 13 + your dexterity modifier</p>
+		</description>
+		<sheet>
+			<description>Your Modulon has had it's form augmented to withstand attacks. Whilst not wearing armour, your natural armour class equals 13 + {{dexterity:modifier}}</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-4" />
+			<stat name="ac" value="3" bonus="natural" equipped="[armor:none],[shield:none]" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Naturally Stealthy" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURALLY_STEALTHY">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURALLY_STEALTHY)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Your Modulon has had its stealth capacity augmented, you can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</p>
+		</description>
+		<sheet>
+			<description>Your Modulon has had its stealth capacity augmented, you can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Natural Weapons, 1d4 Bludgeoning" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_BLUDGEONING">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_BLUDGEONING),!(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_SLASHING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_PIERCING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_BLUDGEONING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_SLASHING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_PIERCING)</requirements>
+		<description>
+			<p><em>Prerequisite: No other Natural Weapon</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulons combat capacity has been increased, you are proficient with your unarmed strikes, which deal 1d4 Bludgeoning damage on a hit.</p>
+		</description>
+		<sheet>
+			<description>Your Modulons combat capacity has been increased, you are proficient with your unarmed strikes, which deal 1d4 Bludgeoning damage on a hit.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Natural Weapons, 1d4 Slashing" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_SLASHING">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_SLASHING),!(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_BLUDGEONING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_PIERCING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_BLUDGEONING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_SLASHING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_PIERCING)</requirements>
+		<description>
+			<p><em>Prerequisite: No other Natural Weapon</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulons combat capacity has been increased, you are proficient with your unarmed strikes, which deal 1d4 Slashing damage on a hit.</p>
+		</description>
+		<sheet>
+			<description>Your Modulons combat capacity has been increased, you are proficient with your unarmed strikes, which deal 1d4 Slashing damage on a hit.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Natural Weapons, 1d4 Piercing" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_PIERCING">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_PIERCING),!(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_BLUDGEONING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_SLASHING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_BLUDGEONING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_SLASHING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_PIERCING)</requirements>
+		<description>
+			<p><em>Prerequisite: No other Natural Weapon</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulons combat capacity has been increased, you are proficient with your unarmed strikes, which deal 1d4 Piercing damage on a hit.</p>
+		</description>
+		<sheet>
+			<description>Your Modulons combat capacity has been increased, you are proficient with your unarmed strikes, which deal 1d4 Piercing damage on a hit.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Natural Weapons, 1d6 Piercing" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_PIERCING">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_PIERCING),!(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_BLUDGEONING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_SLASHING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_BLUDGEONING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_SLASHING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_PIERCING),ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE_ANCIENT_MODULON</requirements>
+		<description>
+			<p><em>Prerequisite: No other Natural Weapon</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Your Modulons combat capacity has been increased, you are proficient with your unarmed strikes, which deal 1d6 Piercing damage on a hit.</p>
+		</description>
+		<sheet>
+			<description>Your Modulons combat capacity has been increased, you are proficient with your unarmed strikes, which deal 1d6 Piercing damage on a hit.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Natural Weapons, 1d6 Slashing" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_SLASHING">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_SLASHING),!(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_BLUDGEONING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_SLASHING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_BLUDGEONING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_PIERCING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_PIERCING),ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE_ANCIENT_MODULON</requirements>
+		<description>
+			<p><em>Prerequisite: No other Natural Weapon</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Your Modulons combat capacity has been increased, you are proficient with your unarmed strikes, which deal 1d6 Slashing damage on a hit.</p>
+		</description>
+		<sheet>
+			<description>Your Modulons combat capacity has been increased, you are proficient with your unarmed strikes, which deal 1d6 Slashing damage on a hit.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Natural Weapons, 1d6 Bludgeoning" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_BLUDGEONING">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_BLUDGEONING),!(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_BLUDGEONING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_SLASHING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_SLASHING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D6_PIERCING|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NATURAL_WEAPONS_D4_PIERCING),ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE_ANCIENT_MODULON</requirements>
+		<description>
+			<p><em>Prerequisite: No other Natural Weapon</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Your Modulons combat capacity has been increased, you are proficient with your unarmed strikes, which deal 1d6 Bludgeoning damage on a hit.</p>
+		</description>
+		<sheet>
+			<description>Your Modulons combat capacity has been increased, you are proficient with your unarmed strikes, which deal 1d6 Bludgeoning damage on a hit.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Nimble" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NIMBLE">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_NIMBLE)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulons movement capacity has been increased, you can move through the space of any creature that is of a size larger than yours.</p>
+		</description>
+		<sheet>
+			<description>Your Modulons combat capacity has been increased, you can move through the space of any creature that is of a size larger than yours.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Poison Resilience" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_POISON_RESILIENCE">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_POISON_RESILIENCE)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulon has advantage on saving throws against poison, and you have resistance against poison damage.</p>
+		</description>
+		<sheet>
+			<description>Your Modulon has advantage on saving throws against poison, and you have resistance against poison damage.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Relentless Endurance" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_RELENTLESS_ENDURANCE">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_RELENTLESS_ENDURANCE),ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE_ANCIENT_MODULON</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>When your Modulon is reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>When your Modulon is reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Savage Attacker" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SAVAGE_ATTACKER">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SAVAGE_ATTACKER),ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE_ANCIENT_MODULON</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>When your Modulon score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.</p>
+		</description>
+		<sheet>
+			<description>When your Modulon score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Skill Proficiency" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SKILL_PROFICIENCY_1">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SKILL_PROFICIENCY_1)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulon gains proficiency in one skill.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Proficiency" name="Skill Proficiency, Modulon 1" supports="Skill" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Skill Proficiency" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SKILL_PROFICIENCY_2">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SKILL_PROFICIENCY_2),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SKILL_PROFICIENCY_1</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulon gains proficiency in one skill.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Proficiency" name="Skill Proficiency, Modulon 2" supports="Skill" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Skill Proficiency" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SKILL_PROFICIENCY_3">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SKILL_PROFICIENCY_3),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SKILL_PROFICIENCY_2</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulon gains proficiency in one skill.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Proficiency" name="Skill Proficiency, Modulon 3" supports="Skill" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Skill Proficiency" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SKILL_PROFICIENCY_4">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SKILL_PROFICIENCY_4),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SKILL_PROFICIENCY_3</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulon gains proficiency in one skill.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Proficiency" name="Skill Proficiency, Modulon 4" supports="Skill" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Speak with Small Beasts" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SPEAK_WITH_SMALL_BEASTS">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SPEAK_WITH_SMALL_BEASTS)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulon  can communicate simple ideas with Small or smaller beasts through sounds and gestures.</p>
+		</description>
+		<sheet>
+			<description>Your Modulon  can communicate simple ideas with Small or smaller beasts through sounds and gestures.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Reduced Movement Speed" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_REDUCTION_1">
+		<supports>Modular Construct</supports>
+		<requirements></requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: -1 Point</em></p>
+			<p>Gives your Modulon an 5ft less of walking speed.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="1" />
+			<stat name="innate speed" value="-5" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Reduced Movement Speed" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_REDUCTION_2">
+		<supports>Modular Construct</supports>
+		<requirements>ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_REDUCTION_1</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: -1 Point</em></p>
+			<p>Gives your Modulon an 5ft less of walking speed.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="1" />
+			<stat name="innate speed" value="-5" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Reduced Movement Speed" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_REDUCTION_3">
+		<supports>Modular Construct</supports>
+		<requirements>ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_REDUCTION_2</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: -1 Point</em></p>
+			<p>Gives your Modulon an 5ft less of walking speed.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="1" />
+			<stat name="innate speed" value="-5" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Reduced Movement Speed" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_REDUCTION_4">
+		<supports>Modular Construct</supports>
+		<requirements>ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SPEED_REDUCTION_3</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: -1 Point</em></p>
+			<p>Gives your Modulon an 5ft less of walking speed.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="1" />
+			<stat name="innate speed" value="-5" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Burrowing" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_BURROWING">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_BURROWING)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon 15ft Burrowing speed.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon 15ft Burrowing speed.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<stat name="innate speed:burrow" value="15" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Swimming" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SWIMMING">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_SWIMMING)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon 15ft Swimming speed.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon 15ft Swimming speed.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<stat name="innate speed:swim" value="15" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Climbing" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_CLIMBING">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_EXTRA_MOVEMENT_CLIMBING)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon 15ft Climbing speed.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon 15ft Climbing speed.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<stat name="innate speed:climb" value="15" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Wings" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_WINGS">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_ARCANE_BOOSTERS_LESSER|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_ARCANE_BOOSTERS_GREATER)</requirements>
+		<description>
+			<p><em>Prerequisite: No Other Method of Flying</em></p>
+			<p><em>Cost: -1 Points</em></p>
+			<p>Gives your Modulon 30ft Flying speed. You additionally have wings, you must be in a space wide enough to accommodate your wingspan to fly. Your wingspan is equal to twice your height. You cannot fly if you are wearing armor you are not proficient in, armor not tailored to accommodate your wings, or a backpack not specially tailored to your wings. You fall to the ground at the end of your turn unless you move at least half your fly speed during your turn. Additionally if you take damage whilst flying you must succeed a concentration check to stay airborne, on a failed save you begin to fall.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon 30ft Flying speed. You additionally have wings, you must be in a space wide enough to accommodate your wingspan to fly. Your wingspan is equal to twice your height. You cannot fly if you are wearing armor you are not proficient in, armor not tailored to accommodate your wings, or a backpack not specially tailored to your wings. You fall to the ground at the end of your turn unless you move at least half your fly speed during your turn. Additionally if you take damage whilst flying you must succeed a concentration check to stay airborne, on a failed save you begin to fall.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="1" />
+			<stat name="innate speed:fly" value="30" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Arcane Boosters, Lesser" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_ARCANE_BOOSTERS_LESSER">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_ARCANE_BOOSTERS_LESSER) , !(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_ARCANE_BOOSTERS_GREATER|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_WINGS) , ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE_MODERN_MODULON</requirements>
+		<description>
+			<p><em>Prerequisite: No Other Method of Flying</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon 15ft Flying speed. Instead of Wings you have small boosters built into your body therefore do not need any additional space to fly, nor do you need special equipment. You fall to the ground at the end of your turn unless you move at least half your fly speed during your turn. Additionally if you take damage whilst flying you must succeed a concentration check at advantage to stay airborne, on a failed save you begin to fall.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon 15ft Flying speed. Instead of Wings you have small boosters built into your body therefore do not need any additional space to fly, nor do you need special equipment. You fall to the ground at the end of your turn unless you move at least half your fly speed during your turn. Additionally if you take damage whilst flying you must succeed a concentration check at advantage to stay airborne, on a failed save you begin to fall.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<stat name="innate speed:fly" value="15" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Arcane Boosters, Greater" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_ARCANE_BOOSTERS_GREATER">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:6]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_ARCANE_BOOSTERS_GREATER) , !(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_ARCANE_BOOSTERS_LESSER|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_WINGS) , ID_TMDR_RACIAL_TRAIT_MODULON_SUBRACE_MODERN_MODULON</requirements>
+		<description>
+			<p><em>Prerequisite: No Other Method of Flying</em></p>
+			<p><em>Cost: 6 Points</em></p>
+			<p>Gives your Modulon 30ft Flying speed. Instead of Wings you have small boosters built into your body therefore do not need any additional space to fly, nor do you need special equipment. Additionally you may hover.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon 30ft Flying speed. Instead of Wings you have small boosters built into your body therefore do not need any additional space to fly, nor do you need special equipment. Additionally you may hover.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-6" />
+			<stat name="innate speed:fly" value="30" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Superior Darkvision" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SUPERIOR_DARKVISION">
+		<supports>Modular Construct</supports>
+		<requirements>!(ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_DARKVISION),([modular:points:2]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SUPERIOR_DARKVISION)</requirements>
+		<description>
+			<p><em>Prerequisite: No Other Darkvision</em></p>
+			<p><em>Cost: 2 Points</em></p>
+			<p>Gives your Modulon Superior Darkvision</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-2" />
+			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Sunlight Sensitivity" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_SUNLIGHT_SENSITIVITY">
+		<supports>Modular Construct</supports>
+		<requirements></requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: -1 Points</em></p>
+			<p>Gives your Modulon Sunlight Sensitivity. You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
+		</description>
+		<sheet>
+			<description>Gives your Modulon Sunlight Sensitivity. You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="1" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Tool Proficiency" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_TOOL_PROFICIENCY_1">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_TOOL_PROFICIENCY_1)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulon gains proficiency in one tool.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Proficiency" name="Tool Proficiency, Modulon 1" supports="Tool" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Tool Proficiency" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_TOOL_PROFICIENCY_2">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_TOOL_PROFICIENCY_2),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_TOOL_PROFICIENCY_1</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulon gains proficiency in one tool.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Proficiency" name="Tool Proficiency, Modulon 2" supports="Tool" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Tool Proficiency" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_TOOL_PROFICIENCY_3">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_TOOL_PROFICIENCY_3),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_TOOL_PROFICIENCY_2</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulon gains proficiency in one tool.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Proficiency" name="Tool Proficiency, Modulon 3" supports="Tool" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Tool Proficiency" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_TOOL_PROFICIENCY_4">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_TOOL_PROFICIENCY_4),ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_TOOL_PROFICIENCY_3</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulon gains proficiency in one tool.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Proficiency" name="Tool Proficiency, Modulon 4" supports="Tool" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Tough" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_TOUGH">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:3]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_TOUGH)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 3 Points</em></p>
+			<p>Your Modulon gains 1 additional maximum hit point per level.</p>
+		</description>
+		<sheet>
+			<description>Your Modulon gains 1 additional maximum hit point per level.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-3" />
+			<stat name="hp" value="level" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+	<element name="Trance" type="Racial Trait" source="The Modulous Race" id="ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_TRANCE">
+		<supports>Modular Construct</supports>
+		<requirements>([modular:points:1]|ID_TMDR_RACIAL_TRAIT_MODULAR_CONSTRUCTION_TRANCE)</requirements>
+		<description>
+			<p><em>Prerequisite: None</em></p>
+			<p><em>Cost: 1 Point</em></p>
+			<p>Your Modulon doesn't need to sleep. Instead, you meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.</p>
+		</description>
+		<sheet>
+			<description>Your Modulon doesn't need to sleep. Instead, you meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.</description>
+		</sheet>
+		<rules>
+			<stat name="modular:points" value="-1" />
+			<select type="Racial Trait" name="Modular Construction Trait" supports="Modular Construct" number="1" />
+		</rules>
+	</element>
+
+</elements>
