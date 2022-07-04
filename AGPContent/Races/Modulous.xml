@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-	<update version="0.0.1">
+	<info>
+		<update version="0.0.2">
 			<file name="Modulous.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Races/Modulous.xml" />
 		</update>
 	</info>
