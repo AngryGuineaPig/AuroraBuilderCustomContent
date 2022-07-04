@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>	
+	<info>
+		<update version="0.0.1">
+			<file name="Artificer-Galvinist.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Artificer/Artificer-Galvinist.xml" />
+		</update>
+	</info>
+	<element name="Galvanist" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ARTIFICER_GALVANIST">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>Some Artificers don't know when to stop. They tinker and they fiddle and they make a mess. But sometimes it is these less refined Artificers who end up changing the course of history. You must fail and fail gloriously if you want to make a real difference and that is what the Galvanist knows. They want to enhance and change magic in order to save the world.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_CONDUIT_CASTER" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_GALVANIST_SPELLS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_GALVAN_BATTERY" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_ALTERNATING_CURRENT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_ARCANE_ACCUMULATOR" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_VOLTAIC_SURGE" />
+		</description>
+		<sheet display="false">
+			<description>Some Artificers don't know when to stop. They tinker and they fiddle and they make a mess. But sometimes it is these less refined Artificers who end up changing the course of history. You must fail and fail gloriously if you want to make a real difference and that is what the Galvanist knows. They want to enhance and change magic in order to save the world.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_CONDUIT_CASTER" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_GALVANIST_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_GALVAN_BATTERY" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_ALTERNATING_CURRENT" level="5" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_ARCANE_ACCUMULATOR" level="9" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_VOLTAIC_SURGE" level="15" />
+		</rules>
+	</element>
+	<element name="Conduit Caster" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_CONDUIT_CASTER">
+		<description>
+			<p>When you choose this archetype at 3rd level, you gain proficiency in Jewelers Tools and you learn the <i>Lightning Lure</i> and <i>Shocking Grasp</i> cantrips.</p>
+		</description>
+		<sheet display="false">
+			<description>When you choose this archetype at 3rd level, you gain proficiency in Jewelers Tools and you learn the <i>Lightning Lure</i> and <i>Shocking Grasp</i> cantrips.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" spellcasting="Artificer" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_LIGHTNING_LURE" spellcasting="Artificer" />
+		</rules>
+	</element>
+	<element name="Galvanist Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_GALVANIST_SPELLS">
+		<description>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Galvanist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">GALVANIST SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Thunderous Smite, Witch Bolt</em></td></tr>
+				<tr><td>5th</td><td><em>Hold Person, Mirror Image</em></td></tr>
+				<tr><td>9th</td><td><em>Call Lightning, Thunder Step</em></td></tr>
+				<tr><td>13th</td><td><em>Dimension Door, Storm Sphere</em></td></tr>
+				<tr><td>17th</td><td><em>Destructive Wave, Synaptic Static</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the GALVANIST Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDEROUS_SMITE" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WITCH_BOLT" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_THUNDER_STEP" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SYNAPTIC_STATIC" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Galvan Battery" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_GALVAN_BATTERY">
+		<description>
+			<p>Starting at 3rd level you have discovered the way to create a Galvan Battery. A Galvan Battery is a small contraption of your design that gives off a dim light within a 5 ft radius and is either worn or embedded in armor and can be used as your spellcasting focus. It’s function is to try to contain extreme amounts of raw arcane power so that you can attempt to borrow and channel this energy to aid you in battle.</p>
+			<p class="indent">Using Jewelers Tools, you can take a bonus action to begin charging your Galvan Battery. The charge lasts for 1 minute unless it is removed from your contact or until the energy explodes.</p>
+			<p class="indent">Once activated it immediately gains 1 charge and gains an additional charge at the start of each of your turns. Your movement speed is increased by 5 ft for every charge your Galvan Battery currently has.</p>
+			<p class="indent">Once per turn, after you deal damage to a creature, you may deal additional damage to a creature with an attack or spell, you can deal an additional 1d8 lightning damage for each charge the Galvan Battery has to the target or a different creature within 15 ft of the target. In addition, if you roll the same number on any of the d8s, the Galvan Battery becomes unstable and the stored energy explodes. Each creature within 10 feet of you must make a Dexterity saving throw, taking lightning damage equal to the numbers rolled on a failure, or half on a success. You automatically fail the save. As a bonus action, you can safety expel the energy out, removing all built up charges. Alternatively, as an action you can choose to have your Galvan Battery explode. If you do, you have advantage on the save instead of automatically failing.</p>
+			<p class="indent">Once you start charging your Galvan Battery, you can’t do so again until you finish a short or long rest or until you expend a spell slot.</p>
+		</description>
+		<sheet>
+			<description>Starting at 3rd level you have discovered the way to create a Galvan Battery. A Galvan Battery is a small contraption of your design that gives off a dim light within a 5 ft radius and is either worn or embedded in armor and can be used as your spellcasting focus. It’s function is to try to contain extreme amounts of raw arcane power so that you can attempt to borrow and channel this energy to aid you in battle.&#13;
+			Using Jewelers Tools, you can take a bonus action to begin charging your Galvan Battery. The charge lasts for 1 minute unless it is removed from your contact or until the energy explodes.&#13;
+			Once activated it immediately gains 1 charge and gains an additional charge at the start of each of your turns. Your movement speed is increased by 5 ft for every charge your Galvan Battery currently has.&#13;
+			Once per turn, after you deal damage to a creature, you may deal additional damage to a creature with an attack or spell, you can deal an additional 1d8 lightning damage for each charge the Galvan Battery has to the target or a different creature within 15 ft of the target. In addition, if you roll the same number on any of the d8s, the Galvan Battery becomes unstable and the stored energy explodes. Each creature within 10 feet of you must make a Dexterity saving throw, taking lightning damage equal to the numbers rolled on a failure, or half on a success. You automatically fail the save. As a bonus action, you can safety expel the energy out, removing all built up charges. Alternatively, as an action you can choose to have your Galvan Battery explode. If you do, you have advantage on the save instead of automatically failing.&#13;
+			Once you start charging your Galvan Battery, you can’t do so again until you finish a short or long rest or until you expend a spell slot.</description>
+		</sheet>
+	</element>
+	<element name="Alternating Current" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_ALTERNATING_CURRENT">
+		<description>
+			<p>Starting at 5th level When you are hit by an attack you can use your reaction to reduce the damage taken by your Intelligence modifier and then you can choose to have a branch of electricity shoot back to the attacker if they are within 60 ft and they take lightning damage equal to your Intelligence Modifier.</p>
+		</description>
+		<sheet>
+			<description>Starting at 5th level When you are hit by an attack you can use your reaction to reduce the damage taken by {{intelligence:modifier}} and then you can choose to have a branch of electricity shoot back to the attacker if they are within 60 ft and they take {{intelligence:modifier}} lightning damage.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Accumulator" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_ARCANE_ACCUMULATOR">
+		<description>
+			<p>At 9th level, your Galvan Battery can store and expend incredible amounts of arcana at a moments notice allowing you to adapt to many situations:</p>
+			<ul>
+				<li>Any spell you cast ignores resistance to lightning damage and treats immunity to lightning damage as resistance to lightning damage.</li>
+				<li>When you roll for extra damage with your Galvan Battery feature you may add an extra dice that is being rolled and after rolling discard one dice of your choice. You may use this feature a number of times equal to your proficiency bonus and you regain all uses on a long rest.</li>
+			</ul>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>At 9th level, your Galvan Battery can store and expend incredible amounts of arcana at a moments notice allowing you to adapt to many situations:&#13;
+			• Any spell you cast ignores resistance to lightning damage and treats immunity to lightning damage as resistance to lightning damage.&#13;
+			• When you roll for extra damage with your Galvan Battery feature you may add an extra dice that is being rolled and after rolling discard one dice of your choice. You may use this feature {{proficiency}} times and you regain all uses on a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Voltaic Surge" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_GALVANIST_VOLTAIC_SURGE">
+		<description>
+			<p>Once you have reached 15th level, you have learned how to make your Galvan Batteries greatest failure into your biggest success:</p>
+			<ul>
+				<li>The additional damage from Galvan Battery increases to 1d10 for each charge.</li>
+				<li>Once per long rest if you fall unconscious while your Galvan Battery is active you can expend all your charges to shock yourself back to life and regain consciousness with 1 health and an additional 1d8 temporary hit points for each charge of the Galvan Battery expended.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Once you have reached 15th level, you have learned how to make your Galvan Batteries greatest failure into your biggest success:&#13;
+			• The additional damage from Galvan Battery increases to 1d10 for each charge.&#13;
+			• Once per long rest if you fall unconscious while your Galvan Battery is active you can expend all your charges to shock yourself back to life and regain consciousness with 1 health and an additional 1d8 temporary hit points for each charge of the Galvan Battery expended.</description>
+		</sheet>
+	</element>
+</elements>

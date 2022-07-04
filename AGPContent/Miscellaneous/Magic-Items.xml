@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	    <update version="0.0.1">
+	    <update version="0.0.2">
 			<file name="Magic-Items.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous/Magic-Items.xml" />
 		</update>
 	</info>
@@ -824,5 +824,93 @@
 			<set name="rarity">Very Rare(Gnomish)(Any Object or Portion of structure no longer than 60ft in any dimension)</set>
 		</setters>
 	</element>
-</elements>
+	<element name="Summon" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_SUMMON_RUNE">
+		<description>
+		<p>While holding the object that bears this rune, you can activate the rune as an action and throw the object to a point within 30 feet of you, speaking the word for "summon" in Abyssal. When you do so, roll a d6 on th table below. Your roll determines what kind of demon is summoned, and you immediately take necrotic damage equal to 10 x the number you rolled to sate the demon's voraciousness; this damage ignores resistances and immunities</p>
+		<table>
+			<thead>
+				<tr><td>d6</td><td>Summoned Demon(s)</td></tr>
+			</thead>
+			<tr><td>1</td><td>1d2+1 Vrocks</td></tr>
+			<tr><td>2</td><td>1d2 Hezrous</td></tr>
+			<tr><td>3</td><td>1d2 Glabrezus</td></tr>
+			<tr><td>4</td><td>1 Nalfeshnee</td></tr>
+			<tr><td>5</td><td>1 Marilith</td></tr>
+			<tr><td>6</td><td>50 percent chance of summoning one Balor</td></tr>
+		</table>
+		<p class="indent">A creature summoned in this way appears in an unoccupied space within 5 feet of the object. It remains for 1 hour or until your concentration ends (as if concentrating on a spell), at which point it disappears. The demon also disappears if it drops to 0 hit points</p>
+		<p class="indent">The demon is friendly to you and your companions for the duration. Roll initiative for the demon, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the demon, it defends itself from hostile creatures but otherwise takes no actions.</p>
+		<p class="indent">In addition, roll a d8. If the roll is less than the number you rolled on the d6, te rune's magic only grants you tenuous control over the demon. If your concentration is broken or you choose to end it early, the demon doesn't disappear. Instead, you lose control of the demon, it becomes hostile toward you and your companions, and might attack. An uncontrolled demon can't be dismissed by you, and it disappears 1 hour after you summoned it.</p>
+		<p class="indent">Once activated, this rune can't be used again until the object that bears it has spent 3 nights soaking in te blood of a humanoid, which the rune consumes.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Legendary(Abyssal)(transfers to any handheld or worn object that incorporates blood, bones or flesh from a humanoid)</set>
+		</setters>
+	</element>
+	<element name="Alert" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_ALERT_RUNE">
+		<description>
+		<p>If you are surprised at the beginning of combat while wearing the eyewear that bears this rune, the rune's magic activates when you roll initiative, unless you are incapacitated by something other than nonmagical sleep. Once activated, you can take a reaction before your first turn as normal, and on your first turn you still get a move, and action, or a bonus action; you only get one of those three.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Goblin)(transfers to any headwear or eyewear, such as a helmet, headband, or glasses)</set>
+		</setters>
+	</element>
+	<element name="Restful" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_RESTFUL_RUNE">
+		<description>
+		<p>Whenever you finish a long rest while using or wearing the object that bears this rune, you regain 1 additional Hit Die. At 5th level this increases to 2 Hit Die. This increases to 3 at 11th level, and 4 at 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon(Elvish)(transfers to any bedroll, blanket, undergarment, or other object used for sleep)</set>
+		</setters>
+	</element>
+	<element name="Dematerialize" type="Magic Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_MAGIC_ITEM_DEMATERIALIZE_RUNE">
+		<description>
+		<p>While holding the spellcasting focus that bears this rune, you can use an action to activate the rune and touch the spellcasting focus to a nonmagical object or a creation of magical force, such as the wall created by wall of force. If the target is Huge or smaller, it shatters into fragments of arcane energy and is destroyed. If the target is Gargantuan, this effect destroys a 15-foot-cube portion of it. A magic item is unaffected by this effect. Once activated, this rune can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Rune</set>
+			<set name="category">Runes</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">misc</set>
+			<set name="type">Rune</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Very Rare(Halfling)(transfers to any spellcasting focus)</set>
+		</setters>
+	</element>
 
+	<element name="Weapon Group (Hand Crossbows)" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_HAND_CROSSBOWS" />
+
+	<append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HAND">
+		<supports>ID_INTERNAL_WEAPON_GROUP_HAND_CROSSBOWS</supports>
+	</append>
+
+	<element name="Weapon Group (Light Crossbows)" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_LIGHT_CROSSBOWS" />
+
+	<append id="ID_WOTC_PHB_WEAPON_CROSSBOW_LIGHT">
+		<supports>ID_INTERNAL_WEAPON_GROUP_LIGHT_CROSSBOWS</supports>
+	</append>
+
+	<element name="Weapon Group (Heavy Crossbows)" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS" />
+
+	<append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HEAVY">
+		<supports>ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS</supports>
+	</append>
+</elements>

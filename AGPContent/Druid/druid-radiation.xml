@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="druid-radiation.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Druid/druid-radiation.xml" />
+		</update>
+	</info>
+	<element name="Circle of Radiation" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_CIRCLE_OF_THE_RADIATION">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Radiance does not always bring healing and good tidings. Everything has a half life and the Circle of Radiation Druid tries to find that number of years left for every creature place and thing. After all It is said that a point of light is the last thing you see before you die.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_CIRCLE_SPELLS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_IRRADIATED_SPELLCASTING" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_WILDSHAPE_MUTATIONS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_NUCLEAR_NULLIFICATION" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_LETHAL_RADIATION" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_RADIATION_SICKNESS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_ARCANE_HALF_LIFE" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_CIRCLE_SPELLS" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_IRRADIATED_SPELLCASTING" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_WILDSHAPE_MUTATIONS" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_NUCLEAR_NULLIFICATION" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_LETHAL_RADIATION" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_RADIATION_SICKNESS" level="10" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_ARCANE_HALF_LIFE" level="14" />
+		</rules>
+	</element>
+	<element name="Circle Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_CIRCLE_SPELLS">
+		<description>
+			<p>Your body, mind, and spirit has been exposed to the profound feeling of becoming radioactive. This has seeped into your magic and has become part of your very being.</p>
+			<p class="indent">At 3rd, 5th, 7th, and 9th level you gain access to the spells listed for that level in the Circle of Radiation Spells table. Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+			<h5>Circle Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td>Bane, Ray of Sickness</td></tr>
+				<tr><td>3rd</td><td>Melf's Acid Arrow, Ray of Enfeeblement</td></tr>
+				<tr><td>5th</td><td>Bestow Curse, Stinking Cloud</td></tr>
+				<tr><td>7th</td><td>Sickening Radiance, Vitriolic Sphere</td></tr>
+				<tr><td>9th</td><td>Contagion, Negative Energy Flood</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BANE" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MELFS_ACID_ARROW" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STINKING_CLOUD" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SICKENING_RADIANCE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_VITRIOLIC_SPHERE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_NEGATIVE_ENERGY_FLOOD" level="9" spellcasting="Druid" prepared="true"/>
+		</rules>
+    </element>
+	<element name="Irradiated Spellcasting" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_IRRADIATED_SPELLCASTING">
+		<description>
+			<p>At 2nd level, once per turn when you damage a creature you can see with a spell, you can choose to have the creature become Radioactive. A Radioactive creature emits a dim, greenish light in a 5-foot radius around them. This light makes it impossible for the creature to benefit from being invisible. A Radioactive creature must succeed on a Constitution saving throw at the end of each of their turns or take 1d6 radiant damage. On a success ending the effect is ended.</p>
+			<p class="indent">When a Radioactive creature within 30 ft of you makes a Constitution, Dexterity, or Strength saving throw you may use your reaction to weaken them further. Roll a d4 and subtract the number rolled from the creature’s roll.</p>
+		</description>
+		<sheet>
+			<description>At 2nd level, once per turn when you damage a creature you can see with a spell, you can choose to have the creature become Radioactive. A Radioactive creature emits a dim, greenish light in a 5-foot radius around them. This light makes it impossible for the creature to benefit from being invisible. A Radioactive creature must succeed on a Constitution saving throw at the end of each of their turns or take {{irradiated:die}}d6 radiant damage. On a success ending the effect is ended.&#13;
+			When a Radioactive creature within 30 ft of you makes a Constitution, Dexterity, or Strength saving throw you may use your reaction to weaken them further. Roll a d4 and subtract the number rolled from the creature’s roll.</description>
+		</sheet>
+		<rules>
+			<stat name="irradiated:die" value="1" />
+			<stat name="irradiated:die" value="1" level="6" />
+			<stat name="irradiated:die" value="1" level="14" />
+		</rules>
+	</element>
+	<element name="Wild Shape Mutations" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_WILDSHAPE_MUTATIONS">
+		<description>
+			<p>Also at 2nd level your radiation has mutated and infected your Wild Shape transformations, when you expend a use of your Wild Shape roll a d4 and reference the Mutation table to see what mutation you develop.</p>
+			<p class="indent">Once you reach 10th level you may roll a d6 on the Mutation table instead.</p>
+			<p class="indent">Alternatively, instead of rolling on the table, you may expend an extra use of your Wild Shape in order to choose any of the first four mutations on the Mutation Table to develop.</p>
+			<h5>Wild Shape Mutations</h5>
+			<table>
+				<thead>
+					<tr><td>Mutation</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>Additional Body Part (1)</td><td>A transformed creature sprouts a additional mutated head, limb, or other natural weapon in order to aid them in battle. As a bonus action you can make a single attack with a natural weapon. This increases to two attacks at 10th level.</td></tr>
+				<tr><td>Enlarged Swelling (2)</td><td>The transformed creature grows to a size larger than its natural state and you gain temporary HP equal to your Druid level. This increases to two sizes larger and you gain temporary HP equal to double your Druid level at 10th level.</td></tr>
+				<tr><td>Elongated Limbs (3)</td><td>A transformed creature's body morphs and stretches in order to make them sleek and increase the length of their gait. Your speed increases by 20 ft. This increases to 40 ft at 10th level.</td></tr>
+				<tr><td>Hardened Skin (4)</td><td>A transformed creature develops heavy, protective scales around their body that give them a natural defense. You gain +2 to AC. This increases to +4 AC at 10th level.</td></tr>
+				<tr><td>Contaminated Creature (5)</td><td>A transformed creature has absorbed and emit radiation due to exposure and now they can damage creatures near them. As a bonus action you may deal radiant damage equal to your Wisdom modifier to all creatures within 5 ft of you.</td></tr>
+				<tr><td>Maladaptive Transformation (6)</td><td>Roll 2d6's on the Mutation table and you develop both mutations. Reroll all duplicates and if you roll a 6 again you may choose which mutation to develop.</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Your radiation has mutated and infected your Wild Shape transformations, when you expend a use of your Wild Shape roll a d{{mutation:die}} and reference the Mutation table to see what mutation you develop.&#13;
+			Alternatively, instead of rolling on the table, you may expend an extra use of your Wild Shape in order to choose any of the first four mutations on the Mutation Table to develop.</description>
+		</sheet>
+		<rules>
+			<stat name="mutation:die" value="4" />
+			<stat name="mutation:die" value="2" level="10" />
+		</rules>
+    </element>
+	<element name="Nuclear Nullification" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_NUCLEAR_NULLIFICATION">
+		<description>
+			<p>At 6th level you gain resistance to radiant damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+    </element>
+	<element name="Lethal Radiation" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_LETHAL_RADIATION">
+		<description>
+			<p>Also at 6th level your control over the emission of radiation has led to you being able to infect and inflict great pain and sickness on your enemies. The radiant damage dealt by the Radioactive effect is increased to 2d6 at 6th level and 3d6 at 14th level.</p>
+			<p class="indent">Additionally when a creature fails their Constitution saving throw to remove the Radioactive effect all creatures of your choice within 5 ft of them take radiant damage equal to your Wisdom modifier.</p>
+		</description>
+		<sheet>
+			<description>When a creature fails their Constitution saving throw to remove the Radioactive effect all creatures of your choice within 5 ft of them take {{wisdom:modifier}} radiant damage.</description>
+		</sheet>
+    </element>
+	<element name="Radiation Sickness" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_RADIATION_SICKNESS">
+		<description>
+			<p>At 10th level, creatures have disadvantage on saving throws to remove the Radioactive effect.</p>
+		</description>
+		<sheet>
+			<description>At 10th level, creatures have disadvantage on saving throws to remove the Radioactive effect.</description>
+		</sheet>
+    </element>
+	<element name="Arcane Half Life" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RADIATION_ARCANE_HALF_LIFE">
+		<description>
+			<p>Starting at 14th level as a bonus action you can start to emit radioactive waves from your body. Once activated you glow with dim greenish light in a 5-foot radius. This light makes it impossible for you to benefit from being invisible.</p>
+			<p class="indent">When irradiated creatures are poisoned while within 10 ft of you and if a creature ends their turn within 10 ft of you they become Radioactive, immediately making the saving throw. You can choose to end this effect as a bonus action.</p>
+			<p class="indent">Once you use this feature you can not do so again until you have completed a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Rest">
+			<description>Starting at 14th level as a bonus action you can start to emit radioactive waves from your body. Once activated you glow with dim greenish light in a 5-foot radius. This light makes it impossible for you to benefit from being invisible.&#13;
+			When irradiated creatures are poisoned while within 10 ft of you and if a creature ends their turn within 10 ft of you they become Radioactive, immediately making the saving throw. You can choose to end this effect as a bonus action.</description>
+		</sheet>
+    </element>
+</elements>
+	

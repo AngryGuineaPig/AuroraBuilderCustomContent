@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-	        <update version="0.0.1">
+	        <update version="0.0.2">
 			<file name="Bard.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Bard.index" />
 		</update>
 	</info>
@@ -10,5 +10,6 @@
         <file name="bard-journeys.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Bard/bard-journeys.xml" />
         <file name="bard-manifestation.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Bard/bard-manifestation.xml" />
         <file name="bard-silence.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Bard/bard-silence.xml" />
+		<file name="bard-origami.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Bard/bard-origami.xml" />
 	</files>
 </index>

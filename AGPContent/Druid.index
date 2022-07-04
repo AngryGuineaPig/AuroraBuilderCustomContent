@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-	        <update version="0.0.1">
+	        <update version="0.0.2">
 			<file name="Druid.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Druid.index" />
 		</update>
 	</info>
 	<files>
         <file name="druid-dragons.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Druid/druid-dragons.xml" />
+		<file name="druid-radiation.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Druid/druid-radiation.xml" />
+		<file name="druid-sands.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Druid/druid-sands.xml" />
     </files>
 </index>

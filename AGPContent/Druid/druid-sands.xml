@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="druid-sands.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Druid/druid-sands.xml" />
+		</update>
+	</info>
+	<element name="Circle of Sands" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_CIRCLE_OF_THE_SANDS">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>The druids of the circle of sands mostly are habitated in the hottest regions of the land and live isolated from the society. For those unlucky enough to encounter them, most of them turn out to be as merciless as the environment they live in. Able to turn into an furious sandstorm these druids have brought death unto countless careless nomads and merchants.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SANDS_ANGER_OF_THE_SANDS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SANDS_ALL_IS_DUST" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SANDS_WRATH_OF_THE_DUNES" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SANDS_HATRED_OF_THE_DESERT" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SANDS_ANGER_OF_THE_SANDS" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SANDS_ALL_IS_DUST" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SANDS_WRATH_OF_THE_DUNES" level="10" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SANDS_HATRED_OF_THE_DESERT" level="14" />
+		</rules>
+	</element>
+	<element name="Anger of the Sands" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SANDS_ANGER_OF_THE_SANDS">
+		<description>
+			<p>Starting at 2nd level when you choose this circle you learned to turn yourself into whirling sandstorm. You have access to another option to use your wild shape feature - the sandstorm. While in your sandstorm form you have resistance against piercing, slashing and bludgeoning damage from nonmagical sources and your size becomes large. Your AC in this form equals your spell DC.</p>
+			<p class="indent">While in this form, you can occupy the space of other creatures without squeezing, you are unaffected by difficult terrain or any surfaces on the ground, and any you become immune to the grappled and restrained conditions.</p>
+			<p class="indent">You can't cast spells while in your sandstorm form and cant take the attack action. Transforming doesn't break your concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell, such as Call Lightning, that you've already cast.</p>
+			<p class="indent">Any equipment you carried while transforming is merged into your new form or falls to the ground.</p>
+			<p class="indent">Any creature that starts its turn in the area you cover or enters it for the first time this turn must succeed on a strength saving throw against your spell DC or take 1d8 piercing damage and is knocked prone or half as much damage and isn't prone it succeeds.</p>
+			<p class="indent">This transformation last 1 minute, until you become incapacitated, you until you dismiss it as a bonus action or drop to zero hit points.</p>
+		</description>
+		<sheet>
+			<description>You have access to another option to use your wild shape feature - the sandstorm.</description>
+		</sheet>
+    </element>
+	<element name="All is Dust" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SANDS_ALL_IS_DUST">
+		<description>
+			<p>Starting at 6th level your ability to turn to sand makes it very difficult for attacks to harm you. As reaction to taking being hit by an attack you can use your reaction to impose disadvantage on the attacker potentially turning the hit into a miss.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus and regain all uses when you finish a short rest.</p>
+			<p class="indent">Additionally the size of you sandstorm form becomes huge and you deal 2d8 damage.</p>
+		</description>
+		<sheet action="Reaction" usage="{{proficiency}}/Short Rest">
+			<description>As reaction to taking being hit by an attack you can use your reaction to impose disadvantage on the attacker potentially turning the hit into a miss.&#13;
+			You can use this feature a {{proficiency}} times and regain all uses when you finish a short rest.&#13;
+			Additionally the size of you sandstorm form becomes huge and you deal 2d8 damage.</description>
+		</sheet>
+	</element>
+	<element name="Wrath of the Dunes" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SANDS_WRATH_OF_THE_DUNES">
+		<description>
+			<p>At 10th. level the damage dealt by your Anger of the sands feature is increased to 3d8. Additionally the effect lasts for a number of minutes equal to your Wisdom modifier.</p>
+		</description>
+		<sheet>
+			<description>At 10th. level the damage dealt by your Anger of the sands feature is increased to 3d8. Additionally the effect lasts for a number of minutes equal to your Wisdom modifier.</description>
+		</sheet>
+    </element>
+	<element name="Hatred of the Desert" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SANDS_HATRED_OF_THE_DESERT">
+		<description>
+			<p>At 14th level, your ability to transform into a sandstorm is unmatched. As a Bonus Action you may choose to modify your form in one of the following ways:</p>
+			<ul>
+				<li>Your size increases to gargantuan</li>
+				<li>The area you cover is heavily obscured</li>
+				<li>The area you cover counts as difficult terrain</li>
+				<li>You can increase your speed by 10ft. This use can be selected multiple times to a maximum of 3 times.</li>
+				<li>You can increase the damage dealt by your anger of sands feature by 1d8. This can be selected up to 6 times.</li>
+				<li>You can choose one creature to be unaffected by your Anger of the Sands feature.</li>
+			</ul>
+			<p class="indent">Each of these last until the end of your transformation. However when you take on one of these modifications you must begin to make concentration checks at the end of your turns. The DC for these checks is 10 plus twice the number of modifications you have active at that point.</p>
+		</description>
+		<sheet>
+			<description>At 14th level, your ability to transform into a sandstorm is unmatched. As a Bonus Action you may choose to modify your form.&#13;
+			Each of these modifications last until the end of your transformation. However when you take on one of these modifications you must begin to make concentration checks at the end of your turns. The DC for these checks is 10 plus twice the number of modifications you have active at that point.</description>
+		</sheet>
+    </element>
+</elements>
+	

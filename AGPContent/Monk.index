@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-	    <update version="0.0.2">
+	    <update version="0.0.3">
 			<file name="Monk.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk.index" />
 		</update>
 	</info>
 	<files>
+		<file name="Monk-Beyond.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Beyond.xml" />
         <file name="Monk-Blademaster.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Blademaster.xml" />
+		<file name="Monk-BrokenHourglass.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-BrokenHourglass.xml" />
 		<file name="Monk-ChronalFlow.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-ChronalFlow.xml" />
 		<file name="Monk-Dreamer.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Dreamer.xml" />
 		<file name="Monk-Dynamis.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Dynamis.xml" />
@@ -21,6 +23,7 @@
 		<file name="Monk-Water.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Water.xml" />
 		<file name="Monk-Winterfury.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Winterfury.xml" />
 		<file name="Monk-Wrath.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Wrath.xml" />
+		<file name="Monk-ThunderingSky.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-ThunderingSky.xml" />
 		<file name="Monk-Thunderclap.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Thunderclap.xml" />
     </files>
 </index>

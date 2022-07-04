@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-BrokenHourglass.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-BrokenHourglass.xml" />
+		</update>
+	</info>
+	<element name="Way of the Broken Hourglass" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_THE_BROKEN_HOURGLASS">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>M onks of the Way of the Broken Hourglass understand that time is not an immutable force, but rather a gentle flow that permeates all of existence. By mastery of their own ki, they can cause a ripple in the flow of time, granting them a slew of incredible abilities.</p>
+			<p class="indent">Understanding that a fraction of a second can make the difference between life and death, these monks know to slow or even stop time at the perfect moment to spell doom for their opponents.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BROKEN_HOURGLASS_TEMPORAL_RESTORATION" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BROKEN_HOURGLASS_CRACK_THE_HOURGLASS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BROKEN_HOURGLASS_DEJA_VU" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BROKEN_HOURGLASS_SHATTER_THE_HOURGLASS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BROKEN_HOURGLASS_CHRONAL_STASIS" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BROKEN_HOURGLASS_TEMPORAL_RESTORATION" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BROKEN_HOURGLASS_CRACK_THE_HOURGLASS" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BROKEN_HOURGLASS_DEJA_VU" level="6"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BROKEN_HOURGLASS_SHATTER_THE_HOURGLASS" level="11"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BROKEN_HOURGLASS_CHRONAL_STASIS" level="17"/>
+		</rules>
+	</element>
+	<element name="Temporal Restoration" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BROKEN_HOURGLASS_TEMPORAL_RESTORATION">
+		<description>
+			<p>Starting when you take this monastic tradition at 3rd level, you can call upon temporal imprints to return an object to a former state. You learn the mending cantrip, and you can restore damage of any kind when you cast the spell (including damage from old age, such as spoilage or rust), as long as the damage occurred no more than 10 days ago.</p>
+		</description>
+		<sheet>
+			<description>Starting when you take this monastic tradition at 3rd level, you can call upon temporal imprints to return an object to a former state. You learn the mending cantrip, and you can restore damage of any kind when you cast the spell (including damage from old age, such as spoilage or rust), as long as the damage occurred no more than 10 days ago.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" />	
+		</rules>
+	</element>
+	<element name="Crack the Hourglass" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BROKEN_HOURGLASS_CRACK_THE_HOURGLASS">
+		<description>
+			<p>Also at 3rd level, you can spend 1 ki point as a bonus action to cause a ripple in the flow of time, moving at incredible speed while time around you appears to slow to a crawl. Until the end of your turn, other creatures cannot take reactions in response to your actions or movement, and you can take three additional actions on this turn. These additional actions can only be used to take the Attack (One unarmed strike only), Dash, Hide, or Use an Object actions.</p>
+			<p class="indent">Continually pushing against the flow of time is strenuous, and as such you must make a DC10 Constitution saving throw or gain one level of exhaustion. Additionally once you use this ability, you gain one level of exhaustion each time you use it again before 1 minute has passed.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Ki">
+			<description>Also at 3rd level, you can spend 1 ki point as a bonus action to cause a ripple in the flow of time, moving at incredible speed while time around you appears to slow to a crawl. Until the end of your turn, other creatures cannot take reactions in response to your actions or movement, and you can take three additional actions on this turn. These additional actions can only be used to take the Attack (One unarmed strike only), Dash, Hide, or Use an Object actions.
+			&#13;Continually pushing against the flow of time is strenuous, and as such you must make a DC{{hourglass:dc}} Constitution saving throw or gain one level of exhaustion. Additionally once you use this ability, you gain one level of exhaustion each time you use it again before {{hourglass:time}} minute has passed.</description>
+		</sheet>
+		<rules>
+			<stat name="hourglass:dc" value="10" />
+			<stat name="hourglass:dc" value="5" level="11" />
+			<stat name="hourglass:time" value="1" />
+			<stat name="hourglass:time" value="9" level="11" />
+		</rules>
+	</element>
+	<element name="Deja-Vu" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BROKEN_HOURGLASS_DEJA_VU">
+		<description>
+			<p>At 6th level, you have learned to invoke violent echoes of the past to harm your foes in the present. Once per turn when you take the Attack action, you can spend a ki point to replace one of the attacks to cause a creature you can see within 30 feet of you to reexperience harm it has suffered before. The creature must make a Wisdom saving throw against your ki save DC. On a failed save, the target takes force damage equal to two rolls of your martial arts die and falls prone. On a successful save, it takes half as much damage and doesn't fall prone.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>At 6th level, you have learned to invoke violent echoes of the past to harm your foes in the present. Once per turn when you take the Attack action, you can spend a ki point to replace one of the attacks to cause a creature you can see within 30 feet of you to reexperience harm it has suffered before. The creature must make a Wisdom saving throw against your ki save DC. On a failed save, the target takes force damage equal to two rolls of your martial arts die and falls prone. On a successful save, it takes half as much damage and doesn't fall prone.</description>
+		</sheet>
+	</element>
+	<element name="Shatter the Hourglass" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BROKEN_HOURGLASS_SHATTER_THE_HOURGLASS">
+		<description>
+			<p>By 11th level, your ability to manipulate time has improved enough to stop time almost completely. When you use Crack the Hourglass, you also have advantage on attack rolls until the end of your turn, and your attacks deal additional damage equal to two rolls of your martial arts die on a hit. A creature can take this additional damage only once during the duration of this ability.</p>
+			<p class="indent">In addition, you have become accustomed to the strain of slowing time. Whenever you finish a short rest, your exhaustion level, if any, is decreased by 1. However the strain on your body is greater and as such the period of time in which you gain a level of exhaustion on subsequent uses is increased to 10 minutes and the DC of the initial save is increased to DC15</p>
+		</description>
+		<sheet>
+			<description>By 11th level, your ability to manipulate time has improved enough to stop time almost completely. When you use Crack the Hourglass, you also have advantage on attack rolls until the end of your turn, and your attacks deal additional damage equal to two rolls of your martial arts die on a hit. A creature can take this additional damage only once during the duration of this ability.&#13;
+			In addition, you have become accustomed to the strain of slowing time. Whenever you finish a short rest, your exhaustion level, if any, is decreased by 1.</description>
+		</sheet>
+	</element>
+	<element name="Chronal Stasis" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BROKEN_HOURGLASS_CHRONAL_STASIS">
+		<description>
+			<p>When you reach 17th level, you have gained the ability to sever a creature's connection to time, trapping it in temporal stasis. When you hit a creature with an unarmed strike, you can spend 5 ki points to cause the creature to become petrified. While petrified in this way, the creature doesn't fall and can't be moved in any way. At the end of each of its turns, a petrified creature can make a Charisma saving throw against your ki save DC, ending the effect on a success. If a creature fails this saving throw three times before the effect ends, it becomes permanently trapped in stasis and can no longer make saving throws to end the effect. A creature can use the greater restoration spell to end this effect.</p>
+			<p class="indent">Once you use this ability, you gain 1d6 levels of exhaustion each time you use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>When you reach 17th level, you have gained the ability to sever a creature's connection to time, trapping it in temporal stasis. When you hit a creature with an unarmed strike, you can spend 5 ki points to cause the creature to become petrified. While petrified in this way, the creature doesn't fall and can't be moved in any way. At the end of each of its turns, a petrified creature can make a Charisma saving throw against your ki save DC, ending the effect on a success. If a creature fails this saving throw three times before the effect ends, it becomes permanently trapped in stasis and can no longer make saving throws to end the effect. A creature can use the greater restoration spell to end this effect.&#13;
+			Once you use this ability, you gain 1d6 levels of exhaustion each time you use it again until you finish a long rest.</description>
+		</sheet>
+	</element>
+</elements>

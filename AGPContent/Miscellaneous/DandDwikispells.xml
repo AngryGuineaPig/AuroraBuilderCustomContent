@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
   <info>
-	    <update version="0.0.1">
+	    <update version="0.0.2">
 			<file name="DandDwikispells.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Miscellaneous/DandDwikispells.xml" />
 		</update>
 	</info>
+<!--Wiki Spells-->
   <element name="Accelerate/Deccelerate" type="Spell" source="D&amp;D Wiki" id="ID_WIKI_ACCELERATE_DECCELERATE">
     <supports>Wizard</supports>
     <description>
@@ -1966,7 +1967,7 @@
     </setters>
   </element>
 <!--Reddit Spells-->
-<element name="Glide" type="Spell" source="Reddit : Unearthed Arcana" id="ID_WIKI_GLIDE">
+ <element name="Glide" type="Spell" source="Reddit : Unearthed Arcana" id="ID_WIKI_GLIDE">
     <supports>Artificer, Druid, Ranger, Sorcerer, Wizard</supports>
     <description>
       <p>Until the spell ends you can fall no faster than 100ft per turn and take no fall damage, whilst using the spell you can move up to 2ft horizontally per 1t fallen.</p>
@@ -1987,7 +1988,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-<element name="Incite Self Harm" type="Spell" source="Reddit : Unearthed Arcana" id="ID_WIKI_INCITE_SELF_HARM">
+ <element name="Incite Self Harm" type="Spell" source="Reddit : Unearthed Arcana" id="ID_WIKI_INCITE_SELF_HARM">
     <supports>Wizard, Sorcerer, Bard, Warlock</supports>
     <description>
       <p>You beckon a creature to harm itself, the creature must make a wisdom saving throw, on a failed save it takes 2d8 psychic damage and makes a weapon attack against itself with advantage. On a successful save it makes a weapon attack with disadvantage and takes half the psychic damage</p>
@@ -2008,7 +2009,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-<element name="Magical Blade" type="Spell" source="Reddit : Unearthed Arcana" id="ID_WIKI_MAGICAL_BLADE">
+ <element name="Magical Blade" type="Spell" source="Reddit : Unearthed Arcana" id="ID_WIKI_MAGICAL_BLADE">
     <supports>Wizard, Sorcerer, Warlock</supports>
     <description>
       <p>You mutter a quick phrase and thrust your blade into the air, coating it in magic energy which helps bypass physical barriers. You can use an action to cast this spell and then touch up to two weapons, which becomes magical. They shed bright light of a colour of your choosing for 15 feet and dim light for another 15 feet, and gain a bonus +1 bonus to attack rolls</p>
@@ -2070,7 +2071,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-<element name="Phantasmal Plunge" type="Spell" source="Reddit : Unearthed Arcana" id="ID_WIKI_PHANTASMAL_PLUNGE">
+ <element name="Phantasmal Plunge" type="Spell" source="Reddit : Unearthed Arcana" id="ID_WIKI_PHANTASMAL_PLUNGE">
     <supports>Wizard, Sorcerer, Bard, Warlock</supports>
     <description>
       <p>Choose up to 6 creatures that you can see within range. Each creature must make an Intelligence saving throw. On a failed save the creature takes 5d10 psychic damage, falls prone and can't take reactions till the end of its next turn. On a success the creature takes half damage suffers no other effects.</p>

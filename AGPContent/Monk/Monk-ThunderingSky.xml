@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-ThunderingSky.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-ThunderingSky.xml" />
+		</update>
+	</info>
+	<element name="Way of the Thundering Sky" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_THE_THUNDERING_SKY">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the Way of the Thundering Sky are said to be heralds of coming storms and defenders of the defenseless. Monks of this tradition value things such as honor, justice, and oaths kept. As they uphold these values, strengthen their bodies, and hone their techniques, they shorten the spiritual gap between themselves and their divinity. The subject of their reverence is the god of storms, who began the tradition and first taught how to harness and manipulate the electrical energies within, and around, ones body in order to become a destructive force rivaling that of nature.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_DRUMS_OF_WAR" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_FLASH_AND_THUNDER" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_GATHERING_STORM" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_BRINGER_OF_STORMS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_ONE_WITH_THE_STORM" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_CHOSEN_OF_THE_STORM" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_DRUMS_OF_WAR" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_FLASH_AND_THUNDER" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_GATHERING_STORM" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_BRINGER_OF_STORMS" level="6"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_ONE_WITH_THE_STORM" level="11"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_ONE_WITH_THE_STORM" level="17"/>
+		</rules>
+	</element>
+	<element name="Drums of War" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_DRUMS_OF_WAR">
+		<description>
+			<p>You gain proficiency with the drum. If you already have this proficiency, you gain proficiency with one other type of musical instrument of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Drums of War)" supports="Musical Instrument" default="ID_PROFICIENCY_TOOL_PROFICIENCY_DRUM" />
+		</rules>
+	</element>
+	<element name="Flash and Thunder" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_FLASH_AND_THUNDER">
+		<description>
+			<p>At 3rd level, you learn the following Thundering Sky Techniques:</p>
+			<ul>
+				<li><b>Lightning Reflexes.</b> When you make an attack of opportunity, you can spend 1 ki point to make an additional attack.</li>
+				<li><b>Thundering Palm.</b> Immediately after you take the Attack action on your turn, you can spend 2 ki points to cast the thunderwave spell as a bonus action. You can choose to center the spell on yourself, and you cannot damage yourself with this spell.</li>
+			</ul>
+			<p>You can spend additional ki points to cast thunderwave as a higher level spell. Each additional ki point you spend increases the spell's level by 1. The maximum number of ki points (2 plus any additional points) that you can spend on the spell equals half your monk level.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>At 3rd level, you learn the following Thundering Sky Techniques:&#13;
+			Lightning Reflexes. When you make an attack of opportunity, you can spend 1 ki point to make an additional attack.&#13;
+			Thundering Palm. Immediately after you take the Attack action on your turn, you can spend 2 ki points to cast the thunderwave spell as a bonus action. You can choose to center the spell on yourself, and you cannot damage yourself with this spell.&#13;
+			You can spend additional ki points to cast thunderwave as a higher level spell. Each additional ki point you spend increases the spell's level by 1. The maximum number of ki points (2 plus any additional points) that you can spend on the spell equals {{level:monk:half}}.</description>
+		</sheet>
+	</element>
+	<element name="Gathering Storm" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_GATHERING_STORM">
+		<description>
+			<p>When you choose this tradition at 3rd level, your skin begins to ripple with lightning which can be used to aid you in combat. Whenever you hit a creature with two consecutive attacks as part of the same action (such as the Attack action), bonus action (such as Flurry of Blows), or reaction (such as making an attack of opportunity using Lightning Reflexes), you gain a static charge. While you have at least 1 static charge, you can change the damage type of your melee weapon attacks to lightning. You can also spend static charges to fuel your Thundering Sky Techniques as if they were ki points. All of your static charges dissipate after 1 minute has passed without gaining a new one. You can have a maximum number of static charges equal to your Wisdom modifier (minimum 1).</p>
+		</description>
+		<sheet usage="Ki">
+			<description>When you choose this tradition at 3rd level, your skin begins to ripple with lightning which can be used to aid you in combat. Whenever you hit a creature with two consecutive attacks as part of the same action (such as the Attack action), bonus action (such as Flurry of Blows), or reaction (such as making an attack of opportunity using Lightning Reflexes), you gain a static charge. While you have at least 1 static charge, you can change the damage type of your melee weapon attacks to lightning. You can also spend static charges to fuel your Thundering Sky Techniques as if they were ki points. All of your static charges dissipate after 1 minute has passed without gaining a new one. You can have a maximum {{wisdom:modifier}} static charges</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+	<element name="Bringer of Storms" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_BRINGER_OF_STORMS">
+		<description>
+			<p>At 6th level, you learn the following Thundering Sky Techniques:</p> 
+			<ul>
+				<li><b>Pierce the Clouds.</b>  If there are clouds, you can spend 1 minute in meditation to cause them to split open and begin to rain. Rain does not obscure your vision. While in rain, you can see as if it were day.</li>
+				<li><b>Step through Thunder.</b> You can spend 3 ki points to cast the thunder step spell as an action.</li>
+				<li><b>Ride the Lightning.</b> You can blast a distant target with a bolt of lightning infused ki energy in place of a normal attack. Make a special ranged attack targeting a creature within 30 feet. On a hit, the creature takes lightning damage equal to your Martial Arts die + your Wisdom modifier and you can spend 1 ki point to ride the lightning. If you do so, you teleport to an unoccupied space within 5 feet of the target as part of the attack. You can use this technique only once per turn.</li>
+			</ul>
+		</description>
+		<sheet usage="Ki">
+			<description>At 6th level, you learn the following Thundering Sky Techniques:&#13;
+			Pierce the Clouds.  If there are clouds, you can spend 1 minute in meditation to cause them to split open and begin to rain. Rain does not obscure your vision. While in rain, you can see as if it were day.&#13;
+			Step through Thunder. You can spend 3 ki points to cast the thunder step spell as an action.&#13;
+			Ride the Lightning. You can blast a distant target with a bolt of lightning infused ki energy in place of a normal attack. Make a special ranged attack targeting a creature within 30 feet. On a hit, the creature takes lightning damage equal to 1d{{martial arts:dice}} + {{wisdom:modifier}} and you can spend 1 ki point to ride the lightning. If you do so, you teleport to an unoccupied space within 5 feet of the target as part of the attack. You can use this technique only once per turn.</description>
+		</sheet>
+	</element>
+	<element name="One with the Storm" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_ONE_WITH_THE_STORM">
+		<description>
+			<p>When you reach 11th level, your soul becomes one with the raging tempest. You gain resistance to lightning and thunder damage and learn the following Thundering Sky Techniques:</p> 
+			<ul>
+				<li><b>Fulminating Strike.</b> When you hit a creature with an unarmed strike, you can spend 3 ki points to send a creature flying with a violent storm-charged strike. The target takes extra thunder damage equal to three rolls of your Martial Arts die, and must succeed on a Strength saving throw or be pushed to the end of a 20 foot long, 5 foot wide line and fall prone. Each creature or object in the line takes 2d6 bludgeoning damage.</li>
+				<li><b>Wind Running.</b> Whenever you use your Step of the Wind, you gain a flying speed equal to your walking speed until the end of your turn. If you use Step of the Wind while outdoors in a thunderstorm, the flying speed is maintained until the end of your following turn.</li>
+			</ul>
+		</description>
+		<sheet usage="Ki">
+			<description>When you reach 11th level, your soul becomes one with the raging tempest. You gain resistance to lightning and thunder damage and learn the following Thundering Sky Techniques:&#13;
+			Fulminating Strike. When you hit a creature with an unarmed strike, you can spend 3 ki points to send a creature flying with a violent storm-charged strike. The target takes 3d{{martial arts:dice}} extra thunder damage, and must succeed on a Strength saving throw or be pushed to the end of a 20 foot long, 5 foot wide line and fall prone. Each creature or object in the line takes 2d6 bludgeoning damage.&#13;
+			Wind Running. Whenever you use your Step of the Wind, you gain a {{speed}}ft flying speed until the end of your turn. If you use Step of the Wind while outdoors in a thunderstorm, the flying speed is maintained until the end of your following turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
+	</element>
+	<element name="Chosen of the Storm" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_THUNDERING_SKY_CHOSEN_OF_THE_STORM">
+		<description>
+			<p>Upon attaining 17th level, you become the chosen vessel of the god of storms, able to take his form, and call upon his beasts at will.</p>
+			<p class="indent"><strong><em>The Master's Call.</em></strong> Whenever you use Fulminating Strike, Ride the Lightning, Step through Thunder, or Thundering Palm you can roll a percentile dice. On a result of 5 or lower, a thunder beast appears in an unoccupied space that you can see within 30 feet of you.</p>
+			<p class="indent">The beast is friendly to you and your companions and obeys your commands. See this creature's game statistics in the Thunder Beast stat block, which uses your proficiency bonus (PB) in several places. You determine the creature's appearance, which is usually that of a lightning-wreathed small beast.</p>
+			<p class="indent">Roll initiative for the beast, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the beast, it defends itself from hostile creatures but otherwise takes no actions.</p>
+			<p class="indent">The beast manifests for 1 minute, until it is reduced to 0 hit points, until another thunder beast is summoned, or until you die.</p>
+			<p class="indent"><strong><em>Thunder God Ascension.</em></strong> As a bonus action, you can spend 9 ki points to ascend into an avatar state for 10 minutes. This ascension ends early if you are incapacitated or die. While you are ascended, you gain the following benefits.</p>
+			<ul>
+				<li>You can enter a hostile creature's space and stop there. You can move through a space as narrow as 1 inch wide without squeezing. Furthermore, whenever a creature hits you with a melee attack, the creature takes 2d6 lightning damage.</li>
+				<li>Your walking speed increases by 15 feet.</li>
+				<li>You generate maximum static charges at the start of each of your turns.</li>
+				<li>The weather within 5 miles of you rapidly changes to that of a thunderstorm for the duration. When your ascension ends, the weather gradually returns to normal.</li>
+			</ul>
+			<p class="indent">Once you use this technique, you can not use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>Upon attaining 17th level, you become the chosen vessel of the god of storms, able to take his form, and call upon his beasts at will.&#13;
+			The Master's Call. Whenever you use Fulminating Strike, Ride the Lightning, Step through Thunder, or Thundering Palm you can roll a percentile dice. On a result of 5 or lower, a thunder beast appears in an unoccupied space that you can see within 30 feet of you.&#13;
+			The beast is friendly to you and your companions and obeys your commands. &#13;
+			Roll initiative for the beast, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the beast, it defends itself from hostile creatures but otherwise takes no actions.&#13;
+			The beast manifests for 1 minute, until it is reduced to 0 hit points, until another thunder beast is summoned, or until you die.&#13;
+			Thunder God Ascension. As a bonus action, you can spend 9 ki points to ascend into an avatar state for 10 minutes. This ascension ends early if you are incapacitated or die. While you are ascended, you gain the following benefits.&#13;
+			You can enter a hostile creature's space and stop there. You can move through a space as narrow as 1 inch wide without squeezing. Furthermore, whenever a creature hits you with a melee attack, the creature takes 2d6 lightning damage.&#13;
+			Your walking speed increases by 15 feet.&#13;
+			You generate maximum static charges at the start of each of your turns.&#13;
+			The weather within 5 miles of you rapidly changes to that of a thunderstorm for the duration. When your ascension ends, the weather gradually returns to normal.&#13;
+			Once you use this technique, you can not use it again until you finish a long rest.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="wizard-spellshaping.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/wizard-spellshaping.xml" />
+		</update>
+	</info>
+	<element name="Spellshaping" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WIZARD_SPELLSHAPING">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Masters of geometry, Spellshapers are able to warp the very fabric of the arcane and change the shapes and sizes of spells being cast, expanding and contracting areas for any situation.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SPELLSHAPING_SPELLSHAPING" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SPELLSHAPING_MYSTICAL_DIVERGENCE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SPELLSHAPING_ADDITIONAL_SPELL_SHAPES" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_SPELLSHAPING_CONCENTRATED_ARCANUM" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SPELLSHAPING_SPELLSHAPING" level="2" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SPELLSHAPING_MYSTICAL_DIVERGENCE" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SPELLSHAPING_ADDITIONAL_SPELL_SHAPES" level="10" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SPELLSHAPING_CONCENTRATED_ARCANUM" level="14" />
+		</rules>
+	</element>
+	<element name="Spellshaping" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SPELLSHAPING_SPELLSHAPING">
+		<description>
+			<p>When you adopt this tradition at 2nd level, you gain the ability to sculpt your spells into different shapes.</p>
+			<p class="indent">Whenever you cast a spell that effects an area, you can sculpt it into a different size and shape by choosing the new shape and following the below table. Set N to the radius or length of the spell you are casting.</p>
+			<table>
+				<thead>
+					<tr><td>Starting Shape</td>	<td>New Shape</td>	<td>Formula</td></tr>
+				</thead>
+				<tr><td>Cone</td>				<td>Cube</td>		<td>N/2</td></tr>
+				<tr><td>Cone</td>				<td>Cylinder</td>	<td>N*3/4</td></tr>
+				<tr><td>Cone</td>				<td>Line</td>		<td>N*2</td></tr>
+				<tr><td>Cone</td>				<td>Sphere</td>		<td>N*3/4</td></tr>
+				<tr><td>Cube</td>				<td>Cone</td>		<td>N*2</td></tr>
+				<tr><td>Cube</td>				<td>Cylinder</td>	<td>N*3/2</td></tr>
+				<tr><td>Cube</td>				<td>Line</td>		<td>N*4</td></tr>
+				<tr><td>Cube</td>				<td>Sphere</td>		<td>N*2/3</td></tr>
+				<tr><td>Cylinder</td>			<td>Cone</td>		<td>N*4/3</td></tr>
+				<tr><td>Cylinder</td>			<td>Cube</td>		<td>N*2/3</td></tr>
+				<tr><td>Cylinder</td>			<td>Line</td>		<td>N*8/3</td></tr>
+				<tr><td>Cylinder</td>			<td>Sphere</td>		<td>N</td></tr>
+				<tr><td>Line</td>				<td>Cone</td>		<td>N/2</td></tr>
+				<tr><td>Line</td>				<td>Cube</td>		<td>N/4</td></tr>
+				<tr><td>Line</td>				<td>Cylinder</td>	<td>N*3/8</td></tr>
+				<tr><td>Line</td>				<td>Sphere</td>		<td>N/5</td></tr>
+				<tr><td>Sphere</td>				<td>Cone</td>		<td>N*4/3</td></tr>
+				<tr><td>Sphere</td>				<td>Cube</td>		<td>N*3/2</td></tr>
+				<tr><td>Sphere</td>				<td>Cylinder</td>	<td>N</td></tr>
+				<tr><td>Sphere</td>				<td>Line</td>		<td>N*5</td></tr>
+				<p class="indent">You always round the result of this equation down to the nearest multiple of 5.</p>
+				<p class="indent">As an example, if you were to shape burning hands, which is a cone with a size of 15 feet, into a line, the line's size would be 15 x 2, meaning that the line would be 30 feet long.</p>
+				<p class="indent">When you shape a spell into a cylinder, the height is equal to the radius.</p>
+				<p class="indent">When you shape a spell into a line, it is always 5 feet wide.</p>
+				<p class="indent">When you shape a spell into a cone or line, the origin of the spell must be in your space. When you shape a spell that has a range of self, it's range becomes 60 feet.</p>
+			</table>
+		</description>
+		<sheet>
+			<description>When you adopt this tradition at 2nd level, you gain the ability to sculpt your spells into different shapes. Whenever you cast a spell that effects an area, you can sculpt it into a different size and shape by choosing the new shape and following the below table. Set N to the radius or length of the spell you are casting.</description>
+		</sheet>
+	</element>
+	<element name="Mystical Divergence" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SPELLSHAPING_MYSTICAL_DIVERGENCE">
+		<description>
+			<p>At 6th level you gain the ability to create small pockets of safety within spells. When a spell is cast that affects an area within 15 feet of you, you can use your reaction to choose a number of creatures that you can see within the area, not exceeding your Intelligence Modifier. Each chosen creature automatically succeeds on its Saving Throw against the spell.</p>
+		</description>
+		<sheet>
+			<description>When a spell is cast that affects an area within 15 feet of you, you can use your reaction to choose a number of creatures that you can see within the area, up to {{intelligence:modifier}}. Each chosen creature automatically succeeds on its Saving Throw against the spell.</description>
+		</sheet>
+	</element>
+	<element name="Additional Spell Shapes" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SPELLSHAPING_ADDITIONAL_SPELL_SHAPES">
+		<description>
+			<p>Starting at 10th level you can shape spells into even more shapes, each of which is detailed below:</p>
+			<p class="indent"><b>Cross.</b> A cross consists of 5 cubes, all placed on the same flat plane with 4 of the cubes extending off of the central one in the cardinal directions, each sharing a face with the central one. In order to shape a spell into a cross, you must first use the formula needed to shape it into a cube, and then divide its side length by 2. Each cube in the cross uses this side length. The point of origin lies anywhere on any face of any cube, so long as that face is not shared by another cube.</p>
+			<p class="indent"><b>Inverted Cone.</b> An inverted cone is identical to a cone in shape and size and uses the same calculations for spellshaping. The only difference is that its point of origin lies in the center of the circular face of the cone, and as such, the area grows smaller as it extends away from the caster.</p>
+			<p class="indent"><b>Ring.</b> A ring uses the same calculations as a cylinder of 5/4 the size, and takes on the same shape as one except that another cylinder of 1/3 the radius of the original is removed from the center.</p>
+			<p class="indent"><b>Starfield.</b> A starfield consists of several 5 foot diameter spheres. To shape a spell into a starfield, you must first use the formula needed to shape it into a sphere, then divide the radius by 5 (rounding up). The result is how many spheres make up the starfield. Each sphere has its own point of origin, and all of the spheres must be within range of you, or another sphere.</p>
+			<p class="indent"><b>Zig-Zag.</b> A zig-zag is much like a line, and uses the same spellshaping calculations as one. The difference is that a zig-zag is made up of up to 3 lines, all summing to the total length of the line. Each line is joined end to end and can be aimed in a different direction to the other lines.</p>
+		</description>
+		<sheet>
+			<description>Starting at 10th level you can shape spells into even more shapes.</description>
+		</sheet>
+	</element>
+	<element name="Concentrated Arcanum" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SPELLSHAPING_CONCENTRATED_ARCANUM">
+		<description>
+			<p>At 14th level you gain control over other's spells. When a creature within 60 feet of you casts a spell, you can use your reaction to make a Spell Attack Roll contested by the creature's own. If you win the contest, you can change the direction the spell is being cast up to 45 degrees if it's a line or cone, or move it up to 20 feet if it's a cube, cylinder or sphere. If you win by more than 5, you can change it up to 90 degrees or move it up to 50 feet. If your d20 roll is a 20, you can freely choose any direction or point within range.</p>
+			<p>You can do this 5 times, and regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="5/Long Rest">
+			<description>When a creature within 60 feet of you casts a spell, you can use your reaction to make a Spell Attack Roll contested by the creature's own. If you win the contest, you can change the direction the spell is being cast up to 45 degrees if it's a line or cone, or move it up to 20 feet if it's a cube, cylinder or sphere. If you win by more than 5, you can change it up to 90 degrees or move it up to 50 feet. If your d20 roll is a 20, you can freely choose any direction or point within range.</description>
+		</sheet>
+	</element>
+</elements>

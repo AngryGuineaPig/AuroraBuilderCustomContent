@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="sorcerer-metallicsoul.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Sorcerer/sorcerer-metallicsoul.xml" />
+		</update>
+	</info>
+	<element name="Metallic Soul" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_SORCERER_ARCHETYPE_METALLIC_SOUL">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Metallic Souls are often forged rather than born, whether they were made by a god of steel, or were somehow struck with elemental energy from the planes of fire and metal. These sorcerers are able to melt and reshape metal practically at will, and possess untold magnetic powers.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_METALLIC_SOUL_METALLIC_SPELLS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_METALLIC_SOUL_MAGNETIC_WARRIOR" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_METALLIC_SOUL_FORGED_BY_FIRE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_METALLIC_SOUL_LODESTONE_ARMAMENT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_METALLIC_SOUL_MAGNETIC_LOCK" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_METALLIC_SOUL_METALLIC_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_METALLIC_SOUL_MAGNETIC_WARRIOR" level="1" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_METALLIC_SOUL_FORGED_BY_FIRE" level="6" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_METALLIC_SOUL_LODESTONE_ARMAMENT" level="14" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_METALLIC_SOUL_MAGNETIC_LOCK" level="18" />
+		</rules>
+	</element>
+
+
+	<element name="Metallic Spells" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_METALLIC_SOUL_METALLIC_SPELLS">
+		<description>
+			<p>You learn certain spells at the sorcerer levels noted in the Metallic Spells table. They count as sorcerer spells for you, but don't count against your number of Spells Known.</p>
+			<p class="indent">Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a transmutation or evocation spell from the cleric, druid, or sorcerer spell list.</p>
+			<h5 class="caption">Metallic Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>searing smite, shield</em></td></tr>
+				<tr><td>3rd</td><td><em>barkskin, heat metal</em></td></tr>
+				<tr><td>5th</td><td><em>call lightning, elemental weapon</em></td></tr>
+				<tr><td>7th</td><td><em>fire shield, stoneskin</em></td></tr>
+				<tr><td>9th</td><td><em>flame strike, holy weapon</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or evocation spell from the sorcerer, warlock, or wizard spell list.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Spell, Metallic Spells" supports="(Transmutation||Evocation),(($(spellcasting:list))||Cleric||Druid)||Searing Smite" 	level="1" default="ID_PHB_SPELL_SEARING_SMITE" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Metallic Spells" supports="(Transmutation||Evocation),(($(spellcasting:list))||Cleric||Druid)||Shield" 			level="1" default="ID_PHB_SPELL_SHIELD" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Metallic Spells" supports="(Transmutation||Evocation),(($(spellcasting:list))||Cleric||Druid)||Barkskin" 			level="3" default="ID_PHB_SPELL_BARKSKIN" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Metallic Spells" supports="(Transmutation||Evocation),(($(spellcasting:list))||Cleric||Druid)||Heat Metal" 		level="3" default="ID_PHB_SPELL_HEAT_METAL" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Metallic Spells" supports="(Transmutation||Evocation),(($(spellcasting:list))||Cleric||Druid)||Call Lightning" 	level="5" default="ID_PHB_SPELL_CALL_LIGHTNING" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Metallic Spells" supports="(Transmutation||Evocation),(($(spellcasting:list))||Cleric||Druid)||Elemental Weapon" 	level="5" default="ID_PHB_SPELL_ELEMENTAL_WEAPON" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Metallic Spells" supports="(Transmutation||Evocation),(($(spellcasting:list))||Cleric||Druid)||Fire Shield" 		level="7" default="ID_PHB_SPELL_FIRE_SHIELD" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Metallic Spells" supports="(Transmutation||Evocation),(($(spellcasting:list))||Cleric||Druid)||Stoneskin"			level="7" default="ID_PHB_SPELL_STONESKIN" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Metallic Spells" supports="(Transmutation||Evocation),(($(spellcasting:list))||Cleric||Druid)||Flame Strike" 		level="9" default="ID_PHB_SPELL_FLAME_STRIKE" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Metallic Spells" supports="(Transmutation||Evocation),(($(spellcasting:list))||Cleric||Druid)||Holy Weapon" 		level="9" default="ID_XGTE_SPELL_HOLY_WEAPON" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<append id="ID_PHB_SPELL_SEARING_SMITE">
+		<supports>Searing Smite</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SHIELD">
+		<supports>Shield</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BARKSKIN">
+		<supports>Barkskin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HEAT_METAL">
+		<supports>Heat Metal</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CALL_LIGHTNING">
+		<supports>Call Lightning</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ELEMENTAL_WEAPON">
+		<supports>Elemental Weapon</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FIRE_SHIELD">
+		<supports>Fire Shield</supports>
+	</append>
+	<append id="ID_PHB_SPELL_STONESKIN">
+		<supports>Stoneskin</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FLAME_STRIKE">
+		<supports>Flame Strike</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_HOLY_WEAPON">
+		<supports>Holy Weapon</supports>
+	</append>
+
+
+	<element name="Magnetic Warrior" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_METALLIC_SOUL_MAGNETIC_WARRIOR">
+		<description>
+			<p>At 1st level, you acquire the training necessary to effectively arm yourself for battle. You gain proficiency with light armor and medium armor, as well as simple weapons.</p>
+			<p class="indent">Your magnetic abilities allow you greater control of weapons. When wielding a metallic weapon with which you are proficient, you can use your Charisma Modifier, instead of Strength or Dexterity, for the attack and damage rolls.</p>
+		</description>
+		<sheet>
+			<description>Your magnetic abilities allow you greater control of weapons. When wielding a metallic weapon with which you are proficient, you can use your Charisma Modifier, instead of Strength or Dexterity, for the attack and damage rolls.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+		</rules>
+	</element>
+	<element name="Forged By Fire" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_METALLIC_SOUL_FORGED_BY_FIRE">
+		<description>
+			<p>At 6th level, you have gained sufficient experience with metal and heat. You gain resistance to fire damage.</p>
+			<p class="indent">Additionally, when you fail a Constitution Saving throw made to maintain concentration on a spell that deals fire damage, you can expend one Sorcery Point to succeed instead.</p>
+		</description>
+		<sheet>
+			<description>When you fail a Constitution Saving throw made to maintain concentration on a spell that deals fire damage, you can expend one Sorcery Point to succeed instead.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+	<element name="Lodestone Armament" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_METALLIC_SOUL_LODESTONE_ARMAMENT">
+		<description>
+			<p>At 14th level, your affinity for using magnetism as a weapon increases. You learn animate objects, and it doesn't count against the number of spells you know. When you cast animate objects and target only metallic objects, each object has double the amount of Hit Points it would normally have.</p>
+		</description>
+		<sheet>
+			<description>At 14th level, your affinity for using magnetism as a weapon increases. You learn animate objects, and it doesn't count against the number of spells you know. When you cast animate objects and target only metallic objects, each object has double the amount of Hit Points it would normally have.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" />
+		</rules>
+	</element>
+	<element name="Magnetic Lock" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_METALLIC_SOUL_MAGNETIC_LOCK">
+		<description>
+			<p>Starting 18th level, you are able to bind metal in place with magnetic fields. As an action, you can choose a creature you can see within 60 feet of you that is made of or wearing a large amount of metal and force it to make a Strength Saving throw. The creature is paralyzed for 1 minute on a failed saving throw, and can remake the Saving throw as an action on each of its turns, ending the effect on a success.</p>
+			<p class="indent">Alternatively, as an action, you can choose a metallic object that is huge or smaller and lock it in place as if it were an immovable rod.</p>
+			<p class="indent">You can end either of these effects at any time, no action required.</p>
+		</description>
+		<sheet>
+			<description>As an action, you can choose a creature you can see within 60 feet of you that is made of or wearing a large amount of metal and force it to make a Strength Saving throw. The creature is paralyzed for 1 minute on a failed saving throw, and can remake the Saving throw as an action on each of its turns, ending the effect on a success.&#13;
+			Alternatively, as an action, you can choose a metallic object that is huge or smaller and lock it in place as if it were an immovable rod.&#13;
+			You can end either of these effects at any time, no action required.</description>
+		</sheet>
+	</element>
+</elements>

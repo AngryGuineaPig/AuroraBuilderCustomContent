@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	    <update version="0.0.1">
+			<file name="Monk-Beyond.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Monk/Monk-Beyond.xml" />
+		</update>
+	</info>
+	<element name="Way of the Beyond" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_WAY_OF_THE_BEYOND">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the Way of the Beyond are incredibly rare. The number of people that believe that such a power exists or existed at all could be counted in the double digits. With the number training in such arts in the single digits. These monks learn techniques that follow the will of the masters they have never, and probably will never meet. Methods of which to pry open the very fabric of the world itself to meddle with it in ways never intended.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_UNNATURAL_PASSAGE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_UNNATURAL_DEFENSE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_DISRUPT_TIMING" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_HARVEST_KI" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_ETHEREAL_CONTACT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_SOUL_SEVER" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_UNNATURAL_PASSAGE" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_UNNATURAL_DEFENSE" level="3"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_DISRUPT_TIMING" level="6"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_HARVEST_KI" level="11"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_ETHEREAL_CONTACT" level="17"/>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_SOUL_SEVER" level="17"/>
+		</rules>
+	</element>
+	<element name="Unnatural Passage" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_UNNATURAL_PASSAGE">
+		<description>
+			<p>Starting when you choose this tradition at 3rd level, you can use your ki to pass through solid objects with ease. Whenever you use your Step of the Wind, you can spend an additional 1 ki point to gain the ability to pass through solid objects as though they were difficult terrain. If you end your turn inside of an object, you 4d6 force damage and are shunted to the last unoccupied space you were in. This effect lasts until the end of your turn.</p>
+			<p class="indent">At 6th level, you can use this feature by spending 1 ki point without using your Step of the Wind.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>Starting when you choose this tradition at 3rd level, you can use your ki to pass through solid objects with ease. Whenever you use your Step of the Wind, you can spend an additional 1 ki point to gain the ability to pass through solid objects as though they were difficult terrain. If you end your turn inside of an object, you 4d6 force damage and are shunted to the last unoccupied space you were in. This effect lasts until the end of your turn.&#13;
+			At 6th level, you can use this feature by spending 1 ki point without using your Step of the Wind.</description>
+		</sheet>
+	</element>
+	<element name="Unnatural Defense" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_UNNATURAL_DEFENSE">
+		<description>
+			<p>At 3rd level, your training in the mysterious ways of the Beyond has lead you to an equally mysterious method of defense. Whenever you use your Patient Defense, you can spend an additional 1 ki point to gain immunity to one of the following conditions of your choice until the start of your next turn: blinded, charmed, deafened, frightened, grappled, paralyzed, poisoned, prone, restrained, or stunned. You cannot choose a condition that is currently affecting you.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>At 3rd level, your training in the mysterious ways of the Beyond has lead you to an equally mysterious method of defense. Whenever you use your Patient Defense, you can spend an additional 1 ki point to gain immunity to one of the following conditions of your choice until the start of your next turn: blinded, charmed, deafened, frightened, grappled, paralyzed, poisoned, prone, restrained, or stunned. You cannot choose a condition that is currently affecting you.</description>
+		</sheet>
+	</element>
+	<element name="Disrupt Timing" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_DISRUPT_TIMING">
+		<description>
+			<p>Starting at 6th level, you can quicken your recovery of certain effects. If you are affected by a condition for which you would make a saving throw at the end of your turn, such as with the hold person spell, you can attempt to end it early. As a reaction, you can spend 1 ki point and make the saving throw at the beginning of your turn instead.</p>
+			<p class="indent">You can use this reaction even if you would normally be incapable of doing so.</p>
+		</description>
+		<sheet action="Reaction" usage="Ki">
+			<description>Starting at 6th level, you can quicken your recovery of certain effects. If you are affected by a condition for which you would make a saving throw at the end of your turn, such as with the hold person spell, you can attempt to end it early. As a reaction, you can spend 1 ki point and make the saving throw at the beginning of your turn instead.&#13;
+			You can use this reaction even if you would normally be incapable of doing so.</description>
+		</sheet>
+	</element>
+	<element name="Harvest Ki" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_HARVEST_KI">
+		<description>
+			<p>Starting at 11th level, your able to draw strength directly from your enemies to regain ki. As an action, you can regain 2 ki points as you reach into the soul of a creature within 5 feet of you that you can see. The creature takes psychic damage equal to two rolls of your Martial Arts die.</p>
+			<p class="indent">This damage increases to three rolls of your Martial Arts die at 17th level.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of 1 use), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{wisdom:modifier}}/Long Rest">
+			<description>Starting at 11th level, your able to draw strength directly from your enemies to regain ki. As an action, you can regain 2 ki points as you reach into the soul of a creature within 5 feet of you that you can see. The creature takes psychic damage equal to two rolls of your Martial Arts die.&#13;
+			This damage increases to three rolls of your Martial Arts die at 17th level.</description>
+		</sheet>
+	</element>
+	<element name="Ethereal Contact" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_ETHEREAL_CONTACT">
+		<description>
+			<p>At 17th level, you become able to partially split your body between the Ethereal Plane and the plane you're on. As a bonus action, you can spend 3 ki points to gain truesight out to a range of 60 feet for 1 minute.</p>
+			<p class="indent">Additionally, you can touch and attack a creature in the Ethereal Plane that you can see with your hand or any weapon you're holding. Whenever you reach into the Ethereal Plane in this way, your arm and weapon vanish from your plane as it fades into the Ethereal Plane.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Ki">
+			<description>At 17th level, you become able to partially split your body between the Ethereal Plane and the plane you're on. As a bonus action, you can spend 3 ki points to gain truesight out to a range of 60 feet for 1 minute.&#13;
+			Additionally, you can touch and attack a creature in the Ethereal Plane that you can see with your hand or any weapon you're holding. Whenever you reach into the Ethereal Plane in this way, your arm and weapon vanish from your plane as it fades into the Ethereal Plane.</description>
+		</sheet>
+	</element>
+	<element name="Soul Sever" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_WAY_OF_THE_BEYOND_SOUL_SEVER">
+		<description>
+			<p>At 17th level, you're able to temporarily disconnect the soul of a creature from the planes. Whenever you hit a creature with both of the attacks granted by your Flurry of Blows, you can attempt to sever their soul from their body. The target must succeed on a Charisma saving throw to avoid the effect. On a failed save, the target's soul leaves their body, and is pushed outside the planes until the end of your next turn. While their soul is separated from their body, the target is vulnerable to all damage that it isn't already immune to.</p>
+			<p class="indent">A creature that has had its soul severed by this feature has advantage against it for the next 24 hours. This feature has no effect on undead or constructs.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest, unless you spend 5 ki points to use it again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>At 17th level, you're able to temporarily disconnect the soul of a creature from the planes. Whenever you hit a creature with both of the attacks granted by your Flurry of Blows, you can attempt to sever their soul from their body. The target must succeed on a Charisma saving throw to avoid the effect. On a failed save, the target's soul leaves their body, and is pushed outside the planes until the end of your next turn. While their soul is separated from their body, the target is vulnerable to all damage that it isn't already immune to.&#13;
+			A creature that has had its soul severed by this feature has advantage against it for the next 24 hours. This feature has no effect on undead or constructs.&#13;
+			Once you use this feature, you can't use it again until you finish a long rest, unless you spend 5 ki points to use it again.</description>
+		</sheet>
+	</element>
+</elements>

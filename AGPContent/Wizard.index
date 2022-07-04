@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-	    <update version="0.0.3">
+	    <update version="0.0.4">
 			<file name="Wizard.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard.index" />
 		</update>
 	</info>
@@ -11,5 +11,6 @@
 		<file name="wizard-MeleeMagic.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/wizard-MeleeMagic.xml" />
 		<file name="wizard-Elements.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/wizard-Elements.xml" />
 		<file name="Spells.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/Spells.xml" />
+		<file name="wizard-spellshaping.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Wizard/wizard-spellshaping.xml" />
     </files>
 </index>

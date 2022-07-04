@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+		<update version="0.0.1">
+			<file name="bard-origami.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Bard/bard-origami.xml" />
+		</update>
+	</info>
+  <element name="College of Origami" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_COLLEGE_OF_ORIGAMI">
+    <supports>Bard College</supports>
+    <description>
+      <p>Most children in the realm learn how to make paper cranes, but bards of the College of Origami train in the ancestral art of paper folding, instilling magic into the paper itself, making it a useful tool.</p>
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_ORIGAMI_PAPERCRAFT" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_ORIGAMI_PAPER_MANIPULATION" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_ORIGAMI_ORIGAMI_CLONE" />
+      <div element="ID_RDDT_ARCHETYPE_FEATURE_BARD_ORIGAMI_GREATER_PAPER_MANIPULATION" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_ORIGAMI_PAPERCRAFT" level="3" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_ORIGAMI_PAPER_MANIPULATION" level="3" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_ORIGAMI_ORIGAMI_CLONE" level="6" />
+      <grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_ORIGAMI_GREATER_PAPER_MANIPULATION" level="14" />
+    </rules>
+  </element>
+  <element name="Papercraft" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_ORIGAMI_PAPERCRAFT">
+    <description>
+      <p>At 3rd level, you gain proficiency with the Origami kit. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
+      <p class="indent">The information on Origami kits can be found at the end of this subclass</p>
+    </description>
+    <sheet display="false">
+      <description></description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Tool Proficiency (Papercraft)" supports="Artisan tools" default="ID_PROFICIENCY_TOOL_PROFICIENCY_ORIGAMI_KIT" />
+    </rules>
+  </element>
+  <element name="Paper Manipulation" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_ORIGAMI_PAPER_MANIPULATION">
+    <description>
+      <p>Starting at 3rd level, you gain the ability to use paper imbued with your magic and use it to perform tasks. You can expand a bardic inspiration to make one of the following effect:</p>
+      <p class="indent"><b>Paper Tool.</b> As an action, you create a nonmagical object in your hands that is no larger than 3 feet on a side and weighs no more than 10 pounds. Even if the object is visibly made of paper, it functionally works the same as a normal example of said object. After 10 minutes, it crumbles into a pile of paper.</p>
+      <p class="indent"><b>Paper Shuriken.</b> As an action, you create 10 paper shurikens. You can then use your bonus action to throw one of them. Roll a ranged spell attack. The shurikens have a range of 60 feet and deal 1d8 + your charisma modifier on a hit. The shurikens disappear after a long rest.</p>
+    </description>
+    <sheet action="Action" usage="Bardic Inspiration">
+      <description>Starting at 3rd level, you gain the ability to use paper imbued with your magic and use it to perform tasks. You can expand a bardic inspiration to make one of the following effect:&#13;
+      Paper Tool. As an action, you create a nonmagical object in your hands that is no larger than 3 feet on a side and weighs no more than 10 pounds. Even if the object is visibly made of paper, it functionally works the same as a normal example of said object. After 10 minutes, it crumbles into a pile of paper.&#13;
+      Paper Shuriken. As an action, you create 10 paper shurikens. You can then use your bonus action to throw one of them. Roll a ranged spell attack. The shurikens have a range of 60 feet and deal 1d8 + {{charisma:modifier}} on a hit. The shurikens disappear after a long rest.</description>
+    </sheet>
+  </element>
+  <element name="Origami Clone" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_ORIGAMI_ORIGAMI_CLONE">
+    <description>
+      <p>Beginning at 6th level, as an action you create a perfect illusion of yourself made of paper that lasts for 1 minute or until you lose your concentration (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but it must remain within 120 feet of you.</p>
+      <p class="indent">For the duration, you can cast spells as though you were in the illusion’s space, but you must use your own senses. when you use a paper shuriken, both you and your clone can throw a shuriken. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target.</p>
+      <p class="indent">You can use this feature once per short or long rests</p>
+    </description>
+    <sheet action="Action" usage="1/Rest">
+      <description>Beginning at 6th level, as an action you create a perfect illusion of yourself made of paper that lasts for 1 minute or until you lose your concentration (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but it must remain within 120 feet of you.&#13;
+      For the duration, you can cast spells as though you were in the illusion’s space, but you must use your own senses. when you use a paper shuriken, both you and your clone can throw a shuriken. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target.</description>
+    </sheet>
+  </element>
+  <element name="Greater Paper Manipulation" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_BARD_ORIGAMI_GREATER_PAPER_MANIPULATION">
+    <description>
+      <p>Starting at 14th level, your paper manipulations gain additional effects:</p>
+      <p class="indent"><b>Paper Tool.</b> When creating an object using this feature, the object now appears indistinguishable from a normal object and can measure up to 10 feet on a side and weigh up to 100 pounds.</p>
+      <p class="indent"><b>Paper Shuriken.</b> You now craft 20 paper shuriken at a time, and the shuriken now explodes when hitting a target, dealing an additional 2d8 fire damage.</p>
+    </description>
+    <sheet>
+      <description>Starting at 14th level, your paper manipulations gain additional effects:&#13;
+      Paper Tool. When creating an object using this feature, the object now appears indistinguishable from a normal object and can measure up to 10 feet on a side and weigh up to 100 pounds.&#13;
+      Paper Shuriken. You now craft 20 paper shuriken at a time, and the shuriken now explodes when hitting a target, dealing an additional 2d8 fire damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Origami Kit" type="Item" source="Reddit : Unearthed Arcana" id="ID_RDDT_ITEM_TOOL_ORIGAMI_KIT">
+		<description>
+			<p>This kit contains 300 sheets of paper. Most of the sheets are white, but some colored sheets are also in it. Proficiency in this kit allows you to make paper cranes that can glide in the hair for up to 10 feet when thrown.</p>
+    </description>
+    <setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="2">2 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_ORIGAMI_KIT</set>
+		</setters>
+	</element>
+
+  <element name="Tool Proficiency (Origami Kit)" type="Proficiency" source="Reddit : Unearthed Arcana" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ORIGAMI_KIT">
+		<supports>Tool, Artisan tools</supports>
+	</element>
+</elements>
