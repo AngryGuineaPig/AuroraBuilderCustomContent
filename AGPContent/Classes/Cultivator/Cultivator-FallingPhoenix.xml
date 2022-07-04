@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Cultivator-FallingPhoenix.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-FallingPhoenix.xml" />
+		</update>
+	</info>
+	<element name="Falling Phoenix" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_CULTIVATOR_FALLING_PHOENIX">
+		<supports>Cultivator Technique</supports>
+		<description>
+			<p>Cultivators learning the Falling Phoenix technique have a predilection for fire. Some particularly enjoy raining it from the heavens, and seize on any chance to do so.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_CONJURED_PHOENIX" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_STANCES" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_STANCE_INTERNAL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_STANCE_EXTERNAL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_PHOENIX_FALL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_PHOENIXS_VESTMENT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_WINGED_WILDFIRE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_PHOENIX_ARISEN" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_CONJURED_PHOENIX" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_STANCES" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_PHOENIX_FALL" level="7" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_PHOENIXS_VESTMENT" level="11" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_WINGED_WILDFIRE" level="11" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_PHOENIX_ARISEN" level="15" />
+		</rules>
+	</element>
+	<element name="Conjured Phoenix" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_CONJURED_PHOENIX">
+		<description>
+			<p>Beginning at 3rd level, you are able to conjure a small, ever burning replica of this techniques namesake. You gain the cantrip Create Bonfire, and add your Intelligence modifier to the damage dealt by it. You add double your Intelligence modifier at 5th level and triple at 11th.</p>
+		</description>
+		<sheet>
+			<description>You gain the cantrip Create Bonfire, and add {{phoenix:cantrip}} to the damage dealt by it.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_CREATE_BONFIRE" />
+			<stat name="phoenix:cantrip" value="intelligence:modifier" />
+			<stat name="phoenix:cantrip" value="intelligence:modifier" level="5" />
+			<stat name="phoenix:cantrip" value="intelligence:modifier" level="11" />
+		</rules>
+	</element>
+	<element name="Stances" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_STANCES">
+		<description>
+			<p>Starting at 3rd level, your technique allows you access to knowledge on how to use ki internally for defensive abilities and externally for offensive ones.</p>
+			<p class="indent">You can choose the external or internal stance before you roll for initiative, unless surprised. Otherwise, entering or switching between stances is a bonus action. Unless otherwise noted, you can only use the abilities and benefits granted by each stance while you're in it.</p>
+			<p class="indent">You are unable to use stances while you are incapacitated. If you are incapacitated while in a stance, you may regain either stance as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can choose the external or internal stance before you roll for initiative, unless surprised. Otherwise, entering or switching between stances is a bonus action. You are unable to use stances while you are incapacitated.</description>
+		</sheet>
+	</element>
+	<element name="Internal Stance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_STANCE_INTERNAL">
+		<description>
+			<ul>
+				<li>You gain resistance to fire damage as long as your are in this stance</li>
+				<li>You may spend 1 ki point per creature as a reaction to give those creatures within your aura fire resistance as long as they remain within your aura and you remain in this stance.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+	</element>
+	<element name="External Stance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_STANCE_EXTERNAL">
+		<description>
+			<ul>
+				<li>You take fire damage equal to your proficiency bonus every turn whenever you would deal fire damage while in this stance. You only take this damage once per turn and it ignores resistance and immunity.</li>
+				<li>When you would deal fire damage with a cultivator ability or feature you double the number of dice you roll. E.g. Create bonfire would deal 2d8 at 3rd level instead of 1d8.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+	</element>
+	<element name="Phoenix Fall" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_PHOENIX_FALL">
+		<description>
+			<p>Starting at 7th level, you learn to rain a flock of phoenixes on a flock of foes. You may cast Burning Hands using 2 ki points.</p>
+			<p class="indent">Additionally, whenever you cast Create Bonfire, you may make an attack as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>You may cast Burning Hands using 2 ki points. Additionally, whenever you cast Create Bonfire, you may make an attack as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Phoenix's Vestment" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_PHOENIXS_VESTMENT">
+		<description>
+			<p>Upon reaching 11th level, you gain resistance to fire damage. Whenever you are in your internal stance you instead gain immunity to fire damage.</p>
+			<p class="indent">Additionally, your abilities ignore fire resistance, and treat fire immunity as fire resistance.</p>
+		</description>
+		<sheet>
+			<description>Whenever you are in your internal stance you instead gain immunity to fire damage. Additionally, your abilities ignore fire resistance, and treat fire immunity as fire resistance.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+	<element name="Winged Wildfire" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_WINGED_WILDFIRE">
+		<description>
+			<p>At 11th level, your control over fire lends you the most potent and notable aspects of the phoenix. While in your external stance you gain fiery wings and a fly speed of 60 feet.</p>
+			<p class="indent">While in internal stance you may spend 1 ki point to cast Feather Fall.</p>
+		</description>
+		<sheet>
+			<description>While in your external stance you gain fiery wings and a fly speed of 60 feet. While in internal stance you may spend 1 ki point to cast Feather Fall.</description>
+		</sheet>
+	</element>
+	<element name="Phoenix Arisen" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FALLING_PHOENIX_PHOENIX_ARISEN">
+		<description>
+			<p>Beginning at 15th level, you begin to personify every aspect of the powerful phoenix. When an attack would reduce you to 0 hit points, you may instead fall out of your current stance and be reduced to 1 hit point and 0 ki remaining. The attacker takes 2d8 + 1d8 fire damage per ki point you had left before you were reduced to 0.</p>
+			<p class="indent">Once you use this feature, you cannot use it again until you take a long rest. The damage you deal increases to 2d10 +1d10 per ki point fire damage at level 18. This damage is not affected by the external stance.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When an attack would reduce you to 0 hit points, you may instead fall out of your current stance and be reduced to 1 hit point and 0 ki remaining. The attacker takes 2d{{arisen:die}} + 1d{{arisen:die}} fire damage per ki point you had left before you were reduced to 0.</description>
+		</sheet>
+		<rules>
+			<stat name="arisen:die" value="8" />
+			<stat name="arisen:die" value="2" level="18" />
+		</rules>
+	</element>
+
+</elements>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Cultivator-KiFortress.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-KiFortress.xml" />
+		</update>
+	</info>
+	<element name="Ki Fortress" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_CULTIVATOR_KI_FORTRESS">
+		<supports>Cultivator Technique</supports>
+		<description>
+			<p>Ki Fortress adepts are taught that the best offense is a perfect defense. They learn that the shield should be the first weapon you grab, not the sword. Disciples of the technique strive to become and impenetrable wall between their allies and those who would do harm.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_KI_FORTRESS_KI_SHIELDS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_KI_FORTRESS_SHIELD_LEGERDEMAIN" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_KI_FORTRESS_FORCE_SHIELDS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_KI_FORTRESS_LAST_BASTION" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_KI_FORTRESS_DESTRUCTIVE_SHIELDING" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_KI_FORTRESS_KI_SHIELDS" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_KI_FORTRESS_SHIELD_LEGERDEMAIN" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_KI_FORTRESS_FORCE_SHIELDS" level="7" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_KI_FORTRESS_LAST_BASTION" level="11" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_KI_FORTRESS_DESTRUCTIVE_SHIELDING" level="15" />
+		</rules>
+	</element>
+	<element name="Ki Shields" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_KI_FORTRESS_KI_SHIELDS">
+		<description>
+			<p>Upon reaching 3rd level, you begin to steer your cultivation towards the arts of shield usage and creation. Shields are now a d6 light versatile (d8) bludgeoning weapon for you. You may don a shield with the same Use an object action you use to draw it. Magic shields that have bonuses to AC also apply the same bonuses to any attack and damage rolls you make with those shields.</p>
+			<p class="indent">Furthermore, you gain the ability to cast spells, using your shield as a spellcasting focus. You now know the cantrips Blade Ward and True Strike, and you may target a number of creatures equal to your proficiency bonus within your aura whenever you cast them.</p>
+			<p class="indent">Lastly, you may spend 1 ki point and cast the 1st level spells from the list below using Intelligence as your spellcasting modifier. You may cast 2nd level spells from the list below using 2 ki points at 9th level, 3rd level spells using 3 ki points at 13th level, and 4th level spells using 4 ki points at 19th level. You may cast any spell from the list below as a bonus action.</p>
+			<p class="indent">When you gain the ability to cast higher level spells, you may spend 1 ki point per spell level to cast lower level spells at your highest level.</p>
+			<h5>Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1</td><td>Shield, Shield of Faith, Tenser's Floating Disk</td></tr>
+				<tr><td>2</td><td>Immovable Object, Warding Bond, Warding Wind</td></tr>
+				<tr><td>3</td><td>Intellect Fortress, Spirit Guardian, Wall of Sand</td></tr>
+				<tr><td>4</td><td>Fire shield, Stoneskin, Wall of Fire</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Shields are now a d6 light versatile (d8) bludgeoning weapon for you. You may don a shield with the same Use an object action you use to draw it. Magic shields that have bonuses to AC also apply the same bonuses to any attack and damage rolls you make with those shields. You gain the ability to cast spells, using your shield as a spellcasting focus. You now know the cantrips Blade Ward and True Strike, and you may target {{proficiency}} creatures within your aura whenever you cast them. &#13;
+			You may spend 1 ki point and cast the 1st level spells from the list below using Intelligence as your spellcasting modifier. You may cast any spell from the list as a bonus action.</description>
+			<description level="9">Shields are now a d6 light versatile (d8) bludgeoning weapon for you. You may don a shield with the same Use an object action you use to draw it. Magic shields that have bonuses to AC also apply the same bonuses to any attack and damage rolls you make with those shields. You gain the ability to cast spells, using your shield as a spellcasting focus. You now know the cantrips Blade Ward and True Strike, and you may target {{proficiency}} creatures within your aura whenever you cast them. &#13;
+			You may spend 1 ki point and cast the 1st level spells from the list below using Intelligence as your spellcasting modifier , you may spend 2 ki points to cast 2nd level spells. You may cast any spell from the list as a bonus action.</description>
+			<description level="13">Shields are now a d6 light versatile (d8) bludgeoning weapon for you. You may don a shield with the same Use an object action you use to draw it. Magic shields that have bonuses to AC also apply the same bonuses to any attack and damage rolls you make with those shields. You gain the ability to cast spells, using your shield as a spellcasting focus. You now know the cantrips Blade Ward and True Strike, and you may target {{proficiency}} creatures within your aura whenever you cast them. &#13;
+			You may spend 1 ki point and cast the 1st level spells from the list below using Intelligence as your spellcasting modifier, you may spend 2 ki points to cast 2nd level spells or 3 ki points to cast 3rd level spells. You may cast any spell from the list as a bonus action.</description>
+			<description level="19">Shields are now a d6 light versatile (d8) bludgeoning weapon for you. You may don a shield with the same Use an object action you use to draw it. Magic shields that have bonuses to AC also apply the same bonuses to any attack and damage rolls you make with those shields. You gain the ability to cast spells, using your shield as a spellcasting focus. You now know the cantrips Blade Ward and True Strike, and you may target {{proficiency}} creatures within your aura whenever you cast them. &#13;
+			You may spend 1 ki point and cast the 1st level spells from the list below using Intelligence as your spellcasting modifier, you may spend 2 ki points to cast 2nd level spells, 3 points to cast 3rd or 4 points to cast 4th level spells. You may cast any spell from the list as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Shield Legerdemain" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_KI_FORTRESS_SHIELD_LEGERDEMAIN">
+		<description>
+			<p>Beginning at 3rd level, you master the ability to harden sections of your aura, granting protection to yourself or those around you. You may spent a ki point to cast Shield as a reaction when an ally within your aura is about to be hit by an attack. When you cast the spell in such a way, you may target the ally with the spell.</p>
+		</description>
+		<sheet>
+			<description>You may spent a ki point to cast Shield on an ally as a reaction when they are within your aura and are about to be hit by an attack.</description>
+		</sheet>
+	</element>
+	<element name="Force Shields" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_KI_FORTRESS_FORCE_SHIELDS">
+		<description>
+			<p>At 7th level, your mastery has extended to physical shields as well as metaphysical. You may make a thrown weapon attack with an energy version of your shield, with a range of 15/30 using Strength for attack and damage rolls. It deals 1d6 force damage and additional damage equal to any magic AC bonuses imparted by the shield. The shield shatters on impact.</p>
+			<p class="indent">Additionally, you may apply the bonuses to AC granted by a single shield on your person to your saves. This effect ends when you are rendered unconscious.</p>
+		</description>
+		<sheet>
+			<description>You may make a thrown weapon attack with an energy version of your shield, with a range of 15/30 using Strength for attack and damage rolls. It deals 1d6 force damage and additional damage equal to any magic AC bonuses imparted by the shield. The shield shatters on impact.</description>
+		</sheet>
+		<rules>
+			<stat name="strength:save:misc" value="2" requirements="[shield:any]" />
+			<stat name="dexterity:save:misc" value="2" requirements="[shield:any]" />
+			<stat name="constitution:save:misc" value="2" requirements="[shield:any]" />
+			<stat name="intelligence:save:misc" value="2" requirements="[shield:any]" />
+			<stat name="wisdom:save:misc" value="2" requirements="[shield:any]" />
+			<stat name="charisma:save:misc" value="2" requirements="[shield:any]" />
+		</rules>
+	</element>
+	<element name="Last Bastion" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_KI_FORTRESS_LAST_BASTION">
+		<description>
+			<p>Upon reaching 11th level, saving your allies has become your prerogative. As long as you have 1 ki point remaining, you may use a bonus action to brace yourself. Until the end of your next turn, your movement speed becomes 0, you act as three-quarters cover for creatures medium size or smaller in a 15 foot cone behind you, and you gain a +2 to your AC and saving throws.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>As long as you have 1 ki point remaining, you may use a bonus action to brace yourself. Until the end of your next turn, your movement speed becomes 0, you act as three-quarters cover for creatures medium size or smaller in a 15 foot cone behind you, and you gain a +2 to your AC and saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Destructive Shielding" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_KI_FORTRESS_DESTRUCTIVE_SHIELDING">
+		<description>
+			<p>Starting at 15th level, your shield usage has reached a deadly efficiency. When you hit an enemy with an attack using a shield, you may use up to 3 ki points to do an extra 1d8 damage, plus 1d8 per ki point used after the 1st. Additionally, when you land a critical hit on an enemy, you may make a single extra attack as part of that attack action.</p>
+		</description>
+		<sheet>
+			<description>When you hit an enemy with an attack using a shield, you may use up to 3 ki points to do an extra 1d8 damage, plus 1d8 per ki point used after the 1st. Additionally, when you land a critical hit on an enemy, you may make a single extra attack as part of that attack action.</description>
+		</sheet>
+	</element>
+
+</elements>

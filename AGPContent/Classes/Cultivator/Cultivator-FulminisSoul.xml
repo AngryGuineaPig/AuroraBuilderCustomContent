@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Cultivator-FulminisSoul.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-FulminisSoul.xml" />
+		</update>
+	</info>
+	<element name="Fulminis Soul" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_CULTIVATOR_FULMINIS_SOUL">
+		<supports>Cultivator Technique</supports>
+		<description>
+			<p>Cultivators of this technique have chosen the path of channeled lightning. Able to flicker to and fro, these cultivators manipulate and embody the deadlier qualities of the bolts they frequently employ.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_LIGHTNING_STRIKES" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_STANCES" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_STANCE_INTERNAL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_STANCE_EXTERNAL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_CONDUCTIVE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_FULMINANT" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_RETURN_STROKE" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_LIGHTNING_STRIKES" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_STANCES" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_CONDUCTIVE" level="7" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_FULMINANT" level="11" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_RETURN_STROKE" level="15" />
+		</rules>
+	</element>
+	<element name="Lightning Strikes" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_LIGHTNING_STRIKES">
+		<description>
+			<p>At 3rd level when you take this subclass, you leverage the forces generated from your lightning fast strikes to fuel your abilities. When you successfully hit an enemy, and your previous attack was successful, you gain a spark. You can have a maximum number of sparks equal to your proficiency bonus, losing all sparks gained beyond this number. You lose all sparks when you spend a minute without gaining or losing any sparks.</p>
+			<p class="indent">When an ability requires you to spend ki points, you may instead spend a spark instead of 1 ki point. If an ability’s ki cost exceeds the number of sparks, you must pay the remaining value in ki.</p>
+			<p class="indent">Additionally, you may use your ki points or sparks for the following abilities:</p>
+			<ul>
+				<li>Once per turn, you may spend 1 ki point and 10 feet of your movement to teleport 10 feet without using an action.</li>
+				<li>You may spend 1 ki point to increase your attack range by 5 feet until the end of your next turn, to a maximum of 10 feet.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you successfully hit an enemy, and your previous attack was successful, you gain a spark. You can have a maximum of {{proficiency}} sparks, losing all sparks gained beyond this number. You lose all sparks when you spend a minute without gaining or losing any sparks.&#13;
+			When an ability requires you to spend ki points, you may instead spend a spark instead of 1 ki point. If an ability’s ki cost exceeds the number of sparks, you must pay the remaining value in ki. Additionally, you may use your ki points or sparks for the following abilities:&#13;
+			Once per turn, you may spend 1 ki point and 10 feet of your movement to teleport 10 feet without using an action.&#13;
+			You may spend 1 ki point to increase your attack range by 5 feet until the end of your next turn, to a maximum of 10 feet.</description>
+		</sheet>
+	</element>
+	<element name="Stances" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_STANCES">
+		<description>
+			<p>Starting at 3rd level, your technique allows you access to knowledge on how to use ki internally for defensive abilities and externally for offensive ones.</p>
+			<p class="indent">You can choose the external or internal stance before you roll for initiative, unless surprised. Otherwise, entering or switching between stances is a bonus action. Unless otherwise noted, you can only use the abilities and benefits granted by each stance while you're in it.</p>
+			<p class="indent">You are unable to use stances while you are incapacitated. If you are incapacitated while in a stance, you may regain either stance as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can choose the external or internal stance before you roll for initiative, unless surprised. Otherwise, entering or switching between stances is a bonus action. You are unable to use stances while you are incapacitated.</description>
+		</sheet>
+	</element>
+	<element name="Internal Stance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_STANCE_INTERNAL">
+		<description>
+			<ul>
+				<li>Once per turn, as you make an attack roll, you may instead roll twice and make two attacks. Each attack does half damage rounded down.</li>
+				<li>When you make an attack with disadvantage, you may spend 2 ki points to ignore the disadvantage.</li>
+				<li>Once per turn, whenever you would gain a spark, you may deal additional lightning damage equal to your proficiency bonus to the attacked enemy.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+	</element>
+	<element name="External Stance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_STANCE_EXTERNAL">
+		<description>
+			<ul>
+				<li>When you take the attack action, you may instead spend 3 ki points to blast lightning out of your hands. All creatures in a 20 foot cone, 10 foot sphere centered on yourself or 40 foot line (player’s choice) originating from your position must make a Dexterity saving throw. They take 4d8 lightning damage on a fail, or half that on a success. This damage increases by 1d8 at 7th, 11th and 15th level.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+	</element>
+	<element name="Conductive" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_CONDUCTIVE">
+		<description>
+			<p>Beginning at 7th level, your body has become extremely efficient at sending lightning through it. Once per turn, while in internal stance, when you land a consecutive hit and have already gained sparks this turn, you gain 2 sparks instead of one.</p>
+			<p class="indent">Additionally, when you gain a spark, you may immediately spend it to deal 1d4 lightning damage, heal 1d4 hit points, and gain an extra 5 feet of movement until the start of your next turn. This movement gain can stack.</p>
+		</description>
+		<sheet>
+			<description>Once per turn, while in internal stance, when you land a consecutive hit and have already gained sparks this turn, you gain 2 sparks instead of one.&#13;
+			Additionally, when you gain a spark, you may immediately spend it to deal 1d4 lightning damage, heal 1d4 hit points, and gain an extra 5 feet of movement until the start of your next turn. This movement gain can stack.</description>
+		</sheet>
+	</element>
+	<element name="Fulminant" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_FULMINANT">
+		<description>
+			<p>Upon reaching 11th level, you begin discharging excess electricity, damaging nearby foes. While in external stance you may make an attack as a bonus action, and when you spend ki or sparks to teleport, you may deal 2d4 lightning damage as part of that teleport to enemies within 10 feet of your destination.</p>
+		</description>
+		<sheet>
+			<description>While in external stance you may make an attack as a bonus action, and when you spend ki or sparks to teleport, you may deal 2d4 lightning damage as part of that teleport to enemies within 10 feet of your destination.</description>
+		</sheet>
+	</element>
+	<element name="Return Stroke" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FULMINIS_SOUL_RETURN_STROKE">
+		<description>
+			<p>At 15th level, as you spill with electrified energy, you begin to strike like true lightning. When you start your turn in external stance, with 4 or more sparks, you may spend 2 sparks to make an additional attack as part of the attack action. You may continue to pay and attack within the same turn, as long as you have 2 or more sparks.</p>
+		</description>
+		<sheet>
+			<description>When you start your turn in external stance, with 4 or more sparks, you may spend 2 sparks to make an additional attack as part of the attack action. You may continue to pay and attack within the same turn, as long as you have 2 or more sparks.</description>
+		</sheet>
+	</element>
+</elements>

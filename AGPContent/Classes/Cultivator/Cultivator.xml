@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Cultivator.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator.xml" />
+		</update>
+	</info>
+	<element name="Cultivator" type="Class" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_CULTIVATOR">
+		<description>
+		<p>A dwarf flexes his fingers as the newest weapon disappears inside his core. Delighted by the prospect of mastering these new arms, he summons the weapon to his hands as he rises to charge his sparring partner. The hammer connects, knocking the opponent back and off balance, only to be instantly assaulted by the blades that replace the hammer in a flash.</p>
+		<p class="indent">While her enemies pour into the room to surround her, the elf calmly prepares her next move with energy crackling between her hands. When the moment is right, she vanishes in a burst of lightning. Her befuddled foes don’t realize that she’s now standing in the entrance behind them until she unleashed waves of electricity back into the chamber.</p>
+		<p class="indent">An orc drops from the roof, rolling with the fall to come back up running. Heading towards his companions, he can see they are blissfully unaware of the sorcerer preparing something devastating behind them. He throws his shield at the sorcerer and connects, buying him more time to arrive behind his party to generate a large shield of light and part the sea of fire that spews forth from the caster.</p>
+		<p class="indent">Cultivators are those who would learn powerful techniques to further their strength. They see every fight as an opportunity to grow, and every enemy is a treasure trove of experience waiting to be plundered. A cultivator often seeks physical perfection in themselves and their techniques.</p>
+		<h4>A Foundation of Ki</h4>
+		<p>Ki is a fundamental force that resides in all living and non-living things. Cultivators have learned ways to gather this power and accumulate it in an internal reservoir that they call their ‘foundation’. Drawing from this Ki reserve, they can perform secret techniques to create supernatural effects.</p>
+		<p class="indent">These techniques may have been passed on to a cultivator by an instructor or they may have learned it from an ancient manual. In rare cases, they might have even created one by themselves. Acquiring their technique is a significant event for a cultivator, as they will most likely be drawn to honing and perfecting it for the rest of their lives.</p>
+		<h4>Pursuit of Perfection</h4>
+		<p>"Civilize the mind, but make savage the body." Cultivators strive to grow their foundation to the highest peaks and to break through barriers in their cultivation as quickly as possible. This pursuit drives them towards combat, as the knowledge and experience gained in battle is crucial for their progress. Their single-minded pursuits cause many cultivators to live on their own, eschewing the crowds and comforts of city life. At the same time, cultivators readily join adventuring groups to meet their needs for combat, wealth and materials – all in service of further honing their craft.</p>
+		<h4>CREATING AN ARCANE ARMSMAN</h4>
+		<p>When creating a cultivator think about your characters background and their motivation. Becoming a cultivator is a path that takes dedication. Why is your character so dedicated to growing stronger? An unfortunate event? A role model? How did your character begin to learn their respective technique? Were they taught at a dojo with others, or under a master alone? It could even be as simple as a manuscript found in ruins.</p>
+		<p class="indent">What your cultivator is searching for, whether it be looming near or in the far future, can be important. Simple or not, something drives a cultivator to continue on their painful and arduous journey.</p>
+		<h5 class="caption">QUICK BUILD</h5>
+		<p>You can make a cultivator quickly by following these suggestions. First, make Strength or Dexterity your highest ability score, depending on your choice of weapon, followed by Intelligence. Second, choose the Far Traveler Background.</p>
+		<h2>CLASS FEATURES</h2>
+		<p>As a Cultivator, you gain the following class features.</p>
+		<h5 class="caption">HIT POINTS</h5>
+		<ul class="unstyled">
+			<li><strong>Hit Dice:</strong> 1d8 per Cultivator level</li>
+			<li><strong>Hit Points at 1st Level:</strong> 8 + your constitution modifier</li>
+			<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your constitution modifier per Cultivator level after 1st</li>
+		</ul>
+		<h5 class="caption">PROFICIENCIES</h5>
+		<ul class="unstyled mb">
+			<li><strong>Armor:</strong> Light Armour, Medium Armour, Shields </li>
+			<li><strong>Weapons:</strong> All Simple and Martial Weapons </li>
+			<li><strong>Tools:</strong> Calligrapher's Supplies </li>
+		</ul>
+		<ul class="unstyled">
+			<li><strong>Saving Throws:</strong> Constitution, Intelligence</li>
+			<li><strong>Skills:</strong> Choose three from Acrobatics, Athletics, Deception, History, Intimidation, Sleight of Hand, Stealth, Survival</li>
+		</ul>
+		<h5 class="caption">EQUIPMENT</h5>
+		<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+		<ul>
+			<li><i>(a)</i> a Martial Weapon and a Shield or <i>(b)</i> two Martial Weapons </li>
+			<li><i>(a)</i> A Longbow and 20 arrows or <i>(b)</i> two Handaxes</li>
+			<li><i>(a)</i> A scholar's pack or <i>(b)</i> an explorer's pack</li>
+		</ul>
+		<h5 class="caption">THE CULTIVATOR</h5>
+		<table class="class-features">
+			<thead>
+				<tr><td class="col-5">Level</td><td class="col-10">Features</td><td class="col-10">Ki Pool</td></tr>
+			</thead>
+			<tr><td>1st</td>	<td class="left">Cultivator's Aura, Ki, Unarmored Defense</td>	<td>1</td></tr>
+			<tr><td>2nd</td>	<td class="left">Fighting Style</td>							<td>2</td></tr>
+			<tr><td>3rd</td>	<td class="left">Techniques, Technique Feature</td>				<td>3</td></tr>
+			<tr><td>4th</td>	<td class="left">Ability Score Increase</td>					<td>4</td></tr>
+			<tr><td>5th</td>	<td class="left">Extra Attack, Breakthrough</td>				<td>5</td></tr>
+			<tr><td>6th</td>	<td class="left">Aura Infusion</td>								<td>6</td></tr>
+			<tr><td>7th</td>	<td class="left">Technique Feature</td>							<td>7</td></tr>
+			<tr><td>8th</td>	<td class="left">Ability Score Increase</td>					<td>8</td></tr>
+			<tr><td>9th</td>	<td class="left">Of Sound Mind and Body</td>					<td>9</td></tr>
+			<tr><td>10th</td>	<td class="left">Auric Influence</td>							<td>10</td></tr>
+			<tr><td>11th</td>	<td class="left">Technique Feature</td>							<td>11</td></tr>
+			<tr><td>12th</td>	<td class="left">Ability Score Increase</td>					<td>12</td></tr>
+			<tr><td>13th</td>	<td class="left">Reforged Body</td>								<td>13</td></tr>
+			<tr><td>14th</td>	<td class="left">Aura Mastery</td>								<td>14</td></tr>
+			<tr><td>15th</td>	<td class="left">Technique Feature</td>							<td>15</td></tr>
+			<tr><td>16th</td>	<td class="left">Ability Score Increase</td>					<td>16</td></tr>
+			<tr><td>17th</td>	<td class="left">Cultivation Assault</td>						<td>17</td></tr>
+			<tr><td>18th</td>	<td class="left">Accelerated Infusion</td>						<td>18</td></tr>
+			<tr><td>19th</td>	<td class="left">Ability Score Increase</td>					<td>19</td></tr>
+			<tr><td>20th</td>	<td class="left">Ki Incarnate</td>								<td>20</td></tr>
+		</table>
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_CULTIVATORS_AURA" />
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_KI" />
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_UNARMORED_DEFENSE" />
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_FIGHTING_STYLE" />
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_CULTIVATOR_TECHNIQUE" />
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_ASI" />
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_EXTRA_ATTACK" />
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_BREAKTHROUGH" />
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_AURA_INFUSION" />
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_OF_SOUND_MIND_AND_BODY" />
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_AURIC_INFLUENCE" />
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_REFORGED_BODY" />
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_AURA_MASTERY" />
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_CULTIVATION_ASSAULT" />
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_ACCELERATED_INFUSION" />
+		<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_KI_INCARNATE" />
+		</description>
+		<setters>
+			<set name="hd">d8</set>
+			<set name="short">Cultivators are those who would learn powerful techniques to further their strength.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_RDDT_MULTICLASS_CULTIVATOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_RDDT_MULTICLASS_CULTIVATOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_RDDT_MULTICLASS_CULTIVATOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_RDDT_MULTICLASS_CULTIVATOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_RDDT_MULTICLASS_CULTIVATOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_RDDT_MULTICLASS_CULTIVATOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_RDDT_MULTICLASS_CULTIVATOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" requirements="!ID_RDDT_MULTICLASS_CULTIVATOR" />
+			<select type="Proficiency" name="Skill Proficiency (Cultivator)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="3" requirements="!ID_RDDT_MULTICLASS_CULTIVATOR"/>
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_CULTIVATORS_AURA" level="1" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_KI" level="1" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_FIGHTING_STYLE" level="2" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_UNARMORED_DEFENSE" level="1" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_CULTIVATOR_TECHNIQUE" level="3" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_ASI" level="4" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_BREAKTHROUGH" level="5" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_AURA_INFUSION" level="6" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_OF_SOUND_MIND_AND_BODY" level="9" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_AURIC_INFLUENCE" level="10" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_REFORGED_BODY" level="13" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_AURA_MASTERY" level="14" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_CULTIVATION_ASSAULT" level="17" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_ACCELERATED_INFUSION" level="18" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_KI_INCARNATE" level="20" />
+		</rules>
+		<multiclass id="ID_RDDT_MULTICLASS_CULTIVATOR">
+			<prerequisite>Strength 13 or Dexterity 13, and Intelligence 13</prerequisite>
+			<requirements>(([str:13]|[dex:13]),[int:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Cultivator's Aura" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_CULTIVATORS_AURA">
+		<description>
+			<p>Your intense training and tempering of your body has left you with the ability to physically exude your skill and power, allowing you to coerce or even physically affect others. As long as you have at least 1 ki point remaining your aura is active with a range of 10 feet, and has the following abilities:</p>
+			<ul>
+				<li>You may make Charisma based skill checks using your Intelligence modifier.</li>
+				<li>Enemies that make a saving throw while in your aura do so at a penalty equal to half your Intelligence modifier rounded down.</li>
+				<li>Your movement speed increases by 5 feet.</li>
+			</ul>
+			<p>You may dismiss and reactivate your aura as a bonus action, and it is automatically dismissed once you become unconscious.</p>
+		</description>
+		<sheet>
+			<description>As long as you have at least 1 ki point remaining your aura is active with a range of 10 feet, and has the following abilities&#13;
+			You may make Charisma based skill checks using your Intelligence modifier. Enemies that make a saving throw while in your aura do so at a -{{aura:penalty}} penalty. Your movement speed increases by 5 feet.&#13;
+			You may dismiss and reactivate your aura as a bonus action, and it is automatically dismissed once you become unconscious.</description>
+		</sheet>
+		<rules>
+			<stat name="speed" value="5" />
+			<stat name="aura:penalty" value="0" />
+			<stat name="aura:penalty" value="1" requirements="[int:14]" />
+			<stat name="aura:penalty" value="1" requirements="[int:18]" />
+		</rules>
+	</element>
+	<element name="Ki" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_KI">
+		<description>
+			<p>Your cultivation has begun to afford you to access to the condensed form of pure energy. Your access to this energy is represented by your ki pool. Your cultivator level determines the amount of ki you have, as shown in the Ki Pool column of the cultivator table. You may not have more ki than this maximum amount.</p>
+			<p class="indent">You can spend these points to fuel various techniques, stance abilities, and features. You start knowing three such features: Empowered Body, Relentless Pursuit, Spring Attack.</p>
+			<p class="indent">When you spend ki, that ki is unavailable until you finish a short or long rest, at the end of which you condense more ki, refilling your core.</p>
+			<p class="indent">Some of your technique and stance features require your target to make a saving throw to resist the feature’s effects. The saving throw DC is calculated as follows:</p>
+			<p class="indent"><b>Cultivator Save DC</b> = 8 + your proficiency bonus + your Intelligence modifier</p>
+			<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_EMPOWERED_BODY" />
+			<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_RELENTLESS_PURSUIT" />
+			<div element="ID_RDDT_CLASS_FEATURE_CULTIVATOR_SPRING_ATTACK" />
+		</description>
+		<sheet>
+			<description>You have {{ki:points}} Ki Points and your Ki DC is {{cultivator save:dc}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ki:points" value="level:cultivator" />
+			<stat name="cultivator save:dc" value="8" />
+			<stat name="cultivator save:dc" value="intelligence:modifier" />
+			<stat name="cultivator save:dc" value="proficiency" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_EMPOWERED_BODY" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_RELENTLESS_PURSUIT" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_SPRING_ATTACK" />
+		</rules>
+	</element>
+	<element name="Empowered Body" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_EMPOWERED_BODY">
+		<description>
+			<p>You may spend 1 ki point to add your proficiency bonus to any Dexterity or Strength based skill check. If you are already proficient in the skill, then you instead double your proficiency bonus.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>You may spend 1 ki point to add your proficiency bonus to any Dexterity or Strength based skill check. If you are already proficient in the skill, then you instead double your proficiency bonus.</description>
+		</sheet>
+	</element>
+	<element name="Relentless Pursuit" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_RELENTLESS_PURSUIT">
+		<description>
+			<p>When an enemy adjacent to you would attempt to move, you may, as a reaction, spend 1 ki point to move up to your movement speed following that enemy.</p>
+		</description>
+		<sheet usage="Ki" action="Reaction">
+			<description>When an enemy adjacent to you would attempt to move, you may, as a reaction, spend 1 ki point to move up to your movement speed following that enemy.</description>
+		</sheet>
+	</element>
+	<element name="Spring Attack" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_SPRING_ATTACK">
+		<description>
+			<p>Whenever you take the dash action you may spend 1 ki point to make an attack as a bonus action.</p>
+		</description>
+		<sheet usage="Ki" action="Bonus Action">
+			<description>Whenever you take the dash action you may spend 1 ki point to make an attack as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Unarmored Defense" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_UNARMORED_DEFENSE">
+		<description>
+			<p>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Intelligence modifier. You can use a Shield and still gain this benefit.</p>
+		</description>
+		<sheet display="false">
+			<description>While you are not wearing any armor, your Armor Class equals {{cultivator unarmored:defence}}. You can use a Shield and still gain this benefit.</description>
+		</sheet>
+		<rules>
+			<stat name="cultivator unarmored:defence" value="10" />
+			<stat name="cultivator unarmored:defence" value="dexterity:modifier" />
+			<stat name="cultivator unarmored:defence" value="intelligence:modifier" />
+			<stat name="ac:calculation" value="cultivator unarmored:defence" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Cultivator)" />
+		</rules>
+	</element>
+	<element name="Fighting Style" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_FIGHTING_STYLE">
+		<description>
+			<p>You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+		<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Cultivator" level="2"/>
+		</rules>
+	</element>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY">
+       <supports>Cultivator</supports>
+    </append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE">
+       <supports>Cultivator</supports>
+    </append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+       <supports>Cultivator</supports>
+    </append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+       <supports>Cultivator</supports>
+    </append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+       <supports>Cultivator</supports>
+    </append>
+	<append id="ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_INTERCEPTION">
+       <supports>Cultivator</supports>
+    </append>
+	<append id="ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_THROWN_WEAPON_FIGHTING">
+       <supports>Cultivator</supports>
+    </append>
+	<append id="ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_UNARMED_FIGHTING">
+       <supports>Cultivator</supports>
+    </append>
+	<append id="ID_WOTC_UA2015_CLASS_FEATURE_FIGHTINGSTYLE_CLOSE_QUARTERS_SHOOTER">
+       <supports>Cultivator</supports>
+    </append>
+	<element name="Cultivator Techniques" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_CULTIVATOR_TECHNIQUE">
+		<description>
+			<p>You begin to devote your life to cultivating and perfecting one of many techniques. Choose a technique detailed at the end of the class description. Your choice grants you features at 3rd Level and again at 6th, 10th, and 14th levels.</p>
+		</description>
+		<sheet display="false">
+			<description>You begin to devote your life to cultivating and perfecting one of many techniques. Choose a technique detailed at the end of the class description. Your choice grants you features at 3rd Level and again at 6th, 10th, and 14th levels.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype" name="Cultivator Technique" supports="Cultivator Technique" level="3" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_ASI">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Cultivator 4)"  supports="Improvement Option,Cultivator,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Cultivator 8)"  supports="Improvement Option,Cultivator,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Cultivator 12)" supports="Improvement Option,Cultivator,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Cultivator 16)" supports="Improvement Option,Cultivator,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Cultivator 19)" supports="Improvement Option,Cultivator,19" level="19" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Breakthrough" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_BREAKTHROUGH">
+		<description>
+			<p>At 5th level, you progress to the next step in your cultivation, strengthening certain aspects of your body. When you gain this feature you may choose one of two options:</p>
+			<ul>
+				<li>Your Speed increases by 5 feet.</li>
+				<li>Your hit point maximum increases by 5.</li>
+			</ul>
+			<p class="indent">You may choose either of these options again at 10th, 15th, and 20th level.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Breakthrough (5)" supports="Breakthrough" />
+			<select type="Class Feature" name="Breakthrough (10)" supports="Breakthrough" level="10" />
+			<select type="Class Feature" name="Breakthrough (15)" supports="Breakthrough" level="15" />
+			<select type="Class Feature" name="Breakthrough (20)" supports="Breakthrough" level="20" />
+		</rules>
+	</element>
+	<element name="Speed Up Breakthrough" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_BREAKTHROUGH_SPEED">
+		<supports>Breakthrough</supports>
+		<description>
+			<p>Your Speed increases by 5 feet.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="speed" value="5" />
+		</rules>
+	</element>
+	<element name="Hit Point Breakthrough" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_BREAKTHROUGH_HP">
+		<supports>Breakthrough</supports>
+		<description>
+			<p>Your Hit Point Maximum increases by 5 feet.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="5" />
+		</rules>
+	</element>
+	<element name="Aura Infusion" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_AURA_INFUSION">
+		<description>
+			<p>Upon reaching 6th level, you harness the beneficial aspects of your aura to accelerate your body's natural healing. As a bonus action you may spend 1 ki point to heal yourself for 2d4. You may instead use an action and 2 ki points to touch and heal another creature for 2d4.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>Upon reaching 6th level, you harness the beneficial aspects of your aura to accelerate your body's natural healing. As a bonus action you may spend 1 ki point to heal yourself for 2d4. You may instead use an action and 2 ki points to touch and heal another creature for 2d4.</description>
+		</sheet>
+	</element>
+	<element name="Of Sound Mind and Body" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_OF_SOUND_MIND_AND_BODY">
+		<description>
+			<p>At 9th level, your mastery over ki allows you to better safeguard yourself mentally and physically. When you are subjected to a spell or effect that allows you to make a Constitution or Intelligence saving throw to take only half damage, you may spend 1 ki point to instead take no damage if you succeed on the saving throw.</p>
+			<p class="indent">You do not gain the benefit of this ability when you are unconscious.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>At 9th level, your mastery over ki allows you to better safeguard yourself mentally and physically. When you are subjected to a spell or effect that allows you to make a Constitution or Intelligence saving throw to take only half damage, you may spend 1 ki point to instead take no damage if you succeed on the saving throw.&#13;
+			You do not gain the benefit of this ability when you are unconscious.</description>
+		</sheet>
+	</element>
+	<element name="Auric Influence" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_AURIC_INFLUENCE">
+		<description>
+			<p>Beginning at 10th level, your aura control has become subtle enough to continually influence those you would interact with. You may choose one additional Charisma based skill to gain proficiency in.</p>
+			<p class="indent">Additionally, whenever you make a Charisma based skill check, you can spend 1 ki point to reroll it and take the second result.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>Whenever you make a Charisma based skill check, you can spend 1 ki point to reroll it and take the second result.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Auric Influence)" supports="ID_PROFICIENCY_SKILL_PROFICIENCY_DECEPTION|ID_PROFICIENCY_SKILL_PROFICIENCY_INTIMIDATION|ID_PROFICIENCY_SKILL_PROFICIENCY_PERSUASION|ID_PROFICIENCY_SKILL_PROFICIENCY_PERFORMANCE" />
+		</rules>
+	</element>
+	<element name="Reforged Body" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_REFORGED_BODY">
+		<description>
+			<p>When you reach 13th level, you begin to integrate materials into your cultivation to reforge your body, tempering it with the elements. You gain resistance to one damage type of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Reforged Body Resistance" supports="Reforged Body" />
+		</rules>
+	</element>
+	<element name="Reforged Body, Acid" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_REFORGED_BODY_ACID">
+		<supports>Reforged Body</supports>
+		<description>
+			<p>You gain resistance to Acid Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>
+	<element name="Reforged Body, Bludgeoning" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_REFORGED_BODY_BLUDGEONING">
+		<supports>Reforged Body</supports>
+		<description>
+			<p>You gain resistance to Bludgeoning Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+		</rules>
+	</element>
+	<element name="Reforged Body, Cold" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_REFORGED_BODY_COLD">
+		<supports>Reforged Body</supports>
+		<description>
+			<p>You gain resistance to Cold Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Reforged Body, Fire" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_REFORGED_BODY_FIRE">
+		<supports>Reforged Body</supports>
+		<description>
+			<p>You gain resistance to Fire Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+	<element name="Reforged Body, Force" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_REFORGED_BODY_FORCE">
+		<supports>Reforged Body</supports>
+		<description>
+			<p>You gain resistance to Force Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+		</rules>
+	</element>
+	<element name="Reforged Body, Lightning" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_REFORGED_BODY_LIGHTNING">
+		<supports>Reforged Body</supports>
+		<description>
+			<p>You gain resistance to Lightning Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+	<element name="Reforged Body, Necrotic" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_REFORGED_BODY_NECROTIC">
+		<supports>Reforged Body</supports>
+		<description>
+			<p>You gain resistance to Necrotic Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+	<element name="Reforged Body, Piercing" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_REFORGED_BODY_PIERCING">
+		<supports>Reforged Body</supports>
+		<description>
+			<p>You gain resistance to Piercing Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+		</rules>
+	</element>
+	<element name="Reforged Body, Psychic" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_REFORGED_BODY_PSYCHIC">
+		<supports>Reforged Body</supports>
+		<description>
+			<p>You gain resistance to Psychic Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	<element name="Reforged Body, Radiant" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_REFORGED_BODY_RADIANT">
+		<supports>Reforged Body</supports>
+		<description>
+			<p>You gain resistance to Radiant Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
+	<element name="Reforged Body, Slashing" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_REFORGED_BODY_SLASHING">
+		<supports>Reforged Body</supports>
+		<description>
+			<p>You gain resistance to Slashing Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+		</rules>
+	</element>
+	<element name="Reforged Body, Thunder" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_REFORGED_BODY_THUNDER">
+		<supports>Reforged Body</supports>
+		<description>
+			<p>You gain resistance to Thunder Damage.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
+	</element>
+	<element name="Aura Mastery" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_AURA_MASTERY">
+		<description>
+			<p>At 14th level, you become adept at manipulating your aura to gain a multitude of information from it, affect a larger area, or focus its effects on a single enemy. As an action you may extend the range of your aura to 30 feet until the end of your next turn. While the range is extended you are aware of any creatures, living or otherwise, within your aura. This ability does not tell you their location, only that they are within your aura.</p>
+			<p class="indent">You may choose to instead, as an action, focus your aura on one creature to enhance its effect. You may choose only one target for your Culitvator's Aura ability within 30 feet and spend 1 ki point, the saving throw penalty increases by 1 and you have a bonus to your attacks to hit that creature equal to the total penalty. This ability lasts for a minute and can only be used once per long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>As an action you may extend the range of your aura to 30 feet until the end of your next turn. While the range is extended you are aware of any creatures, living or otherwise, within your aura. This ability does not tell you their location, only that they are within your aura.&#13;
+			You may choose to instead, as an action, spend a ki point and focus your aura on one creature within 30 feet to enhance its effect, the saving throw penalty increases by 1 and you have a bonus to your attacks to hit that creature equal to the total penalty. This ability lasts for a minute.
+			</description>
+		</sheet>
+	</element>
+	<element name="Cultivation Assault" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_CULTIVATION_ASSAULT">
+		<description>
+			<p>Upon reaching 17th level, you learned to assail an enemy's core using your cultivation technique to damage and/or shatter it. As long as you have at least 1 ki point, when you damage a creature with an attack, you can cause that attack to deal extra damage equal to half your Cultivator level. You may use this ability a number of times per long rest equal to your Intelligence modifier (minimum once).</p>
+		</description>
+		<sheet usage="{{intelligence:modifier}}/Long Rest">
+			<description>Upon reaching 17th level, you learned to assail an enemy's core using your cultivation technique to damage and/or shatter it. As long as you have at least 1 ki point, when you damage a creature with an attack, you can cause that attack to deal {{level:cultivator:half}} extra damage.</description>
+		</sheet>
+	</element>
+	<element name="Accelerated Infusion" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_ACCELERATED_INFUSION">
+		<description>
+			<p>At 18th level, the speed at which your aura heals you and others has increased. Your Aura Infusion healing increases to 2d8 and you may touch other creatures as a bonus action to heal them.</p>
+		</description>
+		<sheet>
+			<description>At 18th level, the speed at which your aura heals you and others has increased. Your Aura Infusion healing increases to 2d8 and you may touch other creatures as a bonus action to heal them.</description>
+		</sheet>
+	</element>
+	<element name="Ki Incarnate" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_CULTIVATOR_KI_INCARNATE">
+		<description>
+			<p>Beginning at 20th level, you are ki made flesh. You may use ki features despite having no ki. Whenever you do so, take 1d6 unavoidable force damage per ki point you avoided spending.</p>
+		</description>
+		<sheet>
+			<description>Beginning at 20th level, you are ki made flesh. You may use ki features despite having no ki. Whenever you do so, take 1d6 unavoidable force damage per ki point you avoided spending.</description>
+		</sheet>
+	</element>
+</elements>

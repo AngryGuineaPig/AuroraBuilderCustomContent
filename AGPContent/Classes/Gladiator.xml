@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Gladiator.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Gladiator.xml" />
+		</update>
+	</info>
+	<element name="Gladiator" type="Class" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_GLADIATOR">
+		<description>
+	<p><i>A burly human wrestles an Owlbear into submission barehanded.</i></p>
+	<p class="indent"><i>A half-orc bedecked in shining gold plate strikes down her fifth opponent to the jeers of the audience.</i></p>
+	<p class="indent"><i>A halfling wielding a net and trident dashes in for the finishing blow against a captive ogre, and the crowd goes wild.</i></p>
+	<p>These are Gladiators, warriors that not only fight well, but look good doing it. To a Gladiator, the performance is just as important as the battle prowess. They strive to not only be the best fighter on the field, but also to be the best looking fighter out there. Those who are truly talented can merge the two, and achieve incredible results.</p>
+	<h4>Love of the Crowd</h4>
+	<p>Rather than striving for martial perfection or defending a homeland against invaders, Gladiators pursue a much loftier motivation: the adoration of fans. For a Gladiator, renown comes from fame, and it is a desire for that recognition that drives them to be inventive and resourceful on the battlefield. Though they deal in combat, a true Gladiator is a performer at heart.</p>
+	<p class="indent">This does not mean every Gladiator in the world is greedy or vain --- many use their artful prowess to make a statement. Perhaps they see themselves as a champion of the people, a commoner who has risen to acclaim through their skill. Or perhaps they relish the joy they bring people with their performances. The true motivation of a Gladiator varies, but their ultimate goal demands time in the limelight. A Gladiator is best on the front lines, demonstrating impossible feats that no one else would ever dare perform. They train hard to be sure that they are the best in the field, and their artful flourishes are spectacles unto themselves.</p>
+	<p class="indent">This doesn't mean that a Gladiator cannot be a team player, though --- leaving an opponent stunned by the sheer audacity of an attack can give one of their allies a fantastic opening to strike!</p>
+	<h4>Storied Showmen</h4>
+	<p>Not every pit fighter or back alley pugilist is a Gladiator. Gladiators are the most distinguished in their fields, rising to greatness in and out of the arenas and fairgrounds. Being a talented fighter is far from enough to be a successful Gladiator. Those combatants who simply defeat their opponents will be doomed to tougher and tougher challenges, until they're pitted against something that breaks them. Far too many straight-laced warriors have grunted through a series of powerful combatants, only to meet their end in a fight that was all but rigged.</p>
+	<p class="indent">To survive the arena, a Gladiator needs style and flair. Winning the favor of the crowd means survival, and a better chance of being in fights that are possible to win. Gladiators know this, and use it to their advantage. Most of them are talented warriors that know how to sweep a leg or disarm an opponent. Their talent lies in doing so by sending their opponent sprawling with an arcing kick, or making their opponent's weapon fly clear across the field.</p>
+	<h4>CREATING A GLADIATOR</h4>
+	<p>Gladiators who leave the arena to pursue a life of adventure do so for many different reasons. Consider what your character's motivation for leaving behind a life of fame might be. Perhaps they're bored of the trials they face in the arena, and are looking for glory in the more untamed parts of the world. Perhaps they were fighting to earn their freedom, and now want to see the world. Or perhaps they're simply on a tour to garner more fans!</p>
+	<p>When creating your Gladiator, consider both what brought you to the arena, and why you left it. No matter what, at some point you entered the arena, and your time there will shape your future.</p>
+	<h5 class="caption">QUICK BUILD</h5>
+	<p>You can create a Gladiator quickly by following these suggestions. First, make Strength your highest ability score. Your next highest skill should be Charisma. Second, choose the Soldier background.</p>
+	<h2>CLASS FEATURES</h2>
+	<p>As a Gladiator, you gain the following class features.</p>
+	<h5 class="caption">HIT POINTS</h5>
+	<ul class="unstyled">
+		<li><strong>Hit Dice:</strong> 1d10 per Gladiator level</li>
+		<li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+		<li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per Gladiator level after 1st</li>
+	</ul>
+	<h5 class="caption">PROFICIENCIES</h5>
+	<ul class="unstyled mb">
+		<li><strong>Armor: Light Armour, Medium Armour, Shields</strong> </li>
+		<li><strong>Weapons: All Simple and Martial Weapons</strong> </li>
+		<li><strong>Tools: None</strong> </li>
+	</ul>
+	<ul class="unstyled">
+		<li><strong>Saving Throws: Constitution, Charisma</strong> </li>
+		<li><strong>Skills: Choose three from Acrobatics, Animal Handling, Athletics, Intimidation, Medicine, Perception, Performance or Persuasion</strong> </li>
+	</ul>
+	<h5 class="caption">EQUIPMENT</h5>
+	<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+	<ul>
+		<li><i>(a)</i> chain shirt or <i>(b)</i> scale mail</li>
+		<li><i>(a)</i> martial weapon and a shield or <i>(b)</i> two martial weapons</li>
+		<li><i>(a)</i> two handaxes or <i>(b)</i> two javelins</li>
+		<li><i>(a)</i> an explorer's pack or <i>(b)</i> an entertainer's pack</li>
+	</ul>
+		<h5 class="caption">THE GLADIATOR</h5>
+		<table class="class-features">
+			<thead>
+				<tr><td class="col-5">Level</td><td class="col-10">Features</td><td class="col-10">Flourishes Known</td><td class="col-10">Flair Die</td></tr>
+			</thead>
+			<tr><td> 1st</td><td class="left">Flair for the Dramatic</td><td>---</td><td>d6</td></tr>
+			<tr><td> 2nd</td><td class="left">Flourishes</td><td>3</td><td>d6</td></tr>
+			<tr><td> 3rd</td><td class="left">Martial Role</td><td>3</td><td>d6</td></tr>
+			<tr><td> 4th</td><td class="left">Ability Score Increase</td><td>4</td><td>d6</td></tr>
+			<tr><td> 5th</td><td class="left">Extra Attack</td><td>4</td><td>d8</td></tr>
+			<tr><td> 6th</td><td class="left">Eye-Catching Prowess</td><td>5</td><td>d8</td></tr>
+			<tr><td> 7th</td><td class="left">Martial Role Feature</td><td>5</td><td>d8</td></tr>
+			<tr><td> 8th</td><td class="left">Ability Score Increase</td><td>6</td><td>d8</td></tr>
+			<tr><td> 9th</td><td class="left">Tireless Performer</td><td>6</td><td>d8</td></tr>
+			<tr><td>10th</td><td class="left">Martial Role Feature</td><td>6</td><td>d10</td></tr>
+			<tr><td>11th</td><td class="left">Extra Attack (2)</td><td>7</td><td>d10</td></tr>
+			<tr><td>12th</td><td class="left">Ability Score Increase</td><td>7</td><td>d10</td></tr>
+			<tr><td>13th</td><td class="left">Stylish Strikes</td><td>7</td><td>d10</td></tr>
+			<tr><td>14th</td><td class="left">Ability Score Increase</td><td>8</td><td>d10</td></tr>
+			<tr><td>15th</td><td class="left">Martial Role Feature</td><td>8</td><td>d12</td></tr>
+			<tr><td>16th</td><td class="left">Ability Score Increase</td><td>8</td><td>d12</td></tr>
+			<tr><td>17th</td><td class="left">Heartening Aplomb</td><td>9</td><td>d12</td></tr>
+			<tr><td>18th</td><td class="left">Coup de Grace</td><td>9</td><td>d12</td></tr>
+			<tr><td>19th</td><td class="left">Ability Score Increase</td><td>9</td><td>d12</td></tr>
+			<tr><td>20th</td><td class="left">Enthralling Performance</td><td>10</td><td>d12</td></tr>
+		</table>
+			<div element="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLAIR_FOR_THE_DRAMATIC" />
+			<div element="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISHES" />
+			<div element="ID_RDDT_CLASS_FEATURE_GLADIATOR_MARTIAL_ROLE" />
+			<div element="ID_RDDT_CLASS_FEATURE_GLADIATOR_ASI" />
+			<div element="ID_RDDT_CLASS_FEATURE_GLADIATOR_EXTRA_ATTACK" />
+			<div element="ID_RDDT_CLASS_FEATURE_GLADIATOR_EYE-CATCHING_PROWESS" />
+			<div element="ID_RDDT_CLASS_FEATURE_GLADIATOR_TIRELESS_PERFORMER" />
+			<div element="ID_RDDT_CLASS_FEATURE_GLADIATOR_STYLISH_STRIKES" />
+			<div element="ID_RDDT_CLASS_FEATURE_GLADIATOR_HEARTENING_APLOMB" />
+			<div element="ID_RDDT_CLASS_FEATURE_GLADIATOR_COUP_DE_GRACE" />
+			<div element="ID_RDDT_CLASS_FEATURE_GLADIATOR_ENTHRALLING_PERFORMANCE" />
+		</description>
+		<setters>
+			<set name="hd">d10</set>
+			<set name="short">Distinguished combatants with a penitent for beautiful displays of violence.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_RDDT_MULTICLASS_GLADIATOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_RDDT_MULTICLASS_GLADIATOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_RDDT_MULTICLASS_GLADIATOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_RDDT_MULTICLASS_GLADIATOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_RDDT_MULTICLASS_GLADIATOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_RDDT_MULTICLASS_GLADIATOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_RDDT_MULTICLASS_GLADIATOR"/>
+			<select type="Proficiency" name="Skill Proficiency (Gladiator)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" number="3" requirements="!ID_RDDT_MULTICLASS_GLADIATOR"/>
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLAIR_FOR_THE_DRAMATIC" level="1" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISHES" level="2" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_MARTIAL_ROLE" level="3" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_ASI" level="4" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_EYE-CATCHING_PROWESS" level="6" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_TIRELESS_PERFORMER" level="9" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_STYLISH_STRIKES" level="13" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_HEARTENING_APLOMB" level="17" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_COUP_DE_GRACE" level="18" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_ENTHRALLING_PERFORMANCE" level="20" />
+		</rules>
+		<multiclass id="ID_RDDT_MULTICLASS_GLADIATOR">
+			<prerequisite>Strength 13 and Charisma 13</prerequisite>
+			<requirements>([str:13],[cha:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Flair for the Dramatic" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLAIR_FOR_THE_DRAMATIC">
+		<description>
+			<p>Your stylish fighting style can beguile your enemies. You have a number of Flair Dice equal to your Charisma modifier plus half your Gladiator level, rounded down (minimum of 1). You regain all flair dice when you finish a long rest. When you expend a Flair Die you roll it, unless an ability specifies otherwise.</p>
+			<p class="indent">Your flair dice starts out as a d6, and increases as you gain levels in this class.</p>
+			<p class="indent">You can use a bonus action on your turn to expend a Flair Die and add the result to your next weapon attack or weapon damage roll.</p>
+		</description>
+		<sheet>
+			<description>Your stylish fighting style can beguile your enemies. You have {{flairdie:number}} Flair Dice. You regain all flair dice when you finish a long rest. When you expend a Flair Die you roll it, unless an ability specifies otherwise. &#13;
+			Your flair dice is a d{{flairdie:value}}, and increases as you gain levels in this class.&#13;
+			You can use a bonus action on your turn to expend a Flair Die and add the result to your next weapon attack or weapon damage roll.</description>
+		</sheet>
+		<rules>
+			<stat name="flairdie:number" value="charisma:modifier" />
+			<stat name="flairdie:number" value="level:gladiator:half" />
+			<stat name="flairdie:value" value="6" />
+			<stat name="flairdie:value" value="2" level="5" />
+			<stat name="flairdie:value" value="2" level="10" />
+			<stat name="flairdie:value" value="2" level="15" />
+		</rules>
+	</element>
+	<element name="Flourishes" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISHES">
+		<description>
+			<p>Starting at level 2, you have learned to use performative Flourishes while fighting to gain the edge in battle. When you gain certain Gladiator levels, you learn additional Flourishes of your choice, as shown in the Flourishes Known column of the Gladiator table. You can use only one Flourish during your turn in combat.</p>
+			<p class="indent">If a Flourish calls for a saving throw, the DC for the saving throw is equal to 8 + your proficiency bonus + your Charisma modifier.</p>
+		</description>
+		<sheet usage="1/Round">
+			<description>Starting at level 2, you have learned to use performative Flourishes while fighting to gain the edge in battle. You know {{flourish:count}} Flourishes. You can use only one Flourish during your turn in combat.&#13;
+			If a Flourish calls for a saving throw, your Flourish DC is {{flourish:dc}}</description>
+		</sheet>
+		<rules>
+			<stat name="flourish:dc" value="8" />
+			<stat name="flourish:dc" value="proficiency" />
+			<stat name="flourish:dc" value="charisma:modifier" />
+			<stat name="flourish:count" value="3" level="2" />
+			<stat name="flourish:count" value="1" level="4" />
+			<stat name="flourish:count" value="1" level="6" />
+			<stat name="flourish:count" value="1" level="8" />
+			<stat name="flourish:count" value="1" level="11" />
+			<stat name="flourish:count" value="1" level="14" />
+			<stat name="flourish:count" value="1" level="17" />
+			<stat name="flourish:count" value="1" level="20" />
+			<select type="Class Feature" name="Flourishes (Level 2)" supports="Gladiator Flourish" level="2" number="3" />
+			<select type="Class Feature" name="Flourish (Level 4)" supports="Gladiator Flourish" level="4" number="1" />
+			<select type="Class Feature" name="Flourish (Level 6)" supports="Gladiator Flourish" level="6" number="1" />
+			<select type="Class Feature" name="Flourish (Level 8)" supports="Gladiator Flourish" level="8" number="1" />
+			<select type="Class Feature" name="Flourish (Level 11)" supports="Gladiator Flourish" level="11" number="1" />
+			<select type="Class Feature" name="Flourish (Level 14)" supports="Gladiator Flourish" level="14" number="1" />
+			<select type="Class Feature" name="Flourish (Level 17)" supports="Gladiator Flourish" level="17" number="1" />
+			<select type="Class Feature" name="Flourish (Level 20)" supports="Gladiator Flourish" level="20" number="1" />
+		</rules>
+	</element>
+	<element name="Martial Role" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_MARTIAL_ROLE">
+		<description>
+			<p>At 3rd Level, your specialized methods of fighting have developed into a specific role you play in performative combat. You can choose between Retiarius, Secutor, Dimachaerus, and Thraex, each of which is detailed at the end of the class description. The Role you choose grants you features at 3rd level and again at 7th, 10th, and 15th levels.</p>
+		</description>
+		<sheet display="false">
+			<description>At 3rd Level, your specialized methods of fighting have developed into a specific role you play in performative combat. You can choose between Retiarius, Secutor, Dimachaerus, and Thraex, each of which is detailed at the end of the class description. The Role you choose grants you features at 3rd level and again at 7th, 10th, and 15th levels.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype" name="Martial Role" supports="Martial Role" level="3" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_ASI">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Gladiator 4)" supports="Improvement Option,Gladiator,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Gladiator 8)" supports="Improvement Option,Gladiator,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Gladiator 12)" supports="Improvement Option,Gladiator,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Gladiator 16)" supports="Improvement Option,Gladiator,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Gladiator 19)" supports="Improvement Option,Gladiator,19" level="19" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+			<p class="indent">The number of attacks increases to three when you reach 11th level in this class.</p>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="11">You can attack three times, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+			<stat name="extra attack:count" value="3" level="11" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Eye-Catching Prowess" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_EYE-CATCHING_PROWESS">
+		<description>
+			<p>Starting at level 6, your physical prowess gives you a leg up in social interactions. Whenever you make a skill check using your Charisma skill, you can add your Strength modifier to the skill check as well.</p>
+		</description>
+		<sheet>
+			<description>Starting at level 6, your physical prowess gives you a leg up in social interactions. Whenever you make a skill check using your Charisma skill, you can add your Strength modifier to the skill check as well.</description>
+		</sheet>
+	</element>
+	<element name="Tireless Performer" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_TIRELESS_PERFORMER">
+		<description>
+			<p>Starting at 9th level, your tireless dedication to your craft allows you to draw on additional reserves to keep the show going. Whenever you finish a short rest, you may regain a number of Flair Die equal to half your maximum Flair Die, rounded up.</p>
+		</description>
+		<sheet>
+			<description>Starting at 9th level, your tireless dedication to your craft allows you to draw on additional reserves to keep the show going. Whenever you finish a short rest, you may regain a number of Flair Die equal to half your maximum Flair Die, rounded up.</description>
+		</sheet>
+	</element>
+	<element name="Stylish Strikes" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_STYLISH_STRIKES">
+		<description>
+			<p>When you reach 13th level, even your run-of-the-mill attacks carry a touch of stylish flair. You can add your Charisma modifier to damage rolls in addition to any other bonuses to the rolls.</p>
+		</description>
+		<sheet>
+			<description>When you reach 13th level, even your run-of-the-mill attacks carry a touch of stylish flair. You can add {{charisma:modifier}} to damage rolls in addition to any other bonuses to the rolls.</description>
+		</sheet>
+	</element>
+	<element name="Heartening Aplomb" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_HEARTENING_APLOMB">
+		<description>
+			<p>Starting at level 17, whenever you expend any number of flair die, you gain temporary hit points equal to the total combined roll. These temporary hit points last 10 minutes or until you take a short rest.</p>
+		</description>
+		<sheet>
+			<description>Starting at level 17, whenever you expend any number of flair die, you gain temporary hit points equal to the total combined roll. These temporary hit points last 10 minutes or until you take a short rest.</description>
+		</sheet>
+	</element>
+	<element name="Coup De Grace" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_COUP_DE_GRACE">
+		<description>
+			<p>Once you reach level 18, you can deliver a finishing blow to disabled opponents. When you hit a creature that has half or less of its maximum hit points remaining and is unconscious, paralyzed, or incapacitated with a melee weapon attack, you can force that creature to make a Constitution saving throw against your Flourish DC. If it fails, it is reduced to 0 Hit Points. If it succeeds, it takes 10d10 damage of a type your attack would deal. Once you use this feature you cannot use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Once you reach level 18, you can deliver a finishing blow to disabled opponents. When you hit a creature that has half or less of its maximum hit points remaining and is unconscious, paralyzed, or incapacitated with a melee weapon attack, you can force that creature to make a Constitution saving throw against your Flourish DC. If it fails, it is reduced to 0 Hit Points. If it succeeds, it takes 10d10 damage of a type your attack would deal. Once you use this feature you cannot use it again until you finish a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Enthralling Performance" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_ENTHRALLING_PERFORMANCE">
+		<description>
+			<p>Starting at level 20, whenever you kill a creature, each creature that was allied with the slain creature within 30ft must make a Wisdom Saving throw against your Flourish DC. On a failure, those creatures become your choice of Frightened or Charmed by you until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Starting at level 20, whenever you kill a creature, each creature that was allied with the slain creature within 30ft must make a Wisdom Saving throw against your Flourish DC. On a failure, those creatures become your choice of Frightened or Charmed by you until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<!--Martial Roles-->
+		<element name="Retiarius" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_RETIARIUS">
+			<supports>Martial Role</supports>
+			<description>
+				<p>The Retiarius are combatants that seek to emulate fisherfolk in garb and gear. Fighting with nets and tridents, they often represent the common folk in arena games. They are favorites of the lower class, who love to see Retiarius overcome a heavily armed and armored combatants using equipment they might have in their own homes.</p>
+				<p class="indent"></p>
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_RETIARIUS_NETCASTER" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_RETIARIUS_ENSNARING_FIGHTER" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_RETIARIUS_WEIGHTED_NET" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_RETIARIUS_TRIPPING_TOSS" />
+			</description>
+			<sheet display="false">
+				<description></description>
+			</sheet>
+			<rules>
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RETIARIUS_NETCASTER" level="3" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RETIARIUS_ENSNARING_FIGHTER" level="7" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RETIARIUS_WEIGHTED_NET" level="10" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_RETIARIUS_TRIPPING_TOSS" level="15" />
+			</rules>
+		</element>
+		<element name="Netcaster" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RETIARIUS_NETCASTER">
+			<description>
+				<p>You have specialized training in utilizing nets in and out of combat. Starting at 3rd level when you choose this martial role, given access to sufficient fibrous material, you can repair a damaged net with 1hr of downtime, or create one during a long rest.</p>
+				<p class="indent">In addition, the range for a thrown net for you is 10/30 instead of the normal 5/15, and the base escape DC is 12 instead of 10. You can also add your Strength modifier to attack rolls made with your net, rather than Dexterity, and can attack a creature within melee range without disadvantage.</p>
+			</description>
+			<sheet>
+				<description>You have specialized training in utilizing nets in and out of combat. Starting at 3rd level when you choose this martial role, given access to sufficient fibrous material, you can repair a damaged net with 1hr of downtime, or create one during a long rest.&#13;
+				In addition, the range for a thrown net for you is 10/30 instead of the normal 5/15, and the base escape DC is 12 instead of 10. You can also add your Strength modifier to attack rolls made with your net, rather than Dexterity, and can attack a creature within melee range without disadvantage.</description>
+			</sheet>
+		</element>
+		<element name="Ensnaring Fighter" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RETIARIUS_ENSNARING_FIGHTER">
+			<description>
+				<p>Starting at 7th level, you are particularly adept at combating ensnared opponents. Whenever you restrain a creature within 5ft of you with your net, or start your turn within 5ft of a restrained creature, you can use your bonus action to make a weapon attack against that creature.</p>
+			</description>
+			<sheet action="Bonus Action">
+				<description>Starting at 7th level, you are particularly adept at combating ensnared opponents. Whenever you restrain a creature within 5ft of you with your net, or start your turn within 5ft of a restrained creature, you can use your bonus action to make a weapon attack against that creature.</description>
+			</sheet>
+		</element>
+		<element name="Weighted Net" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RETIARIUS_WEIGHTED_NET">
+			<description>
+				<p>Starting at 10th level, you have learned how to make your nets particularly heavy. Given access to adequate materials and an hour of downtime, you can enlarge and weight a net to make it a more effective weapon. You can now restrain any creature that is Huge or smaller, and the escape DC of your net is increased to 15. In addition, whenever your net hits a creature, it deals 1d6 + your Str modifier bludgeoning damage to it.</p>
+			</description>
+			<sheet>
+				<description>Starting at 10th level, you have learned how to make your nets particularly heavy. Given access to adequate materials and an hour of downtime, you can enlarge and weight a net to make it a more effective weapon. You can now restrain any creature that is Huge or smaller, and the escape DC of your net is increased to 15. In addition, whenever your net hits a creature, it deals 1d6 + {{strength:modifier}} bludgeoning damage to it.</description>
+			</sheet>
+		</element>
+		<element name="Tripping Toss" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_RETIARIUS_TRIPPING_TOSS">
+			<description>
+				<p>Starting at 15th level, whenever a creature within 10ft of you moves at least 1ft, you can use your reaction to toss your net at their feet. The targeted creature then makes a Dexterity saving throw against your Flourish DC, and their speed goes to 0 and they fall prone on a failure. A creature that falls this way becomes restrained by your net.</p>
+				<p class="indent">If they succeed the saving throw, your net remains on the ground where you threw it until you retrieve it. The 5ft square area that your net occupies is considered difficult terrain, and any creature that attempts to cross over it must also make the Dexterity saving throw or fall prone and be restrained.</p>
+			</description>
+			<sheet action="Reaction">
+				<description>Starting at 15th level, whenever a creature within 10ft of you moves at least 1ft, you can use your reaction to toss your net at their feet. The targeted creature then makes a Dexterity saving throw against your Flourish DC, and their speed goes to 0 and they fall prone on a failure. A creature that falls this way becomes restrained by your net.&#13;
+				If they succeed the saving throw, your net remains on the ground where you threw it until you retrieve it. The 5ft square area that your net occupies is considered difficult terrain, and any creature that attempts to cross over it must also make the Dexterity saving throw or fall prone and be restrained.</description>
+			</sheet>
+		</element>
+		<element name="Dimachaerus" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_DIMACHAERUS">
+			<supports>Martial Role</supports>
+			<description>
+				<p>Deadly dual-wielding warriors, Dimachaeri are known for their artful and intimidating sword work as they dance through a battlefield armed with a blade in each hand. Their showy combat displays and ability to take on multiple enemies at once make them crowd favorites.</p>
+				<p class="indent"></p>
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_DIMACHAERUS_DOUBLY_ARMED" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_DIMACHAERUS_DEXTROUS_PARRIES" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_DIMACHAERUS_VICIOUS_BLADEWORK" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_DIMACHAERUS_WHIRLING_STRIKES" />
+			</description>
+			<sheet display="false">
+				<description></description>
+			</sheet>
+			<rules>
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DIMACHAERUS_DOUBLY_ARMED" level="3" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DIMACHAERUS_DEXTROUS_PARRIES" level="7" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DIMACHAERUS_VICIOUS_BLADEWORK" level="10" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_DIMACHAERUS_WHIRLING_STRIKES" level="15" />
+			</rules>
+		</element>
+		<element name="Doubly Armed" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DIMACHAERUS_DOUBLY_ARMED">
+			<description>
+				<p>Starting at 3rd level when you choose this martial role, you are an expert at fighting with a weapon in each hand. You can use two-weapon fighting even when the one-handed weapons you’re wielding aren’t light, as long as they aren't heavy, and you can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.</p>
+			</description>
+			<sheet>
+				<description>Starting at 3rd level when you choose this martial role, you are an expert at fighting with a weapon in each hand. You can use two-weapon fighting even when the one-handed weapons you’re wielding aren’t light, as long as they aren't heavy, and you can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.</description>
+			</sheet>
+		</element>
+		<element name="Dextrous Parries" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DIMACHAERUS_DEXTROUS_PARRIES">
+			<description>
+				<p>Starting at 7th level, you gain a +1 bonus to AC so long as you’re wielding a separate melee weapon in each hand. In addition, whenever you are wielding separate melee weapons in each hand and another creature hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you.</p>
+			</description>
+			<sheet action="Reaction">
+				<description>Starting at 7th level, you gain a +1 bonus to AC so long as you’re wielding a separate melee weapon in each hand. In addition, whenever you are wielding separate melee weapons in each hand and another creature hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you.</description>
+			</sheet>
+			<rules>
+				<stat name="ac:misc" value="1" equipped="[primary:any],[secondary:any],![primary:versatile]" />
+			</rules>
+		</element>
+		<element name="Vicious Bladework" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DIMACHAERUS_VICIOUS_BLADEWORK">
+			<description>
+				<p>Starting at level 10, you are just as deadly with your off-hand attacks as you are with your primary weapon. Whenever you engage in Two-Weapon Fighting, you may add your ability modifier to the damage of the attacks you make using your bonus action.</p>
+			</description>
+			<sheet>
+				<description>Starting at level 10, you are just as deadly with your off-hand attacks as you are with your primary weapon. Whenever you engage in Two-Weapon Fighting, you may add your ability modifier to the damage of the attacks you make using your bonus action.</description>
+			</sheet>
+		</element>
+		<element name="Whirling Strikes" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_DIMACHAERUS_WHIRLING_STRIKES">
+			<description>
+				<p>Starting at 15th level, whenever you use your bonus action to engage in Two-Weapon Fighting, you can make two attacks using your bonus action instead of one. These two attacks must be made with two different melee weapons.</p>
+			</description>
+			<sheet>
+				<description>Starting at 15th level, whenever you use your bonus action to engage in Two-Weapon Fighting, you can make two attacks using your bonus action instead of one. These two attacks must be made with two different melee weapons.</description>
+			</sheet>
+		</element>
+		<element name="Secutor" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_SECUTOR">
+			<supports>Martial Role</supports>
+			<description>
+				<p>Heavily armed and armored, the Secutor is often pitted against other gladiators as an insurmountable obstacle for them to overcome. They are best at patiently waiting for their enemies to tire and then lashing out for a finishing blow. Though they are often framed as the enemy in gladiatorial combat, many still adore them and get a thrill from seeing them defeat an upstart or overconfident combatant.</p>
+				<p class="indent"></p>
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_SECUTOR_HEAVILY_ARMOURED" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_SECUTOR_MASTERFUL_SHIELDWORK" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_SECUTOR_STAUNCH_DEFENSE" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_SECUTOR_IMPASSABLE_DEFENDER" />
+			</description>
+			<sheet display="false">
+				<description></description>
+			</sheet>
+			<rules>
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SECUTOR_HEAVILY_ARMOURED" level="3" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SECUTOR_MASTERFUL_SHIELDWORK" level="7" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SECUTOR_STAUNCH_DEFENSE" level="10" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_SECUTOR_IMPASSABLE_DEFENDER" level="15" />
+			</rules>
+		</element>
+		<element name="Heavily Armoured" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SECUTOR_HEAVILY_ARMOURED">
+			<description>
+				<p>Starting at level 3 when you choose this martial role, you are adept at fighting in armor. You gain proficiency in heavy armor.</p>
+			</description>
+			<sheet>
+				<description>Starting at level 3 when you choose this martial role, you are adept at fighting in armor. You gain proficiency in heavy armor.</description>
+			</sheet>
+			<rules>
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			</rules>
+		</element>
+		<element name="Masterful Shieldwork" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SECUTOR_MASTERFUL_SHIELDWORK">
+			<description>
+				<p>Starting at level 7, you have become a very skilled defender with a shield. As long as you are holding a shield, you gain an additional +1 bonus to AC.</p>
+			</description>
+			<sheet>
+				<description>Starting at level 7, you have become a very skilled defender with a shield. As long as you are holding a shield, you gain an additional +1 bonus to AC.</description>
+			</sheet>
+			<rules>
+				<stat name="ac:misc" value="1" equipped="[shield:any]" />
+			</rules>
+		</element>
+		<element name="Staunch Defense" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SECUTOR_STAUNCH_DEFENSE">
+			<description>
+				<p>Starting at level 10, if an effect would cause you to make a Dexterity saving throw, you may choose to make a Strength saving throw instead.</p>
+			</description>
+			<sheet>
+				<description>Starting at level 10, if an effect would cause you to make a Dexterity saving throw, you may choose to make a Strength saving throw instead.</description>
+			</sheet>
+		</element>
+		<element name="Impassable Defender" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_SECUTOR_IMPASSABLE_DEFENDER">
+			<description>
+				<p>Starting at level 15, your defensive capabilities are unmatched and allow you to stop enemies in their tracks. Whenever an enemy moves at least 1ft within 5ft of you, you can use your reaction to make a melee weapon attack against that creature. If your attack hits, the creature’s speed is reduced to 0 until its next turn.</p>
+				<p class="indent">In addition, you gain a +1 bonus to your AC when you are wearing Heavy Armor.</p>
+			</description>
+			<sheet action="Reaction">
+				<description>Starting at level 15, your defensive capabilities are unmatched and allow you to stop enemies in their tracks. Whenever an enemy moves at least 1ft within 5ft of you, you can use your reaction to make a melee weapon attack against that creature. If your attack hits, the creature’s speed is reduced to 0 until its next turn.&#13;
+				In addition, you gain a +1 bonus to your AC when you are wearing Heavy Armor.</description>
+			</sheet>
+			<rules>
+				<stat name="ac:misc" value="1" equipped="[armor:heavy]" />
+			</rules>
+		</element>
+		<element name="Thraex" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_THRAEX">
+			<supports>Martial Role</supports>
+			<description>
+				<p>Versatile fighters and everymen, Thraex tend to be painted as the heroes of arena competitions. Their varied skills and adaptability make them easy to root for, and their displays of inventive fighting in the arena make them crowd favorites.</p>
+				<p class="indent"></p>
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_THRAEX_ADDITIONAL_FLOURISH" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_THRAEX_CUNNING_ADAPTABILITY" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_THRAEX_ADAPTIVE_EXPERTISE" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_THRAEX_MASTERFUL_BLADEWORK" />
+			</description>
+			<sheet display="false">
+				<description></description>
+			</sheet>
+			<rules>
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_THRAEX_ADDITIONAL_FLOURISH" level="3" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_THRAEX_CUNNING_ADAPTABILITY" level="7" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_THRAEX_ADAPTIVE_EXPERTISE" level="10" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_THRAEX_MASTERFUL_BLADEWORK" level="15" />
+			</rules>
+		</element>
+		<element name="Additional Flourish" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_THRAEX_ADDITIONAL_FLOURISH">
+			<description>
+				<p>When you choose this martial role at 3rd level, your careful examination of your enemies has allowed you to understand them better. You may choose an additional Flourish, ignoring subclass prerequisites. You learn another additional Flourish with the same restrictions at 7th and 15th level. These Flourishes do not count toward your Flourishes Known.</p>
+			</description>
+			<sheet>
+				<description>When you choose this martial role at 3rd level, your careful examination of your enemies has allowed you to understand them better. You may choose an additional Flourish, ignoring subclass prerequisites. You learn another additional Flourish with the same restrictions at 7th and 15th level. These Flourishes do not count toward your Flourishes Known.</description>
+			</sheet>
+			<rules>
+				<select type="Class Feature" name="Additional Flourish (Level 3)" supports="Gladiator Flourish" level="3" number="1" />
+				<select type="Class Feature" name="Additional Flourish (Level 7)" supports="Gladiator Flourish" level="7" number="1" />
+				<select type="Class Feature" name="Additional Flourish (Level 15)" supports="Gladiator Flourish" level="15" number="1" />
+			</rules>
+		</element>
+		<element name="Cunning Adaptability" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_THRAEX_CUNNING_ADAPTABILITY">
+			<description>
+				<p>You have an unmatched ability to adapt to the fight around you. Starting at level 7, you can ignore difficult terrain when you take the Move action during combat. In addition, yif your DM is using the optional flanking rules, cannot be flanked in combat.</p>
+			</description>
+			<sheet>
+				<description>You have an unmatched ability to adapt to the fight around you. Starting at level 7, you can ignore difficult terrain when you take the Move action during combat. In addition, yif your DM is using the optional flanking rules, cannot be flanked in combat.</description>
+			</sheet>
+		</element>
+		<element name="Adaptive Expertise" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_THRAEX_ADAPTIVE_EXPERTISE">
+			<description>
+				<p>At level 10, you have gained the ability to focus in on those talents that would most benefit you in a given situation. Whenever you complete a long rest, choose one of your skill Proficiencies. Until your next long rest, your Proficiency Bonus is doubled for any ability check you make that uses the chosen Proficiency.</p>
+			</description>
+			<sheet>
+				<description>At level 10, you have gained the ability to focus in on those talents that would most benefit you in a given situation. Whenever you complete a long rest, choose one of your skill Proficiencies. Until your next long rest, your Proficiency Bonus is doubled for any ability check you make that uses the chosen Proficiency.</description>
+			</sheet>
+		</element>
+		<element name="Masterful Bladework" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_THRAEX_MASTERFUL_BLADEWORK">
+			<description>
+				<p>At Level 15, whenever you use a Flourish when you take the Attack action, you can use your bonus action to apply a second flourish to that attack.</p>
+			</description>
+			<sheet action="Bonus Action">
+				<description>At Level 15, whenever you use a Flourish when you take the Attack action, you can use your bonus action to apply a second flourish to that attack.</description>
+			</sheet>
+		</element>
+	<!--Flourishes-->
+		<element name="Artful Avoidance" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_ASCENDANT_STEP">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>While moving, you can use your bonus action to expend a Flair Die and add the result to your AC. This effect ends once you stop moving.</p>
+			</description>
+			<sheet>
+				<description>While moving, you can use your bonus action to expend a Flair Die and add the result to your AC. This effect ends once you stop moving.</description>
+			</sheet>
+		</element>
+		<element name="Blinding Strike" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_BLINDING_STRIKE">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite>12th Level</prerequisite>
+			<requirements>[level:12]</requirements>
+			<description>
+				<p>You use your weapon to attempt to blind a creature. When you hit a creature with a weapon attack that would deal piercing damage, you can expend three Flair Die without rolling them. The target then makes a Dexterity saving throw. If they fail, they are Blinded. This effect lasts until the Blinded creature recovers any number of hit points, or until the affected creature uses its action to make a Constitution saving throw against your Flourish DC and succeeds.</p>
+			</description>
+			<sheet>
+				<description>You use your weapon to attempt to blind a creature. When you hit a creature with a weapon attack that would deal piercing damage, you can expend three Flair Die without rolling them. The target then makes a Dexterity saving throw. If they fail, they are Blinded. This effect lasts until the Blinded creature recovers any number of hit points, or until the affected creature uses its action to make a Constitution saving throw against your Flourish DC and succeeds.</description>
+			</sheet>
+		</element>
+		<element name="Called Shot" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_CALLED_SHOT">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite>6th Level</prerequisite>
+			<requirements>[level:6]</requirements>
+			<description>
+				<p>You designate a specific weak point on a creature (eye, underbelly, armor seam, etc) as the specific target for your attack. When you make a weapon attack against a creature, you may expend a Flair Die and subtract the result from your attack roll. If your attack still hits, the attack deals additional damage equal to twice the original result of the Flair Die. The target then makes a Dexterity saving throw. If they fail, you can choose up to one of the following additional effects:</p>
+				<ul>
+					<li>The target’s speed is reduced by half.</li>
+					<li>The target makes melee weapon attacks with disadvantage</li>
+					<li>The target sustains a wound that causes it to take 1d4 necrotic at the start of each of its turns.</li>
+				</ul>
+				<p>These effects end if the target restores any number of hit points, or if it uses its action to make a Constitution saving throw against your Flourish DC and succeeds.</p>
+			</description>
+			<sheet>
+				<description>You designate a specific weak point on a creature (eye, underbelly, armor seam, etc) as the specific target for your attack. When you make a weapon attack against a creature, you may expend a Flair Die and subtract the result from your attack roll. If your attack still hits, the attack deals additional damage equal to twice the original result of the Flair Die. The target then makes a Dexterity saving throw. If they fail, you can choose up to one of the following additional effects:&#13;
+				The target’s speed is reduced by half.&#13;
+				The target makes melee weapon attacks with disadvantage&#13;
+				The target sustains a wound that causes it to take 1d4 necrotic at the start of each of its turns.&#13;
+				These effects end if the target restores any number of hit points, or if it uses its action to make a Constitution saving throw against your Flourish DC and succeeds.</description>
+			</sheet>
+		</element>
+		<element name="Constricting Tangle" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_CONSTRICTING_TANGLE">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite>Retiarius</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_RETIARIUS||ID_RDDT_ARCHETYPE_FEATURE_THRAEX_ADDITIONAL_FLOURISH</requirements>
+			<description>
+				<p>Whenever a creature attempts to break free of your net, you may use your reaction to expend a Flair Die and add the result to your net's escape DC.</p>
+			</description>
+			<sheet>
+				<description>Whenever a creature attempts to break free of your net, you may use your reaction to expend a Flair Die and add the result to your net's escape DC.</description>
+			</sheet>
+		</element>
+		<element name="Dance of Blades" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_DANCE_OF_BLADES">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>You can use your performative combat skills to give you an edge in certain social situations. You may expend a Flair Die to add the result to a Performance or Intimidation skill check. You can use this ability after rolling the d20, but must use it before knowing the outcome of the roll.</p>
+			</description>
+			<sheet>
+				<description>You can use your performative combat skills to give you an edge in certain social situations. You may expend a Flair Die to add the result to a Performance or Intimidation skill check. You can use this ability after rolling the d20, but must use it before knowing the outcome of the roll.</description>
+			</sheet>
+		</element>
+		<element name="Disarming Strike" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_DISARMING_STRIKE">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>You attempt to knock an item from your opponent’s grasp. When you hit a creature with a weapon attack, you can expend a Flair Die. If you do, add the result of the roll to the damage roll and the target must make a Dexterity Saving Throw. If they fail, the weapon is knocked from their grasp and lands at their feet.</p>
+			</description>
+			<sheet>
+				<description>You attempt to knock an item from your opponent’s grasp. When you hit a creature with a weapon attack, you can expend a Flair Die. If you do, add the result of the roll to the damage roll and the target must make a Dexterity Saving Throw. If they fail, the weapon is knocked from their grasp and lands at their feet.</description>
+			</sheet>
+		</element>
+		<element name="Distracting Performance" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_DISTRACTING_PERFORMANCE">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>When you hit a creature with a weapon attack, you can expend a Flair Die and add the result to your attack damage roll to distract the creature, giving your allies an opening. The next attack roll against the target has advantage if the attack is made before the start of your next turn.</p>
+			</description>
+			<sheet>
+				<description>When you hit a creature with a weapon attack, you can expend a Flair Die and add the result to your attack damage roll to distract the creature, giving your allies an opening. The next attack roll against the target has advantage if the attack is made before the start of your next turn.</description>
+			</sheet>
+		</element>
+		<element name="Enrapturing Attack" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_ENRAPTURING_ATTACK">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite>6th Level</prerequisite>
+			<requirements>[level:6]</requirements>
+			<description>
+				<p>You use your incredible martial prowess to astound those around you. When you hit with a weapon attack, you can expend a Flair Die and add the result to your attack damage roll to force a creature within 30ft. of you that can see you to make a Wisdom saving throw. On a failure, that creature becomes Charmed by you until the end of your next turn. While charmed this way, the creature is incapacitated and its speed it reduced to 0.</p>
+			</description>
+			<sheet>
+				<description>You use your incredible martial prowess to astound those around you. When you hit with a weapon attack, you can expend a Flair Die and add the result to your attack damage roll to force a creature within 30ft. of you that can see you to make a Wisdom saving throw. On a failure, that creature becomes Charmed by you until the end of your next turn. While charmed this way, the creature is incapacitated and its speed it reduced to 0.</description>
+			</sheet>
+		</element>
+		<element name="Ensnaring Strike" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_ENSNARING_STRIKE">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite>Retiarius</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_RETIARIUS||ID_RDDT_ARCHETYPE_FEATURE_THRAEX_ADDITIONAL_FLOURISH</requirements>
+			<description>
+				<p>Whenever you take the attack action on your turn, you can expend a Flair Die to use one of your attacks to attempt to tear an item (such as a held weapon, a shield, or an arcane focus) from an opponent’s grasp using your net. If the attack hits, you and the target make contested Strength ability checks, adding the result of your Flair Die to your roll. If you win the contest, you pull the item from their grasp. You can remove the object from your net using your Use Object action. If you don’t, the net becomes an improvised weapon with a reach of 5ft which deals 1d6 + your Strength modifier bludgeoning damage on a hit, and cannot be used to restrain a creature until the item is removed. You are considered proficient with this improvised weapon.</p>
+			</description>
+			<sheet>
+				<description>Whenever you take the attack action on your turn, you can expend a Flair Die to use one of your attacks to attempt to tear an item (such as a held weapon, a shield, or an arcane focus) from an opponent’s grasp using your net. If the attack hits, you and the target make contested Strength ability checks, adding the result of your Flair Die to your roll. If you win the contest, you pull the item from their grasp. You can remove the object from your net using your Use Object action. If you don’t, the net becomes an improvised weapon with a reach of 5ft which deals 1d6 + your Strength modifier bludgeoning damage on a hit, and cannot be used to restrain a creature until the item is removed. You are considered proficient with this improvised weapon.</description>
+			</sheet>
+		</element>
+		<element name="Flurry of Blades" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_FLURRY_OF_BLADES">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite>Dimachaerus</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_DIMACHAERUS||ID_RDDT_ARCHETYPE_FEATURE_THRAEX_ADDITIONAL_FLOURISH</requirements>
+			<description>
+				<p>Whenever you hit a creature with a melee weapon attack for the first time in a turn, you can expend a Flair Die to make an additional attack against the same target with your off-handed weapon. If you hit, add the result of the Flair Die to the attack’s damage roll.</p>
+			</description>
+			<sheet>
+				<description>Whenever you hit a creature with a melee weapon attack for the first time in a turn, you can expend a Flair Die to make an additional attack against the same target with your off-handed weapon. If you hit, add the result of the Flair Die to the attack’s damage roll.</description>
+			</sheet>
+		</element>
+		<element name="Goading Attack" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_GOADING_ATTACK">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>When you hit a creature with a weapon attack, you can expend one flair die to attempt to goad the target into attacking you. You add the flair die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.</p>
+			</description>
+			<sheet>
+				<description>When you hit a creature with a weapon attack, you can expend one flair die to attempt to goad the target into attacking you. You add the flair die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.</description>
+			</sheet>
+		</element>
+		<element name="Heroic Charge" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_HEROIC_CHARGE">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite>6th Level</prerequisite>
+			<requirements>[level:6]</requirements>
+			<description>
+				<p>When you make a weapon attack roll on your first turn in combat, you may expend a Flair Die. If you do, an allied creature within 30ft. of you that can see you gains temporary hit points equal to the result of the flair die roll. In addition, the creature gains immunity to the Frightened condition until you next take damage.</p>
+			</description>
+			<sheet>
+				<description>When you make a weapon attack roll on your first turn in combat, you may expend a Flair Die. If you do, an allied creature within 30ft. of you that can see you gains temporary hit points equal to the result of the flair die roll. In addition, the creature gains immunity to the Frightened condition until you next take damage.</description>
+			</sheet>
+		</element>
+		<element name="Hobbling Blow" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_HOBBLING_BLOW">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite>12th Level</prerequisite>
+			<requirements>[level:12]</requirements>
+			<description>
+				<p>You attempt to lame an enemy with your strike. When you hit a creature with a weapon attack, you can expend two Flair Die and add the result to your attack damage roll. Then, the damaged creature must make a Constitution saving throw or fall prone. The creature’s speed is also reduced by half, and it cannot stand from prone unless it uses an action on its turn to make another Constitution Saving Throw against your Flourish DC. This effect ends if the target regains any number of hit points. Creatures without legs or which are immune to the prone condition are immune to this effect.</p>
+			</description>
+			<sheet>
+				<description>You attempt to lame an enemy with your strike. When you hit a creature with a weapon attack, you can expend two Flair Die and add the result to your attack damage roll. Then, the damaged creature must make a Constitution saving throw or fall prone. The creature’s speed is also reduced by half, and it cannot stand from prone unless it uses an action on its turn to make another Constitution Saving Throw against your Flourish DC. This effect ends if the target regains any number of hit points. Creatures without legs or which are immune to the prone condition are immune to this effect.</description>
+			</sheet>
+		</element>
+		<element name="Menacing Attack" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_MENACING_ATTACK">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>When you hit a creature with a weapon attack, you can expend a Flair Die to attempt to frighten the target. You add the flair die to the weapon damage roll, and the target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn.</p>
+			</description>
+			<sheet>
+				<description>When you hit a creature with a weapon attack, you can expend a Flair Die to attempt to frighten the target. You add the flair die to the weapon damage roll, and the target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn.</description>
+			</sheet>
+		</element>
+		<element name="Perilous Avoidance" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_PERILOUS_AVOIDANCE">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite>Secutor</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_SECUTOR||ID_RDDT_ARCHETYPE_FEATURE_THRAEX_ADDITIONAL_FLOURISH</requirements>
+			<description>
+				<p>Using your reaction, you can expend a Flair Die and add the result to a Strength, Dexterity, or Constitution saving throw. You may use this ability after you make the initial roll, but before you know the result.</p>
+			</description>
+			<sheet>
+				<description>Using your reaction, you can expend a Flair Die and add the result to a Strength, Dexterity, or Constitution saving throw. You may use this ability after you make the initial roll, but before you know the result.</description>
+			</sheet>
+		</element>
+		<element name="Quick Defense" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_QUICK_DEFENSE">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite>Secutor</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_SECUTOR||ID_RDDT_ARCHETYPE_FEATURE_THRAEX_ADDITIONAL_FLOURISH</requirements>
+			<description>
+				<p>Using your reaction, you can expend a Flair Die to temporarily raise your AC by the result of the roll on the Flair Die. Your AC returns to normal at the start of your next turn.</p>
+			</description>
+			<sheet>
+				<description>Using your reaction, you can expend a Flair Die to temporarily raise your AC by the result of the roll on the Flair Die. Your AC returns to normal at the start of your next turn.</description>
+			</sheet>
+		</element>
+		<element name="Shield Bash" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_SHIELD_BASH">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite>Secutor</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_SECUTOR||ID_RDDT_ARCHETYPE_FEATURE_THRAEX_ADDITIONAL_FLOURISH</requirements>
+			<description>
+				<p>You use your shield to batter an enemy. When a creature within 5ft. of you misses with a melee weapon attack, you may use your reaction to expend a Flair Die. If you do, the creature takes bludgeoning damage equal to the result of the roll, then makes a Strength saving throw. On a failed save, the creature is knocked prone.</p>
+			</description>
+			<sheet>
+				<description>You use your shield to batter an enemy. When a creature within 5ft. of you misses with a melee weapon attack, you may use your reaction to expend a Flair Die. If you do, the creature takes bludgeoning damage equal to the result of the roll, then makes a Strength saving throw. On a failed save, the creature is knocked prone.</description>
+			</sheet>
+		</element>
+		<element name="Spinning Strike" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_SPINNING_STRIKE">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite>Dimachaerus</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_DIMACHAERUS||ID_RDDT_ARCHETYPE_FEATURE_THRAEX_ADDITIONAL_FLOURISH</requirements>
+			<description>
+				<p>Whenever you hit a creature with a melee weapon attack for the first time in a turn, you may expend two Flair Dice. If you do, you deal damage of a type your weapon could deal to each creature within 5ft of you equal to the combined result of the roll.</p>
+			</description>
+			<sheet>
+				<description>Whenever you hit a creature with a melee weapon attack for the first time in a turn, you may expend two Flair Dice. If you do, you deal damage of a type your weapon could deal to each creature within 5ft of you equal to the combined result of the roll.</description>
+			</sheet>
+		</element>
+		<element name="Stunning Display" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_STUNNING_DISPLAY">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite>12th Level</prerequisite>
+			<requirements>[level:12]</requirements>
+			<description>
+				<p>When you hit an enemy with a weapon attack, you can expend two Flair Die and add the result to the damage roll. If you do, each creature within 15ft who were allied with that creature and can see you must make a Wisdom saving throw. On a failure, a creature is stunned until its next turn in combat.</p>
+			</description>
+			<sheet>
+				<description>When you hit an enemy with a weapon attack, you can expend two Flair Die and add the result to the damage roll. If you do, each creature within 15ft who were allied with that creature and can see you must make a Wisdom saving throw. On a failure, a creature is stunned until its next turn in combat.</description>
+			</sheet>
+		</element>
+		<element name="Stylish Blow" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_STYLISH_BLOW">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>When you hit a creature with a weapon attack, you may expend a number of Flair Die up to half your Gladiator Level, rounded up, and add the result to the damage dealt. The damage is of the same type as the weapon.</p>
+			</description>
+			<sheet>
+				<description>When you hit a creature with a weapon attack, you may expend up to {{level:gladiator:half:up}} Flair Die and add the result to the damage dealt. The damage is of the same type as the weapon.</description>
+			</sheet>
+		</element>
+		<element name="Sweeping Blow" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_SWEEPING_BLOW">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>You take a dramatic, sweeping swing with your weapon that damages nearby enemies. Whenever you hit a creature with a weapon attack that deals slashing or bludgeoning damage, you can expend a Flair Die to deal damage of the original type equal to the result of the roll to up to two additional creatures within 5ft of the original target.</p>
+			</description>
+			<sheet>
+				<description>You take a dramatic, sweeping swing with your weapon that damages nearby enemies. Whenever you hit a creature with a weapon attack that deals slashing or bludgeoning damage, you can expend a Flair Die to deal damage of the original type equal to the result of the roll to up to two additional creatures within 5ft of the original target.</description>
+			</sheet>
+		</element>
+		<element name="Vicious Parry" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_GLADIATOR_FLOURISH_VICIOUS_PARRY">
+			<supports>Gladiator Flourish</supports>
+			<prerequisite>Dimachaerus</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_DIMACHAERUS||ID_RDDT_ARCHETYPE_FEATURE_THRAEX_ADDITIONAL_FLOURISH</requirements>
+			<description>
+				<p>Whenever a creature within 5ft of you misses you with an attack, you can use your reaction to expend a Flair Die and make a melee weapon attack against that creature. If you hit, add the result of your roll to the attack’s damage roll, and you reduce the damage dealt to you by the result of the roll.</p>
+			</description>
+			<sheet>
+				<description>Whenever a creature within 5ft of you misses you with an attack, you can use your reaction to expend a Flair Die and make a melee weapon attack against that creature. If you hit, add the result of your roll to the attack’s damage roll, and you reduce the damage dealt to you by the result of the roll.</description>
+			</sheet>
+		</element>
+</elements>
+

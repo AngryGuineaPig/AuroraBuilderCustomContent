@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Cultivator-Taiji.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-Taiji.xml" />
+		</update>
+	</info>
+	<element name="Taiji" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_CULTIVATOR_TAIJI">
+		<supports>Cultivator Technique</supports>
+		<description>
+			<p>Known as the technique that pursues the oneness of everything. The ultimate whole of every state. Taiji disciples practice balancing opposing forces to achieve perfect harmony with the universe. These disciples, while seemingly docile in their slow and inexorable practice of forms, use their mastery of these skills to leverage opposing forces with dangerous effect.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_RECLAMATION" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_STANCES" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_STANCE_INTERNAL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_STANCE_EXTERNAL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_DUALITY" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_ELEMENTAL_HURRICANE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_BALANCE_IN_NATURE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_WUJI" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_RECLAMATION" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_STANCES" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_DUALITY" level="7" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_ELEMENTAL_HURRICANE" level="7" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_BALANCE_IN_NATURE" level="11" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_WUJI" level="15" />
+		</rules>
+	</element>
+	<element name="Reclamation" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_RECLAMATION">
+		<description>
+			<p>Beginning at 3rd level, you gain the ability to cast absorb elements. You may do so twice per short rest. You gain a third use at level 10.</p>
+		</description>
+		<sheet usage="{{reclaim:usage}}/Short Rest">
+			<description>You gain the ability to cast absorb elements.</description>
+		</sheet>
+		<rules>
+			<stat name="reclaim:usage" value="2" />
+			<stat name="reclaim:usage" value="1" level="10" />
+		</rules>
+	</element>
+	<element name="Stances" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_STANCES">
+		<description>
+			<p>Starting at 3rd level, your technique allows you access to knowledge on how to use ki internally for defensive abilities and externally for offensive ones.</p>
+			<p class="indent">You can choose the external or internal stance before you roll for initiative, unless surprised. Otherwise, entering or switching between stances is a bonus action. Unless otherwise noted, you can only use the abilities and benefits granted by each stance while you're in it.</p>
+			<p class="indent">You are unable to use stances while you are incapacitated. If you are incapacitated while in a stance, you may regain either stance as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can choose the external or internal stance before you roll for initiative, unless surprised. Otherwise, entering or switching between stances is a bonus action. You are unable to use stances while you are incapacitated.</description>
+		</sheet>
+	</element>
+	<element name="Internal Stance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_STANCE_INTERNAL">
+		<description>
+			<ul>
+				<li>Once per turn, whenever you would reduce damage done using your absorb elements, you regain a number of ki points equal to half your proficiency bonus. If you have no ki points, you instead gain a number of ki points equal to your proficiency bonus.</li>
+				<li>All allies within your aura gain advantage on saves from spells and abilities dealing fire or cold damage.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+	</element>
+	<element name="External Stance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_STANCE_EXTERNAL">
+		<description>
+			<p>Whenever you would take the attack action, you may apply one ability listed below to your attacks. Additionally, you may instead spend 1 ki point to have all your attacks altered by all abilities listed below.</p>
+			<ul>
+				<li>You may use your Intelligence modifier for unarmed attack rolls.</li>
+				<li>You add your Intelligence modifier as additional damage for unarmed attack rolls.</li>
+				<li>Your attacks within your aura ignore half and three-quarters cover.</li>
+				<li>The range of your attacks increases to the range of your aura.</li>
+				<li>Your attacks may use fire or cold damage instead of their original damage type.</li>
+			</ul>
+			<p class="indent">At 6th level, all your attacks while in this stance do an extra 1d4 fire or cold damage. This increases to 1d6 at 12th level.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+	</element>
+	<element name="Duality" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_DUALITY">
+		<description>
+			<p>Upon reaching 7th level, you grow your knowledge of the whole of life's many aspects, allowing you to harness the world's numerous dualities. All stance abilities referring to fire and cold damage may now be changed to poison and acid, or lightning and thunder damage. At 10th level, all stance abilities referring to fire and cold damage may now also be changed to radiant and necrotic, or psychic and force damage.</p>
+			<p class="indent">Additionally, you may use absorb elements for any damage type you have access to regardless of whether you have chosen that damage type or not.</p>
+			<p>You can only choose one set at a time and you may choose a different set after a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>All stance abilities referring to fire and cold damage may now be changed to poison and acid, or lightning and thunder damage. &#13; 
+			Additionally, you may use absorb elements for any damage type you have access to regardless of whether you have chosen that damage type or not.&#13;
+			You can only choose one set at a time and you may choose a different set after a short or long rest.</description>
+			<description level="10">All stance abilities referring to fire and cold damage may now be changed to poison and acid, lightning and thunder, radiant and necrotic, or psychic and force damage. &#13; 
+			Additionally, you may use absorb elements for any damage type you have access to regardless of whether you have chosen that damage type or not.&#13;
+			You can only choose one set at a time and you may choose a different set after a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Hurricane" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_ELEMENTAL_HURRICANE">
+		<description>
+			<p>At 7th level, you may become one with the elements. Once per long rest, as a bonus action, you may benefit from all the effects of both stances simultaneously without spending ki points for one minute. However, you gain vulnerability to your chosen elements for the duration.</p>
+			<p class="indent">This feature allows you to use all external stance abilities without spending a ki point.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>Once per long rest, as a bonus action, you may benefit from all the effects of both stances simultaneously without spending ki points for one minute. However, you gain vulnerability to your chosen elements for the duration.</description>
+		</sheet>
+	</element>
+	<element name="Balance in Nature" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_BALANCE_IN_NATURE">
+		<description>
+			<p>Beginning at 11th level, you are able to enact your will upon elemental forces around you. You can cast Absorb Elements when an ally would take elemental damage. When you cast the spell in this way, the effects of absorb elements apply to all creatures within your aura range.</p>
+			<p class="indent">Furthermore, you may make an extra unarmed attack as a bonus action, as long as you have spent a minimum of 1 ki point this turn.</p>
+		</description>
+		<sheet>
+			<description>You can cast Absorb Elements when an ally would take elemental damage. When you cast the spell in this way, the effects of absorb elements apply to all creatures within your aura range.&#13;
+			Furthermore, you may make an extra unarmed attack as a bonus action, as long as you have spent a minimum of 1 ki point this turn.</description>
+		</sheet>
+	</element>
+	<element name="Wuji" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_TAIJI_WUJI">
+		<description>
+			<p>Starting at 15th level, you have reached the pinnacle of balance and control. While in external stance, your attacks ignore your chosen elements damage resistances, and you treat those same immunities as resistances.</p>
+			<p class="indent">While in internal stance, as a reaction, if an ally saves against a spell or ability that would have them take half damage, you may spend 1 ki point per ally in your aura to instead have them take no damage on a success. You may use this ability a number of times per day equal to your Intelligence modifier.</p>
+		</description>
+		<sheet>
+			<description>While in external stance, your attacks ignore your chosen elements damage resistances, and you treat those same immunities as resistances.&#13;
+			While in internal stance, as a reaction, if an ally saves against a spell or ability that would have them take half damage, you may spend 2 ki point per ally in your aura to instead have them take no damage on a success. You may use this ability {{intelligence:modifier}} times per day for free.</description>
+		</sheet>
+	</element>
+</elements>

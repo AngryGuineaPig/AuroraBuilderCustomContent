@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+	    <update version="0.0.1">
+			<file name="Classes.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes.index" />
+		</update>
+	</info>
+	<files>
+       <file name="Arcane-Armsman.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Arcane-Armsman.xml" />
+	   <file name="Gladiator.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Gladiator.xml" />
+	<!--Cultivator-->
+		<file name="Cultivator.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator.xml" />
+		<file name="Cultivator-DarkThralls.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-DarkThralls.xml" />
+		<file name="Cultivator-FallingPhoenix.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-FallingPhoenix.xml" />
+		<file name="Cultivator-FourWinds.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-FourWinds.xml" />
+		<file name="Cultivator-FulminisSoul.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-FulminisSoul.xml" />
+		<file name="Cultivator-Iaijutsu.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-Iaijutsu.xml" />
+		<file name="Cultivator-KiCaster.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-KiCaster.xml" />
+		<file name="Cultivator-KiFortress.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-KiFortress.xml" />
+		<file name="Cultivator-SoulArms.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-SoulArms.xml" />
+		<file name="Cultivator-Taiji.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-FallingPhoenix.xml" />
+	</files>
+</index>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Cultivator-Iaijutsu.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-Iaijutsu.xml" />
+		</update>
+	</info>
+	<element name="Iaijustsu" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_CULTIVATOR_IAIJUTSU">
+		<supports>Cultivator Technique</supports>
+		<description>
+			<p>A master of the Iaijutsu technique spends their training time drawing and sheathing their weapon. These cultivators are able to instantly draw their weapons to deliver punishing attacks or devastating counterattacks. A truly focused Iaijutsu user can become a wall of blades, cutting down any and all attacks.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_FLASH_DRAW" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_IAI_DICE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_STANCES" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_STANCE_INTERNAL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_STANCE_EXTERNAL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_IAI-GOSHI" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_TACHI-AI" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_KENNOKABE" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_FLASH_DRAW" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_IAI_DICE" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_STANCES" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_IAI-GOSHI" level="7" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_TACHI-AI" level="11" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_KENNOKABE" level="15" />
+		</rules>
+	</element>
+	<element name="Flash Draw" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_FLASH_DRAW">
+		<description>
+			<p>While assuming either of your stances you may draw and sheathe one weapon as part of any and every attack you make. This weapon must deal slashing damage, and cannot have the heavy property. Enemies can also provoke opportunity attacks from you even if you haven't drawn this weapon.</p>
+		</description>
+		<sheet>
+			<description>While assuming either of your stances you may draw and sheathe one weapon as part of any and every attack you make. This weapon must deal slashing damage, and cannot have the heavy property. Enemies can also provoke opportunity attacks from you even if you haven't drawn this weapon.</description>
+		</sheet>
+	</element>
+	<element name="Iai Dice" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_IAI_DICE">
+		<description>
+			<p>You gain a die that is used with your stances and features called the Iai die. It begins as a 1d4 but increases with your level as shown below. Features that use this die can only be used with weapons that fit the prerequisites of Flash Draw. You may only add the die up to twice for damage rolls.</p>
+		</description>
+		<sheet>
+			<description>Your Iai Dice are {{iai:die:count}}d{{iai:dice}}</description>
+		</sheet>
+		<rules>
+			<stat name="iai:die:count" value="1" />
+			<stat name="iai:die:count" value="1" level="11" />
+			<stat name="iai:die:count" value="1" level="17" />
+
+			<stat name="iai:dice" value="4" />
+			<stat name="iai:dice" value="2" level="5" />
+			<stat name="iai:dice" value="2" level="9" />
+			<stat name="iai:dice" value="-2" level="11" />
+			<stat name="iai:dice" value="2" level="13" />
+			<stat name="iai:dice" value="-2" level="17" />
+		</rules>
+	</element>
+	<element name="Stances" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_STANCES">
+		<description>
+			<p>Starting at 3rd level, your technique allows you access to knowledge on how to use ki internally for defensive abilities and externally for offensive ones.</p>
+			<p class="indent">You can choose the external or internal stance before you roll for initiative, unless surprised. Otherwise, entering or switching between stances is a bonus action. Unless otherwise noted, you can only use the abilities and benefits granted by each stance while you're in it.</p>
+			<p class="indent">You are unable to use stances while you are incapacitated. If you are incapacitated while in a stance, you may regain either stance as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can choose the external or internal stance before you roll for initiative, unless surprised. Otherwise, entering or switching between stances is a bonus action. You are unable to use stances while you are incapacitated.</description>
+		</sheet>
+	</element>
+	<element name="Internal Stance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_STANCE_INTERNAL">
+		<description>
+			<ul>
+				<li>If you have not moved since the beginning of your last turn, then as your turn begins, you may spend 1 ki point to gain blindsight and reach equal to your aura range until you move or are moved.</li>
+				<li>You may take the dodge action as a bonus action as long as you have not moved and will not move this turn.</li>
+				<li>As you take the attack action, you may spend 1 ki point to gain a bonus to AC and saves equal to half your proficiency bonus rounded up, but you take an equal penalty to your attack rolls. This bonus and penalty lasts until the beginning of your next turn.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+	</element>
+	<element name="External Stance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_STANCE_EXTERNAL">
+		<description>
+			<ul>
+				<li>You can spend 1 ki point to gain advantage on initiative checks when rolling initiative.</li>
+				<li>When in this stance, your AC is decreased by half your proficiency bonus, however, you add your Iai die to your weapon damage rolls.</li>
+				<li>If you would attack a creature that has not yet acted in combat you instead add your Iai die twice to the damage rolls.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+	</element>
+	<element name="Iai-Goshi" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_IAI-GOSHI">
+		<description>
+			<p>Upon reaching 7th level, you master the first position of of this technique; using a single strike to fell an army. Twice per short rest you may, as an action, make a single melee attack roll against every enemy within your reach.</p>
+		</description>
+		<sheet action="Action" usage="2/Short Rest">
+			<description>Twice per short rest you may, as an action, make a single melee attack roll against every enemy within your reach.</description>
+		</sheet>
+	</element>
+	<element name="Tachi-Ai" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_TACHI-AI">
+		<description>
+			<p>When you reach 11th level, your practice has allowed you to master the next stance of this technique, capitalizing on your enemies mistakes. While in internal stance, enemies provoke opportunity attacks when they would leave any square in your reach.</p>
+			<p class="indent">Additionally, you add your Iai die to your weapon damage rolls for attacks made as reactions, and while in external stance you would instead add your Iai damage die twice.</p>
+		</description>
+		<sheet>
+			<description>While in internal stance, enemies provoke opportunity attacks when they would leave any square in your reach.&#13;
+			Additionally, you add your Iai die to your weapon damage rolls for attacks made as reactions, and while in external stance you would instead add your Iai die twice.</description>
+		</sheet>
+	</element>
+	<element name="Kennokabe" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_IAIJUTSU_KENNOKABE">
+		<description>
+			<p>At 15th level, you have developed a skill that epitomizes the perfect defense and offense. You may spend 1 ki point to gain and take a reaction anytime one would be triggered. You may do this a number of times per long rest equal to your Intelligence modifier.</p>
+			<p class="indent">Additionally, when you are about to take damage from a spell, melee, or ranged attack roll, you may make a weapon attack as a reaction. If you are in external stance, this attack is always made at disadvantage. If you roll higher than the attack roll you may roll your weapon damage adding your Iai dice, and subtract that from the damage you would take. If the damage is negated, you can redirect the attack back to its source, forcing your attacker to target itself with its attack using your attack roll.</p>
+		</description>
+		<sheet>
+			<description>You may spend 1 ki point to gain and take a reaction anytime one would be triggered. You may do this {{intelligence:modifier}} times per long rest.&#13;
+			Additionally, when you are about to take damage from a spell, melee, or ranged attack roll, you may make a weapon attack as a reaction. If you are in external stance, this attack is always made at disadvantage. If you roll higher than the attack roll you may roll your weapon damage adding your Iai dice, and subtract that from the damage you would take. If the damage is negated, you can redirect the attack back to its source, forcing your attacker to target itself with its attack using your attack roll.</description>
+		</sheet>
+	</element>
+
+</elements>

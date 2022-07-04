@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Cultivator-SoulArms.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-SoulArms.xml" />
+		</update>
+	</info>
+	<element name="Soul Arms" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_CULTIVATOR_SOUL_ARMS">
+		<supports>Cultivator Technique</supports>
+		<description>
+			<p>This technique is taught to those who excel and meditative introspection. This is due to the required ability to find a soul space with which to house the weapons that will become your soul arms. The users of this technique will find themselves turned into whirlwinds of blades, storms of strikes, and never without a weapon.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_ARMOURY" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_WEAPON_FORMS" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_STANCES" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_STANCE_INTERNAL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_STANCE_EXTERNAL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_STYLE_MASTER" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_BARRAGE" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_MASTER_OF_MANY_FORMS" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_ARMOURY" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_WEAPON_FORMS" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_STANCES" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_STYLE_MASTER" level="7" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_BARRAGE" level="11" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_MASTER_OF_MANY_FORMS" level="15" />
+		</rules>
+	</element>
+	<element name="Armoury" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_ARMOURY">
+		<description>
+			<p>When you choose this technique at 3rd level, you gain a soul space with which to house your chosen weapons, and the ability to substitute them in battle instantly. You may choose up to your proficiency bonus in magical or non-magical weapons and attune to them over a long rest. These don't count against your total three attunement slots, magical or otherwise.</p>
+			<p class="indent">You can summon a weapon by taking either stance or as a free action. Ending or switching stances allows you to make the current weapon disappear and conjure  a new one if you take another stance. Your conjured weapons disappear if they are more than 5 feet away from you for 1 minute or more. They also disappear if you dismiss these weapons (no action required), or if you die.</p>
+			<p class="indent">You can attune to magic and non magical weapons by meditating while you hold the weapon. You must meditate this way over the course of a long rest. You can then dismiss the weapon, shunting it into a space formed in your core, and it appears whenever you take your stance thereafter. The weapons appear at your feet if you die, meditate over a different weapon that would replace one, or if you use a long rest to end the attunement. The weapon appears at your feet if it is in your space when the bond breaks.</p>
+			<p class="indent">Additionally, you can use your Intelligence modifier for attack and damage rolls with melded weapons.</p>
+		</description>
+		<sheet>
+			<description>You may choose up to {{proficiency}} in magical or non-magical weapons and attune to them over a long rest. These don't count against your total three attunement slots, magical or otherwise.&#13;
+			You can then dismiss the weapon, shunting it into a space formed in your core, and it appears whenever you take your stance thereafter. The weapons appear at your feet if you die, meditate over a different weapon that would replace one, or if you use a long rest to end the attunement. The weapon appears at your feet if it is in your space when the bond breaks.&#13;
+			You can summon a weapon by taking either stance or as a free action. Ending or switching stances allows you to make the current weapon disappear and conjure  a new one if you take another stance. Your conjured weapons disappear if they are more than 5 feet away from you for 1 minute or more. They also disappear if you dismiss these weapons (no action required), or if you die.&#13;
+			Additionally, you can use your Intelligence modifier for attack and damage rolls with melded weapons.
+			</description>
+		</sheet>
+	</element>
+	<element name="Weapon Forms" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_WEAPON_FORMS">
+		<description>
+			<p>Also at 3rd level, your weapon mastery has granted you additional abilities with any Armory weapons. When you would take a stance with one of your attuned weapons you gain additional abilities called Forms. You may choose a Form to take, dependent on the weapon properties, whenever you would swap to, from, or attack with a weapon. You can only use one Form at a time, unless otherwise stated, even if the weapon you use would have multiple properties.</p>
+			<p class="indent">Weapon Forms are detailed in a rule element, search Weapon Forms in the compendium to view them.</p>
+		</description>
+		<sheet>
+			<description>When you would take a stance with one of your attuned weapons you gain additional abilities called Forms. You may choose a Form to take, dependent on the weapon properties, whenever you would swap to, from, or attack with a weapon. You can only use one Form at a time, unless otherwise stated, even if the weapon you use would have multiple properties.</description>
+		</sheet>
+	</element>
+	<element name="Stances" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_STANCES">
+		<description>
+			<p>Starting at 3rd level, your technique allows you access to knowledge on how to use ki internally for defensive abilities and externally for offensive ones.</p>
+			<p class="indent">You can choose the external or internal stance before you roll for initiative, unless surprised. Otherwise, entering or switching between stances is a bonus action. Unless otherwise noted, you can only use the abilities and benefits granted by each stance while you're in it.</p>
+			<p class="indent">You are unable to use stances while you are incapacitated. If you are incapacitated while in a stance, you may regain either stance as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can choose the external or internal stance before you roll for initiative, unless surprised. Otherwise, entering or switching between stances is a bonus action. You are unable to use stances while you are incapacitated.</description>
+		</sheet>
+	</element>
+	<element name="Internal Stance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_STANCE_INTERNAL">
+		<description>
+			<ul>
+				<li>As you make an attack roll, you may swap to any attuned weapon and use its weak Form.</li>
+				<li>You may spend 1 ki point as a bonus action to add an additional 1d4 weapon damage to your attacks for each time you've swapped your weapon this turn.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+	</element>
+	<element name="External Stance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_STANCE_EXTERNAL">
+		<description>
+			<ul>
+				<li>You may use the weak and strong properties of your chosen Form for Armory weapons while in this stance.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+	</element>
+	<element name="Style Master" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_STYLE_MASTER">
+		<description>
+			<p>Upon reaching 7th level, you master appropriate styles for your melded weapons. You choose an additional fighting style. Whenever you would summon or swap a weapon, you may also change this additional style to another you do not know.</p>
+			<p class="indent">Additionally, Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Style Master" supports="Fighting Style, Cultivator" />
+		</rules>
+	</element>
+	<element name="Barrage" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_BARRAGE">
+		<description>
+			<p>Beginning at 11th level, your strikes have begun speeding up, becoming swifter the more you attack. You may spend 1 ki point to make an attack as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>You may spend 1 ki point to make an attack as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Master of Many Forms" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_MASTER_OF_MANY_FORMS">
+		<description>
+			<p>At 15th level, your mastery of the Forms has become less intent and more instinct. If a weapon you would use has multiple properties, you may use one additional Form at a time, for a total of two.</p>
+		</description>
+		<sheet>
+			<description>If a weapon you would use has multiple properties, you may use one additional Form at a time, for a total of two.</description>
+		</sheet>
+	</element>
+
+	<element name="Weapon Forms Rules" type="Rule" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_WEAPON_FORMS_RULES">
+		<description>
+			<h4>Weapon Forms</h4>
+			<h5>Finesse</h5>
+			<ul>
+				<li><b>Weak -</b> As you attack, you can ignore the AC bonuses that would be granted by shields.</li>
+				<li><b>Strong -</b> The next attack you would make with any weapon after a successful attack with this weapon has a bonus to damage equal to your proficiency bonus.</li>
+			</ul>
+			<h5>Heavy</h5>
+			<ul>
+				<li><b>Weak -</b> Whenever you would deal damage with a heavy weapon, you may move the target 5 feet in any direction.</li>
+				<li><b>Strong -</b> If you successfully hit a creature you've already hit this turn, you may force it to make a Strength saving throw or be pushed back 5 feet x your proficiency bonus. A creature that hits an obstacle before moving the full distance takes an additional 1d6 for every 5 feet they did not move and makes a Strength saving throw or fall prone.</li>
+			</ul>
+			<h5>Light</h5>
+			<ul>
+				<li><b>Weak -</b> If you have hit a creature at least one other time when you hit with this weapon, your AC increases by 1 until the end of your next turn.</li>
+				<li><b>Weak -</b> You may summon an additional light weapon or a non magical copy as you swap to this weapon.</li>
+				<li><b>Strong -</b> When wielding a weapon in your off-hand, you may make your additional two-weapon fighting attack as part of your attack action instead of as a bonus action.</li>
+				<li><b>Strong -</b> Each successful attack with a light weapon increases your movement speed by 5 feet until the end of the turn.</li>
+			</ul>
+			<h5>Ranged</h5>
+			<ul>
+				<li><b>Weak -</b> Being prone does not impose disadvantage on your attacks.</li>
+				<li><b>Weak -</b> When you would summon a ranged weapon, you may summon it loaded with non-magical ammunition. It must still be reloaded manually.</li>
+				<li><b>Strong -</b> If you are prone, you may, as a bonus action, add an additional die to one ranged weapon damage roll.</li>
+			</ul>
+			<h5>Reach</h5>
+			<ul>
+				<li><b>Weak -</b> As you damage a creature with this weapon, you may use your reaction to have that creature make a Strength saving throw or fall prone.</li>
+				<li><b>Strong -</b> As an action, you may make an attack on every enemy within your reach.</li>
+			</ul>
+			<h5>Thrown</h5>
+			<ul>
+				<li><b>Weak -</b> You may recall this thrown weapon as a part of any attack roll.</li>
+				<li><b>Weak -</b> Your long range is increased by a number of feet equal to your Intelligence score.</li>
+				<li><b>Strong -</b> If the target of your attack is within normal range then you may add your Intelligence modifier to damage twice instead of once.</li>
+			</ul>
+			<h5>Two-Handed</h5>
+			<ul>
+				<li><b>Weak -</b> When you damage a prone creature with this weapon, add an additional weapon die to the damage.</li>
+				<li><b>Strong -</b> As you attack, you may give yourself a penalty to your attack roll up to your proficiency bonus in increments of 1. For each point of penalty, your attack damage increases by 2.</li>
+			</ul>
+			<h5>Versatile</h5>
+			<ul>
+				<li><b>Weak -</b> Copies the weak form of the melee weapon used before it.</li>
+				<li><b>Strong -</b> When you would miss an attack, you may spend 1 ki point to roll again. If you hit then you deal an additional weapon die of damage.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Variant Weapon Forms Rules" type="Rule" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_SOUL_ARMS_VARIANT_WEAPON_FORMS_RULES">
+		<description>
+			<h4>Weapon Forms</h4>
+			<h5>Finesse</h5>
+			<ul>
+				<li><b>Weak -</b> As you attack, you can ignore the AC bonuses that would be granted by shields.</li>
+				<li><b>Strong -</b> The next attack you would make with any weapon after a successful attack with this weapon has a bonus to damage equal to your proficiency bonus.</li>
+			</ul>
+			<h5>Heavy</h5>
+			<ul>
+				<li><b>Weak -</b> Whenever you would deal damage with a heavy weapon, you may move the target 5 feet in any direction.</li>
+				<li><b>Strong -</b> If you successfully hit a creature you've already hit this turn, you may force it to make a Strength saving throw or be pushed back 5 feet x your proficiency bonus. A creature that hits an obstacle before moving the full distance takes an additional 1d6 for every 5 feet they did not move and makes a Strength saving throw or fall prone.</li>
+			</ul>
+			<h5>Light</h5>
+			<ul>
+				<li><b>Weak -</b> If you have hit a creature at least one other time when you hit with this weapon, your AC increases by 1 until the end of your next turn.</li>
+				<li><b>Weak -</b> You may summon an additional light weapon or a non magical copy as you swap to this weapon.</li>
+				<li><b>Strong -</b> When wielding a weapon in your off-hand, you may make your additional two-weapon fighting attack as part of your attack action instead of as a bonus action.</li>
+				<li><b>Strong -</b> Each successful attack with a light weapon increases your movement speed by 5 feet until the end of the turn.</li>
+			</ul>
+			<h5>Ranged</h5>
+			<ul>
+				<li><b>Weak -</b> Being prone does not impose disadvantage on your attack rolls.</li>
+				<li><b>Weak -</b> Attacks from your weapon ignore quarter and half cover within its short distance</li>
+				<li><b>Strong -</b> Your short range is multiplied by your intelligence modifier up to double your original long range. If your short range exceeds your long range due to this form treat your long range as the same as your new short range.</li>
+				<li><b>Strong -</b> Attacks from your weapon ignore quarter, half and three quarter cover within your weapons short range, and quarter and half cover out to your weapons long range.</li>
+			</ul>
+			<h5>Reach</h5>
+			<ul>
+				<li><b>Weak -</b> When a creature stands up from prone within your reach you can, as a reaction, force them to make a dexterity saving throw or be knocked prone again.</li>
+				<li><b>Strong -</b> If you make an attack on a target, you may use your bonus action to deal half the damage you dealt to that target to another target within 5ft of the first within your range.</li>
+				<li><b>Strong -</b> When you make an attack on a target within 5ft of you, you may make an attack using the same attack roll and damage on a target directly behind the first so long as its within your range.</li>
+			</ul>
+			<h5>Thrown</h5>
+			<ul>
+				<li><b>Weak -</b> You may recall this thrown weapon as a part of any attack roll.</li>
+				<li><b>Weak -</b> Your long range is increased by a number of feet equal to your Intelligence score.</li>
+				<li><b>Strong -</b> If the target of your attack is within normal range then you may add your Intelligence modifier to damage twice instead of once.</li>
+			</ul>
+			<h5>Two-Handed</h5>
+			<ul>
+				<li><b>Weak -</b> When you damage a prone creature with this weapon, add an additional weapon die to the damage.</li>
+				<li><b>Strong -</b> As you attack, you may give yourself a penalty to your attack roll up to your proficiency bonus in increments of 1. For each point of penalty, your attack damage increases by 2.</li>
+			</ul>
+			<h5>Versatile</h5>
+			<ul>
+				<li><b>Weak -</b> You may use the weak form of any other property except ranged, reach and thrown.</li>
+				<li><b>Weak -</b> When you miss with an attack you may choose, once per turn, to reroll the attack, if you do so you must roll damage twice and take the lower roll.</li>
+				<li><b>Strong -</b> You may use the larger damage die even if wielding the weapon one handed, if wielding it in both hands you may use the Two Handed Strong Form.</li>
+			</ul>
+		</description>
+	</element>
+</elements>

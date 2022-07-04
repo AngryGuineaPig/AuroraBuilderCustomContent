@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Cultivator-FourWinds.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Cultivator/Cultivator-FourWinds.xml" />
+		</update>
+	</info>
+	<element name="Four Winds" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_CULTIVATOR_FOUR_WINDS">
+		<supports>Cultivator Technique</supports>
+		<description>
+			<p>Masters of this technique manipulate the four winds to devastate and control the field around them. They're often some of the fastest fighters on the battlefield, with practitioners frequently augmenting themselves and the area around them using these winds generated or controlled by ki.</p>
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_STANCES" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_STANCE_INTERNAL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_STANCE_EXTERNAL" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_NORTH_WIND" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_SOUTH_WIND" />
+			<div element="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_EAST_WINDS" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_STANCES" level="3" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_NORTH_WIND" level="7" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_SOUTH_WIND" level="11" />
+			<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_EAST_WINDS" level="15" />
+		</rules>
+	</element>
+	<element name="Stances" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_STANCES">
+		<description>
+			<p>Starting at 3rd level, your technique allows you access to knowledge on how to use ki internally for defensive abilities and externally for offensive ones.</p>
+			<p class="indent">You can choose the external or internal stance before you roll for initiative, unless surprised. Otherwise, entering or switching between stances is a bonus action. Unless otherwise noted, you can only use the abilities and benefits granted by each stance while you're in it.</p>
+			<p class="indent">You are unable to use stances while you are incapacitated. If you are incapacitated while in a stance, you may regain either stance as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can choose the external or internal stance before you roll for initiative, unless surprised. Otherwise, entering or switching between stances is a bonus action. You are unable to use stances while you are incapacitated.</description>
+		</sheet>
+	</element>
+	<element name="Internal Stance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_STANCE_INTERNAL">
+		<description>
+			<ul>
+				<li>Your movement and the movement speed of all allies within your aura is increased by 10 ft. This increases to 20ft at level 10. Allies moving through your aura retain half of this bonus upon leaving until the end of the turn.</li>
+				<li>You may use Acrobatics, and Dexterity for high jumping and long jumping, and you no longer need a running start.</li>
+				<li>You may spend 1 ki point to dash as a bonus action. When doing so, your movement does not provoke opportunity attacks.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+	</element>
+	<element name="External Stance" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_STANCE_EXTERNAL">
+		<description>
+			<p>You may spend 1 ki point to activate one of the listed effects when switching to this stance or as a bonus action:</p>
+			<ul>
+				<li><b>Wind Ward</b> - All enemies within your aura must make a Strength saving throw. On a failure, they take 1d6 bludgeoning damage and are pushed out of your aura. They take half damage and are not pushed on a success. This damage is increased to 2d6 at level 10.</li>
+				<li><b>Airbind</b>  - Choose an enemy within your aura. They must make a Strength saving throw. On a failed save they take 2d6 bludgeoning damage and their movement is reduced to 0 until the end of their turn. On a success, they take half damage and no reduction to their movement. This damage is increased to 4d6 at level 10.</li>
+				<li><b>Storm Pulse</b> - Choose an enemy within 30 feet. They must make a Strength saving throw or be pushed 20 feet directly away from you.</li>
+			</ul>
+			<p class="indent">Enemies not completely in your aura, such as huge sized creatures, have advantage on saves against Wind Ward and Airbind.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+	</element>
+	<element name="North Wind" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_NORTH_WIND">
+		<description>
+			<p>Beginning at 7th level, you become the north wind itself. As a reaction, whenever an enemy ends their turn, you may take an extra turn. During this turn, your movement does not provoke attacks of opportunity, and your movement speed is doubled.</p>
+			<p class="indent">Additionally, a warding breeze guards you, blowing away any mist or gases such as Stinking Cloud or Fog Cloud. Once you have used this feature, you may not do so again until you take a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description> As a reaction, whenever an enemy ends their turn, you may take an extra turn. During this turn, your movement does not provoke attacks of opportunity, and your movement speed is doubled. &#13;
+			Additionally, a warding breeze guards you, blowing away any mist or gases such as Stinking Cloud or Fog Cloud.</description>
+		</sheet>
+	</element>
+	<element name="South Wind" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_SOUTH_WIND">
+		<description>
+			<p>At 11th level, using the hot southern winds you to propel yourself through the skies. You gain a fly and hover speed equal to your movement speed when in internal stance.</p>
+		</description>
+		<sheet>
+			<description>You gain a fly and hover speed equal to your movement speed when in internal stance.</description>
+		</sheet>
+	</element>
+	<element name="East Winds" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_CULTIVATOR_FOUR_WINDS_EAST_WINDS">
+		<description>
+			<p>Upon reaching 15th level, you may instantly call upon the destructive power of the eastern winds. You may spend 5 ki points to cast Whirlwind. You may spend an additional 2 ki points to become immune to the effects of the spell.</p>
+		</description>
+		<sheet>
+			<description>You may spend 5 ki points to cast Whirlwind. You may spend an additional 2 ki points to become immune to the effects of the spell.</description>
+		</sheet>
+	</element>
+
+</elements>

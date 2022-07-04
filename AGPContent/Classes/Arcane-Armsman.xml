@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Arcane-Armsman.index" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/Classes/Arcane-Armsman.xml" />
+		</update>
+	</info>
+	<element name="Arcane Armsman" type="Class" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_ARCANE_ARMSMAN">
+	<description>
+		<p><i>A young elven man sits peacefully under a tree on the side of the road. As a group of bandits emerge from the shadows, trying to take advantage of this unarmed traveler, the elven man snaps his fingers. Within seconds, a full suit of glistening white platemail apparates onto his body, and a massive greatsword covered in runes appears in his hands.</i></p>
+		<p class="indent"><i>Surrounded by two huge trolls, a goliath stands firm with his two scimitars glowing brightly in his hands. With one fluid movement he launches one of his scimitars, sinking it deeply into one of the troll’s head. It stops in its tracks, screeching in pain as it struggles to remove the blade. He turns to the other, sword in hand, ready to face it one-on-one.</i></p>
+		<p class="indent"><i>Three humans stare in awe at the gaping maw of an ancient red dragon. They see a bright, burning glow begin to emerge from its throat, and prepare to meet their gods. As the blazing fury of fire billows around them, they remain unharmed. Standing firmly in front of them clad in a knight’s breastplate, a woman’s shield is glowing red hot, blocking them from its destruction.</i></p>
+		<br />
+		<p>An arcane armsman combines their natural fighting abilities with long, intensive studies of the arcane. Unlike traditional magic users, armsmen use their powers to augment their weapons, armor, and bodies to push themselves beyond their limit in combat.</p>
+		<h4>A Skillful Balance</h4>
+		<p>Scholars and swordsmen alike, arcane armsmen spend much of their time studying their trade. They spend hours in the daylight perfecting their swordsmanship, and equally long nights engrossed in tomes, learning and creating beautifully intricate runes to fuel their magic. This leaves little free time, so most armsmen devote their entire lives to the craft.</p>
+		<h4>CREATING AN ARCANE ARMSMAN</h4>
+		<p>As you build your arcane armsman, think about two aspects of your character's background: Where did they learn the way of the arcane arts, and why did they choose to make it their life? Were they trained by a veteran armsman, perhaps from a royal knight? Or did you research these powers of your own volition, thirsting for a higher form of combat?</p>
+		<p>You may have been trained by a wise old noble, searching for his successor among the commoners. Maybe you were sent to a knight's academy as a young adult, being taught the ancient history of magic alongside the art of war. Or perhaps you simply heard tell of legendary warriors who can channel the weave, and worked incessantly to become one yourself. Why did you choose the life of an armsman over that of a normal soldier? Your mind is as sharp as your sword-- your two most powerful weapons.</p>
+		<h5 class="caption">QUICK BUILD</h5>
+		<p>You can make an arcane armsman quickly by following these suggestions. First, make Strength or Dexterity your highest ability score, depending on whether you want to focus on heavy or finesse weapons. Your next highest score should be Intelligence. Second, choose the Noble background.</p>
+		<h2>CLASS FEATURES</h2>
+		<p>As an Arcane Armsman, you gain the following class features.</p>
+		<h5 class="caption">HIT POINTS</h5>
+		<ul class="unstyled">
+			<li><strong>Hit Dice:</strong> 1d10 per Arcane Armsman level</li>
+			<li><strong>Hit Points at 1st Level:</strong> 10 + your constitution modifier</li>
+			<li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your constitution modifier per Arcane Armsman level after 1st</li>
+		</ul>
+		<h5 class="caption">PROFICIENCIES</h5>
+		<ul class="unstyled mb">
+			<li><strong>Armor:</strong> Light Armour, Medium Armour, Shields </li>
+			<li><strong>Weapons:</strong> All Simple and Martial Weapons </li>
+			<li><strong>Tools:</strong> Calligrapher's Supplies </li>
+		</ul>
+		<ul class="unstyled">
+			<li><strong>Saving Throws:</strong> Dexterity, Intelligence</li>
+			<li><strong>Skills:</strong> Choose two from Acrobatics, Arcana, Athletics, History, Nature, and Stealth</li>
+		</ul>
+		<h5 class="caption">EQUIPMENT</h5>
+		<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+		<ul>
+			<li><i>(a)</i> scale mail or <i>(b)</i> leather armour</li>
+			<li><i>(a)</i> a shortsword and a shield or <i>(b)</i> two martial weapons</li>
+			<li><i>(a)</i> a dungeoneer's pack or <i>(b)</i> an explorer's pack</li>
+			<li><i>Calligrapher's Supplies</i></li>
+		</ul>
+		<h5 class="caption">THE Arcane Armsman</h5>
+		<table class="class-features">
+			<thead>
+				<tr><td class="col-5">Level</td><td class="col-10">Features</td><td class="col-10">Arcane Arts Known</td></tr>
+			</thead>
+			<tr><td>1st</td><td class="left">Spellbound Blade, Scholar's Sense</td><td>-</td></tr>
+			<tr><td>2nd</td><td class="left">Fighting Style, Imbued Combat</td><td>2</td></tr>
+			<tr><td>3rd</td><td class="left">Esoteric Order</td><td>2</td></tr>
+			<tr><td>4th</td><td class="left">Ability Score Increase</td><td>2</td></tr>
+			<tr><td>5th</td><td class="left">Extra Attack</td><td>3</td></tr>
+			<tr><td>6th</td><td class="left">Arcane Exchange</td><td>3</td></tr>
+			<tr><td>7th</td><td class="left">Esoteric Order Feature</td><td>4</td></tr>
+			<tr><td>8th</td><td class="left">Ability Score Increase</td><td>4</td></tr>
+			<tr><td>9th</td><td class="left">---</td><td>5</td></tr>
+			<tr><td>10th</td><td class="left">Esoteric Order Feature</td><td>5</td></tr>
+			<tr><td>11th</td><td class="left">Mindful Mana</td><td>5</td></tr>
+			<tr><td>12th</td><td class="left">Ability Score Increase</td><td>6</td></tr>
+			<tr><td>13th</td><td class="left">Arcane Influence</td><td>6</td></tr>
+			<tr><td>14th</td><td class="left">Embodied Attunement</td><td>7</td></tr>
+			<tr><td>15th</td><td class="left">Esoteric Order Feature</td><td>7</td></tr>
+			<tr><td>16th</td><td class="left">Ability Score Increase</td><td>7</td></tr>
+			<tr><td>17th</td><td class="left">---</td><td>8</td></tr>
+			<tr><td>18th</td><td class="left">Esoteric Order Feature</td><td>8</td></tr>
+			<tr><td>19th</td><td class="left">Ability Score Increase</td><td>8</td></tr>
+			<tr><td>20th</td><td class="left">Spellbound Savant</td><td>8</td></tr>
+		</table>
+		<div element="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_SPELLBOUND_BLADE" />
+		<div element="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_SCHOLARS_SENSE" />
+		<div element="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_FIGHTING_STYLE" />
+		<div element="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_IMBUED_COMBAT" />
+		<div element="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ESOTERIC_ORDER" />
+		<div element="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ASI" />
+		<div element="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_EXTRA_ATTACK" />
+		<div element="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_EXCHANGE" />
+		<div element="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_MINDFUL_MANA" />
+		<div element="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_INFLUENCE" />
+		<div element="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_EMBODIED_ATTUNEMENT" />
+		<div element="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_SPELLBOUND_SAVANT" />
+	</description>
+		<setters>
+			<set name="hd">d10</set>
+			<set name="short">An Intelligence based Gish class.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_RDDT_MULTICLASS_ARCANE_ARMSMAN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_RDDT_MULTICLASS_ARCANE_ARMSMAN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_RDDT_MULTICLASS_ARCANE_ARMSMAN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_RDDT_MULTICLASS_ARCANE_ARMSMAN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_RDDT_MULTICLASS_ARCANE_ARMSMAN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_RDDT_MULTICLASS_ARCANE_ARMSMAN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_RDDT_MULTICLASS_ARCANE_ARMSMAN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" requirements="!ID_RDDT_MULTICLASS_ARCANE_ARMSMAN" />
+			<select type="Proficiency" name="Skill Proficiency (Arcane Armsman)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_STEALTH" number="2" requirements="!ID_RDDT_MULTICLASS_ARCANE_ARMSMAN"/>
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_SPELLBOUND_BLADE" level="1" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_SCHOLARS_SENSE" level="1" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_FIGHTING_STYLE" level="2" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_IMBUED_COMBAT" level="2" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ESOTERIC_ORDER" level="3" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ASI" level="4" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_EXCHANGE" level="6" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_MINDFUL_MANA" level="11" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_INFLUENCE" level="13" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_EMBODIED_ATTUNEMENT" level="14" />
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_SPELLBOUND_SAVANT" level="20" />
+		</rules>
+		<multiclass id="ID_RDDT_MULTICLASS_ARCANE_ARMSMAN">
+			<prerequisite>Strength 13 and Intelligence 13</prerequisite>
+			<requirements>([str:13],[int:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Spellbound Blade" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_SPELLBOUND_BLADE">
+		<description>
+			<p>Your arcane knowledge allows you to imbue your weapon with magical qualities. Over the course of a long rest, you can assign a single melee weapon that you're proficient in as your spellbound blade. The weapon gains the following benefits:</p>
+			<ul>
+				<li>Your attacks made with your spellbound blade count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</li>
+				<li>You can't be disarmed of your spellbound blade unless you are incapacitated.</li>
+				<li>You can dismiss the weapon, shunting it into an extradimensional space, and it can be recalled as a bonus action.</li>
+			</ul>
+			<p>If you assign a new weapon as your spellbound blade, the old weapon loses its magic, returning to normal.</p>
+		</description>
+		<sheet>
+			<description>Your arcane knowledge allows you to imbue your weapon with magical qualities. Over the course of a long rest, you can assign a single melee weapon that you're proficient in as your spellbound blade. The weapon gains the following benefits:&#13; 
+			•Your attacks made with your spellbound blade count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.&#13;
+			•You can't be disarmed of your spellbound blade unless you are incapacitated.&#13;
+			•You can dismiss the weapon, shunting it into an extradimensional space, and it can be recalled as a bonus action.&#13;
+			If you assign a new weapon as your spellbound blade, the old weapon loses its magic, returning to normal.</description>
+		</sheet>
+	</element>
+	<element name="Scholar's Sense" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_SCHOLARS_SENSE">
+		<description>
+			<p>You’ve become attuned to the presence of magic and can recognize it instantly. As an action, you can open your awareness to detect it. Until the end of your next turn, you know the location of any magical item, effect, or magic user within 60 feet of you that is not behind total cover. You know the type (item, effect, or user) of anything you sense, as well as its school of magic (if any). Once you are aware of a magical object, you can expend another use of this feature to learn its properties and how to use them, as with the Identify spell. You can use this feature a number of times equal to 1 + your Intelligence modifier. When you finish a long rest, you regain all expended uses.</p>
+		</description>
+		<sheet action="Action" usage="{{scholars:sense}}/Long Rest">
+			<description>You’ve become attuned to the presence of magic and can recognize it instantly. As an action, you can open your awareness to detect it. Until the end of your next turn, you know the location of any magical item, effect, or magic user within 60 feet of you that is not behind total cover. You know the type (item, effect, or user) of anything you sense, as well as its school of magic (if any). Once you are aware of a magical object, you can expend another use of this feature to learn its properties and how to use them, as with the Identify spell. You can use this feature {{scholars:sense}} times. When you finish a long rest, you regain all expended uses.</description>
+		</sheet>
+		<rules>
+		<stat name="scholars:sense" value="1" />
+		<stat name="Scholars:sense" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Fighting Style" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_FIGHTING_STYLE">
+		<description>
+			<p>You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Fighter" level="2"/>
+		</rules>
+	</element>
+	<element name="Imbued Combat" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_IMBUED_COMBAT">
+		<description>
+			<p>At 2nd level, your arcane knowledge advances, allowing you to perform special magical effects with your spellbound blade, known as arcane arts.</p>
+			<p class="indent"><b><i>Arcane Arts.</i></b> You learn the Arcane Smite arcane art (found below), as well as two arcane arts of your choice, which are detailed under "Arcane Arts" below. Many arcane arts enhance an attack in some way. You can only use one arcane art per turn. You cannot use an arcane art if you are under any effect that prevents you from concentrating (like the Barbarian's rage feature).</p>
+			<p class="indent">When you gain certain arcane armsman levels, you gain additional arcane arts of your choice, as shown in the Arcane Arts Known column of the Arcane Armsman table. Your arcane arts increase in damage when you reach certain levels in this class, as noted below their description.</p>
+			<p class="indent"><b><i>Mana Pool.</i></b> You have a pool of arcane power that replenishes when you take a long rest. Your total number of mana points equals your Intelligence modifier + half your arcane armsman level, rounded down.</p>
+			<p class="indent"><b><i>Mana Ability.</i></b> Intelligence is your ability for your arcane arts, since you learn your arts through dedicated study and training. You use your Intelligence whenever a feature refers to your mana ability.</p>
+			<p class="indent"><b><i>Arcane Art Save DC</i></b> = 8 + your proficiency bonus + your Intelligence modifier</p>
+			<p class="indent"><b><i>Arcane Art attack modifier</i></b> = your proficiency bonus + your Intelligence modifier</p>
+		</description>
+		<sheet>
+			<description>At 2nd level, your arcane knowledge advances, allowing you to perform special magical effects with your spellbound blade, known as arcane arts.&#13;
+			Arcane Arts: You learn the Arcane Smite arcane art (found below), as well as two arcane arts of your choice, which are detailed under "Arcane Arts" below. Many arcane arts enhance an attack in some way. You can only use one arcane art per turn. You cannot use an arcane art if you are under any effect that prevents you from concentrating (like the Barbarian's rage feature).&#13;
+			When you gain certain arcane armsman levels, you gain additional arcane arts of your choice, as shown in the Arcane Arts Known column of the Arcane Armsman table. Your arcane arts increase in damage when you reach certain levels in this class, as noted below their description.&#13;
+			Mana Pool: You have a pool of arcane power that replenishes when you take a long rest. Your total number of mana points is {{mana:pool}}.&#13;
+			Mana Ability: Intelligence is your ability for your arcane arts, since you learn your arts through dedicated study and training. You use your Intelligence whenever a feature refers to your mana ability.&#13;
+			Arcane Art Save DC = {{arcaneart:dc}}&#13;
+			Arcane Art attack modifier = {{arcaneart:attack}}</description>
+		</sheet>
+		<rules>
+			<stat name="arcaneart:dc" value="8" />
+			<stat name="arcaneart:dc" value="proficiency" />
+			<stat name="arcaneart:dc" value="intelligence:modifier" />
+
+			<stat name="arcaneart:attack" value="proficiency" />
+			<stat name="arcaneart:attack" value="intelligence:modifier" />
+
+			<stat name="mana:pool" value="intelligence:modifier" />
+			<stat name="mana:pool" value="level:arcane armsman:half" />
+
+			<grant type="Class Feature" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_SMITE" />
+
+			<select type="Class Feature" name="Arcane Arts (2nd Level)" supports="Arcane Art" level="2" number="2" />
+			<select type="Class Feature" name="Arcane Arts (5th Level)" supports="Arcane Art" level="5" number="1" />
+			<select type="Class Feature" name="Arcane Arts (7th Level)" supports="Arcane Art" level="7" number="1" />
+			<select type="Class Feature" name="Arcane Arts (9th Level)" supports="Arcane Art" level="9" number="1" />
+			<select type="Class Feature" name="Arcane Arts (12th Level)" supports="Arcane Art" level="12" number="1" />
+			<select type="Class Feature" name="Arcane Arts (14th Level)" supports="Arcane Art" level="14" number="1" />
+			<select type="Class Feature" name="Arcane Arts (17th Level)" supports="Arcane Art" level="17" number="1" />
+		</rules>
+	</element>
+	<element name="Arcane Smite" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_SMITE">
+		<description>
+			<p>When you hit a creature with a melee weapon attack using your spellbound blade, you can spend 1 mana point to deal an additional 2d6 force damage to the target. This damage increases by 1d6 when you reach 5th level (3d6), 11th level (4d6), and 17th level (5d6).</p>
+		</description>
+		<sheet >
+			<description>When you hit a creature with a melee weapon attack using your spellbound blade, you can spend 1 mana point to deal an additional 2d6 force damage to the target</description>
+			<description level="5">When you hit a creature with a melee weapon attack using your spellbound blade, you can spend 1 mana point to deal an additional 3d6 force damage to the target</description>
+			<description level="11">When you hit a creature with a melee weapon attack using your spellbound blade, you can spend 1 mana point to deal an additional 46 force damage to the target</description>
+			<description level="17">When you hit a creature with a melee weapon attack using your spellbound blade, you can spend 1 mana point to deal an additional 5d6 force damage to the target</description>
+		</sheet>
+	</element>
+	<element name="Esoteric Order" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ESOTERIC_ORDER">
+		<description>
+			<p>When you reach 3rd level, you commit yourself to an Esoteric Order: the Order of the Pawn, the Order of the Queen, the Order of the Rook, the Order of the Knight, or the Order of the Bishop, all detailed at the end of the class description. Your order grants you additional features at 3rd level and again at 7th, 10th, 15th, and 18th level.</p>
+		</description>
+		<sheet display="false">
+			<description>When you reach 3rd level, you commit yourself to an Esoteric Order: the Order of the Pawn, the Order of the Queen, the Order of the Rook, the Order of the Knight, or the Order of the Bishop, all detailed at the end of the class description. Your order grants you additional features at 3rd level and again at 7th, 10th, 15th, and 18th level.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype" name="Esoteric Order" supports="Esoteric Order" level="3" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ASI">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Arcane Armsman 4)" supports="Improvement Option,Arcane Armsman,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Arcane Armsman 8)" supports="Improvement Option,Arcane Armsman,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Arcane Armsman 12)" supports="Improvement Option,Arcane Armsman,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Arcane Armsman 16)" supports="Improvement Option,Arcane Armsman,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Arcane Armsman 19)" supports="Improvement Option,Arcane Armsman,19" level="19" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Arcane Exchange" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_EXCHANGE">
+		<description>
+			<p>Beginning at 6th level, your knowledge of the arcane allows you to intertwine its energy with your own. As an action you can spend a number of mana points up to half your arcane armsman level, regaining 1d6 hit points per mana point spent.</p>
+			<p class="indent">Inversely, you can call on your own energy to fuel your magic. As a bonus action, you can regain a number of mana points up to half your arcane armsman level, taking 1d8 damage per mana point recovered. This damage cannot be reduced in any way.</p>
+		</description>
+		<sheet>
+			<description>Beginning at 6th level, your knowledge of the arcane allows you to intertwine its energy with your own. As an action you can spend up to {{level:arcane armsman:half}} mana points, regaining 1d6 hit points per mana point spent.&#13;
+			Inversely, you can call on your own energy to fuel your magic. As a bonus action, you can regain up to {{level:arcane armsman:half}} mana points, taking 1d8 damage per mana point recovered. This damage cannot be reduced in any way.</description>
+		</sheet>
+	</element>
+	<element name="Mindful Mana" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_MINDFUL_MANA">
+		<description>
+			<p>Beginning at 11th level, whenever you complete a short rest, you can replenish a number of mana points equal to your Intelligence modifier. Once you have restored mana points this way, you must complete a long rest before you can do so again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Beginning at 11th level, whenever you complete a short rest, you can replenish {{intelligence:modifier}} mana points. Once you have restored mana points this way, you must complete a long rest before you can do so again.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Influence" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_INFLUENCE">
+		<description>
+			<p>Starting at 13th level, your connection with the weave even bends luck to your favor in combat. Whenever you make an attack roll or a saving throw, you can spend 1 mana point to reroll the die and must use the new roll. You can choose to spend 1 of your mana points after you roll the die, but before the outcome is determined.</p>
+		</description>
+		<sheet>
+			<description>Starting at 13th level, your connection with the weave even bends luck to your favor in combat. Whenever you make an attack roll or a saving throw, you can spend 1 mana point to reroll the die and must use the new roll. You can choose to spend 1 of your mana points after you roll the die, but before the outcome is determined.</description>
+		</sheet>
+	</element>
+	<element name="Embodied Attunement" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_EMBODIED_ATTUNEMENT">
+		<description>
+			<p>Starting at 14th level, you can use your action to end one spell or spell effect on yourself. You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{intelligence:modifier}}/Long Rest">
+			<description>Starting at 14th level, you can use your action to end one spell or spell effect on yourself. You can use this feature {{intelligence:modifier}} times. You regain all expended uses when you finish a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Spellbound Savant" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_SPELLBOUND_SAVANT">
+		<description>
+			<p>At 20th level, your union between martial prowess and the arcane has been perfected. As an action, you can enter a trance-like state, guided and propelled by the energy around you. For 1 minute, you gain the following benefits:</p>
+			<ul>
+				<li>You gain a bonus to attack rolls equal to your Intelligence modifier.</li>
+				<li>Whenever you take the Attack action on your turn, you can make one additional attack as part of that action.</li>
+				<li>You may use your arcane exchange feature as a bonus action. If you use this feature to regain mana, you take half damage from the conversion. If you use this feature to regain hit points, you heal the maximum amount, rather than rolling.</li>
+			</ul>
+			<p class="indent">Once you use this feature you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>At 20th level, your union between martial prowess and the arcane has been perfected. As an action, you can enter a trance-like state, guided and propelled by the energy around you. For 1 minute, you gain the following benefits:&#13;
+			•You gain a +{{intelligence:modifier}} bonus to attack rolls.&#13;
+			•Whenever you take the Attack action on your turn, you can make one additional attack as part of that action.&#13;
+			•You may use your arcane exchange feature as a bonus action. If you use this feature to regain mana, you take half damage from the conversion. If you use this feature to regain hit points, you heal the maximum amount, rather than rolling.&#13;
+			Once you use this feature you can't use it again until you finish a long rest.</description>
+		</sheet>
+	</element>
+	<!--Esoteric Orders-->
+		<element name="Order of the Pawn" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ORDER_OF_THE_PAWN">
+			<supports>Esoteric Order</supports>
+			<description>
+				<p>While often seen as the weakest of orders, Pawns make their impact through their sheer number. A Pawn focuses less on new techniques, and more on perfecting their existing ones.</p>
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_STRENGTH_IN_NUMBERS" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_ADDITIONAL_ARTS" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_EN_PASSANT" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_ADDITIONAL_FIGHTING_STYLE" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_FIGHTING_EDGE" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION" />
+			</description>
+			<sheet display="false">
+				<description></description>
+			</sheet>
+			<rules>
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_STRENGTH_IN_NUMBERS" level="3" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_ADDITIONAL_ARTS" level="3" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_EN_PASSANT" level="7" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_ADDITIONAL_FIGHTING_STYLE" level="10" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_FIGHTING_EDGE" level="15" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION" level="18" />
+			</rules>
+		</element>
+		<element name="Strength in Numbers" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_STRENGTH_IN_NUMBERS">
+			<description>
+				<p>Starting when you choose this order at 3rd level, you gain an upper hand when fighting alongside your allies. You gain advantage on attack rolls against a creature if at least one of your allies is within 5 feet of the creature and not incapacitated. At 10th level, your allies within 5 feet of that creature also gain this benefit.</p>
+			</description>
+			<sheet>
+				<description>Starting when you choose this order at 3rd level, you gain an upper hand when fighting alongside your allies. You gain advantage on attack rolls against a creature if at least one of your allies is within 5 feet of the creature and not incapacitated.</description>
+				<description level="10">Starting when you choose this order at 3rd level, you gain an upper hand when fighting alongside your allies. You gain advantage on attack rolls against a creature if at least one of your allies is within 5 feet of the creature and not incapacitated. At 10th level, your allies within 5 feet of that creature also gain this benefit.</description>
+			</sheet>
+		</element>
+		<element name="Additional Arts" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_ADDITIONAL_ARTS">
+			<description>
+				<p>At 3rd level, you learn 2 additional arcane arts of your choice. You learn 1 more at 7th level, then again at 10th, and 15th level.</p>
+			</description>
+			<sheet display="false">
+				<description>At 3rd level, you learn 2 additional arcane arts of your choice. You learn 1 more at 7th level, then again at 10th, and 15th level.</description>
+			</sheet>
+			<rules>
+				<select type="Class Feature" name="Order of the Pawn Additional Arcane Arts (3rd Level)" supports="Arcane Art" level="3" number="2" />
+				<select type="Class Feature" name="Order of the Pawn Additional Arcane Arts (7th Level)" supports="Arcane Art" level="7" number="1" />
+				<select type="Class Feature" name="Order of the Pawn Additional Arcane Arts (10th Level)" supports="Arcane Art" level="10" number="1" />
+				<select type="Class Feature" name="Order of the Pawn Additional Arcane Arts (15th Level)" supports="Arcane Art" level="15" number="1" />
+			</rules>
+		</element>
+		<element name="En Passant" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_EN_PASSANT">
+			<description>
+				<p>Starting at 7th level, whenever you hit a creature with an opportunity attack, you can attack twice, rather than only once.</p>
+			</description>
+			<sheet>
+				<description>Starting at 7th level, whenever you hit a creature with an opportunity attack, you can attack twice, rather than only once.</description>
+			</sheet>
+		</element>
+		<element name="Additional Fighting Style" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_ADDITIONAL_FIGHTING_STYLE">
+			<description>
+				<p>At 10th level, you learn one fighting style option of your choice from the Fighter class.</p>
+			</description>
+			<sheet display="false">
+				<description>At 10th level, you learn one fighting style option of your choice from the Fighter class.</description>
+			</sheet>
+			<rules>
+				<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Fighter" level="10"/>
+			</rules>
+		</element>
+		<element name="Fighting Edge" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_FIGHTING_EDGE">
+			<description>
+				<p>At 15th level, whenever you take the Attack action and have advantage on one of those attacks, you can make one additional attack as a bonus action.</p>
+			</description>
+			<sheet action="Bonus Action">
+				<description>At 15th level, whenever you take the Attack action and have advantage on one of those attacks, you can make one additional attack as a bonus action.</description>
+			</sheet>
+		</element>
+		<element name="Proud Promotion" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION">
+			<description>
+				<p>Starting at 18th level, you learn 2 additional arcane arts of your choice. When choosing these arcane arts, you can ignore all prerequisites, including order requirements.</p>
+			</description>
+			<sheet display="false">
+				<description>Starting at 18th level, you learn 2 additional arcane arts of your choice. When choosing these arcane arts, you can ignore all prerequisites, including order requirements.</description>
+			</sheet>
+			<rules>
+				<select type="Class Feature" name="Order of the Pawn Proud Promotion Arcane Arts (Level 18)" supports="Arcane Art" level="18" number="2" />
+			</rules>
+		</element>
+
+		<element name="Order of the Queen" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ORDER_OF_THE_QUEEN">
+			<supports>Esoteric Order</supports>
+			<description>
+				<p>Queens make fearsome opponents. Focusing heavily on mobility, a Queen acts fast, and with force. Queens make use of their second spellbound blade to cut through the enemy line, letting no one escape.</p>
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_SPELLBOUND_SIDEARM" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_CROWN_PRIVILEGE" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_ARCANE_AGILITY" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_EMPOWERED_INITIATIVE" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_MOVING_TARGET" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_KILLER_QUEEN" />
+			</description>
+			<sheet display="false">
+				<description></description>
+			</sheet>
+			<rules>
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_SPELLBOUND_SIDEARM" level="3" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_CROWN_PRIVILEGE" level="3" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_ARCANE_AGILITY" level="7" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_EMPOWERED_INITIATIVE" level="10" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_MOVING_TARGET" level="15" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_KILLER_QUEEN" level="18" />
+			</rules>
+		</element>
+		<element name="Spellbound Sidearm" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_SPELLBOUND_SIDEARM">
+			<description>
+				<p>Starting when you choose this order at 3rd level, you can assign a second spellbound blade, gaining the same benefits as your first. You may recall or dismiss both spellbound blades as the same bonus action. All the rules for two-weapon fighting apply as normal.</p>
+			</description>
+			<sheet>
+				<description>Starting when you choose this order at 3rd level, you can assign a second spellbound blade, gaining the same benefits as your first. You may recall or dismiss both spellbound blades as the same bonus action. All the rules for two-weapon fighting apply as normal.</description>
+			</sheet>
+		</element>
+		<element name="Crown Privilege" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_CROWN_PRIVILEGE">
+			<description>
+				<p>At 3rd level, when you take the Attack action on your turn, you can spend 1 mana point to gain advantage on attack rolls until the end of that turn.</p>
+			</description>
+			<sheet>
+				<description>At 3rd level, when you take the Attack action on your turn, you can spend 1 mana point to gain advantage on attack rolls until the end of that turn.</description>
+			</sheet>
+		</element>
+		<element name="Arcane Agility" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_ARCANE_AGILITY">
+			<description>
+				<p>Starting at 7th level, your speed increases by 10 feet while you aren’t wearing heavy armor. At 18th level, this bonus increases to 20 feet. Additionally, you can give yourself a bonus to your initiative rolls equal to your Intelligence modifier.</p>
+			</description>
+			<sheet>
+				<description>Your speed increases by 10 feet while you aren’t wearing heavy armor. Additionally, you gain a +{{intelligence:modifier}} to your initiative</description>
+				<description level="18">Your speed increases by 20 feet while you aren’t wearing heavy armor. Additionally, you gain a +{{intelligence:modifier}} to your initiative</description>
+			</sheet>
+			<rules>
+				<stat name="innate speed" value="10" />
+				<stat name="innate speed" value="10" level="18" />
+				<stat name="initiative" value="intelligence:modifier" />
+			</rules>
+		</element>
+		<element name="Empowered Initiative" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_EMPOWERED_INITIATIVE">
+			<description>
+				<p>Starting at 10th level, you can give yourself an edge when a battle begins. At the start of your first turn of each combat, your walking speed increases by 10 feet, which lasts until the end of that turn. If you take the Attack action on that turn, you deal an additional 2d6 force damage on the first attack.</p>
+			</description>
+			<sheet display="false">
+				<description>Starting at 10th level, you can give yourself an edge when a battle begins. At the start of your first turn of each combat, your walking speed increases by 10 feet, which lasts until the end of that turn. If you take the Attack action on that turn, you deal an additional 2d6 force damage on the first attack.</description>
+			</sheet>
+		</element>
+		<element name="Moving Target" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_MOVING_TARGET">
+			<description>
+				<p>At 15th level, you gain the ability to pass between the planes in a blink of an eye. When you use the Attack action, you can teleport up to 10 feet before the first attack to an unoccupied space you can see. If you use this feature, the next attack made against you has disadvantage.</p>
+			</description>
+			<sheet>
+				<description>At 15th level, you gain the ability to pass between the planes in a blink of an eye. When you use the Attack action, you can teleport up to 10 feet before the first attack to an unoccupied space you can see. If you use this feature, the next attack made against you has disadvantage.</description>
+			</sheet>
+		</element>
+		<element name="Killer Queen" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_QUEEN_KILLER_QUEEN">
+			<description>
+				<p>Starting at 18th level, your time on the battlefield has heightened your natural abilities. Your weapon attacks score a critical hit on a roll of 19 or 20. Additionally, when you move on your turn in combat, you can spend 2 mana points to double your speed until the end of the turn.</p>
+			</description>
+			<sheet>
+				<description>Starting at 18th level, your time on the battlefield has heightened your natural abilities. Your weapon attacks score a critical hit on a roll of 19 or 20. Additionally, when you move on your turn in combat, you can spend 2 mana points to double your speed until the end of the turn.</description>
+			</sheet>
+		</element>
+
+		<element name="Order of the Rook" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ORDER_OF_THE_ROOK">
+			<supports>Esoteric Order</supports>
+			<description>
+				<p>Rooks are the strong backbone of the battlefield. Their arcane armor makes them a nearly unkillable foe, and an unstoppable force. While other orders might focus on dealing damage, Rooks focus on soaking it up, staying alive to fight more.</p>
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_BONUS_PROFICIENCY" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_SPELLBOUND_SHELL" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_TITANS_VIM" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_MAGICAL_MIGHT" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_ARCANE_ARMOUR" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_HARDENED_SHELL" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_CASTLES_STRENGTH" />
+			</description>
+			<sheet display="false">
+				<description></description>
+			</sheet>
+			<rules>
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_BONUS_PROFICIENCY" level="3" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_SPELLBOUND_SHELL" level="3" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_TITANS_VIM" level="3" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_MAGICAL_MIGHT" level="7" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_ARCANE_ARMOUR" level="10" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_HARDENED_SHELL" level="15" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_CASTLES_STRENGTH" level="17" />
+			</rules>
+		</element>
+		<element name="Bonus Proficiency" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_BONUS_PROFICIENCY">
+			<description>
+				<p>When you choose this order at 3rd level, you gain proficiency in heavy armor.</p>
+			</description>
+			<sheet display="false">
+			<description>When you choose this order at 3rd level, you gain proficiency in heavy armor.</description>
+			</sheet>
+			<rules>
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			</rules>
+		</element>
+		<element name="Spellbound Shell" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_SPELLBOUND_SHELL">
+			<description>
+				<p>Starting when you choose this order at 3rd level, you can imbue a set of armor with magical qualities similar to that of your spellbound blade. You may recall or dismiss both your spellbound blade and your spellbound shell as the same bonus action.</p>
+			</description>
+			<sheet>
+				<description>Starting when you choose this order at 3rd level, you can imbue a set of armor with magical qualities similar to that of your spellbound blade. You may recall or dismiss both your spellbound blade and your spellbound shell as the same bonus action.</description>
+			</sheet>
+		</element>
+		<element name="Titan's Vim" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_TITANS_VIM">
+			<description>
+				<p>At 3rd level, when you are hit by an attack while you are wearing your spellbound shell, you can use your reaction and spend 1 mana point to gain a bonus to your AC equal to your Intelligence modifier until the start of your next turn, possibly causing the attack to miss.</p>
+			</description>
+			<sheet>
+				<description>At 3rd level, when you are hit by an attack while you are wearing your spellbound shell, you can use your reaction and spend 1 mana point to gain a bonus +{{intelligence:modifier}} AC until the start of your next turn, possibly causing the attack to miss.</description>
+			</sheet>
+		</element>
+		<element name="Magical Might" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_MAGICAL_MIGHT">
+			<description>
+				<p>Starting at 7th level, you have advantage on Strength and Constitution saving throws while wearing your spellbound shell.</p>
+			</description>
+			<sheet >
+				<description>Starting at 7th level, you have advantage on Strength and Constitution saving throws while wearing your spellbound shell.</description>
+			</sheet>
+		</element>
+		<element name="Arcane Armour" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_ARCANE_ARMOUR">
+			<description>
+				<p>Starting at 10th level, you can summon a powerful outer layer to strengthen your armor. As a bonus action you create this armor, which appears as a spectral layer above your spellbound shell. You gain temporary hit points equal to 5 times your Intelligence modifier, and a bonus to your AC equal to your Intelligence modifier. For every 5 damage done to this armor, your AC decreases by 1, until both are reduced to 0. You can use this ability twice, and you regain all uses of it after a long rest.</p>
+			</description>
+			<sheet action="Bonus Action" usage="2/Long Rest">
+				<description>Starting at 10th level, you can summon a powerful outer layer to strengthen your armor. As a bonus action you create this armor, which appears as a spectral layer above your spellbound shell. You gain {{arcanearmour:hp}} temporary hit points equal, and a bonus {{intelligence:modifier}} to your AC. For every 5 damage done to this armor, your AC decreases by 1, until both are reduced to 0. You can use this ability twice, and you regain all uses of it after a long rest.</description>
+			</sheet>
+			<rules>
+			 <stat name="arcanearmour:hp" value="intelligence:modifier" />
+			 <stat name="arcanearmour:hp" value="intelligence:modifier" />
+			 <stat name="arcanearmour:hp" value="intelligence:modifier" />
+			 <stat name="arcanearmour:hp" value="intelligence:modifier" />
+			 <stat name="arcanearmour:hp" value="intelligence:modifier" />
+			</rules>
+		</element>
+		<element name="Hardened Shell" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_HARDENED_SHELL">
+			<description>
+				<p>At 15th level, your spellbound shell makes you more difficult to kill. Whenever you take damage, other than psychic damage, you can reduce it by 2.</p>
+			</description>
+			<sheet>
+				<description>At 15th level, your spellbound shell makes you more difficult to kill. Whenever you take damage, other than psychic damage, you can reduce it by 2.</description>
+			</sheet>
+		</element>
+		<element name="Castle's Strength" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_ROOK_CASTLES_STRENGTH">
+			<description>
+				<p>Starting at 18th level, you gain the ability to bolster your spellbound shell. On your turn, you can spend 2 mana points as a bonus action to reinforce your spellbound shell with arcane energy. While reinforced, you have resistance to all damage except psychic damage. This effect lasts for 1 minute. It ends early if you are knocked unconscious.</p>
+			</description>
+			<sheet>
+				<description>Starting at 18th level, you gain the ability to bolster your spellbound shell. On your turn, you can spend 2 mana points as a bonus action to reinforce your spellbound shell with arcane energy. While reinforced, you have resistance to all damage except psychic damage. This effect lasts for 1 minute. It ends early if you are knocked unconscious.</description>
+			</sheet>
+		</element>
+		<element name="Order of the Knight" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ORDER_OF_THE_KNIGHT">
+			<supports>Esoteric Order</supports>
+			<description>
+				<p>Noble and strong, Knights bring a strong balance to the battlefield. Armed with their spellbound shield, a Knight focuses on both defending themselves and their comrades and returning damage to their foes.</p>
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_SPELLBOUND_SHIELD" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_KNIGHTS_PARRY" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_HEROIC_DEFENSE" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_RETALIATORY_SHIELD" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_INVIGORATING_COUNTER" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_RUNIC_REDIRECTION" />
+			</description>
+			<sheet display="false">
+				<description></description>
+			</sheet>
+			<rules>
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_SPELLBOUND_SHIELD" level="3" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_KNIGHTS_PARRY" level="3" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_HEROIC_DEFENSE" level="7" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_RETALIATORY_SHIELD" level="10" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_INVIGORATING_COUNTER" level="15" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_RUNIC_REDIRECTION" level="17" />
+			</rules>
+		</element>
+		<element name="Spellbound Shield" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_SPELLBOUND_SHIELD">
+			<description>
+				<p>Starting when you choose this order at 3rd level, you can imbue a shield with magical qualities similar to that of your spellbound blade. You may recall or dismiss both your spellbound blade and your spellbound shield as the same bonus action.</p>
+			</description>
+			<sheet>
+				<description>Starting when you choose this order at 3rd level, you can imbue a shield with magical qualities similar to that of your spellbound blade. You may recall or dismiss both your spellbound blade and your spellbound shield as the same bonus action.</description>
+			</sheet>
+		</element>
+		<element name="Knight's Parry" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_KNIGHTS_PARRY">
+			<description>
+				<p>At 3rd level, when a creature within 5 feet of you hits you with a melee attack while you are wielding your spellbound shield, you can use your reaction and spend 1 mana point to attempt a parry. When you do so, the damage you take from the attack is reduced by 1d10 + your arcane armsman level. If you reduce the damage below 0, the attacking creature takes damage of the same type equal to the difference.</p>
+			</description>
+			<sheet>
+				<description>At 3rd level, when a creature within 5 feet of you hits you with a melee attack while you are wielding your spellbound shield, you can use your reaction and spend 1 mana point to attempt a parry. When you do so, the damage you take from the attack is reduced by 1d10 + {{level:arcane armsman}}. If you reduce the damage below 0, the attacking creature takes damage of the same type equal to the difference.</description>
+			</sheet>
+		</element>
+		<element name="Heroic Defense" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_HEROIC_DEFENSE">
+			<description>
+				<p>Starting at 7th level, when a creature hits you with an attack while you’re wielding your spellbound shield, you gain a +2 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.</p>
+			</description>
+			<sheet >
+				<description>Starting at 7th level, when a creature hits you with an attack while you’re wielding your spellbound shield, you gain a +2 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.</description>
+			</sheet>
+		</element>
+		<element name="Retaliatory Shield" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_RETALIATORY_SHIELD">
+			<description>
+				<p>Starting at 10th level, you can project a magical buffer onto your spellbound shield. As a bonus action, you conjure this barrier, which lasts for 10 minutes. Once per turn when a creature within 5 feet of you hits you with a melee attack, the barrier bursts back, dealing force damage equal to your Intelligence modifier. You can use this ability twice, and you regain all uses of it after a long rest.</p>
+			</description>
+			<sheet action="Bonus Action" usage="2/Long Rest">
+				<description>Starting at 10th level, you can project a magical buffer onto your spellbound shield. As a bonus action, you conjure this barrier, which lasts for 10 minutes. Once per turn when a creature within 5 feet of you hits you with a melee attack, the barrier bursts back, dealing {{intelligence:modifier}} force damage. You can use this ability twice, and you regain all uses of it after a long rest.</description>
+			</sheet>
+		</element>
+		<element name="Invigorating Counter" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_INVIGORATING_COUNTER">
+			<description>
+				<p>At 15th level, when a creature misses you with a spell attack or you succeed on a spell’s saving throw, you can use your reaction to absorb some of the spell’s power. You gain a bonus to damage rolls made with your spellbound blade equal to the level of the spell cast (minimum of 1) until the end of your next turn.</p>
+			</description>
+			<sheet>
+				<description action="Reaction">At 15th level, when a creature misses you with a spell attack or you succeed on a spell’s saving throw, you can use your reaction to absorb some of the spell’s power. You gain a bonus to damage rolls made with your spellbound blade equal to the level of the spell cast (minimum of 1) until the end of your next turn.</description>
+			</sheet>
+		</element>
+		<element name="Runic Redirection" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_KNIGHT_RUNIC_REDIRECTION">
+			<description>
+				<p>Starting at 18th level, whenever a creature within 60 feet of you casts a spell or makes an attack that would affect you, you can use your reaction and spend 2 mana points in an attempt to deflect it with your spellbound shield. The creature must make an Intelligence saving throw against your arcane art save DC. On a failed save, you can redirect the attack or spell to another location within its range.</p>
+			</description>
+			<sheet action="Reaction">
+				<description>Starting at 18th level, whenever a creature within 60 feet of you casts a spell or makes an attack that would affect you, you can use your reaction and spend 2 mana points in an attempt to deflect it with your spellbound shield. The creature must make an Intelligence saving throw against your arcane art save DC. On a failed save, you can redirect the attack or spell to another location within its range.</description>
+			</sheet>
+		</element>
+		<element name="Order of the Bishop" type="Archetype" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_ORDER_OF_THE_BISHOP">
+			<supports>Esoteric Order</supports>
+			<description>
+				<p>Bishops combine the arcane fighting of the arcane armsman with traditional spellcasting of the wizard. Their versatility on the battlefield make them an irreplaceable addition to any adventuring party.</p>
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_ARCANE_ADEPT" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_DIVERSE_ARSENAL" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_PROTECTIVE_BOUNDARY" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_EMPOWERING_AID" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_ASTRAL_CONDUIT" />
+				<div element="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_MYSTIC_MEDIUM" />
+			</description>
+			<sheet display="false">
+				<description></description>
+			</sheet>
+			<rules>
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_ARCANE_ADEPT" level="3" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_DIVERSE_ARSENAL" level="3" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_PROTECTIVE_BOUNDARY" level="7" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_EMPOWERING_AID" level="10" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_ASTRAL_CONDUIT" level="15" />
+				<grant type="Archetype Feature" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_MYSTIC_MEDIUM" level="17" />
+			</rules>
+		</element>
+		<element name="Arcane Adept" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_ARCANE_ADEPT">
+			<description>
+				<p>Starting when you choose this order at 3rd level, when you attack with your spellbound blade, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls. Additionally, your mana pool increases by a number of points equal to your Intelligence modifier.</p>
+			</description>
+			<sheet>
+				<description>Starting when you choose this order at 3rd level, when you attack with your spellbound blade, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls. Additionally, your mana pool increases by {{intelligence:modifier}}.</description>
+			</sheet>
+			<rules>
+				<stat name="mana:pool" value="intelligence:modifier" />
+			</rules>
+		</element>
+		<element name="Diverse Arsenal" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_DIVERSE_ARSENAL">
+			<description>
+				<p>At 3rd level, you can learn two cantrips and two first level spells from the wizard spell list. You can cast these spells by spending 1 mana point per spell level. You learn two additional spells at 5th, 9th, 13th, and 17th level. The level of the spells you can learn is equal to your arcane armsman level divided by 4, rounded up, which is also the maximum level you can cast your spells at. You can use your spellbound blade as a focus for casting these spells.</p>
+			</description>
+			<sheet>
+				<description>At 3rd level, you can learn two cantrips and two first level spells from the wizard spell list. You can cast these spells by spending 1 mana point per spell level. You learn two additional spells at 5th, 9th, 13th, and 17th level. The level of the spells you can learn is {{bishop:level}}, which is also the maximum level you can cast your spells at. You can use your spellbound blade as a focus for casting these spells.</description>
+			</sheet>
+			<rules>
+			<stat name="bishop:level" value="1" />
+			<stat name="bishop:level" value="1" level="5" />
+			<stat name="bishop:level" value="1" level="10" />
+			<stat name="bishop:level" value="1" level="15" />
+			<stat name="bishop:level" value="1" level="20" />
+			<select type="Spell" name="Cantrip (Order of the Bishop)" supports="Wizard, 0" level="3" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="1st Spells (Order of the Bishop)" supports="Wizard, 1" level="3" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="2nd Spells (Order of the Bishop)" supports="Wizard, (1||2)" level="5" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="3rd Spells (Order of the Bishop)" supports="Wizard, (1||2)" level="9" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="4th Spells (Order of the Bishop)" supports="Wizard, (1||2||3)" level="13" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="5th Spells (Order of the Bishop)" supports="Wizard, (1||2||3||4)" level="17" number="2" spellcasting="Wizard" />
+			</rules>
+		</element>
+		<element name="Protective Boundary" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_PROTECTIVE_BOUNDARY">
+			<description>
+				<p>Starting at 7th level, you project a magical aura that shields your allies from arcane attacks. You and friendly creatures within 10 feet of you have resistance to damage from spells. Additionally, when you use your Arcane Exchange feature to heal, you can target one additional creature within 10 feet of you to regain the same amount of health.</p>
+			</description>
+			<sheet >
+				<description>Starting at 7th level, you project a magical aura that shields your allies from arcane attacks. You and friendly creatures within 10 feet of you have resistance to damage from spells. Additionally, when you use your Arcane Exchange feature to heal, you can target one additional creature within 10 feet of you to regain the same amount of health.</description>
+			</sheet>
+		</element>
+		<element name="Empowering Aid" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_EMPOWERING_AID">
+			<description>
+				<p>Starting at 10th level, you can spend 1 mana point to empower one of your allies. As a bonus action, you can choose a willing creature within 10 feet of you. Once within the next 10 minutes, that creature can use an arcane art of your choice, using your level and mana ability. Once the creature uses the arcane art, it loses this benefit. A creature can only possess one of your arcane arts at a time.</p>
+			</description>
+			<sheet>
+				<description>Starting at 10th level, you can spend 1 mana point to empower one of your allies. As a bonus action, you can choose a willing creature within 10 feet of you. Once within the next 10 minutes, that creature can use an arcane art of your choice, using your level and mana ability. Once the creature uses the arcane art, it loses this benefit. A creature can only possess one of your arcane arts at a time.</description>
+			</sheet>
+		</element>
+		<element name="Astral Conduit" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_ASTRAL_CONDUIT">
+			<description>
+				<p>At 15th level, you learn to channel your magic through the weave itself. When you cast a spell with the range of touch or take the Attack action and use an arcane art, you can spend a bonus action to target a creature up to 60 feet away. If you attack in this way, your weapon does not deal any damage, you only deal the arcane art’s damage.</p>
+			</description>
+			<sheet action="Bonus Action">
+				<description>At 15th level, you learn to channel your magic through the weave itself. When you cast a spell with the range of touch or take the Attack action and use an arcane art, you can spend a bonus action to target a creature up to 60 feet away. If you attack in this way, your weapon does not deal any damage, you only deal the arcane art’s damage.</description>
+			</sheet>
+		</element>
+		<element name="Mystic Medium" type="Archetype Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_BISHOP_MYSTIC_MEDIUM">
+			<description>
+				<p>At 18th level, whenever you score a critical hit or reduce a creature to 0 hit points with an arcane art or spell, you regain 1 mana point. Additionally, you learn one 6th level spell from the wizard spell list.</p>
+			</description>
+			<sheet>
+				<description>At 18th level, whenever you score a critical hit or reduce a creature to 0 hit points with an arcane art or spell, you regain 1 mana point. Additionally, you learn one 6th level spell from the wizard spell list.</description>
+			</sheet>
+			<rules>
+			<select type="Spell" name="Mystic Medium (Order of the Bishop)" supports="Wizard, 6" level="18" number="1" spellcasting="Wizard" />
+			</rules>
+		</element>
+	<!--Arcane Arts-->
+		<element name="Ally's Aid" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_ALLYS_AID">
+			<supports>Arcane Art</supports>
+			<prerequisite>5th level, Order of the Pawn</prerequisite>
+			<requirements>[level:5], ID_RDDT_ARCHETYPE_ORDER_OF_THE_PAWN</requirements>
+			<description>
+				<p>As a bonus action, you can spend 2 mana points to cast Aid. When you cast this spell using this arcane art, the spell’s level equals your arcane armsman level divided by 4, rounded up. Once you use this art, you can’t use it again until you finish a long rest.</p>
+			</description>
+			<sheet>
+				<description>As a bonus action, you can spend 2 mana points to cast Aid. When you cast this spell using this arcane art, the spell’s level equals your arcane armsman level divided by 4, rounded up. Once you use this art, you can’t use it again until you finish a long rest.</description>
+			</sheet>
+		</element>
+		<element name="Arcane Instinct" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_ARCANE_INSTINCT">
+			<supports>Arcane Art</supports>
+			<prerequisite>17th level</prerequisite>
+			<requirements>[level:17]</requirements>
+			<description>
+				<p>You gain blindsight to a distance of 120ft.</p>
+			</description>
+			<sheet>
+				<description>You gain blindsight to a distance of 120ft.</description>
+			</sheet>
+			<rules>
+				<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			</rules>
+		</element>
+		<element name="Arcane Intellect" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_ARCANE_INTELLECT">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Bishop</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_ORDER_OF_THE_BISHOP||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION</requirements>
+			<description>
+				<p>Whenever you make an Intelligence check with a skill that you are proficient in and you do not have disadvantage on that roll, you can add double your proficiency bonus to that check.</p>
+			</description>
+			<sheet>
+				<description>Whenever you make an Intelligence check with a skill that you are proficient in and you do not have disadvantage on that roll, you can add double your proficiency bonus to that check.</description>
+			</sheet>
+		</element>
+		<element name="Astral Aviation" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_ASTRAL_AVIATION">
+			<supports>Arcane Art</supports>
+			<prerequisite>17th Level</prerequisite>
+			<requirements>[level:17]</requirements>
+			<description>
+				<p>As a bonus action, you can blur the line between the material and astral planes. You gain a flying speed equal to 10 times your Intelligence modifier. Additionally, you gain resistance to force damage. This benefit lasts until you end it as a bonus action.</p>
+			</description>
+			<sheet action="Bonus Action">
+				<description>As a bonus action, you can blur the line between the material and astral planes. You gain a {{Astral:Aviation}}ft flying speed . Additionally, you gain resistance to force damage. This benefit lasts until you end it as a bonus action.</description>
+			</sheet>
+			<rules>
+				<stat name="Astral:Aviation" value="intelligence:modifier" />
+				<stat name="Astral:Aviation" value="intelligence:modifier" />
+				<stat name="Astral:Aviation" value="intelligence:modifier" />
+				<stat name="Astral:Aviation" value="intelligence:modifier" />
+				<stat name="Astral:Aviation" value="intelligence:modifier" />
+				<stat name="Astral:Aviation" value="intelligence:modifier" />
+				<stat name="Astral:Aviation" value="intelligence:modifier" />
+				<stat name="Astral:Aviation" value="intelligence:modifier" />
+				<stat name="Astral:Aviation" value="intelligence:modifier" />
+				<stat name="Astral:Aviation" value="intelligence:modifier" />
+			</rules>
+		</element>
+		<element name="Bounding Blade" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_BOUNDING_BLADE">
+			<supports>Arcane Art</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>As an action, you can spend 1 mana point to propel a blade of arcane energy from your spellbound blade at a creature within 15 feet of you. Make an arcane art attack roll against the creature. On a hit, the creature takes 1d8 force damage. The blade then leaps to a different creature of your choice within 15 feet of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to another target, spending 1 mana point per additional jump. A creature can only be targeted once by each use of this art. This art's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+			</description>
+			<sheet>
+				<description>As an action, you can spend 1 mana point to propel a blade of arcane energy from your spellbound blade at a creature within 15 feet of you. Make an arcane art attack roll against the creature. On a hit, the creature takes 1d8 force damage. The blade then leaps to a different creature of your choice within 15 feet of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to another target, spending 1 mana point per additional jump. A creature can only be targeted once by each use of this art.</description>
+				<description level="5">As an action, you can spend 1 mana point to propel a blade of arcane energy from your spellbound blade at a creature within 15 feet of you. Make an arcane art attack roll against the creature. On a hit, the creature takes 2d8 force damage. The blade then leaps to a different creature of your choice within 15 feet of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to another target, spending 1 mana point per additional jump. A creature can only be targeted once by each use of this art.</description>
+				<description level="11">As an action, you can spend 1 mana point to propel a blade of arcane energy from your spellbound blade at a creature within 15 feet of you. Make an arcane art attack roll against the creature. On a hit, the creature takes 3d8 force damage. The blade then leaps to a different creature of your choice within 15 feet of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to another target, spending 1 mana point per additional jump. A creature can only be targeted once by each use of this art.</description>
+				<description level="17">As an action, you can spend 1 mana point to propel a blade of arcane energy from your spellbound blade at a creature within 15 feet of you. Make an arcane art attack roll against the creature. On a hit, the creature takes 4d8 force damage. The blade then leaps to a different creature of your choice within 15 feet of the original target. Make a new attack roll against the new target, and make a new damage roll. On a hit, the blade can continue leaping to another target, spending 1 mana point per additional jump. A creature can only be targeted once by each use of this art.</description>
+			</sheet>
+		</element>
+		<element name="Castling" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_CASTLING">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Rook</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_ORDER_OF_THE_ROOK||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION</requirements>
+			<description>
+				<p>As a bonus action on your turn, you can spend 1 mana point to magically switch places with a willing creature within 30 feet of you.</p>
+			</description>
+			<sheet>
+				<description>As a bonus action on your turn, you can spend 1 mana point to magically switch places with a willing creature within 30 feet of you.</description>
+			</sheet>
+		</element> 
+		<element name="Checkmate" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_CHECKMATE">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Queen</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_ORDER_OF_THE_QUEEN||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION</requirements>
+			<description>
+				<p>If a creature ends its turn no more than 30 feet from you in a direct line, you can use your reaction and spend 1 mana point to move your movement speed towards it and make a single melee weapon attack.</p>
+			</description>
+			<sheet>
+				<description>If a creature ends its turn no more than 30 feet from you in a direct line, you can use your reaction and spend 1 mana point to move your movement speed towards it and make a single melee weapon attack.</description>
+			</sheet>
+		</element> 
+		<element name="Crippling Blow" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_CRIPPLING_BLOW">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Queen</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_ORDER_OF_THE_QUEEN||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION</requirements>
+			<description>
+				<p>When you take the Attack action on your turn using your spellbound blade, you can forego one of your attacks and spend 1 mana point to attempt to cripple your enemy with a low blow. Make an arcane art attack roll against the creature. On a hit, the creature takes 1d6 force damage and must make a Strength saving throw. On a failed save, the creature’s speed is halved and it can’t take opportunity attacks until the end of its next turn. This art's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+			</description>
+			<sheet>
+				<description>When you take the Attack action on your turn using your spellbound blade, you can forego one of your attacks and spend 1 mana point to attempt to cripple your enemy with a low blow. Make an arcane art attack roll against the creature. On a hit, the creature takes 1d6 force damage and must make a Strength saving throw. On a failed save, the creature’s speed is halved and it can’t take opportunity attacks until the end of its next turn.</description>
+				<description level="5">When you take the Attack action on your turn using your spellbound blade, you can forego one of your attacks and spend 1 mana point to attempt to cripple your enemy with a low blow. Make an arcane art attack roll against the creature. On a hit, the creature takes 2d6 force damage and must make a Strength saving throw. On a failed save, the creature’s speed is halved and it can’t take opportunity attacks until the end of its next turn.</description>
+				<description level="11">When you take the Attack action on your turn using your spellbound blade, you can forego one of your attacks and spend 1 mana point to attempt to cripple your enemy with a low blow. Make an arcane art attack roll against the creature. On a hit, the creature takes 3d6 force damage and must make a Strength saving throw. On a failed save, the creature’s speed is halved and it can’t take opportunity attacks until the end of its next turn.</description>
+				<description level="17">When you take the Attack action on your turn using your spellbound blade, you can forego one of your attacks and spend 1 mana point to attempt to cripple your enemy with a low blow. Make an arcane art attack roll against the creature. On a hit, the creature takes 4d6 force damage and must make a Strength saving throw. On a failed save, the creature’s speed is halved and it can’t take opportunity attacks until the end of its next turn.</description>
+			</sheet>
+		</element> 
+		<element name="Crushing Grasp" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_CRUSHING_GRASP">
+			<supports>Arcane Art</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>When you hit a creature with a melee weapon attack with your spellbound blade, you can spend 1 mana point to deal an additional 1d4 force damage, and the target must make a Strength saving throw or be restrained by a magical force for 1 minute. While restrained by the art, the target takes 1d4 force damage at the start of each of its turns. At the end of each of its turns, the target can make another Strength saving throw. On a success, the effect ends on the target. This art's initial damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+			</description>
+			<sheet>
+				<description>When you hit a creature with a melee weapon attack with your spellbound blade, you can spend 1 mana point to deal an additional 1d4 force damage, and the target must make a Strength saving throw or be restrained by a magical force for 1 minute. While restrained by the art, the target takes 1d4 force damage at the start of each of its turns. At the end of each of its turns, the target can make another Strength saving throw. On a success, the effect ends on the target.</description>
+				<description level="5">When you hit a creature with a melee weapon attack with your spellbound blade, you can spend 1 mana point to deal an additional 2d4 force damage, and the target must make a Strength saving throw or be restrained by a magical force for 1 minute. While restrained by the art, the target takes 1d4 force damage at the start of each of its turns. At the end of each of its turns, the target can make another Strength saving throw. On a success, the effect ends on the target. This art's initial damage increases by 1d4 when you reach</description>
+				<description level="11">When you hit a creature with a melee weapon attack with your spellbound blade, you can spend 1 mana point to deal an additional 3d4 force damage, and the target must make a Strength saving throw or be restrained by a magical force for 1 minute. While restrained by the art, the target takes 1d4 force damage at the start of each of its turns. At the end of each of its turns, the target can make another Strength saving throw. On a success, the effect ends on the target. This art's initial damage increases by 1d4 when you reach</description>
+				<description level="17">When you hit a creature with a melee weapon attack with your spellbound blade, you can spend 1 mana point to deal an additional 4d4 force damage, and the target must make a Strength saving throw or be restrained by a magical force for 1 minute. While restrained by the art, the target takes 1d4 force damage at the start of each of its turns. At the end of each of its turns, the target can make another Strength saving throw. On a success, the effect ends on the target. This art's initial damage increases by 1d4 when you reach</description>
+			</sheet>
+		</element> 
+		<element name="Delayed Touch" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_DELAYED_TOUCH">
+			<supports>Arcane Art</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>As an action you can spend 1 mana point to magically feign a strike against a creature using your spellbound blade. Make an arcane art attack roll against the creature. On a hit, the creature must make a Wisdom saving throw. On a successful save, the creature takes the normal weapon damage. On a failed save, the creature takes no damage and you mark the creature for 1 hour, or until you end it as a bonus action. When the mark ends, the creature takes the weapon damage and an additional 1d6 force damage. This art's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+			</description>
+			<sheet>
+				<description>As an action you can spend 1 mana point to magically feign a strike against a creature using your spellbound blade. Make an arcane art attack roll against the creature. On a hit, the creature must make a Wisdom saving throw. On a successful save, the creature takes the normal weapon damage. On a failed save, the creature takes no damage and you mark the creature for 1 hour, or until you end it as a bonus action. When the mark ends, the creature takes the weapon damage and an additional 1d6 force damage.</description>
+				<description level="5">As an action you can spend 1 mana point to magically feign a strike against a creature using your spellbound blade. Make an arcane art attack roll against the creature. On a hit, the creature must make a Wisdom saving throw. On a successful save, the creature takes the normal weapon damage. On a failed save, the creature takes no damage and you mark the creature for 1 hour, or until you end it as a bonus action. When the mark ends, the creature takes the weapon damage and an additional 2d6 force damage.</description>
+				<description level="11">As an action you can spend 1 mana point to magically feign a strike against a creature using your spellbound blade. Make an arcane art attack roll against the creature. On a hit, the creature must make a Wisdom saving throw. On a successful save, the creature takes the normal weapon damage. On a failed save, the creature takes no damage and you mark the creature for 1 hour, or until you end it as a bonus action. When the mark ends, the creature takes the weapon damage and an additional 3d6 force damage.</description>
+				<description level="17">As an action you can spend 1 mana point to magically feign a strike against a creature using your spellbound blade. Make an arcane art attack roll against the creature. On a hit, the creature must make a Wisdom saving throw. On a successful save, the creature takes the normal weapon damage. On a failed save, the creature takes no damage and you mark the creature for 1 hour, or until you end it as a bonus action. When the mark ends, the creature takes the weapon damage and an additional 4d6 force damage.</description>
+			</sheet>
+		</element> 
+		<element name="Deliberate Speech" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_DELIBERATE_SPEECH">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Knight</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_ORDER_OF_THE_KNIGHT||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION</requirements>
+			<description>
+				<p>Whenever you roll a Charisma check against a creature of the same type as you, you can use your Intelligence modifier instead of your Charisma modifier.</p>
+			</description>
+			<sheet>
+				<description>Whenever you roll a Charisma check against a creature of the same type as you, you can use your Intelligence modifier instead of your Charisma modifier.</description>
+			</sheet>
+		</element> 
+		<element name="Elemental Arts" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_ELEMENTAL_ARTS">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Bishop</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_ORDER_OF_THE_BISHOP||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION</requirements>
+			<description>
+				<p>Whenever you use an arcane art and deal damage, you can change that damage type to fire, cold, or lightning, rather than force.</p>
+			</description>
+			<sheet>
+				<description>Whenever you use an arcane art and deal damage, you can change that damage type to fire, cold, or lightning, rather than force.</description>
+			</sheet>
+		</element> 
+		<element name="Eyes of the Oracle" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_EYES_OF_THE_ORACLE">
+			<supports>Arcane Art</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>You can read all languages, and reading takes you half as much time.</p>
+			</description>
+			<sheet>
+				<description>You can read all languages, and reading takes you half as much time.</description>
+			</sheet>
+		</element> 
+		<element name="Forceful Grip" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_FORCEFUL_GRIP">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Rook</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_ORDER_OF_THE_ROOK||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION</requirements>
+			<description>
+				<p>When you take the Attack action on your turn with your spellbound blade, you can forego one of your attacks and spend 1 mana point to attempt to loosen the grip of your enemy’s weapon. Make an arcane art attack roll against the creature. On a hit, the creature takes 1d6 force damage and must make a Dexterity saving throw. On a failed save, the creature has disadvantage on melee weapon attacks until the end of its next turn. This art's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+			</description>
+			<sheet>
+				<description>When you take the Attack action on your turn with your spellbound blade, you can forego one of your attacks and spend 1 mana point to attempt to loosen the grip of your enemy’s weapon. Make an arcane art attack roll against the creature. On a hit, the creature takes 1d6 force damage and must make a Dexterity saving throw. On a failed save, the creature has disadvantage on melee weapon attacks until the end of its next turn.</description>
+				<description level="5">When you take the Attack action on your turn with your spellbound blade, you can forego one of your attacks and spend 1 mana point to attempt to loosen the grip of your enemy’s weapon. Make an arcane art attack roll against the creature. On a hit, the creature takes 2d6 force damage and must make a Dexterity saving throw. On a failed save, the creature has disadvantage on melee weapon attacks until the end of its next turn.</description>
+				<description level="11">When you take the Attack action on your turn with your spellbound blade, you can forego one of your attacks and spend 1 mana point to attempt to loosen the grip of your enemy’s weapon. Make an arcane art attack roll against the creature. On a hit, the creature takes 3d6 force damage and must make a Dexterity saving throw. On a failed save, the creature has disadvantage on melee weapon attacks until the end of its next turn.</description>
+				<description level="17">When you take the Attack action on your turn with your spellbound blade, you can forego one of your attacks and spend 1 mana point to attempt to loosen the grip of your enemy’s weapon. Make an arcane art attack roll against the creature. On a hit, the creature takes 4d6 force damage and must make a Dexterity saving throw. On a failed save, the creature has disadvantage on melee weapon attacks until the end of its next turn.</description>
+			</sheet>
+		</element> 
+		<element name="Frontliner" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_FRONTLINER">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Pawn</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_ORDER_OF_THE_PAWN||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION</requirements>
+			<description>
+				<p>Whenever you roll for initiative and are not surprised, you can treat a d20 roll of 9 or lower as a 10 instead.</p>
+			</description>
+			<sheet>
+				<description>Whenever you roll for initiative and are not surprised, you can treat a d20 roll of 9 or lower as a 10 instead.</description>
+			</sheet>
+		</element> 
+		<element name="Improved Arts" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_IMPROVED_ARTS">
+			<supports>Arcane Art</supports>
+			<prerequisite>17th Level</prerequisite>
+			<requirements>[level:17]</requirements>
+			<description>
+				<p>Once per turn, whenever you use an arcane art or make an attack with your spellbound blade, you can add your Intelligence modifier to the attack roll. You can use this ability before or after the roll, but before the outcome is determined. Additionally, whenever you hit a creature with your spellbound blade, the creature takes an extra 1d6 force damage.</p>
+			</description>
+			<sheet>
+				<description>Once per turn, whenever you use an arcane art or make an attack with your spellbound blade, you can add {{intelligence:modifier}} to the attack roll. You can use this ability before or after the roll, but before the outcome is determined. Additionally, whenever you hit a creature with your spellbound blade, the creature takes an extra 1d6 force damage.</description>
+			</sheet>
+		</element> 
+		<element name="Magic Mantle" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_MAGIC_MANTLE">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Queen</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_ORDER_OF_THE_QUEEN||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION</requirements>
+			<description>
+				<p>While you are wearing no armor and wielding both your spellbound blade and spellbound sidearm, your armor class equals 10 + your Intelligence modifier + your Dexterity modifier.</p>
+			</description>
+			<sheet>
+				<description>While you are wearing no armor and wielding both your spellbound blade and spellbound sidearm, your armor class equals {{ac:magic mantle}}.</description>
+			</sheet>
+			<rules>
+				<stat name="ac:magic mantle:base" value="10" />
+				<stat name="ac:magic mantle:dexterity" value="dexterity:modifier" />
+				<stat name="ac:magic mantle:intelligence" value="intelligence:modifier" />
+				<stat name="ac:magic mantle" value="ac:magic mantle:base" />
+				<stat name="ac:magic mantle" value="ac:magic mantle:dexterity" />
+				<stat name="ac:magic mantle" value="ac:magic mantle:intelligence" />
+				<stat name="ac:calculation" value="ac:magic mantle" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Magic Mantle" />
+			</rules>
+		</element>
+		<element name="Mana Pulse" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_MANA_PULSE">
+			<supports>Arcane Art</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>As an action you can spend 1 mana point to cause a burst of magical energy around you, originating from your spellbound blade. Each creature other than you within a 10 foot radius around you must make a Constitution saving throw. On a failed save, the creature takes 1d6 force damage and is pushed 10 feet away from you. This art's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+			</description>
+			<sheet>
+				<description>As an action you can spend 1 mana point to cause a burst of magical energy around you, originating from your spellbound blade. Each creature other than you within a 10 foot radius around you must make a Constitution saving throw. On a failed save, the creature takes 1d6 force damage and is pushed 10 feet away from you.</description>
+				<description level="5">As an action you can spend 1 mana point to cause a burst of magical energy around you, originating from your spellbound blade. Each creature other than you within a 10 foot radius around you must make a Constitution saving throw. On a failed save, the creature takes 2d6 force damage and is pushed 10 feet away from you.</description>
+				<description level="11">As an action you can spend 1 mana point to cause a burst of magical energy around you, originating from your spellbound blade. Each creature other than you within a 10 foot radius around you must make a Constitution saving throw. On a failed save, the creature takes 3d6 force damage and is pushed 10 feet away from you.</description>
+				<description level="17">As an action you can spend 1 mana point to cause a burst of magical energy around you, originating from your spellbound blade. Each creature other than you within a 10 foot radius around you must make a Constitution saving throw. On a failed save, the creature takes 4d6 force damage and is pushed 10 feet away from you.</description>
+			</sheet>
+		</element> 
+		<element name="Mindful Motion" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_MINDFUL_MOTION">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Pawn</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_ORDER_OF_THE_PAWN||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION</requirements>
+			<description>
+				<p>You are incredibly adept at maneuvering yourself, even outside of battle. If you spend at least 1 minute plotting out your course of action to climb, jump, or sneak along a certain path, you gain advantage on all Strength (Athletics), Dexterity (Acrobatics), and Dexterity (Stealth) checks made to execute that motion.</p>
+			</description>
+			<sheet>
+				<description>You are incredibly adept at maneuvering yourself, even outside of battle. If you spend at least 1 minute plotting out your course of action to climb, jump, or sneak along a certain path, you gain advantage on all Strength (Athletics), Dexterity (Acrobatics), and Dexterity (Stealth) checks made to execute that motion.</description>
+			</sheet>
+		</element>  
+		<element name="Minority Attack" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_MINORITY_ATTACK">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Pawn</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_ORDER_OF_THE_PAWN||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION</requirements>
+			<description>
+				<p>When you take the Attack action on your turn, you can forego one of your attacks and spend 1 mana point to attempt to maneuver your enemy. Make an arcane art attack roll against the creature. On a hit, the creature takes 1d6 force damage and must make a Strength saving throw. On a failed save, you can move the creature up to 10 feet in a direction of your choice. This art's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+			</description>
+			<sheet>
+				<description>When you take the Attack action on your turn, you can forego one of your attacks and spend 1 mana point to attempt to maneuver your enemy. Make an arcane art attack roll against the creature. On a hit, the creature takes 1d6 force damage and must make a Strength saving throw. On a failed save, you can move the creature up to 10 feet in a direction of your choice.</description>
+				<description level="5">When you take the Attack action on your turn, you can forego one of your attacks and spend 1 mana point to attempt to maneuver your enemy. Make an arcane art attack roll against the creature. On a hit, the creature takes 2d6 force damage and must make a Strength saving throw. On a failed save, you can move the creature up to 10 feet in a direction of your choice.</description>
+				<description level="11">When you take the Attack action on your turn, you can forego one of your attacks and spend 1 mana point to attempt to maneuver your enemy. Make an arcane art attack roll against the creature. On a hit, the creature takes 3d6 force damage and must make a Strength saving throw. On a failed save, you can move the creature up to 10 feet in a direction of your choice.</description>
+				<description level="17">When you take the Attack action on your turn, you can forego one of your attacks and spend 1 mana point to attempt to maneuver your enemy. Make an arcane art attack roll against the creature. On a hit, the creature takes 4d6 force damage and must make a Strength saving throw. On a failed save, you can move the creature up to 10 feet in a direction of your choice.</description>
+			</sheet>
+		</element>  
+		<element name="Noble Steed" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_NOBLE_STEED">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Knight, 5th Level</prerequisite>
+			<requirements>(ID_RDDT_ARCHETYPE_ORDER_OF_THE_KNIGHT||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION), [level:5]</requirements>
+			<description>
+				<p>As an action, you can spend 2 mana points to cast Find Steed. When you cast this spell using this arcane art, the steed conjured gains a bonus to its hit points equal to your arcane armsman level, as well as resistance to force damage. Once you use this art, you can’t use it again until you finish a long rest.</p>
+				<div class="reference">
+					<div element="ID_PHB_SPELL_FIND_STEED" />
+				</div>
+			</description>
+			<sheet action="Action" usage="1/Long Rest">
+				<description>As an action, you can spend 2 mana points to cast Find Steed. When you cast this spell using this arcane art, the steed conjured gains a bonus {{level:arcane armsman}} to its hit points, as well as resistance to force damage. Once you use this art, you can’t use it again until you finish a long rest.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" />
+			</rules>
+		</element> 
+		<element name="Petrifying Strike" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_PETRIFYING_STRIKE">
+			<supports>Arcane Art</supports>
+			<prerequisite>5th Level</prerequisite>
+			<requirements>[level:5]</requirements>
+			<description>
+				<p>As an action you can spend 1 mana point to magically launch your spellbound blade at a creature you can see within 30 feet of you. Make an arcane art attack roll against the creature. On a hit, the creature takes your normal weapon damage and must make a constitution saving throw. On a successful save, the blade falls to the ground at its feet. On a failed save, the blade embeds itself in the creature and it is stunned for 1 minute or until the blade is removed. At the end of each of its turns the creature can repeat the constitution saving throw to remove the blade. Once the blade is removed, the creature takes an additional 2d6 force damage. This art's damage increases by 1d6 when you reach 11th level (3d6), and 17th level (4d6).</p>
+			</description>
+			<sheet action="Action">
+				<description>As an action you can spend 1 mana point to magically launch your spellbound blade at a creature you can see within 30 feet of you. Make an arcane art attack roll against the creature. On a hit, the creature takes your normal weapon damage and must make a constitution saving throw. On a successful save, the blade falls to the ground at its feet. On a failed save, the blade embeds itself in the creature and it is stunned for 1 minute or until the blade is removed. At the end of each of its turns the creature can repeat the constitution saving throw to remove the blade. Once the blade is removed, the creature takes an additional 2d6 force damage.</description>
+				<description level="11">As an action you can spend 1 mana point to magically launch your spellbound blade at a creature you can see within 30 feet of you. Make an arcane art attack roll against the creature. On a hit, the creature takes your normal weapon damage and must make a constitution saving throw. On a successful save, the blade falls to the ground at its feet. On a failed save, the blade embeds itself in the creature and it is stunned for 1 minute or until the blade is removed. At the end of each of its turns the creature can repeat the constitution saving throw to remove the blade. Once the blade is removed, the creature takes an additional 3d6 force damage.</description>
+				<description level="17">As an action you can spend 1 mana point to magically launch your spellbound blade at a creature you can see within 30 feet of you. Make an arcane art attack roll against the creature. On a hit, the creature takes your normal weapon damage and must make a constitution saving throw. On a successful save, the blade falls to the ground at its feet. On a failed save, the blade embeds itself in the creature and it is stunned for 1 minute or until the blade is removed. At the end of each of its turns the creature can repeat the constitution saving throw to remove the blade. Once the blade is removed, the creature takes an additional 4d6 force damage.</description>
+			</sheet>
+		</element> 
+		<element name="Potent Arts" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_POTENT_ARTS">
+			<supports>Arcane Art</supports>
+			<prerequisite>17th Level</prerequisite>
+			<requirements>[level:17]</requirements>
+			<description>
+				<p>Whenever you use an arcane art that forces the target to make a saving throw, you can spend 1 mana point to give the target disadvantage on its first saving throw made against that art.</p>
+			</description>
+			<sheet>
+				<description>Whenever you use an arcane art that forces the target to make a saving throw, you can spend 1 mana point to give the target disadvantage on its first saving throw made against that art.</description>
+			</sheet>
+		</element> 
+		<element name="Royal Guard" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_ROYAL_GUARD">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Queen, 5th Level</prerequisite>
+			<requirements>(ID_RDDT_ARCHETYPE_ORDER_OF_THE_QUEEN||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION), [level:5]</requirements>
+			<description>
+				<p>As an action, you can spend 2 mana points to cast Mirror Image. When you cast this spell using this arcane art, you can create one additional duplicate. You must roll an 15 or higher to redirect an attack to this additional duplicate, which is counted separately from the spell’s description. Once you use this art, you can’t use it again until you finish a long rest.</p>
+				<div class="reference">
+					<div element="ID_PHB_SPELL_MIRROR_IMAGE" />
+				</div>
+			</description>
+			<sheet action="Action" usage="1/Long Rest">
+				<description>As an action, you can spend 2 mana points to cast Mirror Image. When you cast this spell using this arcane art, you can create one additional duplicate. You must roll an 15 or higher to redirect an attack to this additional duplicate, which is counted separately from the spell’s description. Once you use this art, you can’t use it again until you finish a long rest.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" />
+			</rules>
+		</element> 
+		<element name="Seer's Reach" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_SEERS_REACH">
+			<supports>Arcane Art</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>Before an attack, you can spend 1 mana point to increase your spellbound blade’s reach by 5 feet for this attack, as well as dealing an additional 1d6 force damage. This art's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+			</description>
+			<sheet>
+				<description>Before an attack, you can spend 1 mana point to increase your spellbound blade’s reach by 5 feet for this attack, as well as dealing an additional 1d6 force damage.</description>
+				<description level="5">Before an attack, you can spend 1 mana point to increase your spellbound blade’s reach by 5 feet for this attack, as well as dealing an additional 2d6 force damage.</description>
+				<description level="11">Before an attack, you can spend 1 mana point to increase your spellbound blade’s reach by 5 feet for this attack, as well as dealing an additional 3d6 force damage.</description>
+				<description level="17">Before an attack, you can spend 1 mana point to increase your spellbound blade’s reach by 5 feet for this attack, as well as dealing an additional 4d6 force damage.</description>
+			</sheet>
+		</element>
+		<element name="Shield of the Weave" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_SHIELD_OF_THE_WEAVE">
+			<supports>Arcane Art</supports>
+			<prerequisite>9th Level</prerequisite>
+			<requirements>[level:9]</requirements>
+			<description>
+				<p>Once per round, when a creature hits you with a weapon attack, you can use your reaction to roll a d6. If you roll a 6, the attack misses you instead. If the creature had disadvantage on its attack, it misses you on a roll of 5 or 6.</p>
+			</description>
+			<sheet action="Reaction">
+				<description>Once per round, when a creature hits you with a weapon attack, you can use your reaction to roll a d6. If you roll a 6, the attack misses you instead. If the creature had disadvantage on its attack, it misses you on a roll of 5 or 6.</description>
+			</sheet>
+		</element>  
+		<element name="Soldier's Study" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_SOLDIERS_STUDY">
+			<supports>Arcane Art</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>You no longer need to sleep and can’t be forced to sleep by any means. To gain the benefits of a long rest, you can spend all 8 hours in deep study or training with your spellbound blade.</p>
+			</description>
+			<sheet>
+				<description>You no longer need to sleep and can’t be forced to sleep by any means. To gain the benefits of a long rest, you can spend all 8 hours in deep study or training with your spellbound blade.</description>
+			</sheet>
+		</element>  
+		<element name="Spectral Sword" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_SPECTRAL_SWORD">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Bishop, 5th Level</prerequisite>
+			<requirements>(ID_RDDT_ARCHETYPE_ORDER_OF_THE_BISHOP||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION), [level:5]</requirements>
+			<description>
+				<p>As a bonus action, you can spend 2 mana points to cast Spiritual Weapon. When you cast this spell using this arcane art, the spell’s level equals your arcane armsman level divided by 4, rounded up. Once you use this art, you can’t use it again until you finish a long rest.</p>
+				<div class="reference">
+					<div element="ID_PHB_SPELL_SPIRITUAL_WEAPON" />
+				</div>
+			</description>
+			<sheet action="Bonus Action" usage="1/Long Rest">
+				<description>As a bonus action, you can spend 2 mana points to cast Spiritual Weapon. When you cast this spell using this arcane art, the spell’s level equals your arcane armsman level divided by 4, rounded up. Once you use this art, you can’t use it again until you finish a long rest.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" />
+			</rules>
+		</element> 
+		<element name="Splintered Blade" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_SPLINTERED_BLADE">
+			<supports>Arcane Art</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>As an action you can spend 1 mana point to magically split your spellbound blade into many smaller blades. Each creature in a 10 foot cone must make a Dexterity saving throw. A creature takes 1d8 force damage on a failed save, or half as much damage on a successful one. This art's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+			</description>
+			<sheet action="Action">
+				<description>As an action you can spend 1 mana point to magically split your spellbound blade into many smaller blades. Each creature in a 10 foot cone must make a Dexterity saving throw. A creature takes 1d8 force damage on a failed save, or half as much damage on a successful one.</description>
+				<description level="5">As an action you can spend 1 mana point to magically split your spellbound blade into many smaller blades. Each creature in a 10 foot cone must make a Dexterity saving throw. A creature takes 2d8 force damage on a failed save, or half as much damage on a successful one.</description>
+				<description level="11">As an action you can spend 1 mana point to magically split your spellbound blade into many smaller blades. Each creature in a 10 foot cone must make a Dexterity saving throw. A creature takes 3d8 force damage on a failed save, or half as much damage on a successful one.</description>
+				<description level="17">As an action you can spend 1 mana point to magically split your spellbound blade into many smaller blades. Each creature in a 10 foot cone must make a Dexterity saving throw. A creature takes 4d8 force damage on a failed save, or half as much damage on a successful one.</description>
+			</sheet>
+		</element> 
+		<element name="Staggering Smash" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_STAGGERING_SMASH">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Knight</prerequisite>
+			<requirements>(ID_RDDT_ARCHETYPE_ORDER_OF_THE_KNIGHT||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION)</requirements>
+			<description>
+				<p>When you take the Attack action on your turn, you can forego one of your attacks and spend 1 mana point to attempt to disorient your enemy with your spellbound shield. Make an arcane art attack roll against the creature. On a hit, the creature takes 1d6 force damage and must make a Constitution saving throw. On a failed save, the creature is stunned until the start of its next turn. This art's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+			</description>
+			<sheet>
+				<description>When you take the Attack action on your turn, you can forego one of your attacks and spend 1 mana point to attempt to disorient your enemy with your spellbound shield. Make an arcane art attack roll against the creature. On a hit, the creature takes 1d6 force damage and must make a Constitution saving throw. On a failed save, the creature is stunned until the start of its next turn. This art's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</description>
+				<description level="5">When you take the Attack action on your turn, you can forego one of your attacks and spend 1 mana point to attempt to disorient your enemy with your spellbound shield. Make an arcane art attack roll against the creature. On a hit, the creature takes 2d6 force damage and must make a Constitution saving throw. On a failed save, the creature is stunned until the start of its next turn.</description>
+				<description level="11">When you take the Attack action on your turn, you can forego one of your attacks and spend 1 mana point to attempt to disorient your enemy with your spellbound shield. Make an arcane art attack roll against the creature. On a hit, the creature takes 3d6 force damage and must make a Constitution saving throw. On a failed save, the creature is stunned until the start of its next turn.</description>
+				<description level="17">When you take the Attack action on your turn, you can forego one of your attacks and spend 1 mana point to attempt to disorient your enemy with your spellbound shield. Make an arcane art attack roll against the creature. On a hit, the creature takes 4d6 force damage and must make a Constitution saving throw. On a failed save, the creature is stunned until the start of its next turn.</description>
+			</sheet>
+		</element> 
+		<element name="Streamlined Shell" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_STREAMLINED_SHELL">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Rook</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_ORDER_OF_THE_ROOK||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION</requirements>
+			<description>
+				<p>If your spellbound shell normally has a Strength requirement, it lacks it for you. Additionally, your spellbound shell doesn’t impose disadvantage on Dexterity (Stealth) checks.</p>
+			</description>
+			<sheet>
+				<description>If your spellbound shell normally has a Strength requirement, it lacks it for you. Additionally, your spellbound shell doesn’t impose disadvantage on Dexterity (Stealth) checks.</description>
+			</sheet>
+		</element> 
+		<element name="Superior Spellbinding" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_SUPERIOR_SPELLBINDING">
+			<supports>Arcane Art</supports>
+			<prerequisite>9th Level</prerequisite>
+			<requirements>[level:9]</requirements>
+			<description>
+				<p>Your spellbound blade gains a +1 bonus to attack and damage rolls. A spellbound sidearm also gains this benefit. If you have a spellbound shell or spellbound shield, it gains a +1 bonus to AC.</p>
+			</description>
+			<sheet>
+				<description>Your spellbound blade gains a +1 bonus to attack and damage rolls. A spellbound sidearm also gains this benefit. If you have a spellbound shell or spellbound shield, it gains a +1 bonus to AC.</description>
+			</sheet>
+		</element> 
+		<element name="Swift Summons" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_SWIFT_SUMMONS">
+			<supports>Arcane Art</supports>
+			<prerequisite></prerequisite>
+			<requirements></requirements>
+			<description>
+				<p>Rather than spending your bonus action, you can summon your spellbound blade as well as your spellbound sidearm, spellbound shell, or spellbound shield in tandem with your movement and action.</p>
+			</description>
+			<sheet>
+				<description>Rather than spending your bonus action, you can summon your spellbound blade as well as your spellbound sidearm, spellbound shell, or spellbound shield in tandem with your movement and action.</description>
+			</sheet>
+		</element> 
+		<element name="Tactical Maneuvers" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_TACTICAL_MANEUVERS">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Knight</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_ORDER_OF_THE_KNIGHT||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION</requirements>
+			<description>
+				<p>You can move through the space of any creature. Additionally, your movement does not provoke opportunity attacks if you make an attack or use an arcane art against that creature on your turn.</p>
+			</description>
+			<sheet>
+				<description>You can move through the space of any creature. Additionally, your movement does not provoke opportunity attacks if you make an attack or use an arcane art against that creature on your turn.</description>
+			</sheet>
+		</element>
+		<element name="Towering Fortress" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_TOWERING_FORTRESS">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Rook, 5th Level</prerequisite>
+			<requirements>(ID_RDDT_ARCHETYPE_ORDER_OF_THE_ROOK||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION),[level:5]</requirements>
+			<description>
+				<p>As an action, you can spend 2 mana points to cast Enlarge/Reduce on yourself, using only the “Enlarge” option. While this spell is active, you can add your Intelligence modifier to concentration checks made to maintain it. Once you use this art, you can’t use it again until you finish a long rest.</p>
+				<div class="reference">
+					<div element="ID_PHB_SPELL_ENLARGE_REDUCE" />
+				</div>
+			</description>
+			<sheet action="Action" usage="1/Long Rest">
+				<description>As an action, you can spend 2 mana points to cast Enlarge/Reduce on yourself, using only the “Enlarge” option. While this spell is active, you can add {{intelligence:modifier}} to concentration checks made to maintain it. Once you use this art, you can’t use it again until you finish a long rest.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" />
+			</rules>
+		</element>
+		<element name="Traitor's Touch" type="Class Feature" source="Reddit : Unearthed Arcana" id="ID_RDDT_CLASS_FEATURE_ARCANE_ARMSMAN_ARCANE_ART_TRAITORS_TOUCH">
+			<supports>Arcane Art</supports>
+			<prerequisite>Order of the Bishop</prerequisite>
+			<requirements>ID_RDDT_ARCHETYPE_ORDER_OF_THE_BISHOP||ID_RDDT_ARCHETYPE_FEATURE_ORDER_OF_THE_PAWN_PROUD_PROMOTION</requirements>
+			<description>
+				<p>When you take the Attack action on your turn, you can forego one of your attacks and spend 1 mana point to attempt to confuse your enemy. Make an arcane art attack roll against the creature. On a hit, the creature takes 1d6 force damage and must make a Wisdom saving throw. On a failed save, the creature must use its reaction to make a single melee weapon attack against a creature within its range other than you. This art's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+			</description>
+			<sheet>
+				<description>When you take the Attack action on your turn, you can forego one of your attacks and spend 1 mana point to attempt to confuse your enemy. Make an arcane art attack roll against the creature. On a hit, the creature takes 1d6 force damage and must make a Wisdom saving throw. On a failed save, the creature must use its reaction to make a single melee weapon attack against a creature within its range other than you.</description>
+				<description level="5">When you take the Attack action on your turn, you can forego one of your attacks and spend 1 mana point to attempt to confuse your enemy. Make an arcane art attack roll against the creature. On a hit, the creature takes 2d6 force damage and must make a Wisdom saving throw. On a failed save, the creature must use its reaction to make a single melee weapon attack against a creature within its range other than you.</description>
+				<description level="11">When you take the Attack action on your turn, you can forego one of your attacks and spend 1 mana point to attempt to confuse your enemy. Make an arcane art attack roll against the creature. On a hit, the creature takes 3d6 force damage and must make a Wisdom saving throw. On a failed save, the creature must use its reaction to make a single melee weapon attack against a creature within its range other than you.</description>
+				<description level="17">When you take the Attack action on your turn, you can forego one of your attacks and spend 1 mana point to attempt to confuse your enemy. Make an arcane art attack roll against the creature. On a hit, the creature takes 4d6 force damage and must make a Wisdom saving throw. On a failed save, the creature must use its reaction to make a single melee weapon attack against a creature within its range other than you.</description>
+			</sheet>
+		</element>
+</elements>
+
