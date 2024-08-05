@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.2">
-			<file name="sources.xml" url="placeholder" />
+			<file name="sources.xml" url="https://raw.githubusercontent.com/AngryGuineaPig/AuroraBuilderCustomContent/main/AGPContent/sources.xml" />
 		</update>
 	</info>
 	<element name="Reddit : Unearthed Arcana" type="Source" source="Reddit : Unearthed Arcana" id="ID_RDDT_SOURCE_R_UA">
